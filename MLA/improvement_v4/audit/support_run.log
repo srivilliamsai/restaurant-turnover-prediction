@@ -1,0 +1,10 @@
+{"setting": "support_weight_0p25", "new_weight": 0.0, "rmse": 19839027.540841296, "gain_vs_v3": 0.0, "complete_support_rmse": 19594362.92086182, "complete_support_gain": 0.0, "missing_pattern_rmse": 23268372.00001389}
+{"setting": "support_weight_0p25", "new_weight": 0.25, "rmse": 19842003.146300282, "gain_vs_v3": -2975.605458986014, "complete_support_rmse": 19600118.613407608, "complete_support_gain": -5755.6925457865, "missing_pattern_rmse": 23235485.78680817}
+{"setting": "support_weight_0p25", "new_weight": 0.5, "rmse": 19848537.510206718, "gain_vs_v3": -9509.969365421683, "complete_support_rmse": 19608966.463314652, "complete_support_gain": -14603.542452830821, "missing_pattern_rmse": 23212183.526966006}
+{"setting": "support_weight_0p25", "new_weight": 1.0, "rmse": 19872266.559226558, "gain_vs_v3": -33239.0183852613, "complete_support_rmse": 19635920.454680696, "complete_support_gain": -41557.53381887451, "missing_pattern_rmse": 23194434.529401362}
+support_weight_0p25 seconds 21.89
+{"setting": "support_weight_0p5", "new_weight": 0.0, "rmse": 19839027.540841296, "gain_vs_v3": 0.0, "complete_support_rmse": 19594362.92086182, "complete_support_gain": 0.0, "missing_pattern_rmse": 23268372.00001389}
+{"setting": "support_weight_0p5", "new_weight": 0.25, "rmse": 19835512.50066456, "gain_vs_v3": 3515.0401767380536, "complete_support_rmse": 19592237.853198286, "complete_support_gain": 2125.0676635354757, "missing_pattern_rmse": 23246866.69964905}
+{"setting": "support_weight_0p5", "new_weight": 0.5, "rmse": 19835000.541716896, "gain_vs_v3": 4026.9991244003177, "complete_support_rmse": 19592989.944702525, "complete_support_gain": 1372.9761592969298, "missing_pattern_rmse": 23230018.137601484}
+{"setting": "support_weight_0p5", "new_weight": 1.0, "rmse": 19842985.43380196, "gain_vs_v3": -3957.892960663885, "complete_support_rmse": 19603123.01375098, "complete_support_gain": -8760.092889159918, "missing_pattern_rmse": 23210328.989974253}
+support_weight_0p5 seconds 23.49

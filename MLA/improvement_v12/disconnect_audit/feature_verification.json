@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "unchanged_v9_features": 40,
+  "target_id_isolation": true,
+  "unknown_categories": true,
+  "batch_fitted_vocabularies": true,
+  "bad_checkpoints_rejected": true
+}

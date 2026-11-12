@@ -1,0 +1,26 @@
+{
+  "version": "V17",
+  "maximum_hours": 6,
+  "paid_resources": false,
+  "started_epoch": 1793251847,
+  "hard_stop_epoch": 1793287800,
+  "training_stop_epoch": 1793277000,
+  "settings": [
+    "XIA32",
+    "NOR15",
+    "P35FT512"
+  ],
+  "weights": [
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "user_authorization": "User replied start to the concrete V17 proposal. Implement and execute six elapsed hours maximum including setup/interruptions, free T4 only, two-hour delivery reserve, no portal upload.",
+  "attempt": "initial",
+  "previous_attempt": "none; V16 ledger unchanged",
+  "external_transfer_authorization": "User explicitly replied: Approve the Colab upload and continue. Applies to four official competition CSVs and saved V14 control files; credentials excluded.",
+  "explicit_resume_authorization": "User explicitly replied Start V17 now after the earlier hold and after new-account sign-in.",
+  "resume_authorized_epoch": 1793253043.579146
+}

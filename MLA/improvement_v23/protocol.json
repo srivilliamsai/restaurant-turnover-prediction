@@ -1,0 +1,37 @@
+{
+  "candidate": "L2-TF2",
+  "seed": 10242,
+  "weights": [
+    0.25
+  ],
+  "minimum_mean_relative_gain": 0.002,
+  "development": [
+    "42",
+    "71"
+  ],
+  "confirmation": [
+    "48211",
+    "48212",
+    "48213",
+    "strat:27421",
+    "city"
+  ],
+  "source_revision": "c76fa21bbb25fddca649e75a52dc9b1df66a659c",
+  "checkpoint_revision": "de07b679e74a41b50b9de18251a8fa245e537440",
+  "checkpoint_sha256": "ed01f7a0a18d25451bc9d1058b479ba6b68048aa1ebde06156c8fcfaf8b8fe81",
+  "query_batch_size": 1024,
+  "mixed_precision": false,
+  "repeat_absolute_tolerance_INR": 0.01,
+  "query_absolute_tolerance_INR": 10.0,
+  "query_RMSE_drift_INR": 1.0,
+  "bootstrap_resamples": 5000,
+  "bootstrap_seed": 8319,
+  "no_candidate_substitution": true,
+  "pipeline_indices": [
+    0,
+    4
+  ],
+  "amendment": "User one-hour instruction; before any candidate accuracy or predictions",
+  "backend": "official_torch_cuda",
+  "operational_amendment": "After explicit user export permission, use official CUDA path. Fixed 1024 query cap reduces repeated full-support computation; training rows and model unchanged. No accuracy result has been obtained."
+}

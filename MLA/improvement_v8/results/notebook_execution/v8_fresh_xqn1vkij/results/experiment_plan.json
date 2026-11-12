@@ -1,0 +1,140 @@
+{
+  "specs": {
+    "native_raw_7": {
+      "family": "native",
+      "group": "hgb",
+      "target": "raw",
+      "leaves": 7
+    },
+    "native_raw_15": {
+      "family": "native",
+      "group": "hgb",
+      "target": "raw",
+      "leaves": 15
+    },
+    "encoded_raw_50": {
+      "family": "encoded",
+      "group": "hgb",
+      "target": "raw",
+      "leaves": 15,
+      "smooth": 50
+    },
+    "encoded_raw_200": {
+      "family": "encoded",
+      "group": "hgb",
+      "target": "raw",
+      "leaves": 15,
+      "smooth": 200
+    },
+    "ridge_raw_10_base": {
+      "family": "ridge",
+      "group": "ridge",
+      "target": "raw",
+      "alpha": 10,
+      "structured": false
+    },
+    "ridge_raw_10_structured": {
+      "family": "ridge",
+      "group": "ridge",
+      "target": "raw",
+      "alpha": 10,
+      "structured": true
+    },
+    "ridge_raw_100_base": {
+      "family": "ridge",
+      "group": "ridge",
+      "target": "raw",
+      "alpha": 100,
+      "structured": false
+    },
+    "ridge_raw_100_structured": {
+      "family": "ridge",
+      "group": "ridge",
+      "target": "raw",
+      "alpha": 100,
+      "structured": true
+    },
+    "native_sqrt_7": {
+      "family": "native",
+      "group": "hgb",
+      "target": "sqrt",
+      "leaves": 7
+    },
+    "native_sqrt_15": {
+      "family": "native",
+      "group": "hgb",
+      "target": "sqrt",
+      "leaves": 15
+    },
+    "encoded_sqrt_50": {
+      "family": "encoded",
+      "group": "hgb",
+      "target": "sqrt",
+      "leaves": 15,
+      "smooth": 50
+    },
+    "encoded_sqrt_200": {
+      "family": "encoded",
+      "group": "hgb",
+      "target": "sqrt",
+      "leaves": 15,
+      "smooth": 200
+    },
+    "ridge_sqrt_10_base": {
+      "family": "ridge",
+      "group": "ridge",
+      "target": "sqrt",
+      "alpha": 10,
+      "structured": false
+    },
+    "ridge_sqrt_10_structured": {
+      "family": "ridge",
+      "group": "ridge",
+      "target": "sqrt",
+      "alpha": 10,
+      "structured": true
+    },
+    "ridge_sqrt_100_base": {
+      "family": "ridge",
+      "group": "ridge",
+      "target": "sqrt",
+      "alpha": 100,
+      "structured": false
+    },
+    "ridge_sqrt_100_structured": {
+      "family": "ridge",
+      "group": "ridge",
+      "target": "sqrt",
+      "alpha": 100,
+      "structured": true
+    }
+  },
+  "weights": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "development": [
+    42,
+    71
+  ],
+  "confirmation": [
+    48211,
+    48212,
+    48213,
+    "strat:27421",
+    "city"
+  ],
+  "max_base_settings": 16,
+  "max_total_settings": 20,
+  "max_development_configurations": 80,
+  "refinement_modes": [
+    "bag5",
+    "mix50"
+  ],
+  "shortlist": "Best eligible hgb and ridge group; gain positive on both development assignments",
+  "qualification": "Gain positive on all three random confirmations; city and stratified deterioration <=1%",
+  "budget_hours": 18,
+  "no_search_expansion_after_confirmation": true
+}

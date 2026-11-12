@@ -1,0 +1,13 @@
+setup_cell:10: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+Notebook setup complete; retraining all five folds for split 1701 without any prediction cache.
+{
+  "split_seed": 1701,
+  "folds": 5,
+  "cache_reused": false,
+  "maximum_prediction_difference_INR": {
+    "previous": 0.0,
+    "candidate": 0.0
+  },
+  "elapsed_seconds": 169.33853483200073,
+  "passed": true
+}

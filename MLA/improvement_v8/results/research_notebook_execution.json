@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "code_cells": 9,
+  "figures": [
+    "research_figure_1.png"
+  ],
+  "fresh_process": true,
+  "fresh_directory": "./improvement_v8/results/notebook_execution/v8_fresh_xqn1vkij",
+  "earlier_project_directories_required": false,
+  "prediction_checkpoint_reads": 0,
+  "v8_component_checkpoint_reads": 0,
+  "v7_oof_snapshots_reused_explicitly": true,
+  "v8_outer_fold_fits": 160,
+  "development_scores_recomputed": 128,
+  "maximum_score_difference": 0.0,
+  "v7_reproduction": {
+    "maximum_difference_INR": 7.450580596923828e-09,
+    "fresh_full_fit": true,
+    "seconds": 101.03861391700048,
+    "checks": {
+      "rows": 500,
+      "columns": [
+        "Registration Number",
+        "Annual Turnover"
+      ],
+      "original_row_order": true,
+      "unique_ids": true,
+      "finite_nonnegative": true,
+      "permutation_invariance": true,
+      "target_id_invariance": true,
+      "missing_and_unseen_values": true,
+      "malformed_cases_rejected": 12
+    }
+  },
+  "qualified_candidates": 0,
+  "elapsed_seconds": 164.03942458299935,
+  "portal_uploads_by_agent": 0
+}

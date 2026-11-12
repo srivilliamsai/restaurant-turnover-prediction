@@ -1,0 +1,40 @@
+{
+  "exaone": {
+    "metadata_url": "https://huggingface.co/api/models/LG-AI-Research/EXAONE-Tabular?blobs=true",
+    "repo_id": "LG-AI-Research/EXAONE-Tabular",
+    "revision": "093ad1c2613e1e95d26df8610451d2e02ed53cbe",
+    "regression_files": [
+      {
+        "rfilename": "exaone-tabular-regressor-v1_default.safetensors",
+        "blobId": "565a8b1dd7ac14f0a97c60bc945c398cce58efb9",
+        "size": 84502160,
+        "lfs": {
+          "sha256": "24891e14e649c6509f07ee62b5583e06544b68eaf9a9195ee58777eb9cf6fa0d",
+          "size": 84502160,
+          "pointerSize": 133
+        }
+      }
+    ],
+    "weights_downloaded": false
+  },
+  "tabpfn_9_2_0": {
+    "version": "9.2.0",
+    "archive_url": "https://files.pythonhosted.org/packages/b0/03/1b48e093811877c651f731ac64e36a71b3ac44ec5c5c67a395422a6cbfed/tabpfn-9.2.0.tar.gz",
+    "archive_sha256": "e7fb2c6293ffef664c69838eb4cb215c79c85a0c0bd449fdf22489045d32b9eb",
+    "files": {
+      "src/tabpfn/finetuning/finetuned_base.py": {
+        "sha256": "05b6fff1839db3578673606e98d5fedfb56836cd98c81876768eef415dfc3ef8",
+        "bytes": 57269
+      },
+      "src/tabpfn/finetuning/finetuned_regressor.py": {
+        "sha256": "315413cd044720d1edc9962d6697ed55cea90f3e7181d1a2a1c41ac8ccde18fa",
+        "bytes": 23653
+      },
+      "src/tabpfn/finetuning/train_util.py": {
+        "sha256": "0824c69f00f83c29b0eb70134d6bbd8b3c43835a2b5fb5190d9b66dc7aa2c63d",
+        "bytes": 10607
+      }
+    },
+    "installed": false
+  }
+}

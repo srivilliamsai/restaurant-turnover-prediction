@@ -1,0 +1,77 @@
+AUDIT PASS: three fixed treatments, twelve blends, seven verified baseline assignments.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Q99: fitted all 2794 rows, 40 predictors; {'name': 'Q99', 'training_rows': 2794, 'units': 'INR millions', 'quantile': 0.99, 'quantile_method': 'linear', 'threshold_INR': 102535000.00000007, 'capped_rows': 28}
+Q99: fitted all 2794 rows, 40 predictors; {'name': 'Q99', 'training_rows': 2794, 'units': 'INR millions', 'quantile': 0.99, 'quantile_method': 'linear', 'threshold_INR': 102535000.00000007, 'capped_rows': 28}
+{"PILOT": "Q99", "status": "PASS", "fold_seconds": 121.36219469599996, "behavior": {"permutation_difference_INR": 0.0, "label_id_difference_INR": 0.0, "batch_difference_INR": 0.0, "individual_difference_INR": 0.0, "missing_unseen_inputs": true}, "fresh_repeat_difference_INR": 0.0, "target_metadata": {"name": "Q99", "training_rows": 2794, "units": "INR millions", "quantile": 0.99, "quantile_method": "linear", "threshold_INR": 102535000.00000007, "capped_rows": 28}, "training_rows": 2794, "validation_rows": 699, "engineering_seconds": 681.766265037}
+Q995: fitted all 2794 rows, 40 predictors; {'name': 'Q995', 'training_rows': 2794, 'units': 'INR millions', 'quantile': 0.995, 'quantile_method': 'linear', 'threshold_INR': 150000000.0, 'capped_rows': 13}
+Q995: fitted all 2794 rows, 40 predictors; {'name': 'Q995', 'training_rows': 2794, 'units': 'INR millions', 'quantile': 0.995, 'quantile_method': 'linear', 'threshold_INR': 150000000.0, 'capped_rows': 13}
+{"PILOT": "Q995", "status": "PASS", "fold_seconds": 125.67824645899987, "behavior": {"permutation_difference_INR": 0.0, "label_id_difference_INR": 0.0, "batch_difference_INR": 0.0, "individual_difference_INR": 0.0, "missing_unseen_inputs": true}, "fresh_repeat_difference_INR": 0.0, "target_metadata": {"name": "Q995", "training_rows": 2794, "units": "INR millions", "quantile": 0.995, "quantile_method": "linear", "threshold_INR": 150000000.0, "capped_rows": 13}, "training_rows": 2794, "validation_rows": 699, "engineering_seconds": 686.2797140139999}
+SQ2: fitted all 2794 rows, 40 predictors; {'name': 'SQ2', 'training_rows': 2794, 'units': 'sqrt(INR millions)'}
+SQ2: fitted all 2794 rows, 40 predictors; {'name': 'SQ2', 'training_rows': 2794, 'units': 'sqrt(INR millions)'}
+{"PILOT": "SQ2", "status": "PASS", "fold_seconds": 125.15698242200006, "behavior": {"permutation_difference_INR": 0.0, "label_id_difference_INR": 0.0, "batch_difference_INR": 0.0, "individual_difference_INR": 0.0, "missing_unseen_inputs": true}, "fresh_repeat_difference_INR": 0.0, "target_metadata": {"name": "SQ2", "training_rows": 2794, "units": "sqrt(INR millions)"}, "training_rows": 2794, "validation_rows": 699, "engineering_seconds": 684.9002949790001}
+{"PILOT_COMPLETE": "PASS", "screen_settings": ["Q99", "Q995", "SQ2"]}
+Q99: fitted all 2794 rows, 40 predictors; {'name': 'Q99', 'training_rows': 2794, 'units': 'INR millions', 'quantile': 0.99, 'quantile_method': 'linear', 'threshold_INR': 102535000.00000007, 'capped_rows': 28}
+{"setting": "Q99", "scheme": "42", "fold_complete": 1}
+Q99: fitted all 2794 rows, 40 predictors; {'name': 'Q99', 'training_rows': 2794, 'units': 'INR millions', 'quantile': 0.99, 'quantile_method': 'linear', 'threshold_INR': 100000000.0, 'capped_rows': 27}
+{"setting": "Q99", "scheme": "42", "fold_complete": 2}
+Q99: fitted all 2794 rows, 40 predictors; {'name': 'Q99', 'training_rows': 2794, 'units': 'INR millions', 'quantile': 0.99, 'quantile_method': 'linear', 'threshold_INR': 90070000.00000016, 'capped_rows': 28}
+{"setting": "Q99", "scheme": "42", "fold_complete": 3}
+Q99: fitted all 2795 rows, 40 predictors; {'name': 'Q99', 'training_rows': 2795, 'units': 'INR millions', 'quantile': 0.99, 'quantile_method': 'linear', 'threshold_INR': 100000000.0, 'capped_rows': 26}
+{"setting": "Q99", "scheme": "42", "fold_complete": 4}
+Q99: fitted all 2795 rows, 40 predictors; {'name': 'Q99', 'training_rows': 2795, 'units': 'INR millions', 'quantile': 0.99, 'quantile_method': 'linear', 'threshold_INR': 100149999.99999987, 'capped_rows': 28}
+{"setting": "Q99", "scheme": "42", "fold_complete": 5}
+Q99: fitted all 2794 rows, 40 predictors; {'name': 'Q99', 'training_rows': 2794, 'units': 'INR millions', 'quantile': 0.99, 'quantile_method': 'linear', 'threshold_INR': 100175000.0000004, 'capped_rows': 28}
+{"setting": "Q99", "scheme": "71", "fold_complete": 1}
+Q99: fitted all 2794 rows, 40 predictors; {'name': 'Q99', 'training_rows': 2794, 'units': 'INR millions', 'quantile': 0.99, 'quantile_method': 'linear', 'threshold_INR': 93140000.00000033, 'capped_rows': 28}
+{"setting": "Q99", "scheme": "71", "fold_complete": 2}
+Q99: fitted all 2794 rows, 40 predictors; {'name': 'Q99', 'training_rows': 2794, 'units': 'INR millions', 'quantile': 0.99, 'quantile_method': 'linear', 'threshold_INR': 100175000.0000004, 'capped_rows': 28}
+{"setting": "Q99", "scheme": "71", "fold_complete": 3}
+Q99: fitted all 2795 rows, 40 predictors; {'name': 'Q99', 'training_rows': 2795, 'units': 'INR millions', 'quantile': 0.99, 'quantile_method': 'linear', 'threshold_INR': 102529999.99999997, 'capped_rows': 28}
+{"setting": "Q99", "scheme": "71", "fold_complete": 4}
+Q99: fitted all 2795 rows, 40 predictors; {'name': 'Q99', 'training_rows': 2795, 'units': 'INR millions', 'quantile': 0.99, 'quantile_method': 'linear', 'threshold_INR': 88119999.9999999, 'capped_rows': 28}
+{"setting": "Q99", "scheme": "71", "fold_complete": 5}
+{"SCREEN_SETTING_COMPLETE": "Q99", "best_mean_relative_gain": -0.00014711871271978096}
+Q995: fitted all 2794 rows, 40 predictors; {'name': 'Q995', 'training_rows': 2794, 'units': 'INR millions', 'quantile': 0.995, 'quantile_method': 'linear', 'threshold_INR': 150000000.0, 'capped_rows': 13}
+{"setting": "Q995", "scheme": "42", "fold_complete": 1}
+Q995: fitted all 2794 rows, 40 predictors; {'name': 'Q995', 'training_rows': 2794, 'units': 'INR millions', 'quantile': 0.995, 'quantile_method': 'linear', 'threshold_INR': 130069999.9999997, 'capped_rows': 14}
+{"setting": "Q995", "scheme": "42", "fold_complete": 2}
+Q995: fitted all 2794 rows, 40 predictors; {'name': 'Q995', 'training_rows': 2794, 'units': 'INR millions', 'quantile': 0.995, 'quantile_method': 'linear', 'threshold_INR': 121314999.99999869, 'capped_rows': 14}
+{"setting": "Q995", "scheme": "42", "fold_complete": 3}
+Q995: fitted all 2795 rows, 40 predictors; {'name': 'Q995', 'training_rows': 2795, 'units': 'INR millions', 'quantile': 0.995, 'quantile_method': 'linear', 'threshold_INR': 150900000.000006, 'capped_rows': 14}
+{"setting": "Q995", "scheme": "42", "fold_complete": 4}
+Q995: fitted all 2795 rows, 40 predictors; {'name': 'Q995', 'training_rows': 2795, 'units': 'INR millions', 'quantile': 0.995, 'quantile_method': 'linear', 'threshold_INR': 130060000.0000004, 'capped_rows': 14}
+{"setting": "Q995", "scheme": "42", "fold_complete": 5}
+Q995: fitted all 2794 rows, 40 predictors; {'name': 'Q995', 'training_rows': 2794, 'units': 'INR millions', 'quantile': 0.995, 'quantile_method': 'linear', 'threshold_INR': 132629999.99999738, 'capped_rows': 14}
+{"setting": "Q995", "scheme": "71", "fold_complete": 1}
+Q995: fitted all 2794 rows, 40 predictors; {'name': 'Q995', 'training_rows': 2794, 'units': 'INR millions', 'quantile': 0.995, 'quantile_method': 'linear', 'threshold_INR': 130000000.0, 'capped_rows': 13}
+{"setting": "Q995", "scheme": "71", "fold_complete": 2}
+Q995: fitted all 2794 rows, 40 predictors; {'name': 'Q995', 'training_rows': 2794, 'units': 'INR millions', 'quantile': 0.995, 'quantile_method': 'linear', 'threshold_INR': 130699999.9999971, 'capped_rows': 14}
+{"setting": "Q995", "scheme": "71", "fold_complete": 3}
+Q995: fitted all 2795 rows, 40 predictors; {'name': 'Q995', 'training_rows': 2795, 'units': 'INR millions', 'quantile': 0.995, 'quantile_method': 'linear', 'threshold_INR': 150000000.0, 'capped_rows': 13}
+{"setting": "Q995", "scheme": "71", "fold_complete": 4}
+Q995: fitted all 2795 rows, 40 predictors; {'name': 'Q995', 'training_rows': 2795, 'units': 'INR millions', 'quantile': 0.995, 'quantile_method': 'linear', 'threshold_INR': 130060000.0000004, 'capped_rows': 14}
+{"setting": "Q995", "scheme": "71", "fold_complete": 5}
+{"SCREEN_SETTING_COMPLETE": "Q995", "best_mean_relative_gain": -0.00011061989687427372}
+SQ2: fitted all 2794 rows, 40 predictors; {'name': 'SQ2', 'training_rows': 2794, 'units': 'sqrt(INR millions)'}
+{"setting": "SQ2", "scheme": "42", "fold_complete": 1}
+SQ2: fitted all 2794 rows, 40 predictors; {'name': 'SQ2', 'training_rows': 2794, 'units': 'sqrt(INR millions)'}
+{"setting": "SQ2", "scheme": "42", "fold_complete": 2}
+SQ2: fitted all 2794 rows, 40 predictors; {'name': 'SQ2', 'training_rows': 2794, 'units': 'sqrt(INR millions)'}
+{"setting": "SQ2", "scheme": "42", "fold_complete": 3}
+SQ2: fitted all 2795 rows, 40 predictors; {'name': 'SQ2', 'training_rows': 2795, 'units': 'sqrt(INR millions)'}
+{"setting": "SQ2", "scheme": "42", "fold_complete": 4}
+SQ2: fitted all 2795 rows, 40 predictors; {'name': 'SQ2', 'training_rows': 2795, 'units': 'sqrt(INR millions)'}
+{"setting": "SQ2", "scheme": "42", "fold_complete": 5}
+SQ2: fitted all 2794 rows, 40 predictors; {'name': 'SQ2', 'training_rows': 2794, 'units': 'sqrt(INR millions)'}
+{"setting": "SQ2", "scheme": "71", "fold_complete": 1}
+SQ2: fitted all 2794 rows, 40 predictors; {'name': 'SQ2', 'training_rows': 2794, 'units': 'sqrt(INR millions)'}
+{"setting": "SQ2", "scheme": "71", "fold_complete": 2}
+SQ2: fitted all 2794 rows, 40 predictors; {'name': 'SQ2', 'training_rows': 2794, 'units': 'sqrt(INR millions)'}
+{"setting": "SQ2", "scheme": "71", "fold_complete": 3}
+SQ2: fitted all 2795 rows, 40 predictors; {'name': 'SQ2', 'training_rows': 2795, 'units': 'sqrt(INR millions)'}
+{"setting": "SQ2", "scheme": "71", "fold_complete": 4}
+SQ2: fitted all 2795 rows, 40 predictors; {'name': 'SQ2', 'training_rows': 2795, 'units': 'sqrt(INR millions)'}
+{"setting": "SQ2", "scheme": "71", "fold_complete": 5}
+{"SCREEN_SETTING_COMPLETE": "SQ2", "best_mean_relative_gain": 4.3826820759155745e-05}
+{"SCREEN_COMPLETE": true, "choices": []}
+V13 delivery complete: /content/mla_v13/delivery/V13_Report.md

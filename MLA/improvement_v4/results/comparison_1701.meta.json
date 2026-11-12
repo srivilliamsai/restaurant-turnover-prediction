@@ -1,0 +1,26 @@
+{
+  "context": {
+    "format_version": 1,
+    "scheme": "1701",
+    "input_hashes": {
+      "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+      "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+      "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+      "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+    },
+    "contract_sha256": "20238d3bf223066c2c0cf5b96e6efed931f44d74080056ec47ce7101ac9ac578",
+    "rows": 3493,
+    "implementation_sha256": {
+      "improvement_v4/pipeline.py": "c10b9cb16d13acbdfa0ff91a5f7bad3fe633d2145e26d61f5d9638a769b8e93c",
+      "improvement_v2/experiment.py": "48d0a81875b5814239f244621c0af0d8a5b0aea03815b6e91fdc79ec53a28fed",
+      "improvement_v3/experiments.py": "cc5d39f95855f05bea25340a2fadf23ecf0941aa23c9a453a9c45eb315df4693",
+      "improvement_v4/features/screen_features.py": "783203c3683f436ada35450e96fd5849e755aeaead5e7c96d1f506e59240d585",
+      "improvement_v4/confirm_candidate.py": "aa8c10b1f5d8a4d46ed51c7cd1e365c466a8c681a74d938cc2744d0fd159a58d"
+    }
+  },
+  "file_sha256": "69e5611c320fc4f3add271679c8ff045a6be985ded96a5da7a412fe2f3f04404",
+  "origin": "Audited first run, launched before guard-only patch",
+  "initial_provenance_sha256": "1059d403303778b5cd109838085ccf6878f71f8a78e368a72ad60daaba7751d6",
+  "audit_evidence_sha256": "bf07d06def29984016534c81f19ffd2165075d6f1be98a744a621f38b66c811b",
+  "proof": "Input and frozen contract hashes unchanged; original existing pipeline function ASTs identical except verified prior-cache read; confirm script differs only in cache read/write guards; existing-v3 arrays verified against its manifest."
+}

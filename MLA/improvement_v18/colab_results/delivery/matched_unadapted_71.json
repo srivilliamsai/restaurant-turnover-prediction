@@ -1,0 +1,131 @@
+{
+  "rmse": 19615566.4085886,
+  "fit_metadata": [
+    {
+      "name": "UNADAPTED",
+      "training_rows": 2794,
+      "units": "raw INR millions",
+      "all_original_training_targets_retained": true,
+      "seed": 10242,
+      "training_target_sha256": "bc43caf0460c607eee65b54a82449b5a002cf48dea0e49da9ee44f1805dd48cb",
+      "categorical_columns": [
+        "Cuisine",
+        "City",
+        "Restaurant Location",
+        "Endoresed By",
+        "Restaurant Type",
+        "Restaurant Theme",
+        "Cuisine 1",
+        "Cuisine 2"
+      ],
+      "features": 40,
+      "actual_estimators": 1,
+      "precision": "float32",
+      "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+      "diagnostic_only": true,
+      "fit_seconds": 6.147393052000098,
+      "last_query_seconds": 2.5519085000000814
+    },
+    {
+      "name": "UNADAPTED",
+      "training_rows": 2794,
+      "units": "raw INR millions",
+      "all_original_training_targets_retained": true,
+      "seed": 10242,
+      "training_target_sha256": "2b57c1e6dd5e98b8a528b32cba82afeb64f5b41c68212a27e8b57db85764d9e7",
+      "categorical_columns": [
+        "Cuisine",
+        "City",
+        "Restaurant Location",
+        "Endoresed By",
+        "Restaurant Type",
+        "Restaurant Theme",
+        "Cuisine 1",
+        "Cuisine 2"
+      ],
+      "features": 40,
+      "actual_estimators": 1,
+      "precision": "float32",
+      "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+      "diagnostic_only": true,
+      "fit_seconds": 6.183081013999981,
+      "last_query_seconds": 2.5520322950001173
+    },
+    {
+      "name": "UNADAPTED",
+      "training_rows": 2794,
+      "units": "raw INR millions",
+      "all_original_training_targets_retained": true,
+      "seed": 10242,
+      "training_target_sha256": "e236b96023251f17400b8c3ce488341df1daed1c126d73666074e1e4763e3362",
+      "categorical_columns": [
+        "Cuisine",
+        "City",
+        "Restaurant Location",
+        "Endoresed By",
+        "Restaurant Type",
+        "Restaurant Theme",
+        "Cuisine 1",
+        "Cuisine 2"
+      ],
+      "features": 40,
+      "actual_estimators": 1,
+      "precision": "float32",
+      "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+      "diagnostic_only": true,
+      "fit_seconds": 6.165745474999994,
+      "last_query_seconds": 2.5508589020000727
+    },
+    {
+      "name": "UNADAPTED",
+      "training_rows": 2795,
+      "units": "raw INR millions",
+      "all_original_training_targets_retained": true,
+      "seed": 10242,
+      "training_target_sha256": "61c2f5f74aedcdc330a291eac6bd03dff8de065983b372b634f19b6ac3fa86d0",
+      "categorical_columns": [
+        "Cuisine",
+        "City",
+        "Restaurant Location",
+        "Endoresed By",
+        "Restaurant Type",
+        "Restaurant Theme",
+        "Cuisine 1",
+        "Cuisine 2"
+      ],
+      "features": 40,
+      "actual_estimators": 1,
+      "precision": "float32",
+      "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+      "diagnostic_only": true,
+      "fit_seconds": 6.128068833000043,
+      "last_query_seconds": 2.5625399789998937
+    },
+    {
+      "name": "UNADAPTED",
+      "training_rows": 2795,
+      "units": "raw INR millions",
+      "all_original_training_targets_retained": true,
+      "seed": 10242,
+      "training_target_sha256": "94e201c10180c5c7d111d045fc0e09603fc4b8cceb4437e6ce26ce38dd9e94ea",
+      "categorical_columns": [
+        "Cuisine",
+        "City",
+        "Restaurant Location",
+        "Endoresed By",
+        "Restaurant Type",
+        "Restaurant Theme",
+        "Cuisine 1",
+        "Cuisine 2"
+      ],
+      "features": 40,
+      "actual_estimators": 1,
+      "precision": "float32",
+      "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+      "diagnostic_only": true,
+      "fit_seconds": 6.174761934999879,
+      "last_query_seconds": 2.5812667719999354
+    }
+  ],
+  "diagnostic_only": true
+}

@@ -1,0 +1,14 @@
+{
+  "checked_epoch": 1793207547.9042199,
+  "method": "Live owned Colab console: nvidia-smi and ps",
+  "gpu": "Tesla T4",
+  "gpu_utilization_percent": 100,
+  "gpu_memory_used_MiB": 13231,
+  "gpu_memory_total_MiB": 15360,
+  "fresh_worker_pid": 7744,
+  "fresh_worker_elapsed_seconds": 215,
+  "fresh_worker_cpu_percent": 96.4,
+  "fresh_worker_state": "Rl",
+  "fresh_worker_uses_isolated_notebook_directory": true,
+  "console_closed_without_interrupting_worker": true
+}

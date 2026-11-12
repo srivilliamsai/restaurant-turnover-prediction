@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-10-27T19:24:52.569665+05:30",
+  "status": "proposal_only",
+  "plan_sha256": "ef3ecf27b7d4c16e6d519a81b4e8eed5bf0f7eff5977e63988e7831a1c3663cd",
+  "local_evidence": {
+    "improvement_v9/colab_cli_runs/20261026T160148Z/portable_delivery/V9_Report.md": "3810c806c89e71cd257f890b0bc19c33c83d8c0a164e7bc26bf7860c5e2522b2",
+    "improvement_v10/reference/v9_corrected_confirmation.json": "b7417ee90a82aa72eceb50585d89fe3ed0c8fd64f2bc7ca8da8861f3694ca70a",
+    "improvement_v10/colab_results/delivery/portal_result.json": "0eb5c489f69e886f5e0192eb319b53c932859901804748ce89a43a81b10536ae",
+    "improvement_v10/colab_results/results/decision.json": "6ffd6e624f67b5cc8970a88908fa8ab9bad46ee44eb2864a7124824d227ba8e5",
+    "improvement_v8/REPORT.md": "537a43ecdba6fc6b3e64c2282f2119d819b0b5bff17e3a98c9d084c264a5092e",
+    "improvement_v7/REPORT.md": "c43c825a8bddafe6819960d2ca89a83beec61e5cec7e9a330e28e46f7a2bb257"
+  },
+  "primary_web_resources": [
+    "https://docs.priorlabs.ai/models",
+    "https://huggingface.co/Prior-Labs/tabpfn_3_5",
+    "https://huggingface.co/Prior-Labs/tabpfn_2_5",
+    "https://github.com/soda-inria/tabicl",
+    "https://raw.githubusercontent.com/soda-inria/tabicl/main/src/tabicl/_sklearn/regressor.py",
+    "https://github.com/dholzmueller/pytabkit"
+  ],
+  "new_model_fits": 0,
+  "new_compute_allocations": 0
+}

@@ -1,0 +1,7 @@
+{
+  "reason": "Colab reports zero active assignments; remote root and kernel return 404. Audit saved, no retry pilots or accuracy fits completed.",
+  "old_coordinator_stopped": true,
+  "original_retry_budget_preserved": true,
+  "numerical_sources_changed": false,
+  "epoch": 1793243412.876281
+}

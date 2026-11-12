@@ -48,3 +48,11 @@ Open [submission.ipynb](submission.ipynb) from the repository root for the same 
 | `validation/` | Historical confirmation and GPU reproduction results |
 
 TabPFN v2 is described in [Hollmann et al., Nature (2025)](https://doi.org/10.1038/s41586-024-08328-6). Checkpoint revisions are recorded in [the artifact manifest](artifacts/manifest.json).
+
+## MLA project and experiment history
+
+The [MLA folder](MLA) contains the original project layout, with the earlier `submission.csv` and `submission.ipynb`, the source datasets, and the experiment directories from `improvement_v2` through `improvement_v23`. It includes the experiment source, reports, saved predictions, numerical validation data and model references. The [historical results summary](MLA/CURRENT_BEST.md) links to the experiment records.
+
+Run historical scripts from `MLA/` when they expect that working directory. The archived runs have their own dependency pins and runtime requirements. Filenames and references were sanitized for publication, and historical notebook outputs were cleared. Historical hash records describe the original run artifacts. For the supported reproduction workflow, use the commands above and the notebook at the repository root.
+
+Installed environments, generated ZIP bundles, account records, portal screenshots and downloaded model weights are omitted from the repository. Download metadata and the [V23 checkpoint downloader](MLA/improvement_v23/download_checkpoint.py) are included for reproducing the external dependencies.

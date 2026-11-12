@@ -1,0 +1,14 @@
+{
+  "status": "coordinator_held_for_engineering_repair",
+  "pid": 12439,
+  "phase": "running_screen",
+  "epoch": 1793267870.301564,
+  "clock_reset": false,
+  "accuracy_results_reviewed": false,
+  "numerical_tolerances_changed": false,
+  "models_or_blend_grid_added": false,
+  "repairs_committed": [
+    "C8 fixed query layout without changing model or tolerance",
+    "Kumo compatible Numba in isolated candidate environment"
+  ]
+}

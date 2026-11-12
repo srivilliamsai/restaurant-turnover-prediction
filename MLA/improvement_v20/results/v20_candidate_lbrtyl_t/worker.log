@@ -1,0 +1,3 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/content/mla_v20/tabicl_env/lib/python3.13/site-packages/tabicl/_sklearn/preprocessing.py:138: UserWarning: The following categorical columns have a cardinality above 40: ['City']. High-cardinality columns might benefit from a better encoding than ordinal encoding, e.g. Skrub's TableVectorizer for strings.
+  warnings.warn(

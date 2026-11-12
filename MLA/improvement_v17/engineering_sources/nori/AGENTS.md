@@ -1,0 +1,154 @@
+# AGENTS.md
+
+Guidance for coding agents (Claude Code, Cursor, Codex, etc.) working in this
+repo. Keep it accurate — update it when commands, layout, or conventions change.
+
+## What this is
+
+This is one source tree for two independently versioned Python distributions.
+`synthefy-nori` is the heavyweight local model/runtime/training package;
+`libs/synthefy/` builds the lightweight `synthefy` client and backend-neutral
+workflows. The published dependency points heavy → light. Base `synthefy` must
+never import Torch or `synthefy_nori`; only an explicit `mode="local"` call
+may lazily load the installed runtime.
+
+Nori is a tabular foundation model (`FeaturesTransformer`), shipped in four
+sizes — `nori-6m`, `nori-1-5`, `nori-30m`, `nori-100m` (~6M / ~21M / ~29M / ~98M
+parameters; `nori-1-5` is Nori 1.5, the Model v3 release) — for
+**regression** via in-context learning. Given a few
+labeled context rows, it predicts on query rows in a single forward pass, with no
+task-specific training. It is trained entirely on synthetic data.
+
+## Setup
+
+- Both published distributions retain Python **≥ 3.9**. The locked
+  development graph holds Torch below 2.9; isolated compatibility jobs cover
+  newer Torch versions on Python 3.10+. The interpreter and dependencies are
+  managed by **uv** (`uv.lock` is committed). There may be no bare `python` on PATH — use `uv run`.
+- Install everything (incl. dev tools): `uv sync --extra dev`
+- Optional extras: `--extra train` (wandb, xgboost), `--extra eval`
+  (matplotlib, openml).
+
+## Core commands (these mirror CI — run them before any PR)
+
+```bash
+uv sync --extra dev
+uv run pytest                       # fast suite; slow/network tests deselected by default
+uv run ruff check src scripts tests libs/synthefy/src libs/synthefy/tests
+uv build
+uv build --package synthefy
+```
+
+- Import smoke (what CI gates on first): `uv run python -c "import synthefy_nori"`
+- Full inference check (downloads the public ~47MB checkpoint, ~15s on CPU):
+  `uv run pytest -m slow`
+- **Before finalizing a PR, run `/review` and/or `/code-review`** to catch bugs
+  and reuse/simplification issues in the diff. (`/code-review` reviews the
+  current diff for correctness + cleanups; `/review` reviews a pull request.)
+
+## How inference works (and how to test it)
+
+- There is **no default checkpoint**: `model=` is required and selects one of
+  four **public** HF repos, each holding `nori.pt` — `nori-6m` → `Synthefy/Nori`,
+  `nori-1-5` → `Synthefy/Nori-1-5`, `nori-30m` → `Synthefy/Nori-30M`,
+  `nori-100m` → `Synthefy/Nori-100M`
+  (registry: `NORI_MODELS` in `src/synthefy_nori/hf.py`). First use downloads
+  and caches it — **no token or access request needed**. A token is only used
+  for higher rate limits or for pointing at a private/custom repo.
+- Public API (`src/synthefy_nori/api.py`): `NoriRegressor`
+  (sklearn-style `fit` / `predict`; `predict` takes
+  `output_type="mean"/"median"/"mode"` per the `TabPFNRegressor` contract,
+  plus opt-in `discretize=`/`categorical_levels=`
+  to return labels on a discrete target's lattice — strategies in
+  `synthefy_nori/discretize.py`), plus the one-shot `infer` / `predict`
+  helpers and `config_path`. The public API is **regression-only** as of
+  0.2.0 (classification was removed in #10). The predictor's legacy low-K
+  auto-snap (`discrete_y_snap_max_unique`) is **off by default** — lattice
+  snapping is opt-in only.
+- `fit()` only stores the context rows; all compute happens in `predict()`.
+  Uses GPU when available, else CPU.
+- The one-shot `infer` / `predict` helpers accept lists, numpy arrays, or pandas
+  DataFrames. When both `X_train` and `X_test` are DataFrames, non-numeric
+  columns are encoded by `libs/synthefy/src/synthefy/featurize.py`;
+  `src/synthefy_nori/featurize.py` preserves the legacy import path.
+
+- Pass `model_path="…/checkpoint.pt"` to run a local checkpoint and skip the
+  download entirely.
+
+## Layout
+
+```
+src/synthefy_nori/
+  api.py          Public local-model API (sklearn-style NoriRegressor).
+  nori_ts/        Compatibility facade for the lightweight forecaster.
+  model/          FeaturesTransformer architecture.
+  inference/      NoriPredictor + preprocessing.
+  training/       Data generation, trainer, loss, config, and CLI.
+  evaluation/     Benchmark runner + CLI.
+libs/synthefy/src/synthefy/
+  nori_client.py  Lightweight explicit-backend client.
+  featurize.py    Canonical model-free tabular preparation.
+  text_features.py Canonical text preparation.
+  nori_ts/core.py Canonical backend-configurable NoriTSForecaster.
+  nori_ts/tsfeatures/ Canonical model-free time-series preparation.
+scripts/          Training and evaluation helpers.
+docs/             Training, inference, evaluation, and Hugging Face guides.
+examples/         Runnable inference and upload scripts.
+tests/            Fast tests plus opt-in slow end-to-end tests.
+```
+
+## Conventions & gotchas
+
+- **Imports go at the top of the file, never inside functions.** `torch`,
+  `numpy`, etc. are imported at module top (`torch` is a hard dependency, so
+  `import synthefy_nori` loads it regardless). The one deliberately deferred
+  import in `api.py` is the internal `NoriPredictor` (loaded in
+  `_get_predictor`), kept lazy only to avoid pulling the model/inference stack
+  in at package-import time — not a license to move package imports into
+  functions.
+- **Ruff is intentionally narrow**: only `E9,F821,F822,F823` (syntax +
+  undefined names), line length 120, target `py310`. It is a correctness gate,
+  not a full style/format gate. A pre-commit hook (`ruff`) is configured.
+- **Network tests are marked `slow`** and deselected via
+  `addopts = -m 'not slow'`. Plain `pytest` stays offline and fast (~0.1s).
+- **Never commit checkpoints or data.** `.gitignore` covers
+  `*.pt`/`*.ckpt`/`*.safetensors`, `checkpoints/`, `data/`, `results/`,
+  `wandb/`, `cache/`.
+- **Versioning & distributions**: this tree builds public `synthefy-nori` and
+  `synthefy` artifacts with separate versions and disjoint namespaces. Keep
+  each distribution’s metadata and `__version__` in sync with its namespaced
+  release tag. Only the public repository may publish; internal and staging
+  build and test candidates. The release process is in `RELEASING.md`.
+- **Training is GPU + DDP.** Real runs go through `scripts/train.sh` (torchrun)
+  on one or more CUDA GPUs; the distributed path places each rank on
+  `cuda:<rank>`. With a single process (`NPROC_PER_NODE=1`), training runs
+  non-distributed on `--device`, which defaults to `cuda:0`.
+- **CPU smoke (no GPU needed)** — exercises the full loop (data-gen →
+  CCMM/pinball loss → Muon step → checkpoint write) in 2 steps:
+
+  ```bash
+  WANDB_MODE=disabled uv run synthefy-nori-train \
+    --device cpu --no-mixed-precision --no-prefetch \
+    --task-type reg --total-steps 2 --run-steps 2 --save-interval 2 \
+    --embed-dim 32 --hid-dim 64 --nlayers 2 --nhead 2 \
+    --batch-size 2 --max-features 16 --max-budget 4000 \
+    --checkpoint-dir /tmp/nori_smoke
+  ```
+- Shell scripts run with the project venv (`.venv/bin/python`); they do not rely
+  on a bare `python`.
+
+## Provenance / attribution (do not strip)
+
+The codebase originated as a fork of **LimiX** (Apache-2.0,
+<https://github.com/limix-ldm-ai/LimiX>) and has since diverged; the vestigial
+`LimiX*` class names were renamed to `Nori*`. The **canonical LimiX-2M
+model is used in exactly one place** — an optional training-time ICL learnability
+filter, downloaded via `download_limix()` / `--icl-filter-model limix`. Those
+references name the real upstream model — leave them intact, and don't
+re-introduce `LimiX*` naming for Synthefy's own classes. Parts of the
+synthetic-data prior generator draw on **TabICL** (BSD-3-Clause,
+<https://github.com/soda-inria/tabicl>).
+
+Keep the `LICENSE`, `NOTICE`, and `licenses/` attributions intact; check those
+files before removing upstream names. The full upstream license texts live in
+`licenses/` and are shipped via `license-files` in `pyproject.toml`.

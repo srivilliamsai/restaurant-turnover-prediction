@@ -1,0 +1,16 @@
+AUDIT PASS: six settings, 24 selectable blends; original targets and scored V9 preserved.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+C+S+G: fitted 2794 original targets, 66 features, 16 estimators
+Traceback (most recent call last):
+  File "/content/mla_v10/workflow.py", line 239, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/content/mla_v10/workflow.py", line 230, in main
+    globals()[stage](e)
+    ~~~~~~~~~~~~~~~~^^^
+  File "/content/mla_v10/workflow.py", line 51, in pilot
+    checks=verify.inference_checks(lambda raw:modeling.predict(fitted,raw),e.test)
+  File "/content/mla_v10/verify.py", line 87, in inference_checks
+    assert difference<.01,f'Prediction batch dependence: INR {difference}'
+           ^^^^^^^^^^^^^^
+AssertionError: Prediction batch dependence: INR 1.2951331064105034

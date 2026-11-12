@@ -1,0 +1,28 @@
+{
+  "seconds": 16689.4610865,
+  "by_stage": {
+    "audit": 24.13545861400104,
+    "pilot": 2464.895143755195,
+    "unobserved_runtime_interruption": 38470.171738386154,
+    "screen": 10093.562395673001,
+    "allocation_retry": 78.22642787499899,
+    "resumed_setup": 78.38645145800001,
+    "confirm": 6570.3175293310005,
+    "export": 2617.893088759998
+  },
+  "maximum_hours": 11.710660865295736,
+  "measurement": "Accumulated stage wall time plus conservatively charged unobserved interruption interval.",
+  "global_cap_hours": 24,
+  "prior_charged_seconds": 44241.62088493535,
+  "stage_carry_seconds": {
+    "audit": 24.13545861400104,
+    "pilot": 2464.895143755195,
+    "unobserved_runtime_interruption": 38470.171738386154,
+    "screen": 3282.418544180001
+  },
+  "budget_amendment_sha256": "0c4b54ac59a8aa4190ef7b32953bbffa383f8d89164fd98812b0cc48bfde25e0",
+  "global_charged_seconds": 60931.08197143535,
+  "merged_mac_receipts": [
+    "2e991b3fc8223406b4efa2c78074aa626dd4e6270777ec5d9a498b08261b0530"
+  ]
+}

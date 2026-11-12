@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "extracted_archive_decision_reproduction": "PASS",
+  "archive_files_verified": 498,
+  "original_planning_snapshot_hashes_verified": 8,
+  "matched_original_review": true,
+  "recomputed_blends": 3,
+  "verified_fold_outputs": 10,
+  "turnover_models_refitted": 0,
+  "gpu_allocations": 0,
+  "portal_uploads": 0
+}

@@ -1,0 +1,28 @@
+AUDIT PASS: four fixed candidate recipes, at most twenty-five comparisons, seven verified baseline assignments.
+{"PILOT": "C8", "status": "PASS", "reason": null}
+{"PILOT": "KS8", "status": "engineering_excluded", "reason": "AttributeError: module 'numba.cuda.types' has no attribute 'NPDatetime'"}
+{"PILOT": "D8", "status": "PASS", "reason": null}
+{"PILOT": "KM8", "status": "engineering_excluded", "reason": "AttributeError: module 'numba.cuda.types' has no attribute 'NPDatetime'"}
+{"PILOT_COMPLETE": true, "admitted": ["C8", "D8"], "forecasts_hours": [0.13945864270000013, 1.6383000796446283, 0.6673086550404445]}
+{"setting": "C8", "scheme": "42", "fold_complete": 1}
+{"setting": "C8", "scheme": "42", "fold_complete": 2}
+{"setting": "C8", "scheme": "42", "fold_complete": 3}
+{"setting": "C8", "scheme": "42", "fold_complete": 4}
+{"setting": "C8", "scheme": "42", "fold_complete": 5}
+{"setting": "C8", "scheme": "71", "fold_complete": 1}
+{"setting": "C8", "scheme": "71", "fold_complete": 2}
+{"setting": "C8", "scheme": "71", "fold_complete": 3}
+{"setting": "C8", "scheme": "71", "fold_complete": 4}
+{"setting": "C8", "scheme": "71", "fold_complete": 5}
+{"setting": "D8", "scheme": "42", "fold_complete": 1}
+{"setting": "D8", "scheme": "42", "fold_complete": 2}
+{"setting": "D8", "scheme": "42", "fold_complete": 3}
+{"setting": "D8", "scheme": "42", "fold_complete": 4}
+{"setting": "D8", "scheme": "42", "fold_complete": 5}
+{"setting": "D8", "scheme": "71", "fold_complete": 1}
+{"setting": "D8", "scheme": "71", "fold_complete": 2}
+{"setting": "D8", "scheme": "71", "fold_complete": 3}
+{"setting": "D8", "scheme": "71", "fold_complete": 4}
+{"setting": "D8", "scheme": "71", "fold_complete": 5}
+{"SCREEN_COMPLETE": true, "choices": []}
+V19 delivery complete: /content/mla_v19/delivery/V19_Report.md

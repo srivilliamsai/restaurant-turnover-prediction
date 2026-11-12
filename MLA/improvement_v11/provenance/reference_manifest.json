@@ -1,0 +1,618 @@
+{
+  "inputs": {
+    "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+    "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+    "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+    "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+  },
+  "execution_contract": {
+    "torch": "2.11.0+cu130",
+    "tabpfn": "9.2.0",
+    "cuda": "13.0",
+    "gpu": "Tesla T4",
+    "precision": "float32",
+    "checkpoint": {
+      "repo_id": "Prior-Labs/TabPFN-v2-reg",
+      "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+      "filename": "tabpfn-v2-regressor.ckpt",
+      "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736"
+    }
+  },
+  "v9_portal_rmse": 11904515.9864996,
+  "screenshot_rank": 9,
+  "oof": {
+    "42": {
+      "file": "reference/oof_42.npz",
+      "sha256": "25d687601f3d33808999407dcf4b2490fa608f8d0cc1bab76a70df6f0b6a723b",
+      "fold_sha256": "f8c856fc074d5653672bbf04d4b38cf3b0c3f2e8dc87ce77daf7bcd0ebe501a4",
+      "row_ids_sha256": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+      "verified_from": [
+        {
+          "kind": "original-platform V7 snapshot",
+          "file": "baseline_snapshots/v7_42.npz",
+          "sha256": "48c19dded9e46b1b5a0760ce42abb5cad33d62cc3300f92958bdf6a727026f29",
+          "fold_sha256": "f8c856fc074d5653672bbf04d4b38cf3b0c3f2e8dc87ce77daf7bcd0ebe501a4",
+          "train_ids": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+          "inputs": {
+            "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+            "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+            "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+            "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+          },
+          "source_metadata": [
+            {
+              "context": {
+                "name": "v5",
+                "inputs": {
+                  "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+                  "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+                  "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+                  "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+                },
+                "sources": {
+                  "models.py": "029de9731d057d8827ff6c7f1789f7669b408eeb3626e50a1677db223614edf8",
+                  "workflow.py": "c99c63e5575e514ec030828a40c16511c8aa0fab5edb04c842d555c347114e8a",
+                  "reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+                  "scored_reference.json": "7148150a20525f1bee168fe6a0b6fd44d8b1244348881ee962aca464affa74cd"
+                },
+                "contract": "fec9f422b498cdbf84a3a8fcb093f405302e3bd2e1c29a14f62b9b1fbe04a376",
+                "spec": null,
+                "seeds": [
+                  10242,
+                  20242
+                ],
+                "training_rows": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+                "extra": {
+                  "scheme": "42",
+                  "folds": "f8c856fc074d5653672bbf04d4b38cf3b0c3f2e8dc87ce77daf7bcd0ebe501a4"
+                }
+              },
+              "sha256": "5d828869dc82845157432dccf58e6395f3310280b882651f8204b7a0f7a8f421",
+              "diagnostics": {
+                "origin": "verified actual v6 frozen-v5 predictions",
+                "source_sha256": "7646a11fd435821666a6266832a9018a23338f1b94e5097909d3e667367f2c9c"
+              }
+            },
+            {
+              "context": {
+                "name": "residual_tree_l2",
+                "inputs": {
+                  "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+                  "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+                  "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+                  "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+                },
+                "sources": {
+                  "models.py": "029de9731d057d8827ff6c7f1789f7669b408eeb3626e50a1677db223614edf8",
+                  "workflow.py": "c99c63e5575e514ec030828a40c16511c8aa0fab5edb04c842d555c347114e8a",
+                  "reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+                  "scored_reference.json": "7148150a20525f1bee168fe6a0b6fd44d8b1244348881ee962aca464affa74cd"
+                },
+                "contract": "fec9f422b498cdbf84a3a8fcb093f405302e3bd2e1c29a14f62b9b1fbe04a376",
+                "spec": {
+                  "family": "residual",
+                  "kind": "cat",
+                  "loss": "RMSE"
+                },
+                "seeds": [
+                  10242,
+                  20242
+                ],
+                "training_rows": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+                "extra": {
+                  "scheme": "42"
+                }
+              },
+              "sha256": "da659505f22193bcdb927421fafe56d6f7d59864d916f407194edc5451a80c67"
+            }
+          ]
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_42_fold0.npz",
+          "sha256": "a559550b71c9a5d9c4d70aa42b24238f46e6acc343bb806791979f0c2e177881",
+          "metadata_sha256": "f1f8f36b25bcecda6960e09a9e9f65c8813c3d5488c71d99c4f9ae83d134ccf6"
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_42_fold1.npz",
+          "sha256": "fd8a57156a45ed0bd0f56190b1ca766193ab6402017ed9fa6374d4fc18d1cd2a",
+          "metadata_sha256": "7c8f67f15d3083f2ee9f2184230ae49169703d9d6ff834b7e2c5d197f2b84c1b"
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_42_fold2.npz",
+          "sha256": "9ddf5576beb24cb2f38824bdc9d353071dc620bd0039294dff4f3c673dc0d17f",
+          "metadata_sha256": "0c95df93cc4427c432c4ba8848018b6d15dbdaddf11895357238fb0b69b0fac6"
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_42_fold3.npz",
+          "sha256": "416672b3b7463350fc89f572480487ada687e03430394a68004a5432f964e2af",
+          "metadata_sha256": "7883223458805bdf601fb24ab5de9ff675af38345d89c107df4975345b8b6c91"
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_42_fold4.npz",
+          "sha256": "03f2a167bc47c1e4f11322921bb6876e9e04f12b6ef54210dcae62243be8218c",
+          "metadata_sha256": "e8ddd412f516b6777be214865fa75a7b63597273b8bd9ccb873567ea5a649719"
+        }
+      ],
+      "v9_rmse": 19731241.65831727
+    },
+    "71": {
+      "file": "reference/oof_71.npz",
+      "sha256": "9daad2ef5359d0341477977c1bef19bd915a57129d780b605643342188c0ea54",
+      "fold_sha256": "369051948161e2c7ce035455beac8aa9b2a832e49fe341aa6bcd3407d9adc9f4",
+      "row_ids_sha256": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+      "verified_from": [
+        {
+          "kind": "original-platform V7 snapshot",
+          "file": "baseline_snapshots/v7_71.npz",
+          "sha256": "d2dc4282cfc3d6771c7e1ffd62629d24f204da19d975e430190e6640774c8b06",
+          "fold_sha256": "369051948161e2c7ce035455beac8aa9b2a832e49fe341aa6bcd3407d9adc9f4",
+          "train_ids": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+          "inputs": {
+            "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+            "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+            "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+            "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+          },
+          "source_metadata": [
+            {
+              "context": {
+                "name": "v5",
+                "inputs": {
+                  "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+                  "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+                  "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+                  "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+                },
+                "sources": {
+                  "models.py": "029de9731d057d8827ff6c7f1789f7669b408eeb3626e50a1677db223614edf8",
+                  "workflow.py": "c99c63e5575e514ec030828a40c16511c8aa0fab5edb04c842d555c347114e8a",
+                  "reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+                  "scored_reference.json": "7148150a20525f1bee168fe6a0b6fd44d8b1244348881ee962aca464affa74cd"
+                },
+                "contract": "fec9f422b498cdbf84a3a8fcb093f405302e3bd2e1c29a14f62b9b1fbe04a376",
+                "spec": null,
+                "seeds": [
+                  10242,
+                  20242
+                ],
+                "training_rows": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+                "extra": {
+                  "scheme": "71",
+                  "folds": "369051948161e2c7ce035455beac8aa9b2a832e49fe341aa6bcd3407d9adc9f4"
+                }
+              },
+              "sha256": "c8283fd4fe1e24671168944c752ce8b205a742100f59fb8027718e26fb4ed87b",
+              "diagnostics": {
+                "origin": "verified actual v6 frozen-v5 predictions",
+                "source_sha256": "5375f1a0e0e3682e454392ebf6486885af498ec12b450807611d163968bc0652"
+              }
+            },
+            {
+              "context": {
+                "name": "residual_tree_l2",
+                "inputs": {
+                  "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+                  "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+                  "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+                  "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+                },
+                "sources": {
+                  "models.py": "029de9731d057d8827ff6c7f1789f7669b408eeb3626e50a1677db223614edf8",
+                  "workflow.py": "c99c63e5575e514ec030828a40c16511c8aa0fab5edb04c842d555c347114e8a",
+                  "reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+                  "scored_reference.json": "7148150a20525f1bee168fe6a0b6fd44d8b1244348881ee962aca464affa74cd"
+                },
+                "contract": "fec9f422b498cdbf84a3a8fcb093f405302e3bd2e1c29a14f62b9b1fbe04a376",
+                "spec": {
+                  "family": "residual",
+                  "kind": "cat",
+                  "loss": "RMSE"
+                },
+                "seeds": [
+                  10242,
+                  20242
+                ],
+                "training_rows": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+                "extra": {
+                  "scheme": "71"
+                }
+              },
+              "sha256": "28c1a02dfc5d13b758e279943a345551847c2f8a168d879e56fa7553bf826a6a"
+            }
+          ]
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_71_fold0.npz",
+          "sha256": "e2c3b99713a31f852e7448566cdeb7f7bf9d9c64639fc55397d1e796cde06a38",
+          "metadata_sha256": "4de8ed8785f5f16027489f3dd036b3e6477bf642d8cdedc7fc730c3f87e36335"
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_71_fold1.npz",
+          "sha256": "627fd8bd1fb43cf9ad5f13502c487034074e02eec727fad4d14f44fd8176c09a",
+          "metadata_sha256": "55b211b316109265fdce602696ac560e7219c2b1a9da028a209f091ab4f5044b"
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_71_fold2.npz",
+          "sha256": "4aeabaf3e73dca430cb61950d028b3141eeeca91b3e2d83268d89e146ba0be25",
+          "metadata_sha256": "1906009dbc88987633e2811406e2e1e2644753f463d77e881e538563b754ad71"
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_71_fold3.npz",
+          "sha256": "3a5f80646e497f2dbfefba860ff39951185870d859bbb4394e4ef0f2ec25ba65",
+          "metadata_sha256": "696766f5c4ec82e881ca9c0a7cbb42223cc53c9c32167171c134a6252eb94694"
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_71_fold4.npz",
+          "sha256": "b05641a45edc9c1ee5c2d2625593db26a632d7fac8c00f095ba87a74f264cbb8",
+          "metadata_sha256": "5daa2ee14e38ea9dc72125864b81474b3b4219692ca2801d078becbb7f2a5035"
+        }
+      ],
+      "v9_rmse": 19733020.017403986
+    },
+    "48211": {
+      "file": "reference/oof_48211.npz",
+      "sha256": "7b4ec7db196646ceb4879ce69018258b4843b4bac6ded7e44a80545885d3b6d5",
+      "fold_sha256": "b7423787aace2bca5e6fbe8a07de473e29926f4bb098555c8eddf852a4197fb6",
+      "row_ids_sha256": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+      "verified_from": [
+        {
+          "kind": "fresh original-platform V7 fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/portability_confirmation/cache/v7_48211_fold0.npz",
+          "sha256": "a8e2831c95da6985987c9bba0ed4a4c50f786b3562303eeceb89474bf7505cc7",
+          "metadata_sha256": "caf29cc07d3f8f94188408cc9b54c4837b8ad47593346b2b015e396e98f2136f"
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_48211_fold0.npz",
+          "sha256": "41155cd9a5e4510f347920c9ae73dc68b529bc73dd53d40325906ce1412ae60e",
+          "metadata_sha256": "70682b9667a4dc44371967dda37121da704d17fecb9d580e99f7252686856116"
+        },
+        {
+          "kind": "fresh original-platform V7 fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/portability_confirmation/cache/v7_48211_fold1.npz",
+          "sha256": "f86f4340741db9e299a1281d2a92ad04d6c5ddc47f13383ba60d766b0955cd42",
+          "metadata_sha256": "91c54faa284973fd375f26e9cf3a25da59d10f0ebd3af6900783a1a4c6ebad12"
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_48211_fold1.npz",
+          "sha256": "80705bf52dbf490fc154cb8154fb8dae40c15e7a76eb6d8c701a69ec3fbeb05f",
+          "metadata_sha256": "2dafb44564dfe4d5942683b11bc130d8a273ca1c08359a33f7a9408c4b57be92"
+        },
+        {
+          "kind": "fresh original-platform V7 fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/portability_confirmation/cache/v7_48211_fold2.npz",
+          "sha256": "3d2900f137a1d473e4e5a784105b95ff5516b5859cb820c522658a9c8342f29b",
+          "metadata_sha256": "cf7752bcdd2976a63a5983a45f69bd1897194b72a28e9dd71feea0a18fd53502"
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_48211_fold2.npz",
+          "sha256": "a24869bf36170f7de1c6e4e240519cc1a0863f82600d94d8c5b520677de189f7",
+          "metadata_sha256": "851ef27967d39882186d6bfc605153ecf93dc670e01cda872f32e1bc53449acd"
+        },
+        {
+          "kind": "fresh original-platform V7 fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/portability_confirmation/cache/v7_48211_fold3.npz",
+          "sha256": "91ed1947b8875fbf71f3ac560877e867872f5b327a480ffc5f29344eea3d404e",
+          "metadata_sha256": "73dbd3458655f6fad44f0d209a9e8dcb415aa167dd46082d2b94c0665a355f12"
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_48211_fold3.npz",
+          "sha256": "6f914db5eb150ce77c65076ea326763b06bfd29e8723acc3e9ad3eaecb08dbac",
+          "metadata_sha256": "97b15c114be8a3303323c8ae267b768f32e3f9d2bde7c90493e7e4e7b8fe5704"
+        },
+        {
+          "kind": "fresh original-platform V7 fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/portability_confirmation/cache/v7_48211_fold4.npz",
+          "sha256": "6c3bc2f77909a1515d3a9698e675afc85f7cc63bde5d270b44b6609d25110f51",
+          "metadata_sha256": "0a5e87c63c831c37a4b509dabadd3371613688d105580faf3592834573f65687"
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_48211_fold4.npz",
+          "sha256": "24900c7e2545e62e19865ee6d969c0489d8326be8b9b149bd9e3279e3e48840f",
+          "metadata_sha256": "29dd565b4867b9d0dbe8923121a25e698b88f6202e8120da7eb0acb980a4c118"
+        }
+      ],
+      "v9_rmse": 19743626.701006755
+    },
+    "48212": {
+      "file": "reference/oof_48212.npz",
+      "sha256": "7d39379e59f6cab019e3dd72856a718d0dcdae63f43d1653a64cc4b463b03bb3",
+      "fold_sha256": "958dfd8adb0e86a4b69d21158c9ea6bb44eef774b0111138772a235d5088ec0f",
+      "row_ids_sha256": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+      "verified_from": [
+        {
+          "kind": "fresh original-platform V7 fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/portability_confirmation/cache/v7_48212_fold0.npz",
+          "sha256": "7fb7ddc1184f43d53ed2e9cadcb73a805f6c99af0987e2dfd9f2f29c3922151e",
+          "metadata_sha256": "7b9b6a6aecaa07751cbc29f988dec3943ca664c6c3e664ef08110b12d3530973"
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_48212_fold0.npz",
+          "sha256": "95d21e070ab22eefa50c5e04442e9a5ba33f3fdd3b2e46491931deef8b83ef83",
+          "metadata_sha256": "0ecc66c32503f7abf8d29f9d7fa0dff64103166b8fac46ff5d095fd6cdddc157"
+        },
+        {
+          "kind": "fresh original-platform V7 fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/portability_confirmation/cache/v7_48212_fold1.npz",
+          "sha256": "e9bd08c60d7eb6278ba8c3d4545843e5b8447001e499981915db60edcede34b5",
+          "metadata_sha256": "98da0d5b7b4c26f2ca7ab687c3f998aa165da6f642135c2c21e6cc4a438e943f"
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_48212_fold1.npz",
+          "sha256": "e0210e24a1db75336ede86ec1ec6ae34b2d8a40cea81fcef8c9e961f85e68585",
+          "metadata_sha256": "d4698f6dc2416208732685d8c805ed4e4b8b9101c04848130b341027cd9cb221"
+        },
+        {
+          "kind": "fresh original-platform V7 fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/portability_confirmation/cache/v7_48212_fold2.npz",
+          "sha256": "9b45cd27388dee88bbae1cd854730002119ef0cef58ea321ed60147d65c600b9",
+          "metadata_sha256": "4df7b716d28a1717657f47aa44e58ebec91bffc6ce0baaf54ce7d5bc34a00ac1"
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_48212_fold2.npz",
+          "sha256": "d723557ab555be970a20395704bfc926a0a88b8227cfda44481e1061f04675a4",
+          "metadata_sha256": "ae12397f88b466584342bfe891dca7d1a0bd32bf66ef76c237000ae2261ef319"
+        },
+        {
+          "kind": "fresh original-platform V7 fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/portability_confirmation/cache/v7_48212_fold3.npz",
+          "sha256": "0e21bfaa3d9393762fb459b08fb83c7b41a64f45912fc0f9e97c29f0d2a0cf80",
+          "metadata_sha256": "ae58e0b9708cf2e548c753121bb128af40b61128f7e19188089e7c1b143b557b"
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_48212_fold3.npz",
+          "sha256": "eeedde28255da91e17d760fc7a3eb2d213256eccafa2467bc8f6a082cc058ef1",
+          "metadata_sha256": "736f41668ded033e22acbf29f9fe413f7f066efc76081e52acefa46e96ec50e3"
+        },
+        {
+          "kind": "fresh original-platform V7 fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/portability_confirmation/cache/v7_48212_fold4.npz",
+          "sha256": "af93bbf18021354c5009819fed06107c15daf2558c6a2e3daec8b1585f0746da",
+          "metadata_sha256": "5514a084a1738b9419450cdbaa726b9c70e7724c533675d991674f3eba2529e5"
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_48212_fold4.npz",
+          "sha256": "72c51bfe15e2b67a128fec363803037f997de0aec5021bdb00d42230f6dd693a",
+          "metadata_sha256": "fd1258900dce5a5458e28cc974568806aa534231b352ae3f203804b10fdfdc52"
+        }
+      ],
+      "v9_rmse": 19816597.319254283
+    },
+    "48213": {
+      "file": "reference/oof_48213.npz",
+      "sha256": "f9f2be1a23d8bfc77c97aadc56ce0518da2b3170af240e72db6bc68e2445ebdc",
+      "fold_sha256": "db60a21b06b7353c69098db932b19737fe6b10b8bcdf544e2641c8e92c5c2f03",
+      "row_ids_sha256": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+      "verified_from": [
+        {
+          "kind": "fresh original-platform V7 fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/portability_confirmation/cache/v7_48213_fold0.npz",
+          "sha256": "0dd7da870ef3e62838e9cc0657467f15bff5c14988be5a52619b8cc64dfaa3f9",
+          "metadata_sha256": "9dc22278089315476c48bc8e33bd5993b3dc2cb15a0faf2605213cc75da1f60a"
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_48213_fold0.npz",
+          "sha256": "3cdcc54ab172397437eb7de71399d588645d5cf0ba703025dcbca5bc3da93097",
+          "metadata_sha256": "2d09e316e298985250e53328d089254e43d50c2252893f5f7eda0773ebb9aff6"
+        },
+        {
+          "kind": "fresh original-platform V7 fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/portability_confirmation/cache/v7_48213_fold1.npz",
+          "sha256": "183b537090b1bf993292f032b0b301858063ed1b05210d207efb4b2540262d0e",
+          "metadata_sha256": "c81f77aa5eaa4f0afa180590f45a0d30d2981a5f0ee4fa1ed28f5f5ef5175f9c"
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_48213_fold1.npz",
+          "sha256": "c7f79d3d144ac3ed75738f85c97dc52732bbea07249558dd02284682a2740417",
+          "metadata_sha256": "48fbe9a74ca140caac7ce7f181a54dc2b76325e3f3a82f2c59e8570e1ee38a40"
+        },
+        {
+          "kind": "fresh original-platform V7 fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/portability_confirmation/cache/v7_48213_fold2.npz",
+          "sha256": "55da7de6bd749dab94b61d626ea63b48b6fe39498cab8123963b61a4f1aa1a0b",
+          "metadata_sha256": "2b09387e34745ed5994920e556b8532295f5a9a0123eac0d2b966971ba28f04d"
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_48213_fold2.npz",
+          "sha256": "3f1d2468ff802112d2cc0507536e71248613f98b4a7ad68d548491e5d14388fe",
+          "metadata_sha256": "18df93eb51d19ec88fe8058c0b0ccf54b5978f6c7e9ba6ddf638d61b8d3e79cc"
+        },
+        {
+          "kind": "fresh original-platform V7 fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/portability_confirmation/cache/v7_48213_fold3.npz",
+          "sha256": "b911a4624385f5c68c5a8dc68c07acd5dda9f2e5525793b2f8b3b99a0ac756ef",
+          "metadata_sha256": "c94394162daed7c323ad76ba43dd633ca913488001a46e78b52ade1c11c7b404"
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_48213_fold3.npz",
+          "sha256": "7ab8d38ce8cc1d69bdf5296b054e9c069aaffb641dea3d2a334c20c73fb305b3",
+          "metadata_sha256": "82ac0d5ea43c520832e5321f083a81acb3634a50ecd91549c181eb0f71a38e3d"
+        },
+        {
+          "kind": "fresh original-platform V7 fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/portability_confirmation/cache/v7_48213_fold4.npz",
+          "sha256": "44df271915288c72d49323546ca5b445897f4525625d37e354435b9fa2994a74",
+          "metadata_sha256": "72411df8423f7dac4fa4f9fe0e38cf4b64fc65a78e107e69400189e3c9b3866d"
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_48213_fold4.npz",
+          "sha256": "428c2fb97e3e0f35de2bc578632270517a518f989a66e09df408b08b25288573",
+          "metadata_sha256": "916854a8ac6d56668faaf3d87e20181acb7ecec6e91cf03c163bbe9ce89de85f"
+        }
+      ],
+      "v9_rmse": 19711188.53312779
+    },
+    "strat_27421": {
+      "file": "reference/oof_strat_27421.npz",
+      "sha256": "e12c635006e8f5adb230c6d7ac2724576a6c0bbeb72e9875d04c6aeb4c35e88b",
+      "fold_sha256": "67db8264d9d9d73fbc8379c98a739dda7d2b85904a111154feb79e4793cc344a",
+      "row_ids_sha256": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+      "verified_from": [
+        {
+          "kind": "original-platform V7 snapshot",
+          "file": "baseline_snapshots/v7_strat_27421.npz",
+          "sha256": "e504f31f2a1f260cffed4900890c1849bcfd42cf69be9ee697689d93adb66b2a",
+          "fold_sha256": "67db8264d9d9d73fbc8379c98a739dda7d2b85904a111154feb79e4793cc344a",
+          "train_ids": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+          "inputs": {
+            "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+            "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+            "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+            "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+          },
+          "source_metadata": [
+            {
+              "context": {
+                "name": "v5",
+                "inputs": {
+                  "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+                  "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+                  "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+                  "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+                },
+                "sources": {
+                  "models.py": "029de9731d057d8827ff6c7f1789f7669b408eeb3626e50a1677db223614edf8",
+                  "workflow.py": "c99c63e5575e514ec030828a40c16511c8aa0fab5edb04c842d555c347114e8a",
+                  "reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+                  "scored_reference.json": "7148150a20525f1bee168fe6a0b6fd44d8b1244348881ee962aca464affa74cd"
+                },
+                "contract": "fec9f422b498cdbf84a3a8fcb093f405302e3bd2e1c29a14f62b9b1fbe04a376",
+                "spec": null,
+                "seeds": [
+                  10242,
+                  20242
+                ],
+                "training_rows": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+                "extra": {
+                  "scheme": "strat:27421",
+                  "folds": "67db8264d9d9d73fbc8379c98a739dda7d2b85904a111154feb79e4793cc344a"
+                }
+              },
+              "sha256": "5fb39dd4e3d9d872875191d377e246a29afc5e8c226d8de7c29f207c49cd7536",
+              "diagnostics": {
+                "origin": "fresh frozen-v5 folds on v7 split assignment"
+              }
+            },
+            {
+              "context": {
+                "name": "residual_tree_l2",
+                "inputs": {
+                  "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+                  "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+                  "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+                  "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+                },
+                "sources": {
+                  "models.py": "029de9731d057d8827ff6c7f1789f7669b408eeb3626e50a1677db223614edf8",
+                  "workflow.py": "c99c63e5575e514ec030828a40c16511c8aa0fab5edb04c842d555c347114e8a",
+                  "reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+                  "scored_reference.json": "7148150a20525f1bee168fe6a0b6fd44d8b1244348881ee962aca464affa74cd"
+                },
+                "contract": "fec9f422b498cdbf84a3a8fcb093f405302e3bd2e1c29a14f62b9b1fbe04a376",
+                "spec": {
+                  "family": "residual",
+                  "kind": "cat",
+                  "loss": "RMSE"
+                },
+                "seeds": [
+                  10242,
+                  20242
+                ],
+                "training_rows": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+                "extra": {
+                  "scheme": "strat:27421"
+                }
+              },
+              "sha256": "d00b367621d84db2f77f3211a7814bfeccfe2791404b6e8cefa2adea2a426f4a"
+            }
+          ]
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_strat_27421_fold0.npz",
+          "sha256": "1ea5c6ab051d13898de270f3544f94a2be8de7e2f7bef0f69b10f41c0b3eb3f5",
+          "metadata_sha256": "8ded02e3555f39303392e9d3006e9d71f36243378cd9fbd1cb070d977af34c54"
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_strat_27421_fold1.npz",
+          "sha256": "6bb5ace1ce2f50206c8892decebb1d19e15ecbb909cc8bed30c4d694f771c03e",
+          "metadata_sha256": "77ed099b8798162073648984b98e8748369a5e93f316c843e4c9873beb864f7a"
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_strat_27421_fold2.npz",
+          "sha256": "eb8e441cd1909fb87837967535e7266240c83937ef483d94bbbde79f0079c9cc",
+          "metadata_sha256": "032213dab1a2d7c5f49ecdd554b046622b81040e59fb3f691d2a8fa414125fcd"
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_strat_27421_fold3.npz",
+          "sha256": "ac88ea5956e55fad449b69a4e97a0f8600aea2969b4ae159772bc142b03d5577",
+          "metadata_sha256": "7b7f3472a0fbfdb6244d56ba06a9f02ef0602969ceed303b8654ea87dcce6e90"
+        },
+        {
+          "kind": "verified original V9 TabPFN fold",
+          "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_strat_27421_fold4.npz",
+          "sha256": "20b81c00c89993339bb9e33f03f582a983e7b34b5a9513c035e0f2bbb191918e",
+          "metadata_sha256": "54dbdeda79be1f539ee95d2c0d1dc1e8b6eb9bac0b0065c27cc014277845f4d7"
+        }
+      ],
+      "v9_rmse": 19726481.414450042
+    }
+  },
+  "original_v9_sources": {
+    "engine.py": "af94e392d719ebbbf3bba49808cfb86580aa62552661d9d4e81c22d4806d4428",
+    "modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+    "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+    "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+    "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+    "v5_contract.json": "3446412f01d536a31123142b984392216efd29094965500251386eac1814ab69",
+    "reference_manifest.json": "be46ba7d91b5c583570f4ceaf4919c292d4fba460dec58998873084638ae2c78",
+    "workflow.py": "a0465205bc380403c9d6c2e1a853c45a9df89897f2c2e62cebd5db69098f29ca",
+    "pilot.py": "f013c39d3de3acf1de359e4e1b1a851c42a7667e794422551342be0987bb3379",
+    "gpu_runner.py": "414af446a93f4a21b016978851c79f2d0b943f6ddfaccb91cf4aaa70e249d015"
+  },
+  "v7_checkpoint_sha256": "63ab212c7249ab857fc52004a97341662c5b110db7e21f19ae6b20dcdfc1090d",
+  "reference_files": {
+    "reference/oof_42.npz": "25d687601f3d33808999407dcf4b2490fa608f8d0cc1bab76a70df6f0b6a723b",
+    "reference/oof_48211.npz": "7b4ec7db196646ceb4879ce69018258b4843b4bac6ded7e44a80545885d3b6d5",
+    "reference/oof_48212.npz": "7d39379e59f6cab019e3dd72856a718d0dcdae63f43d1653a64cc4b463b03bb3",
+    "reference/oof_48213.npz": "f9f2be1a23d8bfc77c97aadc56ce0518da2b3170af240e72db6bc68e2445ebdc",
+    "reference/oof_71.npz": "9daad2ef5359d0341477977c1bef19bd915a57129d780b605643342188c0ea54",
+    "reference/oof_strat_27421.npz": "e12c635006e8f5adb230c6d7ac2724576a6c0bbeb72e9875d04c6aeb4c35e88b",
+    "reference/scored_v7.csv": "5f20ea8d610e325c0eae4727b7ed8c737ce2d881239792c9a6af5ce4e3dec1ba",
+    "reference/scored_v9.csv": "5a384dc3d8bf58c4e29f0d6cac646aa33afe22bdcdd186cccd9758342769bbd4",
+    "reference/scored_v9.ipynb": "38a39003d0d7fb805b8725beac9ae80933929f6782c412166deef4d4df2f6973",
+    "reference/v7_original_platform_reproduction.json": "14130b346c48db7761951571756bc3f366a0f3febf5baf7226dea0b96381e50b",
+    "reference/v9_corrected_confirmation.json": "b7417ee90a82aa72eceb50585d89fe3ed0c8fd64f2bc7ca8da8861f3694ca70a",
+    "reference/v9_delivery_manifest.json": "f660fcef6174134a1ee638e2a988ca0aabfa797487c7dd7b383662c1d51f97ec",
+    "reference/v9_portal_result.json": "78c471a0f1378fdf729ec2b2b2c250ca8d974b908e1d818c8492df6f44e20e91",
+    "reference/verified_v7.pkl": "63ab212c7249ab857fc52004a97341662c5b110db7e21f19ae6b20dcdfc1090d"
+  },
+  "city_map_sha256": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9"
+}

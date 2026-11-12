@@ -1,0 +1,469 @@
+{
+  "sha": "fbb665569425fd2f490c6576b3af967876fe11ff",
+  "url": "https://api.github.com/repos/google-research/tabfm/git/trees/fbb665569425fd2f490c6576b3af967876fe11ff",
+  "tree": [
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4dc93121c83a68d95512a11eaf751df96e94c96b",
+      "url": "https://api.github.com/repos/google-research/tabfm/git/trees/4dc93121c83a68d95512a11eaf751df96e94c96b"
+    },
+    {
+      "path": ".github/CODEOWNERS",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c6ee64e7e3690deb26838a1ad1624804c38a1cd",
+      "size": 186,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/2c6ee64e7e3690deb26838a1ad1624804c38a1cd"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d5e115289c5080f26cec9be04f330cc3360802bf",
+      "url": "https://api.github.com/repos/google-research/tabfm/git/trees/d5e115289c5080f26cec9be04f330cc3360802bf"
+    },
+    {
+      "path": ".github/workflows/pytest_and_autopublish.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc1a3f0b6f0c21995826d67b3cac4e2760216ce4",
+      "size": 2030,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/fc1a3f0b6f0c21995826d67b3cac4e2760216ce4"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9438564dd8e5781e043f8a999fa4f769649cc443",
+      "size": 307,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/9438564dd8e5781e043f8a999fa4f769649cc443"
+    },
+    {
+      "path": ".pylintrc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c771e6244c02612f39871c932bbf15e516a4362",
+      "size": 13048,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/5c771e6244c02612f39871c932bbf15e516a4362"
+    },
+    {
+      "path": ".vscode",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b6950db650c8dd24edb7a11d0b07a5a3006b1725",
+      "url": "https://api.github.com/repos/google-research/tabfm/git/trees/b6950db650c8dd24edb7a11d0b07a5a3006b1725"
+    },
+    {
+      "path": ".vscode/extensions.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d00393436931f391abd022a3fd27d9517bc21c2",
+      "size": 65,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/1d00393436931f391abd022a3fd27d9517bc21c2"
+    },
+    {
+      "path": ".vscode/settings.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2510af6ab49c03fe234f4a3e2df674b83abbb2bc",
+      "size": 868,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/2510af6ab49c03fe234f4a3e2df674b83abbb2bc"
+    },
+    {
+      "path": "BUILD",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5642548504675c4ca5622014496755ba3f4f64d",
+      "size": 97,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/e5642548504675c4ca5622014496755ba3f4f64d"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca8ca44f47fd06de0177862fba04cc5386850b8b",
+      "size": 2707,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/ca8ca44f47fd06de0177862fba04cc5386850b8b"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5c3b2868437f65d0d14f0411e9c2482bef576bf",
+      "size": 1103,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/e5c3b2868437f65d0d14f0411e9c2482bef576bf"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835",
+      "size": 11357,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/7a4a3ea2424c09fbe48d455aed1eaa94d9124835"
+    },
+    {
+      "path": "MODULE.bazel",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9d7ae3cc7f8af604f14a70c663796091147ee0c",
+      "size": 440,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/a9d7ae3cc7f8af604f14a70c663796091147ee0c"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49de62b1fc7a7968f0da6f13566ca0780774ee1e",
+      "size": 6506,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/49de62b1fc7a7968f0da6f13566ca0780774ee1e"
+    },
+    {
+      "path": "WORKSPACE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc063c5c08a3a53da13f932fcee986628e5acb66",
+      "size": 679,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/fc063c5c08a3a53da13f932fcee986628e5acb66"
+    },
+    {
+      "path": "conftest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a65112804615d6bdd80bf6569c6b6c1d3995d29a",
+      "size": 2118,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/a65112804615d6bdd80bf6569c6b6c1d3995d29a"
+    },
+    {
+      "path": "examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d7e5e2fb2e2d67780aa6ba2b36b01452438255e7",
+      "url": "https://api.github.com/repos/google-research/tabfm/git/trees/d7e5e2fb2e2d67780aa6ba2b36b01452438255e7"
+    },
+    {
+      "path": "examples/classification_example.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc9522b8c34f510fedcce592dd27a482167e8d03",
+      "size": 2011,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/fc9522b8c34f510fedcce592dd27a482167e8d03"
+    },
+    {
+      "path": "examples/regression_example.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51f4e2fcd5b6e627259b868d08257d8a659cc5b6",
+      "size": 1742,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/51f4e2fcd5b6e627259b868d08257d8a659cc5b6"
+    },
+    {
+      "path": "examples/tabarena_classification_example.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d38821d434d593739d37258df654087d488e986",
+      "size": 4650,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/1d38821d434d593739d37258df654087d488e986"
+    },
+    {
+      "path": "examples/tabarena_regression_example.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01c3864eed1210df6c4d3d6dd230f5cb24ac64bf",
+      "size": 4076,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/01c3864eed1210df6c4d3d6dd230f5cb24ac64bf"
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "784274d8e34a7689109856017888c027e7286bc4",
+      "size": 3071,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/784274d8e34a7689109856017888c027e7286bc4"
+    },
+    {
+      "path": "requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a5e4e4ce062fa91791f909390261a44f7ab7dc3",
+      "size": 4007,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/9a5e4e4ce062fa91791f909390261a44f7ab7dc3"
+    },
+    {
+      "path": "results",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d52f31540a6bc5a7d2f0281944db46f85833266a",
+      "url": "https://api.github.com/repos/google-research/tabfm/git/trees/d52f31540a6bc5a7d2f0281944db46f85833266a"
+    },
+    {
+      "path": "results/.gitkeep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "results/tabfm-ensemble-jax-tpu-tabarena-classification.parquet",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb923e88c7775dcbbab7ad671441245f5bba23cb",
+      "size": 10680,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/fb923e88c7775dcbbab7ad671441245f5bba23cb"
+    },
+    {
+      "path": "results/tabfm-ensemble-jax-tpu-tabarena-regression.parquet",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "129d22a9e41797fff0b65320da3637f4fb8ecaf9",
+      "size": 6506,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/129d22a9e41797fff0b65320da3637f4fb8ecaf9"
+    },
+    {
+      "path": "results/tabfm-jax-tpu-tabarena-classification.parquet",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5e4da7c6fbbe9b09757b5699b0cc6cdf3ab97d0",
+      "size": 10634,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/c5e4da7c6fbbe9b09757b5699b0cc6cdf3ab97d0"
+    },
+    {
+      "path": "results/tabfm-jax-tpu-tabarena-regression.parquet",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3f0df4475568340e9dbc490dd233be697e84fba",
+      "size": 6461,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/f3f0df4475568340e9dbc490dd233be697e84fba"
+    },
+    {
+      "path": "tabfm",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3e04d4b014cf686a481502887725f0db0063b4d6",
+      "url": "https://api.github.com/repos/google-research/tabfm/git/trees/3e04d4b014cf686a481502887725f0db0063b4d6"
+    },
+    {
+      "path": "tabfm/BUILD",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59a58b9288e499d878c2571d939fc86d6cfc6678",
+      "size": 303,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/59a58b9288e499d878c2571d939fc86d6cfc6678"
+    },
+    {
+      "path": "tabfm/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0844f136c80656eb45b177e2811536d582085dc",
+      "size": 1211,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/a0844f136c80656eb45b177e2811536d582085dc"
+    },
+    {
+      "path": "tabfm/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1589c53da247c6eb96c1717f6b2ca11ff833f9ab",
+      "url": "https://api.github.com/repos/google-research/tabfm/git/trees/1589c53da247c6eb96c1717f6b2ca11ff833f9ab"
+    },
+    {
+      "path": "tabfm/src/BUILD",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45a0a306c14b58a359981e221643700d7e11415a",
+      "size": 1347,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/45a0a306c14b58a359981e221643700d7e11415a"
+    },
+    {
+      "path": "tabfm/src/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac2b21a246c2b72095b290e6485158b5226eb016",
+      "size": 596,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/ac2b21a246c2b72095b290e6485158b5226eb016"
+    },
+    {
+      "path": "tabfm/src/classifier_and_regressor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b18f9293d082c6568911a2ffc169fffba201eb1d",
+      "size": 149141,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/b18f9293d082c6568911a2ffc169fffba201eb1d"
+    },
+    {
+      "path": "tabfm/src/classifier_and_regressor_multidevice_test.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9a2b5e60992b2b154281250c2a7ed2fad21eaf8",
+      "size": 3309,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/d9a2b5e60992b2b154281250c2a7ed2fad21eaf8"
+    },
+    {
+      "path": "tabfm/src/classifier_and_regressor_pytorch_test.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ea1df0386c4927a1bc9924f2fd8fb93f6bd5128",
+      "size": 5966,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/4ea1df0386c4927a1bc9924f2fd8fb93f6bd5128"
+    },
+    {
+      "path": "tabfm/src/classifier_and_regressor_test.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "419c983cd869adb6f326c73ffe68d18d64e13736",
+      "size": 41987,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/419c983cd869adb6f326c73ffe68d18d64e13736"
+    },
+    {
+      "path": "tabfm/src/hugging_face",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c19a25dd2e1cfae99cdad60f26c2e95d8d1cab7b",
+      "url": "https://api.github.com/repos/google-research/tabfm/git/trees/c19a25dd2e1cfae99cdad60f26c2e95d8d1cab7b"
+    },
+    {
+      "path": "tabfm/src/hugging_face/convert_and_upload.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a871f30cb23fa89e6267b218d89c1e207873097",
+      "size": 6415,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/5a871f30cb23fa89e6267b218d89c1e207873097"
+    },
+    {
+      "path": "tabfm/src/hugging_face/torch_convert.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4992de1a62832f3a61212d0c3a9749ba0bc4a6da",
+      "size": 4831,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/4992de1a62832f3a61212d0c3a9749ba0bc4a6da"
+    },
+    {
+      "path": "tabfm/src/jax",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1e4325023a0eb3c9ce0296b01b6b166598df9941",
+      "url": "https://api.github.com/repos/google-research/tabfm/git/trees/1e4325023a0eb3c9ce0296b01b6b166598df9941"
+    },
+    {
+      "path": "tabfm/src/jax/BUILD",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6635947b22e0adbdc1a0e2d2c4ec857ee43f4ef8",
+      "size": 1840,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/6635947b22e0adbdc1a0e2d2c4ec857ee43f4ef8"
+    },
+    {
+      "path": "tabfm/src/jax/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10b7a71fce13c4e603cefde71c2ca125ece19e33",
+      "size": 24,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/10b7a71fce13c4e603cefde71c2ca125ece19e33"
+    },
+    {
+      "path": "tabfm/src/jax/checkpointing.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e684e3a824faebd8e600439980c0d7028671c1f",
+      "size": 5501,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/8e684e3a824faebd8e600439980c0d7028671c1f"
+    },
+    {
+      "path": "tabfm/src/jax/checkpointing_test.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0796b28420210f9b4127026db81196d5655e0c9",
+      "size": 3103,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/d0796b28420210f9b4127026db81196d5655e0c9"
+    },
+    {
+      "path": "tabfm/src/jax/memory_efficient_attention.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1c6e40668aa045747651b194b960dcebc1fa8c9",
+      "size": 21853,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/b1c6e40668aa045747651b194b960dcebc1fa8c9"
+    },
+    {
+      "path": "tabfm/src/jax/memory_efficient_attention_test.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc4f8de5e1300a0a1a7925decb80f2dfde52d284",
+      "size": 4092,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/dc4f8de5e1300a0a1a7925decb80f2dfde52d284"
+    },
+    {
+      "path": "tabfm/src/jax/model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42f30193d81f879861cf470349eee01546537512",
+      "size": 89830,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/42f30193d81f879861cf470349eee01546537512"
+    },
+    {
+      "path": "tabfm/src/jax/model_test.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a9c2bd558ae296dc4c3b50e3be22a70a78cf312",
+      "size": 29566,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/7a9c2bd558ae296dc4c3b50e3be22a70a78cf312"
+    },
+    {
+      "path": "tabfm/src/jax/tabfm_v1_0_0.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bad624bd1699f3b7591a20d343a57aa8e3ade0c1",
+      "size": 9528,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/bad624bd1699f3b7591a20d343a57aa8e3ade0c1"
+    },
+    {
+      "path": "tabfm/src/pytorch",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bfd644f9a06a5465bf6323aa3e8fcb54f2b79a81",
+      "url": "https://api.github.com/repos/google-research/tabfm/git/trees/bfd644f9a06a5465bf6323aa3e8fcb54f2b79a81"
+    },
+    {
+      "path": "tabfm/src/pytorch/BUILD",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e0c4165608b0c35baa334775cbe8f01aa16529c",
+      "size": 683,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/8e0c4165608b0c35baa334775cbe8f01aa16529c"
+    },
+    {
+      "path": "tabfm/src/pytorch/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "239f60ef77647c06b6e6a4f5d5985f71910cc971",
+      "size": 28,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/239f60ef77647c06b6e6a4f5d5985f71910cc971"
+    },
+    {
+      "path": "tabfm/src/pytorch/model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "239beaeadfa1c9538ff36cc56ffb50f3cfae1e91",
+      "size": 35560,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/239beaeadfa1c9538ff36cc56ffb50f3cfae1e91"
+    },
+    {
+      "path": "tabfm/src/pytorch/model_test.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9338d1f7d755215e6aa108efe98d45f3c7b8e616",
+      "size": 12609,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/9338d1f7d755215e6aa108efe98d45f3c7b8e616"
+    },
+    {
+      "path": "tabfm/src/pytorch/tabfm_v1_0_0.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfcbf0d6508b43614262c6306ef2a704b02d7c13",
+      "size": 5917,
+      "url": "https://api.github.com/repos/google-research/tabfm/git/blobs/cfcbf0d6508b43614262c6306ef2a704b02d7c13"
+    }
+  ],
+  "truncated": false
+}

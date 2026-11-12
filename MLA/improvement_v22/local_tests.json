@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checks": [
+    "All 35 V9 and 35 V14 witnesses, seven assignments and scored artifacts verified.",
+    "Exact 38-column projection and invariance to arbitrary removed-field mutations verified.",
+    "Three comparison limit, exact blend algebra, qualification floor and confirmation gates enforced.",
+    "Substantive order dependence and malformed CSV outputs rejected.",
+    "Four-hour persisted clock, 45-minute engineering cutoff and delivery reserve enforced."
+  ],
+  "new_models_fitted": 0
+}

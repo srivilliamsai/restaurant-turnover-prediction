@@ -1,0 +1,120 @@
+AUDIT PASS: six settings, 24 selectable blends; original targets and scored V9 preserved.
+C+S+G: fitted 2794 original targets, 66 features, 16 estimators
+PREDICT_START 1 C+S+G 699 2026-10-27T03:09:00Z
+PREDICT_END 1 seconds 188.886
+PREDICT_START 2 C+S+G 12 2026-10-27T03:12:09Z
+Timeout (0:05:00)!
+Thread 0x00007c3c8b8296c0 (most recent call first):
+  File "/usr/lib/python3.13/threading.py", line 363 in wait
+  File "/usr/lib/python3.13/threading.py", line 660 in wait
+  File "/usr/local/lib/python3.13/dist-packages/tqdm/_monitor.py", line 60 in run
+  File "/usr/lib/python3.13/threading.py", line 1044 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1015 in _bootstrap
+
+Thread 0x00007c3cc585c6c0 (most recent call first):
+  File "/usr/lib/python3.13/threading.py", line 363 in wait
+  File "/usr/lib/python3.13/threading.py", line 660 in wait
+  File "/usr/local/lib/python3.13/dist-packages/tqdm/_monitor.py", line 60 in run
+  File "/usr/lib/python3.13/threading.py", line 1044 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1015 in _bootstrap
+
+Thread 0x00007c3e21d75080 (most recent call first):
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/linear.py", line 134 in forward
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790 in _call_impl
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779 in _wrapped_call_impl
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/architectures/tabpfn_v2.py", line 204 in forward
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790 in _call_impl
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779 in _wrapped_call_impl
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/architectures/tabpfn_v2.py", line 409 in <lambda>
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/architectures/shared/chunked_evaluate.py", line 70 in chunked_evaluate_maybe_inplace
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/architectures/tabpfn_v2.py", line 408 in forward
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790 in _call_impl
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779 in _wrapped_call_impl
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/architectures/tabpfn_v2.py", line 964 in forward
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790 in _call_impl
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779 in _wrapped_call_impl
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/inference.py", line 1614 in _call_model_on_members
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/inference.py", line 699 in _call_model
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/parallel_execute.py", line 97 in _execute_in_current_thread
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/parallel_execute.py", line 86 in parallel_execute
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/inference.py", line 72 in __next__
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/inference.py", line 272 in _yield_in_member_order
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/inference.py", line 672 in iter_outputs
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/regressor.py", line 2219 in _iter_forward_executor
+  File "/usr/local/lib/python3.13/dist-packages/tqdm/std.py", line 1169 in __iter__
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/regressor.py", line 1729 in _compute_aggregated_logits
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/regressor.py", line 1484 in predict
+  File "/usr/lib/python3.13/contextlib.py", line 85 in inner
+  File "/content/mla_v10/modeling.py", line 59 in predict
+  File "/content/mla_v10/transport/timed_worker.py", line 13 in timed_predict
+  File "/content/mla_v10/workflow.py", line 56 in <lambda>
+  File "/content/mla_v10/verify.py", line 79 in inference_checks
+  File "/content/mla_v10/workflow.py", line 56 in pilot
+  File "/content/mla_v10/workflow.py", line 235 in main
+  File "/content/mla_v10/workflow.py", line 244 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 98 in _run_module_code
+  File "<frozen runpy>", line 294 in run_path
+  File "/content/mla_v10/transport/timed_worker.py", line 18 in <module>
+PREDICT_END 2 seconds 97.202
+PREDICT_START 3 C+S+G 12 2026-10-27T03:13:46Z
+PREDICT_END 3 seconds 97.107
+PREDICT_START 4 C+S+G 12 2026-10-27T03:15:23Z
+PREDICT_END 4 seconds 96.843
+PREDICT_START 5 C+S+G 5 2026-10-27T03:17:00Z
+PREDICT_END 5 seconds 97.177
+PREDICT_START 6 C+S+G 7 2026-10-27T03:18:37Z
+Timeout (0:05:00)!
+Thread 0x00007c3c8b8296c0 (most recent call first):
+  File "/usr/lib/python3.13/threading.py", line 363 in wait
+  File "/usr/lib/python3.13/threading.py", line 660 in wait
+  File "/usr/local/lib/python3.13/dist-packages/tqdm/_monitor.py", line 60 in run
+  File "/usr/lib/python3.13/threading.py", line 1044 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1015 in _bootstrap
+
+Thread 0x00007c3cc585c6c0 (most recent call first):
+  File "/usr/lib/python3.13/threading.py", line 363 in wait
+  File "/usr/lib/python3.13/threading.py", line 660 in wait
+  File "/usr/local/lib/python3.13/dist-packages/tqdm/_monitor.py", line 60 in run
+  File "/usr/lib/python3.13/threading.py", line 1044 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1015 in _bootstrap
+
+Thread 0x00007c3e21d75080 (most recent call first):
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/architectures/shared/scaled_dot_product_attention.py", line 188 in _torch_sdpa
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/architectures/shared/scaled_dot_product_attention.py", line 73 in scaled_dot_product_attention
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/architectures/tabpfn_v2.py", line 227 in forward
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790 in _call_impl
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779 in _wrapped_call_impl
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/architectures/tabpfn_v2.py", line 409 in <lambda>
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/architectures/shared/chunked_evaluate.py", line 70 in chunked_evaluate_maybe_inplace
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/architectures/tabpfn_v2.py", line 408 in forward
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790 in _call_impl
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779 in _wrapped_call_impl
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/architectures/tabpfn_v2.py", line 964 in forward
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790 in _call_impl
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779 in _wrapped_call_impl
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/inference.py", line 1614 in _call_model_on_members
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/inference.py", line 699 in _call_model
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/parallel_execute.py", line 97 in _execute_in_current_thread
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/parallel_execute.py", line 86 in parallel_execute
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/inference.py", line 72 in __next__
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/inference.py", line 272 in _yield_in_member_order
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/inference.py", line 672 in iter_outputs
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/regressor.py", line 2219 in _iter_forward_executor
+  File "/usr/local/lib/python3.13/dist-packages/tqdm/std.py", line 1169 in __iter__
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/regressor.py", line 1729 in _compute_aggregated_logits
+  File "/usr/local/lib/python3.13/dist-packages/tabpfn/regressor.py", line 1484 in predict
+  File "/usr/lib/python3.13/contextlib.py", line 85 in inner
+  File "/content/mla_v10/modeling.py", line 59 in predict
+  File "/content/mla_v10/transport/timed_worker.py", line 13 in timed_predict
+  File "/content/mla_v10/workflow.py", line 56 in <lambda>
+  File "/content/mla_v10/verify.py", line 85 in inference_checks
+  File "/content/mla_v10/workflow.py", line 56 in pilot
+  File "/content/mla_v10/workflow.py", line 235 in main
+  File "/content/mla_v10/workflow.py", line 244 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 98 in _run_module_code
+  File "<frozen runpy>", line 294 in run_path
+  File "/content/mla_v10/transport/timed_worker.py", line 18 in <module>
+PREDICT_END 6 seconds 96.776
+PREDICT_START 7 C+S+G 1 2026-10-27T03:20:14Z

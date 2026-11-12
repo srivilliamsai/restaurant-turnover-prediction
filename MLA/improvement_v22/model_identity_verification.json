@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "checkpoint_and_all_resolved_parameters_match_V14": true,
+  "actual_gpu": "Tesla T4",
+  "candidate": "P35-SC38"
+}

@@ -1,0 +1,27 @@
+{
+  "context": {
+    "inputs": {
+      "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+      "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+      "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+      "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+    },
+    "sources": {
+      "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+      "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+      "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+      "v5_contract.json": "3446412f01d536a31123142b984392216efd29094965500251386eac1814ab69"
+    },
+    "platform": {
+      "system": "Darwin",
+      "machine": "arm64",
+      "python": "3.12.14"
+    },
+    "fold": 0,
+    "train_indices": "b898f45cd536232e512862a1e1b966d6f3a4f0624c41f5616c5535a6d28364e4",
+    "valid_indices": "bba15b629ade079a5b3b0885f0108b83d8b866ec4db7b5a8782d339a2674ba08",
+    "contract_sha256": "3446412f01d536a31123142b984392216efd29094965500251386eac1814ab69",
+    "targets": "86e74becdb1ea561c71ab214933575bb072c38f3cb033907f546c49065d0a8fe"
+  },
+  "sha256": "6eefed4e2b5e8a983a591dc2025737bfdd3bf8d8d5515724994b957ca5d65494"
+}

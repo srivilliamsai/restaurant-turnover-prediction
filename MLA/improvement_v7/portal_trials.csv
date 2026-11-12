@@ -1,0 +1,4 @@
+version,csv_sha256,portal_rmse,rank,submitted_at,status
+v5,66a673efc5f31bc9f4010de033999fd3712444b8f6dd0478c97e77bb3934630d,12046722.3691139,,,user-confirmed score
+trial_1,5f20ea8d610e325c0eae4727b7ed8c737ce2d881239792c9a6af5ce4e3dec1ba,12024316.5355221,24,,user-reported improved score; associated with trial_1 from conversation; screenshot 2026-10-26 19:00:26 IST
+trial_2,16d4dd9003fd784049aea716a2beda5a42ca0100c979a4f2a6ecbadd26a542a7,,,,not submitted

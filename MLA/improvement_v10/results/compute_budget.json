@@ -1,0 +1,8 @@
+{
+  "seconds": 414.2746927500011,
+  "by_stage": {
+    "confirm": 414.2746927500011
+  },
+  "maximum_hours": 18,
+  "measurement": "Accumulated stage computation/setup/reproduction wall time; persisted across resumes."
+}

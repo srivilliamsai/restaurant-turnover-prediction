@@ -1,0 +1,57 @@
+{
+  "context": {
+    "name": "C",
+    "scheme": "71",
+    "fold": 1,
+    "inputs": {
+      "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+      "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+      "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+      "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+    },
+    "sources": {
+      "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+      "core.py": "6bdd9fe9915f5adcd263fdade0785574d1050470c52be7d48e1d6c620676ab31",
+      "features.py": "01e5ecd5db41b248d13c2597735e776a16f730ca54337845610c73e309642a6f",
+      "fresh_worker.py": "98d204f3895ce08d1ca2759fb9a6b7b1af8ab05cd8f3fc1377c1366169824d71",
+      "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+      "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+      "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+      "modeling.py": "22d19bd4490e619100580d1a8d2d64990b8a9995d12accee18820c0606ccbe6d",
+      "refit_city.py": "dbde194cafee94f2ee245451f8a2b1c0db58a04c38b6cce2aa0fdfe573ff95ea",
+      "verify.py": "cef69a3ab872909adb10624614aa27ad09314a6220707473bf950e9bcd8ab960",
+      "workflow.py": "026dda398f1774c01e6ab336f14178eb90636e5d4ebddaa411f04bbc3e86e220",
+      "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+      "reference_manifest.json": "99469dd0e16cfca0068d1fed9b3f6d881b9671bca8e0b36270c12abb854fe961"
+    },
+    "execution_contract": {
+      "torch": "2.11.0+cu130",
+      "tabpfn": "9.2.0",
+      "cuda": "13.0",
+      "gpu": "Tesla T4",
+      "precision": "float32",
+      "checkpoint": {
+        "repo_id": "Prior-Labs/TabPFN-v2-reg",
+        "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+        "filename": "tabpfn-v2-regressor.ckpt",
+        "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736"
+      }
+    },
+    "train_indices": "8a17533df98fe9e48c0efe4a3138ba0ad3e9eb1a1987748af2aba1328fd2efe6",
+    "valid_indices": "a8e09490e3e9a89d8357395bba654bb8a1b7419047d936664173fc32cb0e8d3f",
+    "training_targets": "2b57c1e6dd5e98b8a528b32cba82afeb64f5b41c68212a27e8b57db85764d9e7",
+    "configuration": {
+      "clean": true,
+      "structured": false,
+      "group": false,
+      "prune": false
+    },
+    "seed": 10242,
+    "estimators": 16,
+    "city_fold_sha256": "369051948161e2c7ce035455beac8aa9b2a832e49fe341aa6bcd3407d9adc9f4"
+  },
+  "sha256": "78b32eaf8beccb4770106d2234a5abaa73f1b5fb8253ac6d27bc5718c8517ebc",
+  "feature_map_sha256": "e577c039620674a40400166ef93005c96f0e0cf52f63be1b7ae4f14d31d19e1a",
+  "vocabulary_sha256": "5287a459d5326a9c9feebb58bc0a0c105871e4c95a431352ea6433a862ebb595",
+  "feature_count": 42
+}

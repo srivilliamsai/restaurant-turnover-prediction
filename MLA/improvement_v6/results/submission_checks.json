@@ -1,0 +1,18 @@
+{
+  "row_order": true,
+  "unique_ids": true,
+  "finite_nonnegative": true,
+  "missing_unseen_values": true,
+  "target_and_id_invariance": true,
+  "permutation_invariance": true,
+  "malformed_cases_rejected": 12,
+  "rows": 500,
+  "columns": [
+    "Registration Number",
+    "Annual Turnover"
+  ],
+  "v5_full_refit_max_difference": 1.1175870895385742e-08,
+  "prediction_rms_difference_from_v5": 1.1421523777213611e-09,
+  "csv_sha256": "66a673efc5f31bc9f4010de033999fd3712444b8f6dd0478c97e77bb3934630d",
+  "full_fit_reproduced": true
+}

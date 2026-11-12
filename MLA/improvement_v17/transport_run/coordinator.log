@@ -1,0 +1,48 @@
+{"phase": "installing_dependencies", "pid": 99123, "task_elapsed_seconds": 1510.1782710552216, "maximum_hours": 6}
+{"existing_kernel_selected": true}
+V17 pinned dependencies installed; restart kernel before training.
+{"server_completion_verified": true}
+{"phase": "restarting_clean_kernel", "pid": 99123, "task_elapsed_seconds": 1572.1204669475555, "maximum_hours": 6}
+{"phase": "uploading_frozen_workflow", "pid": 99123, "task_elapsed_seconds": 1574.582044839859, "maximum_hours": 6}
+V17 sources, official inputs and verified controls uploaded.
+{"server_completion_verified": true}
+{"phase": "running_fixed_pipeline", "pid": 99123, "task_elapsed_seconds": 1588.0037581920624, "maximum_hours": 6}
+V17 foreground stage: audit timeout seconds 2008
+V17 stage complete: audit
+V17 foreground stage: pilot timeout seconds 2005
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+V17 stage complete: pilot
+V17 foreground stage: screen timeout seconds 5400
+{"snapshot": "saved", "new_complete_folds": 1, "stage_status": {"stage": "pilot", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 3, "stage_status": {"stage": "pilot", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 2, "stage_status": {"stage": "pilot", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 3, "stage_status": {"stage": "pilot", "status": "complete"}}
+V17 stage complete: screen
+V17 foreground stage: confirm timeout seconds 5400
+V17 stage complete: confirm
+V17 foreground stage: export timeout seconds 7200
+V17 stage complete: export
+{"server_completion_verified": true}
+{"snapshot": "saved", "new_complete_folds": 1, "stage_status": {"stage": "export", "status": "complete"}}
+{"phase": "collecting_completed_artifacts", "pid": 99123, "task_elapsed_seconds": 3269.54385304451, "maximum_hours": 6}
+V17 measured result archive prepared.
+{"server_completion_verified": true}
+V17 measured outputs collected locally.
+Owned V17 free T4 released.
+{"phase": "complete", "pid": 99123, "task_elapsed_seconds": 3281.883458137512, "maximum_hours": 6, "artifacts_collected": true, "owned_runtime_released": true}

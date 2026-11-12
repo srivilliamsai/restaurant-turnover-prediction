@@ -1,0 +1,112 @@
+[
+  {
+    "name": "C+S+G",
+    "training_rows": 2794,
+    "units": "raw INR millions",
+    "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+    "model_class": "tabpfn.regressor.TabPFNRegressor",
+    "view": "C+S+G",
+    "input_features": 66,
+    "temperature": "checkpoint default",
+    "feature_state_sha256": "eaaff75ee34aea51b240f6a3d498fe5fd8f01562024482694c84c8899f478164",
+    "date_expansion": true,
+    "datetime_dependencies": {
+      "skrub": "0.10.1",
+      "pyarrow": "23.0.1"
+    },
+    "architecture_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+    ],
+    "configuration_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"
+    ]
+  },
+  {
+    "name": "C+S+G",
+    "training_rows": 2794,
+    "units": "raw INR millions",
+    "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+    "model_class": "tabpfn.regressor.TabPFNRegressor",
+    "view": "C+S+G",
+    "input_features": 66,
+    "temperature": "checkpoint default",
+    "feature_state_sha256": "0bdfc62380a7401ea64dbd3c0e4779ba3c8823a8ac3470a99343218324eb469b",
+    "date_expansion": true,
+    "datetime_dependencies": {
+      "skrub": "0.10.1",
+      "pyarrow": "23.0.1"
+    },
+    "architecture_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+    ],
+    "configuration_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"
+    ]
+  },
+  {
+    "name": "C+S+G",
+    "training_rows": 2794,
+    "units": "raw INR millions",
+    "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+    "model_class": "tabpfn.regressor.TabPFNRegressor",
+    "view": "C+S+G",
+    "input_features": 66,
+    "temperature": "checkpoint default",
+    "feature_state_sha256": "284957c34a02c670ce529afb987d59e3f38407dbba697d963d072ef0aa12944f",
+    "date_expansion": true,
+    "datetime_dependencies": {
+      "skrub": "0.10.1",
+      "pyarrow": "23.0.1"
+    },
+    "architecture_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+    ],
+    "configuration_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"
+    ]
+  },
+  {
+    "name": "C+S+G",
+    "training_rows": 2795,
+    "units": "raw INR millions",
+    "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+    "model_class": "tabpfn.regressor.TabPFNRegressor",
+    "view": "C+S+G",
+    "input_features": 66,
+    "temperature": "checkpoint default",
+    "feature_state_sha256": "3ddcdb0e5e4ee91b0d6f70737564b6720d3f6665d1a92feecdaa79c0adcbb06b",
+    "date_expansion": true,
+    "datetime_dependencies": {
+      "skrub": "0.10.1",
+      "pyarrow": "23.0.1"
+    },
+    "architecture_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+    ],
+    "configuration_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"
+    ]
+  },
+  {
+    "name": "C+S+G",
+    "training_rows": 2795,
+    "units": "raw INR millions",
+    "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+    "model_class": "tabpfn.regressor.TabPFNRegressor",
+    "view": "C+S+G",
+    "input_features": 66,
+    "temperature": "checkpoint default",
+    "feature_state_sha256": "0424f6e0637d8360d86e0fbacaa170c51ee6d12a464e687f32ae8eefe677feb4",
+    "date_expansion": true,
+    "datetime_dependencies": {
+      "skrub": "0.10.1",
+      "pyarrow": "23.0.1"
+    },
+    "architecture_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+    ],
+    "configuration_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"
+    ]
+  }
+]

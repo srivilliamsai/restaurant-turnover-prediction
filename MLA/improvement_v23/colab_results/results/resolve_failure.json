@@ -1,0 +1,7 @@
+{
+  "stage": "resolve",
+  "type": "FileNotFoundError",
+  "message": "[Errno 2] No such file or directory: '/content/mla_v23/research_sources/LimiX/environment.yml'",
+  "traceback": "Traceback (most recent call last):\n  File \"/content/mla_v23/experiment.py\", line 175, in main\n    if args.stage=='resolve':resolve()\n                             ~~~~~~~^^\n  File \"/content/mla_v23/experiment.py\", line 56, in resolve\n    require(engineering=True);identities()\n                              ~~~~~~~~~~^^\n  File \"/content/mla_v23/experiment.py\", line 30, in identities\n    for n,h in manifest['files_sha256'].items():assert sha(ROOT/'research_sources/LimiX'/n)==h,'Changed author source: '+n\n                                                       ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/content/mla_v23/experiment.py\", line 11, in sha\n    with Path(path).open('rb') as stream:\n         ~~~~~~~~~~~~~~~^^^^^^\n  File \"/usr/lib/python3.13/pathlib/_local.py\", line 537, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/content/mla_v23/research_sources/LimiX/environment.yml'\n",
+  "epoch": 1793294659.1487494
+}

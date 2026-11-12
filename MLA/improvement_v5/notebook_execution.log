@@ -1,0 +1,87 @@
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	~/.cache/fontconfig
+	~/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	~/.cache/fontconfig
+	~/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	~/.cache/fontconfig
+	~/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	~/.cache/fontconfig
+	~/.fontconfig
+Matplotlib is building the font cache; this may take a moment.
+Executing cell 2 code 1
+Done cell 2 elapsed 2.5
+Executing cell 4 code 2
+Done cell 4 elapsed 2.5
+Executing cell 6 code 3
+Done cell 6 elapsed 2.8
+Executing cell 7 code 4
+Done cell 7 elapsed 2.8
+Executing cell 8 code 5
+Done cell 8 elapsed 3.0
+Executing cell 10 code 6
+Done cell 10 elapsed 3.1
+Executing cell 11 code 7
+Done cell 11 elapsed 3.3
+Executing cell 13 code 8
+Done cell 13 elapsed 40.7
+Executing cell 15 code 9
+Done cell 15 elapsed 40.7
+{
+  "code_cells": 9,
+  "figures": 2,
+  "elapsed_seconds": 40.71890878677368,
+  "validation": [
+    {
+      "Validation": "18421",
+      "Previous RMSE": 19889372.50028427,
+      "Candidate RMSE": 19863662.63228201,
+      "Reduction": 25709.86800225824
+    },
+    {
+      "Validation": "18422",
+      "Previous RMSE": 19860129.679240715,
+      "Candidate RMSE": 19816733.502104715,
+      "Reduction": 43396.177136000246
+    },
+    {
+      "Validation": "2026",
+      "Previous RMSE": 19823207.7784541,
+      "Candidate RMSE": 19810210.84353932,
+      "Reduction": 12996.934914778918
+    },
+    {
+      "Validation": "303",
+      "Previous RMSE": 19887896.096400928,
+      "Candidate RMSE": 19842435.757285036,
+      "Reduction": 45460.339115891606
+    },
+    {
+      "Validation": "city",
+      "Previous RMSE": 20129673.335451152,
+      "Candidate RMSE": 20108310.640624102,
+      "Reduction": 21362.69482704997
+    }
+  ],
+  "means": {
+    "Previous RMSE": 19865151.513595004,
+    "Candidate RMSE": 19833260.68380277,
+    "Reduction": 31890.829792232253
+  },
+  "bootstrap_interval": [
+    3832.214441113826,
+    56418.51198312016
+  ],
+  "validation_execution": "Reused explicitly hash-verified actual fold predictions; recomputed metrics; full fits and behavioral/export checks executed in this notebook. Colab defaults to uncached model training.",
+  "full_fit_reproduced": true
+}

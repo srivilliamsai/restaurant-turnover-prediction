@@ -1,0 +1,562 @@
+[
+  {
+    "name": "FT512@0.1",
+    "scheme": "42",
+    "net_squared_error_reduction": -366471534925199.5,
+    "largest_positive_ten_rows": [
+      60928,
+      62971,
+      60167,
+      60093,
+      62487,
+      61381,
+      60730,
+      61265,
+      62761,
+      63288
+    ],
+    "top_ten_positive_reduction": 392661616225633.7,
+    "tail_gt80M_reduction": -847727948031290.2,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -4.466066369786859,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "FT512@0.1",
+    "scheme": "71",
+    "net_squared_error_reduction": 1186572710483872.0,
+    "largest_positive_ten_rows": [
+      61238,
+      61747,
+      62971,
+      60772,
+      60065,
+      62537,
+      62487,
+      60333,
+      61779,
+      60858
+    ],
+    "top_ten_positive_reduction": 1020861293547939.5,
+    "tail_gt80M_reduction": -130718517541806.97,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 10743.305163860321,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "FT512@0.25",
+    "scheme": "42",
+    "net_squared_error_reduction": -1081821277771156.8,
+    "largest_positive_ten_rows": [
+      60928,
+      62971,
+      60167,
+      60093,
+      62487,
+      61381,
+      60730,
+      61265,
+      62761,
+      63288
+    ],
+    "top_ten_positive_reduction": 974276752070672.9,
+    "tail_gt80M_reduction": -2132094163226712.2,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -1503.7144434601068,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "FT512@0.25",
+    "scheme": "71",
+    "net_squared_error_reduction": 2766002314230668.0,
+    "largest_positive_ten_rows": [
+      61238,
+      61747,
+      62971,
+      60772,
+      60065,
+      62537,
+      62487,
+      60333,
+      61779,
+      60858
+    ],
+    "top_ten_positive_reduction": 2525228920843641.5,
+    "tail_gt80M_reduction": -340195372198736.1,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 25070.608238255605,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "FT512@0.5",
+    "scheme": "42",
+    "net_squared_error_reduction": -2715784023735914.0,
+    "largest_positive_ten_rows": [
+      60928,
+      62971,
+      60167,
+      60093,
+      62487,
+      61381,
+      60730,
+      62761,
+      61265,
+      63288
+    ],
+    "top_ten_positive_reduction": 1923962542496665.5,
+    "tail_gt80M_reduction": -4306769303614704.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -7980.966486832127,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "FT512@0.5",
+    "scheme": "71",
+    "net_squared_error_reduction": 4863906421864437.0,
+    "largest_positive_ten_rows": [
+      61238,
+      61747,
+      62971,
+      60772,
+      60065,
+      62537,
+      62487,
+      60333,
+      61779,
+      63272
+    ],
+    "top_ten_positive_reduction": 4963296931916082.0,
+    "tail_gt80M_reduction": -725054338878305.8,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 44168.522992592305,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "FT512@0.75",
+    "scheme": "42",
+    "net_squared_error_reduction": -4901888237894591.0,
+    "largest_positive_ten_rows": [
+      60928,
+      62971,
+      60167,
+      60093,
+      62487,
+      61381,
+      60730,
+      62761,
+      61265,
+      63288
+    ],
+    "top_ten_positive_reduction": 2849057371277975.5,
+    "tail_gt80M_reduction": -6524025421164289.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -19425.674557963386,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "FT512@0.75",
+    "scheme": "71",
+    "net_squared_error_reduction": 6293712322901496.0,
+    "largest_positive_ten_rows": [
+      61238,
+      61747,
+      62971,
+      60772,
+      60065,
+      62537,
+      62487,
+      60333,
+      63272,
+      61779
+    ],
+    "top_ten_positive_reduction": 7315461305616679.0,
+    "tail_gt80M_reduction": -1154576900038525.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 57272.10761898011,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "FT512@1.0",
+    "scheme": "42",
+    "net_squared_error_reduction": -7640133920246903.0,
+    "largest_positive_ten_rows": [
+      60928,
+      62971,
+      60167,
+      60093,
+      62487,
+      61381,
+      60730,
+      62761,
+      61265,
+      63288
+    ],
+    "top_ten_positive_reduction": 3749561238414618.0,
+    "tail_gt80M_reduction": -8783862515875190.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -35827.117285327986,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "FT512@1.0",
+    "scheme": "71",
+    "net_squared_error_reduction": 7055420017341923.0,
+    "largest_positive_ten_rows": [
+      61238,
+      61747,
+      62971,
+      60772,
+      60065,
+      62537,
+      62487,
+      60333,
+      63272,
+      61541
+    ],
+    "top_ten_positive_reduction": 9591505859700884.0,
+    "tail_gt80M_reduction": -1628763055679307.2,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 64366.45618123375,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "FT1024@0.1",
+    "scheme": "42",
+    "net_squared_error_reduction": -362975096221471.75,
+    "largest_positive_ten_rows": [
+      62971,
+      60167,
+      61884,
+      62537,
+      60928,
+      60093,
+      61867,
+      61421,
+      60501,
+      60730
+    ],
+    "top_ten_positive_reduction": 343926065433649.6,
+    "tail_gt80M_reduction": -720620622241760.5,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 254.43299183808267,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "FT1024@0.1",
+    "scheme": "71",
+    "net_squared_error_reduction": 837507099072842.5,
+    "largest_positive_ten_rows": [
+      61238,
+      62971,
+      61747,
+      60772,
+      60780,
+      62537,
+      60384,
+      60944,
+      63272,
+      61669
+    ],
+    "top_ten_positive_reduction": 998528344333164.8,
+    "tail_gt80M_reduction": 492763041782897.4,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 4189.003090607002,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "FT1024@0.25",
+    "scheme": "42",
+    "net_squared_error_reduction": -1070061795801131.8,
+    "largest_positive_ten_rows": [
+      62971,
+      60167,
+      62537,
+      61884,
+      60928,
+      60093,
+      61867,
+      61421,
+      60501,
+      60730
+    ],
+    "top_ten_positive_reduction": 852867902346871.5,
+    "tail_gt80M_reduction": -1806674169361035.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -828.1536349132657,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "FT1024@0.25",
+    "scheme": "71",
+    "net_squared_error_reduction": 1918182104730844.0,
+    "largest_positive_ten_rows": [
+      61238,
+      62971,
+      61747,
+      60772,
+      60780,
+      62537,
+      60384,
+      60944,
+      63272,
+      61669
+    ],
+    "top_ten_positive_reduction": 2472757614438144.5,
+    "tail_gt80M_reduction": 1222883519284775.5,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 8896.618224669248,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "FT1024@0.5",
+    "scheme": "42",
+    "net_squared_error_reduction": -2682203775760383.5,
+    "largest_positive_ten_rows": [
+      62971,
+      60167,
+      62537,
+      61884,
+      60928,
+      60093,
+      61867,
+      60501,
+      61421,
+      60730
+    ],
+    "top_ten_positive_reduction": 1682578267236209.0,
+    "tail_gt80M_reduction": -3630423717910699.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -6535.846867322922,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "FT1024@0.5",
+    "scheme": "71",
+    "net_squared_error_reduction": 3251078732957304.5,
+    "largest_positive_ten_rows": [
+      61238,
+      62971,
+      61747,
+      60772,
+      60780,
+      62537,
+      60384,
+      60944,
+      63272,
+      62227
+    ],
+    "top_ten_positive_reduction": 4868202998612444.0,
+    "tail_gt80M_reduction": 2415686754661256.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 12536.531227692962,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "FT1024@0.75",
+    "scheme": "42",
+    "net_squared_error_reduction": -4836425939877801.0,
+    "largest_positive_ten_rows": [
+      62971,
+      60167,
+      62537,
+      60928,
+      61884,
+      60093,
+      61867,
+      60501,
+      61421,
+      60730
+    ],
+    "top_ten_positive_reduction": 2489131094668033.0,
+    "tail_gt80M_reduction": -5471248645649033.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -17117.821193110198,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "FT1024@0.75",
+    "scheme": "71",
+    "net_squared_error_reduction": 3998689884679558.5,
+    "largest_positive_ten_rows": [
+      61238,
+      62971,
+      61747,
+      60772,
+      60780,
+      62537,
+      60384,
+      60944,
+      63272,
+      62227
+    ],
+    "top_ten_positive_reduction": 7186371930093859.0,
+    "tail_gt80M_reduction": 3578409706129610.5,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 10916.120188582689,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "FT1024@1.0",
+    "scheme": "42",
+    "net_squared_error_reduction": -7532728288153331.0,
+    "largest_positive_ten_rows": [
+      62971,
+      60167,
+      62537,
+      60928,
+      61884,
+      60093,
+      61867,
+      60501,
+      61421,
+      60730
+    ],
+    "top_ten_positive_reduction": 3272526384642319.0,
+    "tail_gt80M_reduction": -7329148952575990.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -32564.3473935239,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "FT1024@1.0",
+    "scheme": "71",
+    "net_squared_error_reduction": 4161015559897625.0,
+    "largest_positive_ten_rows": [
+      61238,
+      62971,
+      61747,
+      60772,
+      60780,
+      62537,
+      60384,
+      60944,
+      63272,
+      62227
+    ],
+    "top_ten_positive_reduction": 9427252483025484.0,
+    "tail_gt80M_reduction": 4711052373689862.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 4036.996538383886,
+    "exclusion_is_selection_criterion": false
+  }
+]

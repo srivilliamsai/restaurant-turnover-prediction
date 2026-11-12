@@ -1,0 +1,10 @@
+Fresh work directory: /content/v9_cli_20261026T160148Z/portable_fresh_execution/v9_portable_7xfzve43
+PASS: verified V7 checkpoint reproduces scored predictions: 2.2351741790771484e-08
+tabpfn fit complete: 3493 rows, 40 features, ensemble16
+PASS: fresh standalone execution reproduces final CSV within INR 0.01: 1.4901161193847656e-08
+CSV_SHA256 5a384dc3d8bf58c4e29f0d6cac646aa33afe22bdcdd186cccd9758342769bbd4
+CSV_PATH /content/v9_cli_20261026T160148Z/portable_fresh_execution/submission.csv
+Verified CSV SHA256: 5a384dc3d8bf58c4e29f0d6cac646aa33afe22bdcdd186cccd9758342769bbd4
+CSV: /content/v9_cli_20261026T160148Z/portable_fresh_execution/submission.csv
+FRESH_NOTEBOOK_COMPLETE 29
+Fresh standalone execution downloaded; qualification still required.

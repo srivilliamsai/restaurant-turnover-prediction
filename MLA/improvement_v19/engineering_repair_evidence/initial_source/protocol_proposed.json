@@ -1,0 +1,266 @@
+{
+  "version": "V19",
+  "status": "proposed_not_executed",
+  "prepared_at_IST": "2026-10-29T14:50:28.020255+05:30",
+  "plan_sha256": "996fcee774e94bb0a0939e3535e39ba3bc535828c28f0e093efc91cf2fd7f900",
+  "training_started": false,
+  "execution_clock_started": false,
+  "runtime_allocated": false,
+  "account": {
+    "verified": true,
+    "selected_account_masked": "REDACTED",
+    "account_identity_sha256": "REDACTED",
+    "live_active_assignments_at_check": 0,
+    "gpu_availability": "not_tested"
+  },
+  "baseline": {
+    "name": "V14",
+    "formula": ".25*original_V9 + .75*original_P35_8",
+    "portal_rmse_INR": 11736110.7877709,
+    "artifacts": {
+      "scored_v14.csv": "39d49f79beb8549d04ffc78d134aad2407dc5e73914dc3c30e8bb162a3c0ba05",
+      "scored_v14.ipynb": "86fae4ea97d6fd35c2ed485c60f26f02c98fccb3cbeda9a10228cc48e788318e"
+    },
+    "input_sha256": {
+      "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+      "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+      "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+      "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+    },
+    "control_runtime": {
+      "torch": "2.11.0+cu130",
+      "tabpfn": "9.2.0",
+      "precision": "float32",
+      "platform_note": "retain independently verified original-Mac V7 component"
+    }
+  },
+  "training_rows": 3493,
+  "test_rows": 500,
+  "all_original_targets": true,
+  "target_units": "INR millions fitted; INR evaluated",
+  "feature_view": "frozen V14 forty columns",
+  "output_floor_INR": 0,
+  "settings": {
+    "C8": {
+      "priority": 1,
+      "core": true,
+      "model": "CausiloRegressor",
+      "package": "causilo==1.0.3",
+      "torch_requirement": ">=2.13",
+      "n_estimators": 8,
+      "random_state": 10242,
+      "device": "cuda",
+      "use_kv_cache": false,
+      "retain_preprocessing": true,
+      "output_type": "mean"
+    },
+    "KS8": {
+      "priority": 2,
+      "core": true,
+      "model": "sdm.models.KumoTabular",
+      "task": "regression",
+      "size": "small",
+      "num_estimators": 8,
+      "seed": 10242,
+      "recipe": "exact reviewed default",
+      "context": "all outer-training rows with fitted preprocessing",
+      "point_readout": "float64 arithmetic mean of 999 inverse-transformed quantiles",
+      "ensemble_trim_fraction": 0.2
+    },
+    "D8": {
+      "priority": 3,
+      "core": true,
+      "model": "TabDPTRegressor",
+      "package": "tabdpt==1.3.1",
+      "device": "cuda",
+      "use_flash": false,
+      "compile": false,
+      "n_ensembles": 8,
+      "seed": 10242,
+      "context_size": null,
+      "batch_size": 256,
+      "output_type": "mean",
+      "other_defaults": "exact reviewed defaults",
+      "categorical_adapter": "outer-training-fitted numerical encoding/imputation"
+    },
+    "KM8": {
+      "priority": 4,
+      "core": false,
+      "optional_before_accuracy": true,
+      "same_as": "KS8",
+      "size": "medium"
+    }
+  },
+  "checkpoints": {
+    "C8": {
+      "model_repository": "nums-ai/causilo",
+      "model_revision": "94f2bd91db0737d4da59f347910662905ecb5a09",
+      "filename": "regressor/model.safetensors",
+      "advertised_bytes": 148417316,
+      "advertised_sha256": "9a4197d7c1060d187c19b62d4d83c74ce986c1f3911825576eb58c2ae4f0057d",
+      "source_repository": "nums-ai/causilo",
+      "source_commit": "4d26d497de28734db52c6bfc2ea949c12cc17308",
+      "package_version_or_source": "1.0.3",
+      "metadata_file": "research_sources/nums-ai_causilo_hub_metadata.json",
+      "weights_downloaded": false,
+      "downloaded_bytes_verified": false,
+      "inference_tested": false
+    },
+    "KS8": {
+      "model_repository": "nvidia/Kumo-Tabular",
+      "model_revision": "3c3e10bbdb590ace29e7026847f92db3c603096d",
+      "filename": "small/regressor.pt",
+      "advertised_bytes": 113968523,
+      "advertised_sha256": "fc672f536501d64356036050ac2acea7e46927f7b9ad38366abe048f88e7d423",
+      "source_repository": "NVIDIA/structured-data-models",
+      "source_commit": "2b1696f4fdc22004cc757c44703a69cf326c0a11",
+      "package_version_or_source": "reviewed source commit",
+      "metadata_file": "research_sources/nvidia_Kumo-Tabular_hub_metadata.json",
+      "weights_downloaded": false,
+      "downloaded_bytes_verified": false,
+      "inference_tested": false
+    },
+    "KM8": {
+      "model_repository": "nvidia/Kumo-Tabular",
+      "model_revision": "3c3e10bbdb590ace29e7026847f92db3c603096d",
+      "filename": "medium/regressor.pt",
+      "advertised_bytes": 250144651,
+      "advertised_sha256": "daa6a17420b5aed231007e5d2f9c712abe093b4f94b3e1189b178947a95fb725",
+      "source_repository": "NVIDIA/structured-data-models",
+      "source_commit": "2b1696f4fdc22004cc757c44703a69cf326c0a11",
+      "package_version_or_source": "reviewed source commit",
+      "metadata_file": "research_sources/nvidia_Kumo-Tabular_hub_metadata.json",
+      "weights_downloaded": false,
+      "downloaded_bytes_verified": false,
+      "inference_tested": false
+    },
+    "D8": {
+      "model_repository": "Layer6/TabDPT",
+      "model_revision": "a5ca6e01c0fa09ec68c73e958e5199d1932abb3a",
+      "filename": "tabdpt1_3.safetensors",
+      "advertised_bytes": 252233296,
+      "advertised_sha256": "97dc3b60bfad6b42ec1a07b7e121d86b0fc7c9fd67c8d2eaac3d815da197eacb",
+      "source_repository": "layer6ai-labs/TabDPT-inference",
+      "source_commit": "93670551adba28b186354fab9a1584c56c34aa76",
+      "package_version_or_source": "1.3.1",
+      "metadata_file": "research_sources/Layer6_TabDPT_hub_metadata.json",
+      "weights_downloaded": false,
+      "downloaded_bytes_verified": false,
+      "inference_tested": false
+    }
+  },
+  "engineering": {
+    "admission_before_development_scores": true,
+    "full_training_probe_rows": 3493,
+    "outer_training_probe_rows": 2794,
+    "outer_query_probe_rows": 699,
+    "test_query_probe_rows": 500,
+    "individual_probes_at_least": 12,
+    "preferred_gpu_headroom_limit_GiB": 12,
+    "v14_repeat_atol_INR": 0.01,
+    "candidate_prediction_atol_INR": 10,
+    "candidate_prediction_rtol": 1e-06,
+    "candidate_pilot_rmse_drift_max_INR": 10,
+    "output_rounding": false,
+    "batch_composition_invariance": true,
+    "saved_state_reload": true,
+    "fresh_fit_repeat": true,
+    "dependency_environments_isolated_from_v14": true,
+    "forecast_contingency": 0.3,
+    "exclude_first_if_over_budget": "KM8",
+    "subsequent_exclusion": "slowest engineering-measured remaining recipe; tie break lower priority"
+  },
+  "development": {
+    "seeds": [
+      42,
+      71
+    ],
+    "folds": 5,
+    "individual_routes": [
+      "C8",
+      "KS8",
+      "D8",
+      "KM8"
+    ],
+    "conditional_route": {
+      "id": "CORE_EQUAL",
+      "equal_mean_of_admitted": [
+        "C8",
+        "KS8",
+        "D8"
+      ],
+      "minimum_components": 2,
+      "membership_uses_accuracy": false
+    },
+    "formula": "(1-w)*V14+w*M",
+    "weights": [
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "maximum_component_fold_outputs": 40,
+    "maximum_comparisons": 25,
+    "require_positive_gain_each_assignment": true,
+    "minimum_mean_relative_gain": 0.002,
+    "maximum_finalists": 1,
+    "tie_breakers": [
+      "mean_relative_gain_desc",
+      "new_model_weight_asc",
+      "component_count_asc",
+      "route_id_asc"
+    ]
+  },
+  "confirmation": {
+    "new_random_seeds": [
+      919601,
+      919602,
+      919603
+    ],
+    "folds": 5,
+    "additional_checks": [
+      "canonical_city",
+      "stratified_27421"
+    ],
+    "maximum_component_fold_outputs": 75,
+    "new_random_v14_control_component_fits": 45,
+    "minimum_mean_random_relative_gain": 0.002,
+    "require_positive_gain_each_random_assignment": true,
+    "maximum_city_or_stratified_relative_deterioration": 0.01,
+    "bootstrap": {
+      "draws": 5000,
+      "seed": 8319,
+      "unit": "restaurant with same row draws across random assignments",
+      "gain_lower_95_bound_must_be_positive": true,
+      "interpretation": "conditional robustness of historically examined labels; not an untouched test"
+    },
+    "retuning_or_second_finalist_after_failure": false
+  },
+  "delivery": {
+    "fresh_full_fit": true,
+    "fresh_notebook_execution": true,
+    "test_order_preserved": true,
+    "maximum_manual_portal_trials": 1,
+    "automatic_portal_upload": false,
+    "replace_v14_only_on_lower_observed_portal_rmse": true,
+    "coding_upload": "depends on actual competition state"
+  },
+  "proposed_budget": {
+    "elapsed_hours": 8,
+    "delivery_reserve_hours": 1.5,
+    "shared_research_pool_hours": 6.5,
+    "paid_resources": false,
+    "deadline": "replacement deadline not recorded; shorten execution to leave at least one hour before actual deadline",
+    "old_ledgers_unchanged": true,
+    "checkpoint_complete_folds": true
+  },
+  "reserve_models_not_automatically_added": [
+    "Google TabFM",
+    "LimiX-2",
+    "LimiX-2M",
+    "TabSTAR v1.1",
+    "TabSwift"
+  ],
+  "history_audit_sha256": "c449fe5cd59f1e99a9480e6b91af680c9cd36ca29c42cb43a3d5fdeb86aad5f4"
+}

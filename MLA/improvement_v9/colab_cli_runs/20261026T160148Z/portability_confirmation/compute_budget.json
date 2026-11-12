@@ -1,0 +1,8 @@
+{
+  "seconds": 1660.036093914001,
+  "by_stage": {
+    "confirmation_portability_verification": 1660.036093914001
+  },
+  "maximum_hours": 18,
+  "measurement": "Aggregate elapsed time of checkpoint computations; fresh notebook verification is recorded separately."
+}

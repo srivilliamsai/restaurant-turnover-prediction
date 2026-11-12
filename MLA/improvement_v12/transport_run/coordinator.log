@@ -1,0 +1,178 @@
+{"phase": "requesting_free_t4", "pid": 38170, "elapsed_seconds": 6.70000008540228e-05, "maximum_hours": 12, "paid_resources": false}
+Current balance: 0.00 compute units
+Usage rate: 0.00/hr
+Active assignments: 0
+{"phase": "allocation_retry", "pid": 38170, "elapsed_seconds": 80.26097966599627, "maximum_hours": 12, "paid_resources": false, "attempt": 1, "service_unavailable": true}
+{"phase": "allocation_retry", "pid": 38170, "elapsed_seconds": 218.68559887499578, "maximum_hours": 12, "paid_resources": false, "attempt": 2, "service_unavailable": true}
+{"phase": "allocation_retry", "pid": 38170, "elapsed_seconds": 415.98910379099834, "maximum_hours": 12, "paid_resources": false, "attempt": 3, "service_unavailable": true}
+{"phase": "stopped_with_preserved_v9", "pid": 38170, "elapsed_seconds": 415.9907937079988, "maximum_hours": 12, "paid_resources": false, "error_type": "RuntimeError", "message": "Free T4 unavailable; no paid fallback", "qualified_submission_recommended": false}
+{"phase": "requesting_free_t4", "pid": 42939, "elapsed_seconds": 0.00036862499837297946, "maximum_hours": 12, "paid_resources": false}
+Current balance: 0.00 compute units
+Usage rate: 0.00/hr
+Active assignments: 0
+{"phase": "installing_pinned_dependencies", "pid": 42939, "elapsed_seconds": 5.458987666999747, "maximum_hours": 12, "paid_resources": false}
+V12 pinned dependency installation started.
+V12 pinned installation complete; clean kernel restart follows.
+{"phase": "preparing_verified_experiment_bundle", "pid": 42939, "elapsed_seconds": 49.375588041999436, "maximum_hours": 12, "paid_resources": false}
+V12 official inputs, frozen sources and verified baseline registry restored.
+{"phase": "auditing", "pid": 42939, "elapsed_seconds": 61.15412408400152, "maximum_hours": 12, "paid_resources": false}
+V12 supervised foreground stage: audit PID 2351
+{"phase": "piloting_new_backbones", "pid": 42939, "elapsed_seconds": 69.50936024999828, "maximum_hours": 12, "paid_resources": false}
+V12 supervised foreground stage: pilot PID 2391
+AssertionError: V12 supervised stage failed; inspect saved logs.
+V12 transport failure: RuntimeError inspect the saved stage log; authenticated transport details are suppressed
+{"phase": "stopped_with_preserved_v9", "pid": 42939, "elapsed_seconds": 3198.706025416999, "maximum_hours": 12, "paid_resources": false, "error_type": "RuntimeError", "message": "V12 stage failed; inspect preserved logs", "qualified_submission_recommended": false}
+V12 result archive prepared.
+Saved completed V12 artifacts locally.
+[colab] Stopping session 'v12-free-t4'...
+[colab] Session terminated.
+{"phase": "requesting_free_t4", "pid": 49132, "elapsed_seconds": 0.00013625000428874046, "maximum_hours": 12, "paid_resources": false}
+Current balance: 0.00 compute units
+Usage rate: 0.00/hr
+Active assignments: 0
+{"phase": "installing_pinned_dependencies", "pid": 49132, "elapsed_seconds": 5.409435333000147, "maximum_hours": 12, "paid_resources": false}
+V12 pinned dependency installation started.
+V12 pinned installation complete; clean kernel restart follows.
+{"phase": "preparing_verified_experiment_bundle", "pid": 49132, "elapsed_seconds": 40.66052212499926, "maximum_hours": 12, "paid_resources": false}
+V12 official inputs, frozen sources and verified baseline registry restored.
+{"phase": "auditing", "pid": 49132, "elapsed_seconds": 52.03929945800337, "maximum_hours": 12, "paid_resources": false}
+V12 supervised foreground stage: audit PID 1289
+{"phase": "piloting_new_backbones", "pid": 49132, "elapsed_seconds": 64.24050995799917, "maximum_hours": 12, "paid_resources": false}
+V12 supervised foreground stage: pilot PID 1325
+{"phase": "reusing_current_free_t4", "pid": 51448, "elapsed_seconds": 0.0001353330007987097, "maximum_hours": 18, "paid_resources": false}
+Current balance: 0.00 compute units
+Usage rate: 1.07/hr
+Active assignments: 1
+{"phase": "preparing_verified_experiment_bundle", "pid": 51448, "elapsed_seconds": 1.2930903329979628, "maximum_hours": 18, "paid_resources": false}
+V12 official inputs, frozen sources and verified baseline registry restored.
+Prior incomplete aggregate cleared after full archival; three verified pilot checkpoints retained.
+{"phase": "auditing", "pid": 51448, "elapsed_seconds": 12.746599874997628, "maximum_hours": 18, "paid_resources": false}
+V12 supervised foreground stage: audit PID 16075
+{"phase": "piloting_new_backbones", "pid": 51448, "elapsed_seconds": 19.5312479169952, "maximum_hours": 18, "paid_resources": false}
+V12 supervised foreground stage: pilot PID 16114
+{"phase": "requesting_free_t4", "pid": 53710, "elapsed_seconds": 0.0001221249985974282, "maximum_hours": 18, "paid_resources": false}
+Current balance: 0.00 compute units
+Usage rate: 0.00/hr
+Active assignments: 0
+{"phase": "installing_pinned_dependencies", "pid": 53710, "elapsed_seconds": 5.423531083994021, "maximum_hours": 18, "paid_resources": false}
+V12 pinned dependency installation started.
+V12 pinned installation complete; clean kernel restart follows.
+{"phase": "preparing_verified_experiment_bundle", "pid": 53710, "elapsed_seconds": 46.395880916999886, "maximum_hours": 18, "paid_resources": false}
+V12 official inputs, frozen sources and verified baseline registry restored.
+{"phase": "auditing", "pid": 53710, "elapsed_seconds": 59.52303404199483, "maximum_hours": 18, "paid_resources": false}
+V12 supervised foreground stage: audit PID 8814
+{"phase": "piloting_new_backbones", "pid": 53710, "elapsed_seconds": 67.52633108399459, "maximum_hours": 18, "paid_resources": false}
+V12 supervised foreground stage: pilot PID 8858
+V12 result archive prepared.
+Saved completed V12 artifacts locally.
+{"phase": "screening_feasible_fixed_settings", "pid": 53710, "elapsed_seconds": 2833.747976666993, "maximum_hours": 18, "paid_resources": false}
+V12 supervised foreground stage: screen PID 20196
+V12 result archive prepared.
+Saved completed V12 artifacts locally.
+{"phase": "finalists_frozen", "pid": 53710, "elapsed_seconds": 10099.74198745899, "maximum_hours": 18, "paid_resources": false, "choices": []}
+V12 result archive prepared.
+Saved completed V12 artifacts locally.
+V12 supervised foreground stage: confirm PID 49890
+V12 result archive prepared.
+Saved completed V12 artifacts locally.
+{"phase": "independent_verification", "pid": 53710, "elapsed_seconds": 10118.854722041993, "maximum_hours": 18, "paid_resources": false, "qualified": false}
+{"atom": "T32_10242", "scheme": "42", "fold_complete": 1, "folds": 5}
+{"atom": "T32_10242", "scheme": "42", "fold_complete": 2, "folds": 5}
+{"atom": "T32_10242", "scheme": "42", "fold_complete": 3, "folds": 5}
+{"atom": "T32_10242", "scheme": "42", "fold_complete": 4, "folds": 5}
+{"atom": "T32_10242", "scheme": "42", "fold_complete": 5, "folds": 5}
+{"atom": "T32_10242", "scheme": "71", "fold_complete": 1, "folds": 5}
+{"atom": "T32_10242", "scheme": "71", "fold_complete": 2, "folds": 5}
+{"atom": "T32_10242", "scheme": "71", "fold_complete": 3, "folds": 5}
+{"atom": "T32_10242", "scheme": "71", "fold_complete": 4, "folds": 5}
+{"atom": "T32_10242", "scheme": "71", "fold_complete": 5, "folds": 5}
+{"atom": "T16_20242", "scheme": "42", "fold_complete": 1, "folds": 5}
+{"atom": "T16_20242", "scheme": "42", "fold_complete": 2, "folds": 5}
+{"atom": "T16_20242", "scheme": "42", "fold_complete": 3, "folds": 5}
+{"atom": "T16_20242", "scheme": "42", "fold_complete": 4, "folds": 5}
+{"atom": "T16_20242", "scheme": "42", "fold_complete": 5, "folds": 5}
+{"atom": "T16_30242", "scheme": "42", "fold_complete": 1, "folds": 5}
+{"atom": "T16_30242", "scheme": "42", "fold_complete": 2, "folds": 5}
+{"atom": "T16_30242", "scheme": "42", "fold_complete": 3, "folds": 5}
+{"atom": "T16_30242", "scheme": "42", "fold_complete": 4, "folds": 5}
+{"atom": "T16_30242", "scheme": "42", "fold_complete": 5, "folds": 5}
+{"atom": "T16_40242", "scheme": "42", "fold_complete": 1, "folds": 5}
+{"atom": "T16_40242", "scheme": "42", "fold_complete": 2, "folds": 5}
+{"atom": "T16_40242", "scheme": "42", "fold_complete": 3, "folds": 5}
+{"atom": "T16_40242", "scheme": "42", "fold_complete": 4, "folds": 5}
+{"atom": "T16_40242", "scheme": "42", "fold_complete": 5, "folds": 5}
+{"atom": "T16_20242", "scheme": "71", "fold_complete": 1, "folds": 5}
+{"atom": "T16_20242", "scheme": "71", "fold_complete": 2, "folds": 5}
+{"atom": "T16_20242", "scheme": "71", "fold_complete": 3, "folds": 5}
+{"atom": "T16_20242", "scheme": "71", "fold_complete": 4, "folds": 5}
+{"atom": "T16_20242", "scheme": "71", "fold_complete": 5, "folds": 5}
+{"atom": "T16_30242", "scheme": "71", "fold_complete": 1, "folds": 5}
+{"atom": "T16_30242", "scheme": "71", "fold_complete": 2, "folds": 5}
+{"atom": "T16_30242", "scheme": "71", "fold_complete": 3, "folds": 5}
+{"atom": "T16_30242", "scheme": "71", "fold_complete": 4, "folds": 5}
+{"atom": "T16_30242", "scheme": "71", "fold_complete": 5, "folds": 5}
+{"atom": "T16_40242", "scheme": "71", "fold_complete": 1, "folds": 5}
+{"atom": "T16_40242", "scheme": "71", "fold_complete": 2, "folds": 5}
+{"atom": "T16_40242", "scheme": "71", "fold_complete": 3, "folds": 5}
+{"atom": "T16_40242", "scheme": "71", "fold_complete": 4, "folds": 5}
+{"atom": "T16_40242", "scheme": "71", "fold_complete": 5, "folds": 5}
+{"atom": "R_10242", "scheme": "42", "fold_complete": 1, "folds": 5}
+{"atom": "R_10242", "scheme": "42", "fold_complete": 2, "folds": 5}
+{"atom": "R_10242", "scheme": "42", "fold_complete": 3, "folds": 5}
+{"atom": "R_10242", "scheme": "42", "fold_complete": 4, "folds": 5}
+{"atom": "R_10242", "scheme": "42", "fold_complete": 5, "folds": 5}
+{"atom": "R_10242", "scheme": "71", "fold_complete": 1, "folds": 5}
+{"atom": "R_10242", "scheme": "71", "fold_complete": 2, "folds": 5}
+{"atom": "R_10242", "scheme": "71", "fold_complete": 3, "folds": 5}
+{"atom": "R_10242", "scheme": "71", "fold_complete": 4, "folds": 5}
+{"atom": "R_10242", "scheme": "71", "fold_complete": 5, "folds": 5}
+{"atom": "R_10242", "scheme": "42", "fold_complete": 1, "folds": 5}
+{"atom": "R_10242", "scheme": "42", "fold_complete": 2, "folds": 5}
+{"atom": "R_10242", "scheme": "42", "fold_complete": 3, "folds": 5}
+{"atom": "R_10242", "scheme": "42", "fold_complete": 4, "folds": 5}
+{"atom": "R_10242", "scheme": "42", "fold_complete": 5, "folds": 5}
+{"atom": "R_20242", "scheme": "42", "fold_complete": 1, "folds": 5}
+{"atom": "R_20242", "scheme": "42", "fold_complete": 2, "folds": 5}
+{"atom": "R_20242", "scheme": "42", "fold_complete": 3, "folds": 5}
+{"atom": "R_20242", "scheme": "42", "fold_complete": 4, "folds": 5}
+{"atom": "R_20242", "scheme": "42", "fold_complete": 5, "folds": 5}
+{"atom": "R_30242", "scheme": "42", "fold_complete": 1, "folds": 5}
+{"atom": "R_30242", "scheme": "42", "fold_complete": 2, "folds": 5}
+{"atom": "R_30242", "scheme": "42", "fold_complete": 3, "folds": 5}
+{"atom": "R_30242", "scheme": "42", "fold_complete": 4, "folds": 5}
+{"atom": "R_30242", "scheme": "42", "fold_complete": 5, "folds": 5}
+{"atom": "R_40242", "scheme": "42", "fold_complete": 1, "folds": 5}
+{"atom": "R_40242", "scheme": "42", "fold_complete": 2, "folds": 5}
+{"atom": "R_40242", "scheme": "42", "fold_complete": 3, "folds": 5}
+{"atom": "R_40242", "scheme": "42", "fold_complete": 4, "folds": 5}
+{"atom": "R_40242", "scheme": "42", "fold_complete": 5, "folds": 5}
+{"atom": "R_10242", "scheme": "71", "fold_complete": 1, "folds": 5}
+{"atom": "R_10242", "scheme": "71", "fold_complete": 2, "folds": 5}
+{"atom": "R_10242", "scheme": "71", "fold_complete": 3, "folds": 5}
+{"atom": "R_10242", "scheme": "71", "fold_complete": 4, "folds": 5}
+{"atom": "R_10242", "scheme": "71", "fold_complete": 5, "folds": 5}
+{"atom": "R_20242", "scheme": "71", "fold_complete": 1, "folds": 5}
+{"atom": "R_20242", "scheme": "71", "fold_complete": 2, "folds": 5}
+{"atom": "R_20242", "scheme": "71", "fold_complete": 3, "folds": 5}
+{"atom": "R_20242", "scheme": "71", "fold_complete": 4, "folds": 5}
+{"atom": "R_20242", "scheme": "71", "fold_complete": 5, "folds": 5}
+{"atom": "R_30242", "scheme": "71", "fold_complete": 1, "folds": 5}
+{"atom": "R_30242", "scheme": "71", "fold_complete": 2, "folds": 5}
+{"atom": "R_30242", "scheme": "71", "fold_complete": 3, "folds": 5}
+{"atom": "R_30242", "scheme": "71", "fold_complete": 4, "folds": 5}
+{"atom": "R_30242", "scheme": "71", "fold_complete": 5, "folds": 5}
+{"atom": "R_40242", "scheme": "71", "fold_complete": 1, "folds": 5}
+{"atom": "R_40242", "scheme": "71", "fold_complete": 2, "folds": 5}
+{"atom": "R_40242", "scheme": "71", "fold_complete": 3, "folds": 5}
+{"atom": "R_40242", "scheme": "71", "fold_complete": 4, "folds": 5}
+{"atom": "R_40242", "scheme": "71", "fold_complete": 5, "folds": 5}
+Independent V12 selection, both formulas, metrics and qualification PASS.
+{"phase": "reproduction_and_delivery", "pid": 53710, "elapsed_seconds": 10129.695398167001, "maximum_hours": 18, "paid_resources": false, "qualified": false}
+V12 supervised foreground stage: export PID 49998
+V12 result archive prepared.
+Saved completed V12 artifacts locally.
+V12 measured delivery packaged: ./improvement_v12/V12_Delivery.zip
+Final V12 receipts and user-approved eighteen-hour cap verified.
+{"phase": "complete", "pid": 53710, "elapsed_seconds": 10147.424777208995, "maximum_hours": 18, "paid_resources": false, "qualified": false, "decision": "retain V9; no material development improvement", "charged_hours": 6.557034615056236, "portal_uploads": 0}
+[colab] Stopping session 'v12-free-t4'...
+[colab] Session terminated.

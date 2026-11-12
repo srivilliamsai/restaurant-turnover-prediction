@@ -1,0 +1,7 @@
+{
+  "epoch": 1793270164.750423,
+  "reason": "Single local backup timed out; remote pilot remains the same unchanged run",
+  "action": "Reattach using bounded parallel file backups; do not restart kernel or fit duplicate pilot",
+  "model_sources_unchanged": true,
+  "original_deadlines_unchanged": true
+}

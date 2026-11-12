@@ -1,0 +1,93 @@
+{
+  "exaone": {
+    "repository": "LGAI-Research/EXAONE-Tabular",
+    "revision": "d149d0f0441053f0cf6b2b45f4b2067a81619cf9",
+    "commit_date": "2026-10-28T04:17:46Z",
+    "files": {
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/LGAI-Research/EXAONE-Tabular/d149d0f0441053f0cf6b2b45f4b2067a81619cf9/README.md",
+        "sha256": "4ba2c9f4f220026b2e25b4816c5c1820d1b66799274c4dffdd861fd1bba0deec",
+        "bytes": 26291
+      },
+      "pyproject.toml": {
+        "url": "https://raw.githubusercontent.com/LGAI-Research/EXAONE-Tabular/d149d0f0441053f0cf6b2b45f4b2067a81619cf9/pyproject.toml",
+        "sha256": "493d3ebda470123e08baa95317237f1ccac9e45045b44ee47ba90a0c11000aaf",
+        "bytes": 1588
+      },
+      "src/exaonetabular/config.py": {
+        "url": "https://raw.githubusercontent.com/LGAI-Research/EXAONE-Tabular/d149d0f0441053f0cf6b2b45f4b2067a81619cf9/src/exaonetabular/config.py",
+        "sha256": "c3a7ecaf7e2d7309b90e3e628438801b8a2599e1e3ef1eb24d15c757c3bcf163",
+        "bytes": 21780
+      },
+      "src/exaonetabular/presets.py": {
+        "url": "https://raw.githubusercontent.com/LGAI-Research/EXAONE-Tabular/d149d0f0441053f0cf6b2b45f4b2067a81619cf9/src/exaonetabular/presets.py",
+        "sha256": "b1cfcaa65c0aa8f17e1ff4abf2c1b5013e2d157f0dc1154ce021c30d3516946c",
+        "bytes": 3529
+      },
+      "src/exaonetabular/_inference_preprocessing.py": {
+        "url": "https://raw.githubusercontent.com/LGAI-Research/EXAONE-Tabular/d149d0f0441053f0cf6b2b45f4b2067a81619cf9/src/exaonetabular/_inference_preprocessing.py",
+        "sha256": "60699a4cfb614e525dd8b6279d07d7b51e95fe17870a99bbaa849f2986457063",
+        "bytes": 10202
+      },
+      "src/exaonetabular/checkpoint.py": {
+        "url": "https://raw.githubusercontent.com/LGAI-Research/EXAONE-Tabular/d149d0f0441053f0cf6b2b45f4b2067a81619cf9/src/exaonetabular/checkpoint.py",
+        "sha256": "669c7344e5d52a277910d1c2b68dba1357cef544293186d84845a0d7a142faf3",
+        "bytes": 14136
+      },
+      "src/exaonetabular/preprocessing.py": {
+        "url": "https://raw.githubusercontent.com/LGAI-Research/EXAONE-Tabular/d149d0f0441053f0cf6b2b45f4b2067a81619cf9/src/exaonetabular/preprocessing.py",
+        "sha256": "8a3fcdf5673bc79cbaacf56af4c6a521358bb82d5de831b930d3c735f8dcc033",
+        "bytes": 12502
+      },
+      "src/exaonetabular/regressor.py": {
+        "url": "https://raw.githubusercontent.com/LGAI-Research/EXAONE-Tabular/d149d0f0441053f0cf6b2b45f4b2067a81619cf9/src/exaonetabular/regressor.py",
+        "sha256": "c7156eb3398fea5faac75aaa667ee0d462b78049469090398d76387da30700c4",
+        "bytes": 20753
+      }
+    }
+  },
+  "tabpfn": {
+    "repository": "PriorLabs/TabPFN",
+    "revision": "1c0a4574aa3a9fa9f4f45612331a1fb08420e256",
+    "commit_date": "2026-10-28T16:16:48Z",
+    "files": {
+      "examples/finetune_regressor.py": {
+        "url": "https://raw.githubusercontent.com/PriorLabs/TabPFN/1c0a4574aa3a9fa9f4f45612331a1fb08420e256/examples/finetune_regressor.py",
+        "sha256": "e6601842e26ad96942608a5d3fd2729b776e6be5dc8ecb317017fa3cdeaa7502",
+        "bytes": 5487
+      },
+      "src/tabpfn/finetuning/finetuned_regressor.py": {
+        "url": "https://raw.githubusercontent.com/PriorLabs/TabPFN/1c0a4574aa3a9fa9f4f45612331a1fb08420e256/src/tabpfn/finetuning/finetuned_regressor.py",
+        "sha256": "63141daeecddac82dffc8cee2409b1e3b7a82b54278f09a16779b656043144dc",
+        "bytes": 23787
+      },
+      "src/tabpfn/finetuning/finetuned_base.py": {
+        "url": "https://raw.githubusercontent.com/PriorLabs/TabPFN/1c0a4574aa3a9fa9f4f45612331a1fb08420e256/src/tabpfn/finetuning/finetuned_base.py",
+        "sha256": "fe78fda84ad87711bc67c923fa83625ab918fcb4cbadf35d3e894b6f5a7c603f",
+        "bytes": 57602
+      },
+      "src/tabpfn/finetuning/train_util.py": {
+        "url": "https://raw.githubusercontent.com/PriorLabs/TabPFN/1c0a4574aa3a9fa9f4f45612331a1fb08420e256/src/tabpfn/finetuning/train_util.py",
+        "sha256": "0824c69f00f83c29b0eb70134d6bbd8b3c43835a2b5fb5190d9b66dc7aa2c63d",
+        "bytes": 10607
+      }
+    }
+  },
+  "tabfm": {
+    "repository": "google-research/tabfm",
+    "revision": "fbb665569425fd2f490c6576b3af967876fe11ff",
+    "commit_date": "2026-08-18T17:12:51Z",
+    "files": {
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/google-research/tabfm/fbb665569425fd2f490c6576b3af967876fe11ff/README.md",
+        "sha256": "e6a0e0e36ccd18174f5aaa97dd98a4661e25fc3014f4bdb9ffd3d2a4790fe146",
+        "bytes": 6506
+      },
+      "requirements.txt": {
+        "url": "https://raw.githubusercontent.com/google-research/tabfm/fbb665569425fd2f490c6576b3af967876fe11ff/requirements.txt",
+        "sha256": "8a52b978c2e796db297d51c68e78ac19c941d2121afae37aae34af2aa4c28b29",
+        "bytes": 4007
+      }
+    }
+  }
+}

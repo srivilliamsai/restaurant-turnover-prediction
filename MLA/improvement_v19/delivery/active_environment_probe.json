@@ -1,0 +1,22 @@
+{
+  "baseline": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.11.0+cu130",
+    "numba": "0.61.2",
+    "llvmlite": "0.44.0",
+    "gpu": "Tesla T4"
+  },
+  "candidates": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.13.0+cu130",
+    "numba": "0.68.0",
+    "llvmlite": "0.50.0",
+    "gpu": "Tesla T4"
+  }
+}

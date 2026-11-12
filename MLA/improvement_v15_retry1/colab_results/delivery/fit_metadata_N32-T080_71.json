@@ -1,0 +1,107 @@
+[
+  {
+    "name": "N32-T080",
+    "training_rows": 2794,
+    "units": "raw INR millions",
+    "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+    "model_class": "tabpfn.regressor.TabPFNRegressor",
+    "view": "N32",
+    "input_features": 32,
+    "temperature": 0.8,
+    "date_expansion": true,
+    "datetime_dependencies": {
+      "skrub": "0.10.1",
+      "pyarrow": "23.0.1"
+    },
+    "architecture_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+    ],
+    "configuration_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"
+    ]
+  },
+  {
+    "name": "N32-T080",
+    "training_rows": 2794,
+    "units": "raw INR millions",
+    "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+    "model_class": "tabpfn.regressor.TabPFNRegressor",
+    "view": "N32",
+    "input_features": 32,
+    "temperature": 0.8,
+    "date_expansion": true,
+    "datetime_dependencies": {
+      "skrub": "0.10.1",
+      "pyarrow": "23.0.1"
+    },
+    "architecture_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+    ],
+    "configuration_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"
+    ]
+  },
+  {
+    "name": "N32-T080",
+    "training_rows": 2794,
+    "units": "raw INR millions",
+    "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+    "model_class": "tabpfn.regressor.TabPFNRegressor",
+    "view": "N32",
+    "input_features": 32,
+    "temperature": 0.8,
+    "date_expansion": true,
+    "datetime_dependencies": {
+      "skrub": "0.10.1",
+      "pyarrow": "23.0.1"
+    },
+    "architecture_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+    ],
+    "configuration_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"
+    ]
+  },
+  {
+    "name": "N32-T080",
+    "training_rows": 2795,
+    "units": "raw INR millions",
+    "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+    "model_class": "tabpfn.regressor.TabPFNRegressor",
+    "view": "N32",
+    "input_features": 32,
+    "temperature": 0.8,
+    "date_expansion": true,
+    "datetime_dependencies": {
+      "skrub": "0.10.1",
+      "pyarrow": "23.0.1"
+    },
+    "architecture_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+    ],
+    "configuration_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"
+    ]
+  },
+  {
+    "name": "N32-T080",
+    "training_rows": 2795,
+    "units": "raw INR millions",
+    "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+    "model_class": "tabpfn.regressor.TabPFNRegressor",
+    "view": "N32",
+    "input_features": 32,
+    "temperature": 0.8,
+    "date_expansion": true,
+    "datetime_dependencies": {
+      "skrub": "0.10.1",
+      "pyarrow": "23.0.1"
+    },
+    "architecture_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+    ],
+    "configuration_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "phase": "awaiting_explicit_resume_confirmation",
+  "new_account_sign_in_verified": true,
+  "account_masked": "REDACTED",
+  "current_account_active_assignments": 0,
+  "compute_allocation_started": false,
+  "original_started_epoch": 1793251847,
+  "clock_reset": false,
+  "source_identity_verified": true,
+  "reason": "Automatic approval review requires an explicit resume after the earlier dont start instruction.",
+  "epoch": 1793252905.973382
+}

@@ -1,0 +1,17 @@
+{
+  "settings": 8,
+  "folds": 5,
+  "seed": 42,
+  "selection_threshold": 15000,
+  "selected": false,
+  "best": {
+    "name": "rf_mf0.7_leaf2_cap100000000.0",
+    "weight": 0.25,
+    "model_rmse": 20163068.899216764,
+    "blend_rmse": 19881361.38652965,
+    "baseline_rmse": 19849487.911774013,
+    "improvement": -31873.474755637348,
+    "seconds": 11.14336323738098
+  },
+  "conclusion": "All24 model/blend combinations worse than fixed v2. Do not add RF. No seed909 used."
+}

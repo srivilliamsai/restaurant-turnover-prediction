@@ -1,0 +1,9 @@
+AUDIT PASS: four fixed candidate recipes, at most twenty-five comparisons, seven verified baseline assignments.
+{"PILOT": "C8", "status": "engineering_excluded", "reason": "batch_difference_INR: INR 373.18046268075705"}
+{"PILOT": "KS8", "status": "engineering_excluded", "reason": "ImportError: Numba needs NumPy 2.2 or less. Got NumPy 2.5."}
+{"PILOT": "D8", "status": "PASS", "reason": null}
+{"PILOT": "KM8", "status": "engineering_excluded", "reason": "ImportError: Numba needs NumPy 2.2 or less. Got NumPy 2.5."}
+{"PILOT_COMPLETE": true, "admitted": ["D8"], "forecasts_hours": [0.07309034960500002, 1.5478564541158781, 0.660752513826889]}
+{"setting": "D8", "scheme": "42", "fold_complete": 1}
+{"setting": "D8", "scheme": "42", "fold_complete": 2}
+{"setting": "D8", "scheme": "42", "fold_complete": 3}

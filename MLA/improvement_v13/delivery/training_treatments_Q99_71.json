@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Q99",
+    "training_rows": 2794,
+    "units": "INR millions",
+    "quantile": 0.99,
+    "quantile_method": "linear",
+    "threshold_INR": 100175000.0000004,
+    "capped_rows": 28
+  },
+  {
+    "name": "Q99",
+    "training_rows": 2794,
+    "units": "INR millions",
+    "quantile": 0.99,
+    "quantile_method": "linear",
+    "threshold_INR": 93140000.00000033,
+    "capped_rows": 28
+  },
+  {
+    "name": "Q99",
+    "training_rows": 2794,
+    "units": "INR millions",
+    "quantile": 0.99,
+    "quantile_method": "linear",
+    "threshold_INR": 100175000.0000004,
+    "capped_rows": 28
+  },
+  {
+    "name": "Q99",
+    "training_rows": 2795,
+    "units": "INR millions",
+    "quantile": 0.99,
+    "quantile_method": "linear",
+    "threshold_INR": 102529999.99999997,
+    "capped_rows": 28
+  },
+  {
+    "name": "Q99",
+    "training_rows": 2795,
+    "units": "INR millions",
+    "quantile": 0.99,
+    "quantile_method": "linear",
+    "threshold_INR": 88119999.9999999,
+    "capped_rows": 28
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "spec": {
+    "depth": 5,
+    "iterations": 850,
+    "delta": 40,
+    "l2": 10,
+    "subsample": 0.7
+  },
+  "variants": [
+    "base",
+    "categorical_ratings",
+    "dual_ratings",
+    "categorical_tiers_flags",
+    "social_quantized",
+    "events_zero",
+    "date_detail",
+    "city_cuisine",
+    "reduced",
+    "cuisine_canonical"
+  ],
+  "fold_seed": 42,
+  "model_seeds": [
+    1042,
+    2042
+  ],
+  "baseline": "0.5*v2_42+0.5*bag_subsample_h40_42",
+  "selection_metric": "full original-target RMSE",
+  "reserved_seeds_not_used": [
+    1701,
+    1711
+  ]
+}

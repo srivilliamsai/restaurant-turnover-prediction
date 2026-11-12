@@ -1,0 +1,89 @@
+{
+  "weights": {
+    "engineered": 0.06448967252799573,
+    "engineered_drop": 0.09631791670874144,
+    "ordered_depth5": 0.08506979696072951,
+    "huber20_engineered": 0.06274397436222087,
+    "huber40": 0.08855352684532777,
+    "clip120": 0.07794706969414854,
+    "spline_ridge": 0.1564818325852009,
+    "svr_core": 0.05842831937969262,
+    "huber40_engineered": 0.09327794461342266,
+    "huber40_monotone": 0.21668994632251995
+  },
+  "configs": {
+    "engineered": {
+      "kind": "cat",
+      "variant": "engineered",
+      "depth": 6,
+      "iterations": 260
+    },
+    "engineered_drop": {
+      "kind": "cat",
+      "variant": "engineered_drop",
+      "depth": 6,
+      "iterations": 216
+    },
+    "ordered_depth5": {
+      "kind": "cat",
+      "variant": "base",
+      "depth": 5,
+      "boosting_type": "Ordered",
+      "iterations": 219
+    },
+    "huber20_engineered": {
+      "kind": "cat",
+      "variant": "engineered_drop",
+      "depth": 5,
+      "loss": "Huber:delta=20000000",
+      "iterations": 699
+    },
+    "huber40": {
+      "kind": "cat",
+      "variant": "base",
+      "depth": 5,
+      "loss": "Huber:delta=40000000",
+      "iterations": 664
+    },
+    "clip120": {
+      "kind": "cat",
+      "variant": "base",
+      "depth": 5,
+      "cap": 120000000.0,
+      "iterations": 591
+    },
+    "spline_ridge": {
+      "kind": "spline",
+      "variant": "base",
+      "alpha": 100
+    },
+    "svr_core": {
+      "kind": "svr",
+      "variant": "core",
+      "C": 20
+    },
+    "huber40_engineered": {
+      "kind": "cat",
+      "variant": "engineered",
+      "depth": 5,
+      "loss": "Huber:delta=40000000",
+      "iterations": 619
+    },
+    "huber40_monotone": {
+      "kind": "cat",
+      "variant": "base",
+      "depth": 5,
+      "loss": "Huber:delta=40000000",
+      "monotone": true,
+      "iterations": 447
+    }
+  },
+  "confirmation_split_seeds": [
+    71,
+    2026
+  ],
+  "development_rmse": 19815351.4381409,
+  "selection": "Nonnegative weights summing to 1; objective = MSE in millions + 2 * sum(weights squared); discard weights < 0.05 and renormalize. Selected only on development OOF seed 42.",
+  "model_seed_schedule": "42 + fold_number (one based)",
+  "final_seed": 42
+}

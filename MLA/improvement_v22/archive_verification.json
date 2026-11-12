@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "archive": "V22_Delivery.zip",
+  "sha256": "2947c9be0d5f312dc0cd2fa6fba32db7d9f85794f28742d8622b1e30c6ba81f5",
+  "bytes": 19237811,
+  "verified_files": 499,
+  "all_archive_entries_hashed": true,
+  "original_input_and_computational_source_identity_unchanged": true,
+  "original_execution_clock_retained": true,
+  "old_and_new_accounts_released": true,
+  "portal_uploads": 0,
+  "extracted_reproduction": {
+    "status": "PASS",
+    "extracted_archive_decision_reproduction": "PASS",
+    "archive_files_verified": 498,
+    "original_planning_snapshot_hashes_verified": 8,
+    "matched_original_review": true,
+    "recomputed_blends": 3,
+    "verified_fold_outputs": 10,
+    "turnover_models_refitted": 0,
+    "gpu_allocations": 0,
+    "portal_uploads": 0
+  }
+}

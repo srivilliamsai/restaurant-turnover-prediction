@@ -1,0 +1,81 @@
+{
+  "reviewed_on": "2026-10-26",
+  "repository": "https://github.com/imanasjoshi/restaurant_turnover_prediction",
+  "ref_downloaded": "master",
+  "review_mode": "Static JSON/code inspection only; no external notebook execution",
+  "external_code_used_in_candidate": false,
+  "external_predictions_used_in_candidate": false,
+  "input_checks": {
+    "Train_dataset.csv": {
+      "sha256": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+      "identical_to_official": true,
+      "rows": 3493,
+      "columns": 34
+    },
+    "Test_dataset.csv": {
+      "sha256": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+      "identical_to_official": true,
+      "rows": 500,
+      "columns": 33
+    }
+  },
+  "notebook": {
+    "sha256": "a40be79a8fdbf7fada3c38bca7156fae30204888e506935f1d0d6cff30ff2ed3",
+    "code_cells": 7,
+    "execution_counts": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "saved_output_count": 0,
+    "runtime_reproduction_verified": false
+  },
+  "public_csv_diagnostic": {
+    "sha256": "00052c9d5bd7012c631092d2ef5dea0fd42ea40bc3c988de04ae98ee0b214ab2",
+    "ids_match_scored_v7_and_order": true,
+    "rows": 500,
+    "rms_difference_from_v7": 1794351.560074731,
+    "conditional_portal_rmse_lower_bound": 10229964.975447368,
+    "actual_portal_rmse": null,
+    "assumptions": "Correct v7 Trial 1 score attribution; ordinary unweighted RMSE on all the same 500 restaurants",
+    "hidden_targets_used": false,
+    "can_reach_previously_shown_leader_under_assumptions": false
+  },
+  "static_findings": [
+    "README claims about 19.83M local RMSE; no verified portal score supplied.",
+    "Final stacker and affine calibration are scored on their fitting rows.",
+    "Meta-level KFold reuses a global base-model OOF matrix rather than nesting the entire pipeline.",
+    "Optional library fallback can change active models across environments.",
+    "Native HGB and fold-model averaging are hypotheses for original bounded experiments."
+  ],
+  "current_best": {
+    "version": "v7_trial_1",
+    "portal_rmse": 12024316.5355221,
+    "rank_in_screenshot": 24,
+    "previous_best_portal_rmse": 12046722.3691139,
+    "rmse_reduction": 22405.8335918,
+    "relative_reduction_percent": 0.18599111779354527,
+    "csv": "candidates/trial_1/submission.csv",
+    "csv_sha256": "5f20ea8d610e325c0eae4727b7ed8c737ce2d881239792c9a6af5ce4e3dec1ba",
+    "source": "User-provided portal screenshot in this conversation",
+    "screenshot": "/tmp/TemporaryItems/NSIRD_screencaptureui_3Q4hNQ/Screenshot 2026-10-26 at 7.00.26\u202fPM.png",
+    "screenshot_date": "2026-10-26",
+    "submission_time": null,
+    "attribution": "Associated with Trial 1 from the preceding upload recommendation and user response. The screenshot does not independently display the filename or hash.",
+    "agent_performed_upload": false,
+    "recommended_current_submission": "v7_trial_1",
+    "trial_2_portal_score": null,
+    "screenshot_sha256": "14376a688da8a7de2c2644d17e8a54623f3934727f5dfd1a1fb0a6d7e8ef63a8"
+  },
+  "gap_to_previously_shown_leader": {
+    "leader_rmse": "4796740.5600053",
+    "current_gap": "7227575.9755168",
+    "required_reduction_percent": "60.10799827304260284109731789",
+    "live_leaderboard_checked": false
+  },
+  "v8_training_performed": false
+}

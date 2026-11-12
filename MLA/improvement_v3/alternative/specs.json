@@ -1,0 +1,126 @@
+{
+  "spline_core_a30": {
+    "subset": "core",
+    "alpha": 30,
+    "knots": 4
+  },
+  "spline_core_a30_h40": {
+    "subset": "core",
+    "alpha": 30,
+    "knots": 4,
+    "huber": 40
+  },
+  "spline_core_a300": {
+    "subset": "core",
+    "alpha": 300,
+    "knots": 4
+  },
+  "spline_core_a300_h40": {
+    "subset": "core",
+    "alpha": 300,
+    "knots": 4,
+    "huber": 40
+  },
+  "spline_core_a100_h20": {
+    "subset": "core",
+    "alpha": 100,
+    "knots": 4,
+    "huber": 20
+  },
+  "spline_core_a100_c120": {
+    "subset": "core",
+    "alpha": 100,
+    "knots": 4,
+    "cap": 120
+  },
+  "interaction_core_h40": {
+    "subset": "core",
+    "alpha": 100,
+    "knots": 4,
+    "huber": 40,
+    "interactions": true
+  },
+  "allspline_core_h40": {
+    "subset": "core",
+    "alpha": 300,
+    "knots": 4,
+    "huber": 40,
+    "all_spline": true
+  },
+  "spline_full_a30": {
+    "subset": "full",
+    "alpha": 30,
+    "knots": 4
+  },
+  "spline_full_a30_h40": {
+    "subset": "full",
+    "alpha": 30,
+    "knots": 4,
+    "huber": 40
+  },
+  "spline_full_a300": {
+    "subset": "full",
+    "alpha": 300,
+    "knots": 4
+  },
+  "spline_full_a300_h40": {
+    "subset": "full",
+    "alpha": 300,
+    "knots": 4,
+    "huber": 40
+  },
+  "spline_full_a100_h20": {
+    "subset": "full",
+    "alpha": 100,
+    "knots": 4,
+    "huber": 20
+  },
+  "spline_full_a100_c120": {
+    "subset": "full",
+    "alpha": 100,
+    "knots": 4,
+    "cap": 120
+  },
+  "interaction_full_h40": {
+    "subset": "full",
+    "alpha": 100,
+    "knots": 4,
+    "huber": 40,
+    "interactions": true
+  },
+  "allspline_full_h40": {
+    "subset": "full",
+    "alpha": 300,
+    "knots": 4,
+    "huber": 40,
+    "all_spline": true
+  },
+  "kernel_g0.01_a1": {
+    "kind": "kernel",
+    "subset": "full",
+    "alpha": 1,
+    "gamma": 0.01,
+    "cap": 120
+  },
+  "kernel_g0.01_a10": {
+    "kind": "kernel",
+    "subset": "full",
+    "alpha": 10,
+    "gamma": 0.01,
+    "cap": 120
+  },
+  "kernel_g0.04_a1": {
+    "kind": "kernel",
+    "subset": "full",
+    "alpha": 1,
+    "gamma": 0.04,
+    "cap": 120
+  },
+  "kernel_g0.04_a10": {
+    "kind": "kernel",
+    "subset": "full",
+    "alpha": 10,
+    "gamma": 0.04,
+    "cap": 120
+  }
+}

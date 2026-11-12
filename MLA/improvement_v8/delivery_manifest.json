@@ -1,0 +1,128 @@
+{
+  "inputs": {
+    "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+    "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+    "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+    "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+  },
+  "runtime": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "sklearn": "1.9.1",
+    "scipy": "1.18.1",
+    "catboost": "1.2.10"
+  },
+  "implementation": {
+    "modeling.py": "44177560fc1ed64744662ba3159acff5026644ca74423f52cac6bcc3966eefb3",
+    "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+    "engine.py": "9354369db39326d90534fd2542657005ca22b8b8680eec0e619902e6af6e4610",
+    "workflow.py": "71450094d272322589ea7bf638768bb3f04c2e2c3484948c77e3988b554200e1",
+    "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+    "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+    "v5_contract.json": "3446412f01d536a31123142b984392216efd29094965500251386eac1814ab69",
+    "reference_manifest.json": "be46ba7d91b5c583570f4ceaf4919c292d4fba460dec58998873084638ae2c78",
+    "verify_core.py": "80d8d746bc5a1e315f6c3e59aa7d07ad3b41b2aab5ecaebadfc5ac26aa72f0d0",
+    "prepare_reference.py": "16cc7c92bf2119e2b4a3f126d27e3f85f77fa4441897a5e2aa71bc1273fbba53",
+    "run_local.py": "06ee4a7569f0a12346bf4ab165e01c9aff2f7e843dad653af6646e8c8a1c03bc",
+    "deliver.py": "73b3255b6a307f74646fa23f2fba135a9a9c13b89acc85ed319e7cc66590c277",
+    "execute_notebook.py": "d101d417cb00149cdba71db46495121af6b8fab80e2c7d2b70c142935bf61ac8",
+    "verify_delivery.py": "f0bd3bad4aae84605aec09d785cba492bfea41ca217645f2ef6960df53413cf5",
+    "analyze.py": "4021219be4a1b3ad76f709a7f258168b7837c32ce3e90519943c2f1ca714fe49"
+  },
+  "outputs": {
+    "REPORT.md": "537a43ecdba6fc6b3e64c2282f2119d819b0b5bff17e3a98c9d084c264a5092e",
+    "README.md": "7f1131ef1c53dee669e9dcea75af594007c667fdc7006bd4d68dc4f3dc6640f9",
+    "PLAN.md": "d374bcf192436f1789e3f30d03b520bc556a732215cd826702f0fed04fa71a55",
+    "V8_Research_Colab.ipynb": "6c7b17265935d0e1384249cb584990b781266a14f6f6217e6cfb55aa72a2bce0",
+    "rolo_repository_review.json": "01cf1443a0cf4fb8d10695ebdc37463c332dd8054159170495e890b75f47da83",
+    "portal_trials.csv": "d946c3470789d41bf9b574f8d938bd9dd78cdc00cb1e7133b19a5ee59e518c7d",
+    "recommended_submission/submission.csv": "5f20ea8d610e325c0eae4727b7ed8c737ce2d881239792c9a6af5ce4e3dec1ba",
+    "recommended_submission/submission.ipynb": "b0723c81bf424dc8df2cf06778e46586b82d3ee0bf731255cd2f2f05c1dbb078",
+    "results/audit.json": "0c1ae011202b888ce070f852fd180453cc89bc9e440343f1cf0d4ba76736720c",
+    "results/screening.csv": "e35d4b60169d5548c2eafadcc0d010d292d924dfecdb35010ceddfa86d8a5171",
+    "results/development.csv": "77c2495c8ec73d0bab26d8ef5389c79cccccb65e1e4bc5bc87d1b91f90eba9cc",
+    "results/experiment_plan.json": "04bc714bc3af724b7cdb4686f0b7335a227934dc729b22fadb74a5211e5eadcb",
+    "results/candidate_lock.json": "71b53cf0171cc07f9f5171304f1038dc00b477f471ebd87900cae7ca1b5dfaa9",
+    "results/decision.json": "3549ae9940563d8b98057854f770da75cd010bec62b28f94d90458fe8bcdba4e",
+    "results/core_verification.json": "414a873dcddf87e375d826fa04fe103da45bc7a83d271e0aafe829ecaf73759a",
+    "results/v7_full_reproduction.json": "ff64d5d1b71612527a33378078bcf71f53235afde948d7fa81ded6afe73523f8",
+    "results/research_notebook_execution.json": "60de351740dbbcf064d5ba3d4418d286e2523bd553f265d6403060264c4fd147",
+    "results/development_segments.csv": "5c1d0328867fbbd65e9c1da27f852c43ae1eff5c10c70d20a07c23779162da4c",
+    "results/development_folds.csv": "5060fb8a6b4231dd52575d5eece15fe1f60fdf5c49e911f23015a5e6dc2d79fd"
+  },
+  "decision": {
+    "candidates": [],
+    "trials": [],
+    "lock_sha256": "71b53cf0171cc07f9f5171304f1038dc00b477f471ebd87900cae7ca1b5dfaa9",
+    "baseline_portal_rmse": 12024316.5355221,
+    "decision": "retain scored V7; no V8 candidate passed all gates",
+    "portal_uploads_by_agent": 0
+  },
+  "preserved_v7": {
+    "submission.csv": "5f20ea8d610e325c0eae4727b7ed8c737ce2d881239792c9a6af5ce4e3dec1ba",
+    "submission.ipynb": "b0723c81bf424dc8df2cf06778e46586b82d3ee0bf731255cd2f2f05c1dbb078"
+  },
+  "qualified_candidates": 0,
+  "v8_outer_fold_fits": 160,
+  "development_configurations": 64,
+  "confirmation_assignments_run": 0,
+  "current_best_portal_rmse": 12024316.5355221,
+  "notebook_execution": {
+    "status": "PASS",
+    "code_cells": 9,
+    "figures": [
+      "research_figure_1.png"
+    ],
+    "fresh_process": true,
+    "fresh_directory": "./improvement_v8/results/notebook_execution/v8_fresh_xqn1vkij",
+    "earlier_project_directories_required": false,
+    "prediction_checkpoint_reads": 0,
+    "v8_component_checkpoint_reads": 0,
+    "v7_oof_snapshots_reused_explicitly": true,
+    "v8_outer_fold_fits": 160,
+    "development_scores_recomputed": 128,
+    "maximum_score_difference": 0.0,
+    "v7_reproduction": {
+      "maximum_difference_INR": 7.450580596923828e-09,
+      "fresh_full_fit": true,
+      "seconds": 101.03861391700048,
+      "checks": {
+        "rows": 500,
+        "columns": [
+          "Registration Number",
+          "Annual Turnover"
+        ],
+        "original_row_order": true,
+        "unique_ids": true,
+        "finite_nonnegative": true,
+        "permutation_invariance": true,
+        "target_id_invariance": true,
+        "missing_and_unseen_values": true,
+        "malformed_cases_rejected": 12
+      }
+    },
+    "qualified_candidates": 0,
+    "elapsed_seconds": 164.03942458299935,
+    "portal_uploads_by_agent": 0
+  },
+  "v7_full_reproduction": {
+    "maximum_difference_INR": 7.450580596923828e-09,
+    "fresh_full_fit": true,
+    "seconds": 97.68680258299719,
+    "checks": {
+      "rows": 500,
+      "columns": [
+        "Registration Number",
+        "Annual Turnover"
+      ],
+      "original_row_order": true,
+      "unique_ids": true,
+      "finite_nonnegative": true,
+      "permutation_invariance": true,
+      "target_id_invariance": true,
+      "missing_and_unseen_values": true,
+      "malformed_cases_rejected": 12
+    }
+  },
+  "portal_uploads_by_agent": 0
+}

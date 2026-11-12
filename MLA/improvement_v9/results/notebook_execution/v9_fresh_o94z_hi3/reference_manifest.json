@@ -1,0 +1,341 @@
+{
+  "original_v7_sources": {
+    "reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+    "models.py": "029de9731d057d8827ff6c7f1789f7669b408eeb3626e50a1677db223614edf8",
+    "workflow.py": "c99c63e5575e514ec030828a40c16511c8aa0fab5edb04c842d555c347114e8a",
+    "scored_reference.json": "7148150a20525f1bee168fe6a0b6fd44d8b1244348881ee962aca464affa74cd"
+  },
+  "inputs": {
+    "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+    "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+    "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+    "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+  },
+  "preserved_v7": {
+    "submission.csv": "5f20ea8d610e325c0eae4727b7ed8c737ce2d881239792c9a6af5ce4e3dec1ba",
+    "submission.ipynb": "b0723c81bf424dc8df2cf06778e46586b82d3ee0bf731255cd2f2f05c1dbb078"
+  },
+  "import_only_change": "legacy_models.py changes import reference as ref to import legacy_reference as ref",
+  "frozen_files": {
+    "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+    "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+    "v5_contract.json": "3446412f01d536a31123142b984392216efd29094965500251386eac1814ab69"
+  },
+  "snapshots": {
+    "42": {
+      "file": "baseline_snapshots/v7_42.npz",
+      "sha256": "48c19dded9e46b1b5a0760ce42abb5cad33d62cc3300f92958bdf6a727026f29",
+      "fold_sha256": "f8c856fc074d5653672bbf04d4b38cf3b0c3f2e8dc87ce77daf7bcd0ebe501a4",
+      "train_ids": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+      "inputs": {
+        "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+        "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+        "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+        "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+      },
+      "source_metadata": [
+        {
+          "context": {
+            "name": "v5",
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "sources": {
+              "models.py": "029de9731d057d8827ff6c7f1789f7669b408eeb3626e50a1677db223614edf8",
+              "workflow.py": "c99c63e5575e514ec030828a40c16511c8aa0fab5edb04c842d555c347114e8a",
+              "reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+              "scored_reference.json": "7148150a20525f1bee168fe6a0b6fd44d8b1244348881ee962aca464affa74cd"
+            },
+            "contract": "fec9f422b498cdbf84a3a8fcb093f405302e3bd2e1c29a14f62b9b1fbe04a376",
+            "spec": null,
+            "seeds": [
+              10242,
+              20242
+            ],
+            "training_rows": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+            "extra": {
+              "scheme": "42",
+              "folds": "f8c856fc074d5653672bbf04d4b38cf3b0c3f2e8dc87ce77daf7bcd0ebe501a4"
+            }
+          },
+          "sha256": "5d828869dc82845157432dccf58e6395f3310280b882651f8204b7a0f7a8f421",
+          "diagnostics": {
+            "origin": "verified actual v6 frozen-v5 predictions",
+            "source_sha256": "7646a11fd435821666a6266832a9018a23338f1b94e5097909d3e667367f2c9c"
+          }
+        },
+        {
+          "context": {
+            "name": "residual_tree_l2",
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "sources": {
+              "models.py": "029de9731d057d8827ff6c7f1789f7669b408eeb3626e50a1677db223614edf8",
+              "workflow.py": "c99c63e5575e514ec030828a40c16511c8aa0fab5edb04c842d555c347114e8a",
+              "reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+              "scored_reference.json": "7148150a20525f1bee168fe6a0b6fd44d8b1244348881ee962aca464affa74cd"
+            },
+            "contract": "fec9f422b498cdbf84a3a8fcb093f405302e3bd2e1c29a14f62b9b1fbe04a376",
+            "spec": {
+              "family": "residual",
+              "kind": "cat",
+              "loss": "RMSE"
+            },
+            "seeds": [
+              10242,
+              20242
+            ],
+            "training_rows": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+            "extra": {
+              "scheme": "42"
+            }
+          },
+          "sha256": "da659505f22193bcdb927421fafe56d6f7d59864d916f407194edc5451a80c67"
+        }
+      ]
+    },
+    "71": {
+      "file": "baseline_snapshots/v7_71.npz",
+      "sha256": "d2dc4282cfc3d6771c7e1ffd62629d24f204da19d975e430190e6640774c8b06",
+      "fold_sha256": "369051948161e2c7ce035455beac8aa9b2a832e49fe341aa6bcd3407d9adc9f4",
+      "train_ids": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+      "inputs": {
+        "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+        "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+        "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+        "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+      },
+      "source_metadata": [
+        {
+          "context": {
+            "name": "v5",
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "sources": {
+              "models.py": "029de9731d057d8827ff6c7f1789f7669b408eeb3626e50a1677db223614edf8",
+              "workflow.py": "c99c63e5575e514ec030828a40c16511c8aa0fab5edb04c842d555c347114e8a",
+              "reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+              "scored_reference.json": "7148150a20525f1bee168fe6a0b6fd44d8b1244348881ee962aca464affa74cd"
+            },
+            "contract": "fec9f422b498cdbf84a3a8fcb093f405302e3bd2e1c29a14f62b9b1fbe04a376",
+            "spec": null,
+            "seeds": [
+              10242,
+              20242
+            ],
+            "training_rows": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+            "extra": {
+              "scheme": "71",
+              "folds": "369051948161e2c7ce035455beac8aa9b2a832e49fe341aa6bcd3407d9adc9f4"
+            }
+          },
+          "sha256": "c8283fd4fe1e24671168944c752ce8b205a742100f59fb8027718e26fb4ed87b",
+          "diagnostics": {
+            "origin": "verified actual v6 frozen-v5 predictions",
+            "source_sha256": "5375f1a0e0e3682e454392ebf6486885af498ec12b450807611d163968bc0652"
+          }
+        },
+        {
+          "context": {
+            "name": "residual_tree_l2",
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "sources": {
+              "models.py": "029de9731d057d8827ff6c7f1789f7669b408eeb3626e50a1677db223614edf8",
+              "workflow.py": "c99c63e5575e514ec030828a40c16511c8aa0fab5edb04c842d555c347114e8a",
+              "reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+              "scored_reference.json": "7148150a20525f1bee168fe6a0b6fd44d8b1244348881ee962aca464affa74cd"
+            },
+            "contract": "fec9f422b498cdbf84a3a8fcb093f405302e3bd2e1c29a14f62b9b1fbe04a376",
+            "spec": {
+              "family": "residual",
+              "kind": "cat",
+              "loss": "RMSE"
+            },
+            "seeds": [
+              10242,
+              20242
+            ],
+            "training_rows": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+            "extra": {
+              "scheme": "71"
+            }
+          },
+          "sha256": "28c1a02dfc5d13b758e279943a345551847c2f8a168d879e56fa7553bf826a6a"
+        }
+      ]
+    },
+    "strat:27421": {
+      "file": "baseline_snapshots/v7_strat_27421.npz",
+      "sha256": "e504f31f2a1f260cffed4900890c1849bcfd42cf69be9ee697689d93adb66b2a",
+      "fold_sha256": "67db8264d9d9d73fbc8379c98a739dda7d2b85904a111154feb79e4793cc344a",
+      "train_ids": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+      "inputs": {
+        "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+        "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+        "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+        "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+      },
+      "source_metadata": [
+        {
+          "context": {
+            "name": "v5",
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "sources": {
+              "models.py": "029de9731d057d8827ff6c7f1789f7669b408eeb3626e50a1677db223614edf8",
+              "workflow.py": "c99c63e5575e514ec030828a40c16511c8aa0fab5edb04c842d555c347114e8a",
+              "reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+              "scored_reference.json": "7148150a20525f1bee168fe6a0b6fd44d8b1244348881ee962aca464affa74cd"
+            },
+            "contract": "fec9f422b498cdbf84a3a8fcb093f405302e3bd2e1c29a14f62b9b1fbe04a376",
+            "spec": null,
+            "seeds": [
+              10242,
+              20242
+            ],
+            "training_rows": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+            "extra": {
+              "scheme": "strat:27421",
+              "folds": "67db8264d9d9d73fbc8379c98a739dda7d2b85904a111154feb79e4793cc344a"
+            }
+          },
+          "sha256": "5fb39dd4e3d9d872875191d377e246a29afc5e8c226d8de7c29f207c49cd7536",
+          "diagnostics": {
+            "origin": "fresh frozen-v5 folds on v7 split assignment"
+          }
+        },
+        {
+          "context": {
+            "name": "residual_tree_l2",
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "sources": {
+              "models.py": "029de9731d057d8827ff6c7f1789f7669b408eeb3626e50a1677db223614edf8",
+              "workflow.py": "c99c63e5575e514ec030828a40c16511c8aa0fab5edb04c842d555c347114e8a",
+              "reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+              "scored_reference.json": "7148150a20525f1bee168fe6a0b6fd44d8b1244348881ee962aca464affa74cd"
+            },
+            "contract": "fec9f422b498cdbf84a3a8fcb093f405302e3bd2e1c29a14f62b9b1fbe04a376",
+            "spec": {
+              "family": "residual",
+              "kind": "cat",
+              "loss": "RMSE"
+            },
+            "seeds": [
+              10242,
+              20242
+            ],
+            "training_rows": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+            "extra": {
+              "scheme": "strat:27421"
+            }
+          },
+          "sha256": "d00b367621d84db2f77f3211a7814bfeccfe2791404b6e8cefa2adea2a426f4a"
+        }
+      ]
+    },
+    "city": {
+      "file": "baseline_snapshots/v7_city.npz",
+      "sha256": "06f6ed4e891869b46c0e84b76a703714e5e73fbabd4e2de64d1f596515e7d585",
+      "fold_sha256": "13c6c2a450106d2b6ea2a02e61ef0507120b6a9ca4bf7b3038a838fc65d040bd",
+      "train_ids": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+      "inputs": {
+        "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+        "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+        "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+        "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+      },
+      "source_metadata": [
+        {
+          "context": {
+            "name": "v5",
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "sources": {
+              "models.py": "029de9731d057d8827ff6c7f1789f7669b408eeb3626e50a1677db223614edf8",
+              "workflow.py": "c99c63e5575e514ec030828a40c16511c8aa0fab5edb04c842d555c347114e8a",
+              "reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+              "scored_reference.json": "7148150a20525f1bee168fe6a0b6fd44d8b1244348881ee962aca464affa74cd"
+            },
+            "contract": "fec9f422b498cdbf84a3a8fcb093f405302e3bd2e1c29a14f62b9b1fbe04a376",
+            "spec": null,
+            "seeds": [
+              10242,
+              20242
+            ],
+            "training_rows": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+            "extra": {
+              "scheme": "city",
+              "folds": "13c6c2a450106d2b6ea2a02e61ef0507120b6a9ca4bf7b3038a838fc65d040bd"
+            }
+          },
+          "sha256": "29c97892eee79e9258e95d4e5a31445e53405d003c5d8f4aafa18c9946bc4f41",
+          "diagnostics": {
+            "origin": "fresh frozen-v5 folds on v7 split assignment"
+          }
+        },
+        {
+          "context": {
+            "name": "residual_tree_l2",
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "sources": {
+              "models.py": "029de9731d057d8827ff6c7f1789f7669b408eeb3626e50a1677db223614edf8",
+              "workflow.py": "c99c63e5575e514ec030828a40c16511c8aa0fab5edb04c842d555c347114e8a",
+              "reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+              "scored_reference.json": "7148150a20525f1bee168fe6a0b6fd44d8b1244348881ee962aca464affa74cd"
+            },
+            "contract": "fec9f422b498cdbf84a3a8fcb093f405302e3bd2e1c29a14f62b9b1fbe04a376",
+            "spec": {
+              "family": "residual",
+              "kind": "cat",
+              "loss": "RMSE"
+            },
+            "seeds": [
+              10242,
+              20242
+            ],
+            "training_rows": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+            "extra": {
+              "scheme": "city"
+            }
+          },
+          "sha256": "f0cb386304a4503d25834013de67735aa0397cffa8d0097bf1d37ba7a152f792"
+        }
+      ]
+    }
+  },
+  "scored_v7_portal_rmse": 12024316.5355221
+}

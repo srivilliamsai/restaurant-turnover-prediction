@@ -1,0 +1,74 @@
+{"phase": "requesting_free_t4", "pid": 24238, "elapsed_seconds": 7.32910048100166e-05, "maximum_hours": 8, "paid_resources": false}
+Current balance: 0.00 compute units
+Usage rate: 0.00/hr
+Active assignments: 0
+{"phase": "stopped_with_preserved_v9", "pid": 24238, "elapsed_seconds": 182.09996649999812, "maximum_hours": 8, "paid_resources": false, "error_type": "TimeoutExpired", "message": "Command '['./improvement_v9/colab_cli_env/bin/colab', '--auth', 'oauth2', 'new', '--gpu', 'T4', '-s', 'v11-free-t4']' timed out after 180 seconds", "qualified_submission_recommended": false}
+{"phase": "requesting_free_t4", "pid": 24514, "elapsed_seconds": 0.0003550420005922206, "maximum_hours": 8, "paid_resources": false}
+Current balance: 0.00 compute units
+Usage rate: 0.00/hr
+Active assignments: 0
+{"phase": "installing_pinned_dependencies", "pid": 24514, "elapsed_seconds": 6.968200916999194, "maximum_hours": 8, "paid_resources": false}
+V11 pinned dependency installation started.
+V11 pinned installation complete; clean kernel restart follows.
+{"phase": "preparing_verified_experiment_bundle", "pid": 24514, "elapsed_seconds": 47.5410469999988, "maximum_hours": 8, "paid_resources": false}
+V11 official inputs, frozen sources and verified baseline registry restored.
+{"phase": "auditing", "pid": 24514, "elapsed_seconds": 60.50997658399865, "maximum_hours": 8, "paid_resources": false}
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (2876039298.py, line 4)
+V11 transport failure: RuntimeError SyntaxError: invalid syntax. Perhaps you forgot a comma? (2876039298.py, line 4)
+{"phase": "stopped_with_preserved_v9", "pid": 24514, "elapsed_seconds": 63.28250954199757, "maximum_hours": 8, "paid_resources": false, "error_type": "RuntimeError", "message": "V11 stage failed; inspect preserved logs", "qualified_submission_recommended": false}
+V11 result archive prepared.
+Saved completed V11 artifacts locally.
+[colab] Stopping session 'v11-free-t4'...
+[colab] Session terminated.
+{"phase": "requesting_free_t4", "pid": 24594, "elapsed_seconds": 0.00035362500057090074, "maximum_hours": 8, "paid_resources": false}
+Current balance: 0.00 compute units
+Usage rate: 0.00/hr
+Active assignments: 0
+{"phase": "installing_pinned_dependencies", "pid": 24594, "elapsed_seconds": 5.474617957996088, "maximum_hours": 8, "paid_resources": false}
+V11 pinned dependency installation started.
+V11 pinned installation complete; clean kernel restart follows.
+{"phase": "preparing_verified_experiment_bundle", "pid": 24594, "elapsed_seconds": 44.458396624999295, "maximum_hours": 8, "paid_resources": false}
+V11 official inputs, frozen sources and verified baseline registry restored.
+{"phase": "auditing", "pid": 24594, "elapsed_seconds": 56.34098166700278, "maximum_hours": 8, "paid_resources": false}
+V11 supervised foreground stage: audit PID 549
+{"phase": "piloting_new_backbones", "pid": 24594, "elapsed_seconds": 64.47842979199777, "maximum_hours": 8, "paid_resources": false}
+V11 supervised foreground stage: pilot PID 585
+V11 result archive prepared.
+Saved completed V11 artifacts locally.
+{"phase": "screening_four_fixed_settings", "pid": 24594, "elapsed_seconds": 555.5060439579975, "maximum_hours": 8, "paid_resources": false}
+V11 supervised foreground stage: screen PID 2639
+AssertionError: V11 supervised stage failed; inspect saved logs.
+V11 transport failure: RuntimeError inspect the saved stage log; authenticated transport details are suppressed
+{"phase": "stopped_with_preserved_v9", "pid": 24594, "elapsed_seconds": 928.883528624996, "maximum_hours": 8, "paid_resources": false, "error_type": "RuntimeError", "message": "V11 stage failed; inspect preserved logs", "qualified_submission_recommended": false}
+V11 result archive prepared.
+Saved completed V11 artifacts locally.
+[colab] Stopping session 'v11-free-t4'...
+[colab] Session terminated.
+{"phase": "requesting_free_t4", "pid": 26248, "elapsed_seconds": 0.0002919589969678782, "maximum_hours": 8, "paid_resources": false}
+Current balance: 0.00 compute units
+Usage rate: 0.00/hr
+Active assignments: 0
+{"phase": "installing_pinned_dependencies", "pid": 26248, "elapsed_seconds": 6.0716890420007985, "maximum_hours": 8, "paid_resources": false}
+V11 pinned dependency installation started.
+V11 pinned installation complete; clean kernel restart follows.
+{"phase": "preparing_verified_experiment_bundle", "pid": 26248, "elapsed_seconds": 45.2875724589976, "maximum_hours": 8, "paid_resources": false}
+V11 official inputs, frozen sources and verified baseline registry restored.
+{"phase": "auditing", "pid": 26248, "elapsed_seconds": 56.43127016699873, "maximum_hours": 8, "paid_resources": false}
+V11 supervised foreground stage: audit PID 659
+{"phase": "verifying_frozen_pilot_for_resume", "pid": 26248, "elapsed_seconds": 64.76964470899838, "maximum_hours": 8, "paid_resources": false}
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Frozen pilot, runtime, checkpoint and fully loaded reporting functions verified; no model refit for resume.
+V11 result archive prepared.
+Saved completed V11 artifacts locally.
+{"phase": "screening_feasible_fixed_settings", "pid": 26248, "elapsed_seconds": 88.05875279199972, "maximum_hours": 8, "paid_resources": false}
+V11 supervised foreground stage: screen PID 811
+V11 result archive prepared.
+Saved completed V11 artifacts locally.
+{"phase": "finalist_frozen", "pid": 26248, "elapsed_seconds": 795.5935284590014, "maximum_hours": 8, "paid_resources": false, "choice": null}
+{"phase": "confirming_frozen_finalist", "pid": 26248, "elapsed_seconds": 795.5968621670036, "maximum_hours": 8, "paid_resources": false}
+{"phase": "stopped_with_preserved_v9", "pid": 26248, "elapsed_seconds": 795.598774459002, "maximum_hours": 8, "paid_resources": false, "error_type": "AttributeError", "message": "'NoneType' object has no attribute 'poll'", "qualified_submission_recommended": false}
+V11 result archive prepared.
+Saved completed V11 artifacts locally.
+[colab] Stopping session 'v11-free-t4'...
+[colab] Session terminated.

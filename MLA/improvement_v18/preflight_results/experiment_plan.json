@@ -1,0 +1,162 @@
+{
+  "settings": {
+    "FT512": {
+      "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+      "model_version": "V3_5",
+      "tabpfn_version": "9.2.0",
+      "learning_rate": 3e-06,
+      "use_lr_scheduler": false,
+      "weight_decay": 0.01,
+      "epochs_max": 30,
+      "early_stopping_patience": 8,
+      "inner_validation_fraction": 0.15,
+      "inner_seed_base": 9091,
+      "query_fraction": 0.2,
+      "n_estimators_finetune": 1,
+      "n_estimators_validation": 1,
+      "n_estimators_final_inference": 1,
+      "use_fixed_preprocessing_seed": true,
+      "activation_checkpointing": true,
+      "crps_loss_weight": 1.0,
+      "mse_loss_weight": 1.0,
+      "mse_loss_clip": null,
+      "seed": 10242,
+      "epoch_zero_eligible": true,
+      "all_outer_training_rows_refitted": true,
+      "inference_context_subsampling": false,
+      "context_plus_query_rows": 512
+    },
+    "EXA8": {
+      "source_revision": "d149d0f0441053f0cf6b2b45f4b2067a81619cf9",
+      "repo_id": "LG-AI-Research/EXAONE-Tabular",
+      "checkpoint_revision": "093ad1c2613e1e95d26df8610451d2e02ed53cbe",
+      "filename": "exaone-tabular-regressor-v1_default.safetensors",
+      "expected_checkpoint_sha256": "24891e14e649c6509f07ee62b5583e06544b68eaf9a9195ee58777eb9cf6fa0d",
+      "ensemble_count": 8,
+      "seed": 10242,
+      "compute_dtype": "float32",
+      "point_estimate": "mean",
+      "member_weighting": "uniform",
+      "n_svd": 0,
+      "svd_gate": false,
+      "svd_split": false,
+      "support_row_limit": 100000,
+      "feature_limit": 500,
+      "query_batch_limit": 500,
+      "maximum_gpu_budget_bytes": 12884901888,
+      "all_original_training_rows_required": true
+    },
+    "FT1024": {
+      "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+      "model_version": "V3_5",
+      "tabpfn_version": "9.2.0",
+      "learning_rate": 3e-06,
+      "use_lr_scheduler": false,
+      "weight_decay": 0.01,
+      "epochs_max": 30,
+      "early_stopping_patience": 8,
+      "inner_validation_fraction": 0.15,
+      "inner_seed_base": 9091,
+      "query_fraction": 0.2,
+      "n_estimators_finetune": 1,
+      "n_estimators_validation": 1,
+      "n_estimators_final_inference": 1,
+      "use_fixed_preprocessing_seed": true,
+      "activation_checkpointing": true,
+      "crps_loss_weight": 1.0,
+      "mse_loss_weight": 1.0,
+      "mse_loss_clip": null,
+      "seed": 10242,
+      "epoch_zero_eligible": true,
+      "all_outer_training_rows_refitted": true,
+      "inference_context_subsampling": false,
+      "context_plus_query_rows": 1024
+    }
+  },
+  "weights": [
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "routes": {
+    "FT512": {
+      "FT512": 1.0
+    },
+    "EXA8": {
+      "EXA8": 1.0
+    },
+    "FT1024": {
+      "FT1024": 1.0
+    },
+    "FT512_EXA8": {
+      "FT512": 0.5,
+      "EXA8": 0.5
+    },
+    "FT1024_EXA8": {
+      "FT1024": 0.5,
+      "EXA8": 0.5
+    }
+  },
+  "development": [
+    42,
+    71
+  ],
+  "confirmation": [
+    918601,
+    918602,
+    918603,
+    "strat:27421",
+    "city"
+  ],
+  "formula": "(1-w)*V14+w*M",
+  "control": "V14",
+  "minimum_mean_relative_gain": 0.002,
+  "maximum_stress_deterioration": 0.01,
+  "maximum_finalists": 1,
+  "ranking": "descending mean relative gain, lower effective new-model share, setting name, route",
+  "behavior_tolerance_INR": 10.0,
+  "behavior_rmse_tolerance_INR": 1.0,
+  "same_layout_repeat_tolerance_INR": 0.01,
+  "maximum_hours": 18,
+  "stage_seconds": {
+    "audit": 54000,
+    "pilot": 54000,
+    "screen": 54000,
+    "confirm": 54000,
+    "export": 10800
+  },
+  "sources": {
+    "core.py": "466945c93654077fc6599700a73a7fdb23bdd415893e66635770dd7b3a1b086f",
+    "features.py": "86939252439cba79a803e1cc3563ecc83e5ff37dc4ab52b79edb71e3fd22fe1c",
+    "modeling.py": "6380180020158744654788e41d44af0ef1518c6f1fa130b1c3ffcca642f1ff46",
+    "workflow.py": "d0910de2bef1aa3397007921d67580d1060f413719189d09cccf44c194a1985a",
+    "verify.py": "8032e62e6eb8a0770ccf11eb324dd9640ef87d6ffb983c3e7d094858e3e7172e",
+    "delivery.py": "89459ed273dc457d6d517f4fcc13525e064fccd7c2b01aafdf8ccc2e7bfbd4c6",
+    "fresh_worker.py": "2bf9f9fadc22bf0b4db26a39fbb597da68ec5ded129efa9a8d26f525da619cd0",
+    "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+    "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+    "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+    "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+    "v5_contract.json": "3446412f01d536a31123142b984392216efd29094965500251386eac1814ab69",
+    "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+    "reference_manifest.json": "82417467e331d6e470fd1058c4ea4edb5a47f98021efc822176bd9a04b99bbd5",
+    "baseline_registry.json": "53e7ddb7fbfbe08162aa97fac8d5ad9dea4981aab3aa942b3e98ebdb2a3060b7",
+    "frozen_pfn.py": "ff4d383d269ffdc1b0021f7d0cac4e19240be130f2544bcc80dc41916a5262b5",
+    "new_models.py": "7a0881130a82e66b000d777775e039814385b1bf0e592d9e75a5caa3faf97051",
+    "pilot_worker.py": "f9721329d6fcc6f8d395f175d6fd24ed954dcd9cf5533db655e1e66191a2bc6e",
+    "checkpoint_registry.json": "4dd0b5e632d00b688e6dca18892c46a80512eafbd2f5b783850d66a0f76a233c",
+    "source_registry.json": "4ddfe7ed70327ced487ee6b6ada889e37dbfc81c4785e4cbe7c1fd5fa7faf81a",
+    "protocol_proposed.json": "9753ec10e1b15210b12240b89c1609eaf65a6afd527fc657bcd684f31e2445f5",
+    "release_review_registry.json": "ba98e8ecee9cb9188b8ce87a8e607181c249c89727bfab2a63985b0267a8a470",
+    "mac_controls.py": "c6c01ea36a0a9f3a4c5a6e4c8110c4e07b83e5373c110e075f4a7844515208c3",
+    "control_worker.py": "4b5abe58acd90cedb8c2557166fda48a0daff2e8b75da67a87aa975678d61ee3"
+  },
+  "inputs": {
+    "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+    "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+    "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+    "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+  }
+}

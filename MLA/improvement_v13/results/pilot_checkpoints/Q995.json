@@ -1,0 +1,122 @@
+{
+  "context": {
+    "name": "Q995",
+    "sources": {
+      "core.py": "7714298cadc9a402339c83eef2ddb4581e9edc26b8dcf9fad610871551386feb",
+      "features.py": "0cb3d82406e689c678de2777b7c632f6f870f62f2396a17c94d3581a09774185",
+      "modeling.py": "f8ba069b061038765833c8778458baa333c754935e1200b0df10e1b894100d06",
+      "workflow.py": "504c863d54c0c205a382b9cdb199d512acbea8c7f0258a67ba908ab6e63814e7",
+      "verify.py": "707678c676b07c856104d19ad67bb83f35ab81bf136973f2c834e56c9ef044b7",
+      "delivery.py": "6152f24eb024ba7904c9c9b5dd540398e1ba45ceb2940a094880ff44b83d26fa",
+      "fresh_worker.py": "ac0067701c1252b6d9f274cbc5ab890b5ecbf4defda8ffa746c8bab6c93200e9",
+      "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+      "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+      "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+      "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+      "v5_contract.json": "3446412f01d536a31123142b984392216efd29094965500251386eac1814ab69",
+      "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+      "reference_manifest.json": "1b8e4607f5ecf1b38e96af91f51b59721f54836a6dbc501889424f018229d594",
+      "baseline_registry.json": "53e7ddb7fbfbe08162aa97fac8d5ad9dea4981aab3aa942b3e98ebdb2a3060b7"
+    },
+    "inputs": {
+      "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+      "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+      "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+      "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+    },
+    "runtime_contract": {
+      "runtime": {
+        "dependencies": {
+          "numpy": "2.5.4",
+          "pandas": "3.0.6",
+          "scikit-learn": "1.9.1",
+          "scipy": "1.18.1",
+          "catboost": "1.2.10",
+          "interpret-core": "0.7.8",
+          "tabpfn": "9.2.0",
+          "torch": "2.11.0+cu130"
+        },
+        "gpu": "Tesla T4",
+        "cuda": "13.0",
+        "precision": "float32",
+        "prediction_chunk": 500
+      },
+      "checkpoint": {
+        "repo_id": "Prior-Labs/TabPFN-v2-reg",
+        "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+        "filename": "tabpfn-v2-regressor.ckpt",
+        "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736"
+      },
+      "settings": {
+        "Q99": {
+          "target": "cap",
+          "quantile": 0.99
+        },
+        "Q995": {
+          "target": "cap",
+          "quantile": 0.995
+        },
+        "SQ2": {
+          "target": "sqrt_second_moment"
+        }
+      },
+      "target_units": "INR millions before target treatment",
+      "adapter": "500-row blocks; pad with first encoded training row; discard padded outputs",
+      "output_floor": 0.0,
+      "SQ2": "raw-space criterion.mean_of_square(logits) * 1e6",
+      "parameters": {
+        "auto_scale_n_estimators": true,
+        "average_before_softmax": false,
+        "categorical_features_indices": [],
+        "device": "cuda",
+        "differentiable_input": false,
+        "enable_torch_compile": false,
+        "eval_metric": null,
+        "fit_mode": "low_memory",
+        "ignore_pretraining_limits": false,
+        "inference_config": null,
+        "inference_precision": "torch.float32",
+        "keep_cache_on_device": true,
+        "kv_cache_precision": null,
+        "memory_saving_mode": true,
+        "model_path": "checkpoint_sha256:2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736",
+        "n_estimators": 16,
+        "n_jobs": null,
+        "n_preprocessing_jobs": 1,
+        "random_state": 10242,
+        "show_progress_bar": false,
+        "softmax_temperature": "auto",
+        "tuning_config": null
+      },
+      "distribution_source_sha256": "d36583139f7984df9a37297cf6e706a22db01a97871203af421d840c9f38d49b"
+    },
+    "train_indices": "8634da4e6c9ace0322909b3751a85c8b57d595ff9e1292e207da808bc1cc7e57",
+    "valid_indices": "8360304ee9fe72e340fde1c7ad04eeb9bf848f6f6b06d9b08ea57aec6f788b70",
+    "training_targets": "63998c05f2bd6fe27bf536d3f74ed91f5542c3bcef6e4bbc3ed28bc9492ffa38"
+  },
+  "result": {
+    "status": "PASS",
+    "fold_seconds": 125.67824645899987,
+    "behavior": {
+      "permutation_difference_INR": 0.0,
+      "label_id_difference_INR": 0.0,
+      "batch_difference_INR": 0.0,
+      "individual_difference_INR": 0.0,
+      "missing_unseen_inputs": true
+    },
+    "fresh_repeat_difference_INR": 0.0,
+    "target_metadata": {
+      "name": "Q995",
+      "training_rows": 2794,
+      "units": "INR millions",
+      "quantile": 0.995,
+      "quantile_method": "linear",
+      "threshold_INR": 150000000.0,
+      "capped_rows": 13
+    },
+    "training_rows": 2794,
+    "validation_rows": 699,
+    "engineering_seconds": 686.2797140139999
+  },
+  "result_sha256": "35ec9f07261d2950aa93480560a7f5241e2bdf345dea11eaf13d1e7d2f655c07"
+}

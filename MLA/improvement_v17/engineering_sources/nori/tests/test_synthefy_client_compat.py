@@ -1,0 +1,380 @@
+"""Freeze the published Synthefy 6.3 Nori behavior across the v7 cutover.
+
+The fixture records the exact public source commit and blobs used as the
+compatibility oracle. CI compares against it and never regenerates it from the
+current implementation. SageMaker's intentionally replaced asynchronous S3
+transport has a separate assertion below.
+"""
+
+import copy
+import hashlib
+import importlib.util
+import importlib.machinery
+import json
+import math
+import struct
+import sys
+import types
+from pathlib import Path
+from typing import Any
+
+import httpx
+import pandas as pd
+
+import synthefy._aws as aws_module
+from synthefy import NoriPredictRequest, NoriPredictResponse, SynthefyNoriClient
+from synthefy.errors import BadRequestError
+
+_ROOT = Path(__file__).resolve().parents[1]
+_GOLDEN_PATH = _ROOT / "tests" / "compat" / "synthefy_6_3_nori_goldens.json"
+_GOLDEN_SHA256 = "f357863508260242746021594d8616a8baecb6284736f54fac8f8e771e0e7903"
+_ORACLE = {
+    "repository": "Synthefy/synthefy",
+    "commit": "9ecc3d2fad8e37e95869379cc05f328597e258f9",
+    "version": "6.3.0",
+    "nori_client_blob": "a6fb1d1d91677ff9aa8c99186088bf63fd24eea7",
+    "data_models_blob": "725e79d92c73313da6ab1c4154b73701e61458f6",
+}
+
+
+def test_retired_forecast_v2_surface_is_absent():
+    import synthefy
+    import synthefy.data_models as data_models
+
+    assert importlib.util.find_spec("synthefy.api_client") is None
+    for name in ("SynthefyAPIClient", "SynthefyAsyncAPIClient"):
+        assert not hasattr(synthefy, name)
+    for name in ("ForecastV2Request", "ForecastV2Response"):
+        assert not hasattr(data_models, name)
+
+
+def _normalized(value: Any) -> Any:
+    if isinstance(value, float) and math.isnan(value):
+        return "<NaN>"
+    if isinstance(value, list):
+        return [_normalized(item) for item in value]
+    if isinstance(value, tuple):
+        return [_normalized(item) for item in value]
+    if isinstance(value, dict):
+        return {key: _normalized(item) for key, item in value.items()}
+    if isinstance(value, pd.Series):
+        return {
+            "kind": "Series",
+            "name": value.name,
+            "index": value.index.tolist(),
+            "values": _normalized(value.tolist()),
+        }
+    if isinstance(value, pd.DataFrame):
+        return {
+            "kind": "DataFrame",
+            "index": value.index.tolist(),
+            "columns": value.columns.tolist(),
+            "values": _normalized(value.values.tolist()),
+        }
+    return value
+
+
+def _remote_call(response: dict, *args: Any, **kwargs: Any) -> dict:
+    captured = {}
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        captured.update(
+            raw=request.content.decode(),
+            body=json.loads(request.content),
+            path=request.url.path,
+            authorization=request.headers["authorization"],
+        )
+        return httpx.Response(
+            200,
+            json=response,
+            headers={"x-request-id": "req-golden"},
+        )
+
+    client = SynthefyNoriClient(api_key="golden-key", model="nori-30m")
+    client.close()
+    client.client = httpx.Client(
+        base_url=client.base_url,
+        transport=httpx.MockTransport(handler),
+    )
+    result = client.predict(*args, **kwargs)
+    client.close()
+    return {"transport": captured, "result": _normalized(result)}
+
+
+def _public_trace(monkeypatch) -> dict:
+    trace = {"oracle": dict(_ORACLE)}
+
+    trace["remote_default"] = _remote_call(
+        {"task": "regression", "predictions": [10.0, None]},
+        [[0.0, 1.0], [1.0, 0.0]],
+        [1.0, 2.0],
+        [[2.0, 2.0], [3.0, float("nan")]],
+    )
+    trace["remote_dataframe"] = _remote_call(
+        {"task": "regression", "predictions": [3.5, 4.5]},
+        pd.DataFrame({"number": [1.0, 2.0, 3.0], "color": ["red", "blue", None]}),
+        pd.Series([1.0, 2.0, 3.0], name="score"),
+        pd.DataFrame(
+            {"color": ["green", "red"], "number": [4.0, 5.0]},
+            index=["row-a", "row-b"],
+        ),
+        as_pandas=True,
+    )
+    trace["remote_memory"] = _remote_call(
+        {
+            "task": "regression",
+            "predictions": [2.5],
+            "memory_report": {"rung": "resident_int8", "resident_gb": 0.25},
+        },
+        [[0.0], [1.0]],
+        [0.0, 1.0],
+        [[2.0]],
+        memory_policy={"cache_dtype": "int8"},
+    )
+    trace["remote_quantiles"] = _remote_call(
+        {
+            "task": "regression",
+            "predictions": [2.0, 3.0],
+            "output_type": "quantiles",
+            "quantiles": [[2.8, 1.2], [3.8, 2.2]],
+            "taus": [0.9, 0.1],
+        },
+        [[0.0], [1.0]],
+        [0.0, 1.0],
+        [[2.0], [3.0]],
+        output_type="quantiles",
+        quantiles=[0.9, 0.1],
+    )
+
+    local_capture = {}
+    fake_nori = types.ModuleType("synthefy_nori")
+    fake_nori.__spec__ = importlib.machinery.ModuleSpec("synthefy_nori", loader=None)
+
+    def fake_predict(
+        X_train: Any,
+        y_train: Any,
+        X_test: Any,
+        *,
+        task: Any = None,
+        model: Any = None,
+        **kwargs: Any,
+    ) -> list:
+        local_capture.update(
+            X_train=X_train,
+            y_train=y_train,
+            X_test=X_test,
+            task=task,
+            model=model,
+            kwargs=kwargs,
+        )
+        return [7.0]
+
+    fake_nori.predict = fake_predict
+    monkeypatch.setitem(sys.modules, "synthefy_nori", fake_nori)
+    local_client = SynthefyNoriClient(mode="local", model="nori-30m")
+    local_result = local_client.predict([[0.0], [1.0]], [0.0, 1.0], [[2.0]])
+    trace["local_default"] = {
+        "call": _normalized(local_capture),
+        "result": _normalized(local_result),
+    }
+
+    aws_capture = {}
+
+    class MissingS3Object(Exception):
+        response = {"Error": {"Code": "404"}}
+
+    class FakeS3:
+        def __init__(self) -> None:
+            self.objects = {}
+
+        def upload_file(self, path: str, bucket: str, key: str) -> None:
+            with Path(path).open("rb") as source:
+                magic, header_size = struct.unpack("<8sI", source.read(12))
+                assert magic == b"NORI_REQ"
+                header = json.loads(source.read(header_size))
+            aws_capture["upload"] = {
+                "bucket": bucket,
+                "key": key,
+                "metadata": header["metadata"],
+            }
+            self.objects[(bucket, key)] = Path(path).read_bytes()
+
+        def head_object(self, *, Bucket: str, Key: str) -> dict:
+            if (Bucket, Key) not in self.objects:
+                raise MissingS3Object()
+            return {"ContentLength": len(self.objects[(Bucket, Key)])}
+
+        def download_file(self, bucket: str, key: str, path: str) -> None:
+            Path(path).write_bytes(self.objects[(bucket, key)])
+
+        def delete_object(self, *, Bucket: str, Key: str) -> None:
+            aws_capture.setdefault("deletes", []).append([Bucket, Key])
+            self.objects.pop((Bucket, Key), None)
+
+        def close(self) -> None:
+            aws_capture["s3_closed"] = True
+
+    class FakeRuntime:
+        def __init__(self, s3: FakeS3) -> None:
+            self.s3 = s3
+
+        def invoke_endpoint_async(self, **kwargs: Any) -> dict:
+            aws_capture["request"] = kwargs
+            invocation_id = kwargs["InferenceId"]
+            output = f"s3://results/invocations/{invocation_id}/result.json.out"
+            failure = f"s3://results/invocations/{invocation_id}/failure.json.out"
+            self.s3.objects[("results", output.split("results/", 1)[1])] = json.dumps(
+                {
+                    "task": "regression",
+                    "model": "nori-30m",
+                    "predictions": [8.0],
+                }
+            ).encode()
+            return {
+                "InferenceId": invocation_id,
+                "OutputLocation": output,
+                "FailureLocation": failure,
+            }
+
+        def close(self) -> None:
+            aws_capture["runtime_closed"] = True
+
+    fake_s3 = FakeS3()
+    fake_runtime = FakeRuntime(fake_s3)
+
+    class FakeSession:
+        def __init__(self, *args: Any, **kwargs: Any) -> None:
+            aws_capture["session"] = {"args": list(args), "kwargs": kwargs}
+
+        def client(self, service_name: str, **kwargs: Any) -> Any:
+            aws_capture.setdefault("services", []).append(service_name)
+            return fake_runtime if service_name == "sagemaker-runtime" else fake_s3
+
+    class FakeConfig:
+        def __init__(self, **_kwargs: Any) -> None:
+            pass
+
+    fake_boto3 = types.SimpleNamespace(Session=FakeSession)
+    monkeypatch.setattr(
+        aws_module,
+        "load_aws_sdk",
+        lambda: (fake_boto3, FakeConfig),
+    )
+    aws_client = SynthefyNoriClient(
+        mode="sagemaker",
+        model="nori-30m",
+        endpoint_name="golden-endpoint",
+        region_name="us-east-1",
+        s3_staging_uri="s3://golden-bucket/nori/golden",
+    )
+    aws_result = aws_client.predict([[0.0], [1.0]], [0.0, 1.0], [[2.0]])
+    aws_client.close()
+    trace["sagemaker_default"] = {
+        "result": _normalized(aws_result),
+        "transport": _normalized(aws_capture),
+    }
+
+    def bad_handler(_request: httpx.Request) -> httpx.Response:
+        return httpx.Response(
+            400,
+            json={
+                "error": {
+                    "message": "golden invalid",
+                    "code": "invalid_request",
+                }
+            },
+            headers={"x-request-id": "req-error"},
+        )
+
+    error_client = SynthefyNoriClient(api_key="bad", model="nori-30m", max_retries=0)
+    error_client.close()
+    error_client.client = httpx.Client(
+        base_url=error_client.base_url,
+        transport=httpx.MockTransport(bad_handler),
+    )
+    try:
+        error_client.predict([[0.0]], [0.0], [[1.0]])
+    except BadRequestError as exc:
+        trace["remote_error"] = {
+            "class": type(exc).__name__,
+            "message": str(exc),
+            "status_code": exc.status_code,
+            "request_id": exc.request_id,
+            "error_code": exc.error_code,
+            "response_body": exc.response_body,
+        }
+
+    trace["wire_models"] = {
+        "default": NoriPredictRequest(
+            X_train=[[1.0, None]],
+            y_train=[2.0],
+            X_test=[[3.0, 4.0]],
+        ).to_wire(),
+        "distribution": NoriPredictRequest(
+            X_train=[[1.0]],
+            y_train=[2.0],
+            X_test=[[3.0]],
+            output_type="quantiles",
+            quantiles=[0.9, 0.1],
+        ).to_wire(),
+        # The golden pins the 6.3 fields. New additive response capabilities
+        # have their own contract tests and are excluded from this legacy view.
+        # `discretize` is echoed only when a request discretized, so it is absent
+        # from the body a 6.3 caller sees.
+        "response": NoriPredictResponse(task="regression", predictions=[1.0, None]).model_dump(
+            exclude={"large_context_report", "discretize"}
+        ),
+    }
+    return trace
+
+
+def test_fixture_is_pinned_to_the_public_client_snapshot():
+    golden_bytes = _GOLDEN_PATH.read_bytes()
+    assert hashlib.sha256(golden_bytes).hexdigest() == _GOLDEN_SHA256
+    assert json.loads(golden_bytes)["oracle"] == _ORACLE
+
+
+def test_migrated_client_matches_frozen_6_3_except_reviewed_contract_changes(monkeypatch):
+    current = _public_trace(monkeypatch)
+    golden = json.loads(_GOLDEN_PATH.read_text())
+
+    sagemaker = current.pop("sagemaker_default")
+    golden.pop("sagemaker_default")
+
+    # Issue #246 intentionally replaces 6.3's out-of-range -1 sentinel with the
+    # bounded K "other" code shared by the estimator and one-shot helper. Keep
+    # the 6.3 fixture immutable as an oracle and isolate that one reviewed public
+    # difference; every other transport, result, model, and error stays frozen.
+    current_dataframe = current.pop("remote_dataframe")
+    golden_dataframe = golden.pop("remote_dataframe")
+    # Multi-target response fields are additive and null for every frozen 6.3
+    # scalar trace. Keep the 6.3 oracle immutable while isolating the reviewed
+    # schema extension, just as the DataFrame encoding change is isolated below.
+    current_response = current["wire_models"]["response"]
+    current_response.pop("samples", None)
+    current_response.pop("multi_target_prediction_strategy", None)
+    current_response.pop("target_orders", None)
+    current_response.pop("multi_target_memory_reports", None)
+    # Same treatment for the served model's registry digest: additive, null on a response
+    # the 6.3 oracle never saw.
+    current_response.pop("model_version", None)
+    assert current == golden
+    assert golden_dataframe["transport"]["body"]["X_test"][0] == [4.0, -1.0]
+    expected_dataframe = copy.deepcopy(golden_dataframe)
+    expected_dataframe["transport"]["body"]["X_test"][0] = [4.0, 2.0]
+    expected_dataframe["transport"]["raw"] = expected_dataframe["transport"]["raw"].replace("[4.0, -1.0]", "[4.0, 2.0]")
+    assert current_dataframe == expected_dataframe
+
+    assert sagemaker["result"] == [8.0]
+    transport = sagemaker["transport"]
+    assert transport["session"] == {"args": [], "kwargs": {}}
+    assert transport["services"] == ["sagemaker-runtime", "s3"]
+    assert transport["upload"]["bucket"] == "golden-bucket"
+    assert transport["upload"]["metadata"]["model"] == "nori-30m"
+    request = transport["request"]
+    assert request["EndpointName"] == "golden-endpoint"
+    assert request["ContentType"] == "application/vnd.synthefy.nori.tensorfile"
+    assert request["InputLocation"].startswith("s3://golden-bucket/nori/golden/")
+    assert "Body" not in request and "CustomAttributes" not in request
+    assert transport["runtime_closed"] is True
+    assert transport["s3_closed"] is True

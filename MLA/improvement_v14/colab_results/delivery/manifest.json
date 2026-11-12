@@ -1,0 +1,211 @@
+{
+  "inputs": {
+    "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+    "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+    "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+    "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+  },
+  "sources": {
+    "core.py": "c89a9b5e4543a1e001ecd0f705c4f0a1e93022fccf0dba927e0bc551439f0233",
+    "features.py": "32092a9530f7d56fd16d0cc94ea187e74304270027ca8b3fa128133b53aa1951",
+    "modeling.py": "28f815f089eeab9441147f80c9705aece6945f94d1deae5000b197b3dda03c92",
+    "workflow.py": "7eae7122a0e5a4d030989f740e4b76a58c484cf176f72a54b80dbb2bd90d2b23",
+    "verify.py": "b955cefb1ed24a2d349739be272b82434982563fd82a44ccd4963615c84cb554",
+    "delivery.py": "3ce64f168fcc023c5efd8a3622f5ea5ee07396fd699f0cacc53d813886d478db",
+    "fresh_worker.py": "88f602fd8127814271668f82da4f3d2f05c8f9819ba25ef35d7a1238ff9af119",
+    "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+    "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+    "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+    "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+    "v5_contract.json": "3446412f01d536a31123142b984392216efd29094965500251386eac1814ab69",
+    "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+    "reference_manifest.json": "1b8e4607f5ecf1b38e96af91f51b59721f54836a6dbc501889424f018229d594",
+    "baseline_registry.json": "53e7ddb7fbfbe08162aa97fac8d5ad9dea4981aab3aa942b3e98ebdb2a3060b7"
+  },
+  "decision": {
+    "complete": true,
+    "qualified": true,
+    "choices": [
+      {
+        "name": "P35_8",
+        "route": "A",
+        "weight": 0.75,
+        "effective_new_share": 0.75,
+        "rmse_42": 19649033.55616177,
+        "gain_42": 82208.17207151651,
+        "relative_gain_42": 0.004166396276717114,
+        "rmse_71": 19649905.454410896,
+        "gain_71": 83114.62613611668,
+        "relative_gain_71": 0.004211956699828823,
+        "mean_relative_gain": 0.004189176488272968
+      }
+    ],
+    "finalists": [
+      {
+        "choice": {
+          "name": "P35_8",
+          "route": "A",
+          "weight": 0.75,
+          "effective_new_share": 0.75,
+          "rmse_42": 19649033.55616177,
+          "gain_42": 82208.17207151651,
+          "relative_gain_42": 0.004166396276717114,
+          "rmse_71": 19649905.454410896,
+          "gain_71": 83114.62613611668,
+          "relative_gain_71": 0.004211956699828823,
+          "mean_relative_gain": 0.004189176488272968
+        },
+        "qualified": true,
+        "metrics": {
+          "48211": {
+            "v9_rmse": 19743626.58666369,
+            "candidate_rmse": 19661515.847807977,
+            "gain": 82110.73885571212,
+            "relative_gain": 0.004158847843646709
+          },
+          "48212": {
+            "v9_rmse": 19816597.33709491,
+            "candidate_rmse": 19672213.5596034,
+            "gain": 144383.7774915099,
+            "relative_gain": 0.007286002487482364
+          },
+          "48213": {
+            "v9_rmse": 19711188.541631036,
+            "candidate_rmse": 19619589.028592434,
+            "gain": 91599.51303860173,
+            "relative_gain": 0.0046470821810231724
+          },
+          "strat:27421": {
+            "v9_rmse": 19726481.457054287,
+            "candidate_rmse": 19663361.754943263,
+            "gain": 63119.70211102441,
+            "relative_gain": 0.0031997445793077554
+          },
+          "city": {
+            "v9_rmse": 20061150.77388296,
+            "candidate_rmse": 19924168.53482659,
+            "gain": 136982.23905636743,
+            "relative_gain": 0.006828234362043712
+          }
+        },
+        "uncertainty": {
+          "resamples": 5000,
+          "seed": 8319,
+          "ci95_INR": [
+            35922.47204564797,
+            181795.21567397917
+          ],
+          "interpretation": "Conditional paired-row robustness interval; excludes selection, retraining and hidden-test shift."
+        }
+      }
+    ],
+    "lock_sha256": "88ed87cf11e0461fcac009cec30a5123cdd8d7cfab0a75239bd5b1618b734749",
+    "decision": "One qualified candidate for manual portal trial.",
+    "portal_uploads": 0
+  },
+  "observed_portal_best": {
+    "version": "V9",
+    "rmse": 11904515.9864996
+  },
+  "paid_resources": false,
+  "portal_uploads": 0,
+  "compute_budget": {
+    "by_stage": {
+      "audit": 0.7483861446380615,
+      "pilot": 310.02423763275146,
+      "screen": 289.4293842315674,
+      "confirm": 569.4444451332092
+    },
+    "seconds": 3658.418006181717,
+    "maximum_hours": 8,
+    "measurement": "Conservative elapsed task wall time, including setup and interruptions.",
+    "active_stage": {
+      "name": "export",
+      "started_epoch": 1793207201.998998
+    }
+  },
+  "files": {
+    "confirmation.csv": "1cf34b1a476204b1d5a7c4e9c58150717d7ccb07b6c14cccb1a5744941373597",
+    "fit_metadata_I8_42.json": "ccab682ff33d39827ede5f4ec92745adbf451f12b9c7f577df94df5e7ba27f35",
+    "authorization.json": "3c2a9f3f0e12c0c91ba9a0f6509b1cb88ce57b35308cfea4f14510bcd5328d3c",
+    "V14_Report.md": "5a6e11c94ac1512a8210fee7bc44331a0512724d3cefce89a580ecdfe2ffe720",
+    "README.md": "849e419565d0f3956f92db565d95a76f0e61977276435a860af584babaa5e73d",
+    "PLAN.md": "288abe2f29c72243816ee57f1eac43db9fec5e0bb9460fad90c202478c2a1d31",
+    "submission.ipynb": "86fae4ea97d6fd35c2ed485c60f26f02c98fccb3cbeda9a10228cc48e788318e",
+    "experiment_plan.json": "93aae0051d05aef7539a8fd01b1f70441bb3b725dcc8ad2ce6b89afa01b938d1",
+    "candidate_lock.json": "88ed87cf11e0461fcac009cec30a5123cdd8d7cfab0a75239bd5b1618b734749",
+    "fit_metadata_P35_8_71.json": "8349f5b28c10e9ad9a053ebcb019044e56244d91f36aa0e7061ab03af7f82048",
+    "development_folds.csv": "6ce5994c471e79f25fe842dcc4dfd715dbbe0eff6253afa58d32bd8cd3a85bfa",
+    "confirmation_segments.csv": "8133752f42e745a18c2964b409e89000ffbad824b686818fd3701c6fd21a134c",
+    "resolved_models.json": "30bc9495220f90985345390bf70674baf24b9f108fa50a9e6afc9534567587ad",
+    "compute_budget.json": "eab9c6d7e996784c49472c9fc556d54d49c808c9c75d2877abd1cd3910832e57",
+    "RESEARCH_SOURCES.md": "18dcd541dc22e083182aa51e436281c7ba8b369bca3c4dcc84df61b0bf2b6554",
+    "runtime_heartbeat.json": "04d568d8d9017e3f3892a1e123a6389ebb519937d0e3282200a8aa3c72d679aa",
+    "component_diagnostics.csv": "3d5848e1de47f5166d0ad0e162d0cadb77cf748d17830c019360f7e94fa9247c",
+    "pilot_progress.json": "550af210af6344f1cca06d3a3cb42de01c98c376978d0284d69d0fcde82ec18a",
+    "confirmation_folds.csv": "3c6dacabdcd3b1eafd4ce30601f6ccfd5ff1c8cd8861d82b6532be71c69ffe87",
+    "confirmation_progress.json": "758ded5f80add2ec6e096d3eddad39e861307cb0fd9c995815563b825d9c4a8b",
+    "audit.json": "b0c55a68226a7e89fec184371f4e08a2333fd70e37af7f89f645212d2fabbe80",
+    "confirmation_concentration.json": "d7f074c81752fbe8c170e8cc2adc5c2fcd8186114683510fdbba007dd8979492",
+    "baseline_registry.json": "53e7ddb7fbfbe08162aa97fac8d5ad9dea4981aab3aa942b3e98ebdb2a3060b7",
+    "local_tests.json": "f4b6906deb9e2618838cbb17db92fbbdeefcd5c16f1945940fa7b87d322ca52f",
+    "stage_status.json": "e06b73992e2489ada74d751ffcaaaa1a18fdb865c02c19a0e651ad777a76fcec",
+    "development_concentration.json": "67bd73b4913728b51f2fc1bc03e77d83bf136b8620d3cedff1c0f3813b3fd5fd",
+    "deadline_check.json": "893dacc0bf325ace878ed3eadae7e058d4df53615a0ccb129685e7af2e0dd6d4",
+    "submission.csv": "39d49f79beb8549d04ffc78d134aad2407dc5e73914dc3c30e8bb162a3c0ba05",
+    "initial_export.json": "674cf818c609907bfceb9ad467634dfc1d038e96de5e37a5259802a8136f43dc",
+    "reference_verification.json": "416f46088b1ee15e60efc9b2a8d45ad44dabbb5bdb51cb905386887b01d25eb5",
+    "feature_verification.json": "dcf3f3919e7e630d74f604a8ebb014bd0e63292c2b34eb778bf2a3f1de7c2197",
+    "reference_manifest.json": "1b8e4607f5ecf1b38e96af91f51b59721f54836a6dbc501889424f018229d594",
+    "development_segments.csv": "967f4f7969320393ef279bd35243714a48ba748a17181cf08b41d4b5e35a43bd",
+    "fit_metadata_I8_71.json": "ccab682ff33d39827ede5f4ec92745adbf451f12b9c7f577df94df5e7ba27f35",
+    "pilot.json": "d273c9816f33c504b904ee62ef486c3d12cd27aa2b12c914bc94e5a8a0e63307",
+    "packaging_cache_relocation.json": "0852961bb481cb3c4d753a90a44ddab9f6165ab3639324c884e97f6d09bbc3fd",
+    "fit_metadata_P35_8_42.json": "8349f5b28c10e9ad9a053ebcb019044e56244d91f36aa0e7061ab03af7f82048",
+    "decision.json": "ced58d8767612be39d36580b3b8c37ea627d3cac399fb77126456098bcf529dc",
+    "screening.csv": "3e7046467a38f8de1502c2c638fa8ce3df8af0f2755c1c585780fb1716c322aa",
+    "source/colab_control.py": "54f5a37a4e720a39169b7d43deb688bdc2409cd04536b117bb8da1352855764e",
+    "source/fresh_worker.py": "88f602fd8127814271668f82da4f3d2f05c8f9819ba25ef35d7a1238ff9af119",
+    "source/review_v13.py": "23bee8eddc238a9e6c2829e826d0c0a9a47eb3e714fa974e7bd88d829810f440",
+    "source/baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+    "source/verify.py": "b955cefb1ed24a2d349739be272b82434982563fd82a44ccd4963615c84cb554",
+    "source/legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+    "source/features.py": "32092a9530f7d56fd16d0cc94ea187e74304270027ca8b3fa128133b53aa1951",
+    "source/modeling.py": "28f815f089eeab9441147f80c9705aece6945f94d1deae5000b197b3dda03c92",
+    "source/frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+    "source/legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+    "source/delivery.py": "3ce64f168fcc023c5efd8a3622f5ea5ee07396fd699f0cacc53d813886d478db",
+    "source/run_colab.py": "17a83436e572ce6471032b8c8a50b5f3213cd46b3addd3c8c507551487f4a121",
+    "source/city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+    "source/verify_results.py": "bb8f8c08ea2d671eebad2df8c99655a90fa6f55ec1901398283bb18f0fc8c7ac",
+    "source/workflow.py": "7eae7122a0e5a4d030989f740e4b76a58c484cf176f72a54b80dbb2bd90d2b23",
+    "source/core.py": "c89a9b5e4543a1e001ecd0f705c4f0a1e93022fccf0dba927e0bc551439f0233",
+    "source/v5_contract.json": "3446412f01d536a31123142b984392216efd29094965500251386eac1814ab69",
+    "source/test_v14.py": "4efe20e37d8b120259a5b141801d6a3b5e0d89596a118bbb590d36b1b2a64a1a",
+    "source/finalize.py": "6539ac9f302f9e469e14c556417968a7790c42f15155cd929491db25a04e8a83",
+    "fresh_execution/fresh_execution_checks.json": "fb812d92461bf1bc7b20067dde35a9060701cb5b6d26d43e882ccc9f8e2f3198",
+    "fresh_execution/submission.csv": "39d49f79beb8549d04ffc78d134aad2407dc5e73914dc3c30e8bb162a3c0ba05",
+    "fresh_execution/v14_fresh_l3brp373/fresh_worker.py": "88f602fd8127814271668f82da4f3d2f05c8f9819ba25ef35d7a1238ff9af119",
+    "fresh_execution/v14_fresh_l3brp373/authorization.json": "3c2a9f3f0e12c0c91ba9a0f6509b1cb88ce57b35308cfea4f14510bcd5328d3c",
+    "fresh_execution/v14_fresh_l3brp373/standalone_manifest.json": "28346816d7ff24fb1bf90000a24d397c0bbb311c70debdcb656ea61d6d05555c",
+    "fresh_execution/v14_fresh_l3brp373/baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+    "fresh_execution/v14_fresh_l3brp373/verify.py": "b955cefb1ed24a2d349739be272b82434982563fd82a44ccd4963615c84cb554",
+    "fresh_execution/v14_fresh_l3brp373/legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+    "fresh_execution/v14_fresh_l3brp373/resolved_models.json": "30bc9495220f90985345390bf70674baf24b9f108fa50a9e6afc9534567587ad",
+    "fresh_execution/v14_fresh_l3brp373/features.py": "32092a9530f7d56fd16d0cc94ea187e74304270027ca8b3fa128133b53aa1951",
+    "fresh_execution/v14_fresh_l3brp373/modeling.py": "28f815f089eeab9441147f80c9705aece6945f94d1deae5000b197b3dda03c92",
+    "fresh_execution/v14_fresh_l3brp373/frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+    "fresh_execution/v14_fresh_l3brp373/legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+    "fresh_execution/v14_fresh_l3brp373/delivery.py": "3ce64f168fcc023c5efd8a3622f5ea5ee07396fd699f0cacc53d813886d478db",
+    "fresh_execution/v14_fresh_l3brp373/city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+    "fresh_execution/v14_fresh_l3brp373/baseline_registry.json": "53e7ddb7fbfbe08162aa97fac8d5ad9dea4981aab3aa942b3e98ebdb2a3060b7",
+    "fresh_execution/v14_fresh_l3brp373/workflow.py": "7eae7122a0e5a4d030989f740e4b76a58c484cf176f72a54b80dbb2bd90d2b23",
+    "fresh_execution/v14_fresh_l3brp373/core.py": "c89a9b5e4543a1e001ecd0f705c4f0a1e93022fccf0dba927e0bc551439f0233",
+    "fresh_execution/v14_fresh_l3brp373/v5_contract.json": "3446412f01d536a31123142b984392216efd29094965500251386eac1814ab69",
+    "fresh_execution/v14_fresh_l3brp373/reference_manifest.json": "1b8e4607f5ecf1b38e96af91f51b59721f54836a6dbc501889424f018229d594",
+    "fresh_execution/v14_fresh_l3brp373/reference/expected.csv": "39d49f79beb8549d04ffc78d134aad2407dc5e73914dc3c30e8bb162a3c0ba05",
+    "fresh_execution/v14_fresh_l3brp373/reference/scored_v9.csv": "5a384dc3d8bf58c4e29f0d6cac646aa33afe22bdcdd186cccd9758342769bbd4",
+    "fresh_execution/v14_fresh_l3brp373/reference/scored_v7.csv": "5f20ea8d610e325c0eae4727b7ed8c737ce2d881239792c9a6af5ce4e3dec1ba",
+    "fresh_execution/v14_fresh_l3brp373/reference/verified_v7.pkl": "63ab212c7249ab857fc52004a97341662c5b110db7e21f19ae6b20dcdfc1090d"
+  }
+}

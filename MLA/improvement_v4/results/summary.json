@@ -1,0 +1,21 @@
+{
+  "six_random_means": {
+    "v3_rmse": 19854514.35933287,
+    "v4_rmse": 19848338.250979416,
+    "gain_vs_v3": 6176.108353458345
+  },
+  "two_new_split_means": {
+    "v3_rmse": 19839209.67583771,
+    "v4_rmse": 19843598.450265743,
+    "gain_vs_v3": -4388.774428028613
+  },
+  "city_gain": -19864.076322909445,
+  "conditional_bootstrap_95pct_gain_interval": [
+    -13527.062739982735,
+    25867.885891024107
+  ],
+  "random_wins": 4,
+  "random_splits": 6,
+  "supported_for_trial": false,
+  "candidate_portal_rmse": null
+}

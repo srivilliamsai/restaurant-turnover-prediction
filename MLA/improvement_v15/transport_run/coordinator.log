@@ -1,0 +1,44 @@
+{"phase": "installing_dependencies", "pid": 83514, "task_elapsed_seconds": 1122.1096971035004, "maximum_hours": 8}
+V15 pinned dependencies installed; restart kernel before training.
+{"phase": "restarting_clean_kernel", "pid": 83514, "task_elapsed_seconds": 1154.9250419139862, "maximum_hours": 8}
+{"phase": "uploading_frozen_workflow", "pid": 83514, "task_elapsed_seconds": 1162.791088104248, "maximum_hours": 8}
+V15 sources, official inputs and verified controls uploaded.
+{"phase": "running_audit", "pid": 83514, "task_elapsed_seconds": 1172.1877629756927, "maximum_hours": 8}
+V15 foreground stage: audit timeout seconds 2424
+V15 stage complete: audit
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"phase": "running_pilot", "pid": 83514, "task_elapsed_seconds": 1198.8890261650085, "maximum_hours": 8}
+V15 foreground stage: pilot timeout seconds 2400
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+V15 transport failure: ReadTimeout ; authenticated details suppressed.
+{"phase": "stopped", "pid": 83514, "task_elapsed_seconds": 4257.513029098511, "maximum_hours": 8, "error_type": "RuntimeError", "reason": "V15 remote heartbeat stale; completed backups preserved"}
+V15 transport failure: ReadTimeout ; authenticated details suppressed.
+[colab] Session 'v15-free-t4' not found.
+V15 transport failure: Exit ; authenticated details suppressed.
+Owned V15 free T4 released.
+{"phase": "stopped", "pid": 83514, "task_elapsed_seconds": 13577.373527050018, "maximum_hours": 8, "artifacts_collected": false, "owned_runtime_released": true}
+Traceback (most recent call last):
+  File "./improvement_v15/run_colab.py", line 92, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "./improvement_v15/run_colab.py", line 71, in main
+    control('stage',stage,timeout={'audit':3700,'pilot':3700,'screen':9100,'confirm':9100,'export':7300}[stage],backup=True)
+  File "./improvement_v15/run_colab.py", line 54, in control
+    return command([sys.executable,CONTROL,action,*([value] if value else [])],timeout,backup=backup)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "./improvement_v15/run_colab.py", line 44, in command
+    if x.get('status')=='running' and time.time()-x['epoch']>300:raise RuntimeError('V15 remote heartbeat stale; completed backups preserved')
+                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: V15 remote heartbeat stale; completed backups preserved

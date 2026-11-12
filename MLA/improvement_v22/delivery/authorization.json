@@ -1,0 +1,27 @@
+{
+  "version": "V22",
+  "authorized": true,
+  "user_instruction": "start",
+  "started_epoch": 1793281136.0,
+  "started_at_IST": "2026-10-29T19:08:56+05:30",
+  "maximum_hours": 4,
+  "delivery_reserve_hours": 1.5,
+  "hard_stop_epoch": 1793295536.0,
+  "training_stop_epoch": 1793290136.0,
+  "engineering_stop_epoch": 1793283836.0,
+  "paid_resources": false,
+  "settings": [
+    "P35-SC38"
+  ],
+  "weights": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "account_identity_sha256": "REDACTED",
+  "clock_reset": false,
+  "cap_policy": "Four elapsed hours including implementation, setup and interruptions; original plan and prior ledgers preserved.",
+  "portal_uploads_authorized": 0,
+  "account_change_authorized": true,
+  "account_change_instruction": "open the terminal; I will log in a new account; now start"
+}

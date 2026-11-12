@@ -1,0 +1,10 @@
+{
+  "reason": "Stopped the local readiness wait after manually initializing the empty runtime kernel. Kernel starting with zero connections; setup not yet verified. Same runtime and budget retained.",
+  "old_coordinator_stopped": true,
+  "remote_runtime_released": false,
+  "owned_session": "v15-retry1-free-t4",
+  "original_retry_budget_preserved": true,
+  "numerical_sources_changed": false,
+  "new_accuracy_results_seen": false,
+  "epoch": 1793243717.511294
+}

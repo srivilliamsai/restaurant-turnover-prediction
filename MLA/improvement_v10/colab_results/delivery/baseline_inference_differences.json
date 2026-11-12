@@ -1,0 +1,38 @@
+{
+  "42": {
+    "max_component_difference_INR": 35.83366421610117,
+    "original_v9_rmse": 19731241.65831727,
+    "stable_v9_rmse": 19731241.728233285,
+    "reason": "Fixed 500-row internal inference batches required for INR 0.01 batch invariance; full 500-row submission shape is unchanged."
+  },
+  "71": {
+    "max_component_difference_INR": 42.62791436165571,
+    "original_v9_rmse": 19733020.017403986,
+    "stable_v9_rmse": 19733020.080547012,
+    "reason": "Fixed 500-row internal inference batches required for INR 0.01 batch invariance; full 500-row submission shape is unchanged."
+  },
+  "48211": {
+    "max_component_difference_INR": 64.34685458242893,
+    "original_v9_rmse": 19743626.701006755,
+    "stable_v9_rmse": 19743626.58666369,
+    "reason": "Fixed 500-row internal inference batches required for INR 0.01 batch invariance; full 500-row submission shape is unchanged."
+  },
+  "48212": {
+    "max_component_difference_INR": 24.57428388297558,
+    "original_v9_rmse": 19816597.319254283,
+    "stable_v9_rmse": 19816597.33709491,
+    "reason": "Fixed 500-row internal inference batches required for INR 0.01 batch invariance; full 500-row submission shape is unchanged."
+  },
+  "48213": {
+    "max_component_difference_INR": 64.655308149755,
+    "original_v9_rmse": 19711188.53312779,
+    "stable_v9_rmse": 19711188.541631036,
+    "reason": "Fixed 500-row internal inference batches required for INR 0.01 batch invariance; full 500-row submission shape is unchanged."
+  },
+  "strat:27421": {
+    "max_component_difference_INR": 33.57199078798294,
+    "original_v9_rmse": 19726481.414450042,
+    "stable_v9_rmse": 19726481.457054287,
+    "reason": "Fixed 500-row internal inference batches required for INR 0.01 batch invariance; full 500-row submission shape is unchanged."
+  }
+}

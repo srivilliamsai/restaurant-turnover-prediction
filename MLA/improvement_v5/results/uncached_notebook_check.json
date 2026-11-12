@@ -1,0 +1,14 @@
+{
+  "split_seed": 18421,
+  "folds": 5,
+  "cache_reused": false,
+  "maximum_prediction_difference_INR": {
+    "previous": 0.0,
+    "candidate": 0.0,
+    "sqrt_d6_correct1": 0.0,
+    "subspace_h40": 0.0,
+    "quantile0.6": 0.0
+  },
+  "elapsed_seconds": 147.67231106758118,
+  "passed": true
+}

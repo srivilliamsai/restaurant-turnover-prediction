@@ -1,0 +1,8 @@
+{
+  "candidates": [],
+  "trials": [],
+  "lock_sha256": "d04b5f52f7d7731112599f344b4c123e6562fbbed8c57dc5d570d2f81dbc8c7c",
+  "baseline_portal_rmse": 12024316.5355221,
+  "decision": "retain scored V7; no V9 candidate passed all gates",
+  "portal_uploads_by_agent": 0
+}

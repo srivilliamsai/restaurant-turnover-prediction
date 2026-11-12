@@ -1,0 +1,12 @@
+{
+  "user_authorized_different_account": true,
+  "human_completed_google_sign_in": true,
+  "free_t4_allocated": true,
+  "owned_session": "v15-free-t4",
+  "compute_unit_balance_before_allocation": 0.0,
+  "active_assignments_before_allocation": 0,
+  "paid_resources_purchased": false,
+  "original_budget_retained": true,
+  "credentials_in_artifacts": false,
+  "epoch": 1793212379.0188549
+}

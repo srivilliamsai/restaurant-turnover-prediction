@@ -1,0 +1,1122 @@
+[
+  {
+    "name": "F40-T080_P35-replacement@0.25",
+    "scheme": "42",
+    "net_squared_error_reduction": -261513575169798.62,
+    "largest_positive_ten_rows": [
+      61707,
+      60563,
+      60065,
+      61867,
+      61984,
+      62153,
+      61884,
+      63316,
+      61541,
+      62487
+    ],
+    "top_ten_positive_reduction": 740906942393274.0,
+    "tail_gt80M_reduction": -3908270750906417.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 4618.790127346292,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "F40-T080_P35-replacement@0.25",
+    "scheme": "71",
+    "net_squared_error_reduction": -315724040912587.1,
+    "largest_positive_ten_rows": [
+      61984,
+      62153,
+      60065,
+      63274,
+      62487,
+      61541,
+      61707,
+      60563,
+      63316,
+      60060
+    ],
+    "top_ten_positive_reduction": 644235139955543.9,
+    "tail_gt80M_reduction": -4185446125118515.5,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 5155.268199475482,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "F40-T080_P35-replacement@0.5",
+    "scheme": "42",
+    "net_squared_error_reduction": -1292742859682085.8,
+    "largest_positive_ten_rows": [
+      61707,
+      60563,
+      60065,
+      61867,
+      61984,
+      62153,
+      61884,
+      63316,
+      61541,
+      62487
+    ],
+    "top_ten_positive_reduction": 1452359119107928.0,
+    "tail_gt80M_reduction": -7845474953736144.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 2294.2133836429566,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "F40-T080_P35-replacement@0.5",
+    "scheme": "71",
+    "net_squared_error_reduction": -1371592467111363.5,
+    "largest_positive_ten_rows": [
+      61984,
+      62153,
+      60065,
+      63274,
+      62487,
+      61541,
+      61707,
+      60563,
+      63316,
+      60060
+    ],
+    "top_ten_positive_reduction": 1266330406601669.5,
+    "tail_gt80M_reduction": -8400627509873416.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 3637.5867334958166,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "F40-T080_P35-replacement@0.75",
+    "scheme": "42",
+    "net_squared_error_reduction": -3093687853537069.5,
+    "largest_positive_ten_rows": [
+      61707,
+      60563,
+      60065,
+      61867,
+      61984,
+      62153,
+      63316,
+      61884,
+      62487,
+      61541
+    ],
+    "top_ten_positive_reduction": 2134356530143967.0,
+    "tail_gt80M_reduction": -1.1811612608489374e+16,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -6970.680832348764,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "F40-T080_P35-replacement@0.75",
+    "scheme": "71",
+    "net_squared_error_reduction": -3167605278596186.5,
+    "largest_positive_ten_rows": [
+      61984,
+      62153,
+      60065,
+      63274,
+      62487,
+      61541,
+      61707,
+      60563,
+      63316,
+      60060
+    ],
+    "top_ten_positive_reduction": 1866285799938379.0,
+    "tail_gt80M_reduction": -1.2645544154264556e+16,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -4551.130857970566,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "F40-T080_P35-replacement@1.0",
+    "scheme": "42",
+    "net_squared_error_reduction": -5664348556734567.0,
+    "largest_positive_ten_rows": [
+      61707,
+      60563,
+      60065,
+      61867,
+      61984,
+      62153,
+      63316,
+      61884,
+      62487,
+      61541
+    ],
+    "top_ten_positive_reduction": 2786899175501384.5,
+    "tail_gt80M_reduction": -1.5806683715165936e+16,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -23163.7564740479,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "F40-T080_P35-replacement@1.0",
+    "scheme": "71",
+    "net_squared_error_reduction": -5703762475367204.0,
+    "largest_positive_ten_rows": [
+      61984,
+      62153,
+      60065,
+      62487,
+      63274,
+      61541,
+      61707,
+      60563,
+      63316,
+      60060
+    ],
+    "top_ten_positive_reduction": 2444101319965671.5,
+    "tail_gt80M_reduction": -1.6920196058292084e+16,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -19400.57259295322,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "F40-T120_P35-replacement@0.25",
+    "scheme": "42",
+    "net_squared_error_reduction": -901059674274585.5,
+    "largest_positive_ten_rows": [
+      62180,
+      61238,
+      61983,
+      61747,
+      62537,
+      60167,
+      63122,
+      60772,
+      63243,
+      61240
+    ],
+    "top_ten_positive_reduction": 2307840914756032.0,
+    "tail_gt80M_reduction": 4925929791052646.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -17510.60912456177,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "F40-T120_P35-replacement@0.25",
+    "scheme": "71",
+    "net_squared_error_reduction": -779760323297811.9,
+    "largest_positive_ten_rows": [
+      62180,
+      61238,
+      62537,
+      61983,
+      60167,
+      63480,
+      61747,
+      60772,
+      61240,
+      63122
+    ],
+    "top_ten_positive_reduction": 2434272816929114.0,
+    "tail_gt80M_reduction": 5251030296227952.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -17145.16883255355,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "F40-T120_P35-replacement@0.5",
+    "scheme": "42",
+    "net_squared_error_reduction": -3128652479846222.0,
+    "largest_positive_ten_rows": [
+      62180,
+      61238,
+      61983,
+      61747,
+      62537,
+      60167,
+      63122,
+      60772,
+      63243,
+      61240
+    ],
+    "top_ten_positive_reduction": 4604455109558614.0,
+    "tail_gt80M_reduction": 9812439915175140.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -46937.876686809584,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "F40-T120_P35-replacement@0.5",
+    "scheme": "71",
+    "net_squared_error_reduction": -2832000172118114.0,
+    "largest_positive_ten_rows": [
+      62180,
+      61238,
+      62537,
+      61983,
+      60167,
+      63480,
+      61747,
+      60772,
+      61240,
+      63122
+    ],
+    "top_ten_positive_reduction": 4857019266484176.0,
+    "tail_gt80M_reduction": 1.0461420969911846e+16,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -45718.73124008812,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "F40-T120_P35-replacement@0.75",
+    "scheme": "42",
+    "net_squared_error_reduction": -6682778416714818.0,
+    "largest_positive_ten_rows": [
+      62180,
+      61238,
+      61983,
+      62537,
+      61747,
+      60167,
+      63122,
+      60772,
+      63243,
+      61240
+    ],
+    "top_ten_positive_reduction": 6889842584407703.0,
+    "tail_gt80M_reduction": 1.4659530372367572e+16,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -88215.88721406087,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "F40-T120_P35-replacement@0.75",
+    "scheme": "71",
+    "net_squared_error_reduction": -6156719546460790.0,
+    "largest_positive_ten_rows": [
+      62180,
+      61238,
+      62537,
+      61983,
+      60167,
+      63480,
+      61747,
+      60772,
+      61240,
+      63122
+    ],
+    "top_ten_positive_reduction": 7268239348665251.0,
+    "tail_gt80M_reduction": 1.5631172021051812e+16,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -85659.30043083057,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "F40-T120_P35-replacement@1.0",
+    "scheme": "42",
+    "net_squared_error_reduction": -1.1563437484880508e+16,
+    "largest_positive_ten_rows": [
+      62180,
+      61238,
+      61983,
+      62537,
+      61747,
+      60167,
+      63122,
+      60772,
+      63243,
+      61240
+    ],
+    "top_ten_positive_reduction": 9164003339303286.0,
+    "tail_gt80M_reduction": 1.9467201162629824e+16,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -141252.99626598507,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "F40-T120_P35-replacement@1.0",
+    "scheme": "71",
+    "net_squared_error_reduction": -1.0753918446325904e+16,
+    "largest_positive_ten_rows": [
+      62180,
+      61238,
+      62537,
+      61983,
+      60167,
+      63480,
+      61747,
+      60772,
+      61240,
+      63122
+    ],
+    "top_ten_positive_reduction": 9667933063472316.0,
+    "tail_gt80M_reduction": 2.0760283449647784e+16,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -136881.80302585848,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "N32-T080_P35-replacement@0.25",
+    "scheme": "42",
+    "net_squared_error_reduction": 1725758105595.0,
+    "largest_positive_ten_rows": [
+      60563,
+      61984,
+      62971,
+      62487,
+      61707,
+      61884,
+      61867,
+      62153,
+      61541,
+      63316
+    ],
+    "top_ten_positive_reduction": 827912691513747.6,
+    "tail_gt80M_reduction": -4152722559182390.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 9825.473432654515,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "N32-T080_P35-replacement@0.25",
+    "scheme": "71",
+    "net_squared_error_reduction": 66596780865989.06,
+    "largest_positive_ten_rows": [
+      62487,
+      60563,
+      62153,
+      61984,
+      61421,
+      61103,
+      61760,
+      61707,
+      61864,
+      61884
+    ],
+    "top_ten_positive_reduction": 800148527500921.9,
+    "tail_gt80M_reduction": -3982298157770779.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 9972.537773126736,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "N32-T080_P35-replacement@0.5",
+    "scheme": "42",
+    "net_squared_error_reduction": -919800834873529.0,
+    "largest_positive_ten_rows": [
+      60563,
+      62971,
+      61984,
+      62487,
+      61707,
+      61884,
+      61867,
+      61541,
+      62153,
+      63316
+    ],
+    "top_ten_positive_reduction": 1623030859329909.0,
+    "tail_gt80M_reduction": -8331609281375393.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 11329.329880943522,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "N32-T080_P35-replacement@0.5",
+    "scheme": "71",
+    "net_squared_error_reduction": -753609080947885.5,
+    "largest_positive_ten_rows": [
+      62487,
+      60563,
+      61984,
+      62153,
+      61421,
+      61760,
+      61103,
+      61707,
+      61864,
+      62623
+    ],
+    "top_ten_positive_reduction": 1564437775019945.5,
+    "tail_gt80M_reduction": -7994014420036982.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 11951.673831999302,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "N32-T080_P35-replacement@0.75",
+    "scheme": "42",
+    "net_squared_error_reduction": -2764579778937413.0,
+    "largest_positive_ten_rows": [
+      60563,
+      62971,
+      61984,
+      62487,
+      61707,
+      61884,
+      61867,
+      61541,
+      62153,
+      63316
+    ],
+    "top_ten_positive_reduction": 2385354503448492.0,
+    "tail_gt80M_reduction": -1.2536660166579048e+16,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 4509.203269958496,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "N32-T080_P35-replacement@0.75",
+    "scheme": "71",
+    "net_squared_error_reduction": -2460617585441637.0,
+    "largest_positive_ten_rows": [
+      62487,
+      60563,
+      61984,
+      62153,
+      61421,
+      61760,
+      61103,
+      61707,
+      61864,
+      62623
+    ],
+    "top_ten_positive_reduction": 2297987543705733.5,
+    "tail_gt80M_reduction": -1.2035148786798636e+16,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 5934.417060175911,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "N32-T080_P35-replacement@1.0",
+    "scheme": "42",
+    "net_squared_error_reduction": -5532611074086184.0,
+    "largest_positive_ten_rows": [
+      60563,
+      62971,
+      61984,
+      62487,
+      61707,
+      61884,
+      61541,
+      61867,
+      63316,
+      62153
+    ],
+    "top_ten_positive_reduction": 3114883623869489.5,
+    "tail_gt80M_reduction": -1.6767875214793478e+16,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -10624.183214657009,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "N32-T080_P35-replacement@1.0",
+    "scheme": "71",
+    "net_squared_error_reduction": -5054428732615122.0,
+    "largest_positive_ten_rows": [
+      62487,
+      60563,
+      61984,
+      62153,
+      61421,
+      61760,
+      61103,
+      61707,
+      61864,
+      62623
+    ],
+    "top_ten_positive_reduction": 2999091233175437.0,
+    "tail_gt80M_reduction": -1.6105701258055584e+16,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -8070.143138887361,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "N32-T100_P35-replacement@0.25",
+    "scheme": "42",
+    "net_squared_error_reduction": 376126640109601.8,
+    "largest_positive_ten_rows": [
+      62971,
+      60167,
+      62150,
+      60772,
+      62876,
+      60395,
+      61747,
+      63243,
+      63122,
+      60618
+    ],
+    "top_ten_positive_reduction": 763229684858705.1,
+    "tail_gt80M_reduction": -54269457866029.44,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 5883.19955275394,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "N32-T100_P35-replacement@0.25",
+    "scheme": "71",
+    "net_squared_error_reduction": 475940543980738.4,
+    "largest_positive_ten_rows": [
+      61747,
+      62971,
+      60167,
+      62876,
+      62561,
+      63243,
+      62150,
+      61760,
+      62227,
+      62487
+    ],
+    "top_ten_positive_reduction": 905942258122319.2,
+    "tail_gt80M_reduction": 409868765914703.6,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 4886.027577234432,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "N32-T100_P35-replacement@0.5",
+    "scheme": "42",
+    "net_squared_error_reduction": 508334577618152.25,
+    "largest_positive_ten_rows": [
+      62971,
+      60167,
+      62150,
+      60772,
+      62876,
+      60395,
+      61747,
+      63243,
+      63122,
+      61760
+    ],
+    "top_ten_positive_reduction": 1511827091432731.2,
+    "tail_gt80M_reduction": -114381256212779.31,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 9565.795602090657,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "N32-T100_P35-replacement@0.5",
+    "scheme": "71",
+    "net_squared_error_reduction": 723559809307442.9,
+    "largest_positive_ten_rows": [
+      61747,
+      62971,
+      60167,
+      62876,
+      62561,
+      63243,
+      62150,
+      61760,
+      62227,
+      62487
+    ],
+    "top_ten_positive_reduction": 1799337937499560.2,
+    "tail_gt80M_reduction": 811624500843757.1,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 7711.023568416014,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "N32-T100_P35-replacement@0.75",
+    "scheme": "42",
+    "net_squared_error_reduction": 396623812525735.5,
+    "largest_positive_ten_rows": [
+      62971,
+      60167,
+      62150,
+      60772,
+      62876,
+      60395,
+      61747,
+      63243,
+      63122,
+      61760
+    ],
+    "top_ten_positive_reduction": 2246651007280093.8,
+    "tail_gt80M_reduction": -180335395040157.25,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 11046.25533487834,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "N32-T100_P35-replacement@0.75",
+    "scheme": "71",
+    "net_squared_error_reduction": 742857795980327.4,
+    "largest_positive_ten_rows": [
+      61747,
+      62971,
+      60167,
+      62561,
+      62876,
+      63243,
+      62150,
+      61760,
+      62227,
+      62487
+    ],
+    "top_ten_positive_reduction": 2680187038131721.0,
+    "tail_gt80M_reduction": 1205267204787379.5,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 8473.886946463957,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "N32-T100_P35-replacement@1.0",
+    "scheme": "42",
+    "net_squared_error_reduction": 40994344832381.75,
+    "largest_positive_ten_rows": [
+      62971,
+      60167,
+      62150,
+      60772,
+      62876,
+      60395,
+      61747,
+      63243,
+      63122,
+      61760
+    ],
+    "top_ten_positive_reduction": 2967415169881470.5,
+    "tail_gt80M_reduction": -252131874348114.75,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 10323.962135756388,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "N32-T100_P35-replacement@1.0",
+    "scheme": "71",
+    "net_squared_error_reduction": 533834503999349.0,
+    "largest_positive_ten_rows": [
+      61747,
+      62971,
+      60167,
+      62561,
+      62876,
+      63243,
+      62150,
+      61760,
+      62227,
+      62487
+    ],
+    "top_ten_positive_reduction": 3548489560018832.5,
+    "tail_gt80M_reduction": 1590796877745536.8,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 7174.320254998282,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "N32-T120_P35-replacement@0.25",
+    "scheme": "42",
+    "net_squared_error_reduction": -493032231825066.44,
+    "largest_positive_ten_rows": [
+      62180,
+      62971,
+      60167,
+      61747,
+      61238,
+      60772,
+      62150,
+      63243,
+      63122,
+      60395
+    ],
+    "top_ten_positive_reduction": 2631554256966054.0,
+    "tail_gt80M_reduction": 5095022522572046.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -11936.77783446759,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "N32-T120_P35-replacement@0.25",
+    "scheme": "71",
+    "net_squared_error_reduction": -287504785294191.5,
+    "largest_positive_ten_rows": [
+      62180,
+      61747,
+      61238,
+      60167,
+      62971,
+      61983,
+      63243,
+      62150,
+      62876,
+      63480
+    ],
+    "top_ten_positive_reduction": 2984855872949459.0,
+    "tail_gt80M_reduction": 5925268027916412.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -12988.28602353856,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "N32-T120_P35-replacement@0.5",
+    "scheme": "42",
+    "net_squared_error_reduction": -2791547366645347.0,
+    "largest_positive_ten_rows": [
+      62180,
+      62971,
+      60167,
+      61747,
+      61238,
+      60772,
+      62150,
+      63243,
+      63122,
+      60395
+    ],
+    "top_ten_positive_reduction": 5208539497076155.0,
+    "tail_gt80M_reduction": 1.012932284919132e+16,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -40128.82082160562,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "N32-T120_P35-replacement@0.5",
+    "scheme": "71",
+    "net_squared_error_reduction": -2320565574903887.0,
+    "largest_positive_ten_rows": [
+      62180,
+      61747,
+      61238,
+      60167,
+      62971,
+      61983,
+      63243,
+      62150,
+      62876,
+      63480
+    ],
+    "top_ten_positive_reduction": 5918216314085584.0,
+    "tail_gt80M_reduction": 1.178806103703416e+16,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -41678.28394909948,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "N32-T120_P35-replacement@0.75",
+    "scheme": "42",
+    "net_squared_error_reduction": -6895545404460836.0,
+    "largest_positive_ten_rows": [
+      62180,
+      62971,
+      60167,
+      61747,
+      61238,
+      60772,
+      62150,
+      63243,
+      63122,
+      62537
+    ],
+    "top_ten_positive_reduction": 7734669207201966.0,
+    "tail_gt80M_reduction": 1.5102900979857848e+16,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -84489.96916365996,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "N32-T120_P35-replacement@0.75",
+    "scheme": "71",
+    "net_squared_error_reduction": -6099182368828716.0,
+    "largest_positive_ten_rows": [
+      62180,
+      61747,
+      61238,
+      60167,
+      61983,
+      62971,
+      63243,
+      62150,
+      62876,
+      63480
+    ],
+    "top_ten_positive_reduction": 8800081323408647.0,
+    "tail_gt80M_reduction": 1.7588379027353606e+16,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -85985.31127265096,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "N32-T120_P35-replacement@1.0",
+    "scheme": "42",
+    "net_squared_error_reduction": -1.2805026345271656e+16,
+    "largest_positive_ten_rows": [
+      62180,
+      62971,
+      60167,
+      61747,
+      61238,
+      60772,
+      63243,
+      62150,
+      63122,
+      62537
+    ],
+    "top_ten_positive_reduction": 1.0213017243089472e+16,
+    "tail_gt80M_reduction": 2.0015756914571496e+16,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -144885.87478099577,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "N32-T120_P35-replacement@1.0",
+    "scheme": "71",
+    "net_squared_error_reduction": -1.1623355167068944e+16,
+    "largest_positive_ten_rows": [
+      62180,
+      61747,
+      61238,
+      60167,
+      61983,
+      62971,
+      63243,
+      62150,
+      63480,
+      62876
+    ],
+    "top_ten_positive_reduction": 1.163045090091848e+16,
+    "tail_gt80M_reduction": 2.3326221998874504e+16,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -145779.78069291636,
+    "exclusion_is_selection_criterion": false
+  }
+]

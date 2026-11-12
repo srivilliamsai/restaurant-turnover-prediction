@@ -1,0 +1,24 @@
+{
+  "PR": "https://github.com/limix-ldm-ai/LimiX/pull/60",
+  "state": "open",
+  "merged": false,
+  "source_repository": "franz101/LimiX",
+  "revision": "cdf1fb7a54416c2886582c01715704d8560be4fe",
+  "files_sha256": {
+    "limix_mlx/README.md": "c96b2273a232c0cb33b62029ec425a98ff28cdac5d2d0d4601d01e9057ed59c1",
+    "limix_mlx/__init__.py": "6e6f47fdb13fc95edb52b899bde04c8fa3ebf6ec35ff2df0bca05508d421a537",
+    "limix_mlx/api.py": "f4e7482b0c662eef4f63e9973229346684d01c85abf75499774804c9da5b7a03",
+    "limix_mlx/baseline_torch.py": "9694978c54705539516ff12d5244e01943294c7d05f8dfbf38c7696383fc41c1",
+    "limix_mlx/bench_mps_vs_mlx.py": "16ec68bc7d11bef4c8271f1d01ce0004176bf5f8dba28d5e30ed4649422337e4",
+    "limix_mlx/convert.py": "3ce0bdd9c5b2c71dd48f30816528b975f93fbc95fd70da6d1929f725dc3229f0",
+    "limix_mlx/e2e.py": "ec3efa7344aaa25d34b2c20d188c9a2aa568872102a34548aa2ad644213ad180",
+    "limix_mlx/e2e_parity.py": "466525b69229968c4d01e86b641b42976cc546cd7019a3e26a1eb91a1a5c249d",
+    "limix_mlx/introspect.py": "408810cb7c196b7352645570a1e9947085900a0e89aa633011bd242ee66d6c2e",
+    "limix_mlx/introspect2.py": "2878d298a9a676d017ded99a66fcc5be4fe1eb3dff4b63bee9ba8f8669407d16",
+    "limix_mlx/loader.py": "ac2f48593c675c9ad83f181f439c73a26df4d53b04b54c2b86d4277e54ca5326",
+    "limix_mlx/lxm_model.py": "d22f91e35069cb1a108eac6c16c06d6ba0fd1ffe357f05bbfefca8b82d9bdc9a",
+    "limix_mlx/lxm_top.py": "328adfd8b647639b1361112f41ac5fa714b614348ff1564c2fd4f71499b79664",
+    "limix_mlx/parity.py": "7b140da28e53675854fbbde14d7ed067b73304b2d0154e0e71fbe9af45ad35c3",
+    "limix_mlx/shim.py": "8d5ec7bb575bf47cf1ec46c2e59c1737cbe059fb1d0b7ec3b3c35b9a16bd5e40"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "screen": "22 settings, 5fold42, two model seeds10242/20242",
+  "refinement": "Top6 screened settings also run on5fold71. Compare25/50/75percent blends of individual models and equal top2/top3 families. Prefer candidates improving both development assignments.",
+  "confirmation": "Freeze then evaluate5fold18421 and18422, previouslyused2026/303, andcanonicalcitygroups. Never exclude or transform scoredtargets.",
+  "limitations": "All labels participated in earlierdevelopment. New split assignments are robustnesschecks, not independent externaltest.",
+  "promotion_rule": "Positive averagegain across both new assignments and acrossallrandom assignments; otherwiseexperimentalonly. Reportcityresultseparately."
+}

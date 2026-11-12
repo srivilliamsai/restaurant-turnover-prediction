@@ -1,0 +1,50 @@
+{
+  "status": "review_only_no_new_training",
+  "official_train_rows": 3493,
+  "extreme_turnover_rows": 48,
+  "v9_architecture": "50% scored V7 plus 50% TabPFN v2 raw target, V7 features, 16 estimators, seed 10242",
+  "hash_verified_original_oof_comparisons": [
+    {
+      "assignment": 48211,
+      "v7_rmse": 19835389.18182016,
+      "tabpfn_v2_alone_rmse": 19750152.69454091,
+      "v9_rmse": 19743626.701006755,
+      "gain_over_v7": 91762.48081340641,
+      "error_correlation": 0.9904172718751718,
+      "extreme_squared_error_share": 0.6834526829414984
+    },
+    {
+      "assignment": 48212,
+      "v7_rmse": 19930476.670892447,
+      "tabpfn_v2_alone_rmse": 19808021.725004002,
+      "v9_rmse": 19816597.319254283,
+      "gain_over_v7": 113879.35163816437,
+      "error_correlation": 0.9898491108309768,
+      "extreme_squared_error_share": 0.680464417416099
+    },
+    {
+      "assignment": 48213,
+      "v7_rmse": 19790513.923175737,
+      "tabpfn_v2_alone_rmse": 19748489.348577086,
+      "v9_rmse": 19711188.53312779,
+      "gain_over_v7": 79325.39004794881,
+      "error_correlation": 0.988734196162399,
+      "extreme_squared_error_share": 0.6827082302953356
+    }
+  ],
+  "mean_gain_over_v7": 94989.07416650653,
+  "observed_v9_gain_over_v7": "119800.5490225",
+  "observed_v9_relative_gain_percent": "0.9963189896788442999424644963",
+  "observed_v10_deterioration_over_v9": "21220.5146742",
+  "rank_evidence": "V7 screenshot rank 24; V9 upload screenshot rank 9; latest retained-V9 rank 11. Rank 28 was not independently documented in these artifacts.",
+  "v9_confirmation_interval_INR": [
+    35752.496623856045,
+    159172.1037533146
+  ],
+  "v10_confirmation_interval_INR": [
+    -6546.864572899276,
+    15187.13937504401
+  ],
+  "v10_mean_random_gain_INR": 4083.9142344581583,
+  "portal_best_remains_v9": true
+}

@@ -1,0 +1,50 @@
+{
+  "mean_old_rmse": 19937841.85339698,
+  "mean_new_rmse": 19877899.728742234,
+  "mean_improvement": 59942.124654745065,
+  "weights": {
+    "engineered": 0.06448907249408362,
+    "engineered_drop": 0.09631834163153197,
+    "ordered_depth5": 0.08507039177778712,
+    "huber20_engineered": 0.06274452861282048,
+    "huber40": 0.08855362607985372,
+    "clip120": 0.07794631558814363,
+    "spline_ridge": 0.15648185431084338,
+    "svr_core": 0.058428294374292714,
+    "huber40_engineered": 0.09327747966602483,
+    "huber40_monotone": 0.2166900954646185
+  },
+  "validation": [
+    {
+      "Validation": "Shuffled 5-fold seed 71",
+      "Rank-3 model RMSE": 19956845.012878824,
+      "New candidate RMSE": 19891238.906727202,
+      "Reduction": 65606.10615162179
+    },
+    {
+      "Validation": "Shuffled 5-fold seed 2026",
+      "Rank-3 model RMSE": 19886765.223428875,
+      "New candidate RMSE": 19836015.50899162,
+      "Reduction": 50749.71443725377
+    },
+    {
+      "Validation": "Shuffled 5-fold seed 303",
+      "Rank-3 model RMSE": 19969915.32388324,
+      "New candidate RMSE": 19906444.77050788,
+      "Reduction": 63470.553375359625
+    },
+    {
+      "Validation": "City GroupKFold",
+      "Rank-3 model RMSE": 20227279.15726141,
+      "New candidate RMSE": 20092949.44448126,
+      "Reduction": 134329.7127801478
+    }
+  ],
+  "bootstrap_interval": [
+    13057.780043208786,
+    107631.91819401969
+  ],
+  "notebook_code_cells": 12,
+  "elapsed_seconds": 467.8041150569916,
+  "city_grouping": "Lowercase/trimmed city names with explicit aliases combined; rerun after full notebook execution."
+}

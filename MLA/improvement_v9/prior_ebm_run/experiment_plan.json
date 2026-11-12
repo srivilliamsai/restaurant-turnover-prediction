@@ -1,0 +1,130 @@
+{
+  "specs": {
+    "tabpfn_raw_compact": {
+      "family": "tabpfn",
+      "group": "tabpfn",
+      "target": "raw",
+      "representation": "compact"
+    },
+    "tabpfn_raw_v7": {
+      "family": "tabpfn",
+      "group": "tabpfn",
+      "target": "raw",
+      "representation": "v7"
+    },
+    "ebm_raw_i0": {
+      "family": "ebm",
+      "group": "ebm",
+      "target": "raw",
+      "representation": "v7",
+      "interactions": 0
+    },
+    "ebm_raw_i10": {
+      "family": "ebm",
+      "group": "ebm",
+      "target": "raw",
+      "representation": "v7",
+      "interactions": 10
+    },
+    "tabpfn_sqrt_compact": {
+      "family": "tabpfn",
+      "group": "tabpfn",
+      "target": "sqrt",
+      "representation": "compact"
+    },
+    "tabpfn_sqrt_v7": {
+      "family": "tabpfn",
+      "group": "tabpfn",
+      "target": "sqrt",
+      "representation": "v7"
+    },
+    "ebm_sqrt_i0": {
+      "family": "ebm",
+      "group": "ebm",
+      "target": "sqrt",
+      "representation": "v7",
+      "interactions": 0
+    },
+    "ebm_sqrt_i10": {
+      "family": "ebm",
+      "group": "ebm",
+      "target": "sqrt",
+      "representation": "v7",
+      "interactions": 10
+    }
+  },
+  "weights": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "development": [
+    42,
+    71
+  ],
+  "confirmation": [
+    48211,
+    48212,
+    48213,
+    "strat:27421",
+    "city"
+  ],
+  "max_base_settings": 8,
+  "max_total_settings": 10,
+  "max_development_configurations": 40,
+  "refinement_modes": [
+    "ensemble16"
+  ],
+  "resolved_defaults": {
+    "interpret-core": "0.7.8",
+    "ebm": {
+      "callback": null,
+      "cat_smooth": 10.0,
+      "cyclic_progress": false,
+      "early_stopping_rounds": 100,
+      "early_stopping_tolerance": 1e-05,
+      "exclude": null,
+      "feature_names": null,
+      "feature_types": null,
+      "gain_scale": 5.0,
+      "greedy_ratio": 10.0,
+      "inner_bags": 0,
+      "interaction_smoothing_rounds": 100,
+      "interactions": 0,
+      "learning_rate": 0.02,
+      "max_bins": 128,
+      "max_delta_step": 0.0,
+      "max_interaction_bins": 32,
+      "max_leaves": 3,
+      "max_rounds": 5000,
+      "min_cat_samples": 10,
+      "min_hessian": 0.0,
+      "min_samples_leaf": 20,
+      "missing": "separate",
+      "monotone_constraints": null,
+      "n_jobs": 2,
+      "objective": "rmse",
+      "outer_bags": 8,
+      "random_state": 10242,
+      "reg_alpha": 0.0,
+      "reg_lambda": 0.0,
+      "smoothing_rounds": 500,
+      "validation_size": 0.15
+    },
+    "tabpfn": {
+      "model_version": "v2",
+      "n_estimators": 8,
+      "random_state": 10242,
+      "output_type": "mean",
+      "inference_precision": "float32",
+      "fit_mode": "low_memory",
+      "device": "cuda",
+      "memory_saving_mode": true
+    }
+  },
+  "shortlist": "Best eligible TabPFN and EBM group; gain positive on both development assignments",
+  "qualification": "Gain positive on all three random confirmations; city and stratified deterioration <=1%",
+  "budget_hours": 18.0,
+  "no_search_expansion_after_confirmation": true
+}

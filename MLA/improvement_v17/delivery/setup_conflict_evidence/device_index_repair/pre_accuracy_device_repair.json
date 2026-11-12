@@ -1,0 +1,6 @@
+{
+  "no_development_predictions_existed": true,
+  "repair": "Use explicit cuda:0 for the same T4 device; no architecture, weight or accuracy gate changed.",
+  "clock_reset": false,
+  "epoch": 1793253264.055125
+}

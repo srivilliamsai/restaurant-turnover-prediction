@@ -1,0 +1,487 @@
+{
+  "context": {
+    "name": "C8",
+    "spec": {
+      "priority": 1,
+      "core": true,
+      "model": "CausiloRegressor",
+      "package": "causilo==1.0.3",
+      "torch_requirement": ">=2.13",
+      "n_estimators": 8,
+      "random_state": 10242,
+      "device": "cuda",
+      "use_kv_cache": false,
+      "retain_preprocessing": true,
+      "output_type": "mean",
+      "query_batch_size": 256,
+      "query_padding": "fixed first training row; target and ID excluded"
+    },
+    "scheme": "42",
+    "fold": 0,
+    "inputs": {
+      "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+      "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+      "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+      "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+    },
+    "sources": {
+      "core.py": "0f912c0ae24adf244291d31b6a8348a073eaf8086e23059aaf36d6c6a500463e",
+      "features.py": "a033e459df5b9776f95a9ef683ccba174b1edaab7f63901c50cfa71e9bee8b99",
+      "modeling.py": "e344038c0445ab87742dc4b00f07dd919b32a6a228bc8b74a87f823d3c429e3c",
+      "workflow.py": "eee5ef74da8af9752f67519c7f9e72d3e4633acce4f6917952fe6712ded9ac3e",
+      "verify.py": "650a4e5fa1e25060689a575f97305ac27153a7e5b4aa3ac2c64c08ff5ca598ff",
+      "delivery.py": "df7b6a39f220e40faf1b377b0c57a0c00687cf3e1fdb76239960a9b4025188d5",
+      "fresh_worker.py": "99141f44ed395f25c00f8241aca4c3eb260e7dacc80a1a3a811af88ecefc01ec",
+      "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+      "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+      "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+      "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+      "v5_contract.json": "3446412f01d536a31123142b984392216efd29094965500251386eac1814ab69",
+      "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+      "reference_manifest.json": "82417467e331d6e470fd1058c4ea4edb5a47f98021efc822176bd9a04b99bbd5",
+      "baseline_registry.json": "53e7ddb7fbfbe08162aa97fac8d5ad9dea4981aab3aa942b3e98ebdb2a3060b7",
+      "frozen_pfn.py": "ff4d383d269ffdc1b0021f7d0cac4e19240be130f2544bcc80dc41916a5262b5",
+      "new_models.py": "a060a2d5857267a2d188e2df52608927d738d313c72f59e3e952573448da9940",
+      "candidate_models.py": "90848b6804c069347b852a8237fb5841c894af89dcf19f66cfb27324907e1f3d",
+      "candidate_worker.py": "a70cb7f5406a194eacbd7e653a84c0c5f60480fa602799be31993ff8049c9e0d",
+      "pilot_worker.py": "5f16c9e4902d97a91875c043b4e1e2cd118650d9cd016cd000181667a938e7c8",
+      "checkpoint_registry.json": "d4989d804e9295c9a8f6087205b3de52e737a8aa3f16c06d87c59b3a63daeb3b",
+      "source_registry.json": "1377f16dee1a9b08e8d2b3d5bb36713a79fa48f015af79baf1110ee5ccf69273",
+      "protocol_proposed.json": "461311b69d0ed00c2d5a53cbcedfd694b55259e088fcddadb10b32251f1fa6a2",
+      "mac_controls.py": "c6c01ea36a0a9f3a4c5a6e4c8110c4e07b83e5373c110e075f4a7844515208c3",
+      "control_worker.py": "79c40d599b5aff4a3a120464723d9fd1075200195787d7e4e157827e10945fca",
+      "setup_environment.py": "a0b904b90eb27e9dd104312f648a9b86a559a0093a2abb5ac93b7d0fe61d9066",
+      "runtime_lock.json": "d3dd0fec6b990c17cfddd101ce5b2100d0c09f7412eb93546304a98aa628aec6"
+    },
+    "runtime_contract": {
+      "runtime": {
+        "dependencies": {
+          "numpy": "2.5.4",
+          "pandas": "3.0.6",
+          "scikit-learn": "1.9.1",
+          "scipy": "1.18.1",
+          "catboost": "1.2.10",
+          "interpret-core": "0.7.8",
+          "tabpfn": "9.2.0",
+          "tabicl": "2.2.0",
+          "torch": "2.11.0+cu130"
+        },
+        "gpu": "Tesla T4",
+        "cuda": "13.0",
+        "precision": "float32",
+        "prediction_chunk": 500,
+        "seed": 10242,
+        "datetime_dependencies": {
+          "skrub": "0.10.1",
+          "pyarrow": "23.0.1"
+        }
+      },
+      "new_runtime": {
+        "safetensors": "0.8.0",
+        "huggingface-hub": "1.33.0",
+        "nbformat": "5.11.1",
+        "nbclient": "0.10.4"
+      },
+      "candidate_runtime": {
+        "dependencies": {
+          "torch": "2.13.0",
+          "numpy": "2.5.4",
+          "pandas": "3.0.6",
+          "scikit-learn": "1.9.1",
+          "scipy": "1.18.1",
+          "causilo": "1.0.3",
+          "tabdpt": "1.3.1",
+          "numba": "0.68.0",
+          "llvmlite": "0.50.0",
+          "structured-data-models": "0.1.0.dev0",
+          "huggingface-hub": "1.33.0",
+          "safetensors": "0.8.0",
+          "pyarrow": "23.0.1"
+        },
+        "gpu": "Tesla T4",
+        "cuda": "13.0",
+        "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+        "total_gpu_bytes": 15637086208
+      },
+      "models": {
+        "BASE": {
+          "checkpoint": {
+            "repo_id": "Prior-Labs/TabPFN-v2-reg",
+            "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+            "filename": "tabpfn-v2-regressor.ckpt",
+            "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736",
+            "version": "2"
+          }
+        },
+        "P35_8": {
+          "checkpoint": {
+            "repo_id": "Prior-Labs/tabpfn_3_5",
+            "revision": "06bf2ba35c80a92a3b9abb436b99cf49e7a0365e",
+            "filename": "tabpfn-v3.5-20260909.safetensors",
+            "sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+            "bytes": 876027932,
+            "version": "3.5",
+            "download_path": "/root/.cache/huggingface/hub/models--Prior-Labs--tabpfn_3_5/snapshots/06bf2ba35c80a92a3b9abb436b99cf49e7a0365e/tabpfn-v3.5-20260909.safetensors",
+            "local_loader_path": "/content/mla_v14/model_weights/tabpfn-v3.5-20260909.safetensors",
+            "local_suffix": ".safetensors",
+            "format_check": {
+              "format": "safetensors",
+              "header_bytes": 77296,
+              "tensor_entries": 595,
+              "metadata_keys": [
+                "architecture_name",
+                "config",
+                "inference_config"
+              ]
+            },
+            "installed_loader_path": "/usr/local/lib/python3.13/dist-packages/tabpfn/checkpoint.py",
+            "installed_loader_sha256": "f7c86363ccc96af4ffe10ec23221ed90dfea304f04b6c4e48330ba25bbf807de"
+          },
+          "parameters": {
+            "auto_scale_n_estimators": true,
+            "average_before_softmax": false,
+            "device": "cuda",
+            "differentiable_input": false,
+            "enable_torch_compile": false,
+            "eval_metric": null,
+            "fit_mode": "low_memory",
+            "ignore_pretraining_limits": false,
+            "inference_config": null,
+            "inference_precision": "torch.float32",
+            "keep_cache_on_device": true,
+            "kv_cache_precision": null,
+            "memory_saving_mode": true,
+            "model_path": "checkpoint_sha256:ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+            "n_estimators": 8,
+            "n_jobs": null,
+            "n_preprocessing_jobs": 1,
+            "random_state": 10242,
+            "show_progress_bar": false,
+            "softmax_temperature": "auto",
+            "tuning_config": null
+          }
+        }
+      },
+      "settings": {
+        "C8": {
+          "priority": 1,
+          "core": true,
+          "model": "CausiloRegressor",
+          "package": "causilo==1.0.3",
+          "torch_requirement": ">=2.13",
+          "n_estimators": 8,
+          "random_state": 10242,
+          "device": "cuda",
+          "use_kv_cache": false,
+          "retain_preprocessing": true,
+          "output_type": "mean",
+          "query_batch_size": 256,
+          "query_padding": "fixed first training row; target and ID excluded"
+        },
+        "KS8": {
+          "priority": 2,
+          "core": true,
+          "model": "sdm.models.KumoTabular",
+          "task": "regression",
+          "size": "small",
+          "num_estimators": 8,
+          "seed": 10242,
+          "recipe": "exact reviewed default",
+          "context": "all outer-training rows with fitted preprocessing",
+          "point_readout": "float64 arithmetic mean of 999 inverse-transformed quantiles",
+          "ensemble_trim_fraction": 0.2
+        },
+        "D8": {
+          "priority": 3,
+          "core": true,
+          "model": "TabDPTRegressor",
+          "package": "tabdpt==1.3.1",
+          "device": "cuda",
+          "use_flash": false,
+          "compile": false,
+          "n_ensembles": 8,
+          "seed": 10242,
+          "context_size": null,
+          "batch_size": 256,
+          "output_type": "mean",
+          "other_defaults": "exact reviewed defaults",
+          "categorical_adapter": "outer-training-fitted numerical encoding/imputation"
+        },
+        "KM8": {
+          "priority": 4,
+          "core": false,
+          "optional_before_accuracy": true,
+          "same_as": "KS8",
+          "size": "medium"
+        }
+      },
+      "adapter": "Fixed 500-row blocks; BASE first training row; new model maximum-observed training row; discard padding.",
+      "output_floor": 0.0,
+      "selection_uses_validation_rmse": false,
+      "source_registry": {
+        "repositories": [
+          {
+            "repo": "nums-ai/causilo",
+            "branch": "main",
+            "commit": "4d26d497de28734db52c6bfc2ea949c12cc17308",
+            "status": "read",
+            "files": {
+              "README.md": {
+                "sha256": "613d60a3acd7310ab5bf5a0f366c3c5629b8ebcbb1c014a16fae84aeaf01b5d5",
+                "bytes": 6332,
+                "url": "https://github.com/nums-ai/causilo/blob/4d26d497de28734db52c6bfc2ea949c12cc17308/README.md"
+              },
+              "pyproject.toml": {
+                "sha256": "ec0e313da256eebf0f25cf04c9dcd04be32249e00b9d24ac317d89d3077c3bcb",
+                "bytes": 1511,
+                "url": "https://github.com/nums-ai/causilo/blob/4d26d497de28734db52c6bfc2ea949c12cc17308/pyproject.toml"
+              }
+            }
+          },
+          {
+            "repo": "NVIDIA/structured-data-models",
+            "branch": "main",
+            "commit": "2b1696f4fdc22004cc757c44703a69cf326c0a11",
+            "status": "read",
+            "files": {
+              "README.md": {
+                "sha256": "a99caa2cb5854c9399b02a53661587bfb41f83f9fb02a32b941050bf8db921a9",
+                "bytes": 9061,
+                "url": "https://github.com/NVIDIA/structured-data-models/blob/2b1696f4fdc22004cc757c44703a69cf326c0a11/README.md"
+              },
+              "pyproject.toml": {
+                "sha256": "1626f4b0873e95e4cd6f7d7f9fd28fd98d2cffd9b0316f07c0d091f1a12fccd4",
+                "bytes": 6803,
+                "url": "https://github.com/NVIDIA/structured-data-models/blob/2b1696f4fdc22004cc757c44703a69cf326c0a11/pyproject.toml"
+              }
+            }
+          },
+          {
+            "repo": "layer6ai-labs/TabDPT-inference",
+            "branch": "main",
+            "commit": "93670551adba28b186354fab9a1584c56c34aa76",
+            "status": "read",
+            "files": {
+              "README.md": {
+                "sha256": "a0134e1ecab7050b94ad85bf5648bf90fc13e82c3ee21401baf5369260903177",
+                "bytes": 12534,
+                "url": "https://github.com/layer6ai-labs/TabDPT-inference/blob/93670551adba28b186354fab9a1584c56c34aa76/README.md"
+              },
+              "pyproject.toml": {
+                "sha256": "a5efc58ff0144c2508cb265ad37ee87d896beb09ec26fcf084f44048181cc20a",
+                "bytes": 1480,
+                "url": "https://github.com/layer6ai-labs/TabDPT-inference/blob/93670551adba28b186354fab9a1584c56c34aa76/pyproject.toml"
+              }
+            }
+          },
+          {
+            "repo": "google-research/tabfm",
+            "branch": "main",
+            "commit": "fbb665569425fd2f490c6576b3af967876fe11ff",
+            "status": "read",
+            "files": {
+              "README.md": {
+                "sha256": "e6a0e0e36ccd18174f5aaa97dd98a4661e25fc3014f4bdb9ffd3d2a4790fe146",
+                "bytes": 6506,
+                "url": "https://github.com/google-research/tabfm/blob/fbb665569425fd2f490c6576b3af967876fe11ff/README.md"
+              },
+              "pyproject.toml": {
+                "sha256": "308455f8b6a90472af5b34eff4e236483dad4c866f06591f746adc1b42496231",
+                "bytes": 3071,
+                "url": "https://github.com/google-research/tabfm/blob/fbb665569425fd2f490c6576b3af967876fe11ff/pyproject.toml"
+              }
+            }
+          },
+          {
+            "repo": "limix-ldm-ai/LimiX",
+            "branch": "main",
+            "commit": "c76fa21bbb25fddca649e75a52dc9b1df66a659c",
+            "status": "read",
+            "files": {
+              "README.md": {
+                "sha256": "3ee743ad9d7d3f5a7533da81f13f7beb0a5604e900be49b42125e249735ecb41",
+                "bytes": 26975,
+                "url": "https://github.com/limix-ldm-ai/LimiX/blob/c76fa21bbb25fddca649e75a52dc9b1df66a659c/README.md"
+              },
+              "pyproject.toml": {
+                "sha256": "9fd3096beccfd04b88abe6db295f00fb507e88a30ff9034eeea0fd6af6e96ccf",
+                "bytes": 937,
+                "url": "https://github.com/limix-ldm-ai/LimiX/blob/c76fa21bbb25fddca649e75a52dc9b1df66a659c/pyproject.toml"
+              }
+            }
+          },
+          {
+            "repo": "alanarazi7/TabSTAR",
+            "branch": "master",
+            "commit": "4d14a660ae32b978b9bcde8c9f39e119513cf030",
+            "status": "read",
+            "files": {
+              "README.md": {
+                "sha256": "3ec5fe31e104bd1be02f6e5cdb7b203ad83e7a625c48f1d5c48f705e9156b701",
+                "bytes": 7389,
+                "url": "https://github.com/alanarazi7/TabSTAR/blob/4d14a660ae32b978b9bcde8c9f39e119513cf030/README.md"
+              },
+              "pyproject.toml": {
+                "sha256": "cb945f536593634ee2f97c88e47e7ee9c243af8a923fd6e49c31b07ad589e8a5",
+                "bytes": 756,
+                "url": "https://github.com/alanarazi7/TabSTAR/blob/4d14a660ae32b978b9bcde8c9f39e119513cf030/pyproject.toml"
+              }
+            }
+          },
+          {
+            "repo": "LAMDA-Tabular/TabSwift",
+            "branch": "main",
+            "commit": "8edf8f0b4225bc03e1f5db011912619cd92b798d",
+            "status": "read",
+            "files": {
+              "README.md": {
+                "sha256": "2db70a55ef0846c85314af75844cf76ab64d1dcab5a27f34d1336e574f590ea2",
+                "bytes": 6764,
+                "url": "https://github.com/LAMDA-Tabular/TabSwift/blob/8edf8f0b4225bc03e1f5db011912619cd92b798d/README.md"
+              }
+            }
+          }
+        ],
+        "model_modules": {
+          "C8": {
+            "causilo.estimators": "74d35df8d35f681c3c458522a15d2bcd10e1f4aa35a53ae240d16d9686b3bbbf",
+            "causilo.checkpoints": "1c2f1577e61ea6fdcd8f0593610862be4d539a99fa8a62812c8f4a253aaf36d4",
+            "causilo.nn.layers.attention": "3aa33b9ea4f6d5caa2fb9e38233ed67d3d6fefdd7a44857c50d9017b91c853ea"
+          },
+          "KS8": {
+            "sdm.models.kumo.tabular.model": "fcd1ace9e011dadcf152abae2608196ca3d1ca5dab470a1384931f794a97d882",
+            "sdm.models.kumo.tabular.recipe": "a5af156ffcb82cadb8e67070bbf1230c29b3fe245bb8ed89cebcbeaf738f77a0",
+            "sdm.models.kumo.tabular.icl": "8004617d373d8f350300d1f85c3883936a5c8da0871781e29707754370231c7d",
+            "sdm.models.kumo.tabular.batching": "4b9eded8f1b3fbc175a2d1e3ccf964c2a368378b15abd3e17ca48b51a19c31af",
+            "sdm.models.base.icl": "7a88f8c260061284424982c4484889e03dd84e2e0efaf7f90596aea8f405ef64"
+          },
+          "D8": {
+            "tabdpt.regressor": "03f420c110e19039dbbd912d80ecb36c407292cc96ce41de91d75d43992e9c2e",
+            "tabdpt.estimator": "81a345826a5534d9e4a5916ab4dd11f815a17787703eb54a42b7c968a2992678",
+            "tabdpt.model": "f7059d9040d46d883bc9f4df1456c77c369f9b3d9d59c3bf31c7e077af0fb381",
+            "tabdpt.utils": "5b6eb9ad2f49f18e99d1a850209263924ff8a2941a0b976a57511408803237c7"
+          }
+        }
+      },
+      "checkpoint_registry": {
+        "checked_at_IST": "2026-10-29T14:50:28.018900+05:30",
+        "status": "public_metadata_verified_only",
+        "models": {
+          "C8": {
+            "model_repository": "nums-ai/causilo",
+            "model_revision": "94f2bd91db0737d4da59f347910662905ecb5a09",
+            "filename": "regressor/model.safetensors",
+            "advertised_bytes": 148417316,
+            "advertised_sha256": "9a4197d7c1060d187c19b62d4d83c74ce986c1f3911825576eb58c2ae4f0057d",
+            "source_repository": "nums-ai/causilo",
+            "source_commit": "4d26d497de28734db52c6bfc2ea949c12cc17308",
+            "package_version_or_source": "1.0.3",
+            "metadata_file": "research_sources/nums-ai_causilo_hub_metadata.json",
+            "weights_downloaded": false,
+            "downloaded_bytes_verified": false,
+            "inference_tested": false
+          },
+          "KS8": {
+            "model_repository": "nvidia/Kumo-Tabular",
+            "model_revision": "3c3e10bbdb590ace29e7026847f92db3c603096d",
+            "filename": "small/regressor.pt",
+            "advertised_bytes": 113968523,
+            "advertised_sha256": "fc672f536501d64356036050ac2acea7e46927f7b9ad38366abe048f88e7d423",
+            "source_repository": "NVIDIA/structured-data-models",
+            "source_commit": "2b1696f4fdc22004cc757c44703a69cf326c0a11",
+            "package_version_or_source": "reviewed source commit",
+            "metadata_file": "research_sources/nvidia_Kumo-Tabular_hub_metadata.json",
+            "weights_downloaded": false,
+            "downloaded_bytes_verified": false,
+            "inference_tested": false
+          },
+          "KM8": {
+            "model_repository": "nvidia/Kumo-Tabular",
+            "model_revision": "3c3e10bbdb590ace29e7026847f92db3c603096d",
+            "filename": "medium/regressor.pt",
+            "advertised_bytes": 250144651,
+            "advertised_sha256": "daa6a17420b5aed231007e5d2f9c712abe093b4f94b3e1189b178947a95fb725",
+            "source_repository": "NVIDIA/structured-data-models",
+            "source_commit": "2b1696f4fdc22004cc757c44703a69cf326c0a11",
+            "package_version_or_source": "reviewed source commit",
+            "metadata_file": "research_sources/nvidia_Kumo-Tabular_hub_metadata.json",
+            "weights_downloaded": false,
+            "downloaded_bytes_verified": false,
+            "inference_tested": false
+          },
+          "D8": {
+            "model_repository": "Layer6/TabDPT",
+            "model_revision": "a5ca6e01c0fa09ec68c73e958e5199d1932abb3a",
+            "filename": "tabdpt1_3.safetensors",
+            "advertised_bytes": 252233296,
+            "advertised_sha256": "97dc3b60bfad6b42ec1a07b7e121d86b0fc7c9fd67c8d2eaac3d815da197eacb",
+            "source_repository": "layer6ai-labs/TabDPT-inference",
+            "source_commit": "93670551adba28b186354fab9a1584c56c34aa76",
+            "package_version_or_source": "1.3.1",
+            "metadata_file": "research_sources/Layer6_TabDPT_hub_metadata.json",
+            "weights_downloaded": false,
+            "downloaded_bytes_verified": false,
+            "inference_tested": false
+          }
+        }
+      }
+    },
+    "train_indices": "8634da4e6c9ace0322909b3751a85c8b57d595ff9e1292e207da808bc1cc7e57",
+    "valid_indices": "8360304ee9fe72e340fde1c7ad04eeb9bf848f6f6b06d9b08ea57aec6f788b70",
+    "training_targets": "63998c05f2bd6fe27bf536d3f74ed91f5542c3bcef6e4bbc3ed28bc9492ffa38",
+    "row_ids": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+    "target_units": "raw INR millions"
+  },
+  "sha256": "b793c697c0b9107a67cb54c789d161b2ef00a71e48a74d2793ff9c25b60eb748",
+  "fit_metadata": {
+    "name": "C8",
+    "training_rows": 2794,
+    "units": "raw INR millions",
+    "model_class": "causilo.estimators.CausiloRegressor",
+    "checkpoint_sha256": "9a4197d7c1060d187c19b62d4d83c74ce986c1f3911825576eb58c2ae4f0057d",
+    "checkpoint_revision": "94f2bd91db0737d4da59f347910662905ecb5a09",
+    "actual_source_hashes": {
+      "causilo.estimators": "74d35df8d35f681c3c458522a15d2bcd10e1f4aa35a53ae240d16d9686b3bbbf",
+      "causilo.checkpoints": "1c2f1577e61ea6fdcd8f0593610862be4d539a99fa8a62812c8f4a253aaf36d4",
+      "causilo.nn.layers.attention": "3aa33b9ea4f6d5caa2fb9e38233ed67d3d6fefdd7a44857c50d9017b91c853ea"
+    },
+    "runtime": {
+      "dependencies": {
+        "torch": "2.13.0",
+        "numpy": "2.5.4",
+        "pandas": "3.0.6",
+        "scikit-learn": "1.9.1",
+        "scipy": "1.18.1",
+        "causilo": "1.0.3",
+        "tabdpt": "1.3.1",
+        "numba": "0.68.0",
+        "llvmlite": "0.50.0",
+        "structured-data-models": "0.1.0.dev0",
+        "huggingface-hub": "1.33.0",
+        "safetensors": "0.8.0",
+        "pyarrow": "23.0.1"
+      },
+      "gpu": "Tesla T4",
+      "cuda": "13.0",
+      "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+      "total_gpu_bytes": 15637086208
+    },
+    "input_features": 40,
+    "categorical_columns": [
+      "Cuisine",
+      "City",
+      "Restaurant Location",
+      "Endoresed By",
+      "Restaurant Type",
+      "Restaurant Theme",
+      "Cuisine 1",
+      "Cuisine 2"
+    ],
+    "all_outer_training_rows": true,
+    "seed": 10242,
+    "peak_gpu_allocated_bytes": 2477054976,
+    "peak_gpu_reserved_bytes": 4309647360,
+    "host_rss_bytes": 1612083200,
+    "query_layout": "256 rows, padded with the fixed first training row; target and ID excluded"
+  }
+}

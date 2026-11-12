@@ -1,0 +1,9 @@
+{
+  "status": "runtime_expired_no_active_server_assignment",
+  "last_backup_utc": "2026-10-26T20:00:10.324192+00:00",
+  "recovery_utc": "2026-10-27T03:07:43.005717+00:00",
+  "no_completed_v10_screening_folds_in_backup": true,
+  "unobserved_elapsed_seconds_charged_as_upper_bound": 25652.68131518364,
+  "interpretation": "Actual GPU computation during this gap is unknown. Charge the full unobserved interval conservatively against the total 18-hour allowance, including possible idle/disconnected time.",
+  "pilot_retry_monitored_seconds": 3100
+}

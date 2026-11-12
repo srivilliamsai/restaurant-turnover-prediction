@@ -1,0 +1,6 @@
+{"validation": "71", "old_rmse": 19956845.012878824, "v2_rmse": 19891238.906727202, "candidate_rmse": 19870083.60766446, "gain_from_v2": 21155.299062743783}
+{"validation": "2026", "old_rmse": 19886765.223428875, "v2_rmse": 19836015.50899162, "candidate_rmse": 19823207.7784541, "gain_from_v2": 12807.730537522584}
+{"validation": "303", "old_rmse": 19969915.32388324, "v2_rmse": 19906444.77050788, "candidate_rmse": 19887896.096400928, "gain_from_v2": 18548.674106951803}
+{"validation": "909", "old_rmse": 19954342.3572216, "v2_rmse": 19888178.381134268, "candidate_rmse": 19867479.321802314, "gain_from_v2": 20699.059331953526}
+{"validation": "city", "old_rmse": 20227279.15726141, "v2_rmse": 20092949.44448126, "candidate_rmse": 20129673.335451152, "gain_from_v2": -36723.8909698911}
+MEAN RANDOM {'old_rmse': 19941966.979353134, 'v2_rmse': 19880469.39184024, 'candidate_rmse': 19862166.701080453, 'gain_from_v2': 18302.690759792924}

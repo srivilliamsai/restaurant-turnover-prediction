@@ -1,0 +1,15 @@
+{
+  "checked_at_UTC": "2026-10-28T05:41:27.243868+00:00",
+  "method": "Colab CLI raw TTY, read-only nvidia-smi and ps; console closed without stopping worker",
+  "gpu": "Tesla T4",
+  "gpu_utilization_percent": 100,
+  "gpu_memory_used_MiB": 955,
+  "gpu_memory_total_MiB": 15360,
+  "worker_pid": 2392,
+  "worker_state": "Rsl",
+  "worker_elapsed": "14:50",
+  "worker_cpu_percent": 101,
+  "stage": "pilot",
+  "validation_scores_available": false,
+  "training_interrupted": false
+}

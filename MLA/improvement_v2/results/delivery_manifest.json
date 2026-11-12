@@ -1,0 +1,14 @@
+{
+  "notebook": "./submission.ipynb",
+  "csv": "./submission.csv",
+  "csv_sha256": "af82750a880dc2856b94c5d1846c039df69eac00be48f45ea2a873ec9ea0f723",
+  "prior_csv_sha256": "4af3baed59f32ce09c3ece33735467ebf2325ac7565362f1b34ca9783645df27",
+  "rows": 500,
+  "headers": [
+    "Registration Number",
+    "Annual Turnover"
+  ],
+  "code_cells": 12,
+  "code_errors": 0,
+  "image_outputs": 2
+}

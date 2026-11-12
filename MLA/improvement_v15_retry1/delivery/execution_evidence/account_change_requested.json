@@ -1,0 +1,6 @@
+{
+  "reason": "User explicitly requested changing the Colab account. Stopped the owned local coordinator before releasing its T4 and opening sign-in.",
+  "original_retry_budget_preserved": true,
+  "numerical_sources_changed": false,
+  "epoch": 1793243913.161141
+}

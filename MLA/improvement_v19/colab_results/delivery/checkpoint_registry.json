@@ -1,0 +1,62 @@
+{
+  "checked_at_IST": "2026-10-29T14:50:28.018900+05:30",
+  "status": "public_metadata_verified_only",
+  "models": {
+    "C8": {
+      "model_repository": "nums-ai/causilo",
+      "model_revision": "94f2bd91db0737d4da59f347910662905ecb5a09",
+      "filename": "regressor/model.safetensors",
+      "advertised_bytes": 148417316,
+      "advertised_sha256": "9a4197d7c1060d187c19b62d4d83c74ce986c1f3911825576eb58c2ae4f0057d",
+      "source_repository": "nums-ai/causilo",
+      "source_commit": "4d26d497de28734db52c6bfc2ea949c12cc17308",
+      "package_version_or_source": "1.0.3",
+      "metadata_file": "research_sources/nums-ai_causilo_hub_metadata.json",
+      "weights_downloaded": false,
+      "downloaded_bytes_verified": false,
+      "inference_tested": false
+    },
+    "KS8": {
+      "model_repository": "nvidia/Kumo-Tabular",
+      "model_revision": "3c3e10bbdb590ace29e7026847f92db3c603096d",
+      "filename": "small/regressor.pt",
+      "advertised_bytes": 113968523,
+      "advertised_sha256": "fc672f536501d64356036050ac2acea7e46927f7b9ad38366abe048f88e7d423",
+      "source_repository": "NVIDIA/structured-data-models",
+      "source_commit": "2b1696f4fdc22004cc757c44703a69cf326c0a11",
+      "package_version_or_source": "reviewed source commit",
+      "metadata_file": "research_sources/nvidia_Kumo-Tabular_hub_metadata.json",
+      "weights_downloaded": false,
+      "downloaded_bytes_verified": false,
+      "inference_tested": false
+    },
+    "KM8": {
+      "model_repository": "nvidia/Kumo-Tabular",
+      "model_revision": "3c3e10bbdb590ace29e7026847f92db3c603096d",
+      "filename": "medium/regressor.pt",
+      "advertised_bytes": 250144651,
+      "advertised_sha256": "daa6a17420b5aed231007e5d2f9c712abe093b4f94b3e1189b178947a95fb725",
+      "source_repository": "NVIDIA/structured-data-models",
+      "source_commit": "2b1696f4fdc22004cc757c44703a69cf326c0a11",
+      "package_version_or_source": "reviewed source commit",
+      "metadata_file": "research_sources/nvidia_Kumo-Tabular_hub_metadata.json",
+      "weights_downloaded": false,
+      "downloaded_bytes_verified": false,
+      "inference_tested": false
+    },
+    "D8": {
+      "model_repository": "Layer6/TabDPT",
+      "model_revision": "a5ca6e01c0fa09ec68c73e958e5199d1932abb3a",
+      "filename": "tabdpt1_3.safetensors",
+      "advertised_bytes": 252233296,
+      "advertised_sha256": "97dc3b60bfad6b42ec1a07b7e121d86b0fc7c9fd67c8d2eaac3d815da197eacb",
+      "source_repository": "layer6ai-labs/TabDPT-inference",
+      "source_commit": "93670551adba28b186354fab9a1584c56c34aa76",
+      "package_version_or_source": "1.3.1",
+      "metadata_file": "research_sources/Layer6_TabDPT_hub_metadata.json",
+      "weights_downloaded": false,
+      "downloaded_bytes_verified": false,
+      "inference_tested": false
+    }
+  }
+}

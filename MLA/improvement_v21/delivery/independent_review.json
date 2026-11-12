@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "independently_recomputed_blends": 6,
+  "complete_fold_outputs_verified": 20,
+  "maximum_metric_difference_INR": 3.725290298461914e-09,
+  "source_and_data_identity_unchanged": true,
+  "all_original_validation_targets": 3493,
+  "fixed_component_replacement_formula_independently_recomputed": true,
+  "baseline_v14_component_fold_witnesses_verified": 35,
+  "selection_recomputed": true,
+  "qualified": false,
+  "confirmation_performed": false,
+  "v14_scored_files_preserved": true,
+  "portal_uploads": 0
+}

@@ -1,0 +1,113 @@
+{
+  "borders32": {
+    "iterations": 850,
+    "learning_rate": 0.04,
+    "depth": 5,
+    "l2_leaf_reg": 10,
+    "loss_function": "Huber:delta=40000000",
+    "bootstrap_type": "Bernoulli",
+    "subsample": 0.7,
+    "border_count": 32
+  },
+  "borders64": {
+    "iterations": 850,
+    "learning_rate": 0.04,
+    "depth": 5,
+    "l2_leaf_reg": 10,
+    "loss_function": "Huber:delta=40000000",
+    "bootstrap_type": "Bernoulli",
+    "subsample": 0.7,
+    "border_count": 64
+  },
+  "columns70": {
+    "iterations": 850,
+    "learning_rate": 0.04,
+    "depth": 5,
+    "l2_leaf_reg": 10,
+    "loss_function": "Huber:delta=40000000",
+    "bootstrap_type": "Bernoulli",
+    "subsample": 0.7,
+    "rsm": 0.7
+  },
+  "rows50": {
+    "iterations": 1000,
+    "learning_rate": 0.04,
+    "depth": 5,
+    "l2_leaf_reg": 10,
+    "loss_function": "Huber:delta=40000000",
+    "bootstrap_type": "Bernoulli",
+    "subsample": 0.5
+  },
+  "rows90": {
+    "iterations": 850,
+    "learning_rate": 0.04,
+    "depth": 5,
+    "l2_leaf_reg": 10,
+    "loss_function": "Huber:delta=40000000",
+    "bootstrap_type": "Bernoulli",
+    "subsample": 0.9
+  },
+  "l2_30": {
+    "iterations": 1000,
+    "learning_rate": 0.04,
+    "depth": 5,
+    "l2_leaf_reg": 30,
+    "loss_function": "Huber:delta=40000000",
+    "bootstrap_type": "Bernoulli",
+    "subsample": 0.7
+  },
+  "l2_3": {
+    "iterations": 850,
+    "learning_rate": 0.04,
+    "depth": 5,
+    "l2_leaf_reg": 3,
+    "loss_function": "Huber:delta=40000000",
+    "bootstrap_type": "Bernoulli",
+    "subsample": 0.7
+  },
+  "huber30": {
+    "iterations": 850,
+    "learning_rate": 0.04,
+    "depth": 5,
+    "l2_leaf_reg": 10,
+    "loss_function": "Huber:delta=30000000",
+    "bootstrap_type": "Bernoulli",
+    "subsample": 0.7
+  },
+  "huber50": {
+    "iterations": 850,
+    "learning_rate": 0.04,
+    "depth": 5,
+    "l2_leaf_reg": 10,
+    "loss_function": "Huber:delta=50000000",
+    "bootstrap_type": "Bernoulli",
+    "subsample": 0.7
+  },
+  "slow": {
+    "iterations": 1700,
+    "learning_rate": 0.02,
+    "depth": 5,
+    "l2_leaf_reg": 10,
+    "loss_function": "Huber:delta=40000000",
+    "bootstrap_type": "Bernoulli",
+    "subsample": 0.7
+  },
+  "depth4": {
+    "iterations": 1200,
+    "learning_rate": 0.04,
+    "depth": 4,
+    "l2_leaf_reg": 10,
+    "loss_function": "Huber:delta=40000000",
+    "bootstrap_type": "Bernoulli",
+    "subsample": 0.7
+  },
+  "depth6": {
+    "iterations": 700,
+    "learning_rate": 0.04,
+    "depth": 6,
+    "l2_leaf_reg": 10,
+    "loss_function": "Huber:delta=40000000",
+    "bootstrap_type": "Bernoulli",
+    "subsample": 0.7
+  }
+}

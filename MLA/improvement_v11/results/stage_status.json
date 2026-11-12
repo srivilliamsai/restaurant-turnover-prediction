@@ -1,0 +1,6 @@
+{
+  "stage": "screen",
+  "status": "failed",
+  "error_type": "NameError",
+  "error": "name 'diagnostics' is not defined"
+}

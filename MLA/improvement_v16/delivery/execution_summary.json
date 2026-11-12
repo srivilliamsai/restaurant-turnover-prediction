@@ -1,0 +1,25 @@
+{
+  "complete": true,
+  "qualified": false,
+  "outer_fold_outputs": 10,
+  "blend_comparisons": 5,
+  "best": {
+    "name": "TM32-PLE",
+    "route": "V14-blend",
+    "weight": "0.1",
+    "effective_new_share": "0.1",
+    "rmse_42": "19645892.932171565",
+    "gain_42": "3140.6239902041852",
+    "relative_gain_42": "0.0001598360540851798",
+    "rmse_71": "19640533.620240767",
+    "gain_71": "9371.83417012915",
+    "relative_gain_71": "0.0004769404204957849",
+    "mean_relative_gain": "0.00031838823729048236"
+  },
+  "all_original_labels": 3493,
+  "owned_runtime_released": true,
+  "portal_uploads": 0,
+  "elapsed_seconds_including_setup_and_local_verification": 911.8609089851379,
+  "maximum_hours": 6,
+  "paid_resources": false
+}

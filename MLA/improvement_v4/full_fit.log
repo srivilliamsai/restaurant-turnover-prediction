@@ -1,0 +1,8 @@
+{
+  "csv_sha256": "656027e4664cbfe8367e728b083dd29c56e4460c3d96c043300fe19ad895bbde",
+  "v3_reconstruction_max_diff": 1.4901161193847656e-08,
+  "mean_absolute_prediction_change": 556290.3768689381,
+  "prediction_min": 11507763.874801291,
+  "prediction_max": 55274897.26557762,
+  "portal_rmse": null
+}

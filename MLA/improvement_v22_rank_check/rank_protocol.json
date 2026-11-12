@@ -1,0 +1,37 @@
+{
+  "status": "EXPLORATORY_SUPPLEMENT_ORIGINAL_V22_DECISION_UNCHANGED",
+  "user_instruction": "check all steps and give me if it is possible or not",
+  "candidate": {
+    "name": "P35-SC38",
+    "route": "P35-replacement",
+    "weight": 1.0,
+    "effective_new_share": 0.75
+  },
+  "no_new_candidate_or_weight_search": true,
+  "development_selection_already_observed": true,
+  "original_development_gate_failed": true,
+  "original_minimum_relative_gain": 0.002,
+  "confirmation": [
+    48211,
+    48212,
+    48213,
+    "strat:27421",
+    "city"
+  ],
+  "maximum_new_fold_outputs": 25,
+  "same_original_clock": true,
+  "started_epoch": 1793281136.0,
+  "hard_stop_epoch": 1793295536.0,
+  "paid_resources": false,
+  "automatic_portal_upload": false,
+  "export_policy": "Prepare only this fixed candidate as EXPLORATORY for full reproduction checks, independently of confirmation score. No claim of original qualification or portal improvement.",
+  "statistical_interpretation": "Report all signed random gains, original 0.20 percent confirmation criterion, conditional bootstrap, stratified/city deterioration and influential-row diagnostics. None establishes hidden-test RMSE or rank.",
+  "screenshot_scores": {
+    "current": 11736110.7877709,
+    "10": 11728261.8555573,
+    "9": 11669231.6725075,
+    "8": 11634635.4099795,
+    "7": 11632495.6109682,
+    "6": 11579752.587226
+  }
+}

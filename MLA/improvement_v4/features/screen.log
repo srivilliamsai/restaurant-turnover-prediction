@@ -1,0 +1,11 @@
+V3 development baseline 19839027.540841296
+{"variant": "base", "rmse": 19857592.301180907, "blend25_rmse": 19840525.35258284, "blend50_rmse": 19844119.619478375, "seconds": 19.25423789024353}
+{"variant": "categorical_ratings", "rmse": 19843097.405330215, "blend25_rmse": 19831636.390886307, "blend50_rmse": 19829850.767892215, "seconds": 47.60432505607605}
+{"variant": "dual_ratings", "rmse": 19871508.590548143, "blend25_rmse": 19840659.88058471, "blend50_rmse": 19846620.57018692, "seconds": 48.898340702056885}
+{"variant": "categorical_tiers_flags", "rmse": 19867793.755344525, "blend25_rmse": 19841412.13815622, "blend50_rmse": 19847003.436688337, "seconds": 18.865602731704712}
+{"variant": "social_quantized", "rmse": 19860028.90166527, "blend25_rmse": 19839509.750337813, "blend50_rmse": 19843172.141176563, "seconds": 17.340154886245728}
+{"variant": "events_zero", "rmse": 19853990.913216915, "blend25_rmse": 19838693.18980481, "blend50_rmse": 19841076.473303996, "seconds": 18.95266103744507}
+{"variant": "date_detail", "rmse": 19850897.218918763, "blend25_rmse": 19834234.79891789, "blend50_rmse": 19834616.371242393, "seconds": 17.493870735168457}
+{"variant": "city_cuisine", "rmse": 19863712.332543697, "blend25_rmse": 19839364.81333366, "blend50_rmse": 19843593.407376282, "seconds": 24.525401830673218}
+{"variant": "reduced", "rmse": 19885743.51211369, "blend25_rmse": 19844656.434960447, "blend50_rmse": 19854323.06368788, "seconds": 20.70531415939331}
+{"variant": "cuisine_canonical", "rmse": 19881024.421970844, "blend25_rmse": 19844243.521311346, "blend50_rmse": 19852985.074597225, "seconds": 18.01400089263916}

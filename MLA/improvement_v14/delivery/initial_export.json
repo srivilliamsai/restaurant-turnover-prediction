@@ -1,0 +1,20 @@
+{
+  "v9_reproduction_difference_INR": 7.450580596923828e-09,
+  "target_metadata": {
+    "name": "P35_8",
+    "training_rows": 3493,
+    "units": "raw INR millions",
+    "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+    "model_class": "tabpfn.regressor.TabPFNRegressor",
+    "architecture_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+    ],
+    "configuration_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"
+    ]
+  },
+  "csv_checks": {
+    "rows": 500,
+    "malformed_cases_rejected": 12
+  }
+}

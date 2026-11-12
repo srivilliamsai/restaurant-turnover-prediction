@@ -1,0 +1,43 @@
+{
+  "version": "v4",
+  "candidate_portal_rmse": null,
+  "confirmed_v3_portal_rmse": 12094600.3216516,
+  "confirmed_rank": 3,
+  "leader_rmse_from_screenshot": 11946659.0702364,
+  "files": {
+    "csv": {
+      "path": "./improvement_v4/submission.csv",
+      "sha256": "656027e4664cbfe8367e728b083dd29c56e4460c3d96c043300fe19ad895bbde"
+    },
+    "ipynb": {
+      "path": "./improvement_v4/submission.ipynb",
+      "sha256": "5d0129b1008f89d5be50c07d1faf61e4ae0da661faf385817ea573a5a3f591f5"
+    }
+  },
+  "promoted_to_root": false,
+  "summary": {
+    "six_random_means": {
+      "v3_rmse": 19854514.35933287,
+      "v4_rmse": 19848338.250979416,
+      "gain_vs_v3": 6176.108353458345
+    },
+    "two_new_split_means": {
+      "v3_rmse": 19839209.67583771,
+      "v4_rmse": 19843598.450265743,
+      "gain_vs_v3": -4388.774428028613
+    },
+    "city_gain": -19864.076322909445,
+    "conditional_bootstrap_95pct_gain_interval": [
+      -13527.062739982735,
+      25867.885891024107
+    ],
+    "random_wins": 4,
+    "random_splits": 6,
+    "supported_for_trial": false,
+    "candidate_portal_rmse": null
+  },
+  "code_cells": 10,
+  "validation_execution": "Reused explicitly hash-verified actual fold predictions; recomputed metrics; full fits and behavioral/export checks executed in this notebook. Colab defaults to uncached model training.",
+  "uncached_validation_checked": true,
+  "backup": "./improvement_v4/rank3_confirmed_backup"
+}

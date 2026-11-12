@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checks": [
+    "All 35 V9 and 35 V14 control-fold witnesses, original targets and source/runtime identities verified.",
+    "N32 retains native dates and original numeric missingness with identical V14 categorical normalization.",
+    "V14 control and V15 replacement algebra preserve the quarter-share V9 anchor.",
+    "Both-split development, minimum gain, deterministic ranking, bootstrap and stress gates enforced.",
+    "Behavior tests reject substantive order dependence; twelve malformed CSV cases rejected."
+  ],
+  "new_models_fitted": 0
+}

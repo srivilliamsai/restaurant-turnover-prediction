@@ -1,0 +1,26 @@
+v5 outer fit complete; generating nested residual inputs
+inner fold 1/3 complete
+inner fold 2/3 complete
+inner fold 3/3 complete
+{"MAC_CITY_BASELINE_FOLD": 1, "of": 5}
+v5 outer fit complete; generating nested residual inputs
+inner fold 1/3 complete
+inner fold 2/3 complete
+inner fold 3/3 complete
+{"MAC_CITY_BASELINE_FOLD": 2, "of": 5}
+v5 outer fit complete; generating nested residual inputs
+inner fold 1/3 complete
+inner fold 2/3 complete
+inner fold 3/3 complete
+{"MAC_CITY_BASELINE_FOLD": 3, "of": 5}
+v5 outer fit complete; generating nested residual inputs
+inner fold 1/3 complete
+inner fold 2/3 complete
+inner fold 3/3 complete
+{"MAC_CITY_BASELINE_FOLD": 4, "of": 5}
+v5 outer fit complete; generating nested residual inputs
+inner fold 1/3 complete
+inner fold 2/3 complete
+inner fold 3/3 complete
+{"MAC_CITY_BASELINE_FOLD": 5, "of": 5}
+PASS: revised-city V7 comparison fitted on original Mac platform.

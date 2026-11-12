@@ -1,0 +1,54 @@
+{
+  "code_cells": 10,
+  "figures": 2,
+  "elapsed_seconds": 16.184524059295654,
+  "validation": [
+    {
+      "Validation": "71",
+      "Submitted model RMSE": 19956845.012878824,
+      "Previous improved RMSE": 19891238.906727202,
+      "Current candidate RMSE": 19870083.60766446,
+      "Gain vs previous improved": 21155.299062743783
+    },
+    {
+      "Validation": "2026",
+      "Submitted model RMSE": 19886765.223428875,
+      "Previous improved RMSE": 19836015.50899162,
+      "Current candidate RMSE": 19823207.7784541,
+      "Gain vs previous improved": 12807.730537522584
+    },
+    {
+      "Validation": "303",
+      "Submitted model RMSE": 19969915.32388324,
+      "Previous improved RMSE": 19906444.77050788,
+      "Current candidate RMSE": 19887896.096400928,
+      "Gain vs previous improved": 18548.674106951803
+    },
+    {
+      "Validation": "909",
+      "Submitted model RMSE": 19954342.3572216,
+      "Previous improved RMSE": 19888178.381134268,
+      "Current candidate RMSE": 19867479.321802314,
+      "Gain vs previous improved": 20699.059331953526
+    },
+    {
+      "Validation": "city",
+      "Submitted model RMSE": 20227279.15726141,
+      "Previous improved RMSE": 20092949.44448126,
+      "Current candidate RMSE": 20129673.335451152,
+      "Gain vs previous improved": -36723.8909698911
+    }
+  ],
+  "means": {
+    "Submitted model RMSE": 19941966.979353134,
+    "Previous improved RMSE": 19880469.39184024,
+    "Current candidate RMSE": 19862166.701080453,
+    "Gain vs previous improved": 18302.690759792924
+  },
+  "bootstrap_interval": [
+    -9580.430900826399,
+    46660.364821534415
+  ],
+  "validation_execution": "Reused hash-verified actual fold predictions; recomputed metrics; full fits and behavioral/export checks executed in this notebook.",
+  "full_fit_reproduced": true
+}

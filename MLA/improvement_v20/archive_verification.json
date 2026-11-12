@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "archive_sha256": "ce76eedf19e93399a0d2750ab76d64321c2d3a34dbe661cd3bf7ac01c8a10054",
+  "archive_bytes": 39370892,
+  "zip_crc": "PASS",
+  "manifest_file_hashes_verified": 98,
+  "archive_members": 1012,
+  "computational_source_identity_unchanged": true,
+  "scored_v14_preserved": true,
+  "portal_uploads": 0,
+  "elapsed_hours_including_final_verification": 0.9660503752364052
+}

@@ -1,0 +1,545 @@
+{
+  "scope": "Static review and read-only official-data diagnostics; no model training or portal upload.",
+  "source_count": 29,
+  "unique_sources": 27,
+  "duplicates": [
+    [
+      "gemini-code-1793040523135.py",
+      "gemini-code-1793040507412.py"
+    ],
+    [
+      "gemini-code-1793039897406.py",
+      "gemini-code-1793039887567.py"
+    ]
+  ],
+  "sources": [
+    {
+      "path": "~/Downloads/gemini-code-1793041023703.py",
+      "sha256": "377287cd9fc5fca89d41794e0adac69cd46d3afac84f4677b6da2dd95ceffeee",
+      "lines": 12,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [],
+      "imports": [
+        "numpy",
+        "pandas",
+        "sklearn.metrics"
+      ]
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041021982.py",
+      "sha256": "cfc9401b970f683850f38df4d21e6f0b08fdda77510de6f0c168586cb798c868",
+      "lines": 5,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [],
+      "imports": []
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041016975.py",
+      "sha256": "db3c40725def1d67a608d7811c0e9761cfa4058142d568b1a79d14f9b1c39028",
+      "lines": 41,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [],
+      "imports": [
+        "numpy",
+        "pandas",
+        "sklearn.ensemble",
+        "sklearn.metrics",
+        "sklearn.model_selection"
+      ]
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041013037.py",
+      "sha256": "7f55914f513501325593738d8f4383f9b15e76e2143766ecbb4ccc38832b4967",
+      "lines": 28,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [],
+      "imports": [
+        "numpy",
+        "pandas"
+      ]
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041010817.py",
+      "sha256": "3ee46b95f4cb3e63b4713f3d2d59aaa14ce99872a1e5eda8191ad4dc06cfaa7a",
+      "lines": 15,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [],
+      "imports": [
+        "numpy",
+        "pandas",
+        "sklearn.ensemble",
+        "sklearn.metrics",
+        "sklearn.model_selection"
+      ]
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793040786727.py",
+      "sha256": "09d52ed9a7041cad45632b5918726ffb56a80726462639e573e3b115e2afd70a",
+      "lines": 7,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [],
+      "imports": []
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793040782819.py",
+      "sha256": "684d851961f7f5fceaac0676aa00f42da4849caa414ce6b0bea9235ef142c206",
+      "lines": 56,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [
+        "evaluate_pipeline"
+      ],
+      "imports": []
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793040565406.py",
+      "sha256": "52ffffa6ba8e9485ad464248c676fd4dbe16ecceb50f2e42c33402c613aba3c1",
+      "lines": 127,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [
+        "clean_city",
+        "engineer_features"
+      ],
+      "imports": [
+        "numpy",
+        "pandas",
+        "re",
+        "sklearn.ensemble",
+        "sklearn.linear_model",
+        "sklearn.metrics",
+        "sklearn.model_selection"
+      ]
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793040523135.py",
+      "sha256": "ee7d22c9e2c20d30e1d2f3ef282a9428729ea5d0dcb22c7d5c09b568ad3980e1",
+      "lines": 3,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [],
+      "imports": []
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793040507412.py",
+      "sha256": "ee7d22c9e2c20d30e1d2f3ef282a9428729ea5d0dcb22c7d5c09b568ad3980e1",
+      "lines": 3,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [],
+      "imports": []
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793040501263.py",
+      "sha256": "f02a0de814c2f0ff77e4cc79c51f135b3e37b054e9876cf7a69cd35db62ed2f9",
+      "lines": 12,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [],
+      "imports": [
+        "matplotlib.pyplot"
+      ]
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793040449983.py",
+      "sha256": "05efca154d1317de71f0bb596d98b1e611ad4556369c38c4146c30781ed831ed",
+      "lines": 9,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [],
+      "imports": []
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793040361521.py",
+      "sha256": "8f350792b0f639774370097430fa70629a00341a4f5bc1f561edcedf5c21b05a",
+      "lines": 8,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [],
+      "imports": []
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793040358474.py",
+      "sha256": "53d6f94a30b3e2085adf167549c311e4eb8cdc23e18ff06cf0b6b888ea00259c",
+      "lines": 27,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [],
+      "imports": [
+        "numpy",
+        "pandas",
+        "sklearn.ensemble",
+        "sklearn.metrics",
+        "sklearn.model_selection"
+      ]
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793040357375.py",
+      "sha256": "f1f4a1085ce17af4062a070d120aafaeca1496631412781b494cd95149efcd72",
+      "lines": 12,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [],
+      "imports": [
+        "lightgbm",
+        "numpy",
+        "pandas",
+        "sklearn.ensemble",
+        "sklearn.metrics",
+        "sklearn.model_selection",
+        "xgboost"
+      ]
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793039902514.py",
+      "sha256": "a13855ab8932b3e18115281c5c79f8a5204b242a23bd8b98235341a1c0288f6e",
+      "lines": 83,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [
+        "build_advanced_features"
+      ],
+      "imports": []
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793039897406.py",
+      "sha256": "ae8fca3d46b76ea422c29f20c2b3ba147cdfcbabec6a97cc8523b292d1bec411",
+      "lines": 28,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [],
+      "imports": [
+        "matplotlib.pyplot",
+        "numpy",
+        "pandas",
+        "scipy.optimize",
+        "sklearn.ensemble",
+        "sklearn.impute",
+        "sklearn.linear_model",
+        "sklearn.metrics",
+        "sklearn.pipeline",
+        "sklearn.preprocessing"
+      ]
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793039887567.py",
+      "sha256": "ae8fca3d46b76ea422c29f20c2b3ba147cdfcbabec6a97cc8523b292d1bec411",
+      "lines": 28,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [],
+      "imports": [
+        "matplotlib.pyplot",
+        "numpy",
+        "pandas",
+        "scipy.optimize",
+        "sklearn.ensemble",
+        "sklearn.impute",
+        "sklearn.linear_model",
+        "sklearn.metrics",
+        "sklearn.pipeline",
+        "sklearn.preprocessing"
+      ]
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793039828263.py",
+      "sha256": "4adcd934b3ac3badfb62315939d787acc0afe2a782a420b27a9a86f435b308a7",
+      "lines": 36,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [],
+      "imports": [
+        "numpy",
+        "pandas",
+        "sklearn.ensemble",
+        "sklearn.linear_model",
+        "sklearn.preprocessing"
+      ]
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793039347510.py",
+      "sha256": "94bf8672861811092c837d6ee449f350c3782c686fe354c344e11c665c6a99e7",
+      "lines": 53,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [],
+      "imports": []
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793039118315.py",
+      "sha256": "7e48ae3b841cbd088b3da08cbea419ed61b29cf829af42a7f2bbaa27bc8b1fd9",
+      "lines": 61,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [],
+      "imports": [
+        "numpy",
+        "sklearn.model_selection"
+      ]
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793039009620.py",
+      "sha256": "df0e4f9e1a30031704814832f68cf4639b7fc25c5302d503cb2e2a3d5ba22699",
+      "lines": 105,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [
+        "clean_city",
+        "build_features"
+      ],
+      "imports": [
+        "numpy",
+        "pandas",
+        "sklearn.ensemble",
+        "sklearn.metrics",
+        "sklearn.model_selection"
+      ]
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793038993172.py",
+      "sha256": "5ce3c4e72c3a336a3c435a8f2b147d809b40f3fd8c205493dd3780d3899bb016",
+      "lines": 1,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [],
+      "imports": []
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793038991194.py",
+      "sha256": "f7687a1ee014cae70a5f2ec41f81ccb4bdb5278a25f3e9fe89e7f7c0c3c8f82f",
+      "lines": 4,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [],
+      "imports": []
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793038947785.py",
+      "sha256": "ceb456365ba4fd010a3875735e260e06ee04b0e33db4b4409856b3363c841d0f",
+      "lines": 14,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [],
+      "imports": []
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793038928480.py",
+      "sha256": "5e580e9bc4f57adf3cfd83ea7e221c4b13a94ed8f9f7499dbf2f7aa6b2eb65f5",
+      "lines": 30,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [],
+      "imports": [
+        "numpy",
+        "pandas"
+      ]
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793038925753.py",
+      "sha256": "7243ac878b9af8d45d7215ec7ffd4677f9ca7f44a60130b671a2acb87ba79208",
+      "lines": 17,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [],
+      "imports": [
+        "lightgbm",
+        "sklearn.metrics",
+        "sklearn.model_selection"
+      ]
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793038921109.py",
+      "sha256": "782211822b3f8015054701c87a7bfc83e1c253acd536c2ed2dcb48dff1d05dd5",
+      "lines": 14,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [],
+      "imports": []
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793038917092.py",
+      "sha256": "f3d04731e65228da919e24bd14f4f5cfc6e607717e2bda7e6f1eb07c87d9e12a",
+      "lines": 18,
+      "syntax": "valid Python syntax; not executed",
+      "functions": [],
+      "imports": [
+        "numpy",
+        "pandas"
+      ]
+    }
+  ],
+  "inputs": {
+    "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+    "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+    "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+    "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+  },
+  "preserved_v9": {
+    "path": "./improvement_v9/scored_v9_backup/submission.csv",
+    "sha256": "5a384dc3d8bf58c4e29f0d6cac646aa33afe22bdcdd186cccd9758342769bbd4",
+    "notebook_path": "./improvement_v9/scored_v9_backup/submission.ipynb",
+    "notebook_sha256": "38a39003d0d7fb805b8725beac9ae80933929f6782c412166deef4d4df2f6973",
+    "portal_rmse": 11904515.9864996,
+    "screenshot_rank": 9
+  },
+  "city": {
+    "train": {
+      "raw_categories": 297,
+      "v7_categories": 196,
+      "proposed_literal_map_categories": 193,
+      "changed_rows": 25,
+      "changed_tokens": {
+        "trivandrum": 9,
+        "bhubaneshwar": 7,
+        "pondicherry": 5,
+        "vizag": 3,
+        "allahabad": 1
+      },
+      "v7_unseen_rows": 0,
+      "proposed_unseen_rows": 0
+    },
+    "test": {
+      "raw_categories": 97,
+      "v7_categories": 72,
+      "proposed_literal_map_categories": 68,
+      "changed_rows": 8,
+      "changed_tokens": {
+        "bhubaneshwar": 2,
+        "guragaon": 1,
+        "new dehli": 1,
+        "ambala city": 1,
+        "trivandrum": 1,
+        "pondicherry": 1,
+        "banaglore": 1
+      },
+      "v7_unseen_rows": 24,
+      "proposed_unseen_rows": 20
+    }
+  },
+  "proposed_city_map": {
+    "bengaluru": "bangalore",
+    "banglore": "bangalore",
+    "gurugram": "gurgaon",
+    "gurgoan": "gurgaon",
+    "bombay": "mumbai",
+    "calcutta": "kolkata",
+    "delhi": "new delhi",
+    "bhubneshwar": "bhubaneswar",
+    "hderabad": "hyderabad",
+    "punr": "pune",
+    "banaglore": "bangalore",
+    "new dehli": "new delhi",
+    "guragaon": "gurgaon",
+    "bhubaneshwar": "bhubaneswar",
+    "kochicohin": "kochi",
+    "kochicochin": "kochi",
+    "cochin": "kochi",
+    "latur maharashtra": "latur",
+    "ambala city": "ambala",
+    "trivandrum": "thiruvananthapuram",
+    "vizag": "visakhapatnam",
+    "pondicherry": "puducherry",
+    "allahabad": "prayagraj"
+  },
+  "deferred_city_tokens": [
+    " trivandrum",
+    "asifabadbanglore",
+    "greater noida",
+    "navi mumbai",
+    "ncr",
+    "sahibabad",
+    "secunderabad",
+    "shahibabad",
+    "thane"
+  ],
+  "ratings": {
+    "train": {
+      "Restaurant Zomato Rating": {
+        "min": 0.0,
+        "max": 5.0,
+        "zero_rows": 13,
+        "missing_rows": 0,
+        "outside_documented_range": 13
+      },
+      "Staff Responsivness": {
+        "min": 1.0,
+        "max": 8.0,
+        "zero_rows": 0,
+        "missing_rows": 0,
+        "outside_documented_range": 0
+      },
+      "Value for Money": {
+        "min": 1.0,
+        "max": 7.0,
+        "zero_rows": 0,
+        "missing_rows": 0,
+        "outside_documented_range": 0
+      },
+      "Hygiene Rating": {
+        "min": 1.0,
+        "max": 9.0,
+        "zero_rows": 0,
+        "missing_rows": 0,
+        "outside_documented_range": 0
+      },
+      "Food Rating": {
+        "min": 5.0,
+        "max": 10.0,
+        "zero_rows": 0,
+        "missing_rows": 0,
+        "outside_documented_range": 0
+      },
+      "Overall Restaurant Rating": {
+        "min": 6.0,
+        "max": 10.0,
+        "zero_rows": 0,
+        "missing_rows": 212,
+        "outside_documented_range": 0
+      }
+    },
+    "test": {
+      "Restaurant Zomato Rating": {
+        "min": 1.0,
+        "max": 5.0,
+        "zero_rows": 0,
+        "missing_rows": 0,
+        "outside_documented_range": 0
+      },
+      "Staff Responsivness": {
+        "min": 2.0,
+        "max": 7.0,
+        "zero_rows": 0,
+        "missing_rows": 0,
+        "outside_documented_range": 0
+      },
+      "Value for Money": {
+        "min": 2.0,
+        "max": 7.0,
+        "zero_rows": 0,
+        "missing_rows": 0,
+        "outside_documented_range": 0
+      },
+      "Hygiene Rating": {
+        "min": 1.0,
+        "max": 8.0,
+        "zero_rows": 0,
+        "missing_rows": 0,
+        "outside_documented_range": 0
+      },
+      "Food Rating": {
+        "min": 5.0,
+        "max": 10.0,
+        "zero_rows": 0,
+        "missing_rows": 0,
+        "outside_documented_range": 0
+      },
+      "Overall Restaurant Rating": {
+        "min": 6.0,
+        "max": 10.0,
+        "zero_rows": 0,
+        "missing_rows": 34,
+        "outside_documented_range": 0
+      }
+    }
+  },
+  "dates": {
+    "train": {
+      "first": "1996-10-25 00:00:00",
+      "last": "2016-05-22 00:00:00",
+      "invalid_rows": 0,
+      "after_2015": 1
+    },
+    "test": {
+      "first": "2003-06-01 00:00:00",
+      "last": "2014-07-05 00:00:00",
+      "invalid_rows": 0,
+      "after_2015": 0
+    }
+  },
+  "turnover": {
+    "multiples_100000": 3493,
+    "multiples_500000": 3492,
+    "rows": 3493,
+    "above_80m": 48,
+    "maximum": 400000000.0,
+    "unique": 173
+  }
+}

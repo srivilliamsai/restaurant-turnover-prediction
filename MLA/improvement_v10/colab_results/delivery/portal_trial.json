@@ -1,0 +1,21 @@
+{
+  "status": "submitted_worse_than_v9",
+  "qualified": true,
+  "csv_file": "submission.csv",
+  "csv_sha256": "f87948ad9025872e4701fa970a1d84eefd86aa8c3cacec7705b813ccfa11ec1b",
+  "portal_uploads": 1,
+  "returned_portal_rmse": 11925736.5011738,
+  "previous_observed_best": {
+    "version": "V9",
+    "rmse": 11904515.9864996
+  },
+  "deadline_display": "2026-10-29 23:59",
+  "deadline_timezone": "unverified",
+  "maximum_v10_trials": 1,
+  "one_time_coding_upload": "pending final model choice",
+  "returned_portal_rmse_exact": "11925736.5011738",
+  "rmse_increase_exact": "21220.5146742",
+  "recommended_version": "V9",
+  "current_rank_shown": 11,
+  "evidence_file": "portal_result.png"
+}

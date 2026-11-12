@@ -1,0 +1,41 @@
+{
+  "complete": true,
+  "choices": [],
+  "settings": 2,
+  "configurations": 10,
+  "sources": {
+    "core.py": "466945c93654077fc6599700a73a7fdb23bdd415893e66635770dd7b3a1b086f",
+    "features.py": "86939252439cba79a803e1cc3563ecc83e5ff37dc4ab52b79edb71e3fd22fe1c",
+    "modeling.py": "6380180020158744654788e41d44af0ef1518c6f1fa130b1c3ffcca642f1ff46",
+    "workflow.py": "d0910de2bef1aa3397007921d67580d1060f413719189d09cccf44c194a1985a",
+    "verify.py": "8032e62e6eb8a0770ccf11eb324dd9640ef87d6ffb983c3e7d094858e3e7172e",
+    "delivery.py": "89459ed273dc457d6d517f4fcc13525e064fccd7c2b01aafdf8ccc2e7bfbd4c6",
+    "fresh_worker.py": "2bf9f9fadc22bf0b4db26a39fbb597da68ec5ded129efa9a8d26f525da619cd0",
+    "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+    "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+    "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+    "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+    "v5_contract.json": "3446412f01d536a31123142b984392216efd29094965500251386eac1814ab69",
+    "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+    "reference_manifest.json": "82417467e331d6e470fd1058c4ea4edb5a47f98021efc822176bd9a04b99bbd5",
+    "baseline_registry.json": "53e7ddb7fbfbe08162aa97fac8d5ad9dea4981aab3aa942b3e98ebdb2a3060b7",
+    "frozen_pfn.py": "ff4d383d269ffdc1b0021f7d0cac4e19240be130f2544bcc80dc41916a5262b5",
+    "new_models.py": "2cc4fef5221d8cb4a41421760687679b5a83c66248eb0d36a60253b44c68c48e",
+    "pilot_worker.py": "f9721329d6fcc6f8d395f175d6fd24ed954dcd9cf5533db655e1e66191a2bc6e",
+    "checkpoint_registry.json": "4dd0b5e632d00b688e6dca18892c46a80512eafbd2f5b783850d66a0f76a233c",
+    "source_registry.json": "4ddfe7ed70327ced487ee6b6ada889e37dbfc81c4785e4cbe7c1fd5fa7faf81a",
+    "protocol_proposed.json": "9753ec10e1b15210b12240b89c1609eaf65a6afd527fc657bcd684f31e2445f5",
+    "release_review_registry.json": "ba98e8ecee9cb9188b8ce87a8e607181c249c89727bfab2a63985b0267a8a470",
+    "mac_controls.py": "c6c01ea36a0a9f3a4c5a6e4c8110c4e07b83e5373c110e075f4a7844515208c3",
+    "control_worker.py": "4b5abe58acd90cedb8c2557166fda48a0daff2e8b75da67a87aa975678d61ee3"
+  },
+  "inputs": {
+    "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+    "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+    "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+    "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+  },
+  "model_contract_sha256": "d9b2459075f3e8b4488dceba3960cbc6fc4da67577c93a7cc7912bb5767462f3",
+  "experiment_plan_sha256": "81a57311762d554454b0f9baff4d6917494ac9589c845ba94dec1c7cabd1a4d3",
+  "frozen_before_confirmation": true
+}

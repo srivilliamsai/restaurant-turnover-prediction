@@ -1,0 +1,43 @@
+{
+  "status": "engineering_excluded",
+  "stage": "supported-fitted-model-reuse",
+  "reason": "Official MitraFinetune.predict launches run_view for each query. run_view trains inside a TemporaryDirectory and returns arrays/distributions, then removes the fitted directory. The public API has no fitted-child reuse/load/predict interface. The predeclared persistent-inference gate cannot pass without changing the official adapter.",
+  "repository": "autogluon/mitra-finetune",
+  "revision": "b4701e8148dc33b00ed15d7086ff59816957cde4",
+  "public_methods": [
+    "fit",
+    "predict",
+    "predict_distribution",
+    "predict_proba"
+  ],
+  "source_identity": {
+    "repository": "autogluon/mitra-finetune",
+    "revision": "b4701e8148dc33b00ed15d7086ff59816957cde4",
+    "files": {
+      "src/mitra_finetune/api.py": {
+        "local_file": "improvement_v16/engineering_sources/mitra/api.py",
+        "sha256": "c92c4fb0029329383a336168d3ce2c8be45186eed3f650dc59100d7cd2d3128c"
+      },
+      "src/mitra_finetune/runner.py": {
+        "local_file": "improvement_v16/engineering_sources/mitra/runner.py",
+        "sha256": "fbf912da747348a549ad33a2f33fd75d5d0a1982eccc863bc616345d1d0d761e"
+      },
+      "README.md": {
+        "local_file": "improvement_v16/engineering_sources/mitra/README.md",
+        "sha256": "1856dffa1f3107169f685e0596e231c17b7506c2d3e50a3e3f79f25be74c01e8"
+      },
+      "pyproject.toml": {
+        "local_file": "improvement_v16/engineering_sources/mitra/pyproject.toml",
+        "sha256": "1052134fe4ef95fab6bd061f3ce232f7a376bc026d3e85d803480048d98ed674"
+      }
+    }
+  },
+  "api_predict_line": 376,
+  "run_view_line": 1116,
+  "full_recipe_executed": false,
+  "checkpoint_downloaded": false,
+  "accuracy_tested": false,
+  "selection_uses_validation_rmse": false,
+  "budget_changed": false,
+  "substitute_model_added": false
+}

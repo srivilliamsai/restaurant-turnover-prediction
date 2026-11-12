@@ -1,0 +1,11 @@
+AUDIT PASS: four fixed settings, sixteen blends, all targets retained.
+STAGE_PROCESS_EXIT audit 0 elapsed_seconds 5.001 charged_hours 0.1331
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+T32_10242: fitted 2794 original targets; 40 predictor columns
+T32_10242: fitted 2794 original targets; 40 predictor columns
+{"PILOT": "T32", "status": "PASS", "fold_seconds": 245.82442483900002, "repeat_difference_INR": 0.0, "behavior": {"permutation_difference_INR": 0.0, "label_id_difference_INR": 0.0, "batch_difference_INR": 0.0, "individual_difference_INR": 0.0, "missing_unseen_inputs": true}, "peak_gpu_allocated_bytes": 373881856, "training_rows": 2794, "validation_rows": 699, "engineering_seconds": 1505.69808385}
+BASE: fitted 2794 original targets; 40 predictor columns
+T16_20242: fitted 2794 original targets; 40 predictor columns
+T16_30242: fitted 2794 original targets; 40 predictor columns
+T16_40242: fitted 2794 original targets; 40 predictor columns
+STAGE_PROCESS_EXIT pilot -15 elapsed_seconds 3125.704 charged_hours 1.0013

@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "method": "Reversible cache relocation after fresh inference passed; numerical sources unchanged.",
+  "epoch": 1793209159.1239574,
+  "moves": [
+    {
+      "from": "/content/mla_v14/delivery/fresh_execution/v14_fresh_l3brp373/model_weights",
+      "to": "/content/mla_v14/model_weights/verified_notebook_cache/v14_fresh_l3brp373",
+      "files_bytes": {
+        "tabpfn-v3.5-20260909.safetensors": 876027932,
+        "tabpfn-v2-regressor.ckpt": 44390977
+      }
+    }
+  ]
+}

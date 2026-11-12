@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "sources": {
+    "core.py": "5312eada9c348afa96e92185145fd91d19ad4500a9b4913ee2efcc229e94cb8a",
+    "features.py": "4173ca9923818419245ae723a8487be4d12385a194e16617d43e25663f86133c",
+    "modeling.py": "a546bf137d097ac8dfbb2f3ffa667e75ee923f81525c0e3708dbc72509632cdf",
+    "workflow.py": "795a6fa926ce9167d371cc9ec26a0b75a2eaf5412279a81d00b4777223d9a9de",
+    "verify.py": "a932b737d2e7b702f55b583316d6e6ac06189008673066f9264fd52748f0d7c9",
+    "delivery.py": "cff9b32651d06e8cde7cb3bb2eb90c1d411de0511080b59080f0e95712e3f96c",
+    "fresh_worker.py": "c76bde02db74b8b8d9ecc17dc9b20fd9a61e1eaab0ab5c6325a8f1ea6c5f4936",
+    "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+    "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+    "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+    "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+    "v5_contract.json": "3446412f01d536a31123142b984392216efd29094965500251386eac1814ab69",
+    "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+    "reference_manifest.json": "82417467e331d6e470fd1058c4ea4edb5a47f98021efc822176bd9a04b99bbd5",
+    "baseline_registry.json": "53e7ddb7fbfbe08162aa97fac8d5ad9dea4981aab3aa942b3e98ebdb2a3060b7",
+    "frozen_pfn.py": "ff4d383d269ffdc1b0021f7d0cac4e19240be130f2544bcc80dc41916a5262b5",
+    "new_models.py": "ed4d878408edf7cad345ed5472d91c01db314632a50d1afdf8d7694f728cc4bd",
+    "pilot_worker.py": "7d434c6061a67825ce43470ffe4a26e000b8ea15a09d21398e847ccfe5c35654",
+    "checkpoint_registry.json": "a32a93bb96478383073c3483e77454fb490cc06ab2e35002041523ef62decc69",
+    "nori_inference.json": "64ad0d97763387b1373f98dbfb00225bd7aa1312b57291a871eb607f056832ec",
+    "source_registry.json": "2ee52e52f9bed2600e412d0f016d0e4e87b9baea6932f46c2b558a1a0ff5ac61"
+  },
+  "inputs": {
+    "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+    "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+    "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+    "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+  },
+  "all_original_targets": 3493,
+  "original_test_rows": 500
+}

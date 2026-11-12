@@ -1,0 +1,34 @@
+AUDIT PASS: four fixed settings, sixteen blends; V9 and every target preserved.
+STAGE_PROCESS_EXIT audit 0 elapsed_seconds 5.001 charged_hours 0.3458
+{"setting": "N8", "scheme": "42", "fold_complete": 1, "folds": 5}
+{"setting": "N8", "scheme": "42", "fold_complete": 2, "folds": 5}
+{"setting": "N8", "scheme": "42", "fold_complete": 3, "folds": 5}
+{"setting": "N8", "scheme": "42", "fold_complete": 4, "folds": 5}
+{"setting": "N8", "scheme": "42", "fold_complete": 5, "folds": 5}
+{"setting": "N8", "scheme": "71", "fold_complete": 1, "folds": 5}
+{"setting": "N8", "scheme": "71", "fold_complete": 2, "folds": 5}
+{"setting": "N8", "scheme": "71", "fold_complete": 3, "folds": 5}
+{"setting": "N8", "scheme": "71", "fold_complete": 4, "folds": 5}
+{"setting": "N8", "scheme": "71", "fold_complete": 5, "folds": 5}
+N16: fitted 2794 original targets; 40 unchanged V9 features
+{"setting": "N16", "scheme": "42", "fold_complete": 1, "folds": 5}
+N16: fitted 2794 original targets; 40 unchanged V9 features
+{"setting": "N16", "scheme": "42", "fold_complete": 2, "folds": 5}
+N16: fitted 2794 original targets; 40 unchanged V9 features
+{"setting": "N16", "scheme": "42", "fold_complete": 3, "folds": 5}
+N16: fitted 2795 original targets; 40 unchanged V9 features
+{"setting": "N16", "scheme": "42", "fold_complete": 4, "folds": 5}
+N16: fitted 2795 original targets; 40 unchanged V9 features
+{"setting": "N16", "scheme": "42", "fold_complete": 5, "folds": 5}
+N16: fitted 2794 original targets; 40 unchanged V9 features
+{"setting": "N16", "scheme": "71", "fold_complete": 1, "folds": 5}
+N16: fitted 2794 original targets; 40 unchanged V9 features
+{"setting": "N16", "scheme": "71", "fold_complete": 2, "folds": 5}
+N16: fitted 2794 original targets; 40 unchanged V9 features
+{"setting": "N16", "scheme": "71", "fold_complete": 3, "folds": 5}
+N16: fitted 2795 original targets; 40 unchanged V9 features
+{"setting": "N16", "scheme": "71", "fold_complete": 4, "folds": 5}
+N16: fitted 2795 original targets; 40 unchanged V9 features
+{"setting": "N16", "scheme": "71", "fold_complete": 5, "folds": 5}
+{"SCREEN_COMPLETE": true, "choice": null}
+STAGE_PROCESS_EXIT screen 0 elapsed_seconds 700.13 charged_hours 0.5403

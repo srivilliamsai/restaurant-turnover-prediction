@@ -1,0 +1,14 @@
+{
+  "phase": "complete",
+  "qualified": false,
+  "decision": "retain V9; no material development improvement",
+  "charged_hours": 0.5516002762613911,
+  "maximum_hours": 8,
+  "paid_resources": false,
+  "portal_uploads": 0,
+  "new_development_folds": 20,
+  "configurations": 8,
+  "server_active_sessions": 0,
+  "delivery_completed_locally": true,
+  "final_verification": "FINAL_VERIFICATION.json"
+}

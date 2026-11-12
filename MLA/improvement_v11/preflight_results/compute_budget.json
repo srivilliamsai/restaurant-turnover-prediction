@@ -1,0 +1,8 @@
+{
+  "seconds": 0.16027870799734956,
+  "by_stage": {
+    "audit": 0.16027870799734956
+  },
+  "maximum_hours": 8,
+  "measurement": "Task computation/setup wall seconds; retained across resumes; local Mac receipts added once."
+}

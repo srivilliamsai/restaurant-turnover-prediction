@@ -1,0 +1,68 @@
+{
+  "purpose": "Run the fixed V23 comparison on the free Colab account already selected by the user",
+  "status": "Explicitly authorized by user; upload completed",
+  "training_rows": 3493,
+  "test_rows": 500,
+  "columns_in_feature_tables": 40,
+  "labels_in_controls_npz": 3493,
+  "restaurant_IDs_in_feature_tables": false,
+  "destination_account_identity_sha256": "REDACTED",
+  "paid_resources": false,
+  "portal_uploads": 0,
+  "files": [
+    {
+      "path": "feature_train.csv",
+      "bytes": 577257
+    },
+    {
+      "path": "feature_test.csv",
+      "bytes": 81171
+    },
+    {
+      "path": "controls.npz",
+      "bytes": 190782
+    },
+    {
+      "path": "partitions.json",
+      "bytes": 694967
+    },
+    {
+      "path": "history_audit.json",
+      "bytes": 13143
+    },
+    {
+      "path": "experiment.py",
+      "bytes": 12838
+    },
+    {
+      "path": "adapter.py",
+      "bytes": 8027
+    },
+    {
+      "path": "protocol.json",
+      "bytes": 1137
+    },
+    {
+      "path": "authorization.json",
+      "bytes": 892
+    },
+    {
+      "path": "source_frozen.json",
+      "bytes": 1584
+    }
+  ],
+  "public_source_manifests": [
+    "research_sources/source_manifest.json",
+    "research_sources/checkpoint_manifest.json"
+  ],
+  "epoch": 1793294426.826347,
+  "explicit_user_instruction": "Allow the Colab upload and run V23",
+  "receipt": {
+    "uploaded": true,
+    "explicit_user_permission": true,
+    "account_identity_sha256": "REDACTED",
+    "owned_session": "v23-limix2-t4",
+    "bundle_sha256": "d7a2ad506151d638c183dd2acc598d4616d61334e7b7b23be645b8440b481c78",
+    "epoch": 1793294629.857534
+  }
+}

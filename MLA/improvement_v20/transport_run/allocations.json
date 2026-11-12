@@ -1,0 +1,16 @@
+[
+  {
+    "requested_epoch": 1793271502.0,
+    "allocation_number": 1,
+    "same_user_selected_account": true,
+    "owned_session": "v20-free-t4",
+    "manually_prepared_for_coordinator": true
+  },
+  {
+    "requested_epoch": 1793273088.37967,
+    "allocation_number": 2,
+    "same_user_selected_account": true,
+    "owned_session": "v20-free-t4",
+    "recovery_reason": "Pre-accuracy budget guard repair; initial owned runtime was released"
+  }
+]

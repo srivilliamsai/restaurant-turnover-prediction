@@ -1,0 +1,19 @@
+# Primary-source review, October 29, 2026
+
+The recommendation is an inference combining published capabilities, inspected source and local history. No publication establishes a gain on these restaurant labels.
+
+| Source | Finding and consequence |
+| --- | --- |
+| [LimiX-2 author report](https://arxiv.org/abs/2609.17488), [official repository](https://github.com/limix-ldm-ai/LimiX), [author model page](https://www.stable-ai.ai/limix) | A distinct 406M-parameter model supports regression. Author benchmarks motivate a local test; comparisons with TabPFN-3 do not establish superiority over V14's TabPFN-3.5. The older LimiX-2M is a different model. |
+| [Pinned regression implementation](https://github.com/limix-ldm-ai/LimiX/blob/c76fa21bbb25fddca649e75a52dc9b1df66a659c/inference/v2_0/predictor.py), [preprocessors](https://github.com/limix-ldm-ai/LimiX/blob/c76fa21bbb25fddca649e75a52dc9b1df66a659c/inference/v2_0/preprocess.py) | Regression preprocessors can inspect combined context/query rows. Distribution rebalancing already fits on support rows; its `all_data` tag refers to the fitting sample count, not permission to fit on queries. The explicit V23 adapter freezes the remaining learned choices on fitting rows. Source manifests preserve inspected bytes. |
+| [Pinned attention implementation](https://github.com/limix-ldm-ai/LimiX/blob/c76fa21bbb25fddca649e75a52dc9b1df66a659c/model/v2_0/decoupled_structural_task_attention.py) | An SDPA fallback exists. Optional FlashAttention installation does not establish T4 incompatibility or prove that the complete 400M model fits; measure the actual full-size pilot. |
+| [Official checkpoint](https://huggingface.co/stable-ai/LimiX-2) | Resolve immutable Hub revision and published LFS digest. Downloaded bytes must independently match before loading. Preserve the research/non-commercial license. |
+| [TabPFN-3.5 report](https://arxiv.org/abs/2609.17895) | V14 already uses the newer backbone. Increasing model recency or citing a benchmark against older TabPFN is insufficient. Keep the successful checkpoint unchanged. |
+| [Google TabFM](https://github.com/google-research/tabfm) | A legitimate alternative with sampled contexts. An appropriate context design is another experiment, deferred from this one-candidate run. |
+| [TabSTAR authors](https://github.com/alanarazi7/TabSTAR) | Its emphasis is tabular text. This schema contains short categories; a special text benefit is uncertain. This is a schema-based inference, not a negative test. |
+| [TabSwift paper](https://arxiv.org/abs/2606.07345) | Supports efficient regression. Efficiency alone does not demonstrate a gain over the exact current ensemble. |
+| [Cawley and Talbot](https://jmlr.org/papers/v11/cawley10a.html) | Repeated selection can overfit validation criteria. Freeze one model and three weights, report the search history, and interpret subsequent reused-label checks conditionally. |
+
+Local evidence: CURRENT_BEST.md; improvement_v22/delivery/V22_Result_Summary.md; improvement_v22_rank_check/colab_results/results/decision.json; its complete confirmation.csv and exploratory_export.json; and V15–V21 saved screening tables. The prior failed engineering paths are not accuracy failures. New execution is authorized by the user's current request; it does not alter any previous decision or budget record.
+
+[Open MLX contribution PR 60](https://github.com/limix-ldm-ai/LimiX/pull/60) supplies a local Apple-silicon forward backend. Its small-data contributor benchmarks are not full-context restaurant timings and do not prove exact numerical equivalence. Inspected the API, conversion, loader, shim and forward implementation. Explicit local cache paths and complete weight-key coverage are required. The runtime change is frozen before predictions and evaluated as part of the candidate.

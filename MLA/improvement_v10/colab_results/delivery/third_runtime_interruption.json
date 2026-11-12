@@ -1,0 +1,9 @@
+{
+  "status": "runtime_ended_no_server_assignment",
+  "last_verified_fold_pairs": 26,
+  "last_backup_utc": "2026-10-27T04:42:06.879417+00:00",
+  "recovery_utc": "2026-10-27T08:15:44.371167+00:00",
+  "unobserved_interval_charged_seconds": 12817.490423202515,
+  "unknown_compute_or_results_not_inferred": true,
+  "recommended_transport_fix": "Detach local finite driver and backup watcher from interactive execution sessions; no additional Drive scopes required."
+}

@@ -1,0 +1,9 @@
+{
+  "checked_epoch": 1793206632.556732,
+  "method": "Colab CLI usage during owned V14 run",
+  "compute_unit_balance": 0.0,
+  "reported_usage_rate_units_per_hour": 1.07,
+  "active_assignments": 1,
+  "requested_accelerator": "T4",
+  "paid_resources_purchased": false
+}

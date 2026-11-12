@@ -1,0 +1,20 @@
+{
+  "source": "User screenshots Oct18 2026 12:42 IST",
+  "current_rank": 18,
+  "current_rmse": 12094600.3216516,
+  "submissions": 2,
+  "leader": "submission",
+  "leader_rmse": 11917847.2693885,
+  "gap": 176753.0522630997,
+  "required_reduction_percent": 1.4614211926183176,
+  "files": {
+    "csv": {
+      "path": "./improvement_v5/confirmed_best_backup/submission.csv",
+      "sha256": "348a70dce82f58e486c87cdcc69c1a3efd07056c72c6eaf47da6d79213cf9943"
+    },
+    "ipynb": {
+      "path": "./improvement_v5/confirmed_best_backup/submission.ipynb",
+      "sha256": "e6ed88a21eb1a3755bb2a1b2c75c76df3fa9702af84feda49b3a3815b7094df6"
+    }
+  }
+}

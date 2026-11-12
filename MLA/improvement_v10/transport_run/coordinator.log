@@ -1,0 +1,166 @@
+{"phase": "starting_free_t4", "pid": 97303, "elapsed_seconds": 8.24999988253694e-05, "global_cap_hours": 24, "prior_charged_seconds": 44241.62088493535, "paid_resources": false}
+Current balance: 0.00 compute units
+Usage rate: 0.00/hr
+Active assignments: 0
+[colab] Creating session 'v10-free-t4'...
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ ./improvement_v9/colab_cli_env/lib/ │
+│ python3.12/site-packages/colab_cli/commands/session.py:141 in new            │
+│                                                                              │
+│   138 │                                                                      │
+│   139 │   typer.echo(f"[colab] Creating session '{name}'...")                │
+│   140 │   try:                                                               │
+│ ❱ 141 │   │   res = state.client.assign(                                     │
+│   142 │   │   │   uuid.uuid4(), variant=variant, accelerator=accelerator,    │
+│       shape=shape                                                            │
+│   143 │   │   )                                                              │
+│   144 │   except TooManyAssignmentsError:                                    │
+│                                                                              │
+│ ./improvement_v9/colab_cli_env/lib/ │
+│ python3.12/site-packages/colab_cli/client.py:289 in assign                   │
+│                                                                              │
+│   286 │   │   backoff = max(0.0, float(os.getenv("COLAB_CLI_RETRY_BACKOFF",  │
+│       "10")))                                                                │
+│   287 │   │   for attempt in range(retries + 1):                             │
+│   288 │   │   │   try:                                                       │
+│ ❱ 289 │   │   │   │   res = self._post_assignment(                           │
+│   290 │   │   │   │   │   notebook_hash, assignment.token, variant,          │
+│       accelerator, shape                                                     │
+│   291 │   │   │   │   )                                                      │
+│   292 │   │   │   │   break                                                  │
+│                                                                              │
+│ ./improvement_v9/colab_cli_env/lib/ │
+│ python3.12/site-packages/colab_cli/client.py:358 in _post_assignment         │
+│                                                                              │
+│   355 │   ) -> PostAssignmentResponse:                                       │
+│   356 │   │   url = self._build_assign_url(notebook_hash, variant,           │
+│       accelerator, shape)                                                    │
+│   357 │   │   headers = {COLAB_XSRF_TOKEN_HEADER["key"]: xsrf_token}         │
+│ ❱ 358 │   │   return self._issue_request(                                    │
+│   359 │   │   │   url, method="POST", headers=headers,                       │
+│       schema=PostAssignmentResponse                                          │
+│   360 │   │   )                                                              │
+│   361                                                                        │
+│                                                                              │
+│ ./improvement_v9/colab_cli_env/lib/ │
+│ python3.12/site-packages/colab_cli/client.py:238 in _issue_request           │
+│                                                                              │
+│   235 │   │   self.logger.debug(f"Response Headers: {response.headers}")     │
+│   236 │   │   self.logger.debug(f"Response Body: {response.text}")           │
+│   237 │   │   if not response.ok:                                            │
+│ ❱ 238 │   │   │   raise ColabRequestError(                                   │
+│   239 │   │   │   │   f"Failed to issue request {method} {endpoint}:         │
+│       {response.reason}",                                                    │
+│   240 │   │   │   │   request=response.request,                              │
+│   241 │   │   │   │   response=response,                                     │
+╰──────────────────────────────────────────────────────────────────────────────╯
+ColabRequestError: Failed to issue request POST 
+https://colab.research.google.com/tun/m/assign?nbh=f90c0309_ca01_405b_a6cd_02d00
+a940234........&variant=GPU&accelerator=T4: Service Unavailable
+{"phase": "stopped_with_preserved_v9", "pid": 97303, "elapsed_seconds": 78.22642787499899, "global_cap_hours": 24, "prior_charged_seconds": 44241.62088493535, "paid_resources": false, "error_type": "RuntimeError", "qualified_submission_recommended": false}
+{"phase": "starting_free_t4", "pid": 97464, "elapsed_seconds": 6.704099905618932e-05, "global_cap_hours": 24, "prior_charged_seconds": 44241.62088493535, "paid_resources": false}
+Current balance: 0.00 compute units
+Usage rate: 0.00/hr
+Active assignments: 0
+{"phase": "waiting_for_free_t4", "pid": 97464, "elapsed_seconds": 78.36526924999998, "global_cap_hours": 24, "prior_charged_seconds": 44241.62088493535, "paid_resources": false, "attempt": 1, "service_unavailable": true, "explicit_limit": false}
+{"phase": "waiting_for_free_t4", "pid": 97464, "elapsed_seconds": 215.76253591599925, "global_cap_hours": 24, "prior_charged_seconds": 44241.62088493535, "paid_resources": false, "attempt": 2, "service_unavailable": true, "explicit_limit": false}
+{"phase": "waiting_for_free_t4", "pid": 97464, "elapsed_seconds": 413.25019045800036, "global_cap_hours": 24, "prior_charged_seconds": 44241.62088493535, "paid_resources": false, "attempt": 3, "service_unavailable": true, "explicit_limit": false}
+{"phase": "stopped_with_preserved_v9", "pid": 97464, "elapsed_seconds": 413.25178466599937, "global_cap_hours": 24, "prior_charged_seconds": 44241.62088493535, "paid_resources": false, "error_type": "RuntimeError", "qualified_submission_recommended": false}
+{"phase": "starting_free_t4", "pid": 98926, "elapsed_seconds": 5.874999988009222e-05, "global_cap_hours": 24, "prior_charged_seconds": 44241.62088493535, "paid_resources": false}
+Current balance: 0.00 compute units
+Usage rate: 0.00/hr
+Active assignments: 0
+Free T4 allocation READY.
+V10 pinned dependency setup started; PID 465
+Pinned dependency installation complete.
+V10 source/data/reference bundle uploaded and extracted.
+Restored completed checkpoint pairs and cumulative recovery budget.
+ImportError: cannot import name '_slice' from 'numpy._core.umath' (/usr/local/lib/python3.13/dist-packages/numpy/_core/umath.py)
+V10 transport error: RuntimeError ImportError: cannot import name '_slice' from 'numpy._core.umath' (/usr/local/lib/python3.13/dist-packages/numpy/_core/umath.py)
+{"phase": "stopped_with_preserved_v9", "pid": 98926, "elapsed_seconds": 53.15186370800075, "global_cap_hours": 24, "prior_charged_seconds": 44241.62088493535, "paid_resources": false, "error_type": "RuntimeError", "qualified_submission_recommended": false}
+Checkpoint backup prepared.
+Saved local checkpoints: ./improvement_v10/colab_results
+[colab] Stopping session 'v10-free-t4'...
+[colab] Session terminated.
+{"phase": "starting_free_t4", "pid": 99046, "elapsed_seconds": 9.529199996904936e-05, "global_cap_hours": 24, "prior_charged_seconds": 44241.62088493535, "paid_resources": false}
+Current balance: 0.00 compute units
+Usage rate: 0.00/hr
+Active assignments: 0
+Free T4 allocation READY.
+V10 pinned dependency setup started; PID 831
+Pinned dependency installation complete.
+V10 source/data/reference bundle uploaded and extracted.
+Restored completed checkpoint pairs and cumulative recovery budget.
+/usr/local/lib/python3.13/dist-packages/huggingface_hub/utils/_auth.py:138: UserWarning: 
+Error while fetching `HF_TOKEN` secret value from your vault: 'Requesting secret HF_TOKEN timed out. Secrets can only be fetched when running from the Colab UI.'.
+  warnings.warn(f"\nError while fetching `HF_TOKEN` secret value from your vault: '{str(e)}'.")
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+PASS: resumed T4 inputs, model sources, exact dependency/checkpoint contract and authorized budget epoch.
+Resumed setup charge recorded.
+{"phase": "screening_from_verified_checkpoints", "pid": 99046, "elapsed_seconds": 81.87859966699943, "global_cap_hours": 24, "prior_charged_seconds": 44241.62088493535, "paid_resources": false, "completed_folds": 26}
+Budget-supervised V10 stage started: screen PID 1186
+Checkpoint backup prepared.
+Saved local checkpoints: ./improvement_v10/colab_results
+{"phase": "finalist_frozen", "pid": 99046, "elapsed_seconds": 6901.112038791998, "global_cap_hours": 24, "prior_charged_seconds": 44241.62088493535, "paid_resources": false, "choice": {"name": "C", "replacement_weight": 1.0, "feature_count": 42, "rmse_42": 19726316.67014788, "gain_42": 4925.058085404336, "rmse_71": 19729419.599104185, "gain_71": 3600.4814428277314, "mean_rmse": 19727868.13462603}}
+{"phase": "confirming_frozen_finalist", "pid": 99046, "elapsed_seconds": 6901.116458624998, "global_cap_hours": 24, "prior_charged_seconds": 44241.62088493535, "paid_resources": false}
+Verified original-Mac city baseline and compute receipt uploaded.
+{"phase": "confirming_with_verified_mac_city_baseline", "pid": 99046, "elapsed_seconds": 7323.473785916998, "global_cap_hours": 24, "prior_charged_seconds": 44241.62088493535, "paid_resources": false, "mac_seconds": 414.2746927500011}
+Checkpoint backup prepared.
+Saved local checkpoints: ./improvement_v10/colab_results
+Original-Mac confirmation charge recorded once: 414.2746927500011 seconds
+Checkpoint backup prepared.
+Saved local checkpoints: ./improvement_v10/colab_results
+{"phase": "independent_verification", "pid": 99046, "elapsed_seconds": 13075.508425625001, "global_cap_hours": 24, "prior_charged_seconds": 44241.62088493535, "paid_resources": false, "qualified": true}
+{"setting": "BASE", "scheme": "42", "fold_complete": 1, "folds": 5}
+{"setting": "BASE", "scheme": "42", "fold_complete": 2, "folds": 5}
+{"setting": "BASE", "scheme": "42", "fold_complete": 3, "folds": 5}
+{"setting": "BASE", "scheme": "42", "fold_complete": 4, "folds": 5}
+{"setting": "BASE", "scheme": "42", "fold_complete": 5, "folds": 5}
+{"setting": "BASE", "scheme": "71", "fold_complete": 1, "folds": 5}
+{"setting": "BASE", "scheme": "71", "fold_complete": 2, "folds": 5}
+{"setting": "BASE", "scheme": "71", "fold_complete": 3, "folds": 5}
+{"setting": "BASE", "scheme": "71", "fold_complete": 4, "folds": 5}
+{"setting": "BASE", "scheme": "71", "fold_complete": 5, "folds": 5}
+{"setting": "BASE", "scheme": "48211", "fold_complete": 1, "folds": 5}
+{"setting": "BASE", "scheme": "48211", "fold_complete": 2, "folds": 5}
+{"setting": "BASE", "scheme": "48211", "fold_complete": 3, "folds": 5}
+{"setting": "BASE", "scheme": "48211", "fold_complete": 4, "folds": 5}
+{"setting": "BASE", "scheme": "48211", "fold_complete": 5, "folds": 5}
+{"setting": "BASE", "scheme": "48212", "fold_complete": 1, "folds": 5}
+{"setting": "BASE", "scheme": "48212", "fold_complete": 2, "folds": 5}
+{"setting": "BASE", "scheme": "48212", "fold_complete": 3, "folds": 5}
+{"setting": "BASE", "scheme": "48212", "fold_complete": 4, "folds": 5}
+{"setting": "BASE", "scheme": "48212", "fold_complete": 5, "folds": 5}
+{"setting": "BASE", "scheme": "48213", "fold_complete": 1, "folds": 5}
+{"setting": "BASE", "scheme": "48213", "fold_complete": 2, "folds": 5}
+{"setting": "BASE", "scheme": "48213", "fold_complete": 3, "folds": 5}
+{"setting": "BASE", "scheme": "48213", "fold_complete": 4, "folds": 5}
+{"setting": "BASE", "scheme": "48213", "fold_complete": 5, "folds": 5}
+{"setting": "BASE", "scheme": "strat:27421", "fold_complete": 1, "folds": 5}
+{"setting": "BASE", "scheme": "strat:27421", "fold_complete": 2, "folds": 5}
+{"setting": "BASE", "scheme": "strat:27421", "fold_complete": 3, "folds": 5}
+{"setting": "BASE", "scheme": "strat:27421", "fold_complete": 4, "folds": 5}
+{"setting": "BASE", "scheme": "strat:27421", "fold_complete": 5, "folds": 5}
+{
+  "status": "PASS",
+  "development_blends_recomputed": 24,
+  "candidate_outer_fits_verified": 60,
+  "control_outer_fits_verified": 10,
+  "maximum_metric_difference_INR": 3.725290298461914e-09,
+  "frozen_selection_matches": true,
+  "qualification_recomputed": true,
+  "qualified": true
+}
+P: fitted 2794 original targets, 38 features, 16 estimators
+C+S+P: fitted 2794 original targets, 56 features, 16 estimators
+PASS: both real P models ignore the removed raw inputs and validation labels/IDs.
+Uploaded report/notebook packaging metadata; frozen model sources unchanged.
+{"phase": "fresh_notebook_reproduction_and_delivery", "pid": 99046, "elapsed_seconds": 13370.791559541998, "global_cap_hours": 24, "prior_charged_seconds": 44241.62088493535, "paid_resources": false, "qualified": true}
+Budget-supervised V10 stage started: export PID 55446
+Checkpoint backup prepared.
+Saved local checkpoints: ./improvement_v10/colab_results
+Final delivery receipt and complete compute ledger verified.
+{"phase": "complete", "pid": 99046, "elapsed_seconds": 15729.844972457999, "global_cap_hours": 24, "prior_charged_seconds": 44241.62088493535, "paid_resources": false, "qualified": true, "decision": "one qualified V10 portal trial", "global_charged_hours": 16.92530054762093, "portal_uploads": 0, "delivery": "./improvement_v10/V10_Delivery.zip"}
+[colab] Stopping session 'v10-free-t4'...
+[colab] Session terminated.

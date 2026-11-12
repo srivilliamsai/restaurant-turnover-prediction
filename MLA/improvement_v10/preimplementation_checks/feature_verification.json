@@ -1,0 +1,56 @@
+{
+  "C": {
+    "features": 42,
+    "target_and_id_exclusion": true,
+    "outer_validation_label_isolation": true,
+    "batch_invariance": true,
+    "missing_and_unseen": true,
+    "pruned_input_invariance": false
+  },
+  "S": {
+    "features": 56,
+    "target_and_id_exclusion": true,
+    "outer_validation_label_isolation": true,
+    "batch_invariance": true,
+    "missing_and_unseen": true,
+    "pruned_input_invariance": false
+  },
+  "C+S": {
+    "features": 58,
+    "target_and_id_exclusion": true,
+    "outer_validation_label_isolation": true,
+    "batch_invariance": true,
+    "missing_and_unseen": true,
+    "pruned_input_invariance": false
+  },
+  "C+S+G": {
+    "features": 66,
+    "target_and_id_exclusion": true,
+    "outer_validation_label_isolation": true,
+    "batch_invariance": true,
+    "missing_and_unseen": true,
+    "pruned_input_invariance": false
+  },
+  "P": {
+    "features": 38,
+    "target_and_id_exclusion": true,
+    "outer_validation_label_isolation": true,
+    "batch_invariance": true,
+    "missing_and_unseen": true,
+    "pruned_input_invariance": true
+  },
+  "C+S+P": {
+    "features": 56,
+    "target_and_id_exclusion": true,
+    "outer_validation_label_isolation": true,
+    "batch_invariance": true,
+    "missing_and_unseen": true,
+    "pruned_input_invariance": true
+  },
+  "checkpoint_rejection": {
+    "stale": true,
+    "corrupt": true,
+    "incomplete": true
+  },
+  "status": "PASS"
+}

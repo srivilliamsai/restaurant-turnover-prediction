@@ -1,0 +1,2952 @@
+"""Standalone client for Synthefy Nori in-context regression.
+
+Synthefy Nori is an in-context learning regressor: each call supplies labeled
+context rows (``X_train``, ``y_train``) and query rows (``X_test``), and the model
+returns one predicted value per query row in a single forward pass -- there is no
+training step. The same forward pass also carries a full predictive distribution,
+so ``predict(output_type="quantiles", quantiles=[...])`` returns calibrated
+prediction intervals at no extra cost.
+
+This module uses the package-wide exception types and HTTP error handling from
+:mod:`synthefy.errors` so errors behave consistently across transports.
+
+A single :class:`SynthefyNoriClient` runs predictions in one of three modes,
+selected with the ``mode`` constructor argument:
+
+- ``"remote"`` (default) -- calls the hosted Baseten endpoint over HTTPS.
+- ``"sagemaker"`` -- stages each request in customer-owned S3 and submits it to a
+  named asynchronous SageMaker endpoint with boto3's standard credential chain.
+- ``"local"`` -- runs the same prediction in-process via the optional
+  ``synthefy-nori`` package (``pip install synthefy-nori``), no network and
+  no API key.
+"""
+
+import importlib.util
+import json
+import os
+import random
+import tempfile
+import threading
+import time
+import uuid
+import warnings
+from dataclasses import dataclass
+from numbers import Integral
+from pathlib import Path
+from typing import Any, Dict, List, Literal, Optional, Sequence, Tuple, Union
+
+import httpx
+import numpy as np
+import pandas as pd
+from numpy.typing import NDArray
+from synthefy._aws import (
+    AWS_USER_AGENT_EXTRA,
+    check_timeout_and_retries,
+    create_aws_clients,
+    is_missing_s3_object,
+    parse_s3_uri,
+)
+from synthefy.featurize import (
+    CATEGORICAL_AUTO as _CATEGORICAL_AUTO,
+    DEFAULT_CATEGORICAL_ENCODING as _DEFAULT_CATEGORICAL_ENCODING,
+    DEFAULT_MAX_CARDINALITY as _DEFAULT_MAX_CARDINALITY,
+    align_and_featurize as _align_and_featurize,
+)
+from synthefy.data_models import NoriPredictRequest, NoriPredictResponse
+from synthefy.nori_data_models import (
+    DEFAULT_LARGE_CONTEXT_HOLDOUT,
+    DEFAULT_LARGE_CONTEXT_SEED,
+    DEFAULT_LARGE_CONTEXT_THRESHOLD,
+    DEFAULT_MULTI_TARGET_PREDICTION_STRATEGY,
+    FINE_TUNED_MODEL_NAME_PATTERN,
+    FINE_TUNED_MODEL_NAME_RE,
+    FINE_TUNED_MODEL_NAME_RULE,
+    LargeContextPolicy,
+    LargeContextHoldout,
+    LargeContextReport,
+    MAX_LARGE_CONTEXT_SEED,
+    MAX_LARGE_CONTEXT_THRESHOLD,
+    MAX_LARGE_CONTEXT_CANDIDATES,
+    MAX_MULTI_TARGET_AUTOREGRESSIVE_ORDERS,
+    MAX_MULTI_TARGET_COPULA_CV,
+    MAX_MULTI_TARGET_COPULA_PIT_JITTER,
+    MAX_MULTI_TARGET_DRAWS,
+    MemoryPolicyInput,
+    MemoryReport,
+    MultiTargetPredictionPolicy,
+    MultiTargetPredictionStrategy,
+    RELEASED_MODEL_NAMES,
+)
+from synthefy.errors import (
+    APIConnectionError,
+    APITimeoutError,
+    SageMakerInvocationError,
+    _raise_for_status,
+)
+from synthefy.nori_payload import CONTENT_TYPE as NORI_BINARY_CONTENT_TYPE
+from synthefy.nori_payload import MAX_PAYLOAD_BYTES, save_request as save_nori_request
+
+# Gateway endpoint (default): routes to the model by name, body carries "model".
+GATEWAY_BASE_URL = "https://inference.baseten.co"
+GATEWAY_ENDPOINT = "/predict"
+
+# Environment variable holding the hosted-Nori API key.
+NORI_API_KEY_ENV = "SYNTHEFY_NORI_API_KEY"
+
+# Sentinel for a required ``model=`` (there is no default -- every caller names a size).
+# Explicit ``None`` is rejected too: model identity is part of every transport contract.
+_MODEL_REQUIRED: Any = object()
+
+#: The hosted and SageMaker transports' per-call timeout and retry count when the caller sets none.
+DEFAULT_TIMEOUT_S = 300.0
+DEFAULT_MAX_RETRIES = 2
+
+
+def _is_thinking_model(model: Optional[str]) -> bool:
+    """Return ``True`` if ``model`` names a Nori Thinking (test-time-compute) variant.
+
+    The Thinking variant (gateway slug ``"synthefy/nori-30m-thinking-medium"``) spends extra
+    inference to lift accuracy and run **only** on the hosted API -- there is no local checkpoint
+    for it. Matching on the ``"thinking"`` token covers both the friendly and slug spellings.
+    """
+    return model is not None and "thinking" in model.lower()
+
+
+# The namespace of every released model's gateway slug: "nori-6m" is served as "synthefy/nori-6m".
+_GATEWAY_SLUG_PREFIX = "synthefy/"
+
+# Model registry. Maps a ``model=`` selector -> ``(remote_gateway_slug, local_variant)``:
+#   key                 = what the caller passes as ``model=`` (a friendly name or a raw gateway slug)
+#   remote_gateway_slug = the "model" string sent in the gateway request body (remote mode)
+#   local_variant       = the name forwarded to synthefy-nori's ``model=`` selector (local mode)
+# Built from RELEASED_MODEL_NAMES, the one list of released names, so a new release needs no edit
+# here. Every selector names its size -- there is no bare "nori"/"synthefy/nori", so a slug never
+# silently changes which model it serves (``model=`` is required; see the constructor). "nori-6m" is
+# the ~6M base; "nori-1-5" is Nori 1.5, the ~21M Model v3 release; "nori-30m" is the ~29.2M variant;
+# "nori-100m" is the ~98.3M variant. The raw gateway
+# slugs are listed too so they load the right checkpoint locally instead of being treated as a raw
+# HF repo. "nori-30m-thinking-medium" is the test-time-compute variant: hosted-API only, so its
+# entries map a remote gateway slug but have NO local variant -- the thinking guard in __init__
+# refuses it in mode="local" (its ``local_variant`` is therefore never consulted).
+# A friendly name/slug absent here that reaches local mode has no local checkpoint and is refused
+# rather than silently running a different model (see ``_resolve_local_variant``).
+NORI_VARIANTS = {
+    selector: (f"{_GATEWAY_SLUG_PREFIX}{name}", None if _is_thinking_model(name) else name)
+    for name in RELEASED_MODEL_NAMES
+    for selector in (name, f"{_GATEWAY_SLUG_PREFIX}{name}")
+}
+
+# Selectable model names for error messages, derived from NORI_VARIANTS so they stay current as
+# variants are added. Friendly names only (the "synthefy/..." raw slugs are aliases, not listed).
+_MODEL_NAMES = tuple(name for name in NORI_VARIANTS if "/" not in name)
+
+# The shared SageMaker application accepts these peer model names. The client sends the
+# canonical name in the tensor-file metadata and verifies the response identity so one
+# endpoint cannot silently answer with a different model. An endpoint deployed from a
+# fine-tuning job serves one more name, the job's model_name, which the constructor accepts
+# by FINE_TUNED_MODEL_NAME_PATTERN rather than by listing it here.
+SAGEMAKER_VARIANTS = RELEASED_MODEL_NAMES
+
+# Released models that build no key/value cache over the context rows (Model v3). On them only
+# _CONTEXT_BUDGET_MEMORY_FIELDS of a memory_policy act: the per-forward element budget and
+# whether context rows may be dropped to fit it. Every other field configures the cache, so it is
+# refused in every mode -- the hosted deployment refuses it too, and local synthefy-nori would
+# silently ignore it.
+_NO_CONTEXT_CACHE_MODELS = ("nori-1-5",)
+_CONTEXT_BUDGET_MEMORY_FIELDS = ("elements_budget", "allow_subsample")
+
+
+def _resolve_variant(model: Optional[str]) -> tuple:
+    """Map a model selector to ``(gateway_model, local_variant)``.
+
+    A known name or slug resolves via :data:`NORI_VARIANTS`; anything else (a custom gateway
+    slug) passes through as the gateway model. The ``local_variant`` is what local mode would
+    forward to synthefy-nori's ``model=``
+    selector, but whether a selector is actually runnable locally is enforced by
+    :func:`_resolve_local_variant`, not here -- this function never raises.
+    """
+    if model is not None and model in NORI_VARIANTS:
+        return NORI_VARIANTS[model]
+    return model, None
+
+
+def _canonical_model_name(model: Optional[str]) -> Optional[str]:
+    """Return the canonical deployment name without the gateway namespace."""
+    gateway_model, _ = _resolve_variant(model)
+    if gateway_model is None:
+        return None
+    return gateway_model.removeprefix(_GATEWAY_SLUG_PREFIX)
+
+
+def _resolve_local_variant(model: Optional[str]) -> Optional[str]:
+    """Resolve the synthefy-nori ``model=`` value for local inference, or raise if impossible.
+
+    ``"nori-6m"``/``"synthefy/nori-6m"`` run the ~6M base checkpoint; ``"nori-30m"``/
+    ``"synthefy/nori-30m"`` run the 29.2M checkpoint; ``"nori-100m"``/``"synthefy/nori-100m"``
+    run the 98.3M checkpoint; ``"nori-1-5"``/``"synthefy/nori-1-5"`` run Nori 1.5 (synthefy-nori
+    0.22.0 or later). ``None`` forwards no ``model=`` (so
+    synthefy-nori, which itself requires an explicit model, would raise). Any other selector has
+    no local checkpoint, so this
+    raises :class:`ValueError` instead of silently falling back to the base model -- a Nori
+    Thinking variant gets a message pointing at the hosted API, everything else a message listing
+    the locally runnable options.
+    """
+    if _is_thinking_model(model):
+        raise ValueError(
+            f"model={model!r} is a Nori Thinking (test-time-compute) variant, which runs only "
+            "on the hosted Synthefy API and has no local checkpoint. Use mode='remote' with a "
+            "Baseten API key to run Thinking, or select 'nori-6m'/'nori-1-5'/'nori-30m'/'nori-100m' "
+            "for local inference."
+        )
+    if model is None or model in NORI_VARIANTS:
+        return _resolve_variant(model)[1]
+    raise ValueError(
+        f"model={model!r} has no local checkpoint and cannot run in mode='local'. Local "
+        "inference supports 'nori-6m', 'nori-1-5', 'nori-30m' and 'nori-100m'. For hosted-only "
+        "variants (e.g. Nori Thinking) or a custom deployment slug, use mode='remote' with a "
+        "Baseten API key."
+    )
+
+
+DEFAULT_TASK = "regression"
+
+# What ``predict`` returns from the model's predictive distribution. Shared names
+# have the same meanings as ``synthefy_nori.NoriRegressor.predict``'s
+# ``output_type``, so a selector behaves consistently locally and remotely.
+#   point         -> one value per query row (a summary of the distribution)
+#   distribution  -> the quantile function itself (prediction intervals, CRPS, ...)
+_POINT_OUTPUT_TYPES = ("mean", "median")
+_DISTRIBUTION_OUTPUT_TYPES = ("quantiles", "full")
+_JOINT_OUTPUT_TYPES = ("samples",)
+_OUTPUT_TYPES = _POINT_OUTPUT_TYPES + _DISTRIBUTION_OUTPUT_TYPES + _JOINT_OUTPUT_TYPES
+DEFAULT_OUTPUT_TYPE = "mean"
+
+Mode = Literal["remote", "local", "sagemaker"]
+_VALID_MODES = ("remote", "local", "sagemaker")
+
+# SageMaker Asynchronous Inference accepts an S3-backed request object up to 1 GB. This is
+# deliberately a serialized-file limit, not an increase to the removed real-time body limit.
+SAGEMAKER_MAX_INPUT_BYTES = MAX_PAYLOAD_BYTES
+_SAGEMAKER_REQUEST_TTL_SECONDS = 21_600
+_SAGEMAKER_INVOCATION_TIMEOUT_SECONDS = 3_600
+_SAGEMAKER_POLL_INITIAL_SECONDS = 0.25
+_SAGEMAKER_POLL_MAX_SECONDS = 5.0
+
+# Authorization header scheme for remote requests. The Baseten inference *gateway* accepts only
+# ``Bearer``, which is why it is the default. ``Api-Key`` exists for a caller who points
+# ``base_url`` at some other Baseten host that expects that scheme.
+AuthScheme = Literal["Bearer", "Api-Key"]
+_VALID_AUTH_SCHEMES = ("Bearer", "Api-Key")
+DEFAULT_AUTH_SCHEME: AuthScheme = "Bearer"
+
+# Array-like inputs accepted by ``predict`` -- nested Python sequences, numpy
+# arrays, or pandas DataFrames/Series (all coerced to plain numeric arrays).
+MatrixLike = Union[Sequence[Sequence[float]], np.ndarray, pd.DataFrame]
+VectorLike = Union[Sequence[float], np.ndarray, pd.Series, pd.DataFrame]
+
+
+@dataclass
+class _NoriArrayRequest:
+    """Private array-backed equivalent of the public JSON request model."""
+
+    X_train: np.ndarray
+    y_train: np.ndarray
+    X_test: np.ndarray
+    task: str
+    memory_policy: Optional[MemoryPolicyInput] = None
+    output_type: Optional[str] = None
+    quantiles: Optional[List[float]] = None
+    large_context_policy: Optional[LargeContextPolicy] = None
+    large_context_threshold: Optional[int] = None
+    large_context_seed: Optional[int] = None
+    large_context_holdout: Optional[LargeContextHoldout] = None
+    multi_target_prediction_strategy: Optional[MultiTargetPredictionStrategy] = None
+    multi_target_prediction_policy: Optional[MultiTargetPredictionPolicy] = None
+    # Assigned by predict() on the hosted transports, exactly as on the JSON request model,
+    # and serialized from the same NoriPredictRequest.model_fields list by nori_payload.
+    discretize: Optional[str] = None
+    categorical_levels: Optional[List[float]] = None
+
+
+def _target_name(y_train: Any) -> Any:
+    """Name for the ``as_pandas`` output Series, taken from ``y_train``.
+
+    Uses the ``Series.name`` or the single-column ``DataFrame``'s column label;
+    falls back to ``"prediction"`` when ``y_train`` carries no name (lists/arrays).
+    """
+    if isinstance(y_train, pd.Series):
+        return y_train.name if y_train.name is not None else "prediction"
+    if isinstance(y_train, pd.DataFrame) and y_train.shape[1] == 1:
+        return y_train.columns[0]
+    return "prediction"
+
+
+def _result_index(X_test: Any) -> Optional[Any]:
+    """Index for the ``as_pandas`` output, copied from ``X_test`` when it is a
+    pandas object so predictions join straight back; ``None`` (default RangeIndex)
+    otherwise."""
+    if isinstance(X_test, (pd.DataFrame, pd.Series)):
+        return X_test.index
+    return None
+
+
+def _reject_non_numeric_columns(frame: pd.DataFrame, name: str) -> None:
+    """Raise ``ValueError`` if any column is not numeric.
+
+    This helper runs after public DataFrame preprocessing, so any remaining
+    categorical/text/temporal column means the schema was not resolved.
+    """
+    non_numeric = [str(col) for col in frame.columns if not pd.api.types.is_numeric_dtype(frame[col])]
+    if non_numeric:
+        raise ValueError(
+            f"{name} has unresolved non-numeric column(s) {non_numeric}. Pass raw "
+            "features as DataFrames and choose categorical_columns=[...] or "
+            "text_columns=[...], or pre-encode them numerically."
+        )
+
+
+def _coerce_matrix(arr: MatrixLike, name: str, *, dtype: Any = np.float64) -> np.ndarray:
+    """Coerce an array-like into a 2D float ``np.ndarray`` or raise ``ValueError``.
+
+    Accepts nested Python sequences, numpy arrays, and pandas DataFrames. A
+    pandas DataFrame is checked for non-numeric columns first (so the caller
+    gets a clear message rather than a cryptic float-cast error). NaN/missing
+    values are preserved and forwarded for server-side imputation.
+    """
+    if isinstance(arr, pd.DataFrame):
+        _reject_non_numeric_columns(arr, name)
+        matrix = arr.to_numpy(dtype=dtype)
+    else:
+        try:
+            matrix = np.asarray(arr, dtype=dtype)
+        except (ValueError, TypeError) as exc:
+            raise ValueError(
+                f"{name} must be a numeric 2D array/list with equal-length rows; "
+                f"got error: {exc}. If it has categorical/string columns, pass a "
+                "pandas DataFrame (with both X_train and X_test as DataFrames) so "
+                "they can be one-hot encoded."
+            ) from exc
+    if matrix.ndim != 2:
+        raise ValueError(
+            f"{name} must be 2D with shape (n_rows, n_features); got {matrix.ndim}D with shape {matrix.shape}"
+        )
+    return matrix
+
+
+def _coerce_vector(arr: VectorLike, name: str, *, dtype: Any = np.float64) -> np.ndarray:
+    """Coerce targets into a 1D vector or 2D multi-target matrix.
+
+    Accepts nested Python sequences, numpy arrays, a pandas Series, or a
+    pandas DataFrame. NaN/missing values are preserved here; hosted modes
+    reject them before prediction, while local validation belongs to the runtime.
+    """
+    if isinstance(arr, pd.DataFrame):
+        _reject_non_numeric_columns(arr, name)
+        vector = arr.to_numpy(dtype=dtype)
+        if vector.shape[1] == 1:
+            vector = vector.reshape(-1)
+    elif isinstance(arr, pd.Series):
+        if not pd.api.types.is_numeric_dtype(arr):
+            raise ValueError(f"{name} must be numeric; got a non-numeric Series (dtype {arr.dtype}).")
+        vector = arr.to_numpy(dtype=dtype)
+    else:
+        try:
+            vector = np.asarray(arr, dtype=dtype)
+        except (ValueError, TypeError) as exc:
+            raise ValueError(f"{name} must be a numeric 1D array/list; got error: {exc}") from exc
+    if vector.ndim not in (1, 2):
+        raise ValueError(
+            f"{name} must be 1D (n_rows,) or 2D (n_rows, n_targets); got {vector.ndim}D with shape {vector.shape}"
+        )
+    if vector.ndim == 2 and vector.shape[1] < 2:
+        vector = vector.reshape(-1)
+    return vector
+
+
+def _validate_hosted_targets(y_train: VectorLike) -> None:
+    """Reject missing or infinite labels before preprocessing or hosted transport."""
+    if not np.isfinite(_coerce_vector(y_train, "y_train")).all():
+        raise ValueError("y_train must contain only finite numbers (no null/NaN/inf targets) for hosted inference.")
+
+
+def _build_nori_request(
+    X_train: MatrixLike,
+    y_train: VectorLike,
+    X_test: MatrixLike,
+    task: str = DEFAULT_TASK,
+    categorical_columns: Any = _CATEGORICAL_AUTO,
+    max_categorical_cardinality: int = _DEFAULT_MAX_CARDINALITY,
+    categorical_encoding: str = _DEFAULT_CATEGORICAL_ENCODING,
+    output_type: str = DEFAULT_OUTPUT_TYPE,
+    quantile_levels: Optional[List[float]] = None,
+    memory_policy: Optional[MemoryPolicyInput] = None,
+    large_context_policy: Optional[LargeContextPolicy] = None,
+    large_context_threshold: Optional[int] = None,
+    large_context_seed: Optional[int] = None,
+    large_context_holdout: Optional[LargeContextHoldout] = None,
+    multi_target_prediction_strategy: Optional[MultiTargetPredictionStrategy] = None,
+    multi_target_prediction_policy: Optional[MultiTargetPredictionPolicy] = None,
+    array_backed: bool = False,
+) -> Union[NoriPredictRequest, _NoriArrayRequest]:
+    """Validate shapes and build a :class:`NoriPredictRequest`.
+
+    Accepts Python lists, numpy arrays, or pandas DataFrames/Series. When both
+    ``X_train`` and ``X_test`` are DataFrames, ``X_test`` is aligned to
+    ``X_train``'s columns *by name* (so column order is irrelevant), and a
+    mismatch in the column sets raises ``ValueError``; then any non-numeric
+    columns are encoded (fit on ``X_train``, applied to ``X_test`` —
+    ``categorical_encoding`` picks ordinal codes or one-hot indicators, see
+    :func:`synthefy.featurize.align_and_featurize`) so the request carries a
+    fully numeric matrix.
+    Otherwise columns are matched positionally, as before. Raises ``ValueError``
+    on any shape mismatch before a request leaves the process. NaN/missing
+    feature values are preserved for server-side imputation. Hosted targets
+    must already have been checked by :func:`_validate_hosted_targets`.
+
+    ``output_type``/``quantile_levels`` are expected to have been validated
+    already (by :func:`_validate_output_type`); a default ``output_type`` leaves
+    both fields unset so the request body is unchanged from earlier versions.
+    """
+    X_train, X_test = _align_and_featurize(
+        X_train,
+        X_test,
+        max_categorical_cardinality,
+        categorical_columns=categorical_columns,
+        categorical_encoding=categorical_encoding,
+        _warning_stacklevel=5,
+    )
+
+    # The compact SageMaker envelope stores features as float32 and targets as float64.
+    # Coercing directly avoids first materializing full float64 feature matrices and then
+    # copying them again while writing a large request file.
+    feature_dtype = np.float32 if array_backed else np.float64
+    X_train_arr = _coerce_matrix(X_train, "X_train", dtype=feature_dtype)
+    X_test_arr = _coerce_matrix(X_test, "X_test", dtype=feature_dtype)
+    y_train_arr = _coerce_vector(y_train, "y_train", dtype=np.float64)
+
+    n_context, n_features = X_train_arr.shape
+    if n_context == 0:
+        raise ValueError("X_train must contain at least one context row")
+    if n_features == 0:
+        raise ValueError("X_train must contain at least one feature column")
+    if y_train_arr.shape[0] != n_context:
+        raise ValueError(f"X_train has {n_context} rows but y_train has {y_train_arr.shape[0]}; they must match")
+    if X_test_arr.shape[0] == 0:
+        raise ValueError("X_test must contain at least one query row")
+    if X_test_arr.shape[1] != n_features:
+        raise ValueError(f"X_test has {X_test_arr.shape[1]} features but X_train has {n_features}; they must match")
+    if not isinstance(task, str) or not task.strip():
+        raise ValueError("task must be a non-empty string")
+
+    # All fields, including the large-context trio, are passed to the constructor
+    # together rather than assigned onto an already-built request afterward: pydantic
+    # validates a constructor call's fields as one complete set, so
+    # NoriPredictRequest's "threshold/seed require a policy" model_validator sees a
+    # coherent object on its first and only run here. Sequential post-construction
+    # attribute assignment (with validate_assignment=True) instead validates after
+    # EVERY individual assignment, so it only works if the caller assigns policy
+    # before threshold/seed -- an ordering invariant that would otherwise be enforced
+    # by nothing but a comment.
+    metadata = NoriPredictRequest(
+        X_train=[],
+        y_train=[],
+        X_test=[],
+        task=task,
+        # Left as None for the default so the serialized body carries neither
+        # field (see _predict_remote's exclude_none dump).
+        output_type=None if output_type == DEFAULT_OUTPUT_TYPE else output_type,
+        quantiles=quantile_levels,
+        memory_policy=memory_policy,
+        large_context_policy=large_context_policy,
+        large_context_threshold=large_context_threshold,
+        large_context_seed=large_context_seed,
+        large_context_holdout=large_context_holdout,
+        multi_target_prediction_strategy=multi_target_prediction_strategy,
+        multi_target_prediction_policy=multi_target_prediction_policy,
+    )
+    if array_backed:
+        return _NoriArrayRequest(
+            X_train=X_train_arr,
+            y_train=y_train_arr,
+            X_test=X_test_arr,
+            task=metadata.task,
+            output_type=metadata.output_type,
+            quantiles=metadata.quantiles,
+            memory_policy=metadata.memory_policy,
+            large_context_policy=metadata.large_context_policy,
+            large_context_threshold=metadata.large_context_threshold,
+            large_context_seed=metadata.large_context_seed,
+            large_context_holdout=metadata.large_context_holdout,
+            multi_target_prediction_strategy=metadata.multi_target_prediction_strategy,
+            multi_target_prediction_policy=metadata.multi_target_prediction_policy,
+        )
+    return NoriPredictRequest(
+        X_train=_nullable_matrix(X_train_arr),
+        y_train=y_train_arr.tolist(),
+        X_test=_nullable_matrix(X_test_arr),
+        task=metadata.task,
+        output_type=metadata.output_type,
+        quantiles=metadata.quantiles,
+        memory_policy=metadata.memory_policy,
+        large_context_policy=metadata.large_context_policy,
+        large_context_threshold=metadata.large_context_threshold,
+        large_context_seed=metadata.large_context_seed,
+        large_context_holdout=metadata.large_context_holdout,
+        multi_target_prediction_strategy=metadata.multi_target_prediction_strategy,
+        multi_target_prediction_policy=metadata.multi_target_prediction_policy,
+    )
+
+
+def _as_float_list(values: Any) -> List[float]:
+    """Coerce a prediction result (list or numpy array) into a flat ``list[float]``."""
+    return np.asarray(values, dtype=float).reshape(-1).tolist()
+
+
+def _nullable_matrix(
+    values: NDArray[np.floating],
+) -> List[List[Optional[float]]]:
+    """Encode non-finite feature cells as JSON-compatible nulls."""
+    return np.where(np.isfinite(values), values, None).tolist()
+
+
+def _load_local_predict() -> Any:
+    """Lazily import ``synthefy_nori.predict`` with a helpful error if absent."""
+    try:
+        from synthefy_nori import predict as local_predict
+    except ModuleNotFoundError as exc:
+        if exc.name != "synthefy_nori":
+            raise
+        raise ImportError(
+            "Local nori inference requires the optional 'synthefy-nori' "
+            "package. Install it with: pip install synthefy-nori."
+        ) from exc
+    return local_predict
+
+
+def _validate_output_type(
+    output_type: str,
+    quantiles: Optional[VectorLike],
+    *,
+    discretizing: bool,
+) -> Optional[List[float]]:
+    """Check ``output_type``/``quantiles`` and normalize the tau levels.
+
+    The rules are ``NoriRegressor.predict``'s, enforced here so a bad argument
+    raises before any expensive work (text embedding, a network round-trip, or a
+    checkpoint load) rather than after it. Returns the tau levels as a plain
+    ``list[float]`` in the **caller's order** — order is meaningful, since it is
+    the order of the returned rows (``lo, mid, hi = ...``) — or ``None`` when no
+    levels were given.
+    """
+    if output_type not in _OUTPUT_TYPES:
+        raise ValueError(f"output_type must be one of {_OUTPUT_TYPES}; got {output_type!r}.")
+    if discretizing and (output_type != DEFAULT_OUTPUT_TYPE or quantiles is not None):
+        raise ValueError(
+            "categorical output (discretize=/categorical_levels=) returns "
+            "discrete labels, so it combines only with the default "
+            f"output_type={DEFAULT_OUTPUT_TYPE!r} (the discretize= strategy "
+            "chooses the summary), not with output_type/quantiles."
+        )
+    if quantiles is not None and output_type != "quantiles":
+        raise ValueError(f"quantiles= is only valid with output_type='quantiles'; got output_type={output_type!r}.")
+    if output_type != "quantiles":
+        return None
+    if quantiles is None:
+        raise ValueError(
+            "output_type='quantiles' requires quantiles=[...] with at least one "
+            "tau level in (0, 1), e.g. quantiles=[0.1, 0.5, 0.9] for an 80% "
+            "interval around the median."
+        )
+    levels = np.asarray(quantiles, dtype=float).reshape(-1)
+    if levels.size == 0:
+        raise ValueError(
+            "output_type='quantiles' requires quantiles=[...] with at least one "
+            "tau level in (0, 1); got an empty sequence."
+        )
+    if not np.all(np.isfinite(levels)) or np.any((levels <= 0.0) | (levels >= 1.0)):
+        raise ValueError(f"quantiles must lie strictly in (0, 1); got {quantiles!r}.")
+    return [float(level) for level in levels]
+
+
+def _validate_multi_target_controls(
+    y_train: VectorLike,
+    *,
+    output_type: str,
+    strategy: Optional[MultiTargetPredictionStrategy],
+    policy: Optional[MultiTargetPredictionPolicy],
+    large_context_policy: Optional[LargeContextPolicy],
+    discretizing: bool,
+    is_thinking: bool,
+    mode: str,
+) -> bool:
+    """Validate combinations that only make sense for matrix-valued targets.
+
+    ``is_thinking`` is true only for a released Thinking name, so a fine-tuned model whose
+    name contains "thinking" keeps multi-target prediction.
+    """
+    targets = _coerce_vector(y_train, "y_train")
+    is_multi = targets.ndim == 2
+    if not is_multi:
+        if strategy is not None or policy is not None or output_type == "samples":
+            raise ValueError(
+                "multi_target_prediction_strategy, multi_target_prediction_policy, "
+                "and output_type='samples' require a 2D y_train target matrix."
+            )
+        return False
+    if output_type not in ("mean", "samples"):
+        raise ValueError(f"Multi-target prediction supports output_type='mean' or 'samples'; got {output_type!r}.")
+    if large_context_policy is not None:
+        raise ValueError("large_context_policy is not supported with matrix-valued y_train.")
+    if discretizing:
+        raise ValueError("discretize and categorical_levels are not supported with matrix-valued y_train.")
+    if is_thinking:
+        raise ValueError(
+            "Multi-target prediction is not available on Nori Thinking variants; "
+            "use a base nori-6m, nori-1-5, nori-30m, or nori-100m model."
+        )
+    resolved_strategy = strategy or DEFAULT_MULTI_TARGET_PREDICTION_STRATEGY
+    resolved_policy = (
+        policy if isinstance(policy, MultiTargetPredictionPolicy) else MultiTargetPredictionPolicy(**(policy or {}))
+    )
+    if mode != "local":
+        hosted_bounds = (
+            ("n_draws", resolved_policy.n_draws, MAX_MULTI_TARGET_DRAWS),
+            ("copula_cv", resolved_policy.copula_cv, MAX_MULTI_TARGET_COPULA_CV),
+            (
+                "autoregressive_n_orders",
+                resolved_policy.autoregressive_n_orders,
+                MAX_MULTI_TARGET_AUTOREGRESSIVE_ORDERS,
+            ),
+        )
+        for name, value, maximum in hosted_bounds:
+            if value > maximum:
+                raise ValueError(
+                    f"multi_target_prediction_policy.{name} must be <= {maximum} for hosted inference; got {value}."
+                )
+        if resolved_policy.copula_pit_jitter > MAX_MULTI_TARGET_COPULA_PIT_JITTER:
+            raise ValueError(
+                "multi_target_prediction_policy.copula_pit_jitter must be <= "
+                f"{MAX_MULTI_TARGET_COPULA_PIT_JITTER} for hosted inference; "
+                f"got {resolved_policy.copula_pit_jitter}."
+            )
+        if (
+            resolved_policy.autoregressive_orders is not None
+            and len(resolved_policy.autoregressive_orders) > MAX_MULTI_TARGET_AUTOREGRESSIVE_ORDERS
+        ):
+            raise ValueError(
+                "multi_target_prediction_policy.autoregressive_orders must contain at most "
+                f"{MAX_MULTI_TARGET_AUTOREGRESSIVE_ORDERS} orders for hosted inference; "
+                f"got {len(resolved_policy.autoregressive_orders)}."
+            )
+    if resolved_policy.autoregressive_orders is not None:
+        if resolved_strategy != "autoregressive":
+            raise ValueError(
+                "multi_target_prediction_policy.autoregressive_orders requires "
+                "multi_target_prediction_strategy='autoregressive'."
+            )
+        expected = list(range(targets.shape[1]))
+        for index, order in enumerate(resolved_policy.autoregressive_orders):
+            if sorted(order) != expected:
+                raise ValueError(
+                    "multi_target_prediction_policy.autoregressive_orders"
+                    f"[{index}] must be a complete permutation of target indices "
+                    f"{expected}; got {order}."
+                )
+    return True
+
+
+def _load_local_regressor() -> Any:
+    """Lazily import ``synthefy_nori.NoriRegressor`` with a helpful error if absent.
+
+    Needed for every ``output_type`` other than ``"mean"``: the functional
+    ``synthefy_nori.predict`` cannot reach them, because it forwards ``**kwargs``
+    to the ``NoriRegressor`` *constructor* and only passes ``discretize`` /
+    ``categorical_levels`` through to ``predict``.
+    """
+    try:
+        from synthefy_nori import NoriRegressor
+    except ModuleNotFoundError as exc:
+        if exc.name != "synthefy_nori":
+            raise
+        raise ImportError(
+            "Local nori inference requires the optional 'synthefy-nori' "
+            "package. Install it with: pip install synthefy-nori."
+        ) from exc
+    return NoriRegressor
+
+
+def _local_discretize_available() -> bool:
+    """Return ``True`` if the installed ``synthefy-nori`` supports discretization.
+
+    The ``discretize=`` / ``categorical_levels=`` arguments need a build that
+    ships the ``synthefy_nori.discretize`` module; probing with ``find_spec``
+    avoids importing (and thus loading) the package.
+    """
+    return importlib.util.find_spec("synthefy_nori.discretize") is not None
+
+
+def _local_memory_policy_available() -> bool:
+    """Return ``True`` if the installed ``synthefy-nori`` accepts ``memory_policy=``.
+
+    The policy landed in synthefy-nori 0.13.0 as ``synthefy_nori.inference.memory_policy``,
+    so the module's presence is the capability.
+
+    A signature probe would NOT work here, unlike the ``model=`` check further down:
+    ``synthefy_nori.predict`` forwards ``**kwargs`` to ``NoriRegressor``, so ``memory_policy``
+    never appears in its parameters on any version, and gating on that would reject
+    every build including new ones.
+    """
+    try:
+        return importlib.util.find_spec("synthefy_nori.inference.memory_policy") is not None
+    except ModuleNotFoundError:
+        # find_spec on a dotted path imports the PARENT package to read its __path__, so
+        # when synthefy-nori is not installed at all (the base synthefy install, the
+        # common case this check exists for) it raises here instead of returning None.
+        return False
+
+
+def _local_stream_context_available() -> bool:
+    """Whether the installed local policy understands ``stream_context``.
+
+    The lightweight client can be newer than the separately installed model package.
+    A runtime that has the original ``memory_policy=`` surface therefore passes the
+    module-presence check above but would reject this newer field deep inside fit().
+    Inspect the authoritative local model only on the local execution path so remote
+    clients still do not import the heavyweight optional package.
+    """
+    from synthefy_nori.inference.memory_policy import MemoryPolicy as LocalMemoryPolicy
+
+    return "stream_context" in LocalMemoryPolicy.model_fields
+
+
+def _require_local_memory_policy_capabilities(memory_policy: MemoryPolicyInput) -> None:
+    """Fail with an upgrade hint before forwarding an unsupported local policy."""
+    if not _local_memory_policy_available():
+        raise ImportError(
+            "memory_policy= requires synthefy-nori >= 0.13.0 (the serving-memory policy). "
+            "Upgrade with: pip install -U synthefy-nori."
+        )
+    stream_context_was_sent = not isinstance(memory_policy, str) and "stream_context" in memory_policy.model_fields_set
+    if stream_context_was_sent and not _local_stream_context_available():
+        raise ImportError(
+            "memory_policy.stream_context requires a newer synthefy-nori; the "
+            "installed runtime's MemoryPolicy does not include the stream_context "
+            "field. Upgrade with: pip install -U synthefy-nori."
+        )
+
+
+def _local_large_context_available() -> bool:
+    """Return ``True`` if the installed ``synthefy-nori`` accepts ``large_context_policy=``.
+
+    The feature landed as ``synthefy_nori.inference.large_context``, so the module's
+    presence is the capability -- a signature probe on ``NoriRegressor.__init__`` would
+    NOT reliably work here, for the same reason ``_local_memory_policy_available`` doesn't
+    use one: a future ``NoriRegressor`` could forward ``large_context_policy`` via
+    ``**kwargs`` instead of naming it in its signature, which a probe would falsely reject.
+    """
+    try:
+        return importlib.util.find_spec("synthefy_nori.inference.large_context") is not None
+    except ModuleNotFoundError:
+        # Same reason as _local_memory_policy_available: find_spec on a dotted path
+        # imports the parent package first, which raises instead of returning None
+        # when synthefy-nori is not installed at all.
+        return False
+
+
+def _validate_large_context_controls(
+    *,
+    policy: Optional[LargeContextPolicy],
+    threshold: Optional[int],
+    seed: Optional[int],
+    holdout: Optional[LargeContextHoldout],
+    output_type: str,
+    is_thinking: bool,
+    mode: str,
+) -> None:
+    """Fail before preprocessing, checkpoint load, or a paid hosted request.
+
+    ``threshold``/``seed`` are ``None`` when the caller did not pass them (mirroring
+    ``NoriPredictRequest``'s own ``Optional[int] = None`` wire fields), not a
+    resolved default -- so an explicit value equal to the default is still
+    distinguishable from "omitted" here, unlike comparing against the default value.
+    ``is_thinking`` is true only for a released Thinking name, so a fine-tuned model whose
+    name contains "thinking" keeps the policy.
+    """
+    if policy is None:
+        if threshold is not None or seed is not None or holdout is not None:
+            # Both are otherwise silently dropped from the wire request: the caller
+            # almost certainly meant to also pass large_context_policy=. Same rule,
+            # same wording, as NoriPredictRequest's own model_validator and the
+            # server's _parse_large_context, so the client fails exactly where the
+            # request would have anyway -- before a paid hosted round-trip.
+            raise ValueError(
+                "large_context_threshold/large_context_seed/large_context_holdout require "
+                f"large_context_policy; got threshold={threshold!r}, seed={seed!r}, "
+                f"holdout={holdout!r} "
+                "with no policy selected. Pass large_context_policy=..., or omit "
+                "the large-context controls."
+            )
+        return
+    if isinstance(policy, list):
+        if not policy or len(policy) > MAX_LARGE_CONTEXT_CANDIDATES:
+            raise ValueError(
+                "large_context_policy list must contain between 1 and "
+                f"{MAX_LARGE_CONTEXT_CANDIDATES} built-in policy names"
+            )
+        if any(not isinstance(item, str) or not item.strip() for item in policy):
+            raise ValueError("every large_context_policy list item must be a non-empty string")
+    elif not isinstance(policy, str) and (mode != "local" or not callable(policy)):
+        raise ValueError(
+            "large_context_policy must be a policy name string or list of names; "
+            "custom callables are supported only in local mode."
+        )
+    if holdout is not None:
+        if not isinstance(policy, list):
+            raise ValueError("large_context_holdout is valid only with a large_context_policy list")
+        if holdout not in ("random", "tail"):
+            raise ValueError("large_context_holdout must be 'random' or 'tail'")
+    if threshold is not None and (
+        isinstance(threshold, bool)
+        or not isinstance(threshold, Integral)
+        or not 1 <= int(threshold) <= MAX_LARGE_CONTEXT_THRESHOLD
+    ):
+        raise ValueError(
+            "large_context_threshold must be an integer between 1 and "
+            f"{MAX_LARGE_CONTEXT_THRESHOLD:,}; got {threshold!r}."
+        )
+    if seed is not None and (
+        isinstance(seed, bool) or not isinstance(seed, Integral) or not 0 <= int(seed) <= MAX_LARGE_CONTEXT_SEED
+    ):
+        raise ValueError(
+            f"large_context_seed must be an integer between 0 and {MAX_LARGE_CONTEXT_SEED:,}; got {seed!r}."
+        )
+    if output_type in _DISTRIBUTION_OUTPUT_TYPES:
+        raise ValueError(
+            f"large_context_policy={policy!r} cannot serve "
+            f"output_type={output_type!r}: routed policies combine point "
+            "predictions from several Nori calls and have no combined "
+            "predictive distribution. Use output_type='mean' or 'median', or "
+            "omit large_context_policy."
+        )
+    if is_thinking:
+        raise ValueError(
+            "large_context_policy is not available on Nori Thinking "
+            "(test-time-compute) variants. Use a base nori-6m or nori-30m "
+            "model, or omit the policy."
+        )
+
+
+def _released_model_without_context_cache(model: Any) -> Optional[str]:
+    """Return the released name ``model`` selects when that model builds no context cache, else ``None``.
+
+    Every spelling of the name counts: the friendly name, its ``synthefy/`` gateway slug and the
+    slug's ``-dev`` form.
+    """
+    if not isinstance(model, str):
+        return None
+    name = model.removeprefix(_GATEWAY_SLUG_PREFIX)
+    if model.startswith(_GATEWAY_SLUG_PREFIX) and name.endswith("-dev"):
+        name = name.removesuffix("-dev")
+    return name if name in _NO_CONTEXT_CACHE_MODELS else None
+
+
+def _refuse_cache_settings_without_a_context_cache(memory_policy: Any, *, model: str) -> None:
+    """Refuse ``memory_policy`` settings that configure a context cache ``model`` never builds.
+
+    The same rule, and the same wording, as the hosted deployment's refusal, so a remote call
+    fails here before a paid round-trip and a local call fails instead of being silently
+    ignored by synthefy-nori. ``memory_policy`` is the validated request value: a preset name or
+    a ``MemoryPolicy``, whose explicitly set fields are the ones the caller asked for.
+    """
+    if memory_policy is None:
+        return
+    budget_fields = list(_CONTEXT_BUDGET_MEMORY_FIELDS)
+    if isinstance(memory_policy, str):
+        raise ValueError(
+            f"memory_policy={memory_policy!r} is a context-cache preset, and {model!r} keeps no "
+            "context cache, so the preset cannot act on it. Send memory_policy as an object that "
+            f"sets only {budget_fields}, or omit it."
+        )
+    cache_fields = sorted(set(memory_policy.model_fields_set) - set(_CONTEXT_BUDGET_MEMORY_FIELDS))
+    if cache_fields:
+        raise ValueError(
+            f"memory_policy fields {cache_fields} configure the key/value context cache, and "
+            f"{model!r} keeps no context cache, so they cannot act on it. Only {budget_fields} "
+            "apply to this model; drop the other fields, or omit memory_policy."
+        )
+
+
+def _normalized_large_context_report(request: NoriPredictRequest, report: Optional[Dict[str, Any]]) -> Dict[str, Any]:
+    """Give local mode the same typed per-call report as hosted modes."""
+    policy = request.large_context_policy
+    if policy is None:
+        raise RuntimeError("large-context report requested without a policy")
+    threshold = (
+        request.large_context_threshold
+        if request.large_context_threshold is not None
+        else DEFAULT_LARGE_CONTEXT_THRESHOLD
+    )
+    seed = request.large_context_seed if request.large_context_seed is not None else DEFAULT_LARGE_CONTEXT_SEED
+    if report is None:
+        resolved = LargeContextReport(
+            applied=False,
+            policy=_large_context_policy_label(policy),
+            threshold=threshold,
+            seed=seed,
+            holdout_strategy=request.large_context_holdout,
+            reason="below_threshold",
+            window=None,
+            n_train=len(request.X_train),
+            n_test=len(request.X_test),
+            shards_available=None,
+            nori_calls=0,
+            full_context=None,
+            reused_train_state=False,
+        )
+    else:
+        resolved = LargeContextReport.model_validate(
+            {
+                **report,
+                "applied": True,
+                "threshold": threshold,
+                "seed": seed,
+                "reason": None,
+            }
+        )
+    exclude = {"holdout_strategy"} if resolved.holdout_strategy is None else set()
+    return resolved.model_dump(exclude=exclude)
+
+
+def _large_context_policy_label(policy: LargeContextPolicy) -> str:
+    """Canonical display label shared by local and hosted capability checks."""
+    if isinstance(policy, list):
+        return f"gate[{','.join(item.strip() for item in policy)}]"
+    if isinstance(policy, str):
+        return policy.strip()
+    return getattr(policy, "__name__", repr(policy))
+
+
+def _wire_levels(categorical_levels: Optional[VectorLike]) -> Optional[List[float]]:
+    """Convert ``categorical_levels`` to plain floats for the request body.
+
+    The deployment owns the policy questions (how many levels are too many, whether the
+    strategy suits the lattice); this only has to make an array-like argument serializable.
+    It reports the two shapes that cannot be sent while naming the argument, because
+    otherwise a bad level surfaces as a numpy conversion error or, for a NaN, as the
+    payload guard blaming ``y_train`` for a value that came from here.
+    """
+    if categorical_levels is None:
+        return None
+    try:
+        levels = np.asarray(categorical_levels, dtype=float).reshape(-1)
+    except (TypeError, ValueError) as exc:
+        raise ValueError(f"categorical_levels must be numbers; got {categorical_levels!r}.") from exc
+    if levels.size == 0:
+        raise ValueError(
+            "categorical_levels is empty. Omit it to use the distinct values of y_train, "
+            "or pass the values the target can take."
+        )
+    if not np.isfinite(levels).all():
+        raise ValueError(
+            "categorical_levels must contain only finite numbers; null, NaN and infinity "
+            "are not values a prediction can land on."
+        )
+    return [float(level) for level in levels]
+
+
+# --------------------------------------------------------------------------- #
+# Distribution output shaping (output_type="quantiles" / "full")
+# --------------------------------------------------------------------------- #
+
+
+def _quantile_frame(
+    values: "np.ndarray",
+    levels: Sequence[float],
+    *,
+    X_test: Any,
+    y_train: Any,
+) -> pd.DataFrame:
+    """Build the ``as_pandas`` quantile frame: one row per query row, one column
+    per tau level.
+
+    Columns are named ``"<target>[<level>]"`` — the same convention the
+    forecasting client uses for its quantile columns, so both halves of the
+    package label quantiles the same way. Indexed by ``X_test`` when it is a
+    pandas object, so the bands join straight back onto the query rows.
+    """
+    name = _target_name(y_train)
+    return pd.DataFrame(
+        values,
+        index=_result_index(X_test),
+        columns=[f"{name}[{level}]" for level in levels],
+        dtype=float,
+    )
+
+
+def _nullable_rows_to_array(rows: Sequence[Sequence[Optional[float]]]) -> "np.ndarray":
+    """Coerce the wire's nullable quantile rows to a 2D float array.
+
+    JSON cannot carry ``NaN``, so the server sends ``null`` for a non-finite
+    quantile; ``np.asarray(..., dtype=float)`` maps those back to ``NaN`` (the
+    value the local package would have returned) rather than leaving ``None``
+    objects in a numeric result.
+    """
+    try:
+        arr = np.asarray(rows, dtype=float)
+    except (ValueError, TypeError) as exc:
+        # Ragged rows: numpy >= 2 rejects an inhomogeneous shape. Report it as a
+        # malformed response rather than letting the raw numpy message surface.
+        raise ValueError(f"The server returned a malformed quantile block (rows of unequal length): {exc}") from exc
+    if arr.ndim != 2:
+        raise ValueError(
+            "The server returned a malformed quantile block: expected a 2D "
+            f"(n_query, n_levels) array, got shape {arr.shape}."
+        )
+    return arr
+
+
+def _shape_quantiles(
+    q_by_row: "np.ndarray",
+    levels: Sequence[float],
+    *,
+    as_pandas: bool,
+    X_test: Any,
+    y_train: Any,
+) -> Union[List[List[float]], pd.DataFrame]:
+    """Shape an ``(n_query, n_levels)`` block into the ``output_type="quantiles"`` result.
+
+    The default result is transposed to ``(n_levels, n_query)`` — level-major —
+    which is ``NoriRegressor.predict``'s shape and what makes
+    ``lo, mid, hi = client.predict(..., quantiles=[0.1, 0.5, 0.9])`` work. The
+    pandas result stays row-major, because a DataFrame indexed by the query rows
+    is what joins back onto the data.
+    """
+    if as_pandas:
+        return _quantile_frame(q_by_row, levels, X_test=X_test, y_train=y_train)
+    return q_by_row.T.tolist()
+
+
+def _shape_full(
+    q_by_row: "np.ndarray",
+    taus: "np.ndarray",
+    mean: "np.ndarray",
+    *,
+    as_pandas: bool,
+    X_test: Any,
+    y_train: Any,
+) -> Dict[str, Any]:
+    """Shape the whole quantile bank into the ``output_type="full"`` result.
+
+    Mirrors ``NoriRegressor.predict(output_type="full")``'s dict — ``"quantiles"``
+    row-major ``(n_query, K)``, ``"taus"`` ``(K,)``, ``"mean"`` ``(n_query,)`` —
+    with lists (or pandas objects under ``as_pandas``) in place of numpy arrays,
+    matching how the rest of this client returns data.
+    """
+    if as_pandas:
+        return {
+            "quantiles": _quantile_frame(q_by_row, taus.tolist(), X_test=X_test, y_train=y_train),
+            "taus": taus.tolist(),
+            "mean": pd.Series(
+                mean,
+                index=_result_index(X_test),
+                name=_target_name(y_train),
+                dtype=float,
+            ),
+        }
+    return {
+        "quantiles": q_by_row.tolist(),
+        "taus": taus.tolist(),
+        "mean": mean.tolist(),
+    }
+
+
+def _resolve_text_device(device: Optional[str]) -> str:
+    """Resolve the device for a named sentence encoder.
+
+    ``None`` and ``"auto"`` prefer a CUDA device (including PyTorch ROCm
+    builds), then Apple MPS, and otherwise use CPU. An explicit PyTorch device
+    string such as ``"cpu"`` or ``"cuda:1"`` is returned unchanged.
+    """
+    if device not in (None, "auto"):
+        if not isinstance(device, str) or not device.strip():
+            raise ValueError(
+                "text_device must be 'auto', None, or a non-empty PyTorch "
+                "device string such as 'cpu', 'cuda', 'cuda:1', or 'mps'."
+            )
+        return device
+
+    try:
+        import torch
+    except (ImportError, OSError):
+        return "cpu"
+
+    cuda = getattr(torch, "cuda", None)
+    try:
+        if cuda is not None and cuda.is_available():
+            return "cuda"
+    except (AttributeError, RuntimeError):
+        pass
+
+    backends = getattr(torch, "backends", None)
+    mps = getattr(backends, "mps", None)
+    try:
+        if mps is not None and mps.is_available():
+            return "mps"
+    except (AttributeError, RuntimeError):
+        pass
+
+    return "cpu"
+
+
+def _widen_text_columns(
+    X_train,
+    X_test,
+    text_columns,
+    svd_dim,
+    embedder,
+    max_cardinality,
+    categorical_encoding,
+    text_device,
+    categorical_columns=_CATEGORICAL_AUTO,
+):
+    """Prepare named text columns client-side, returning numeric frames.
+
+    The shared DataFrame preprocessor fits text SVD and categorical mappings on
+    ``X_train``. Both inputs must be DataFrames; their indexes are preserved for
+    ``as_pandas`` output.
+    """
+    resolved_text_device = _resolve_text_device(text_device) if isinstance(embedder, str) else None
+    return _align_and_featurize(
+        X_train,
+        X_test,
+        max_cardinality,
+        categorical_columns=categorical_columns,
+        categorical_encoding=categorical_encoding,
+        text_columns=text_columns,
+        svd_dim=svd_dim,
+        embedder=embedder,
+        text_device=resolved_text_device,
+    )
+
+
+def _has_declared_text_columns(text_columns: Any) -> bool:
+    """Return whether the public declaration names at least one text column."""
+    if text_columns is None:
+        return False
+    if isinstance(text_columns, str):
+        return True
+    try:
+        return len(text_columns) > 0
+    except TypeError:
+        return True
+
+
+class SynthefyNoriClient:
+    """Client for Synthefy Nori in-context regression.
+
+    Each :meth:`predict` call performs in-context regression: the labeled context
+    rows are supplied alongside the query rows and one value per query row is
+    returned in a single forward pass.
+
+    The ``mode`` argument selects how predictions run:
+
+    - ``"remote"`` (default): call the hosted Baseten endpoint over HTTPS.
+      Requires an API key (``api_key`` argument or the
+      ``SYNTHEFY_NORI_API_KEY`` environment variable), sent as
+      ``Authorization: <auth_scheme> <key>`` (``Bearer`` by default).
+    - ``"local"``: run in-process via the optional ``synthefy-nori`` package
+      (``pip install synthefy-nori``). No network and no API key.
+    - ``"sagemaker"``: invoke a named Amazon SageMaker endpoint
+      asynchronously through boto3. ``predict()`` remains blocking: it stages a compact
+      request in customer-owned S3, waits for SageMaker's output or failure object, and
+      deletes the invocation's temporary objects. Requests are SigV4-signed using boto3's
+      standard credential chain; install ``pip install "synthefy[aws]"``.
+
+    For remote mode, the client targets the Baseten inference *gateway*
+    (``https://inference.baseten.co/predict``) and includes the chosen size slug (e.g.
+    ``"model": "synthefy/nori-30m"``) in the request body. The gateway resolves that slug
+    to a deployment and authenticates with the ``Bearer`` scheme (the default
+    ``auth_scheme``). ``base_url``, ``endpoint``, a custom ``model`` slug, and ``auth_scheme`` are
+    available for pointing the client at some other host, but the gateway is the supported
+    path and the only one Synthefy meters and rate-limits.
+
+    Parameters
+    ----------
+    api_key : str or None, optional
+        API key for hosted Nori (remote mode only). If ``None``, falls back to
+        the ``SYNTHEFY_NORI_API_KEY`` environment variable. A
+        :class:`ValueError` is raised if neither is set when remote mode is in
+        effect.
+    mode : {"remote", "local", "sagemaker"}, default "remote"
+        How predictions run. See above.
+    timeout : float, default 300.0
+        Per-request timeout in seconds for remote HTTP. For SageMaker this bounds client-side
+        polling as well as boto3 network operations. A client timeout does not cancel work
+        already queued by SageMaker. Per-call overrides are not supported for SageMaker.
+    max_retries : int, default 2
+        Number of retries for transient errors (timeouts, connection errors,
+        429 and 5xx responses). Remote mode uses exponential backoff; SageMaker
+        configures botocore's standard retry policy with the same retry count.
+    base_url : str, default GATEWAY_BASE_URL
+        Base URL of the inference host (remote mode).
+    endpoint : str, default GATEWAY_ENDPOINT
+        Path appended to ``base_url`` for predictions (remote mode).
+    model : str, REQUIRED
+        Which Nori to run — there is no default; every request names a size. Pass a friendly
+        size selector — ``"nori-6m"`` (the ~6M base), ``"nori-1-5"`` (Nori 1.5, the ~21M
+        Model v3 release), ``"nori-30m"`` (the ~29.2M variant), or ``"nori-100m"`` (the ~98.3M
+        variant) —
+        which selects both the remote gateway deployment and, in local mode, the checkpoint. A
+        raw gateway slug (e.g. ``"synthefy/nori-30m"``) is also accepted verbatim. Omitting
+        the argument or passing ``None`` raises :class:`ValueError`; every transport requires
+        explicit model identity. Selecting a variant in local mode requires a
+        synthefy-nori build with the ``model=`` selector. In SageMaker mode ``model`` may
+        also be the name of a fine-tuned model deployed on the endpoint (``ft-`` then lowercase
+        letters, digits and hyphens, 63 characters at most, see :class:`synthefy.SynthefyNoriFineTuner`);
+        a name the endpoint does not serve is refused by the endpoint, as
+        :class:`~synthefy.errors.SageMakerInvocationError`, not by the constructor.
+        Nori Thinking Medium — ``"nori-30m-thinking-medium"`` — runs only on hosted
+        deployments: passing it with ``mode="local"`` raises
+        :class:`ValueError` rather
+        than silently running the base model — use ``mode="remote"``. Likewise a selector with no
+        local checkpoint (an unknown/custom slug) raises in local mode instead of falling back to
+        the base model. SageMaker sends the model name to the shared application and verifies
+        that the response came from the requested peer model. Nori 1.5 builds no context
+        cache, so with it ``memory_policy=`` may set only ``elements_budget`` and
+        ``allow_subsample``.
+    auth_scheme : {"Bearer", "Api-Key"}, default "Bearer"
+        HTTP ``Authorization`` scheme prefixed to the API key (remote mode). The
+        inference gateway requires ``"Bearer"``; ``"Api-Key"`` is only for a
+        caller-supplied ``base_url`` pointing at a host that expects that scheme.
+    user_agent : str or None, optional
+        Custom ``User-Agent`` value for HTTP remote mode. For SageMaker it is
+        appended to botocore's normal user agent for request attribution.
+    endpoint_name : str or None, optional
+        SageMaker endpoint name. Required with ``mode="sagemaker"`` and
+        invalid otherwise.
+    region_name : str or None, optional
+        AWS region for SageMaker. If omitted, boto3 resolves it from
+        the standard environment/shared-config chain.
+    s3_staging_uri : str or None, optional
+        Customer-owned ``s3://bucket/prefix`` used for temporary SageMaker request
+        objects. Required with ``mode="sagemaker"``. The client never creates a bucket.
+
+    Attributes
+    ----------
+    mode : str
+        The explicitly selected execution mode.
+    last_memory_report : dict or None
+        What the runtime did about ``memory_policy=`` on the most recent :meth:`predict`.
+    last_model_version : str or None
+        The ``sha256:<hex>`` ``model_version`` the deployment reported on the most recent
+        remote or SageMaker :meth:`predict`. Cleared at the start of every call, so it never
+        describes an earlier one, and left ``None`` by a call that raises, so it never
+        describes a refused answer; ``None`` in local mode and from a deployment that
+        predates the field.
+
+    Examples
+    --------
+    >>> from synthefy import SynthefyNoriClient
+    >>> client = SynthefyNoriClient(api_key="...", model="nori-30m")  # or SYNTHEFY_NORI_API_KEY
+    >>> preds = client.predict(
+    ...     X_train=[[0.0, 1.0], [1.0, 0.0], [1.0, 1.0]],
+    ...     y_train=[1.0, 1.0, 2.0],
+    ...     X_test=[[2.0, 2.0]],
+    ... )
+    >>> len(preds)
+    1
+
+    Prediction intervals come from the same forward pass -- no conformal or
+    quantile-regression add-ons:
+
+    >>> lo, mid, hi = client.predict(          # doctest: +SKIP
+    ...     X_train, y_train, X_test,
+    ...     output_type="quantiles", quantiles=[0.1, 0.5, 0.9],
+    ... )
+
+    Run the same prediction locally (no API key, needs ``synthefy-nori``):
+
+    >>> client = SynthefyNoriClient(mode="local", model="nori-30m")  # doctest: +SKIP
+
+    Invoke a named SageMaker endpoint with ambient AWS credentials:
+
+    >>> client = SynthefyNoriClient(  # doctest: +SKIP
+    ...     mode="sagemaker", model="nori-30m",
+    ...     endpoint_name="nori-prod", region_name="us-east-1",
+    ...     s3_staging_uri="s3://customer-bucket/nori/invocations/",
+    ... )
+    """
+
+    def __init__(
+        self,
+        api_key: Optional[str] = None,
+        *,
+        mode: Mode = "remote",
+        timeout: float = DEFAULT_TIMEOUT_S,
+        max_retries: int = DEFAULT_MAX_RETRIES,
+        base_url: str = GATEWAY_BASE_URL,
+        endpoint: str = GATEWAY_ENDPOINT,
+        model: Any = _MODEL_REQUIRED,
+        auth_scheme: AuthScheme = DEFAULT_AUTH_SCHEME,
+        user_agent: Optional[str] = None,
+        endpoint_name: Optional[str] = None,
+        region_name: Optional[str] = None,
+        s3_staging_uri: Optional[str] = None,
+    ) -> None:
+        if mode == "auto":
+            raise ValueError(
+                "mode='auto' has been removed; choose one explicit execution mode: 'remote', 'sagemaker', or 'local'"
+            )
+        if mode not in _VALID_MODES:
+            raise ValueError(f"mode must be one of {_VALID_MODES}; got {mode!r}")
+        if auth_scheme not in _VALID_AUTH_SCHEMES:
+            raise ValueError(f"auth_scheme must be one of {_VALID_AUTH_SCHEMES}; got {auth_scheme!r}")
+        check_timeout_and_retries(timeout, max_retries)
+        if mode == "sagemaker":
+            if api_key is not None:
+                raise ValueError(
+                    "api_key is not used with mode='sagemaker'; boto3 resolves and "
+                    "SigV4-signs with the standard AWS credential chain"
+                )
+            if not endpoint_name or not endpoint_name.strip():
+                raise ValueError("endpoint_name is required with mode='sagemaker'")
+            if not s3_staging_uri or not s3_staging_uri.strip():
+                raise ValueError("s3_staging_uri is required with mode='sagemaker'")
+        elif endpoint_name is not None or region_name is not None or s3_staging_uri is not None:
+            raise ValueError("endpoint_name, region_name, and s3_staging_uri are only valid with mode='sagemaker'")
+        if model is _MODEL_REQUIRED or model is None:
+            raise ValueError(
+                "model is required -- there is no default; every request names a size. "
+                f"Choose one of: {', '.join(_MODEL_NAMES)} (a raw gateway slug is also accepted)."
+            )
+        self.mode: str = mode
+
+        # A SageMaker endpoint serves the released names, or the one fine-tuned name it was
+        # deployed with. The rule reads the raw argument, so a "synthefy/..." spelling of an
+        # unreleased name, a non-string, or a name the training job would refuse never reaches
+        # an endpoint.
+        if mode == "sagemaker":
+            is_released_name = isinstance(model, str) and _canonical_model_name(model) in SAGEMAKER_VARIANTS
+            is_fine_tuned_name = isinstance(model, str) and FINE_TUNED_MODEL_NAME_RE.fullmatch(model) is not None
+            if not (is_released_name or is_fine_tuned_name):
+                raise ValueError(
+                    "SageMaker model must name a published Nori inference specification "
+                    f"({', '.join(SAGEMAKER_VARIANTS)}) or a fine-tuned model deployed on the endpoint, "
+                    f"whose name is {FINE_TUNED_MODEL_NAME_RULE} "
+                    f"({FINE_TUNED_MODEL_NAME_PATTERN}); got {model!r}"
+                )
+        canonical_model = _canonical_model_name(model)
+        self._sagemaker_model = canonical_model
+        # Only a released Thinking name selects test-time compute. A fine-tuned model may carry
+        # "thinking" in its own name, so the Thinking-only refusals in predict() read this flag.
+        self._is_thinking = isinstance(model, str) and model in NORI_VARIANTS and _is_thinking_model(model)
+        # Nori 1.5 builds no context cache, so predict() refuses memory_policy fields that configure one.
+        self._model_without_context_cache = _released_model_without_context_cache(model)
+
+        # Nori Thinking runs only on hosted backends; never silently substitute a local model.
+        if self._is_thinking and mode == "local":
+            raise ValueError(
+                f"model={model!r} is a Nori Thinking (test-time-compute) variant, which runs only "
+                f"on the hosted Synthefy API. Set mode='remote' with a Baseten API key to use it "
+                "(mode='local' has no Thinking checkpoint)."
+            )
+
+        self.timeout = float(timeout)
+        self.max_retries = int(max_retries)
+        self.base_url = base_url
+        self.endpoint = endpoint
+        self.endpoint_name = endpoint_name
+        self.region_name = region_name
+        self.s3_staging_uri = s3_staging_uri
+        self._s3_staging_bucket: Optional[str] = None
+        self._s3_staging_prefix: Optional[str] = None
+        if s3_staging_uri is not None:
+            self._s3_staging_bucket, self._s3_staging_prefix = parse_s3_uri(
+                s3_staging_uri, name="s3_staging_uri", require_prefix=True
+            )
+        # self.model is the gateway model id sent in the remote body: a friendly name maps to its
+        # slug, and a raw slug passes through. In local mode we additionally resolve -- and
+        # validate -- the local checkpoint selector, which raises for a selector that has no local
+        # checkpoint rather than silently substituting the base model.
+        self.model, self._local_variant = _resolve_variant(model)
+        if mode == "local":
+            self._local_variant = _resolve_local_variant(model)
+        self.auth_scheme = auth_scheme
+        self.user_agent = user_agent or f"synthefy-python httpx/{httpx.__version__}"
+        self._aws_user_agent_extra = user_agent or AWS_USER_AGENT_EXTRA
+        self._aws_client: Optional[Any] = None
+        self._aws_s3_client: Optional[Any] = None
+        self._local_regressor: Optional[Any] = None
+        # Guards mutation of the cached local regressor's memory_policy/large_context_*
+        # attributes and its fit/predict/report sequence, the same shared-mutable-state
+        # hazard the server engine's own lock exists to prevent for its estimator.
+        self._local_regressor_lock = threading.Lock()
+
+        if mode == "sagemaker":
+            self.api_key = None
+            self.client = None
+            self._aws_client, self._aws_s3_client = create_aws_clients(
+                ("sagemaker-runtime", "s3"),
+                region_name=self.region_name,
+                timeout=self.timeout,
+                max_retries=self.max_retries,
+                user_agent_extra=self._aws_user_agent_extra,
+            )
+        elif mode == "remote":
+            if api_key is None:
+                api_key = os.getenv(NORI_API_KEY_ENV)
+            if not api_key:
+                raise ValueError(
+                    "A Synthefy Nori API key must be provided either as the "
+                    f"`api_key` argument or through the {NORI_API_KEY_ENV} "
+                    "environment variable when mode='remote'"
+                )
+            self.api_key: Optional[str] = api_key
+            self.client: Optional[httpx.Client] = httpx.Client(base_url=self.base_url)
+        else:  # local
+            self.api_key = api_key  # unused in local mode; may be None
+            self.client = None
+
+        #: What the runtime did about ``memory_policy=`` on the most recent :meth:`predict`, or
+        #: ``None`` if that call did not set one. Mirrors the local package's
+        #: ``NoriRegressor.memory_report_``: which fallback rung ran, the estimated and
+        #: resident cache sizes, the query chunk, any dropped context rows, plus which fields
+        #: hosted serving clamped, any coherence notes, and the chronological attempt history.
+        #:
+        #: Worth reading, because the rung is decided by available VRAM rather than by the
+        #: request -- it is not knowable before the prediction runs.
+        #:
+        #: Populated in local, remote, and AWS modes whenever a memory policy is requested.
+        self.last_memory_report: Optional[Dict[str, Any]] = None
+        #: The ``model_version`` digest the deployment reported on the most recent
+        #: :meth:`predict`, or ``None``. Set in remote and SageMaker modes from the response of
+        #: every call that returns, cleared at the start of every call and left ``None`` by a
+        #: call that raises; ``None`` in local mode and from a deployment that predates the
+        #: field. Compare it with a fine-tuning job's ``TrainingReport.model_version`` to prove
+        #: which model answered.
+        self.last_model_version: Optional[str] = None
+        # Per-internal-call reports for the most recent hosted multi-target
+        # prediction that explicitly set memory_policy.
+        self.last_multi_target_memory_reports: Optional[List[Dict[str, Any]]] = None
+        # Typed capability handshake for the most recent call that set a
+        # large-context policy, in every mode. Cleared before every call so an
+        # error or ordinary prediction cannot expose stale provenance.
+        self.last_large_context_report: Optional[Dict[str, Any]] = None
+        # Resolved autoregressive target-index permutations from the most recent
+        # multi-target call. Explicit orders are echoed and verified; automatic
+        # orders make order-sensitive experiments reproducible after the call.
+        self.last_target_orders: Optional[List[List[int]]] = None
+
+    # Context manager support (sync) and utilities
+    def __enter__(self) -> "SynthefyNoriClient":
+        return self
+
+    def __exit__(self, exc_type: Any, exc: Any, tb: Any) -> None:
+        self.close()
+
+    def close(self) -> None:
+        if self.client is not None:
+            try:
+                self.client.close()
+            except Exception:
+                pass
+        if self._aws_client is not None:
+            try:
+                self._aws_client.close()
+            except Exception:
+                pass
+        if self._aws_s3_client is not None:
+            try:
+                self._aws_s3_client.close()
+            except Exception:
+                pass
+        with self._local_regressor_lock:
+            self._local_regressor = None
+
+    def predict(
+        self,
+        X_train: MatrixLike,
+        y_train: VectorLike,
+        X_test: MatrixLike,
+        task: str = DEFAULT_TASK,
+        *,
+        as_pandas: bool = False,
+        output_type: str = DEFAULT_OUTPUT_TYPE,
+        quantiles: Optional[VectorLike] = None,
+        categorical_columns: Any = _CATEGORICAL_AUTO,
+        max_categorical_cardinality: int = _DEFAULT_MAX_CARDINALITY,
+        categorical_encoding: str = _DEFAULT_CATEGORICAL_ENCODING,
+        text_columns: Optional[Sequence[str]] = None,
+        svd_dim: Optional[int] = 128,
+        embedder: Any = "minilm",
+        text_device: Optional[str] = "auto",
+        discretize: Optional[str] = None,
+        categorical_levels: Optional[VectorLike] = None,
+        memory_policy: Optional[MemoryPolicyInput] = None,
+        large_context_policy: Optional[LargeContextPolicy] = None,
+        large_context_threshold: Optional[int] = None,
+        large_context_seed: Optional[int] = None,
+        large_context_holdout: Optional[LargeContextHoldout] = None,
+        multi_target_prediction_strategy: Optional[MultiTargetPredictionStrategy] = None,
+        multi_target_prediction_policy: Optional[MultiTargetPredictionPolicy] = None,
+        timeout: Optional[float] = None,
+        extra_headers: Optional[Dict[str, str]] = None,
+    ) -> Union[List[float], pd.Series, List[List[float]], pd.DataFrame, Dict[str, Any]]:
+        """Predict a value for each query row via in-context regression.
+
+        Parameters
+        ----------
+        X_train : array-like of shape (n_context, n_features)
+            Labeled context rows. Python lists, numpy arrays, or a pandas
+            DataFrame are accepted. In the DataFrame/DataFrame case, feature
+            roles follow ``categorical_columns`` and ``text_columns``;
+            otherwise all columns must be numeric. Missing values are allowed:
+            NaN in a numeric column is imputed server-side; NaN in a categorical
+            column stays NaN under ordinal encoding (imputed server-side) or
+            becomes its own indicator under one-hot.
+        y_train : array-like of shape (n_context,)
+            Target value for each context row. A Python list, numpy array, or a
+            pandas Series / single-column DataFrame is accepted. Hosted modes
+            require finite targets (no null, NaN, or infinity); only missing
+            feature values are imputed.
+        X_test : array-like of shape (n_query, n_features)
+            Query rows to predict. Must have the same number of features as
+            ``X_train``. When both ``X_train`` and ``X_test`` are DataFrames,
+            ``X_test`` is aligned to ``X_train``'s columns *by name* (column
+            order is irrelevant; a mismatch in the column sets raises), and any
+            categorical columns are encoded using mappings fitted only on
+            ``X_train``. Ordinal missing values remain NaN; rare and unseen
+            values use one bounded ``other`` code. Unsupported temporal values
+            and ambiguous high-cardinality strings raise with guidance instead
+            of being silently dropped or embedded.
+        task : str, default "regression"
+            The prediction task. Currently only ``"regression"`` is supported.
+        as_pandas : bool, default False
+            If ``True``, return pandas objects instead of lists: a ``Series``
+            for a point ``output_type`` (one value per ``X_test`` row) or a
+            ``DataFrame`` for ``output_type="quantiles"``/``"full"`` (one row per
+            ``X_test`` row, one column per tau level, named
+            ``"<target>[<level>]"``). Either way the result is named after
+            ``y_train`` (its ``Series`` name or single-column ``DataFrame``
+            label, else ``"prediction"``) and indexed by ``X_test``'s index when
+            ``X_test`` is a pandas object, so predictions join straight back.
+            Default is plain ``list``/``dict``.
+        output_type : {"mean", "median", "quantiles", "full"}, default "mean"
+            What to return from the model's predictive distribution. Shared
+            selectors have the same meanings as
+            ``synthefy_nori.NoriRegressor.predict``:
+
+            - ``"mean"`` (default) — the distribution mean, one value per query
+              row. Optimal for squared error / R², and byte-for-byte the
+              behavior of earlier client versions.
+            - ``"median"`` — the distribution median (MAE-optimal), one value
+              per query row.
+            - ``"quantiles"`` — **prediction intervals**: the predictive
+              quantiles at the levels in ``quantiles=``. Returns
+              ``(n_levels, n_query)`` — level-major, so
+              ``lo, mid, hi = client.predict(..., quantiles=[0.1, 0.5, 0.9])``
+              unpacks directly.
+            - ``"full"`` — the whole quantile bank as a dict with keys
+              ``"quantiles"`` (``(n_query, K)`` ascending values), ``"taus"``
+              (``(K,)`` levels) and ``"mean"`` (``(n_query,)``) — for CRPS /
+              interval scoring and calibration work. Its ``"mean"`` is the bank's
+              own mean, which can differ slightly from ``output_type="mean"``:
+              the point path runs the model's augmentation (Yeo-Johnson)
+              ensemble and the quantile bank deliberately does not. Inherited
+              from ``NoriRegressor``, so it is the same in every mode.
+
+            Quantiles come back in original-``y`` units, sorted to a valid
+            (monotone) quantile function per row. Everything other than
+            ``"mean"`` needs the model's predictive distribution, so it requires
+            local mode or a hosted deployment that serves distribution output —
+            see *Raises*.
+        quantiles : array-like of float or None, optional
+            Tau levels for ``output_type="quantiles"``, strictly inside
+            ``(0, 1)`` — e.g. ``[0.1, 0.5, 0.9]`` for an 80% interval around the
+            median. Required by (and valid only with) ``output_type="quantiles"``;
+            the returned rows follow the order given here, so the order is
+            yours to choose.
+        categorical_columns : {"auto", None} or sequence of column names, default "auto"
+            DataFrame categorical-feature policy. ``"auto"`` encodes every
+            remaining non-numeric, non-text column. A sequence encodes exactly
+            those columns and raises for any other non-numeric column. ``None``
+            disables categorical inference. Explicit text and categorical
+            declarations must not overlap.
+        max_categorical_cardinality : int, default 100
+            Maximum retained training levels per categorical. An automatically
+            inferred column above the cap raises because it may be an identifier
+            or free text. An explicitly named categorical keeps its top-K levels;
+            rarer and unseen values share the bounded ``other`` value.
+        categorical_encoding : {"ordinal", "onehot"}, default "ordinal"
+            How non-numeric columns are encoded (DataFrame inputs only).
+            ``"ordinal"`` maps each categorical column to one column of integer
+            codes, with missing values kept as NaN and rare/unseen values mapped
+            to one bounded ``other`` code;
+            it benchmarked at least as well as one-hot across 35 categorical
+            datasets and never widens the feature matrix. ``"onehot"``
+            reproduces the previous client behavior (indicator columns per
+            category, missing values get their own indicator).
+        text_columns : sequence of str or None, optional
+            Free-text columns to embed. When set (``X_train``/``X_test`` must be
+            DataFrames), those columns are embedded by a frozen sentence encoder,
+            reduced to ``svd_dim`` columns with a TruncatedSVD fit on ``X_train``,
+            and appended as numeric features — the request still carries a fully
+            numeric matrix, so every backend works unchanged. Needs the ``text``
+            extra (``pip install "synthefy[text]"``). ``None`` (default) leaves
+            text embedding disabled. It may not overlap ``categorical_columns``.
+        svd_dim : int or None, default 128
+            Number of SVD text columns appended (``None`` = full raw embedding).
+            Ignored when ``text_columns`` is None.
+        embedder : str, default "minilm"
+            Sentence-encoder short name (e.g. ``"minilm"``, ``"qwen4b"``) for
+            ``text_columns``. Ignored when ``text_columns`` is None.
+        text_device : str or None, default "auto"
+            Device for a named sentence encoder used by ``text_columns``.
+            ``"auto"`` (and ``None``) prefers CUDA/ROCm, then Apple MPS, and
+            falls back to CPU. Pass an explicit PyTorch device string such as
+            ``"cpu"`` or ``"cuda:1"`` to override selection. Ignored when
+            ``text_columns`` is None or ``embedder`` is a callable/preloaded
+            encoder object, which controls its own placement.
+        discretize : str or None, optional
+            Declare a categorical/ordinal **target** (a 1–5 rating, a count, a
+            quality score) and pick the strategy that maps each prediction
+            onto the target's level lattice, so every returned value is one
+            the target can actually take. Strictly opt-in: nothing is snapped
+            unless ``discretize=`` or ``categorical_levels=`` is passed. The
+            strategy set is the installed ``synthefy-nori``'s: ``"map-cell"``
+            (accuracy-optimal), ``"median-cell"`` (MAE-optimal),
+            ``"snap-mean"``, ``"snap-median"``, ``"expected-level"`` (a
+            lattice-informed CONTINUOUS value, not on the lattice), and
+            ``"prior-match"``. Which one is right depends on the metric you are
+            scored on; see ``synthefy_nori.discretize``. Local mode runs them in
+            process, remote and SageMaker send them to the deployment, and the
+            response names the strategy that ran so a deployment too old to
+            support the field raises rather than returning continuous
+            predictions as if they were levels. Nori Thinking deployments
+            refuse the field. A ``NaN`` prediction stays ``NaN``.
+        categorical_levels : array-like of float or None, optional
+            The complete set of values the target can take — its label set,
+            in classification terms. Values must be numeric; order and
+            duplicates are irrelevant (the set is normalized to sorted
+            distinct values). Defaults to the distinct values of
+            ``y_train``, which is leak-safe; pass it explicitly when the
+            context may under-cover the true scale (e.g. a 1–5 rating whose
+            context has no 1s). Passing it alone activates discretization with
+            the default strategy (``"map-cell"``) in every mode.
+        memory_policy : str, dict, or MemoryPolicy, optional
+            Serving-memory policy, at parity with the local package's
+            ``NoriRegressor(memory_policy=...)``. A preset name -- ``"exact"`` (never
+            trade accuracy for memory), ``"max_context"`` (fit the largest table you
+            can), ``"off"`` (no cache) -- a dict of individual fields, e.g.
+            ``{"cache_dtype": "int8"}``, or a
+            ``synthefy_nori.inference.memory_policy.MemoryPolicy`` instance if you have
+            ``synthefy-nori`` installed. The model is the schema: this client does not
+            redeclare the fields, so there is nothing here to drift from it.
+
+            Nori does in-context regression, so your table is *input*: one prediction
+            keeps a per-layer key/value cache over every context row, and that cache --
+            not the model -- is what exhausts GPU memory on a big table. This decides what
+            to do about it. Omit it for defaults that suit almost every request.
+
+            Works in every mode. Remote/SageMaker, the policy is validated server-side and what it
+            actually did comes back in :attr:`last_memory_report`; an incoherent policy is
+            rejected before any inference is paid for. Local, it needs
+            ``synthefy-nori >= 0.13.0`` and raises :class:`ImportError` with an upgrade
+            hint on older builds.
+
+            One field behaves differently over the network: ``elements_budget``. The cache
+            is only built when the query set spans more than one chunk, which at default
+            settings needs far more query rows than the hosted request-body limit allows
+            (~64 MiB) -- so lowering ``elements_budget`` is what lets a hosted caller reach
+            the cached path at all.
+        large_context_policy : str, list of str, callable, or None
+            Select context rows explicitly when `len(X_train)` exceeds
+            `large_context_threshold`. Off by default. Remote and SageMaker
+            modes forward one policy-name string or a list of up to eight names;
+            a list is scored on a train holdout and deploys its per-table winner.
+            The server accepts
+            every built-in in its installed Nori registry, including `random`,
+            `cluster_route`, `cluster_route_g4`, `safeboost`, and `boost`.
+            Parameter strings such as `safeboost[nu=0.25]` are supported.
+            Local mode additionally accepts a custom callable.
+
+            Point output only: `mean` and `median` are supported;
+            `quantiles`/`full` and Nori Thinking variants fail before
+            inference. After a call, `last_large_context_report` records
+            whether the policy engaged, its resolved window and internal call
+            count. Hosted modes require that report as a capability handshake.
+        large_context_threshold : int or None, optional
+            Context-row count strictly above which the selected policy engages.
+            Valid range 1 through 10000000. `None` (the default) resolves to 50000
+            once `large_context_policy` is set; passing it without a policy raises,
+            rather than being silently dropped.
+        large_context_seed : int or None, optional
+            Deterministic policy seed in the range 0 through 2**32 - 1. `None` (the
+            default) resolves to 0 once `large_context_policy` is set; passing it
+            without a policy raises, rather than being silently dropped.
+        large_context_holdout : {"random", "tail"} or None, optional
+            Validation split for a policy list. `random` is the default for IID
+            rows. `tail` holds out the final rows and keeps future chronological
+            rows out of every candidate context. Invalid with a single policy.
+
+            Client calls are one-shot: every call supplies and fits `X_train`
+            again. No hidden local or hosted cross-request context cache is
+            created, and `large_context_cache_entries` is intentionally not a
+            client option. Use `NoriRegressor` directly for explicit
+            fit-once/predict-many local state.
+        timeout : float or None, optional
+            Override the client timeout for this request (remote mode only).
+            It is ignored with a warning for SageMaker, where timeout is fixed
+            on the boto3 client at construction.
+        extra_headers : dict of str to str, optional
+            Additional HTTP headers to send with the request (remote mode only;
+            ignored in local mode and rejected for SageMaker deployments).
+
+        Returns
+        -------
+        list of float, or pandas.Series if ``as_pandas=True``
+            For a point ``output_type`` (``"mean"``/``"median"``):
+            one predicted value per row of ``X_test``.
+        list of list of float, or pandas.DataFrame if ``as_pandas=True``
+            For ``output_type="quantiles"``: the quantiles as
+            ``(n_levels, n_query)`` — level-major, matching
+            ``NoriRegressor.predict`` — or, as pandas, a ``(n_query, n_levels)``
+            frame with one column per level.
+        dict
+            For ``output_type="full"``: ``{"quantiles", "taus", "mean"}``, with
+            lists (or a ``DataFrame`` and a ``Series`` under ``as_pandas=True``).
+
+        Raises
+        ------
+        ValueError
+            If the input shapes are inconsistent (e.g. ``X_train`` and
+            ``y_train`` row counts differ, or ``X_test`` has a different number
+            of features than ``X_train``); if DataFrame ``X_train``/``X_test``
+            have mismatched column sets or duplicate column names; if declared
+            categorical/text columns are missing or overlap; if an undeclared
+            non-numeric column is ambiguous under an explicit/disabled policy;
+            if an automatically inferred categorical exceeds the cardinality cap;
+            if a column is
+            numeric in one of ``X_train``/``X_test`` but not the other; if a
+            column has unsupported ``timedelta`` dtype; if a non-DataFrame input
+            contains non-numeric values; if hosted targets contain null, NaN,
+            or infinity; if ``categorical_encoding`` is not one
+            of ``"ordinal"``/``"onehot"``; if featurization leaves no usable
+            columns; if ``output_type`` is not one of the four names, or
+            ``quantiles`` is missing/empty/outside ``(0, 1)`` for
+            ``output_type="quantiles"``, or is passed with a different
+            ``output_type``, or is combined with
+            ``discretize=``/``categorical_levels=``; or if the hosted deployment
+            does not serve the requested ``output_type`` or ``discretize`` (it
+            echoes back what it honored, so a deployment that ignored either
+            raises here instead of silently returning means or continuous values
+            as if they were what you asked for);
+            or if HTTP-only ``extra_headers``/per-call ``timeout`` are passed in
+            a SageMaker deployment. Per-call ``timeout`` is instead ignored
+            with a warning for SageMaker.
+        ImportError
+            In local mode, if the optional ``synthefy-nori`` package is not
+            installed (with guidance to ``pip install synthefy-nori``), or
+            if it is too old for ``discretize=``/``categorical_levels=`` or for
+            a non-default ``output_type`` (with an upgrade hint).
+        NotImplementedError
+            If the checkpoint cannot produce a predictive distribution — in
+            local mode, ``output_type="quantiles"``/``"full"`` on a
+            ``bar_distribution`` checkpoint (the default pinball checkpoint is
+            required); raised by ``synthefy-nori``.
+        BadRequestError
+            In remote mode, if the server rejects the request (HTTP 400),
+            carrying the server's ``error`` string as the message.
+        AuthenticationError
+            In remote mode, if the API key is missing or invalid (HTTP 401).
+        ValueError
+            In remote mode, if ``memory_policy=`` was sent and the deployment did not report back
+            on it -- meaning it was silently ignored, so the policy had no effect.
+        ImportError
+            In local mode, if ``memory_policy=`` was given but the installed ``synthefy-nori``
+            predates it.
+        APITimeoutError
+            In remote mode, if the request times out.
+        APIConnectionError
+            In remote mode, if a network/connection error occurs.
+        """
+        # These reports belong to one prediction attempt. Clear them before
+        # validation so even a rejected call cannot expose an earlier call's
+        # provenance as its own.
+        self.last_memory_report = None
+        self.last_multi_target_memory_reports = None
+        self.last_large_context_report = None
+        self.last_target_orders = None
+        self.last_model_version = None
+
+        # Validate the output contract first: a bad output_type/quantiles pair is
+        # caught before the expensive steps below (loading a sentence encoder for
+        # text_columns, a checkpoint, or a paid network round-trip).
+        if self.mode == "sagemaker" and extra_headers is not None:
+            raise ValueError(
+                "extra_headers is only valid for HTTP remote mode; SageMaker requests are SigV4-signed by boto3"
+            )
+        if self.mode == "sagemaker" and timeout is not None:
+            warnings.warn(
+                "Per-prediction timeout is ignored for SageMaker; asynchronous polling "
+                "uses the timeout configured on SynthefyNoriClient.",
+                UserWarning,
+                stacklevel=2,
+            )
+        quantile_levels = _validate_output_type(
+            output_type,
+            quantiles,
+            discretizing=discretize is not None or categorical_levels is not None,
+        )
+        if self.mode != "local":
+            _validate_hosted_targets(y_train)
+        is_multi_target = _validate_multi_target_controls(
+            y_train,
+            output_type=output_type,
+            strategy=multi_target_prediction_strategy,
+            policy=multi_target_prediction_policy,
+            large_context_policy=large_context_policy,
+            discretizing=discretize is not None or categorical_levels is not None,
+            is_thinking=self._is_thinking,
+            mode=self.mode,
+        )
+        if is_multi_target and output_type == "samples" and as_pandas:
+            raise ValueError(
+                "as_pandas=True is not supported for 3D multi-target samples; use the default nested-list return."
+            )
+        _validate_large_context_controls(
+            policy=large_context_policy,
+            threshold=large_context_threshold,
+            seed=large_context_seed,
+            holdout=large_context_holdout,
+            output_type=output_type,
+            is_thinking=self._is_thinking,
+            mode=self.mode,
+        )
+        request_categorical_columns = categorical_columns
+        if _has_declared_text_columns(text_columns):
+            # Embed free-text columns client-side into numeric SVD features, then
+            # send the widened numeric matrix through the normal request path
+            # (works identically for local / remote / AWS backends).
+            X_train, X_test = _widen_text_columns(
+                X_train,
+                X_test,
+                text_columns,
+                svd_dim,
+                embedder,
+                max_categorical_cardinality,
+                categorical_encoding,
+                text_device,
+                categorical_columns,
+            )
+            # The widened frames are already numeric; do not resolve the original
+            # named declarations a second time in _build_nori_request.
+            request_categorical_columns = None
+        # Optional controls stay absent (None) from an ordinary request, preserving its
+        # historical wire bytes; _build_nori_request passes all three together into the
+        # constructor so there is no assignment-order dependency on the request model's
+        # "threshold/seed require a policy" validator. _validate_large_context_controls
+        # above already guarantees threshold/seed are None here whenever policy is None.
+        #
+        # When a policy IS set, an omitted threshold/seed resolves to the documented
+        # default and is still sent explicitly -- the wire request always carries the
+        # values that actually ran, never leaving the caller to infer them.
+        if large_context_policy is not None:
+            resolved_large_context_threshold = (
+                DEFAULT_LARGE_CONTEXT_THRESHOLD if large_context_threshold is None else int(large_context_threshold)
+            )
+            resolved_large_context_seed = (
+                DEFAULT_LARGE_CONTEXT_SEED if large_context_seed is None else int(large_context_seed)
+            )
+            resolved_large_context_holdout = (
+                (large_context_holdout or DEFAULT_LARGE_CONTEXT_HOLDOUT)
+                if isinstance(large_context_policy, list)
+                else None
+            )
+        else:
+            resolved_large_context_threshold = None
+            resolved_large_context_seed = None
+            resolved_large_context_holdout = None
+        request = _build_nori_request(
+            X_train,
+            y_train,
+            X_test,
+            task,
+            categorical_columns=request_categorical_columns,
+            max_categorical_cardinality=max_categorical_cardinality,
+            categorical_encoding=categorical_encoding,
+            output_type=output_type,
+            quantile_levels=quantile_levels,
+            memory_policy=memory_policy,
+            large_context_policy=large_context_policy,
+            large_context_threshold=resolved_large_context_threshold,
+            large_context_seed=resolved_large_context_seed,
+            large_context_holdout=resolved_large_context_holdout,
+            multi_target_prediction_strategy=multi_target_prediction_strategy,
+            multi_target_prediction_policy=multi_target_prediction_policy,
+            array_backed=self.mode == "sagemaker",
+        )
+        if self._model_without_context_cache is not None:
+            _refuse_cache_settings_without_a_context_cache(
+                request.memory_policy, model=self._model_without_context_cache
+            )
+        # Every hosted response is parsed below, and _parse_predict_response records its
+        # model_version before the shape checks and pandas shaping that follow it. A call
+        # that raises at any point clears it, so last_model_version only ever describes a
+        # result this method returned.
+        try:
+            if is_multi_target:
+                return self._predict_multi_target_request(
+                    request,
+                    output_type=output_type,
+                    timeout=timeout,
+                    extra_headers=extra_headers,
+                    as_pandas=as_pandas,
+                    X_test=X_test,
+                    y_train=y_train,
+                )
+            # Distribution output is shaped separately: it is not one value per query
+            # row, so it does not flow through the point-prediction path below.
+            if output_type in _DISTRIBUTION_OUTPUT_TYPES:
+                if self.mode == "local":
+                    q_by_row, taus, mean = self._predict_local_distribution(
+                        request, output_type=output_type, quantile_levels=quantile_levels
+                    )
+                elif self.mode == "sagemaker":
+                    q_by_row, taus, mean = self._predict_aws_distribution(
+                        request,
+                        output_type=output_type,
+                    )
+                else:
+                    q_by_row, taus, mean = self._predict_remote_distribution(
+                        request,
+                        output_type=output_type,
+                        timeout=timeout,
+                        extra_headers=extra_headers,
+                    )
+                if output_type == "quantiles":
+                    return _shape_quantiles(
+                        q_by_row,
+                        quantile_levels or [],
+                        as_pandas=as_pandas,
+                        X_test=X_test,
+                        y_train=y_train,
+                    )
+                return _shape_full(
+                    q_by_row,
+                    taus,
+                    mean,
+                    as_pandas=as_pandas,
+                    X_test=X_test,
+                    y_train=y_train,
+                )
+
+            if self.mode == "local":
+                predictions = self._predict_local(
+                    request,
+                    output_type=output_type,
+                    discretize=discretize,
+                    categorical_levels=categorical_levels,
+                )
+            else:
+                # Remote and SageMaker both send these to the server, which owns the
+                # arithmetic: the strategies need the model's own predictive distribution,
+                # and only the deployment has it without the caller installing torch.
+                request.discretize = discretize
+                request.categorical_levels = _wire_levels(categorical_levels)
+                if self.mode == "sagemaker":
+                    predictions = self._predict_aws(
+                        request,
+                        output_type=output_type,
+                    )
+                else:
+                    predictions = self._predict_remote(
+                        request,
+                        output_type=output_type,
+                        timeout=timeout,
+                        extra_headers=extra_headers,
+                    )
+            if as_pandas:
+                return pd.Series(
+                    predictions,
+                    index=_result_index(X_test),
+                    name=_target_name(y_train),
+                    dtype=float,
+                )
+            return predictions
+        except BaseException:
+            self.last_model_version = None
+            raise
+
+    # ------------------------------------------------------------------ #
+    # Local mode
+    # ------------------------------------------------------------------ #
+
+    def _predict_multi_target_request(
+        self,
+        request: NoriPredictRequest,
+        *,
+        output_type: str,
+        timeout: Optional[float],
+        extra_headers: Optional[Dict[str, str]],
+        as_pandas: bool,
+        X_test: MatrixLike,
+        y_train: VectorLike,
+    ) -> Union[List[List[float]], pd.DataFrame]:
+        """Run and shape the single multi-target path for every transport."""
+        if self.mode == "local":
+            joint = self._local_regressor_predict(request, output_type=output_type, quantile_levels=None)
+        else:
+            parsed = (
+                self._invoke_sagemaker_predict(request, output_type=output_type)
+                if self.mode == "sagemaker"
+                else self._post_predict(
+                    request,
+                    output_type=output_type,
+                    timeout=timeout,
+                    extra_headers=extra_headers,
+                )
+            )
+            joint = self._parse_hosted_multi_target(request, parsed=parsed, output_type=output_type)
+
+        joint_array = np.asarray(joint, dtype=float)
+        if not as_pandas:
+            return joint_array.tolist()
+        columns = (
+            list(y_train.columns)
+            if isinstance(y_train, pd.DataFrame)
+            else [f"prediction_{i}" for i in range(joint_array.shape[1])]
+        )
+        return pd.DataFrame(
+            joint_array,
+            index=_result_index(X_test),
+            columns=columns,
+        )
+
+    def _local_regressor_predict(
+        self,
+        request: NoriPredictRequest,
+        *,
+        output_type: str,
+        quantile_levels: Optional[List[float]],
+        discretize: Optional[str] = None,
+        categorical_levels: Optional[VectorLike] = None,
+    ) -> Any:
+        """Run local inference through :class:`NoriRegressor` when its stateful API is needed.
+
+        The functional ``synthefy_nori.predict`` cannot express ``output_type``
+        (it forwards ``**kwargs`` to the constructor) or expose a per-call
+        large-context report. Those calls fit/predict the estimator directly. Returns
+        whatever ``NoriRegressor.predict`` returns for that ``output_type``: a
+        point array, a ``(n_levels, n_query)`` quantile array, or the ``"full"``
+        dict.
+        """
+        regressor_cls = _load_local_regressor()
+        import inspect
+
+        if "output_type" not in inspect.signature(regressor_cls.predict).parameters:
+            raise ImportError(
+                f"output_type={output_type!r} requires a newer synthefy-nori (with "
+                "output_type= on NoriRegressor.predict, added in 0.6.0). Upgrade "
+                "with: pip install -U synthefy-nori."
+            )
+        init_kwargs: Dict[str, Any] = {}
+        if self._local_variant is not None:
+            # Same upgrade guard as the functional path: the variant selector is a
+            # constructor argument here, so check it before an opaque TypeError.
+            if "model" not in inspect.signature(regressor_cls).parameters:
+                raise ImportError(
+                    f"Local Nori variant {self._local_variant!r} requires a newer "
+                    "synthefy-nori (with the model= selector). Upgrade with: "
+                    "pip install -U synthefy-nori."
+                )
+            init_kwargs["model"] = self._local_variant
+        is_multi_target = np.asarray(request.y_train, dtype=float).ndim == 2
+        if request.memory_policy is not None:
+            _require_local_memory_policy_capabilities(request.memory_policy)
+            # NoriRegressor belongs to another package and expects its own MemoryPolicy
+            # class (or a plain input), not this client's equivalent pydantic class.
+            init_kwargs["memory_policy"] = (
+                request.memory_policy
+                if isinstance(request.memory_policy, str)
+                else request.memory_policy.model_dump(exclude_unset=True)
+            )
+        if request.large_context_policy is not None:
+            if not _local_large_context_available():
+                raise ImportError(
+                    "large_context_policy requires a newer synthefy-nori "
+                    "with the large-context estimator controls. Upgrade with: "
+                    "pip install -U synthefy-nori."
+                )
+            init_kwargs.update(
+                {
+                    "large_context_policy": request.large_context_policy,
+                    "large_context_threshold": (
+                        request.large_context_threshold
+                        if request.large_context_threshold is not None
+                        else DEFAULT_LARGE_CONTEXT_THRESHOLD
+                    ),
+                    "large_context_seed": (
+                        request.large_context_seed
+                        if request.large_context_seed is not None
+                        else DEFAULT_LARGE_CONTEXT_SEED
+                    ),
+                    **(
+                        {"large_context_holdout": request.large_context_holdout or DEFAULT_LARGE_CONTEXT_HOLDOUT}
+                        if isinstance(request.large_context_policy, list)
+                        else {}
+                    ),
+                    # The client API is one-shot: every call fits again. A
+                    # caller that needs fit-once/predict-many cache control
+                    # should use NoriRegressor directly.
+                    "large_context_cache_entries": 1,
+                }
+            )
+        if (
+            is_multi_target
+            or request.multi_target_prediction_strategy is not None
+            or request.multi_target_prediction_policy is not None
+        ):
+            # A matrix-valued y_train needs the multi-target constructor arguments whether or not
+            # the caller set one, so the same signature probe as model= above: a build that
+            # predates multi-target would otherwise fit a 2-D target and fail later with a shape
+            # error, or return a wrong result, naming no fix.
+            if "multi_target_prediction_strategy" not in inspect.signature(regressor_cls).parameters:
+                raise ImportError(
+                    "Matrix-valued y_train (multi-target regression) requires a newer synthefy-nori "
+                    "with multi_target_prediction_strategy= on NoriRegressor. Upgrade with: "
+                    "pip install -U synthefy-nori."
+                )
+        if request.multi_target_prediction_strategy is not None:
+            init_kwargs["multi_target_prediction_strategy"] = request.multi_target_prediction_strategy
+        if request.multi_target_prediction_policy is not None:
+            init_kwargs["multi_target_prediction_policy"] = request.multi_target_prediction_policy.model_dump(
+                exclude_unset=True
+            )
+        # The net under the named probes above: every keyword about to reach the constructor
+        # must be one it declares, so a future forwarded field cannot regress to the opaque
+        # TypeError the probes exist to prevent. Skipped when the constructor takes **kwargs,
+        # because then the signature cannot say what it accepts.
+        init_params = inspect.signature(regressor_cls).parameters
+        if not any(p.kind is inspect.Parameter.VAR_KEYWORD for p in init_params.values()):
+            unsupported = sorted(set(init_kwargs) - set(init_params))
+            if unsupported:
+                raise ImportError(
+                    f"{', '.join(unsupported)} require a newer synthefy-nori (the installed "
+                    "NoriRegressor does not accept them). Upgrade with: pip install -U synthefy-nori."
+                )
+        # Everything below mutates or reads the cached, shared regressor's
+        # memory_policy/large_context_* attributes and its fit/predict/report
+        # sequence -- one lock per client instance, so a concurrent call on the
+        # same SynthefyNoriClient cannot interleave with this one's fit/predict.
+        with self._local_regressor_lock:
+            if self._local_regressor is None:
+                self._local_regressor = regressor_cls(**init_kwargs)
+            regressor = self._local_regressor
+            if hasattr(regressor, "memory_policy"):
+                regressor.memory_policy = init_kwargs.get("memory_policy")
+            if hasattr(regressor, "large_context_policy"):
+                # Re-declare the full mutable setting set on every estimator call.
+                # This clears a previous policy before a later median/default call.
+                # hasattr only proves the attribute is readable, not settable (a future
+                # read-only property would pass it and then raise on assignment), so
+                # translate that into the same upgrade-hint ImportError as the signature
+                # probe above rather than letting an AttributeError crash the call.
+                try:
+                    regressor.large_context_policy = request.large_context_policy
+                    regressor.large_context_threshold = (
+                        request.large_context_threshold
+                        if request.large_context_threshold is not None
+                        else DEFAULT_LARGE_CONTEXT_THRESHOLD
+                    )
+                    regressor.large_context_seed = (
+                        request.large_context_seed
+                        if request.large_context_seed is not None
+                        else DEFAULT_LARGE_CONTEXT_SEED
+                    )
+                    if isinstance(request.large_context_policy, list):
+                        regressor.large_context_holdout = request.large_context_holdout or DEFAULT_LARGE_CONTEXT_HOLDOUT
+                    elif hasattr(regressor, "large_context_holdout"):
+                        regressor.large_context_holdout = DEFAULT_LARGE_CONTEXT_HOLDOUT
+                    regressor.large_context_cache_entries = 1
+                except AttributeError as exc:
+                    raise ImportError(
+                        "large_context_policy requires a newer synthefy-nori "
+                        "with the large-context estimator controls. Upgrade with: "
+                        "pip install -U synthefy-nori."
+                    ) from exc
+            if hasattr(regressor, "multi_target_prediction_strategy"):
+                regressor.multi_target_prediction_strategy = (
+                    request.multi_target_prediction_strategy or DEFAULT_MULTI_TARGET_PREDICTION_STRATEGY
+                )
+                regressor.multi_target_prediction_policy = (
+                    request.multi_target_prediction_policy.model_dump(exclude_unset=True)
+                    if request.multi_target_prediction_policy is not None
+                    else None
+                )
+            regressor.fit(request.X_train, request.y_train)
+            predict_kwargs: Dict[str, Any] = {
+                "output_type": output_type,
+                "quantiles": quantile_levels,
+            }
+            if discretize is not None:
+                predict_kwargs["discretize"] = discretize
+            if categorical_levels is not None:
+                predict_kwargs["categorical_levels"] = categorical_levels
+            result = regressor.predict(request.X_test, **predict_kwargs)
+            self.last_target_orders = (
+                [list(order) for order in getattr(regressor, "target_orders_", [])]
+                if np.asarray(request.y_train, dtype=float).ndim == 2
+                and (request.multi_target_prediction_strategy or DEFAULT_MULTI_TARGET_PREDICTION_STRATEGY)
+                == "autoregressive"
+                else None
+            )
+            if request.memory_policy is not None:
+                report = getattr(regressor, "memory_report_", None)
+                if report is None:
+                    raise ValueError(
+                        "memory_policy= was sent to local synthefy-nori but no "
+                        "memory_report_ came back. The installed runtime predates "
+                        "this capability or ignored the policy; upgrade "
+                        "synthefy-nori or omit memory_policy=."
+                    )
+                self.last_memory_report = MemoryReport.model_validate(report).model_dump()
+            if request.large_context_policy is not None:
+                self.last_large_context_report = _normalized_large_context_report(
+                    request, getattr(regressor, "large_context_report_", None)
+                )
+            return result
+
+    def _predict_local_distribution(
+        self,
+        request: NoriPredictRequest,
+        *,
+        output_type: str,
+        quantile_levels: Optional[List[float]],
+    ) -> Tuple["np.ndarray", "np.ndarray", "np.ndarray"]:
+        """Local distribution output, normalized to ``(quantiles_by_row, taus, mean)``.
+
+        ``NoriRegressor`` returns ``output_type="quantiles"`` level-major
+        (``(n_levels, n_query)``) but ``"full"`` row-major; both are normalized to
+        row-major here so one shaping path serves local and remote alike.
+        """
+        result = self._local_regressor_predict(request, output_type=output_type, quantile_levels=quantile_levels)
+        n_query = len(request.X_test)
+        if output_type == "quantiles":
+            levels = quantile_levels or []
+            by_level = np.asarray(result, dtype=float)  # (n_levels, n_query)
+            if by_level.shape != (len(levels), n_query):
+                raise ValueError(
+                    "synthefy-nori returned a quantile array of shape "
+                    f"{by_level.shape}, expected {(len(levels), n_query)}."
+                )
+            # taus/mean belong to output_type="full" only; an empty array keeps the
+            # tuple shape without a second forward pass.
+            empty = np.asarray([], dtype=float)
+            return by_level.T, empty, empty
+        q_by_row = np.asarray(result["quantiles"], dtype=float)
+        taus = np.asarray(result["taus"], dtype=float)
+        if q_by_row.shape != (n_query, taus.shape[0]):
+            raise ValueError(
+                "synthefy-nori returned a quantile bank of shape "
+                f"{q_by_row.shape}, expected {(n_query, taus.shape[0])}."
+            )
+        return q_by_row, taus, np.asarray(result["mean"], dtype=float)
+
+    def _predict_local(
+        self,
+        request: NoriPredictRequest,
+        *,
+        output_type: str = DEFAULT_OUTPUT_TYPE,
+        discretize: Optional[str] = None,
+        categorical_levels: Optional[VectorLike] = None,
+    ) -> List[float]:
+        if (
+            output_type != DEFAULT_OUTPUT_TYPE
+            or request.large_context_policy is not None
+            or request.memory_policy is not None
+        ):
+            # "median" is a point output but still needs the estimator API
+            # (see _local_regressor_predict). Discretization cannot reach here:
+            # _validate_output_type rejects that combination up front.
+            if (discretize is not None or categorical_levels is not None) and not _local_discretize_available():
+                raise ImportError(
+                    "Categorical-target discretization (discretize=/"
+                    "categorical_levels=) requires a newer synthefy-nori. "
+                    "Upgrade with: pip install -U synthefy-nori."
+                )
+            return _as_float_list(
+                self._local_regressor_predict(
+                    request,
+                    output_type=output_type,
+                    quantile_levels=None,
+                    discretize=discretize,
+                    categorical_levels=categorical_levels,
+                )
+            )
+        local_predict = _load_local_predict()
+        extra: Dict[str, Any] = {}
+        if discretize is not None or categorical_levels is not None:
+            if not _local_discretize_available():
+                raise ImportError(
+                    "Categorical-target discretization (discretize=/"
+                    "categorical_levels=) requires a newer synthefy-nori. "
+                    "Upgrade with: pip install -U synthefy-nori."
+                )
+            if discretize is not None:
+                extra["discretize"] = discretize
+            if categorical_levels is not None:
+                extra["categorical_levels"] = categorical_levels
+        if self._local_variant is not None:
+            # Selecting a non-base local variant needs a synthefy-nori that exposes the model=
+            # selector; fail with a clear upgrade hint instead of an opaque TypeError on old builds.
+            import inspect
+
+            if "model" not in inspect.signature(local_predict).parameters:
+                raise ImportError(
+                    f"Local Nori variant {self._local_variant!r} requires a newer synthefy-nori "
+                    "(with the model= selector). Upgrade with: pip install -U synthefy-nori."
+                )
+            extra["model"] = self._local_variant
+        result = local_predict(
+            request.X_train,
+            request.y_train,
+            request.X_test,
+            task=request.task,
+            **extra,
+        )
+        return _as_float_list(result)
+
+    # ------------------------------------------------------------------ #
+    # Hosted transports (Baseten HTTP and AWS SageMaker)
+    # ------------------------------------------------------------------ #
+
+    def _parse_predict_response(
+        self,
+        request: NoriPredictRequest,
+        *,
+        output_type: str,
+        response_data: Dict[str, Any],
+    ) -> NoriPredictResponse:
+        """Validate a response shared by both hosted transports."""
+        parsed = NoriPredictResponse(**response_data)
+        is_multi_target = np.asarray(request.y_train, dtype=float).ndim == 2
+        if not is_multi_target:
+            prediction_shape = np.asarray(parsed.predictions, dtype=float).shape
+            expected_shape = (len(request.X_test),)
+            if prediction_shape != expected_shape:
+                raise ValueError(
+                    f"Deployment returned prediction shape {prediction_shape}; expected "
+                    f"{expected_shape}, one value per query row for a single target."
+                )
+        if request.memory_policy is not None:
+            # The capability handshake. A deployment that predates `memory_policy` ignores the field
+            # and answers with default-memory predictions that are numerically valid, so
+            # nothing in `predictions` reveals that the policy was dropped. The server echoes
+            # `memory_report` precisely so this is detectable -- refuse to let a caller believe
+            # a policy took effect when it did not.
+            if is_multi_target:
+                if not parsed.multi_target_memory_reports:
+                    raise ValueError(
+                        "memory_policy= was sent for a multi-target request but the "
+                        "deployment omitted multi_target_memory_reports. The endpoint "
+                        "ignored the policy or predates multi-target memory reporting."
+                    )
+                self.last_multi_target_memory_reports = [
+                    report.model_dump() for report in parsed.multi_target_memory_reports
+                ]
+            elif parsed.memory_report is None:
+                raise ValueError(
+                    "memory_policy= was sent but the deployment did not report back on it, which "
+                    "means it was ignored: the predictions are valid but the policy had no "
+                    "effect. The endpoint is most likely running a build from before "
+                    "memory_policy= was supported. Omit memory_policy= to use the deployment's defaults."
+                )
+            # Validated through MemoryReport, exposed as a dict: the library's own
+            # memory_report_ is a dict, and `report["rung"]` is how it is read.
+            else:
+                self.last_memory_report = parsed.memory_report.model_dump()
+        if request.large_context_policy is not None:
+            report = parsed.large_context_report
+            if report is None:
+                raise ValueError(
+                    "large_context_policy was sent but the deployment omitted "
+                    "large_context_report. The endpoint predates this capability "
+                    "or ignored it, so the returned ordinary prediction is refused "
+                    "instead of being mislabeled as policy output. Upgrade/deploy "
+                    "a server with large-context support, or omit the policy."
+                )
+            expected_threshold = (
+                request.large_context_threshold
+                if request.large_context_threshold is not None
+                else DEFAULT_LARGE_CONTEXT_THRESHOLD
+            )
+            expected_seed = (
+                request.large_context_seed if request.large_context_seed is not None else DEFAULT_LARGE_CONTEXT_SEED
+            )
+            mismatches = []
+            expected_policy = _large_context_policy_label(request.large_context_policy)
+            if report.policy != expected_policy:
+                mismatches.append(f"policy={report.policy!r}, expected {expected_policy!r}")
+
+            if report.threshold != expected_threshold:
+                mismatches.append(f"threshold={report.threshold}, expected {expected_threshold}")
+            if report.seed != expected_seed:
+                mismatches.append(f"seed={report.seed}, expected {expected_seed}")
+            expected_holdout = (
+                request.large_context_holdout or DEFAULT_LARGE_CONTEXT_HOLDOUT
+                if isinstance(request.large_context_policy, list)
+                else None
+            )
+            if report.holdout_strategy != expected_holdout:
+                mismatches.append(f"holdout_strategy={report.holdout_strategy!r}, expected {expected_holdout!r}")
+            if mismatches:
+                raise ValueError(
+                    "The deployment returned a mismatched "
+                    "large_context_report (" + "; ".join(mismatches) + "). "
+                    "The client cannot prove the requested policy was honored."
+                )
+            exclude = {"holdout_strategy"} if report.holdout_strategy is None else set()
+            self.last_large_context_report = report.model_dump(exclude=exclude)
+        if is_multi_target:
+            expected_strategy = request.multi_target_prediction_strategy or DEFAULT_MULTI_TARGET_PREDICTION_STRATEGY
+            if parsed.multi_target_prediction_strategy != expected_strategy:
+                honored = parsed.multi_target_prediction_strategy
+                raise ValueError(
+                    "The hosted deployment did not prove it honored multi-target "
+                    f"strategy {expected_strategy!r}; response reported {honored!r}. "
+                    "Upgrade/deploy a server with multi-target support."
+                )
+            if expected_strategy == "autoregressive":
+                if not parsed.target_orders:
+                    raise ValueError(
+                        "The hosted deployment omitted resolved target_orders for an "
+                        "autoregressive request. Upgrade/deploy a compatible server."
+                    )
+                requested = (
+                    request.multi_target_prediction_policy.autoregressive_orders
+                    if request.multi_target_prediction_policy is not None
+                    else None
+                )
+                if requested is not None and parsed.target_orders != requested:
+                    raise ValueError(
+                        "The hosted deployment returned target_orders that differ from "
+                        f"the explicit request: {parsed.target_orders!r} != {requested!r}."
+                    )
+                self.last_target_orders = parsed.target_orders
+        if request.discretize is not None or request.categorical_levels is not None:
+            # The same handshake as output_type below, and it matters more here: a
+            # deployment that predates the field drops it and answers with continuous
+            # predictions, which are numerically valid and look like any other result, so
+            # nothing in `predictions` reveals that no level was ever chosen.
+            if parsed.discretize is None:
+                raise ValueError(
+                    "The hosted deployment did not discretize: it omitted the discretize "
+                    "field entirely, so it predates the capability and answered with "
+                    "continuous predictions. Those are indistinguishable from levels that "
+                    "happen to look round, so this is raised rather than returned. Point at "
+                    "a newer deployment, or use local mode (pip install synthefy-nori, then "
+                    'mode="local").'
+                )
+            # Compared case-insensitively because the server normalises the strategy name
+            # and echoes the RESOLVED one, exactly as it does for output_type. Comparing
+            # against the raw string rejects a correct response to discretize="MAP-CELL".
+            if request.discretize is not None and parsed.discretize != request.discretize.lower():
+                raise ValueError(
+                    f"The hosted deployment did not serve discretize={request.discretize!r}: "
+                    f"it ran {parsed.discretize!r} instead. Which strategy runs decides which "
+                    "level you get, so this is raised rather than returning another "
+                    "strategy's answer under the name you asked for."
+                )
+        if output_type != DEFAULT_OUTPUT_TYPE and parsed.output_type != output_type:
+            honored = (
+                "omitted the output_type field entirely, so it predates distribution output"
+                if parsed.output_type is None
+                else f"honored output_type={parsed.output_type!r} instead"
+            )
+            raise ValueError(
+                f"The hosted deployment did not serve output_type={output_type!r}: "
+                f"it {honored}. Such a deployment answers with the distribution "
+                f"mean, which is indistinguishable from a real {output_type!r} "
+                "result, so this is raised rather than returning means as if they "
+                "were what you asked for. Use local mode (pip install "
+                'synthefy-nori, then mode="local"), or point at a deployment '
+                "that serves distribution output."
+            )
+        self.last_model_version = parsed.model_version
+        return parsed
+
+    def _s3_object_exists(self, location: str) -> bool:
+        if self._aws_s3_client is None:
+            raise RuntimeError("SageMaker S3 transport is not initialized")
+        bucket, key = parse_s3_uri(location, name="location")
+        try:
+            self._aws_s3_client.head_object(Bucket=bucket, Key=key)
+            return True
+        except Exception as exc:
+            if is_missing_s3_object(exc):
+                return False
+            raise
+
+    def _download_s3_object(self, location: str, destination: Path) -> None:
+        if self._aws_s3_client is None:
+            raise RuntimeError("SageMaker S3 transport is not initialized")
+        bucket, key = parse_s3_uri(location, name="location")
+        self._aws_s3_client.download_file(bucket, key, str(destination))
+
+    def _read_sagemaker_failure(self, location: str, *, invocation_id: str) -> SageMakerInvocationError:
+        temporary = tempfile.NamedTemporaryFile(prefix="nori-failure-", suffix=".json", delete=False)
+        path = Path(temporary.name)
+        temporary.close()
+        try:
+            self._download_s3_object(location, path)
+            text = path.read_text(encoding="utf-8", errors="replace")[:16_384]
+        finally:
+            path.unlink(missing_ok=True)
+        message = text.strip() or "SageMaker asynchronous inference failed"
+        try:
+            details = json.loads(text)
+        except json.JSONDecodeError:
+            details = None
+        if isinstance(details, dict):
+            message = str(
+                details.get("ErrorMessage")
+                or details.get("FailureReason")
+                or details.get("failureReason")
+                or details.get("Message")
+                or details.get("message")
+                or details.get("error")
+                or message
+            )
+        return SageMakerInvocationError(
+            f"SageMaker invocation {invocation_id} failed: {message}",
+            invocation_id=invocation_id,
+            failure_location=location,
+        )
+
+    def _wait_for_sagemaker_result(
+        self,
+        *,
+        invocation_id: str,
+        output_location: str,
+        failure_location: Optional[str],
+    ) -> Dict[str, Any]:
+        deadline = time.monotonic() + self.timeout
+        delay = _SAGEMAKER_POLL_INITIAL_SECONDS
+        while True:
+            if failure_location and self._s3_object_exists(failure_location):
+                raise self._read_sagemaker_failure(failure_location, invocation_id=invocation_id)
+            if self._s3_object_exists(output_location):
+                temporary = tempfile.NamedTemporaryFile(prefix="nori-output-", suffix=".json", delete=False)
+                path = Path(temporary.name)
+                temporary.close()
+                try:
+                    self._download_s3_object(output_location, path)
+                    with path.open(encoding="utf-8") as handle:
+                        response_data = json.load(handle)
+                finally:
+                    path.unlink(missing_ok=True)
+                if not isinstance(response_data, dict):
+                    raise ValueError("SageMaker endpoint returned JSON that was not an object")
+                return response_data
+
+            remaining = deadline - time.monotonic()
+            if remaining <= 0:
+                raise APITimeoutError(
+                    "Timed out waiting for SageMaker invocation "
+                    f"{invocation_id}. This client timeout does not cancel a queued "
+                    "server-side invocation."
+                )
+            jittered = delay + random.uniform(0.0, delay * 0.25)
+            time.sleep(min(jittered, remaining))
+            delay = min(delay * 2, _SAGEMAKER_POLL_MAX_SECONDS)
+
+    @staticmethod
+    def _owned_result_location(location: str, invocation_id: str) -> bool:
+        try:
+            _, key = parse_s3_uri(location, name="location")
+        except ValueError:
+            return False
+        return f"/invocations/{invocation_id}/" in f"/{key}"
+
+    def _cleanup_sagemaker_objects(
+        self,
+        *,
+        invocation_id: str,
+        input_location: str,
+        output_location: Optional[str],
+        failure_location: Optional[str],
+    ) -> None:
+        if self._aws_s3_client is None:
+            return
+        locations = [input_location]
+        for location in (output_location, failure_location):
+            if location and self._owned_result_location(location, invocation_id):
+                locations.append(location)
+        for location in dict.fromkeys(locations):
+            bucket, key = parse_s3_uri(location, name="location")
+            try:
+                self._aws_s3_client.delete_object(Bucket=bucket, Key=key)
+            except Exception as exc:
+                warnings.warn(
+                    f"Could not delete temporary SageMaker object {location}: {exc}",
+                    RuntimeWarning,
+                    stacklevel=2,
+                )
+
+    def _invoke_sagemaker_predict(
+        self,
+        request: Union[NoriPredictRequest, _NoriArrayRequest],
+        *,
+        output_type: str,
+    ) -> NoriPredictResponse:
+        """Invoke the configured SageMaker endpoint with a SigV4-signed request."""
+        if (
+            self._aws_client is None
+            or self._aws_s3_client is None
+            or self.endpoint_name is None
+            or self._s3_staging_bucket is None
+            or self._s3_staging_prefix is None
+        ):
+            raise RuntimeError(
+                "SageMaker transport is not initialized; construct the client with mode='sagemaker' and endpoint_name"
+            )
+        if self._sagemaker_model is None:
+            raise RuntimeError("SageMaker transport has no resolved model identity")
+        invocation_id = uuid.uuid4().hex
+        input_key = f"{self._s3_staging_prefix}/{self.endpoint_name}/{invocation_id}/request.tensorfile"
+        input_location = f"s3://{self._s3_staging_bucket}/{input_key}"
+        output_location = None
+        failure_location = None
+        invocation_pending = False
+        temporary = tempfile.NamedTemporaryFile(prefix="nori-request-", suffix=".tensorfile", delete=False)
+        request_path = Path(temporary.name)
+        temporary.close()
+        try:
+            save_nori_request(request_path, request, model=self._sagemaker_model)
+            request_size = request_path.stat().st_size
+            if request_size > SAGEMAKER_MAX_INPUT_BYTES:
+                raise ValueError(
+                    "The serialized SageMaker request exceeds the 1 GB asynchronous "
+                    "inference payload limit. Reduce the context/query rows."
+                )
+            self._aws_s3_client.upload_file(str(request_path), self._s3_staging_bucket, input_key)
+            # A lost response does not prove that SageMaker rejected the request.
+            # Keep its input until completion is known; bucket lifecycle handles
+            # abandoned requests without racing a queued worker's download.
+            invocation_pending = True
+            response = self._aws_client.invoke_endpoint_async(
+                EndpointName=self.endpoint_name,
+                InputLocation=input_location,
+                ContentType=NORI_BINARY_CONTENT_TYPE,
+                Accept="application/json",
+                InferenceId=invocation_id,
+                RequestTTLSeconds=_SAGEMAKER_REQUEST_TTL_SECONDS,
+                InvocationTimeoutSeconds=_SAGEMAKER_INVOCATION_TIMEOUT_SECONDS,
+                S3OutputPathExtension=f"invocations/{invocation_id}",
+                Filename="result.json",
+            )
+            returned_invocation_id = response.get("InferenceId")
+            if returned_invocation_id not in (None, invocation_id):
+                raise RuntimeError(f"InvokeEndpointAsync returned a mismatched InferenceId: {returned_invocation_id!r}")
+            output_location = response.get("OutputLocation")
+            failure_location = response.get("FailureLocation")
+            if not isinstance(output_location, str) or not output_location:
+                raise RuntimeError("InvokeEndpointAsync returned no S3 OutputLocation")
+            for name, location in (
+                ("OutputLocation", output_location),
+                ("FailureLocation", failure_location),
+            ):
+                if location and not self._owned_result_location(location, invocation_id):
+                    raise RuntimeError(
+                        f"InvokeEndpointAsync returned {name} outside this invocation's isolated output prefix"
+                    )
+            try:
+                response_data = self._wait_for_sagemaker_result(
+                    invocation_id=invocation_id,
+                    output_location=output_location,
+                    failure_location=failure_location,
+                )
+            except SageMakerInvocationError:
+                invocation_pending = False
+                raise
+            invocation_pending = False
+        finally:
+            request_path.unlink(missing_ok=True)
+            if not invocation_pending:
+                self._cleanup_sagemaker_objects(
+                    invocation_id=invocation_id,
+                    input_location=input_location,
+                    output_location=output_location,
+                    failure_location=failure_location,
+                )
+        actual_model = response_data.get("model")
+        if actual_model != self._sagemaker_model:
+            raise ValueError(
+                "SageMaker endpoint model identity mismatch: requested "
+                f"{self._sagemaker_model!r}, received {actual_model!r}"
+            )
+        return self._parse_predict_response(
+            request,
+            output_type=output_type,
+            response_data=response_data,
+        )
+
+    def _predict_aws(
+        self,
+        request: NoriPredictRequest,
+        *,
+        output_type: str = DEFAULT_OUTPUT_TYPE,
+    ) -> List[float]:
+        parsed = self._invoke_sagemaker_predict(request, output_type=output_type)
+        return _as_float_list(parsed.predictions)
+
+    def _post_predict(
+        self,
+        request: NoriPredictRequest,
+        *,
+        output_type: str,
+        timeout: Optional[float],
+        extra_headers: Optional[Dict[str, str]],
+    ) -> NoriPredictResponse:
+        """POST one prediction request and parse the response.
+
+        Enforces the capability handshakes for both explicitly requested
+        distribution output and a serving-memory policy.
+        """
+        # Serialise the policy with exclude_unset so only the fields the caller actually set
+        # go on the wire. This is what lets the field be a typed MemoryPolicy without the
+        # CLIENT pinning the SERVER's defaults: a full dump would send all twelve fields, and a
+        # later change to a default server-side would then be silently overridden by every
+        # older client. A request that sets no policy omits the key entirely rather than
+        # sending null -- the hosted schema declares a preset name or an object, never null.
+        # The distribution fields are likewise omitted when unset so the default request stays
+        # byte-for-byte compatible with deployments that predate them.
+        payload = request.to_wire()
+        if self.model is not None:
+            payload["model"] = self.model
+
+        response = self._post_with_retries(
+            self.endpoint,
+            payload=payload,
+            headers=self._headers(extra_headers=extra_headers),
+            timeout=timeout,
+        )
+        return self._parse_predict_response(
+            request,
+            output_type=output_type,
+            response_data=response.json(),
+        )
+
+    def _predict_remote(
+        self,
+        request: NoriPredictRequest,
+        *,
+        output_type: str = DEFAULT_OUTPUT_TYPE,
+        timeout: Optional[float],
+        extra_headers: Optional[Dict[str, str]],
+    ) -> List[float]:
+        parsed = self._post_predict(
+            request,
+            output_type=output_type,
+            timeout=timeout,
+            extra_headers=extra_headers,
+        )
+        return _as_float_list(parsed.predictions)
+
+    def _predict_remote_distribution(
+        self,
+        request: NoriPredictRequest,
+        *,
+        output_type: str,
+        timeout: Optional[float],
+        extra_headers: Optional[Dict[str, str]],
+    ) -> Tuple["np.ndarray", "np.ndarray", "np.ndarray"]:
+        """Remote distribution output, normalized to ``(quantiles_by_row, taus, mean)``.
+
+        The wire carries the quantile block row-major — ``(n_query, K)``, the
+        natural JSON shape and the one ``output_type="full"`` uses — so no
+        transpose is needed here; ``_shape_quantiles`` handles the level-major
+        flip for ``output_type="quantiles"``.
+        """
+        parsed = self._post_predict(
+            request,
+            output_type=output_type,
+            timeout=timeout,
+            extra_headers=extra_headers,
+        )
+        return self._parse_hosted_distribution(request, parsed=parsed, output_type=output_type)
+
+    def _predict_aws_distribution(
+        self,
+        request: NoriPredictRequest,
+        *,
+        output_type: str,
+    ) -> Tuple["np.ndarray", "np.ndarray", "np.ndarray"]:
+        parsed = self._invoke_sagemaker_predict(request, output_type=output_type)
+        return self._parse_hosted_distribution(request, parsed=parsed, output_type=output_type)
+
+    def _parse_hosted_multi_target(
+        self,
+        request: NoriPredictRequest,
+        *,
+        parsed: NoriPredictResponse,
+        output_type: str,
+    ) -> "np.ndarray":
+        """Validate and normalize a hosted joint mean or sample response."""
+        n_query = len(request.X_test)
+        n_targets = np.asarray(request.y_train, dtype=float).shape[1]
+        if output_type == "samples":
+            if parsed.samples is None:
+                raise ValueError(
+                    "The hosted deployment echoed output_type='samples' but returned no joint sample block."
+                )
+            values = np.asarray(parsed.samples, dtype=float)
+            policy = request.multi_target_prediction_policy or MultiTargetPredictionPolicy()
+            expected = (n_query, policy.n_draws, n_targets)
+            if values.shape != expected:
+                raise ValueError(f"The server returned joint samples of shape {values.shape}; expected {expected}.")
+            return values
+        values = np.asarray(parsed.predictions, dtype=float)
+        expected = (n_query, n_targets)
+        if values.shape != expected:
+            raise ValueError(
+                f"The server returned multi-target predictions of shape {values.shape}; expected {expected}."
+            )
+        return values
+
+    def _parse_hosted_distribution(
+        self,
+        request: NoriPredictRequest,
+        *,
+        parsed: NoriPredictResponse,
+        output_type: str,
+    ) -> Tuple["np.ndarray", "np.ndarray", "np.ndarray"]:
+        """Normalize either hosted transport's quantile response."""
+        if parsed.quantiles is None or parsed.taus is None:
+            raise ValueError(
+                f"The hosted deployment echoed output_type={output_type!r} but "
+                "returned no quantile block; it cannot serve distribution output. "
+                'Use local mode (pip install synthefy-nori, then mode="local").'
+            )
+        q_by_row = _nullable_rows_to_array(parsed.quantiles)
+        taus = np.asarray(parsed.taus, dtype=float)
+        n_query = len(request.X_test)
+        expected = (n_query, taus.shape[0])
+        if q_by_row.shape != expected:
+            raise ValueError(
+                "The server returned a quantile block of shape "
+                f"{q_by_row.shape}, expected {expected} "
+                "(one row per X_test row, one column per tau level)."
+            )
+        if request.quantiles is not None:
+            requested = np.asarray(request.quantiles, dtype=float)
+            if taus.shape[0] != requested.shape[0]:
+                raise ValueError(
+                    f"Requested {requested.shape[0]} quantile level(s) but the server returned {taus.shape[0]}."
+                )
+            # The returned levels must be the requested ones, in order: the
+            # columns are labeled from the request, so levels that drifted would
+            # mean data at one tau labeled with another.
+            if not np.allclose(taus, requested, rtol=0.0, atol=1e-9):
+                raise ValueError(
+                    f"Requested quantile levels {requested.tolist()} but the server returned {taus.tolist()}."
+                )
+        return q_by_row, taus, np.asarray(parsed.predictions, dtype=float)
+
+    def _headers(self, *, extra_headers: Optional[Dict[str, str]] = None) -> Dict[str, str]:
+        headers: Dict[str, str] = {
+            "User-Agent": self.user_agent,
+            "Content-Type": "application/json",
+            "Authorization": f"{self.auth_scheme} {self.api_key}",
+        }
+        if extra_headers:
+            headers.update(extra_headers)
+        return headers
+
+    def _should_retry(self, response: Optional[httpx.Response], exc: Optional[Exception]) -> bool:
+        if exc is not None:
+            # Connection errors/timeouts are retryable
+            return True
+        if response is None:
+            return False
+        if response.status_code in (408, 409, 425, 429) or 500 <= response.status_code <= 599:
+            return True
+        return False
+
+    def _compute_backoff(self, attempt: int, response: Optional[httpx.Response]) -> float:
+        if response is not None:
+            retry_after = response.headers.get("retry-after") or response.headers.get("Retry-After")
+            if retry_after is not None:
+                try:
+                    parsed_retry_after = float(retry_after)
+                    if np.isfinite(parsed_retry_after):
+                        return max(0.0, parsed_retry_after)
+                except (TypeError, ValueError):
+                    pass
+        # Exponential backoff with jitter
+        base = min(2**attempt, 30)
+        return base * (0.5 + 0.5 * (os.urandom(1)[0] / 255))
+
+    def _post_with_retries(
+        self,
+        endpoint: str,
+        payload: Dict[str, Any],
+        *,
+        headers: Optional[Dict[str, Any]] = None,
+        timeout: Optional[float] = None,
+    ) -> httpx.Response:
+        assert self.client is not None  # remote mode always has a client
+        # Serialize once, outside the retry loop: the payload is identical on every
+        # attempt, and a non-finite value here is invalid client input, not a
+        # transport failure a retry could ever fix. Explicit so upgrading httpx
+        # cannot change the public wire bytes -- the imported 6.3 client used
+        # stdlib JSON spacing, which the frozen compatibility trace pins.
+        try:
+            body = json.dumps(payload, allow_nan=False).encode("utf-8")
+        except ValueError as exc:
+            raise ValueError(
+                "Request payload contains a non-finite value (NaN/Infinity), which "
+                "is not valid JSON. y_train must contain only finite numbers for "
+                f"remote inference. Underlying error: {exc}"
+            ) from exc
+        last_exc: Optional[Exception] = None
+        response: Optional[httpx.Response] = None
+        attempts = self.max_retries + 1
+        for attempt in range(attempts):
+            # Reset per attempt so the "no more retries" block below reflects the
+            # final attempt only. Otherwise an exception from an earlier attempt
+            # (e.g. a transient connection error) would be re-raised in place of
+            # the true final error (e.g. a 5xx that should map to a server error).
+            last_exc = None
+            response = None
+            try:
+                response = self.client.post(
+                    endpoint,
+                    content=body,
+                    headers=headers or self._headers(),
+                    timeout=self.timeout if timeout is None else timeout,
+                )
+                if not self._should_retry(response, None):
+                    _raise_for_status(response)
+                    return response
+            except httpx.TimeoutException as exc:
+                last_exc = APITimeoutError(str(exc))
+            except httpx.HTTPError as exc:
+                last_exc = APIConnectionError(str(exc))
+
+            # Decide to retry
+            if attempt < attempts - 1 and self._should_retry(response, last_exc):
+                delay = self._compute_backoff(attempt, response)
+                time.sleep(delay)
+                continue
+
+            # No more retries
+            if last_exc is not None:
+                raise last_exc
+            if response is not None:
+                _raise_for_status(response)
+                return response
+
+        # Should not reach here
+        raise APIConnectionError("Request failed after retries")

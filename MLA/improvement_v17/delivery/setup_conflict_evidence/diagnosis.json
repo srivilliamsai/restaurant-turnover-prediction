@@ -1,0 +1,8 @@
+{
+  "reason": "Installing Nori dependencies retained Numba 0.61.2, which caused pip to downgrade NumPy to 2.2.6. Pinned runtime check stopped before development.",
+  "repair": "Install Numba 0.68.1 and NumPy 2.5.4 together; Numba 0.68.1 declares NumPy >=1.22,<2.6.",
+  "accuracy_tested": false,
+  "clock_reset": false,
+  "started_epoch": 1793251847,
+  "charged_through_epoch": 1793252281.072939
+}

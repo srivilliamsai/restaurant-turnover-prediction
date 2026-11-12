@@ -1,0 +1,9 @@
+{
+  "portable_audit_without_older_folders": true,
+  "verified_cache_reused": true,
+  "stale_context_rejected": true,
+  "corrupt_content_rejected": true,
+  "interrupted_write_without_metadata_recomputed": true,
+  "orphan_residual_checkpoint_quarantined_before_resume": true,
+  "note": "These are loader/checkpoint tests, not model accuracy tests."
+}

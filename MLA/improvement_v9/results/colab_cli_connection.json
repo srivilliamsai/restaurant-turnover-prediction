@@ -1,0 +1,10 @@
+{
+  "package": "google-colab-cli",
+  "version": "0.7.5",
+  "isolated_environment": "colab_cli_env",
+  "authentication_completed": true,
+  "paid_compute_authorized": false,
+  "previous_session_released": true,
+  "active_session": "v9-cli-t4",
+  "note": "No authorization codes or credentials are included in this record."
+}

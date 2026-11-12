@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "csv_sha256": "f87948ad9025872e4701fa970a1d84eefd86aa8c3cacec7705b813ccfa11ec1b",
+  "rows": 500,
+  "original_id_order": true,
+  "unique_ids": true,
+  "finite_nonnegative_predictions": true,
+  "fresh_reproduction_difference_INR": 7.450580596923828e-09,
+  "executed_notebook_code_cells": 29,
+  "runtime_released": true,
+  "active_colab_assignments_after_release": 0,
+  "qualified": true,
+  "portal_uploads": 0,
+  "global_budget": {
+    "authorized_hours": 24,
+    "charged_hours": 16.92530054762093,
+    "prior_charges_preserved": true
+  }
+}

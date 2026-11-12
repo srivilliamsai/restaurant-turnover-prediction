@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "tests": 6,
+  "test_source_sha256": "f7ab465bb82b764fbf25afdaab6e04644488837fb282458269aac51dfb8be588",
+  "all_python_sources_compile": true,
+  "audit": "PASS",
+  "verified_baseline_folds": 35,
+  "target_treatment_isolation": "PASS",
+  "selection_and_confirmation_gates": "PASS",
+  "eight_hour_delivery_reserve": "PASS"
+}

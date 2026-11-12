@@ -1,0 +1,65 @@
+AUDIT PASS: five fixed components, twenty comparisons, seven verified baseline assignments.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+{"PILOT": "F40-T080", "status": "PASS", "fold_seconds": 28.245101604999945, "behavior": {"permutation_difference_INR": 0.0, "label_id_difference_INR": 0.0, "batch_difference_INR": 0.0, "individual_difference_INR": 0.0, "rmse_difference_INR": {"permutation": 0.0, "batch": 0.0, "individual": 0.0}, "rows_checked": 699, "individual_probes": 12, "missing_unseen_inputs": true, "behavior_tolerance_INR": 10.0, "rmse_tolerance_INR": 1.0}, "fresh_repeat_difference_INR": 0.0, "target_metadata": {"name": "F40-T080", "training_rows": 2794, "units": "raw INR millions", "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3", "model_class": "tabpfn.regressor.TabPFNRegressor", "view": "F40", "input_features": 40, "temperature": 0.8, "date_expansion": true, "datetime_dependencies": {"skrub": "0.10.1", "pyarrow": "23.0.1"}, "architecture_classes": ["tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"], "configuration_classes": ["tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"]}, "peak_gpu_allocated_bytes": 7042150400, "training_rows": 2794, "validation_rows": 699, "engineering_seconds": 253.907839459}
+{"PILOT": "F40-T120", "status": "PASS", "fold_seconds": 23.725044841, "behavior": {"permutation_difference_INR": 0.0, "label_id_difference_INR": 0.0, "batch_difference_INR": 0.0, "individual_difference_INR": 0.0, "rmse_difference_INR": {"permutation": 0.0, "batch": 0.0, "individual": 0.0}, "rows_checked": 699, "individual_probes": 12, "missing_unseen_inputs": true, "behavior_tolerance_INR": 10.0, "rmse_tolerance_INR": 1.0}, "fresh_repeat_difference_INR": 0.0, "target_metadata": {"name": "F40-T120", "training_rows": 2794, "units": "raw INR millions", "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3", "model_class": "tabpfn.regressor.TabPFNRegressor", "view": "F40", "input_features": 40, "temperature": 1.2, "date_expansion": true, "datetime_dependencies": {"skrub": "0.10.1", "pyarrow": "23.0.1"}, "architecture_classes": ["tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"], "configuration_classes": ["tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"]}, "peak_gpu_allocated_bytes": 7042150400, "training_rows": 2794, "validation_rows": 699, "engineering_seconds": 253.937747499}
+{"PILOT": "N32-T080", "status": "PASS", "fold_seconds": 23.680411176999996, "behavior": {"permutation_difference_INR": 0.0, "label_id_difference_INR": 0.0, "batch_difference_INR": 0.0, "individual_difference_INR": 0.0, "rmse_difference_INR": {"permutation": 0.0, "batch": 0.0, "individual": 0.0}, "rows_checked": 699, "individual_probes": 12, "missing_unseen_inputs": true, "behavior_tolerance_INR": 10.0, "rmse_tolerance_INR": 1.0}, "fresh_repeat_difference_INR": 0.0, "target_metadata": {"name": "N32-T080", "training_rows": 2794, "units": "raw INR millions", "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3", "model_class": "tabpfn.regressor.TabPFNRegressor", "view": "N32", "input_features": 32, "temperature": 0.8, "date_expansion": true, "datetime_dependencies": {"skrub": "0.10.1", "pyarrow": "23.0.1"}, "architecture_classes": ["tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"], "configuration_classes": ["tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"]}, "peak_gpu_allocated_bytes": 7042150400, "training_rows": 2794, "validation_rows": 699, "engineering_seconds": 253.423631354}
+{"PILOT": "N32-T100", "status": "PASS", "fold_seconds": 23.534438343000147, "behavior": {"permutation_difference_INR": 0.0, "label_id_difference_INR": 0.0, "batch_difference_INR": 0.0, "individual_difference_INR": 0.0, "rmse_difference_INR": {"permutation": 0.0, "batch": 0.0, "individual": 0.0}, "rows_checked": 699, "individual_probes": 12, "missing_unseen_inputs": true, "behavior_tolerance_INR": 10.0, "rmse_tolerance_INR": 1.0}, "fresh_repeat_difference_INR": 0.0, "target_metadata": {"name": "N32-T100", "training_rows": 2794, "units": "raw INR millions", "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3", "model_class": "tabpfn.regressor.TabPFNRegressor", "view": "N32", "input_features": 32, "temperature": 1.0, "date_expansion": true, "datetime_dependencies": {"skrub": "0.10.1", "pyarrow": "23.0.1"}, "architecture_classes": ["tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"], "configuration_classes": ["tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"]}, "peak_gpu_allocated_bytes": 7042150400, "training_rows": 2794, "validation_rows": 699, "engineering_seconds": 253.41487606500004}
+{"PILOT": "N32-T120", "status": "PASS", "fold_seconds": 23.62170980399992, "behavior": {"permutation_difference_INR": 0.0, "label_id_difference_INR": 0.0, "batch_difference_INR": 0.0, "individual_difference_INR": 0.0, "rmse_difference_INR": {"permutation": 0.0, "batch": 0.0, "individual": 0.0}, "rows_checked": 699, "individual_probes": 12, "missing_unseen_inputs": true, "behavior_tolerance_INR": 10.0, "rmse_tolerance_INR": 1.0}, "fresh_repeat_difference_INR": 0.0, "target_metadata": {"name": "N32-T120", "training_rows": 2794, "units": "raw INR millions", "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3", "model_class": "tabpfn.regressor.TabPFNRegressor", "view": "N32", "input_features": 32, "temperature": 1.2, "date_expansion": true, "datetime_dependencies": {"skrub": "0.10.1", "pyarrow": "23.0.1"}, "architecture_classes": ["tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"], "configuration_classes": ["tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"]}, "peak_gpu_allocated_bytes": 7042150400, "training_rows": 2794, "validation_rows": 699, "engineering_seconds": 253.32484929199995}
+{"PILOT_COMPLETE": "PASS", "screen_settings": ["F40-T080", "F40-T120", "N32-T080", "N32-T100", "N32-T120"]}
+{"setting": "F40-T080", "scheme": "42", "fold_complete": 1}
+{"setting": "F40-T080", "scheme": "42", "fold_complete": 2}
+{"setting": "F40-T080", "scheme": "42", "fold_complete": 3}
+{"setting": "F40-T080", "scheme": "42", "fold_complete": 4}
+{"setting": "F40-T080", "scheme": "42", "fold_complete": 5}
+{"setting": "F40-T080", "scheme": "71", "fold_complete": 1}
+{"setting": "F40-T080", "scheme": "71", "fold_complete": 2}
+{"setting": "F40-T080", "scheme": "71", "fold_complete": 3}
+{"setting": "F40-T080", "scheme": "71", "fold_complete": 4}
+{"setting": "F40-T080", "scheme": "71", "fold_complete": 5}
+{"SCREEN_SETTING_COMPLETE": "F40-T080", "best_mean_relative_gain": -0.00010699639383317881}
+{"setting": "F40-T120", "scheme": "42", "fold_complete": 1}
+{"setting": "F40-T120", "scheme": "42", "fold_complete": 2}
+{"setting": "F40-T120", "scheme": "42", "fold_complete": 3}
+{"setting": "F40-T120", "scheme": "42", "fold_complete": 4}
+{"setting": "F40-T120", "scheme": "42", "fold_complete": 5}
+{"setting": "F40-T120", "scheme": "71", "fold_complete": 1}
+{"setting": "F40-T120", "scheme": "71", "fold_complete": 2}
+{"setting": "F40-T120", "scheme": "71", "fold_complete": 3}
+{"setting": "F40-T120", "scheme": "71", "fold_complete": 4}
+{"setting": "F40-T120", "scheme": "71", "fold_complete": 5}
+{"SCREEN_SETTING_COMPLETE": "F40-T120", "best_mean_relative_gain": -0.00031152604883216613}
+{"setting": "N32-T080", "scheme": "42", "fold_complete": 1}
+{"setting": "N32-T080", "scheme": "42", "fold_complete": 2}
+{"setting": "N32-T080", "scheme": "42", "fold_complete": 3}
+{"setting": "N32-T080", "scheme": "42", "fold_complete": 4}
+{"setting": "N32-T080", "scheme": "42", "fold_complete": 5}
+{"setting": "N32-T080", "scheme": "71", "fold_complete": 1}
+{"setting": "N32-T080", "scheme": "71", "fold_complete": 2}
+{"setting": "N32-T080", "scheme": "71", "fold_complete": 3}
+{"setting": "N32-T080", "scheme": "71", "fold_complete": 4}
+{"setting": "N32-T080", "scheme": "71", "fold_complete": 5}
+{"SCREEN_SETTING_COMPLETE": "N32-T080", "best_mean_relative_gain": 1.2664577114500568e-05}
+{"setting": "N32-T100", "scheme": "42", "fold_complete": 1}
+{"setting": "N32-T100", "scheme": "42", "fold_complete": 2}
+{"setting": "N32-T100", "scheme": "42", "fold_complete": 3}
+{"setting": "N32-T100", "scheme": "42", "fold_complete": 4}
+{"setting": "N32-T100", "scheme": "42", "fold_complete": 5}
+{"setting": "N32-T100", "scheme": "71", "fold_complete": 1}
+{"setting": "N32-T100", "scheme": "71", "fold_complete": 2}
+{"setting": "N32-T100", "scheme": "71", "fold_complete": 3}
+{"setting": "N32-T100", "scheme": "71", "fold_complete": 4}
+{"setting": "N32-T100", "scheme": "71", "fold_complete": 5}
+{"SCREEN_SETTING_COMPLETE": "N32-T100", "best_mean_relative_gain": 0.00022838153223348444}
+{"setting": "N32-T120", "scheme": "42", "fold_complete": 1}
+{"setting": "N32-T120", "scheme": "42", "fold_complete": 2}
+{"setting": "N32-T120", "scheme": "42", "fold_complete": 3}
+{"setting": "N32-T120", "scheme": "42", "fold_complete": 4}
+{"setting": "N32-T120", "scheme": "42", "fold_complete": 5}
+{"setting": "N32-T120", "scheme": "71", "fold_complete": 1}
+{"setting": "N32-T120", "scheme": "71", "fold_complete": 2}
+{"setting": "N32-T120", "scheme": "71", "fold_complete": 3}
+{"setting": "N32-T120", "scheme": "71", "fold_complete": 4}
+{"setting": "N32-T120", "scheme": "71", "fold_complete": 5}
+{"SCREEN_SETTING_COMPLETE": "N32-T120", "best_mean_relative_gain": -0.0001446787502837319}
+{"SCREEN_COMPLETE": true, "choices": []}
+V15 delivery complete: /content/mla_v15_retry1/delivery/V15_Report.md

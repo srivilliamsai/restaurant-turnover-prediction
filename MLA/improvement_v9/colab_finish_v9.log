@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "./improvement_v9/colab_finish_v9.py", line 43, in <module>
+    raise RuntimeError('Training driver failed; preserve its evidence for review.')
+RuntimeError: Training driver failed; preserve its evidence for review.

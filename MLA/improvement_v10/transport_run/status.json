@@ -1,0 +1,13 @@
+{
+  "phase": "complete",
+  "pid": 99046,
+  "elapsed_seconds": 15729.844972457999,
+  "global_cap_hours": 24,
+  "prior_charged_seconds": 44241.62088493535,
+  "paid_resources": false,
+  "qualified": true,
+  "decision": "one qualified V10 portal trial",
+  "global_charged_hours": 16.92530054762093,
+  "portal_uploads": 0,
+  "delivery": "./improvement_v10/V10_Delivery.zip"
+}

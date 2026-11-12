@@ -1,0 +1,12 @@
+{"phase": "restarting_clean_kernel", "pid": 14083, "task_elapsed_seconds": 3883.9978561401367, "maximum_hours": 8}
+{"phase": "uploading_frozen_workflow", "pid": 14083, "task_elapsed_seconds": 3885.9096698760986, "maximum_hours": 8}
+{"connection_error_type": "RuntimeError", "frames": [{"file": "colab_control.py", "line": 58, "function": "run"}, {"file": "runtime.py", "line": 237, "function": "execute_code"}, {"file": "client.py", "line": 364, "function": "execute_interactive"}, {"file": "wsclient.py", "line": 1073, "function": "execute_interactive"}]}
+{"server_completion_verified": true}
+{"phase": "running_audit", "pid": 14083, "task_elapsed_seconds": 3932.890585899353, "maximum_hours": 8}
+V19 foreground stage: audit timeout seconds 19464
+V19 stage complete: audit
+{"server_completion_verified": true}
+{"phase": "running_pilot", "pid": 14083, "task_elapsed_seconds": 3944.654841899872, "maximum_hours": 8}
+V19 foreground stage: pilot timeout seconds 19454
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"phase": "stopped", "pid": 14083, "task_elapsed_seconds": 4241.9253940582275, "maximum_hours": 8, "error_type": "TimeoutExpired", "reason": "Command '['./improvement_v9/colab_cli_env/bin/python', './improvement_v19/colab_control.py', 'snapshot']' timed out after 90 seconds"}

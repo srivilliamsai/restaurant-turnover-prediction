@@ -1,0 +1,11 @@
+{
+  "seconds": 44241.62088493535,
+  "by_stage": {
+    "audit": 24.13545861400104,
+    "pilot": 2464.895143755195,
+    "unobserved_runtime_interruption": 38470.171738386154,
+    "screen": 3282.418544180001
+  },
+  "maximum_hours": 18.0,
+  "measurement": "Accumulated stage computation/setup/reproduction wall time; persisted across resumes."
+}

@@ -1,0 +1,183 @@
+{
+  "context": {
+    "name": "P35_8",
+    "spec": {
+      "family": "TabPFN-3.5 Base",
+      "estimators": 8,
+      "target": "raw INR millions"
+    },
+    "scheme": "city",
+    "fold": 3,
+    "inputs": {
+      "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+      "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+      "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+      "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+    },
+    "sources": {
+      "core.py": "c89a9b5e4543a1e001ecd0f705c4f0a1e93022fccf0dba927e0bc551439f0233",
+      "features.py": "32092a9530f7d56fd16d0cc94ea187e74304270027ca8b3fa128133b53aa1951",
+      "modeling.py": "28f815f089eeab9441147f80c9705aece6945f94d1deae5000b197b3dda03c92",
+      "workflow.py": "7eae7122a0e5a4d030989f740e4b76a58c484cf176f72a54b80dbb2bd90d2b23",
+      "verify.py": "b955cefb1ed24a2d349739be272b82434982563fd82a44ccd4963615c84cb554",
+      "delivery.py": "3ce64f168fcc023c5efd8a3622f5ea5ee07396fd699f0cacc53d813886d478db",
+      "fresh_worker.py": "88f602fd8127814271668f82da4f3d2f05c8f9819ba25ef35d7a1238ff9af119",
+      "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+      "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+      "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+      "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+      "v5_contract.json": "3446412f01d536a31123142b984392216efd29094965500251386eac1814ab69",
+      "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+      "reference_manifest.json": "1b8e4607f5ecf1b38e96af91f51b59721f54836a6dbc501889424f018229d594",
+      "baseline_registry.json": "53e7ddb7fbfbe08162aa97fac8d5ad9dea4981aab3aa942b3e98ebdb2a3060b7"
+    },
+    "runtime_contract": {
+      "runtime": {
+        "dependencies": {
+          "numpy": "2.5.4",
+          "pandas": "3.0.6",
+          "scikit-learn": "1.9.1",
+          "scipy": "1.18.1",
+          "catboost": "1.2.10",
+          "interpret-core": "0.7.8",
+          "tabpfn": "9.2.0",
+          "tabicl": "2.2.0",
+          "torch": "2.11.0+cu130"
+        },
+        "gpu": "Tesla T4",
+        "cuda": "13.0",
+        "precision": "float32",
+        "prediction_chunk": 500,
+        "seed": 10242
+      },
+      "models": {
+        "BASE": {
+          "checkpoint": {
+            "repo_id": "Prior-Labs/TabPFN-v2-reg",
+            "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+            "filename": "tabpfn-v2-regressor.ckpt",
+            "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736",
+            "version": "2"
+          }
+        },
+        "I8": {
+          "checkpoint": {
+            "repo_id": "jingang/TabICL",
+            "revision": "4dcd344ece2c00be9e831fdd35bed57b5ad83e19",
+            "filename": "tabicl-regressor-v2-20260212.ckpt",
+            "sha256": "0db9cb538f114e79026bf08f45f41ad8dd7ad2de2aaca9a5ca8cd3bd9748ae7a",
+            "bytes": 114324594,
+            "version": "TabICLv2",
+            "download_path": "/root/.cache/huggingface/hub/models--jingang--TabICL/snapshots/4dcd344ece2c00be9e831fdd35bed57b5ad83e19/tabicl-regressor-v2-20260212.ckpt",
+            "local_loader_path": "/content/mla_v14/model_weights/tabicl-regressor-v2-20260212.ckpt",
+            "local_suffix": ".ckpt"
+          },
+          "parameters": {
+            "allow_auto_download": false,
+            "batch_size": 1,
+            "checkpoint_version": "tabicl-regressor-v2-20260212.ckpt",
+            "device": "cuda",
+            "disk_offload_dir": null,
+            "feat_shuffle_method": "latin",
+            "inference_config": null,
+            "kv_cache": true,
+            "model_path": "checkpoint_sha256:0db9cb538f114e79026bf08f45f41ad8dd7ad2de2aaca9a5ca8cd3bd9748ae7a",
+            "n_estimators": 8,
+            "n_jobs": 2,
+            "norm_methods": null,
+            "offload_mode": "auto",
+            "outlier_threshold": 4.0,
+            "random_state": 10242,
+            "use_amp": false,
+            "use_fa3": false,
+            "verbose": false
+          }
+        },
+        "P35_8": {
+          "checkpoint": {
+            "repo_id": "Prior-Labs/tabpfn_3_5",
+            "revision": "06bf2ba35c80a92a3b9abb436b99cf49e7a0365e",
+            "filename": "tabpfn-v3.5-20260909.safetensors",
+            "sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+            "bytes": 876027932,
+            "version": "3.5",
+            "download_path": "/root/.cache/huggingface/hub/models--Prior-Labs--tabpfn_3_5/snapshots/06bf2ba35c80a92a3b9abb436b99cf49e7a0365e/tabpfn-v3.5-20260909.safetensors",
+            "local_loader_path": "/content/mla_v14/model_weights/tabpfn-v3.5-20260909.safetensors",
+            "local_suffix": ".safetensors",
+            "format_check": {
+              "format": "safetensors",
+              "header_bytes": 77296,
+              "tensor_entries": 595,
+              "metadata_keys": [
+                "architecture_name",
+                "config",
+                "inference_config"
+              ]
+            },
+            "installed_loader_path": "/usr/local/lib/python3.13/dist-packages/tabpfn/checkpoint.py",
+            "installed_loader_sha256": "f7c86363ccc96af4ffe10ec23221ed90dfea304f04b6c4e48330ba25bbf807de"
+          },
+          "parameters": {
+            "auto_scale_n_estimators": true,
+            "average_before_softmax": false,
+            "device": "cuda",
+            "differentiable_input": false,
+            "enable_torch_compile": false,
+            "eval_metric": null,
+            "fit_mode": "low_memory",
+            "ignore_pretraining_limits": false,
+            "inference_config": null,
+            "inference_precision": "torch.float32",
+            "keep_cache_on_device": true,
+            "kv_cache_precision": null,
+            "memory_saving_mode": true,
+            "model_path": "checkpoint_sha256:ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+            "n_estimators": 8,
+            "n_jobs": null,
+            "n_preprocessing_jobs": 1,
+            "random_state": 10242,
+            "show_progress_bar": false,
+            "softmax_temperature": "auto",
+            "tuning_config": null
+          }
+        }
+      },
+      "engineering_failures": {},
+      "settings": {
+        "I8": {
+          "family": "TabICLv2",
+          "estimators": 8,
+          "target": "raw INR millions"
+        },
+        "P35_8": {
+          "family": "TabPFN-3.5 Base",
+          "estimators": 8,
+          "target": "raw INR millions"
+        }
+      },
+      "target_units": "raw INR millions",
+      "adapter": "Fixed 500-row blocks; BASE first training row; new model maximum-observed training row; discard padding.",
+      "output_floor": 0.0,
+      "selection_uses_validation_rmse": false
+    },
+    "train_indices": "705354042a02b1e626f17273da49c2ba1e3246d06512dea2374805c4b9b92fc4",
+    "valid_indices": "8782bed45f386b33bbae096fff17f5169dcd3a5c2f033250fd8133c110afeb45",
+    "training_targets": "28fe1c53681d1a8de4fdc4880327cad1a5b423a3b3cdd4d3d9822e7803e3f11c",
+    "row_ids": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+    "target_units": "raw INR millions"
+  },
+  "sha256": "9ccd59cbc774eb66482d26679a44046ac8e559ee173128b1266aae8977a537c8",
+  "fit_metadata": {
+    "name": "P35_8",
+    "training_rows": 2795,
+    "units": "raw INR millions",
+    "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+    "model_class": "tabpfn.regressor.TabPFNRegressor",
+    "architecture_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+    ],
+    "configuration_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"
+    ]
+  }
+}

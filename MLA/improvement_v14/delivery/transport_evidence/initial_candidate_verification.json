@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "scope": "Transport copy of the initial candidate; fresh notebook reproduction still required.",
+  "rows": 500,
+  "original_test_ids_and_order": true,
+  "exact_headers": true,
+  "finite_nonnegative_INR": true,
+  "csv_sha256": "39d49f79beb8549d04ffc78d134aad2407dc5e73914dc3c30e8bb162a3c0ba05"
+}

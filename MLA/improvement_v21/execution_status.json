@@ -1,0 +1,24 @@
+{
+  "experiment_complete": true,
+  "qualified": false,
+  "best_development": {
+    "name": "S",
+    "route": "P35-replacement",
+    "weight": 0.25,
+    "effective_new_share": 0.1875,
+    "rmse_42": 19646252.058116,
+    "gain_42": 2781.498045768589,
+    "relative_gain_42": 0.0001415590256802,
+    "rmse_71": 19650776.66937527,
+    "gain_71": -871.2149643786252,
+    "relative_gain_71": -4.433685273447766e-05,
+    "mean_relative_gain": 4.861108647288084e-05
+  },
+  "verified_candidate_fold_outputs": 20,
+  "verified_blend_comparisons": 6,
+  "portal_uploads": 0,
+  "best_observed_portal_version": "V14",
+  "best_observed_portal_rmse_INR": 11736110.7877709,
+  "owned_runtime_released": true,
+  "decision": "Retain V14: no development candidate qualified."
+}

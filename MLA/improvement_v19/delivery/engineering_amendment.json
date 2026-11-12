@@ -1,0 +1,30 @@
+{
+  "epoch": 1793269045.361204,
+  "scope": "Engineering implementation repair without viewing model accuracy results",
+  "initial_attempt": "D8 generated ten outer-fold outputs and its automatic screening files before the remote stage finished; these artifacts were archived without reading their metrics.",
+  "decision_basis": [
+    "C8 prediction layout stability failure only",
+    "Kumo import dependency failure only"
+  ],
+  "changes": [
+    "Fix C8 query shape at 256 with training-row padding; no tolerance change",
+    "Candidate-only Numba 0.68.0; baseline environment unchanged"
+  ],
+  "unchanged": [
+    "models",
+    "checkpoint weights",
+    "training labels",
+    "feature view",
+    "seed",
+    "readout",
+    "blend grid",
+    "accuracy and numerical gates",
+    "eight-hour original clock"
+  ],
+  "all_initial_artifacts_preserved": false,
+  "new_source_freeze_before_repaired_development": true,
+  "original_source_and_outputs": "engineering_repair_evidence/",
+  "original_deadline_unchanged": true,
+  "preservation_detail": "Initial source bundle and available automatic local backups retained. The original VM disappeared before the requested complete remote repair archive could be downloaded.",
+  "vm_lost_after_repair_archive_created": true
+}

@@ -1,0 +1,43 @@
+{
+  "retry_allowance_hours": 4,
+  "user_explicitly_approved_retry": true,
+  "previous_attempt_authorization": {
+    "version": "V15",
+    "maximum_hours": 8,
+    "paid_resources": false,
+    "started_epoch": 1793211106.0,
+    "hard_stop_epoch": 1793287800.0,
+    "settings": [
+      "F40-T080",
+      "F40-T120",
+      "N32-T080",
+      "N32-T100",
+      "N32-T120"
+    ],
+    "weights": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "user_authorization": "User explicitly requested implementation of the accepted V15 plan, including eight hours of free T4 computation and no automatic portal upload."
+  },
+  "previous_attempt_budget": {
+    "by_stage": {
+      "audit": 1.7952818870544434
+    },
+    "seconds": 30916.935904979706,
+    "maximum_hours": 8,
+    "measurement": "Conservative elapsed task wall time, including setup and interruptions.",
+    "active_stage": {
+      "name": "pilot",
+      "started_epoch": 1793212308.4129245
+    },
+    "run_complete": false,
+    "finalized_epoch": 1793242022.935909
+  },
+  "previous_attempt_archive_sha256": "40f975402de62ad762d394d308e8d4e80b634e638a3d9ff7d7650f6b606f02e2",
+  "previous_attempt_interruption_review_sha256": "614ea61e8deb462fb5038a05719c743f305cf2eb49090abbf14db2e2208225a7",
+  "previous_ledger_reset": false,
+  "all_five_engineering_pilots_repeated": true
+}

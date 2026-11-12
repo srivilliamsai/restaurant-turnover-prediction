@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "features": 40,
+  "target_id_isolation": true,
+  "unknown_categories": true,
+  "all_training_rows_retained": true,
+  "validation_target_changes_do_not_change_training_treatment": true,
+  "training_treatments_first_fold": {
+    "Q99": {
+      "name": "Q99",
+      "training_rows": 2794,
+      "units": "INR millions",
+      "quantile": 0.99,
+      "quantile_method": "linear",
+      "threshold_INR": 102535000.00000007,
+      "capped_rows": 28
+    },
+    "Q995": {
+      "name": "Q995",
+      "training_rows": 2794,
+      "units": "INR millions",
+      "quantile": 0.995,
+      "quantile_method": "linear",
+      "threshold_INR": 150000000.0,
+      "capped_rows": 13
+    },
+    "SQ2": {
+      "name": "SQ2",
+      "training_rows": 2794,
+      "units": "sqrt(INR millions)"
+    }
+  },
+  "invalid_checkpoints_rejected": true
+}

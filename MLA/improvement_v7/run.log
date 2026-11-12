@@ -1,0 +1,416 @@
+{"audit": "PASS", "tail": 48, "labels_changed": 0, "settings": 12}
+bands_d3_cal0 / 42: fold 1/5 complete
+bands_d3_cal0 / 42: fold 2/5 complete
+bands_d3_cal0 / 42: fold 3/5 complete
+bands_d3_cal0 / 42: fold 4/5 complete
+bands_d3_cal0 / 42: fold 5/5 complete
+{"name": "bands_d3_cal0", "scheme": "42", "rmse": 20067592.084196363, "seconds": 44.732678583999586}
+bands_d3_cal0 / 71: fold 1/5 complete
+bands_d3_cal0 / 71: fold 2/5 complete
+bands_d3_cal0 / 71: fold 3/5 complete
+bands_d3_cal0 / 71: fold 4/5 complete
+bands_d3_cal0 / 71: fold 5/5 complete
+{"name": "bands_d3_cal0", "scheme": "71", "rmse": 20038794.066850074, "seconds": 46.92276466600015}
+bands_d3_cal1 / 42: fold 1/5 complete
+bands_d3_cal1 / 42: fold 2/5 complete
+bands_d3_cal1 / 42: fold 3/5 complete
+bands_d3_cal1 / 42: fold 4/5 complete
+bands_d3_cal1 / 42: fold 5/5 complete
+{"name": "bands_d3_cal1", "scheme": "42", "rmse": 20067592.084196363, "seconds": 138.19689387499966}
+bands_d3_cal1 / 71: fold 1/5 complete
+bands_d3_cal1 / 71: fold 2/5 complete
+bands_d3_cal1 / 71: fold 3/5 complete
+bands_d3_cal1 / 71: fold 4/5 complete
+bands_d3_cal1 / 71: fold 5/5 complete
+{"name": "bands_d3_cal1", "scheme": "71", "rmse": 20038794.066850074, "seconds": 143.26629774999856}
+bands_d5_cal0 / 42: fold 1/5 complete
+bands_d5_cal0 / 42: fold 2/5 complete
+bands_d5_cal0 / 42: fold 3/5 complete
+bands_d5_cal0 / 42: fold 4/5 complete
+bands_d5_cal0 / 42: fold 5/5 complete
+{"name": "bands_d5_cal0", "scheme": "42", "rmse": 20053998.763088953, "seconds": 94.54840429199976}
+bands_d5_cal0 / 71: fold 1/5 complete
+bands_d5_cal0 / 71: fold 2/5 complete
+bands_d5_cal0 / 71: fold 3/5 complete
+bands_d5_cal0 / 71: fold 4/5 complete
+bands_d5_cal0 / 71: fold 5/5 complete
+{"name": "bands_d5_cal0", "scheme": "71", "rmse": 20015814.291077364, "seconds": 95.55116604199975}
+bands_d5_cal1 / 42: fold 1/5 complete
+bands_d5_cal1 / 42: fold 2/5 complete
+bands_d5_cal1 / 42: fold 3/5 complete
+bands_d5_cal1 / 42: fold 4/5 complete
+bands_d5_cal1 / 42: fold 5/5 complete
+{"name": "bands_d5_cal1", "scheme": "42", "rmse": 20053998.763088953, "seconds": 362.7332532500004}
+bands_d5_cal1 / 71: fold 1/5 complete
+bands_d5_cal1 / 71: fold 2/5 complete
+bands_d5_cal1 / 71: fold 3/5 complete
+bands_d5_cal1 / 71: fold 4/5 complete
+bands_d5_cal1 / 71: fold 5/5 complete
+{"name": "bands_d5_cal1", "scheme": "71", "rmse": 20015814.291077364, "seconds": 350.3773894999995}
+tiers_d4_shrink100 / 42: fold 1/5 complete
+tiers_d4_shrink100 / 42: fold 2/5 complete
+tiers_d4_shrink100 / 42: fold 3/5 complete
+tiers_d4_shrink100 / 42: fold 4/5 complete
+tiers_d4_shrink100 / 42: fold 5/5 complete
+{"name": "tiers_d4_shrink100", "scheme": "42", "rmse": 19904040.54114697, "seconds": 27.42796158300007}
+tiers_d4_shrink100 / 71: fold 1/5 complete
+tiers_d4_shrink100 / 71: fold 2/5 complete
+tiers_d4_shrink100 / 71: fold 3/5 complete
+tiers_d4_shrink100 / 71: fold 4/5 complete
+tiers_d4_shrink100 / 71: fold 5/5 complete
+{"name": "tiers_d4_shrink100", "scheme": "71", "rmse": 19893453.013243627, "seconds": 27.278164208999442}
+tiers_d4_shrink300 / 42: fold 1/5 complete
+tiers_d4_shrink300 / 42: fold 2/5 complete
+tiers_d4_shrink300 / 42: fold 3/5 complete
+tiers_d4_shrink300 / 42: fold 4/5 complete
+tiers_d4_shrink300 / 42: fold 5/5 complete
+{"name": "tiers_d4_shrink300", "scheme": "42", "rmse": 19886533.84179393, "seconds": 27.239170958000614}
+tiers_d4_shrink300 / 71: fold 1/5 complete
+tiers_d4_shrink300 / 71: fold 2/5 complete
+tiers_d4_shrink300 / 71: fold 3/5 complete
+tiers_d4_shrink300 / 71: fold 4/5 complete
+tiers_d4_shrink300 / 71: fold 5/5 complete
+{"name": "tiers_d4_shrink300", "scheme": "71", "rmse": 19878240.636598226, "seconds": 30.771446458000355}
+tiers_d6_shrink100 / 42: fold 1/5 complete
+tiers_d6_shrink100 / 42: fold 2/5 complete
+tiers_d6_shrink100 / 42: fold 3/5 complete
+tiers_d6_shrink100 / 42: fold 4/5 complete
+tiers_d6_shrink100 / 42: fold 5/5 complete
+{"name": "tiers_d6_shrink100", "scheme": "42", "rmse": 19929021.283779737, "seconds": 52.19556616599948}
+tiers_d6_shrink100 / 71: fold 1/5 complete
+tiers_d6_shrink100 / 71: fold 2/5 complete
+tiers_d6_shrink100 / 71: fold 3/5 complete
+tiers_d6_shrink100 / 71: fold 4/5 complete
+tiers_d6_shrink100 / 71: fold 5/5 complete
+{"name": "tiers_d6_shrink100", "scheme": "71", "rmse": 19897246.238975503, "seconds": 55.634716542001115}
+tiers_d6_shrink300 / 42: fold 1/5 complete
+tiers_d6_shrink300 / 42: fold 2/5 complete
+tiers_d6_shrink300 / 42: fold 3/5 complete
+tiers_d6_shrink300 / 42: fold 4/5 complete
+tiers_d6_shrink300 / 42: fold 5/5 complete
+{"name": "tiers_d6_shrink300", "scheme": "42", "rmse": 19899661.993844066, "seconds": 54.10166791699885}
+tiers_d6_shrink300 / 71: fold 1/5 complete
+tiers_d6_shrink300 / 71: fold 2/5 complete
+tiers_d6_shrink300 / 71: fold 3/5 complete
+tiers_d6_shrink300 / 71: fold 4/5 complete
+tiers_d6_shrink300 / 71: fold 5/5 complete
+{"name": "tiers_d6_shrink300", "scheme": "71", "rmse": 19876923.228210557, "seconds": 52.83544654199977}
+Nested v5 / 42_outer0: inner fold 1/3 complete
+Nested v5 / 42_outer0: inner fold 2/3 complete
+Nested v5 / 42_outer0: inner fold 3/3 complete
+residual_ridge100 / 42: fold 1/5 complete
+Nested v5 / 42_outer1: inner fold 1/3 complete
+Nested v5 / 42_outer1: inner fold 2/3 complete
+Nested v5 / 42_outer1: inner fold 3/3 complete
+residual_ridge100 / 42: fold 2/5 complete
+Nested v5 / 42_outer2: inner fold 1/3 complete
+Nested v5 / 42_outer2: inner fold 2/3 complete
+Nested v5 / 42_outer2: inner fold 3/3 complete
+residual_ridge100 / 42: fold 3/5 complete
+Nested v5 / 42_outer3: inner fold 1/3 complete
+Nested v5 / 42_outer3: inner fold 2/3 complete
+Nested v5 / 42_outer3: inner fold 3/3 complete
+residual_ridge100 / 42: fold 4/5 complete
+Nested v5 / 42_outer4: inner fold 1/3 complete
+Nested v5 / 42_outer4: inner fold 2/3 complete
+Nested v5 / 42_outer4: inner fold 3/3 complete
+residual_ridge100 / 42: fold 5/5 complete
+{"name": "residual_ridge100", "scheme": "42", "rmse": 19864460.59434826, "seconds": 66.80255320800097}
+Nested v5 / 71_outer0: inner fold 1/3 complete
+Nested v5 / 71_outer0: inner fold 2/3 complete
+Nested v5 / 71_outer0: inner fold 3/3 complete
+residual_ridge100 / 71: fold 1/5 complete
+Nested v5 / 71_outer1: inner fold 1/3 complete
+Nested v5 / 71_outer1: inner fold 2/3 complete
+Nested v5 / 71_outer1: inner fold 3/3 complete
+residual_ridge100 / 71: fold 2/5 complete
+Nested v5 / 71_outer2: inner fold 1/3 complete
+Nested v5 / 71_outer2: inner fold 2/3 complete
+Nested v5 / 71_outer2: inner fold 3/3 complete
+residual_ridge100 / 71: fold 3/5 complete
+Nested v5 / 71_outer3: inner fold 1/3 complete
+Nested v5 / 71_outer3: inner fold 2/3 complete
+Nested v5 / 71_outer3: inner fold 3/3 complete
+residual_ridge100 / 71: fold 4/5 complete
+Nested v5 / 71_outer4: inner fold 1/3 complete
+Nested v5 / 71_outer4: inner fold 2/3 complete
+Nested v5 / 71_outer4: inner fold 3/3 complete
+residual_ridge100 / 71: fold 5/5 complete
+{"name": "residual_ridge100", "scheme": "71", "rmse": 19910683.464910664, "seconds": 133.45770120899942}
+Nested v5 / 42_outer0: inner fold 1/3 complete
+Nested v5 / 42_outer0: inner fold 2/3 complete
+Nested v5 / 42_outer0: inner fold 3/3 complete
+residual_ridge1000 / 42: fold 1/5 complete
+Nested v5 / 42_outer1: inner fold 1/3 complete
+Nested v5 / 42_outer1: inner fold 2/3 complete
+Nested v5 / 42_outer1: inner fold 3/3 complete
+residual_ridge1000 / 42: fold 2/5 complete
+Nested v5 / 42_outer2: inner fold 1/3 complete
+Nested v5 / 42_outer2: inner fold 2/3 complete
+Nested v5 / 42_outer2: inner fold 3/3 complete
+residual_ridge1000 / 42: fold 3/5 complete
+Nested v5 / 42_outer3: inner fold 1/3 complete
+Nested v5 / 42_outer3: inner fold 2/3 complete
+Nested v5 / 42_outer3: inner fold 3/3 complete
+residual_ridge1000 / 42: fold 4/5 complete
+Nested v5 / 42_outer4: inner fold 1/3 complete
+Nested v5 / 42_outer4: inner fold 2/3 complete
+Nested v5 / 42_outer4: inner fold 3/3 complete
+residual_ridge1000 / 42: fold 5/5 complete
+{"name": "residual_ridge1000", "scheme": "42", "rmse": 19818414.529937375, "seconds": 0.7130254170006083}
+Nested v5 / 71_outer0: inner fold 1/3 complete
+Nested v5 / 71_outer0: inner fold 2/3 complete
+Nested v5 / 71_outer0: inner fold 3/3 complete
+residual_ridge1000 / 71: fold 1/5 complete
+Nested v5 / 71_outer1: inner fold 1/3 complete
+Nested v5 / 71_outer1: inner fold 2/3 complete
+Nested v5 / 71_outer1: inner fold 3/3 complete
+residual_ridge1000 / 71: fold 2/5 complete
+Nested v5 / 71_outer2: inner fold 1/3 complete
+Nested v5 / 71_outer2: inner fold 2/3 complete
+Nested v5 / 71_outer2: inner fold 3/3 complete
+residual_ridge1000 / 71: fold 3/5 complete
+Nested v5 / 71_outer3: inner fold 1/3 complete
+Nested v5 / 71_outer3: inner fold 2/3 complete
+Nested v5 / 71_outer3: inner fold 3/3 complete
+residual_ridge1000 / 71: fold 4/5 complete
+Nested v5 / 71_outer4: inner fold 1/3 complete
+Nested v5 / 71_outer4: inner fold 2/3 complete
+Nested v5 / 71_outer4: inner fold 3/3 complete
+residual_ridge1000 / 71: fold 5/5 complete
+{"name": "residual_ridge1000", "scheme": "71", "rmse": 19856115.137049757, "seconds": 0.691460707999795}
+Nested v5 / 42_outer0: inner fold 1/3 complete
+Nested v5 / 42_outer0: inner fold 2/3 complete
+Nested v5 / 42_outer0: inner fold 3/3 complete
+residual_tree_l2 / 42: fold 1/5 complete
+Nested v5 / 42_outer1: inner fold 1/3 complete
+Nested v5 / 42_outer1: inner fold 2/3 complete
+Nested v5 / 42_outer1: inner fold 3/3 complete
+residual_tree_l2 / 42: fold 2/5 complete
+Nested v5 / 42_outer2: inner fold 1/3 complete
+Nested v5 / 42_outer2: inner fold 2/3 complete
+Nested v5 / 42_outer2: inner fold 3/3 complete
+residual_tree_l2 / 42: fold 3/5 complete
+Nested v5 / 42_outer3: inner fold 1/3 complete
+Nested v5 / 42_outer3: inner fold 2/3 complete
+Nested v5 / 42_outer3: inner fold 3/3 complete
+residual_tree_l2 / 42: fold 4/5 complete
+Nested v5 / 42_outer4: inner fold 1/3 complete
+Nested v5 / 42_outer4: inner fold 2/3 complete
+Nested v5 / 42_outer4: inner fold 3/3 complete
+residual_tree_l2 / 42: fold 5/5 complete
+{"name": "residual_tree_l2", "scheme": "42", "rmse": 19827622.670856874, "seconds": 1.5557523749994289}
+Nested v5 / 71_outer0: inner fold 1/3 complete
+Nested v5 / 71_outer0: inner fold 2/3 complete
+Nested v5 / 71_outer0: inner fold 3/3 complete
+residual_tree_l2 / 71: fold 1/5 complete
+Nested v5 / 71_outer1: inner fold 1/3 complete
+Nested v5 / 71_outer1: inner fold 2/3 complete
+Nested v5 / 71_outer1: inner fold 3/3 complete
+residual_tree_l2 / 71: fold 2/5 complete
+Nested v5 / 71_outer2: inner fold 1/3 complete
+Nested v5 / 71_outer2: inner fold 2/3 complete
+Nested v5 / 71_outer2: inner fold 3/3 complete
+residual_tree_l2 / 71: fold 3/5 complete
+Nested v5 / 71_outer3: inner fold 1/3 complete
+Nested v5 / 71_outer3: inner fold 2/3 complete
+Nested v5 / 71_outer3: inner fold 3/3 complete
+residual_tree_l2 / 71: fold 4/5 complete
+Nested v5 / 71_outer4: inner fold 1/3 complete
+Nested v5 / 71_outer4: inner fold 2/3 complete
+Nested v5 / 71_outer4: inner fold 3/3 complete
+residual_tree_l2 / 71: fold 5/5 complete
+{"name": "residual_tree_l2", "scheme": "71", "rmse": 19785806.240391348, "seconds": 1.5895744999997987}
+Nested v5 / 42_outer0: inner fold 1/3 complete
+Nested v5 / 42_outer0: inner fold 2/3 complete
+Nested v5 / 42_outer0: inner fold 3/3 complete
+residual_tree_h20 / 42: fold 1/5 complete
+Nested v5 / 42_outer1: inner fold 1/3 complete
+Nested v5 / 42_outer1: inner fold 2/3 complete
+Nested v5 / 42_outer1: inner fold 3/3 complete
+residual_tree_h20 / 42: fold 2/5 complete
+Nested v5 / 42_outer2: inner fold 1/3 complete
+Nested v5 / 42_outer2: inner fold 2/3 complete
+Nested v5 / 42_outer2: inner fold 3/3 complete
+residual_tree_h20 / 42: fold 3/5 complete
+Nested v5 / 42_outer3: inner fold 1/3 complete
+Nested v5 / 42_outer3: inner fold 2/3 complete
+Nested v5 / 42_outer3: inner fold 3/3 complete
+residual_tree_h20 / 42: fold 4/5 complete
+Nested v5 / 42_outer4: inner fold 1/3 complete
+Nested v5 / 42_outer4: inner fold 2/3 complete
+Nested v5 / 42_outer4: inner fold 3/3 complete
+residual_tree_h20 / 42: fold 5/5 complete
+{"name": "residual_tree_h20", "scheme": "42", "rmse": 19862247.300457127, "seconds": 1.593674749999991}
+Nested v5 / 71_outer0: inner fold 1/3 complete
+Nested v5 / 71_outer0: inner fold 2/3 complete
+Nested v5 / 71_outer0: inner fold 3/3 complete
+residual_tree_h20 / 71: fold 1/5 complete
+Nested v5 / 71_outer1: inner fold 1/3 complete
+Nested v5 / 71_outer1: inner fold 2/3 complete
+Nested v5 / 71_outer1: inner fold 3/3 complete
+residual_tree_h20 / 71: fold 2/5 complete
+Nested v5 / 71_outer2: inner fold 1/3 complete
+Nested v5 / 71_outer2: inner fold 2/3 complete
+Nested v5 / 71_outer2: inner fold 3/3 complete
+residual_tree_h20 / 71: fold 3/5 complete
+Nested v5 / 71_outer3: inner fold 1/3 complete
+Nested v5 / 71_outer3: inner fold 2/3 complete
+Nested v5 / 71_outer3: inner fold 3/3 complete
+residual_tree_h20 / 71: fold 4/5 complete
+Nested v5 / 71_outer4: inner fold 1/3 complete
+Nested v5 / 71_outer4: inner fold 2/3 complete
+Nested v5 / 71_outer4: inner fold 3/3 complete
+residual_tree_h20 / 71: fold 5/5 complete
+{"name": "residual_tree_h20", "scheme": "71", "rmse": 19885372.807336617, "seconds": 1.5884526250010822}
+{"FROZEN_SHORTLIST": [{"name": "residual_tree_l2", "family": "residual", "weight": 0.75, "rmse_42": 19815813.77766609, "gain_42": 1422.5499159097672, "rmse_71": 19790779.339553073, "gain_71": 49471.02210607007, "mean_rmse": 19803296.558609582}, {"name": "tiers_d4_shrink300", "family": "tiers", "weight": 0.25, "rmse_42": 19822850.286160864, "gain_42": -5613.958578865975, "rmse_71": 19837757.5945584, "gain_71": 2492.7671007439494, "mean_rmse": 19830303.94035963}, {"name": "bands_d5_cal0", "family": "bands", "weight": 0.25, "rmse_42": 19841251.155600127, "gain_42": -24014.828018128872, "rmse_71": 19850039.621594705, "gain_71": -9789.259935561568, "mean_rmse": 19845645.388597414}], "sha256": "501309d04eecf815b7bf6c8ad579b3c9a07d979977ed4182878e64ca2f96c152"}
+Nested v5 / 18421_outer0: inner fold 1/3 complete
+Nested v5 / 18421_outer0: inner fold 2/3 complete
+Nested v5 / 18421_outer0: inner fold 3/3 complete
+residual_tree_l2 / 18421: fold 1/5 complete
+Nested v5 / 18421_outer1: inner fold 1/3 complete
+Nested v5 / 18421_outer1: inner fold 2/3 complete
+Nested v5 / 18421_outer1: inner fold 3/3 complete
+residual_tree_l2 / 18421: fold 2/5 complete
+Nested v5 / 18421_outer2: inner fold 1/3 complete
+Nested v5 / 18421_outer2: inner fold 2/3 complete
+Nested v5 / 18421_outer2: inner fold 3/3 complete
+residual_tree_l2 / 18421: fold 3/5 complete
+Nested v5 / 18421_outer3: inner fold 1/3 complete
+Nested v5 / 18421_outer3: inner fold 2/3 complete
+Nested v5 / 18421_outer3: inner fold 3/3 complete
+residual_tree_l2 / 18421: fold 4/5 complete
+Nested v5 / 18421_outer4: inner fold 1/3 complete
+Nested v5 / 18421_outer4: inner fold 2/3 complete
+Nested v5 / 18421_outer4: inner fold 3/3 complete
+residual_tree_l2 / 18421: fold 5/5 complete
+{"name": "residual_tree_l2", "scheme": "18421", "rmse": 19834276.996862095, "seconds": 369.38658654199935}
+Nested v5 / 18422_outer0: inner fold 1/3 complete
+Nested v5 / 18422_outer0: inner fold 2/3 complete
+Nested v5 / 18422_outer0: inner fold 3/3 complete
+residual_tree_l2 / 18422: fold 1/5 complete
+Nested v5 / 18422_outer1: inner fold 1/3 complete
+Nested v5 / 18422_outer1: inner fold 2/3 complete
+Nested v5 / 18422_outer1: inner fold 3/3 complete
+residual_tree_l2 / 18422: fold 2/5 complete
+Nested v5 / 18422_outer2: inner fold 1/3 complete
+Nested v5 / 18422_outer2: inner fold 2/3 complete
+Nested v5 / 18422_outer2: inner fold 3/3 complete
+residual_tree_l2 / 18422: fold 3/5 complete
+Nested v5 / 18422_outer3: inner fold 1/3 complete
+Nested v5 / 18422_outer3: inner fold 2/3 complete
+Nested v5 / 18422_outer3: inner fold 3/3 complete
+residual_tree_l2 / 18422: fold 4/5 complete
+Nested v5 / 18422_outer4: inner fold 1/3 complete
+Nested v5 / 18422_outer4: inner fold 2/3 complete
+Nested v5 / 18422_outer4: inner fold 3/3 complete
+residual_tree_l2 / 18422: fold 5/5 complete
+{"name": "residual_tree_l2", "scheme": "18422", "rmse": 19805533.45059444, "seconds": 69.20361354200031}
+v5 / strat:27421: fold 1/5 complete
+v5 / strat:27421: fold 2/5 complete
+v5 / strat:27421: fold 3/5 complete
+v5 / strat:27421: fold 4/5 complete
+v5 / strat:27421: fold 5/5 complete
+Nested v5 / strat_27421_outer0: inner fold 1/3 complete
+Nested v5 / strat_27421_outer0: inner fold 2/3 complete
+Nested v5 / strat_27421_outer0: inner fold 3/3 complete
+residual_tree_l2 / strat:27421: fold 1/5 complete
+Nested v5 / strat_27421_outer1: inner fold 1/3 complete
+Nested v5 / strat_27421_outer1: inner fold 2/3 complete
+Nested v5 / strat_27421_outer1: inner fold 3/3 complete
+residual_tree_l2 / strat:27421: fold 2/5 complete
+Nested v5 / strat_27421_outer2: inner fold 1/3 complete
+Nested v5 / strat_27421_outer2: inner fold 2/3 complete
+Nested v5 / strat_27421_outer2: inner fold 3/3 complete
+residual_tree_l2 / strat:27421: fold 3/5 complete
+Nested v5 / strat_27421_outer3: inner fold 1/3 complete
+Nested v5 / strat_27421_outer3: inner fold 2/3 complete
+Nested v5 / strat_27421_outer3: inner fold 3/3 complete
+residual_tree_l2 / strat:27421: fold 4/5 complete
+Nested v5 / strat_27421_outer4: inner fold 1/3 complete
+Nested v5 / strat_27421_outer4: inner fold 2/3 complete
+Nested v5 / strat_27421_outer4: inner fold 3/3 complete
+residual_tree_l2 / strat:27421: fold 5/5 complete
+{"name": "residual_tree_l2", "scheme": "strat:27421", "rmse": 19788792.72748709, "seconds": 215.74842991699916}
+v5 / city: fold 1/5 complete
+v5 / city: fold 2/5 complete
+v5 / city: fold 3/5 complete
+v5 / city: fold 4/5 complete
+v5 / city: fold 5/5 complete
+Nested v5 / city_outer0: inner fold 1/3 complete
+Nested v5 / city_outer0: inner fold 2/3 complete
+Nested v5 / city_outer0: inner fold 3/3 complete
+residual_tree_l2 / city: fold 1/5 complete
+Nested v5 / city_outer1: inner fold 1/3 complete
+Nested v5 / city_outer1: inner fold 2/3 complete
+Nested v5 / city_outer1: inner fold 3/3 complete
+residual_tree_l2 / city: fold 2/5 complete
+Nested v5 / city_outer2: inner fold 1/3 complete
+Nested v5 / city_outer2: inner fold 2/3 complete
+Nested v5 / city_outer2: inner fold 3/3 complete
+residual_tree_l2 / city: fold 3/5 complete
+Nested v5 / city_outer3: inner fold 1/3 complete
+Nested v5 / city_outer3: inner fold 2/3 complete
+Nested v5 / city_outer3: inner fold 3/3 complete
+residual_tree_l2 / city: fold 4/5 complete
+Nested v5 / city_outer4: inner fold 1/3 complete
+Nested v5 / city_outer4: inner fold 2/3 complete
+Nested v5 / city_outer4: inner fold 3/3 complete
+residual_tree_l2 / city: fold 5/5 complete
+{"name": "residual_tree_l2", "scheme": "city", "rmse": 20116093.734620467, "seconds": 214.44586508299835}
+tiers_d4_shrink300 / 18421: fold 1/5 complete
+tiers_d4_shrink300 / 18421: fold 2/5 complete
+tiers_d4_shrink300 / 18421: fold 3/5 complete
+tiers_d4_shrink300 / 18421: fold 4/5 complete
+tiers_d4_shrink300 / 18421: fold 5/5 complete
+{"name": "tiers_d4_shrink300", "scheme": "18421", "rmse": 19935445.40724031, "seconds": 36.30640575000143}
+tiers_d4_shrink300 / 18422: fold 1/5 complete
+tiers_d4_shrink300 / 18422: fold 2/5 complete
+tiers_d4_shrink300 / 18422: fold 3/5 complete
+tiers_d4_shrink300 / 18422: fold 4/5 complete
+tiers_d4_shrink300 / 18422: fold 5/5 complete
+{"name": "tiers_d4_shrink300", "scheme": "18422", "rmse": 19877925.670887217, "seconds": 38.355477832999895}
+tiers_d4_shrink300 / strat:27421: fold 1/5 complete
+tiers_d4_shrink300 / strat:27421: fold 2/5 complete
+tiers_d4_shrink300 / strat:27421: fold 3/5 complete
+tiers_d4_shrink300 / strat:27421: fold 4/5 complete
+tiers_d4_shrink300 / strat:27421: fold 5/5 complete
+{"name": "tiers_d4_shrink300", "scheme": "strat:27421", "rmse": 19901621.827345487, "seconds": 56.937218708997534}
+tiers_d4_shrink300 / city: fold 1/5 complete
+tiers_d4_shrink300 / city: fold 2/5 complete
+tiers_d4_shrink300 / city: fold 3/5 complete
+tiers_d4_shrink300 / city: fold 4/5 complete
+tiers_d4_shrink300 / city: fold 5/5 complete
+{"name": "tiers_d4_shrink300", "scheme": "city", "rmse": 20231966.526905827, "seconds": 40.90981408399966}
+bands_d5_cal0 / 18421: fold 1/5 complete
+bands_d5_cal0 / 18421: fold 2/5 complete
+bands_d5_cal0 / 18421: fold 3/5 complete
+bands_d5_cal0 / 18421: fold 4/5 complete
+bands_d5_cal0 / 18421: fold 5/5 complete
+{"name": "bands_d5_cal0", "scheme": "18421", "rmse": 20081113.360385127, "seconds": 102.81968908300041}
+bands_d5_cal0 / 18422: fold 1/5 complete
+bands_d5_cal0 / 18422: fold 2/5 complete
+bands_d5_cal0 / 18422: fold 3/5 complete
+bands_d5_cal0 / 18422: fold 4/5 complete
+bands_d5_cal0 / 18422: fold 5/5 complete
+{"name": "bands_d5_cal0", "scheme": "18422", "rmse": 20049111.991832558, "seconds": 98.74896420799996}
+bands_d5_cal0 / strat:27421: fold 1/5 complete
+bands_d5_cal0 / strat:27421: fold 2/5 complete
+bands_d5_cal0 / strat:27421: fold 3/5 complete
+bands_d5_cal0 / strat:27421: fold 4/5 complete
+bands_d5_cal0 / strat:27421: fold 5/5 complete
+{"name": "bands_d5_cal0", "scheme": "strat:27421", "rmse": 20016247.785183333, "seconds": 110.59628929099927}
+bands_d5_cal0 / city: fold 1/5 complete
+bands_d5_cal0 / city: fold 2/5 complete
+bands_d5_cal0 / city: fold 3/5 complete
+bands_d5_cal0 / city: fold 4/5 complete
+bands_d5_cal0 / city: fold 5/5 complete
+{"name": "bands_d5_cal0", "scheme": "city", "rmse": 20124059.273711395, "seconds": 100.4037043749995}
+{"DECISION": {"candidates": [{"name": "residual_tree_l2", "family": "residual", "weight": 0.75, "rmse_42": 19815813.77766609, "gain_42": 1422.5499159097672, "rmse_71": 19790779.339553073, "gain_71": 49471.02210607007, "mean_rmse": 19803296.558609582, "metrics": {"18421": {"baseline": 19863662.63228201, "candidate": 19832420.144617647, "gain": 31242.48766436428, "relative_change": -0.0015728462692268241}, "18422": {"baseline": 19816733.502104715, "candidate": 19798032.98382704, "gain": 18700.518277674913, "relative_change": -0.0009436730970666662}, "strat:27421": {"baseline": 19828989.57780773, "candidate": 19788419.321618978, "gain": 40570.25618875027, "relative_change": -0.0020460072375122484}, "city": {"baseline": 20136850.755091805, "candidate": 20113476.98948276, "gain": 23373.76560904458, "relative_change": -0.0011607458332646425}}, "local_champion": true, "experimental_eligible": true, "mean_confirmation_gain": 24971.502971019596}, {"name": "tiers_d4_shrink300", "family": "tiers", "weight": 0.25, "rmse_42": 19822850.286160864, "gain_42": -5613.958578865975, "rmse_71": 19837757.5945584, "gain_71": 2492.7671007439494, "mean_rmse": 19830303.94035963, "metrics": {"18421": {"baseline": 19863662.63228201, "candidate": 19868640.341680426, "gain": -4977.70939841494, "relative_change": 0.00025059373442659627}, "18422": {"baseline": 19816733.502104715, "candidate": 19819044.12750258, "gain": -2310.625397864729, "relative_change": 0.0001165997109271455}, "strat:27421": {"baseline": 19828989.57780773, "candidate": 19834990.79066159, "gain": -6001.21285386011, "relative_change": 0.0003026484446073674}, "city": {"baseline": 20136850.755091805, "candidate": 20147551.177671194, "gain": -10700.422579389066, "relative_change": 0.0005313851063173392}}, "local_champion": false, "experimental_eligible": true, "mean_confirmation_gain": -3644.1673981398344}, {"name": "bands_d5_cal0", "family": "bands", "weight": 0.25, "rmse_42": 19841251.155600127, "gain_42": -24014.828018128872, "rmse_71": 19850039.621594705, "gain_71": -9789.259935561568, "mean_rmse": 19845645.388597414, "metrics": {"18421": {"baseline": 19863662.63228201, "candidate": 19882829.421373464, "gain": -19166.789091452956, "relative_change": 0.0009649171679095847}, "18422": {"baseline": 19816733.502104715, "candidate": 19840755.328738794, "gain": -24021.826634079218, "relative_change": 0.0012121991059488302}, "strat:27421": {"baseline": 19828989.57780773, "candidate": 19841828.97692273, "gain": -12839.399115003645, "relative_change": 0.0006475064735207425}, "city": {"baseline": 20136850.755091805, "candidate": 20100616.034163747, "gain": 36234.72092805803, "relative_change": -0.0017994234236897722}}, "local_champion": false, "experimental_eligible": true, "mean_confirmation_gain": -21594.307862766087}], "trials": [{"name": "residual_tree_l2", "family": "residual", "weight": 0.75, "rmse_42": 19815813.77766609, "gain_42": 1422.5499159097672, "rmse_71": 19790779.339553073, "gain_71": 49471.02210607007, "mean_rmse": 19803296.558609582, "metrics": {"18421": {"baseline": 19863662.63228201, "candidate": 19832420.144617647, "gain": 31242.48766436428, "relative_change": -0.0015728462692268241}, "18422": {"baseline": 19816733.502104715, "candidate": 19798032.98382704, "gain": 18700.518277674913, "relative_change": -0.0009436730970666662}, "strat:27421": {"baseline": 19828989.57780773, "candidate": 19788419.321618978, "gain": 40570.25618875027, "relative_change": -0.0020460072375122484}, "city": {"baseline": 20136850.755091805, "candidate": 20113476.98948276, "gain": 23373.76560904458, "relative_change": -0.0011607458332646425}}, "local_champion": true, "experimental_eligible": true, "mean_confirmation_gain": 24971.502971019596}, {"name": "tiers_d4_shrink300", "family": "tiers", "weight": 0.25, "rmse_42": 19822850.286160864, "gain_42": -5613.958578865975, "rmse_71": 19837757.5945584, "gain_71": 2492.7671007439494, "mean_rmse": 19830303.94035963, "metrics": {"18421": {"baseline": 19863662.63228201, "candidate": 19868640.341680426, "gain": -4977.70939841494, "relative_change": 0.00025059373442659627}, "18422": {"baseline": 19816733.502104715, "candidate": 19819044.12750258, "gain": -2310.625397864729, "relative_change": 0.0001165997109271455}, "strat:27421": {"baseline": 19828989.57780773, "candidate": 19834990.79066159, "gain": -6001.21285386011, "relative_change": 0.0003026484446073674}, "city": {"baseline": 20136850.755091805, "candidate": 20147551.177671194, "gain": -10700.422579389066, "relative_change": 0.0005313851063173392}}, "local_champion": false, "experimental_eligible": true, "mean_confirmation_gain": -3644.1673981398344}], "baseline_portal_rmse": 12046722.3691139, "lock_sha256": "501309d04eecf815b7bf6c8ad579b3c9a07d979977ed4182878e64ca2f96c152", "decision": "experimental CSVs for portal evaluation; keep best observed score", "limitation": "All labels have been examined previously. No portal improvement is claimed."}}
+Nested v5 / full_training: inner fold 1/3 complete
+Nested v5 / full_training: inner fold 2/3 complete
+Nested v5 / full_training: inner fold 3/3 complete
+{"fresh_full_fit": 1, "choice": "residual_tree_l2", "weight": 0.75}
+{"exported": "./improvement_v7/candidates/trial_1/submission.csv", "rms_difference": 460050.7326810312, "lower_bound": 11586671.63643287}
+{"fresh_full_fit": 2, "choice": "tiers_d4_shrink300", "weight": 0.25}
+{"exported": "./improvement_v7/candidates/trial_2/submission.csv", "rms_difference": 503434.51658693317, "lower_bound": 11543287.852526966}

@@ -1,0 +1,127 @@
+name: gpu-ci
+
+# GPU merge gate via Modal. A free ubuntu-latest runner drives `modal run`, which
+# executes the inference e2e + one training step on an (Ampere+) Modal GPU in a
+# fresh, isolated, ephemeral container. The job's exit code is the gate.
+#
+# PREREQUISITES (one-time):
+#   1. A Modal account (https://modal.com), token via `modal token new`.
+#   2. Repo secrets MODAL_TOKEN_ID and MODAL_TOKEN_SECRET (Settings -> Secrets
+#      and variables -> Actions). These are the token_id / token_secret values
+#      from ~/.modal.toml -- add the two values, NOT the file.
+#
+# Until those secrets exist the job is a green no-op (see the guard below), so it
+# never blocks merges before you've set Modal up. GitHub does not pass secrets to
+# fork-PR workflows, so this job is also skipped for forks (a maintainer reruns
+# after review). Do not mark it a required check until the secrets are set.
+#
+# COST: each relevant change runs two Modal containers: the benchmarked lock and
+# the newest supported CUDA 13 build. A GPU only spins up when a change actually
+# touches code the gate exercises (src / tests / deps / the CI driver) -- see the
+# "Detect relevant changes" step. A docs-, license-, or config-only PR runs the
+# jobs as fast green no-ops that never reach Modal. The filtering is done INSIDE
+# the job (not via a `paths:`/`paths-ignore:` trigger) on purpose: a trigger-level
+# filter makes the check "expected, never reported" on a docs-only PR, which
+# would deadlock the merge button if this job is ever a required check. Filtering
+# in-job keeps the check always-reported, so it stays safe to require. To cut
+# spend further, drop `pull_request:` and rely on push/dispatch.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  gpu-modal:
+    name: GPU test (${{ matrix.torch_version }}, Modal)
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # Keep the benchmarked lock as the baseline and exercise the newest
+        # supported torch against a real CUDA 13.0 wheel.
+        torch_version: ["locked", "2.13.0"]
+    # Skip for fork PRs (they have no access to the Modal secrets).
+    if: >-
+      github.event_name != 'pull_request' ||
+      github.event.pull_request.head.repo.fork == false
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          # Full history so we can diff the PR/push against its base commit.
+          fetch-depth: 0
+      - name: Detect relevant changes
+        id: filter
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          PUSH_BEFORE_SHA: ${{ github.event.before }}
+        run: |
+          set -uo pipefail
+          run_gate()  { echo "relevant=true"  >> "$GITHUB_OUTPUT"; echo "$1"; exit 0; }
+          skip_gate() { echo "relevant=false" >> "$GITHUB_OUTPUT"; echo "$1"; exit 0; }
+
+          # Manual runs are always intentional -> run the gate.
+          [ "$EVENT_NAME" = "workflow_dispatch" ] && run_gate "workflow_dispatch -> run gate"
+
+          if [ "$EVENT_NAME" = "pull_request" ]; then
+            base="$PR_BASE_SHA"
+          else
+            base="$PUSH_BEFORE_SHA"
+          fi
+
+          # Fail SAFE: if we cannot resolve a base commit (branch creation,
+          # force-push, shallow clone), run the gate rather than risk skipping a
+          # real change.
+          zero="0000000000000000000000000000000000000000"
+          if [ -z "$base" ] || [ "$base" = "$zero" ] || ! git cat-file -e "${base}^{commit}" 2>/dev/null; then
+            run_gate "no resolvable base commit -> run gate (fail-safe)"
+          fi
+
+          changed="$(git diff --name-only "$base" HEAD)" || run_gate "git diff failed -> run gate (fail-safe)"
+          echo "changed files:"; printf '%s\n' "$changed" | sed 's/^/  /'
+
+          # DENYLIST, fail-safe: the gate runs unless EVERY changed file is a
+          # known-inert path. A file the gate exercises (src, tests, pyproject,
+          # uv.lock, ci/, this workflow) -- or any NEW path not listed here --
+          # falls through to the default case and runs the gate. Only docs,
+          # licenses, images, and unrelated workflows are treated as inert.
+          while IFS= read -r f; do
+            [ -z "$f" ] && continue
+            case "$f" in
+              *.md|docs/*|examples/*|benchmarks/*|scripts/*|licenses/*) ;;
+              LICENSE|NOTICE|CITATION.cff|CLA.md|SECURITY.md|CONTRIBUTING.md) ;;
+              .gitignore|.pre-commit-config.yaml|*.png) ;;
+              .github/ISSUE_TEMPLATE/*) ;;
+              .github/workflows/ci.yml|.github/workflows/cla.yml) ;;
+              .github/workflows/notify-sync.yml|.github/workflows/publish.yml) ;;
+              *) run_gate "relevant change ($f) -> run gate" ;;
+            esac
+          done <<EOF
+          $changed
+          EOF
+          skip_gate "only inert paths changed -> skip GPU gate (no-op)"
+
+      - name: GPU gate skipped (no relevant changes)
+        if: steps.filter.outputs.relevant != 'true'
+        run: echo "No src / tests / deps / ci changes -> GPU gate skipped (green no-op)."
+
+      - uses: actions/setup-python@v6
+        if: steps.filter.outputs.relevant == 'true'
+        with:
+          python-version: "3.11"
+      - run: pip install modal
+        if: steps.filter.outputs.relevant == 'true'
+      - name: Inference + one training step on a Modal GPU
+        if: steps.filter.outputs.relevant == 'true'
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          if [ -z "$MODAL_TOKEN_ID" ] || [ -z "$MODAL_TOKEN_SECRET" ]; then
+            echo "Modal secrets not configured; skipping GPU gate (no-op)."
+            echo "Set MODAL_TOKEN_ID / MODAL_TOKEN_SECRET to enable it."
+            exit 0
+          fi
+          modal run ci/modal_gpu_smoke.py --torch-version "${{ matrix.torch_version }}"

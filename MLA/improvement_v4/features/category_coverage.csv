@@ -1,0 +1,19 @@
+feature,train_categories,test_categories,unknown_test_categories,test_rows_unknown,unseen_validation_rows,non_integer_values,numeric_to_string_collisions
+Resturant Tier,3,2,[],0,0,0,0
+Restaurant City Tier,2,2,[],0,0,0,0
+Restaurant Zomato Rating,6,5,[],0,0,0,0
+Order Wait Time,10,10,[],0,0,0,0
+Staff Responsivness,8,6,[],0,1,0,0
+Value for Money,7,6,[],0,1,0,0
+Hygiene Rating,9,8,[],0,2,0,0
+Food Rating,6,6,[],0,0,0,0
+Overall Restaurant Rating,6,6,[],0,0,0,0
+Ambience,12,11,[],0,0,0,0
+Lively,11,11,[],0,0,0,0
+Service,11,11,[],0,1,0,0
+Comfortablility,11,11,[],0,0,0,0
+Privacy,11,11,[],0,0,0,0
+Live Music Rating,9,8,[],0,0,0,0
+Comedy Gigs Rating,7,7,[],0,1,0,0
+Value Deals Rating,8,6,[],0,2,0,0
+Live Sports Rating,6,6,[],0,0,0,0

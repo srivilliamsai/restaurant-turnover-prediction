@@ -1,0 +1,47 @@
+{"model": "raw_baseline", "split_seed": 71, "rmse": 20081944.758526333, "rmse_below_100m": 12118941.18379793, "mean_prediction": 30668995.17287115, "trees": [302, 302, 302, 302, 302]} seconds 0.0
+{"model": "huber_baseline", "split_seed": 71, "rmse": 20010877.315517947, "rmse_below_100m": 11803971.306437636, "mean_prediction": 28895118.79850199, "trees": [768, 768, 768, 768, 768]} seconds 0.0
+{"model": "engineered", "split_seed": 71, "rmse": 20087836.262917075, "rmse_below_100m": 12144743.085319785, "mean_prediction": 30696233.75659977, "trees": [260, 260, 260, 260, 260]} seconds 0.0
+{"model": "engineered_drop", "split_seed": 71, "rmse": 20117185.001318272, "rmse_below_100m": 12149346.362647464, "mean_prediction": 30693989.275673613, "trees": [216, 216, 216, 216, 216]} seconds 0.0
+{"model": "ordered_depth5", "split_seed": 71, "rmse": 20062403.086044077, "rmse_below_100m": 12168035.442467218, "mean_prediction": 30718350.017529085, "trees": [219, 219, 219, 219, 219]} seconds 0.0
+{"model": "huber20_engineered", "split_seed": 71, "rmse": 19954562.47029369, "rmse_below_100m": 11826933.480348343, "mean_prediction": 29381947.224458963, "trees": [699, 699, 699, 699, 699]} seconds 0.0
+{"model": "huber40", "split_seed": 71, "rmse": 19938807.39821613, "rmse_below_100m": 11814355.286028277, "mean_prediction": 29840283.11926488, "trees": [664, 664, 664, 664, 664]} seconds 0.0
+{"model": "clip120", "split_seed": 71, "rmse": 19942682.83951449, "rmse_below_100m": 11866692.5093071, "mean_prediction": 30142729.48986646, "trees": [591, 591, 591, 591, 591]} seconds 0.0
+{"model": "spline_ridge", "split_seed": 71, "rmse": 20220559.706828263, "rmse_below_100m": 12518805.332728555, "mean_prediction": 30733958.632457115, "trees": [0, 0, 0, 0, 0]} seconds 0.0
+{"model": "svr_core", "split_seed": 71, "rmse": 20343275.434159435, "rmse_below_100m": 12114608.310055595, "mean_prediction": 28538545.22284361, "trees": [0, 0, 0, 0, 0]} seconds 0.0
+{"model": "huber40_engineered", "split_seed": 71, "rmse": 19915572.559153043, "rmse_below_100m": 11805089.942812178, "mean_prediction": 29872828.250205036, "trees": [619, 619, 619, 619, 619]} seconds 0.0
+{"model": "huber40_monotone", "split_seed": 71, "rmse": 19933784.21097114, "rmse_below_100m": 11773152.510811139, "mean_prediction": 29560899.37417593, "trees": [447, 447, 447, 447, 447]} seconds 0.0
+CURRENT BLEND 19956845.012878824 BODY 11825088.829937384
+CONFIRMATION {'validation': 'Shuffled 5-fold seed 71', 'baseline_rmse': 19956845.012878824, 'candidate_rmse': 19891238.885366585, 'improvement': 65606.12751223892}
+{"model": "raw_baseline", "split_seed": 2026, "rmse": 20006952.774131943, "rmse_below_100m": 12097366.464982351, "mean_prediction": 30595857.157906555, "trees": [302, 302, 302, 302, 302]} seconds 0.0
+{"model": "huber_baseline", "split_seed": 2026, "rmse": 19950116.83573498, "rmse_below_100m": 11767530.569265252, "mean_prediction": 28893939.215392485, "trees": [768, 768, 768, 768, 768]} seconds 0.0
+{"model": "engineered", "split_seed": 2026, "rmse": 19996814.249011513, "rmse_below_100m": 12024127.875223449, "mean_prediction": 30546532.09706644, "trees": [260, 260, 260, 260, 260]} seconds 0.0
+{"model": "engineered_drop", "split_seed": 2026, "rmse": 19987341.452829987, "rmse_below_100m": 12037945.26623283, "mean_prediction": 30566608.89706745, "trees": [216, 216, 216, 216, 216]} seconds 0.0
+{"model": "ordered_depth5", "split_seed": 2026, "rmse": 19948614.645163577, "rmse_below_100m": 12022824.133233318, "mean_prediction": 30557193.022182006, "trees": [219, 219, 219, 219, 219]} seconds 0.0
+{"model": "huber20_engineered", "split_seed": 2026, "rmse": 19942059.554223742, "rmse_below_100m": 11766926.694827126, "mean_prediction": 29201775.718551762, "trees": [699, 699, 699, 699, 699]} seconds 0.0
+{"model": "huber40", "split_seed": 2026, "rmse": 19913871.686653573, "rmse_below_100m": 11772071.301450197, "mean_prediction": 29728805.084448565, "trees": [664, 664, 664, 664, 664]} seconds 0.0
+{"model": "clip120", "split_seed": 2026, "rmse": 19915105.280586645, "rmse_below_100m": 11847953.70450089, "mean_prediction": 30011372.856104534, "trees": [591, 591, 591, 591, 591]} seconds 0.0
+{"model": "spline_ridge", "split_seed": 2026, "rmse": 20129541.801016536, "rmse_below_100m": 12426586.731152622, "mean_prediction": 30763332.292576622, "trees": [0, 0, 0, 0, 0]} seconds 0.0
+{"model": "svr_core", "split_seed": 2026, "rmse": 20354026.83125876, "rmse_below_100m": 12103756.781719819, "mean_prediction": 28556983.57184909, "trees": [0, 0, 0, 0, 0]} seconds 0.0
+{"model": "huber40_engineered", "split_seed": 2026, "rmse": 19863398.873981718, "rmse_below_100m": 11777757.001911605, "mean_prediction": 29705854.349425722, "trees": [619, 619, 619, 619, 619]} seconds 0.0
+{"model": "huber40_monotone", "split_seed": 2026, "rmse": 19899645.837085474, "rmse_below_100m": 11718019.345657416, "mean_prediction": 29364134.20993214, "trees": [447, 447, 447, 447, 447]} seconds 0.0
+CURRENT BLEND 19886765.223428875 BODY 11791930.948042415
+CONFIRMATION {'validation': 'Shuffled 5-fold seed 2026', 'baseline_rmse': 19886765.223428875, 'candidate_rmse': 19836015.475724667, 'improvement': 50749.7477042079}
+{"model": "raw_baseline", "split_seed": 303, "rmse": 20134191.13814182, "rmse_below_100m": 12110452.133562963, "mean_prediction": 30543010.49684815, "trees": [302, 302, 302, 302, 302]} seconds 17.1
+{"model": "huber_baseline", "split_seed": 303, "rmse": 19982630.508344416, "rmse_below_100m": 11809321.781690354, "mean_prediction": 28740502.446623962, "trees": [768, 768, 768, 768, 768]} seconds 26.0
+{"model": "engineered", "split_seed": 303, "rmse": 20088378.210487045, "rmse_below_100m": 12084935.772083836, "mean_prediction": 30614776.78428628, "trees": [260, 260, 260, 260, 260]} seconds 6.2
+{"model": "engineered_drop", "split_seed": 303, "rmse": 20145524.264697053, "rmse_below_100m": 12149657.322478741, "mean_prediction": 30600196.110073015, "trees": [216, 216, 216, 216, 216]} seconds 3.3
+{"model": "ordered_depth5", "split_seed": 303, "rmse": 20233633.52190478, "rmse_below_100m": 12277482.852615912, "mean_prediction": 30652102.766109552, "trees": [219, 219, 219, 219, 219]} seconds 4.7
+{"model": "huber20_engineered", "split_seed": 303, "rmse": 19958976.10449647, "rmse_below_100m": 11784770.027863162, "mean_prediction": 29205303.235697724, "trees": [699, 699, 699, 699, 699]} seconds 8.8
+{"model": "huber40", "split_seed": 303, "rmse": 19909666.876913317, "rmse_below_100m": 11800424.701981297, "mean_prediction": 29675210.284353755, "trees": [664, 664, 664, 664, 664]} seconds 5.4
+{"model": "clip120", "split_seed": 303, "rmse": 19951430.171576258, "rmse_below_100m": 11846883.39980079, "mean_prediction": 29931946.25521591, "trees": [591, 591, 591, 591, 591]} seconds 4.6
+{"model": "spline_ridge", "split_seed": 303, "rmse": 20202855.19395696, "rmse_below_100m": 12458783.573581342, "mean_prediction": 30802378.578735154, "trees": [0, 0, 0, 0, 0]} seconds 0.3
+{"model": "svr_core", "split_seed": 303, "rmse": 20370600.617454506, "rmse_below_100m": 12139279.47041087, "mean_prediction": 28556065.092167743, "trees": [0, 0, 0, 0, 0]} seconds 2.2
+{"model": "huber40_engineered", "split_seed": 303, "rmse": 19953696.19372193, "rmse_below_100m": 11827390.125018917, "mean_prediction": 29687026.67551553, "trees": [619, 619, 619, 619, 619]} seconds 5.7
+{"model": "huber40_monotone", "split_seed": 303, "rmse": 19946843.12696662, "rmse_below_100m": 11767471.341817949, "mean_prediction": 29346343.775537413, "trees": [447, 447, 447, 447, 447]} seconds 7.6
+CURRENT BLEND 19969915.32388324 BODY 11814121.413704125
+CONFIRMATION {'validation': 'Shuffled 5-fold seed 303', 'baseline_rmse': 19969915.32388324, 'candidate_rmse': 19906444.750542846, 'improvement': 63470.5733403936}
+                 validation  baseline_rmse  candidate_rmse   improvement
+    Shuffled 5-fold seed 71   1.995685e+07    1.989124e+07  65606.127512
+  Shuffled 5-fold seed 2026   1.988677e+07    1.983602e+07  50749.747704
+   Shuffled 5-fold seed 303   1.996992e+07    1.990644e+07  63470.573340
+City GroupKFold stress test   2.030268e+07    2.012757e+07 175108.149696

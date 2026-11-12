@@ -1,0 +1,39 @@
+{
+  "context": {
+    "name": "v7",
+    "inputs": {
+      "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+      "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+      "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+      "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+    },
+    "sources": {
+      "engine.py": "af94e392d719ebbbf3bba49808cfb86580aa62552661d9d4e81c22d4806d4428",
+      "modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+      "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+      "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+      "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+      "v5_contract.json": "3446412f01d536a31123142b984392216efd29094965500251386eac1814ab69",
+      "reference_manifest.json": "be46ba7d91b5c583570f4ceaf4919c292d4fba460dec58998873084638ae2c78",
+      "workflow.py": "a0465205bc380403c9d6c2e1a853c45a9df89897f2c2e62cebd5db69098f29ca",
+      "pilot.py": "f013c39d3de3acf1de359e4e1b1a851c42a7667e794422551342be0987bb3379",
+      "gpu_runner.py": "414af446a93f4a21b016978851c79f2d0b943f6ddfaccb91cf4aaa70e249d015"
+    },
+    "runtime": {
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "sklearn": "1.9.1",
+      "scipy": "1.18.1",
+      "catboost": "1.2.10",
+      "interpret-core": "0.7.8"
+    },
+    "train_ids": "2b7159bfd3ea1558eea09fcd57464692b3f38d7de6e234c6292e0d4b1cd34b20",
+    "valid_ids": "e49e8f8b3d553a039a0714250e9d56e02219b7a67b5c9d0ca8a8d6eb669a4ffa",
+    "training_targets": "8a8c15c5d8571a87c63f26a196899785e207ba3133da04c2d175ffec8a5c4896",
+    "extra": {
+      "scheme": "48212",
+      "fold": 2
+    }
+  },
+  "sha256": "b97ccad1a5c7dc71fc4a97e89ec90f8bd854da4d3cf0c9655e5866ebbda569fc"
+}

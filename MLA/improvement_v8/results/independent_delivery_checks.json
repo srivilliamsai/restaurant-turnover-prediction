@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "development_scores_independently_recomputed": 128,
+  "maximum_difference_INR": 3.725290298461914e-09,
+  "frozen_empty_shortlist_correct": true,
+  "no_confirmation_results_invented": true,
+  "scored_v7_csv_and_notebook_unchanged": true,
+  "source_input_output_hashes": true,
+  "notebook_saved_outputs_valid": true,
+  "zip_crc_and_outputs": true,
+  "development_segment_rows": 384,
+  "development_fold_rows": 640,
+  "primary_metric_retains_every_original_label": true,
+  "qualified_candidates": 0,
+  "portal_uploads_by_agent": 0
+}

@@ -1,0 +1,347 @@
+{
+  "context": {
+    "name": "NOR15",
+    "spec": {
+      "family": "Nori-1.5",
+      "estimators": 4,
+      "target_augmentations": false,
+      "seed": 10242,
+      "target": "raw INR millions"
+    },
+    "scheme": "42",
+    "fold": 3,
+    "inputs": {
+      "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+      "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+      "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+      "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+    },
+    "sources": {
+      "core.py": "5312eada9c348afa96e92185145fd91d19ad4500a9b4913ee2efcc229e94cb8a",
+      "features.py": "4173ca9923818419245ae723a8487be4d12385a194e16617d43e25663f86133c",
+      "modeling.py": "ed7a0703ce2e9573cf99f3f0a5a5b4a62da4db4ea5790450b3d7bcfb55aa4b0b",
+      "workflow.py": "795a6fa926ce9167d371cc9ec26a0b75a2eaf5412279a81d00b4777223d9a9de",
+      "verify.py": "8fa80eda1db87cbf7220854462670717514d780af202e57becf016ec3e2773ca",
+      "delivery.py": "be619d554a6ca2a0d38246ca7d848d3e228cd9da8849f57cefa330ea55923079",
+      "fresh_worker.py": "c76bde02db74b8b8d9ecc17dc9b20fd9a61e1eaab0ab5c6325a8f1ea6c5f4936",
+      "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+      "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+      "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+      "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+      "v5_contract.json": "3446412f01d536a31123142b984392216efd29094965500251386eac1814ab69",
+      "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+      "reference_manifest.json": "82417467e331d6e470fd1058c4ea4edb5a47f98021efc822176bd9a04b99bbd5",
+      "baseline_registry.json": "53e7ddb7fbfbe08162aa97fac8d5ad9dea4981aab3aa942b3e98ebdb2a3060b7",
+      "frozen_pfn.py": "ff4d383d269ffdc1b0021f7d0cac4e19240be130f2544bcc80dc41916a5262b5",
+      "new_models.py": "60f7c9e96987a67fe3b7bc1a5fc4fb3694f3874b7a27aa50cadfc4958e8feb40",
+      "pilot_worker.py": "7d434c6061a67825ce43470ffe4a26e000b8ea15a09d21398e847ccfe5c35654",
+      "checkpoint_registry.json": "a32a93bb96478383073c3483e77454fb490cc06ab2e35002041523ef62decc69",
+      "nori_inference.json": "64ad0d97763387b1373f98dbfb00225bd7aa1312b57291a871eb607f056832ec",
+      "source_registry.json": "2ee52e52f9bed2600e412d0f016d0e4e87b9baea6932f46c2b558a1a0ff5ac61"
+    },
+    "runtime_contract": {
+      "runtime": {
+        "dependencies": {
+          "numpy": "2.5.4",
+          "pandas": "3.0.6",
+          "scikit-learn": "1.9.1",
+          "scipy": "1.18.1",
+          "catboost": "1.2.10",
+          "interpret-core": "0.7.8",
+          "tabpfn": "9.2.0",
+          "tabicl": "2.2.0",
+          "torch": "2.11.0+cu130"
+        },
+        "gpu": "Tesla T4",
+        "cuda": "13.0",
+        "precision": "float32",
+        "prediction_chunk": 500,
+        "seed": 10242,
+        "datetime_dependencies": {
+          "skrub": "0.10.1",
+          "pyarrow": "23.0.1"
+        }
+      },
+      "new_runtime": {
+        "einops": "0.8.2",
+        "numba": "0.68.1",
+        "llvmlite": "0.50.0",
+        "kditransform": "1.2.0",
+        "pyvinecopulib": "1.0.1",
+        "synthefy": "7.4.0",
+        "pyyaml": "6.0.3",
+        "pydantic": "2.14.1",
+        "setuptools": "80.10.2"
+      },
+      "new_module_sha256": {
+        "xiaomi": {
+          "xiaomi/tabldm/__about__.py": "53300f29f406189ade7a17d58d3ffa721d4990a8b351ce7a59a9ad00420b42e2",
+          "xiaomi/tabldm/__init__.py": "6d0d3f7d7c6386486df38071a4127854efa2556dea3dd07ba920931b6891b629",
+          "xiaomi/tabldm/_model/__init__.py": "cd474ea8c50df64a5c52d7a4bfaf880438e4a795458c9084e73b0225dac00007",
+          "xiaomi/tabldm/_model/attention.py": "86bb1a7c5ea654f05a959727a83a39944766549f99c782a429d6b64a2c76dccd",
+          "xiaomi/tabldm/_model/attnres_light_rmsnorm.py": "699255b6a1b07b8ca1992174a6e4a5cc7479da778d9609efdf7f7ad2ec4bc574",
+          "xiaomi/tabldm/_model/attnres_light_rmsnorm_moe.py": "4b1cd3182611bd39154ba08e38efede371192c5ad426a53c51e18b7b16a1fd00",
+          "xiaomi/tabldm/_model/embedding.py": "98c92f6d39b3841c836e41391cd1cf97a724697fcc3a2bb8e126375f0e21fbcf",
+          "xiaomi/tabldm/_model/embedding_dual_stream.py": "12c3306250d02a54dd376f95db4a8bb717f49267e234690f32132121ea10805d",
+          "xiaomi/tabldm/_model/encoders.py": "fd39dc92a24a682d60a99ea4bb043530ace7c0addebc11689aafe3aef48f0d95",
+          "xiaomi/tabldm/_model/inference.py": "e537145465c9af39807ce7386d91f8c8a4ba928aa8204cb57b7265f243f93708",
+          "xiaomi/tabldm/_model/inference_config.py": "04d8cc2e483c80ff56652032cf114e21b8027bbe5d37ae9772038d38f5fe257c",
+          "xiaomi/tabldm/_model/interaction.py": "3cfbb8cb82ea5253bce2557fd8f1390239769caf5ebde8c177e8a501af844a0b",
+          "xiaomi/tabldm/_model/kv_cache.py": "12523b9faafc8eafcca4c683f47852df2db9db4534d122b1db158296a3819731",
+          "xiaomi/tabldm/_model/kv_cache_attnres.py": "6d36e5d084093ce3c71caac73c96addc74ef4667897e30bb4212d16816c0fda6",
+          "xiaomi/tabldm/_model/layers.py": "2e56c0b6ee2ec956d51265485e2fcca8e16cb08e14fa01c72a300743fd8eaa15",
+          "xiaomi/tabldm/_model/learning.py": "272fa84c913dfe32e1fbf0ce35ea98d0fc286e22c9e45c2f11e399d37bb1ab3a",
+          "xiaomi/tabldm/_model/moe.py": "82e93921c4b7dcb9db146f72197bce4c9b096b4e81a536243502297de5b7da4e",
+          "xiaomi/tabldm/_model/quantile_dist.py": "379d53c7cb62858cda97190d151807804e2d3c46b03a2404167739670187436b",
+          "xiaomi/tabldm/_model/rope.py": "4576d7affd4a6ea71a0c45dcb42defd828257049800bee74a2b4f1fd1cf85fa2",
+          "xiaomi/tabldm/_model/ssmax.py": "4dc03cf678c60056c4b24db00f60f1caf72bb90be85b7afe06eee72946f14f42",
+          "xiaomi/tabldm/_model/tabldm.py": "d36bf5deca2720e78848556fa6cc8b2c3b3b3b35ea0cbc3fea1a54b39a4a9351",
+          "xiaomi/tabldm/_sklearn/__init__.py": "4cb1a5b6c1c158710870081cf9841e6c40cbf410442b85e3a7dcfc74331923b2",
+          "xiaomi/tabldm/_sklearn/base.py": "ef56e6584fa1b2bf1e2caa0b5e7db7bc8b12ace8433e521e2c9ce535e5082466",
+          "xiaomi/tabldm/_sklearn/classifier.py": "13f6028e63f69e0d5c04cf585e3d9463e2c6ba418c1467a5241d160dcdb219b7",
+          "xiaomi/tabldm/_sklearn/preprocessing.py": "72c61849c4467177d07512757450fd9e10afb99c7c4448143ce59c5c1ae30bc3",
+          "xiaomi/tabldm/_sklearn/regressor.py": "4c65fc4796b7c55697b51ea321158f970a525f8384be251f7e18f857423d3d3d",
+          "xiaomi/tabldm/_sklearn/sklearn_utils.py": "efbd6b125b4fdcb2207e731efb17b0f1f3f15fa89d7b21189bc3d22b1300ad81"
+        },
+        "nori": {
+          "nori/src/synthefy_nori/__init__.py": "cf04f1105ef20e131bd1c8f68b5a3a8bf4172e0eb3a6e2d1bce8ef073e49b36f",
+          "nori/src/synthefy_nori/_legacy_text_features.py": "a31b7b0c044db6e3d0af3b52daf53849ea753e8d3ca961f18d00757dc42d6d5c",
+          "nori/src/synthefy_nori/api.py": "1e30b05cf647e17b57955d2cc40a0ee2c676dfb46fa18bd5e9320d309e0dcfc4",
+          "nori/src/synthefy_nori/configs/__init__.py": "a0634c668d263fec0d49e68e36edfab3931bd8491850e96c25d7854d677659d0",
+          "nori/src/synthefy_nori/configs/default_inference.json": "6710b2f09a6c2e3070e888451ad2bace53b3ebc21ec9eafb22ca61553704ace0",
+          "nori/src/synthefy_nori/configs/model_base.json": "53207475e6ec3128f3eedbb80d991eb8d64fd2cc21301535ecfada62e97b48c3",
+          "nori/src/synthefy_nori/configs/model_v3_inference.json": "cd8e85792f60ad9ad261edc4961713af194241d7fe940dac48c27e114eca955d",
+          "nori/src/synthefy_nori/discretize.py": "65bca07c3a2d1c28bec1e1b1fc7bd0ac352011a8c8b5595e9879c061679543cd",
+          "nori/src/synthefy_nori/embedding/__init__.py": "80dcd52ee21040edee497e801cf15570b8b068ef7c708bf3dde6be43b6ed4eb3",
+          "nori/src/synthefy_nori/embedding/embedding.py": "597dca5375a226dacb901fa9c53a937cde27aeb4fb3c5a369d9a54ec4dc9342e",
+          "nori/src/synthefy_nori/entity_ids.py": "8c5d4ad7a611e9162387597aba0b093b6725b6754919281f45917ba6578041a7",
+          "nori/src/synthefy_nori/evaluation/__init__.py": "25113326e7ced3143ca2ddc109f617e4a177b5f929016e929839591de759aa9b",
+          "nori/src/synthefy_nori/evaluation/analysis.py": "c412d1b05007d9c93796b11d7faf7f3ca720e6e9d0375f4ba0bdd630dabdbbd8",
+          "nori/src/synthefy_nori/evaluation/benchmark_lists/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "nori/src/synthefy_nori/evaluation/cli.py": "de93960b74f6fcaf13cc84e5cb314b2fac2398d7c0a10468f32d992858623bc2",
+          "nori/src/synthefy_nori/evaluation/datasets.py": "d967bc11c09d782f9c2fa115bf00b06ef7ba665df680ae421577f5cc504e8ebb",
+          "nori/src/synthefy_nori/evaluation/models.py": "b3330b62bb8465225ca6c4b5a6433e2ddc421a5d8a8af865493c61eef6f218f9",
+          "nori/src/synthefy_nori/evaluation/runner.py": "285644001f14f4c5dceb27b56393b7a6f9af021da3c6565bc23b97d411c4d0b2",
+          "nori/src/synthefy_nori/explainability/__init__.py": "cd4884750d04e9686ad8c03eb5973fca1386c674e691fdd727378935bf927610",
+          "nori/src/synthefy_nori/explainability/_common.py": "dc8f4bd23f8c429738aeac7c6697e0aff815888d948d75a62b2d03c3107d3ad8",
+          "nori/src/synthefy_nori/explainability/_core.py": "73b30e93a917be3d588014935bb9a990cc223ec6a52160d17d9f627752413490",
+          "nori/src/synthefy_nori/explainability/data.py": "d9520274842928fa1f7c11d59fe6d782673b9d52fd0702dc7e1b53a2b776e573",
+          "nori/src/synthefy_nori/explainability/ebm.py": "33fe130821e2010266ec6e3a9b1b096cb2d367321d1f7ba1005d477bbe8028cc",
+          "nori/src/synthefy_nori/explainability/importance.py": "e8d76a866f0ed020c6b899bb32ba742b5918113a1212ddd2e32a66c0c30489a7",
+          "nori/src/synthefy_nori/explainability/interpreter.py": "a98b5a3917c8521aeadc3764a0b81dcca00efe80d14c33591e0177fab4855950",
+          "nori/src/synthefy_nori/explainability/pipeline.py": "57dc514d2d5c85952703546eebaf25e87ffc4093e125efc85207751f5fd24259",
+          "nori/src/synthefy_nori/explainability/viz.py": "095169509b371faf616317fd20277dbdddd41bb48d5b8baada1353eb17c8cd33",
+          "nori/src/synthefy_nori/featurize.py": "e2434652df65f8da30d081c10498a62e1bcea4db4d192ecf8d49bb001d5d36ad",
+          "nori/src/synthefy_nori/hf.py": "0305042267c972cc3adab89588a08f08d917f1cf8e3b46503203d09ace2fd67f",
+          "nori/src/synthefy_nori/inference/__init__.py": "a8e2be22286e0f73ee319482afb1fe85476f42d55b040f34aabd639e9405d084",
+          "nori/src/synthefy_nori/inference/degradation.py": "353f2957eb4cd9e5d71bce4f842a77d055272ea16570e9c1702bcb583da6d2a1",
+          "nori/src/synthefy_nori/inference/inference_method.py": "b8bb215c0d86577e3c19fdb2b464485f126b83f7e3c622b0a5f92ff20ccfeae0",
+          "nori/src/synthefy_nori/inference/large_context.py": "a424ec4b8411c92ced8e3093a98b2c9448e1b4fcae5047d0fb6b55cb25b58b98",
+          "nori/src/synthefy_nori/inference/memory_policy.py": "6aa146179496bc8067b32a368e471cf4c9927acd46d160723336675e033d948d",
+          "nori/src/synthefy_nori/inference/policies.py": "6eeda5ac8eae98d344f7a6dcd5175bffb8cb6310bed1139dcd01b9b28054286c",
+          "nori/src/synthefy_nori/inference/predictor.py": "7dec2933fafc2bd4a434d0148518bc44e6e04c2c0156c0b0e79d549dbe1eedd8",
+          "nori/src/synthefy_nori/inference/preprocess.py": "a75dce5a4324f7693ceb50b839260c338be782c7f757c66f94f3690b01fc2ea2",
+          "nori/src/synthefy_nori/interpretability/__init__.py": "15f4b2a6b994402c6741057170d950ee31616f1e5a32cff8974dcac640487726",
+          "nori/src/synthefy_nori/interpretability/feature_selection.py": "767030b929206095ed7236fb2c879a09088e6cee292ee15ea28d9e31cc64b3a9",
+          "nori/src/synthefy_nori/interpretability/pdp.py": "163df16995473108d0e9717a7514eacb83cba9514dc8b4b7eac1a4a3ec0b3e5e",
+          "nori/src/synthefy_nori/interpretability/shapiq.py": "def92679908cd46de59fd859e9965b9370940801f01d381aad2d69b5371201e3",
+          "nori/src/synthefy_nori/model/__init__.py": "fd9597d02e5cf0689e5213fbedbcf8a714bb9677a1e74ce1a0e0bacc87d28122",
+          "nori/src/synthefy_nori/model/encoders.py": "b380df09384067fe67b023e195ed6d9d626a523d5812e658a0ed5de1b5481767",
+          "nori/src/synthefy_nori/model/kv_cache_scaling.py": "e71e909378502c4480fedfa699ff38103262fa303c9224e9ad05c6466950322b",
+          "nori/src/synthefy_nori/model/layer.py": "902f0982b40b4556be8ecb0d1cae8fbf7cb5d90f3cc7c7d7c95a44eb5a26edc6",
+          "nori/src/synthefy_nori/model/quantile_dist.py": "757380471b87be6e626f4ff533bab18aed95ee0b56abd0cb44c30ec12a6091d8",
+          "nori/src/synthefy_nori/model/transformer.py": "2f60d04476ede20e6bcc2b0d73db4526c0a7940f0121cd09b84899729b111449",
+          "nori/src/synthefy_nori/model/two_phase.py": "65bdce88f49f681761a61176b53198b59fe80ac1c4b58354949ba3ae48c38124",
+          "nori/src/synthefy_nori/multi_target.py": "00d9575bef022a47dd11e22ceb152cd6ac33fce0e5a56256d03325c494be621b",
+          "nori/src/synthefy_nori/nori_ts/__init__.py": "ec1da4906ec75e5413fdb4aea65d944c0d31faca40d7bd363cb6b1a2462c79ac",
+          "nori/src/synthefy_nori/nori_ts/core.py": "75147f9f8824478d6ad75b675653bf242f03a8f76fe15e11d1924e3a7ecdb046",
+          "nori/src/synthefy_nori/nori_ts/tsfeatures/__init__.py": "a6efa74450d7a114bcdefc14921412e441da12964b8da05b5911612bb63b8f01",
+          "nori/src/synthefy_nori/nori_ts/tsfeatures/auto_features.py": "5ba02b2eff2006086e64ffdc439cdcbe22bc27ed55c30385b48d54724f4e80c1",
+          "nori/src/synthefy_nori/nori_ts/tsfeatures/basic_features.py": "b7ae7ac1a20ec9ac6068e36fb205e611b30a931f49d94657c88c62c62ff2ab91",
+          "nori/src/synthefy_nori/nori_ts/tsfeatures/data_preparation.py": "dbfc6f657db5fe56ea4c10cc9573cefad6cc534767c48f5e507c1cfc003fcd27",
+          "nori/src/synthefy_nori/nori_ts/tsfeatures/feature_generator_base.py": "9edaa422ce6fed8314ee7673f7240513be85543ababc994f2a526fd0daa7047a",
+          "nori/src/synthefy_nori/nori_ts/tsfeatures/feature_transformer.py": "e8e156ca1d80afe406de00cf06c6801598960d797fd2e264b1fbe21526ea8529",
+          "nori/src/synthefy_nori/nori_ts/tsfeatures/ts_dataframe.py": "36077457ad5999ede09997aa0b9563246f65b9fc9ed8148c9524f0b6a69c6c16",
+          "nori/src/synthefy_nori/pricing.py": "e4a88668bcbe3f9db4de1bf7a822ca2299bfbeda092abfa235ed62835dbc708d",
+          "nori/src/synthefy_nori/text_features.py": "2735696c3ec7815d0094ef6047aa3daafd08462f99c8f93ecf91fe2573e7cfa8",
+          "nori/src/synthefy_nori/training/__init__.py": "2a432d330cb8841e24400e6cdd3b83c51e00f1c98eea097f1157a86e113f0784",
+          "nori/src/synthefy_nori/training/cli.py": "4db76e38acf0e0b03c844d60fe5b3ba46c89d7fac1dc24ef411263c2ad0b8a5a",
+          "nori/src/synthefy_nori/training/config.py": "726ac98832822f50e2b8f51485c4040911418b1d7bdb908157e683623ee8356a",
+          "nori/src/synthefy_nori/training/data_generator.py": "a2bd52ffe195f1564923bad8663f6ac21f5569a756faf14848be4bb99a65c9e3",
+          "nori/src/synthefy_nori/training/filtering.py": "8af6953b66cf1f21d2f6b3cf9d509e029ffb22186bb96ba69aa954e41f62f178",
+          "nori/src/synthefy_nori/training/loss.py": "7df337e5303287980dc7fecc067863eb0628a86575409e89fd1bc910626d587a",
+          "nori/src/synthefy_nori/training/masking.py": "be5e50bfa966dddd1db91ed5e33c9f2022201e2f83f1c72cc3c92b57a6067d61",
+          "nori/src/synthefy_nori/training/optim.py": "107694dd7336358fe825d265def09e5fe408faeeb425c782fea6fb7e4fef0518",
+          "nori/src/synthefy_nori/training/prefetch.py": "e2cc4deb31efec456e522cd4929728173ec708b13d665db8466cd2cce29e6f90",
+          "nori/src/synthefy_nori/training/scm_prior_generator.py": "357c5dc5bcdbad3fe88345be8509d2813c7c679b3e4ab2bb8c8bb54780de3167",
+          "nori/src/synthefy_nori/training/trainer.py": "18bb284691b11b1777d7d8f5556496629a5d70a5352966a59c3f88b78aa3cb86",
+          "nori/src/synthefy_nori/utils/__init__.py": "04e5d7c31bad0a72c1bfd69ae820367bfaa797f59a71a5ea72a31543ae760fed",
+          "nori/src/synthefy_nori/utils/data_utils.py": "74479db7cb13dc14e10f707192ac780ecf1a98f2a0cafc6cf6430701fa55ab63",
+          "nori/src/synthefy_nori/utils/inference_utils.py": "dfeeb12ff778e03ff013347309948a18485783000ccb350d7357e425c56da2e2",
+          "nori/src/synthefy_nori/utils/loading.py": "733b583aa5eb0dd7c66ab8d62d61490f44b0d6f3391883075c6e430b96884ebb"
+        }
+      },
+      "models": {
+        "BASE": {
+          "checkpoint": {
+            "repo_id": "Prior-Labs/TabPFN-v2-reg",
+            "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+            "filename": "tabpfn-v2-regressor.ckpt",
+            "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736",
+            "version": "2"
+          }
+        },
+        "P35_8": {
+          "checkpoint": {
+            "repo_id": "Prior-Labs/tabpfn_3_5",
+            "revision": "06bf2ba35c80a92a3b9abb436b99cf49e7a0365e",
+            "filename": "tabpfn-v3.5-20260909.safetensors",
+            "sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+            "bytes": 876027932,
+            "version": "3.5",
+            "download_path": "/root/.cache/huggingface/hub/models--Prior-Labs--tabpfn_3_5/snapshots/06bf2ba35c80a92a3b9abb436b99cf49e7a0365e/tabpfn-v3.5-20260909.safetensors",
+            "local_loader_path": "/content/mla_v14/model_weights/tabpfn-v3.5-20260909.safetensors",
+            "local_suffix": ".safetensors",
+            "format_check": {
+              "format": "safetensors",
+              "header_bytes": 77296,
+              "tensor_entries": 595,
+              "metadata_keys": [
+                "architecture_name",
+                "config",
+                "inference_config"
+              ]
+            },
+            "installed_loader_path": "/usr/local/lib/python3.13/dist-packages/tabpfn/checkpoint.py",
+            "installed_loader_sha256": "f7c86363ccc96af4ffe10ec23221ed90dfea304f04b6c4e48330ba25bbf807de"
+          },
+          "parameters": {
+            "auto_scale_n_estimators": true,
+            "average_before_softmax": false,
+            "device": "cuda",
+            "differentiable_input": false,
+            "enable_torch_compile": false,
+            "eval_metric": null,
+            "fit_mode": "low_memory",
+            "ignore_pretraining_limits": false,
+            "inference_config": null,
+            "inference_precision": "torch.float32",
+            "keep_cache_on_device": true,
+            "kv_cache_precision": null,
+            "memory_saving_mode": true,
+            "model_path": "checkpoint_sha256:ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+            "n_estimators": 8,
+            "n_jobs": null,
+            "n_preprocessing_jobs": 1,
+            "random_state": 10242,
+            "show_progress_bar": false,
+            "softmax_temperature": "auto",
+            "tuning_config": null
+          }
+        }
+      },
+      "engineering_failures": {},
+      "settings": {
+        "XIA32": {
+          "family": "Xiaomi-TabLDM",
+          "estimators": 32,
+          "norm_methods": [
+            "none",
+            "power"
+          ],
+          "enhance_candidates": false,
+          "seed": 10242,
+          "target": "raw INR millions"
+        },
+        "NOR15": {
+          "family": "Nori-1.5",
+          "estimators": 4,
+          "target_augmentations": false,
+          "seed": 10242,
+          "target": "raw INR millions"
+        },
+        "P35FT512": {
+          "family": "TabPFN-3.5-finetune",
+          "maximum_epochs": 30,
+          "context_query_samples": 512,
+          "estimators": 1,
+          "learning_rate": 1e-05,
+          "weight_decay": 0.01,
+          "inner_fraction": 0.15,
+          "patience": 8,
+          "seed": 10242,
+          "target": "raw INR millions"
+        }
+      },
+      "adapter": "Fixed 500-row blocks; BASE first training row; new model maximum-observed training row; discard padding.",
+      "output_floor": 0.0,
+      "selection_uses_validation_rmse": false,
+      "source_registry": {
+        "xiaomi": {
+          "repository": "xiaomi-research/xiaomi-tabldm",
+          "revision": "03cfbb9e7069b821dcef32676dc19b40d294e348",
+          "archive_sha256": "05508739f9e22da6422a7ff56cd8ee91c19be46d119c0300ab18058bc94f9587"
+        },
+        "nori": {
+          "repository": "Synthefy/synthefy-nori",
+          "revision": "d22a8b4954bd6a4d56bea8a7bb606177bb50ac99",
+          "archive_sha256": "444fed887af53d2f498c4559857c1c334770a1da754ac743aad6d981ebc10218"
+        },
+        "tabpfn": {
+          "repository": "PriorLabs/TabPFN",
+          "revision": "1c0a4574aa3a9fa9f4f45612331a1fb08420e256",
+          "archive_sha256": "780f3cf0e232d05f7ab79cbb82020dbfd4bd14cbef6e54b7f93c28c97d4897dd"
+        }
+      },
+      "checkpoint_registry": {
+        "XIA32": {
+          "repo_id": "occams/Xiaomi-TabLDM",
+          "revision": "712e5635be9fd8728084cd5ae105ddecb31dc03c",
+          "filename": "checkpoints/reg_default.ckpt",
+          "sha256": "49ab2189c4d3240a2703863686dbc9268e016fd406a30eee0575628b1f390232",
+          "bytes": 569137336
+        },
+        "NOR15": {
+          "repo_id": "Synthefy/Nori-1-5",
+          "revision": "79afc5a65b2775d0c62977211a63620ce87846c7",
+          "filename": "nori.pt",
+          "sha256": "b1313b45225066f74a78e99d5cd56dbd0015bdbeadf948252cf82d2a962766a2",
+          "bytes": 83176401
+        }
+      },
+      "new_inference_layout": "500 rows, fixed first training-row padding; float32 inference"
+    },
+    "train_indices": "72fbdb80d352e8f37132f1b5416ef7649d8456e55b4c146740bdf536a0d08bf5",
+    "valid_indices": "c1aebbd1db7b8c44238138e0dc82b79e15e9554479429fb3e8585badc8be4533",
+    "training_targets": "0bb2d184b2c120b46fc334222086013e3129863b1ad3182ac35075a3802db80f",
+    "row_ids": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+    "target_units": "raw INR millions"
+  },
+  "sha256": "ad41c81737a16942fb05229dfd9eb975aa05af142d7025492c5f29adac186b9d",
+  "fit_metadata": {
+    "name": "NOR15",
+    "training_rows": 2795,
+    "units": "raw INR millions",
+    "all_original_training_targets_retained": true,
+    "seed": 10242,
+    "training_target_sha256": "0bb2d184b2c120b46fc334222086013e3129863b1ad3182ac35075a3802db80f",
+    "categorical_columns": [
+      "Cuisine",
+      "City",
+      "Restaurant Location",
+      "Endoresed By",
+      "Restaurant Type",
+      "Restaurant Theme",
+      "Cuisine 1",
+      "Cuisine 2"
+    ],
+    "features": 40,
+    "actual_estimators": 4,
+    "precision": "float32",
+    "internal_selection": false,
+    "public_interface": "NoriPredictor",
+    "train_only_config_sha256": "64ad0d97763387b1373f98dbfb00225bd7aa1312b57291a871eb607f056832ec",
+    "checkpoint_sha256": "b1313b45225066f74a78e99d5cd56dbd0015bdbeadf948252cf82d2a962766a2",
+    "fit_seconds": 1.3335357829998884
+  }
+}

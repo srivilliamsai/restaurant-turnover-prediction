@@ -1,0 +1,34 @@
+{
+  "seconds": 13232.891634477533,
+  "by_stage": {
+    "setup": 1739.617118136688,
+    "audit": 15.002336740000203,
+    "pilot": 11463.017518769848
+  },
+  "maximum_hours": 18,
+  "measurement": "Accumulated stage wall time plus conservatively charged unobserved interruption interval.",
+  "resume_repair_receipt": {
+    "seconds": 602.3473789691925,
+    "started_UTC": "2026-10-28T07:41:57.728137+00:00",
+    "reason": "Repair completed-pilot reuse and bounded isolated pilot workers; preserve first run charge."
+  },
+  "all_settings_extension_receipt": {
+    "authorized_maximum_hours": 18,
+    "previous_charged_seconds": 7258.695822252192,
+    "repair_seconds": 602.8334851264954,
+    "repair_started_UTC": "2026-10-28T08:43:00+00:00",
+    "all_four_required": true,
+    "previous_charges_reset": false
+  },
+  "disconnect_receipts": [
+    {
+      "detected_UTC": "2026-10-28T10:22:38.050323+00:00",
+      "server_active_assignments": 0,
+      "last_saved_heartbeat_UTC": "2026-10-28T09:23:35.338266+00:00",
+      "conservative_unobserved_seconds_charged": 5355.480660693847,
+      "three_pilot_passes_retained": true,
+      "validation_scores_generated": false,
+      "message": "Colab ended the runtime; stale foreground transport stopped. Cause not exposed by server."
+    }
+  ]
+}

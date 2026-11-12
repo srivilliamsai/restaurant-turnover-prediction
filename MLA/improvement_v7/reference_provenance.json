@@ -1,0 +1,11 @@
+{
+  "method": "AST extraction of exact function source; no old module imports",
+  "sources": {
+    "improvement_v2/experiment.py": "48d0a81875b5814239f244621c0af0d8a5b0aea03815b6e91fdc79ec53a28fed",
+    "improvement_v3/experiments.py": "cc5d39f95855f05bea25340a2fadf23ecf0941aa23c9a453a9c45eb315df4693",
+    "improvement_v4/pipeline.py": "c10b9cb16d13acbdfa0ff91a5f7bad3fe633d2145e26d61f5d9638a769b8e93c",
+    "improvement_v5/new_models.py": "f4f3949193dcc89d8917a93b4aeac9c8643e9e109739d87d5445efdb35bdd223",
+    "improvement_v5/pipeline.py": "0ae5f107133da239b9bd6ae1a886a44be921c6da2a117405a0fcc3e4ac18d0ea"
+  },
+  "reference_sha256": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1"
+}

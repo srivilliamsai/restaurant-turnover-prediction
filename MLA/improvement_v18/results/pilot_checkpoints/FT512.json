@@ -1,0 +1,130 @@
+{
+  "result": {
+    "status": "PASS",
+    "fold_seconds": 316.4080967296359,
+    "full_fit_predict_seconds": 390.5628783736703,
+    "behavior": {
+      "permutation_difference_INR": 0.0,
+      "label_id_difference_INR": 0.0,
+      "batch_difference_INR": 0.0,
+      "individual_difference_INR": 0.0,
+      "rmse_difference_INR": {
+        "permutation": 0.0,
+        "batch": 0.0,
+        "individual": 0.0
+      },
+      "other_query_rows_changed_difference_INR": 0.0,
+      "rows_checked": 699,
+      "individual_probes": 12,
+      "missing_unseen_inputs": true,
+      "behavior_tolerance_INR": 10.0,
+      "rmse_tolerance_INR": 1.0
+    },
+    "fresh_repeat_difference_INR": 0.0,
+    "save_reload_difference_INR": 0.0,
+    "target_metadata": {
+      "name": "FT512",
+      "training_rows": 2794,
+      "units": "raw INR millions",
+      "all_original_training_targets_retained": true,
+      "seed": 10242,
+      "training_target_sha256": "63998c05f2bd6fe27bf536d3f74ed91f5542c3bcef6e4bbc3ed28bc9492ffa38",
+      "categorical_columns": [
+        "Cuisine",
+        "City",
+        "Restaurant Location",
+        "Endoresed By",
+        "Restaurant Type",
+        "Restaurant Theme",
+        "Cuisine 1",
+        "Cuisine 2"
+      ],
+      "features": 40,
+      "inner_training_rows": 2374,
+      "inner_validation_rows": 420,
+      "inner_seed": 9091,
+      "inner_train_sha256": "7f75c6d798f5f3e1aec1348dcd7f28ed151479de37588d9ef49616d76d44b982",
+      "inner_validation_sha256": "78b66a263f116bce32eb4da28de7e21795134e6708d165edc8847f8b66befade",
+      "inner_policy": "random-15-percent",
+      "selected_epochs": 3,
+      "inner_epochs_run": 11,
+      "inner_history": [
+        {
+          "epoch": 0,
+          "mse_millions_squared": 257.5474534175994
+        },
+        {
+          "epoch": 1,
+          "mse_millions_squared": 257.73304344177683
+        },
+        {
+          "epoch": 2,
+          "mse_millions_squared": 257.7352424653391
+        },
+        {
+          "epoch": 3,
+          "mse_millions_squared": 257.2273356884834
+        },
+        {
+          "epoch": 4,
+          "mse_millions_squared": 257.77608703972226
+        },
+        {
+          "epoch": 5,
+          "mse_millions_squared": 258.79696040973283
+        },
+        {
+          "epoch": 6,
+          "mse_millions_squared": 259.8178175858402
+        },
+        {
+          "epoch": 7,
+          "mse_millions_squared": 260.66654442850415
+        },
+        {
+          "epoch": 8,
+          "mse_millions_squared": 261.5643458483341
+        },
+        {
+          "epoch": 9,
+          "mse_millions_squared": 262.24794906467395
+        },
+        {
+          "epoch": 10,
+          "mse_millions_squared": 262.67191368577375
+        },
+        {
+          "epoch": 11,
+          "mse_millions_squared": 262.986724311396
+        }
+      ],
+      "outer_validation_used_for_epoch_selection": false,
+      "precision": "CUDA-AMP-training/float32-inference",
+      "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+      "matched_original_architectures": [
+        "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+      ],
+      "installed_finetune_source_sha256": "315413cd044720d1edc9962d6697ed55cea90f3e7181d1a2a1c41ac8ccde18fa",
+      "learning_rate": 3e-06,
+      "use_lr_scheduler": false,
+      "setup_seconds": 30.939502929000014,
+      "selection_seconds": 62.734027207000054,
+      "refit_seconds": 11.32334549199993,
+      "inner_optimizer_steps": 44,
+      "full_subset_refitted": true,
+      "actual_estimators": 1,
+      "context_plus_query_rows": 512,
+      "matched_unadapted_inner_mse_millions_squared": 257.5474534175994,
+      "fit_seconds": 108.134125015,
+      "last_query_seconds": 1.1423374070000136
+    },
+    "peak_gpu_allocated_bytes": 5208716288,
+    "training_rows": 2794,
+    "validation_rows": 699,
+    "full_training_rows": 3493,
+    "selection_uses_validation_rmse": false,
+    "engineering_seconds": 334.084323576,
+    "forecast_basis": "Measured fixed setup, maximum thirty selection epochs, thirty refit epochs, full validation and final queries; thirty-percent contingency applied by admission."
+  },
+  "result_sha256": "f484190cef64dfb9c56a6fa916bbda8ddb51eeb581bb911ae93e37fa811a3a8b"
+}

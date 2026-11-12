@@ -1,0 +1,29 @@
+{
+  "implementation": "Accepted V12, four fixed settings and at most sixteen blends",
+  "files": {
+    "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+    "build_delivery.py": "3b3a2414b27dc560d1186d97b99aa7cf0c084641693197aa449e727415ce30b3",
+    "colab_control.py": "e5dcd1ad045a0abf330d4f3352bd56d32c2f3071ba7d79103eb7d9865f39d074",
+    "core.py": "d6a3286b88be00fbaa5e4e140e0dc6e227baf862acf6c1ee37457fd7558c22ec",
+    "features.py": "35f45dd164c11c71abe8a37a15f376dd1ac7427714c2701ad4bd3769153c8c5c",
+    "fresh_worker.py": "0cd94f1bfa83f80bbf9ec653002178f29406c59c4fbafa4e6c0452a5aaf09ec9",
+    "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+    "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+    "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+    "modeling.py": "5b99aa60dae114c9dcbb622576871ff84787ddad21fce144a32ca482f3f1d35b",
+    "preflight.py": "6f05301ffaa57d5f372d1dff627faa3992e3c39aba231ecbb3c87b8c5b50172a",
+    "refit_controls.py": "4c6910752aacd19977141d4486f265cdf0ae642b2879162076110992a48fc708",
+    "run_stage.py": "b25da0412c36ccf13d70f18a22af5f99d9dedbb7d7030ab0da2ee88009a8b04f",
+    "verify.py": "4d719dffb62554bb5f0224931655bc9a13c8451d7b017c8736a53ee1a4a1b227",
+    "workflow.py": "6700908cc65a0c170fffe25532303bee4bbd1579af0fe8182511b45afe88ab8d"
+  },
+  "transport_files": {
+    "transport/continue_finite.py": "a837207b588f162e5a9a1b38f9da8aeeb2aa97076387c4ee53a3e305d31e84fd",
+    "transport/finalize.py": "6faa117c1d79a12068918eaf1877bae3ea5c49f8a338324a302f9fd6ae9e5923",
+    "transport/launch_detached.py": "8fa0ba52711b7abfa177ab35e8d5e4837dc159889a7f7b66ad2f8c730cacd760",
+    "transport/stage_supervisor.py": "8bbc82ead1673e2c2d24ed5baf2c0a25c80ac92f4ccabefcdf53e192f2e319b4",
+    "transport/verify_results.py": "e1ca9ff39c1348dce62931a67ba9794ff6d76f4b575d742dd1839ee0711057aa",
+    "transport/watch_backups.py": "d36db98f0f8342fe6fe7c713211f833e534638e461f4a377e58f92ef8dbeb793"
+  },
+  "source_provenance": "Own verified V9-V11 implementation; official general-purpose TabPFN checkpoint and official RealMLP implementation; no Gemini exports executed."
+}

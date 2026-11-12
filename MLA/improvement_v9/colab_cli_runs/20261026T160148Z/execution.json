@@ -1,0 +1,18 @@
+{
+  "started_utc": "20261026T160148Z",
+  "source_notebook_sha256": "e0b2d8162a0e5639e06f0c504ec628ef5deabaf70161e04f63aa909e086938f8",
+  "session": "v9-cli-t4",
+  "remote_output_dir": "/content/v9_cli_20261026T160148Z",
+  "status": "failed",
+  "completed_cells": 7,
+  "transport_changes_only": [
+    "CLI execution",
+    "explicit input/output paths",
+    "download artifacts via Contents API"
+  ],
+  "paid_resources_requested": false,
+  "package_setup_kernel_restart": true,
+  "current_cell": 8,
+  "error": "RuntimeError: AssertionError: ",
+  "elapsed_seconds": 7582.416670250004
+}

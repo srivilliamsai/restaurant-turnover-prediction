@@ -1,0 +1,146 @@
+{
+  "result": {
+    "status": "PASS",
+    "fold_seconds": 403.9734352782851,
+    "full_fit_predict_seconds": 286.7583015084994,
+    "behavior": {
+      "permutation_difference_INR": 0.0,
+      "label_id_difference_INR": 0.0,
+      "batch_difference_INR": 0.0,
+      "individual_difference_INR": 0.0,
+      "rmse_difference_INR": {
+        "permutation": 0.0,
+        "batch": 0.0,
+        "individual": 0.0
+      },
+      "other_query_rows_changed_difference_INR": 0.0,
+      "rows_checked": 699,
+      "individual_probes": 12,
+      "missing_unseen_inputs": true,
+      "behavior_tolerance_INR": 10.0,
+      "rmse_tolerance_INR": 1.0
+    },
+    "fresh_repeat_difference_INR": 0.0,
+    "save_reload_difference_INR": 0.0,
+    "target_metadata": {
+      "name": "FT1024",
+      "training_rows": 2794,
+      "units": "raw INR millions",
+      "all_original_training_targets_retained": true,
+      "seed": 10242,
+      "training_target_sha256": "63998c05f2bd6fe27bf536d3f74ed91f5542c3bcef6e4bbc3ed28bc9492ffa38",
+      "categorical_columns": [
+        "Cuisine",
+        "City",
+        "Restaurant Location",
+        "Endoresed By",
+        "Restaurant Type",
+        "Restaurant Theme",
+        "Cuisine 1",
+        "Cuisine 2"
+      ],
+      "features": 40,
+      "inner_training_rows": 2374,
+      "inner_validation_rows": 420,
+      "inner_seed": 9091,
+      "inner_train_sha256": "7f75c6d798f5f3e1aec1348dcd7f28ed151479de37588d9ef49616d76d44b982",
+      "inner_validation_sha256": "78b66a263f116bce32eb4da28de7e21795134e6708d165edc8847f8b66befade",
+      "inner_policy": "random-15-percent",
+      "selected_epochs": 7,
+      "inner_epochs_run": 15,
+      "inner_history": [
+        {
+          "epoch": 0,
+          "mse_millions_squared": 257.5474534175994
+        },
+        {
+          "epoch": 1,
+          "mse_millions_squared": 257.4536369700709
+        },
+        {
+          "epoch": 2,
+          "mse_millions_squared": 257.4536369700709
+        },
+        {
+          "epoch": 3,
+          "mse_millions_squared": 257.5976362853548
+        },
+        {
+          "epoch": 4,
+          "mse_millions_squared": 257.2842649358762
+        },
+        {
+          "epoch": 5,
+          "mse_millions_squared": 256.88723366269085
+        },
+        {
+          "epoch": 6,
+          "mse_millions_squared": 256.47544345805835
+        },
+        {
+          "epoch": 7,
+          "mse_millions_squared": 256.309166054754
+        },
+        {
+          "epoch": 8,
+          "mse_millions_squared": 256.35503008854766
+        },
+        {
+          "epoch": 9,
+          "mse_millions_squared": 256.55377280179636
+        },
+        {
+          "epoch": 10,
+          "mse_millions_squared": 257.11249256672414
+        },
+        {
+          "epoch": 11,
+          "mse_millions_squared": 257.88836490112124
+        },
+        {
+          "epoch": 12,
+          "mse_millions_squared": 258.68362151878233
+        },
+        {
+          "epoch": 13,
+          "mse_millions_squared": 259.2854202803532
+        },
+        {
+          "epoch": 14,
+          "mse_millions_squared": 259.58502839025186
+        },
+        {
+          "epoch": 15,
+          "mse_millions_squared": 259.932731278755
+        }
+      ],
+      "outer_validation_used_for_epoch_selection": false,
+      "precision": "CUDA-AMP-training/float32-inference",
+      "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+      "matched_original_architectures": [
+        "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+      ],
+      "installed_finetune_source_sha256": "315413cd044720d1edc9962d6697ed55cea90f3e7181d1a2a1c41ac8ccde18fa",
+      "learning_rate": 3e-06,
+      "use_lr_scheduler": false,
+      "setup_seconds": 7.429217434000066,
+      "selection_seconds": 154.44424377699988,
+      "refit_seconds": 20.166661116999876,
+      "inner_optimizer_steps": 30,
+      "full_subset_refitted": true,
+      "actual_estimators": 1,
+      "context_plus_query_rows": 1024,
+      "matched_unadapted_inner_mse_millions_squared": 257.5474534175994,
+      "fit_seconds": 185.53170100300008,
+      "last_query_seconds": 1.2271826460000739
+    },
+    "peak_gpu_allocated_bytes": 5210158080,
+    "training_rows": 2794,
+    "validation_rows": 699,
+    "full_training_rows": 3493,
+    "selection_uses_validation_rmse": false,
+    "engineering_seconds": 510.20331741500013,
+    "forecast_basis": "Measured fixed setup, maximum thirty selection epochs, thirty refit epochs, full validation and final queries; thirty-percent contingency applied by admission."
+  },
+  "result_sha256": "0f2936b219ca21af19aa9bc290037e221c507ee6afba5f996fb5380798602a09"
+}

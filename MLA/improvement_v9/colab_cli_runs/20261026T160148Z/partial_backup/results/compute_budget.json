@@ -1,0 +1,12 @@
+{
+  "seconds": 7486.413834371001,
+  "by_stage": {
+    "pilot": 166.12924468999995,
+    "screen": 1486.3451661089998,
+    "refine": 624.3566976699999,
+    "confirm": 4967.785251697001,
+    "export": 241.79747420500007
+  },
+  "maximum_hours": 18,
+  "measurement": "Aggregate checkpoint-computation and fresh-export elapsed seconds; isolated notebook execution recorded separately."
+}

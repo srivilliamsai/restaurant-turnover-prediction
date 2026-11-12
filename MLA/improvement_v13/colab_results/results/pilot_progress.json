@@ -1,0 +1,70 @@
+{
+  "Q99": {
+    "status": "PASS",
+    "fold_seconds": 121.36219469599996,
+    "behavior": {
+      "permutation_difference_INR": 0.0,
+      "label_id_difference_INR": 0.0,
+      "batch_difference_INR": 0.0,
+      "individual_difference_INR": 0.0,
+      "missing_unseen_inputs": true
+    },
+    "fresh_repeat_difference_INR": 0.0,
+    "target_metadata": {
+      "name": "Q99",
+      "training_rows": 2794,
+      "units": "INR millions",
+      "quantile": 0.99,
+      "quantile_method": "linear",
+      "threshold_INR": 102535000.00000007,
+      "capped_rows": 28
+    },
+    "training_rows": 2794,
+    "validation_rows": 699,
+    "engineering_seconds": 681.766265037
+  },
+  "Q995": {
+    "status": "PASS",
+    "fold_seconds": 125.67824645899987,
+    "behavior": {
+      "permutation_difference_INR": 0.0,
+      "label_id_difference_INR": 0.0,
+      "batch_difference_INR": 0.0,
+      "individual_difference_INR": 0.0,
+      "missing_unseen_inputs": true
+    },
+    "fresh_repeat_difference_INR": 0.0,
+    "target_metadata": {
+      "name": "Q995",
+      "training_rows": 2794,
+      "units": "INR millions",
+      "quantile": 0.995,
+      "quantile_method": "linear",
+      "threshold_INR": 150000000.0,
+      "capped_rows": 13
+    },
+    "training_rows": 2794,
+    "validation_rows": 699,
+    "engineering_seconds": 686.2797140139999
+  },
+  "SQ2": {
+    "status": "PASS",
+    "fold_seconds": 125.15698242200006,
+    "behavior": {
+      "permutation_difference_INR": 0.0,
+      "label_id_difference_INR": 0.0,
+      "batch_difference_INR": 0.0,
+      "individual_difference_INR": 0.0,
+      "missing_unseen_inputs": true
+    },
+    "fresh_repeat_difference_INR": 0.0,
+    "target_metadata": {
+      "name": "SQ2",
+      "training_rows": 2794,
+      "units": "sqrt(INR millions)"
+    },
+    "training_rows": 2794,
+    "validation_rows": 699,
+    "engineering_seconds": 684.9002949790001
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "original_engineering_admission_reverified": true,
+  "current_runtime": {
+    "dependencies": {
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1",
+      "catboost": "1.2.10",
+      "interpret-core": "0.7.8",
+      "tabpfn": "9.2.0",
+      "tabicl": "2.2.0",
+      "torch": "2.11.0+cu130"
+    },
+    "gpu": "Tesla T4",
+    "cuda": "13.0",
+    "precision": "float32",
+    "prediction_chunk": 500,
+    "seed": 10242,
+    "datetime_dependencies": {
+      "skrub": "0.10.1",
+      "pyarrow": "23.0.1"
+    }
+  },
+  "controls": {
+    "BASE": {
+      "maximum_difference_INR": 0.0,
+      "metadata": {
+        "name": "BASE",
+        "training_rows": 2794,
+        "units": "raw INR millions",
+        "checkpoint_sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736",
+        "model_class": "tabpfn.regressor.TabPFNRegressor",
+        "view": "F40",
+        "input_features": 40,
+        "temperature": "checkpoint default",
+        "feature_state_sha256": "a430d859bbc41bc728759e4704212a531e9db1cbf3fa2b23e36f675d037e69d3",
+        "date_expansion": true,
+        "datetime_dependencies": {
+          "skrub": "0.10.1",
+          "pyarrow": "23.0.1"
+        }
+      }
+    },
+    "P35_8": {
+      "maximum_difference_INR": 0.0,
+      "metadata": {
+        "name": "P35_8",
+        "training_rows": 2794,
+        "units": "raw INR millions",
+        "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+        "model_class": "tabpfn.regressor.TabPFNRegressor",
+        "view": "F40",
+        "input_features": 40,
+        "temperature": "checkpoint default",
+        "feature_state_sha256": "a430d859bbc41bc728759e4704212a531e9db1cbf3fa2b23e36f675d037e69d3",
+        "date_expansion": true,
+        "datetime_dependencies": {
+          "skrub": "0.10.1",
+          "pyarrow": "23.0.1"
+        },
+        "architecture_classes": [
+          "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+        ],
+        "configuration_classes": [
+          "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"
+        ]
+      }
+    },
+    "P35-SC38": {
+      "maximum_difference_INR": 0.0,
+      "metadata": {
+        "name": "P35-SC38",
+        "training_rows": 2794,
+        "units": "raw INR millions",
+        "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+        "model_class": "tabpfn.regressor.TabPFNRegressor",
+        "view": "SC38",
+        "input_features": 38,
+        "temperature": "checkpoint default",
+        "feature_state_sha256": "c4290f5e843eaf83d34f68b332db7f3f309848e17b5c0684c7f25d520a5300c6",
+        "date_expansion": true,
+        "datetime_dependencies": {
+          "skrub": "0.10.1",
+          "pyarrow": "23.0.1"
+        },
+        "architecture_classes": [
+          "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+        ],
+        "configuration_classes": [
+          "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"
+        ]
+      }
+    }
+  },
+  "rank_scope_sha256": "99223ccffc6442a4b4b3a3ba0d6d1326725e262a04bbcafbfc8e47aa82531141"
+}

@@ -1,0 +1,37 @@
+AUDIT PASS: three fixed candidate recipes, at most twenty comparisons, seven verified baseline assignments.
+{"PILOT": "I8", "status": "PASS", "reason": null}
+{"PILOT": "KS8-CLEAN", "status": "PASS", "reason": null}
+{"PILOT": "I16", "status": "PASS", "reason": null}
+{"PILOT_COMPLETE": true, "admitted": ["I8", "KS8-CLEAN", "I16"], "forecasts_hours": [0.207862840694166, 1.6658047630773722, 0.6654710677918335]}
+{"setting": "I8", "scheme": "42", "fold_complete": 1}
+{"setting": "I8", "scheme": "42", "fold_complete": 2}
+{"setting": "I8", "scheme": "42", "fold_complete": 3}
+{"setting": "I8", "scheme": "42", "fold_complete": 4}
+{"setting": "I8", "scheme": "42", "fold_complete": 5}
+{"setting": "I8", "scheme": "71", "fold_complete": 1}
+{"setting": "I8", "scheme": "71", "fold_complete": 2}
+{"setting": "I8", "scheme": "71", "fold_complete": 3}
+{"setting": "I8", "scheme": "71", "fold_complete": 4}
+{"setting": "I8", "scheme": "71", "fold_complete": 5}
+{"setting": "KS8-CLEAN", "scheme": "42", "fold_complete": 1}
+{"setting": "KS8-CLEAN", "scheme": "42", "fold_complete": 2}
+{"setting": "KS8-CLEAN", "scheme": "42", "fold_complete": 3}
+{"setting": "KS8-CLEAN", "scheme": "42", "fold_complete": 4}
+{"setting": "KS8-CLEAN", "scheme": "42", "fold_complete": 5}
+{"setting": "KS8-CLEAN", "scheme": "71", "fold_complete": 1}
+{"setting": "KS8-CLEAN", "scheme": "71", "fold_complete": 2}
+{"setting": "KS8-CLEAN", "scheme": "71", "fold_complete": 3}
+{"setting": "KS8-CLEAN", "scheme": "71", "fold_complete": 4}
+{"setting": "KS8-CLEAN", "scheme": "71", "fold_complete": 5}
+{"setting": "I16", "scheme": "42", "fold_complete": 1}
+{"setting": "I16", "scheme": "42", "fold_complete": 2}
+{"setting": "I16", "scheme": "42", "fold_complete": 3}
+{"setting": "I16", "scheme": "42", "fold_complete": 4}
+{"setting": "I16", "scheme": "42", "fold_complete": 5}
+{"setting": "I16", "scheme": "71", "fold_complete": 1}
+{"setting": "I16", "scheme": "71", "fold_complete": 2}
+{"setting": "I16", "scheme": "71", "fold_complete": 3}
+{"setting": "I16", "scheme": "71", "fold_complete": 4}
+{"setting": "I16", "scheme": "71", "fold_complete": 5}
+{"SCREEN_COMPLETE": true, "choices": []}
+V20 delivery complete: /content/mla_v20/delivery/V20_Report.md

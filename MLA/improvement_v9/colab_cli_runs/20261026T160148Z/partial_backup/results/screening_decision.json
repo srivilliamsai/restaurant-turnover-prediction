@@ -1,0 +1,21 @@
+{
+  "complete": true,
+  "settings": 8,
+  "planned_settings": 8,
+  "skipped_settings": [],
+  "configurations": 32,
+  "shortlist": [
+    {
+      "name": "tabpfn_raw_v7",
+      "mode": "plain",
+      "group": "tabpfn",
+      "family": "tabpfn",
+      "weight": 0.5,
+      "rmse_42": 19732325.188578352,
+      "gain_42": 83488.58908773586,
+      "rmse_71": 19736168.268456027,
+      "gain_71": 54611.07109704614,
+      "mean_rmse": 19734246.72851719
+    }
+  ]
+}

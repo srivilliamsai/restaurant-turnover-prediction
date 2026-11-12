@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "implementation_bundle_sha256": "6eaf0980b4590b5d25c118268260f900aee70333d39b2f2391b71fc027785822",
+  "bundle_files_verified": 115,
+  "model_source_identity_matches_preflight": true,
+  "protected_v9_csv_sha256": "5a384dc3d8bf58c4e29f0d6cac646aa33afe22bdcdd186cccd9758342769bbd4",
+  "protected_v9_notebook_sha256": "38a39003d0d7fb805b8725beac9ae80933929f6782c412166deef4d4df2f6973",
+  "model_fits": 0,
+  "unavailable_after_bounded_free_t4_attempts": 3,
+  "current_stage": "waiting_for_free_t4",
+  "no_v12_score_claimed": true
+}

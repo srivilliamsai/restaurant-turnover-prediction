@@ -1,0 +1,39 @@
+{"audit": "PASS", "tail": 48, "labels_changed": 0, "settings": 12}
+bands_d3_cal0 / 42: fold 1/5 complete
+bands_d3_cal0 / 42: fold 2/5 complete
+bands_d3_cal0 / 42: fold 3/5 complete
+bands_d3_cal0 / 42: fold 4/5 complete
+bands_d3_cal0 / 42: fold 5/5 complete
+{"name": "bands_d3_cal0", "scheme": "42", "rmse": 20067592.084196363, "seconds": 44.70645549999972}
+bands_d3_cal0 / 71: fold 1/5 complete
+bands_d3_cal0 / 71: fold 2/5 complete
+bands_d3_cal0 / 71: fold 3/5 complete
+bands_d3_cal0 / 71: fold 4/5 complete
+bands_d3_cal0 / 71: fold 5/5 complete
+{"name": "bands_d3_cal0", "scheme": "71", "rmse": 20038794.066850074, "seconds": 44.61685920899981}
+Traceback (most recent call last):
+  File "./improvement_v7/workflow.py", line 369, in <module>
+    getattr(run, stage)()
+  File "./improvement_v7/workflow.py", line 227, in screen
+    predictions = {s: self.candidate(name, s) for s in [42, 71]}
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "./improvement_v7/workflow.py", line 213, in candidate
+    part, _ = self.cached(f'{name}_{safe(scheme)}_fold{f}_seed{seed}', context, compute)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "./improvement_v7/workflow.py", line 73, in cached
+    p, diagnostics = compute()
+                     ^^^^^^^^^
+  File "./improvement_v7/workflow.py", line 210, in compute
+    fitted = fit_component(self.train.iloc[a], self.y[a], spec, seed + f, inner)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "./improvement_v7/models.py", line 115, in fit_component
+    model.fit(X.iloc[a], labels[a], cat_features=cats)
+  File "./.runtime_deps/catboost/core.py", line 5547, in fit
+    self._fit(X, y, cat_features, text_features, embedding_features, None, graph, sample_weight, None, None, None, None, baseline, use_best_model,
+  File "./.runtime_deps/catboost/core.py", line 2716, in _fit
+    self._train(
+  File "./.runtime_deps/catboost/core.py", line 1824, in _train
+    self._object._train(train_pool, test_pool, params, allow_clear_pool, init_model._object if init_model else None)
+  File "_catboost.pyx", line 5430, in _catboost._CatBoost._train
+  File "_catboost.pyx", line 5479, in _catboost._CatBoost._train
+KeyboardInterrupt

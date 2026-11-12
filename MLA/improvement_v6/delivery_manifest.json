@@ -1,0 +1,98 @@
+{
+  "decision": {
+    "decision": "retain portal-scored v5",
+    "choice": {
+      "name": "v5",
+      "family": "v5",
+      "weight": 0.0
+    },
+    "candidates": [],
+    "qualified": [],
+    "lock_sha256": "e3dd56f7f67a2c48353b33a3d774ae500fbdfa94f543f1f98dc23450d6e1ae1a",
+    "limitation": "All splits reuse previously examined labels; portal accuracy remains unmeasured."
+  },
+  "inputs": {
+    "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+    "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+    "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+    "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "catboost": "1.2.10",
+    "lightgbm": "4.7.0",
+    "sklearn": "1.9.1",
+    "scipy": "1.18.1"
+  },
+  "preserved_v5": {
+    "submission.csv": "66a673efc5f31bc9f4010de033999fd3712444b8f6dd0478c97e77bb3934630d",
+    "submission.ipynb": "46b7366227f295844988b8512d012ecfa141aa7b81b42df42f565082e4880f48"
+  },
+  "checks": {
+    "row_order": true,
+    "unique_ids": true,
+    "finite_nonnegative": true,
+    "missing_unseen_values": true,
+    "target_and_id_invariance": true,
+    "permutation_invariance": true,
+    "malformed_cases_rejected": 12,
+    "rows": 500,
+    "columns": [
+      "Registration Number",
+      "Annual Turnover"
+    ],
+    "v5_full_refit_max_difference": 1.1175870895385742e-08,
+    "prediction_rms_difference_from_v5": 1.1421523777213611e-09,
+    "csv_sha256": "66a673efc5f31bc9f4010de033999fd3712444b8f6dd0478c97e77bb3934630d",
+    "full_fit_reproduced": true
+  },
+  "notebook_execution": {
+    "code_cells": 10,
+    "figures": [
+      "notebook_figure_1.png"
+    ],
+    "elapsed_seconds": 146.45522704200084,
+    "fresh_process": true,
+    "validation_cache_used": false,
+    "fresh_five_fold_assignment": 18421,
+    "maximum_full_fit_difference": 0.0,
+    "maximum_oof_difference": 0.0,
+    "full_fit_reproduced": true,
+    "checks": {
+      "row_order": true,
+      "unique_ids": true,
+      "finite_nonnegative": true,
+      "missing_unseen_values": true,
+      "target_and_id_invariance": true,
+      "permutation_invariance": true,
+      "malformed_cases_rejected": 12,
+      "rows": 500,
+      "columns": [
+        "Registration Number",
+        "Annual Turnover"
+      ]
+    },
+    "export_path": "./improvement_v6/results/notebook_run/submission.csv"
+  },
+  "portal_uploads": 0,
+  "maximum_portal_trials": 2,
+  "portal_v5_rmse": 12046722.3691139,
+  "outputs": {
+    "submission.csv": "66a673efc5f31bc9f4010de033999fd3712444b8f6dd0478c97e77bb3934630d",
+    "submission.ipynb": "1f84f96ef304686f536d4c7b5ddcaa9efaa5ac32ceba4dd3833145b36f1690fd",
+    "REPORT.md": "7e03c1d2c957ebc1f7ecc03fee1a3f2b34305857c34e37f16eb3ec149e46789d"
+  },
+  "implementation": {
+    "prepare_reference.py": "3c3ce2b4ecc2cec6aa4ebefe871b9c1fcee8644a0b8fdc647fc17e6d8d4b52fd",
+    "execute_notebook.py": "dd2433908d0f94c05b0dc8d374f8c055cb2431fb44feef8aa060fd1f6f212220",
+    "run_local.py": "c6b4de5679f36a140f4de9fe64063ddc64ae5ace289fe2e72b94e532b6e0b850",
+    "reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+    "workflow.py": "e7a8488d590411e90b780664e967d36889e8b58e4cc49385d47f8ee17ac5cd87",
+    "modeling.py": "a276be3c9a5b87807228aaa646f3cba5c51ff0f90a289c266f1fd8b86b11fc81",
+    "deliver.py": "85401ab4da33728e5515977c44fa7fec59dcc978d4a73b33c589a2a1ead1f7a6"
+  },
+  "candidate_lock_sha256": "e3dd56f7f67a2c48353b33a3d774ae500fbdfa94f543f1f98dc23450d6e1ae1a",
+  "experiment_plan_sha256": "a772fed267f5ced3d8618dc0c60600531ee45e687aec7f4989a9dec35712f8c8"
+}

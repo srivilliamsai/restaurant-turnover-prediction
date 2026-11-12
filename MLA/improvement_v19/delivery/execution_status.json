@@ -1,0 +1,31 @@
+{
+  "status": "COMPLETE",
+  "training_started": true,
+  "development_scores_generated": true,
+  "initial_development_scores_inspected": false,
+  "repaired_development_scores_generated": true,
+  "authorized_maximum_hours": 8,
+  "preserve_v14": true,
+  "owned_session": "v19-free-t4",
+  "allocation_number": 2,
+  "setup_complete": true,
+  "local_mac_control_reproduction": "PASS",
+  "portal_uploads": 0,
+  "repaired_engineering_complete": true,
+  "repaired_admitted_settings": [
+    "C8",
+    "D8"
+  ],
+  "accuracy_improvement_confirmed": false,
+  "completed_epoch": 1793270873.423962,
+  "completed_candidate_development_folds": 20,
+  "completed_matched_control_folds": 0,
+  "fixed_blend_comparisons": 15,
+  "qualified_development_candidates": 0,
+  "qualified": false,
+  "confirmation_performed": false,
+  "independent_result_reconstruction": "PASS",
+  "owned_runtime_released": true,
+  "selected_account_active_assignments": 0,
+  "completion_evidence": "Collected export stage, independent reconstruction, owned-runtime release and fresh account check."
+}

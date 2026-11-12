@@ -1,0 +1,24 @@
+{
+  "versions": {
+    "torch": "2.11.0",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "einops": "0.8.2",
+    "kditransform": "1.2.0",
+    "huggingface-hub": "2.4.0",
+    "typing_extensions": "4.16.0",
+    "joblib": "1.6.0",
+    "mlx": "0.32.4"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "gpu": "Apple Metal via MLX",
+  "cuda": null,
+  "checkpoint_sha256": "ed01f7a0a18d25451bc9d1058b479ba6b68048aa1ebde06156c8fcfaf8b8fe81",
+  "source_revision": "c76fa21bbb25fddca649e75a52dc9b1df66a659c",
+  "mixed_precision": false,
+  "seed": 10242,
+  "query_batch_size": 128
+}

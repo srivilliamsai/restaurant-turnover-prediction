@@ -1,0 +1,280 @@
+{
+  "FT512": {
+    "status": "PASS",
+    "fold_seconds": 316.4080967296359,
+    "full_fit_predict_seconds": 390.5628783736703,
+    "behavior": {
+      "permutation_difference_INR": 0.0,
+      "label_id_difference_INR": 0.0,
+      "batch_difference_INR": 0.0,
+      "individual_difference_INR": 0.0,
+      "rmse_difference_INR": {
+        "permutation": 0.0,
+        "batch": 0.0,
+        "individual": 0.0
+      },
+      "other_query_rows_changed_difference_INR": 0.0,
+      "rows_checked": 699,
+      "individual_probes": 12,
+      "missing_unseen_inputs": true,
+      "behavior_tolerance_INR": 10.0,
+      "rmse_tolerance_INR": 1.0
+    },
+    "fresh_repeat_difference_INR": 0.0,
+    "save_reload_difference_INR": 0.0,
+    "target_metadata": {
+      "name": "FT512",
+      "training_rows": 2794,
+      "units": "raw INR millions",
+      "all_original_training_targets_retained": true,
+      "seed": 10242,
+      "training_target_sha256": "63998c05f2bd6fe27bf536d3f74ed91f5542c3bcef6e4bbc3ed28bc9492ffa38",
+      "categorical_columns": [
+        "Cuisine",
+        "City",
+        "Restaurant Location",
+        "Endoresed By",
+        "Restaurant Type",
+        "Restaurant Theme",
+        "Cuisine 1",
+        "Cuisine 2"
+      ],
+      "features": 40,
+      "inner_training_rows": 2374,
+      "inner_validation_rows": 420,
+      "inner_seed": 9091,
+      "inner_train_sha256": "7f75c6d798f5f3e1aec1348dcd7f28ed151479de37588d9ef49616d76d44b982",
+      "inner_validation_sha256": "78b66a263f116bce32eb4da28de7e21795134e6708d165edc8847f8b66befade",
+      "inner_policy": "random-15-percent",
+      "selected_epochs": 3,
+      "inner_epochs_run": 11,
+      "inner_history": [
+        {
+          "epoch": 0,
+          "mse_millions_squared": 257.5474534175994
+        },
+        {
+          "epoch": 1,
+          "mse_millions_squared": 257.73304344177683
+        },
+        {
+          "epoch": 2,
+          "mse_millions_squared": 257.7352424653391
+        },
+        {
+          "epoch": 3,
+          "mse_millions_squared": 257.2273356884834
+        },
+        {
+          "epoch": 4,
+          "mse_millions_squared": 257.77608703972226
+        },
+        {
+          "epoch": 5,
+          "mse_millions_squared": 258.79696040973283
+        },
+        {
+          "epoch": 6,
+          "mse_millions_squared": 259.8178175858402
+        },
+        {
+          "epoch": 7,
+          "mse_millions_squared": 260.66654442850415
+        },
+        {
+          "epoch": 8,
+          "mse_millions_squared": 261.5643458483341
+        },
+        {
+          "epoch": 9,
+          "mse_millions_squared": 262.24794906467395
+        },
+        {
+          "epoch": 10,
+          "mse_millions_squared": 262.67191368577375
+        },
+        {
+          "epoch": 11,
+          "mse_millions_squared": 262.986724311396
+        }
+      ],
+      "outer_validation_used_for_epoch_selection": false,
+      "precision": "CUDA-AMP-training/float32-inference",
+      "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+      "matched_original_architectures": [
+        "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+      ],
+      "installed_finetune_source_sha256": "315413cd044720d1edc9962d6697ed55cea90f3e7181d1a2a1c41ac8ccde18fa",
+      "learning_rate": 3e-06,
+      "use_lr_scheduler": false,
+      "setup_seconds": 30.939502929000014,
+      "selection_seconds": 62.734027207000054,
+      "refit_seconds": 11.32334549199993,
+      "inner_optimizer_steps": 44,
+      "full_subset_refitted": true,
+      "actual_estimators": 1,
+      "context_plus_query_rows": 512,
+      "matched_unadapted_inner_mse_millions_squared": 257.5474534175994,
+      "fit_seconds": 108.134125015,
+      "last_query_seconds": 1.1423374070000136
+    },
+    "peak_gpu_allocated_bytes": 5208716288,
+    "training_rows": 2794,
+    "validation_rows": 699,
+    "full_training_rows": 3493,
+    "selection_uses_validation_rmse": false,
+    "engineering_seconds": 334.084323576,
+    "forecast_basis": "Measured fixed setup, maximum thirty selection epochs, thirty refit epochs, full validation and final queries; thirty-percent contingency applied by admission."
+  },
+  "EXA8": {
+    "status": "engineering_excluded",
+    "error_type": "RuntimeError",
+    "reason": "No available kernel. Aborting execution.",
+    "traceback": "Traceback (most recent call last):\n  File \"/content/mla_v18/pilot_worker.py\", line 28, in main\n    p=modeling.predict(fitted,e.train.iloc[b])\n  File \"/content/mla_v18/modeling.py\", line 50, in predict\n    return new_models.predict(fitted,raw)\n           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\n  File \"/content/mla_v18/new_models.py\", line 184, in predict\n    if fitted['name']=='EXA8':p=fitted['model'].predict(block)\n                                ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^\n  File \"/content/mla_v18/engineering_sources/exaone/src/exaonetabular/regressor.py\", line 443, in predict\n    member_predictions = self._pooled_member_points(\n        support_x, support_y, query_x, state[\"passes\"],\n        preprocessors=state[\"preprocessors\"],\n    )\n  File \"/content/mla_v18/engineering_sources/exaone/src/exaonetabular/regressor.py\", line 268, in _pooled_member_points\n    self._member_points(\n    ~~~~~~~~~~~~~~~~~~~^\n        support_x, support_y, query_x, n_svd=n_svd, seed=seed,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        preprocessor=None if preprocessors is None else preprocessors[seed],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        categorical_mask=categorical_mask,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/content/mla_v18/engineering_sources/exaone/src/exaonetabular/regressor.py\", line 234, in _member_points\n    output = self._member_quantiles(\n        support_x, support_y, query_x, n_svd=n_svd, seed=seed,\n        preprocessor=preprocessor, categorical_mask=categorical_mask,\n    )\n  File \"/content/mla_v18/engineering_sources/exaone/src/exaonetabular/regressor.py\", line 224, in _member_quantiles\n    output = self._forward_chunked(batch_xs, batch_y, batch_xq)\n  File \"/content/mla_v18/engineering_sources/exaone/src/exaonetabular/regressor.py\", line 159, in _forward_chunked\n    return self._executor().forward(\n           ~~~~~~~~~~~~~~~~~~~~~~~~^\n        self.model, support_batch, label_batch, query_batch\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/content/mla_v18/engineering_sources/exaone/src/exaonetabular/_execution.py\", line 837, in forward\n    return self._run_execution_plan(\n           ~~~~~~~~~~~~~~~~~~~~~~~~^\n        model, support_batch, label_batch, query_batch, execution_plan\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/content/mla_v18/engineering_sources/exaone/src/exaonetabular/_execution.py\", line 866, in _run_execution_plan\n    model(\n    ~~~~~^\n        member_support,\n        ^^^^^^^^^^^^^^^\n    ...<10 lines>...\n        trusted_internal_inputs=True,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/content/mla_v18/engineering_sources/exaone/src/exaonetabular/model/heads.py\", line 135, in forward\n    return self.transformer(\n           ~~~~~~~~~~~~~~~~^\n        state,\n        ^^^^^^\n    ...<6 lines>...\n        query_chunk_size=query_chunk_size,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/content/mla_v18/engineering_sources/exaone/src/exaonetabular/model/transformer.py\", line 307, in forward\n    state, feature_summaries, item_summaries = layer(\n                                               ~~~~~^\n        state,\n        ^^^^^^\n    ...<9 lines>...\n        output_support=output == \"all\" or not layer.final_layer,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/content/mla_v18/engineering_sources/exaone/src/exaonetabular/model/layer.py\", line 489, in forward\n    combined = block(state, item_summary)\n  File \"/content/mla_v18/engineering_sources/exaone/src/exaonetabular/model/layer.py\", line 393, in _feature_attention_block\n    mixed = self._attention(\n            ~~~~~~~~~~~~~~~^\n        self.feature_context_attentions[repeat], query, context\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ).transpose(1, 2)\n    ^\n  File \"/content/mla_v18/engineering_sources/exaone/src/exaonetabular/model/layer.py\", line 263, in _attention\n    return module(\n        query,\n    ...<3 lines>...\n        reuse_first_context_head=shared_context_head,\n    )\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/content/mla_v18/engineering_sources/exaone/src/exaonetabular/model/attention.py\", line 402, in forward\n    attended = F.scaled_dot_product_attention(\n        flat_query,\n    ...<2 lines>...\n        **attention_options,\n    )\nRuntimeError: No available kernel. Aborting execution.\n",
+    "engineering_seconds": 11.003430449000007,
+    "accuracy_tested": false
+  },
+  "FT1024": {
+    "status": "PASS",
+    "fold_seconds": 403.9734352782851,
+    "full_fit_predict_seconds": 286.7583015084994,
+    "behavior": {
+      "permutation_difference_INR": 0.0,
+      "label_id_difference_INR": 0.0,
+      "batch_difference_INR": 0.0,
+      "individual_difference_INR": 0.0,
+      "rmse_difference_INR": {
+        "permutation": 0.0,
+        "batch": 0.0,
+        "individual": 0.0
+      },
+      "other_query_rows_changed_difference_INR": 0.0,
+      "rows_checked": 699,
+      "individual_probes": 12,
+      "missing_unseen_inputs": true,
+      "behavior_tolerance_INR": 10.0,
+      "rmse_tolerance_INR": 1.0
+    },
+    "fresh_repeat_difference_INR": 0.0,
+    "save_reload_difference_INR": 0.0,
+    "target_metadata": {
+      "name": "FT1024",
+      "training_rows": 2794,
+      "units": "raw INR millions",
+      "all_original_training_targets_retained": true,
+      "seed": 10242,
+      "training_target_sha256": "63998c05f2bd6fe27bf536d3f74ed91f5542c3bcef6e4bbc3ed28bc9492ffa38",
+      "categorical_columns": [
+        "Cuisine",
+        "City",
+        "Restaurant Location",
+        "Endoresed By",
+        "Restaurant Type",
+        "Restaurant Theme",
+        "Cuisine 1",
+        "Cuisine 2"
+      ],
+      "features": 40,
+      "inner_training_rows": 2374,
+      "inner_validation_rows": 420,
+      "inner_seed": 9091,
+      "inner_train_sha256": "7f75c6d798f5f3e1aec1348dcd7f28ed151479de37588d9ef49616d76d44b982",
+      "inner_validation_sha256": "78b66a263f116bce32eb4da28de7e21795134e6708d165edc8847f8b66befade",
+      "inner_policy": "random-15-percent",
+      "selected_epochs": 7,
+      "inner_epochs_run": 15,
+      "inner_history": [
+        {
+          "epoch": 0,
+          "mse_millions_squared": 257.5474534175994
+        },
+        {
+          "epoch": 1,
+          "mse_millions_squared": 257.4536369700709
+        },
+        {
+          "epoch": 2,
+          "mse_millions_squared": 257.4536369700709
+        },
+        {
+          "epoch": 3,
+          "mse_millions_squared": 257.5976362853548
+        },
+        {
+          "epoch": 4,
+          "mse_millions_squared": 257.2842649358762
+        },
+        {
+          "epoch": 5,
+          "mse_millions_squared": 256.88723366269085
+        },
+        {
+          "epoch": 6,
+          "mse_millions_squared": 256.47544345805835
+        },
+        {
+          "epoch": 7,
+          "mse_millions_squared": 256.309166054754
+        },
+        {
+          "epoch": 8,
+          "mse_millions_squared": 256.35503008854766
+        },
+        {
+          "epoch": 9,
+          "mse_millions_squared": 256.55377280179636
+        },
+        {
+          "epoch": 10,
+          "mse_millions_squared": 257.11249256672414
+        },
+        {
+          "epoch": 11,
+          "mse_millions_squared": 257.88836490112124
+        },
+        {
+          "epoch": 12,
+          "mse_millions_squared": 258.68362151878233
+        },
+        {
+          "epoch": 13,
+          "mse_millions_squared": 259.2854202803532
+        },
+        {
+          "epoch": 14,
+          "mse_millions_squared": 259.58502839025186
+        },
+        {
+          "epoch": 15,
+          "mse_millions_squared": 259.932731278755
+        }
+      ],
+      "outer_validation_used_for_epoch_selection": false,
+      "precision": "CUDA-AMP-training/float32-inference",
+      "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+      "matched_original_architectures": [
+        "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+      ],
+      "installed_finetune_source_sha256": "315413cd044720d1edc9962d6697ed55cea90f3e7181d1a2a1c41ac8ccde18fa",
+      "learning_rate": 3e-06,
+      "use_lr_scheduler": false,
+      "setup_seconds": 7.429217434000066,
+      "selection_seconds": 154.44424377699988,
+      "refit_seconds": 20.166661116999876,
+      "inner_optimizer_steps": 30,
+      "full_subset_refitted": true,
+      "actual_estimators": 1,
+      "context_plus_query_rows": 1024,
+      "matched_unadapted_inner_mse_millions_squared": 257.5474534175994,
+      "fit_seconds": 185.53170100300008,
+      "last_query_seconds": 1.2271826460000739
+    },
+    "peak_gpu_allocated_bytes": 5210158080,
+    "training_rows": 2794,
+    "validation_rows": 699,
+    "full_training_rows": 3493,
+    "selection_uses_validation_rmse": false,
+    "engineering_seconds": 510.20331741500013,
+    "forecast_basis": "Measured fixed setup, maximum thirty selection epochs, thirty refit epochs, full validation and final queries; thirty-percent contingency applied by admission."
+  }
+}

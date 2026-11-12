@@ -1,0 +1,9 @@
+{
+  "status": "COMPLETE",
+  "experiment_complete": true,
+  "qualified": false,
+  "source_identity_unchanged": true,
+  "owned_runtime_released": true,
+  "scored_v9_csv_sha256": "5a384dc3d8bf58c4e29f0d6cac646aa33afe22bdcdd186cccd9758342769bbd4",
+  "portal_uploads": 0
+}

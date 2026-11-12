@@ -1,0 +1,282 @@
+[
+  {
+    "name": "NOR15_V14-blend@0.1",
+    "scheme": "42",
+    "net_squared_error_reduction": 1092762906551304.4,
+    "largest_positive_ten_rows": [
+      61238,
+      60962,
+      62150,
+      60167,
+      62687,
+      63272,
+      61381,
+      60065,
+      60501,
+      62487
+    ],
+    "top_ten_positive_reduction": 1123632325701849.0,
+    "tail_gt80M_reduction": 318809341884666.1,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 6285.573940470815,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "NOR15_V14-blend@0.1",
+    "scheme": "71",
+    "net_squared_error_reduction": 885645727252890.8,
+    "largest_positive_ten_rows": [
+      61238,
+      62150,
+      60962,
+      60167,
+      62180,
+      62687,
+      63243,
+      60395,
+      61983,
+      62487
+    ],
+    "top_ten_positive_reduction": 1253841661476249.2,
+    "tail_gt80M_reduction": 368969683320731.1,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 3808.8815486785024,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "NOR15_V14-blend@0.25",
+    "scheme": "42",
+    "net_squared_error_reduction": 2287180100894267.5,
+    "largest_positive_ten_rows": [
+      61238,
+      60962,
+      62150,
+      60167,
+      62687,
+      63272,
+      61381,
+      60065,
+      60501,
+      62487
+    ],
+    "top_ten_positive_reduction": 2794892763271155.5,
+    "tail_gt80M_reduction": 781019686729798.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 11726.811713725328,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "NOR15_V14-blend@0.25",
+    "scheme": "71",
+    "net_squared_error_reduction": 1777975935234000.5,
+    "largest_positive_ten_rows": [
+      61238,
+      62150,
+      60962,
+      60167,
+      62180,
+      62687,
+      63243,
+      60395,
+      61983,
+      62487
+    ],
+    "top_ten_positive_reduction": 3114692290698893.0,
+    "tail_gt80M_reduction": 891276135298169.8,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 5607.61713132821,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "NOR15_V14-blend@0.5",
+    "scheme": "42",
+    "net_squared_error_reduction": 3091936316842343.5,
+    "largest_positive_ten_rows": [
+      61238,
+      60962,
+      62150,
+      60167,
+      62687,
+      63272,
+      61381,
+      60065,
+      60501,
+      62487
+    ],
+    "top_ten_positive_reduction": 5542492023264207.0,
+    "tail_gt80M_reduction": 1508693813520537.5,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 10153.727848120034,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "NOR15_V14-blend@0.5",
+    "scheme": "71",
+    "net_squared_error_reduction": 2102157260807691.5,
+    "largest_positive_ten_rows": [
+      61238,
+      62150,
+      60962,
+      60167,
+      62180,
+      62687,
+      63243,
+      60395,
+      61983,
+      62487
+    ],
+    "top_ten_positive_reduction": 6163011704758770.0,
+    "tail_gt80M_reduction": 1678725360584649.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -1834.7567541338503,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "NOR15_V14-blend@0.75",
+    "scheme": "42",
+    "net_squared_error_reduction": 2414268647844116.0,
+    "largest_positive_ten_rows": [
+      61238,
+      60962,
+      60167,
+      62150,
+      62687,
+      63272,
+      61381,
+      60501,
+      60065,
+      62487
+    ],
+    "top_ten_positive_reduction": 8242797779979170.0,
+    "tail_gt80M_reduction": 2183022380372110.5,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -4715.29827651009,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "NOR15_V14-blend@0.75",
+    "scheme": "71",
+    "net_squared_error_reduction": 972543976721062.0,
+    "largest_positive_ten_rows": [
+      61238,
+      62150,
+      60962,
+      60167,
+      62180,
+      63243,
+      62687,
+      60395,
+      61983,
+      62487
+    ],
+    "top_ten_positive_reduction": 9144958242179784.0,
+    "tail_gt80M_reduction": 2362347675859430.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -22308.79112394899,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "NOR15_V14-blend@1.0",
+    "scheme": "42",
+    "net_squared_error_reduction": 254177093899788.0,
+    "largest_positive_ten_rows": [
+      61238,
+      60962,
+      60167,
+      62150,
+      62687,
+      63272,
+      60501,
+      61381,
+      60065,
+      62487
+    ],
+    "top_ten_positive_reduction": 1.0895810033415984e+16,
+    "tail_gt80M_reduction": 2804005387284706.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -32842.97649092786,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "NOR15_V14-blend@1.0",
+    "scheme": "71",
+    "net_squared_error_reduction": -1610863917025872.5,
+    "largest_positive_ten_rows": [
+      61238,
+      62150,
+      60962,
+      60167,
+      62180,
+      63243,
+      62687,
+      60395,
+      61983,
+      62487
+    ],
+    "top_ten_positive_reduction": 1.2060531902961896e+16,
+    "tail_gt80M_reduction": 2942143081122542.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -55764.235174058005,
+    "exclusion_is_selection_criterion": false
+  }
+]

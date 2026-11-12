@@ -1,0 +1,33 @@
+{
+  "outcome": "Retain V14. V23 did not pass engineering admission; no qualified replacement was produced.",
+  "decision": null,
+  "failures": [
+    {
+      "stage": "coordinator",
+      "type": "AssertionError",
+      "message": "V23 pilot failed; inspect measured evidence",
+      "epoch": 1793294308.55876
+    },
+    {
+      "stage": "pilot",
+      "type": "RuntimeError",
+      "message": "[metal::malloc] Attempting to allocate 11233757568 bytes which is greater than the maximum allowed buffer size of 4294967296 bytes.",
+      "traceback": "Traceback (most recent call last):\n  File \"./improvement_v23/experiment.py\", line 176, in main\n    elif args.stage=='pilot':pilot()\n                             ^^^^^^^\n  File \"./improvement_v23/experiment.py\", line 86, in pilot\n    t=time.time();p=adapter.infer(model,state,query);fold_seconds=time.time()-t\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"./improvement_v23/adapter.py\", line 109, in infer\n    p=np.asarray(model.predict(state['x'].copy(),state['y'].copy(),q,task_type='Regression'),float)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"./improvement_v23/research_sources/LimiX/inference/v2_0/predictor.py\", line 2495, in predict\n    return self._predict_reg(x_train, y_train, x_test, task_type,unique_dataset_name=unique_dataset_name)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"./improvement_v23/research_sources/LimiX/inference/v2_0/predictor.py\", line 3161, in _predict_reg\n    collected = self._collect_reg_member_outputs(\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"./improvement_v23/research_sources/LimiX/inference/v2_0/predictor.py\", line 3271, in _collect_reg_member_outputs\n    output = self._predict_noretrieval_in_batches(\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"./improvement_v23/research_sources/LimiX/inference/v2_0/predictor.py\", line 1194, in _predict_noretrieval_in_batches\n    model_output = self.model(\n                   ^^^^^^^^^^^\n  File \"./improvement_v23/research_sources/mlx_port/limix_mlx/api.py\", line 90, in __call__\n    torch.from_numpy(np.array(t).astype(np.float32))\n                     ^^^^^^^^^^^\nRuntimeError: [metal::malloc] Attempting to allocate 11233757568 bytes which is greater than the maximum allowed buffer size of 4294967296 bytes.\n",
+      "epoch": 1793294301.809418
+    }
+  ],
+  "independent_review": {
+    "status": "PASS",
+    "meaning": "Artifact identities and any complete development scores independently reconstructed; not an accuracy qualification",
+    "original_P35_control_contexts": 35,
+    "complete_new_folds": 0,
+    "screening_comparisons_verified": 0,
+    "all_3493_labels_retained": true,
+    "fallback_byte_identical": true,
+    "portal_uploads": 0,
+    "new_portal_score_known": false,
+    "source_revisions_locked": true,
+    "selected_backend": "local_mlx"
+  },
+  "prepared_IST": "2026-10-29T22:48:31.473404+05:30"
+}

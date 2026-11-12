@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "feature_views": {
+    "BASE": 40,
+    "S": 56,
+    "C+S+G": 66
+  },
+  "malformed_dates": "missing age",
+  "target_id_isolation": true,
+  "unknown_categories": true,
+  "all_training_rows_retained": true,
+  "train_only_group_maps": true,
+  "query_independence": true,
+  "validation_target_changes_do_not_change_training_targets": true,
+  "invalid_checkpoints_rejected": true
+}

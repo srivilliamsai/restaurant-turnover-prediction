@@ -1,0 +1,22 @@
+{
+  "version": "v9_trial_1",
+  "portal_rmse": 11904515.9864996,
+  "rank_in_screenshot": 9,
+  "previous_best_portal_rmse": 12024316.5355221,
+  "rmse_reduction": 119800.54902249947,
+  "relative_reduction_percent": 0.9963189896788399,
+  "csv": "./improvement_v9/colab_cli_runs/20261026T160148Z/portable_delivery/submission/submission.csv",
+  "csv_sha256": "5a384dc3d8bf58c4e29f0d6cac646aa33afe22bdcdd186cccd9758342769bbd4",
+  "matching_notebook": "./improvement_v9/colab_cli_runs/20261026T160148Z/portable_delivery/submission/submission.ipynb",
+  "matching_notebook_sha256": "38a39003d0d7fb805b8725beac9ae80933929f6782c412166deef4d4df2f6973",
+  "source": "User-provided portal result screenshot after stating they would upload V9",
+  "screenshot": "~/Documents/screenshots/Screenshot 2026-10-27 at 12.25.20\u202fAM.png",
+  "screenshot_sha256": "ad4dc757770cd3eb5d86881960ed8fd65d205006a0c607b5831ad98c1a7de466",
+  "screenshot_timestamp_local": "2026-10-27T00:25:20+05:30",
+  "timezone": "Asia/Calcutta",
+  "submission_time": null,
+  "attribution": "Associated with the recommended V9 file from the preceding upload instructions and user response. The screenshot does not independently expose the uploaded file hash.",
+  "agent_performed_upload": false,
+  "recommended_current_submission": "v9_trial_1",
+  "recorded_at_utc": "2026-10-26T19:00:02.046079+00:00"
+}

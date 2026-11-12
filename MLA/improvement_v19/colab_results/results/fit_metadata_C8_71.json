@@ -1,0 +1,257 @@
+[
+  {
+    "name": "C8",
+    "training_rows": 2794,
+    "units": "raw INR millions",
+    "model_class": "causilo.estimators.CausiloRegressor",
+    "checkpoint_sha256": "9a4197d7c1060d187c19b62d4d83c74ce986c1f3911825576eb58c2ae4f0057d",
+    "checkpoint_revision": "94f2bd91db0737d4da59f347910662905ecb5a09",
+    "actual_source_hashes": {
+      "causilo.estimators": "74d35df8d35f681c3c458522a15d2bcd10e1f4aa35a53ae240d16d9686b3bbbf",
+      "causilo.checkpoints": "1c2f1577e61ea6fdcd8f0593610862be4d539a99fa8a62812c8f4a253aaf36d4",
+      "causilo.nn.layers.attention": "3aa33b9ea4f6d5caa2fb9e38233ed67d3d6fefdd7a44857c50d9017b91c853ea"
+    },
+    "runtime": {
+      "dependencies": {
+        "torch": "2.13.0",
+        "numpy": "2.5.4",
+        "pandas": "3.0.6",
+        "scikit-learn": "1.9.1",
+        "scipy": "1.18.1",
+        "causilo": "1.0.3",
+        "tabdpt": "1.3.1",
+        "numba": "0.68.0",
+        "llvmlite": "0.50.0",
+        "structured-data-models": "0.1.0.dev0",
+        "huggingface-hub": "1.33.0",
+        "safetensors": "0.8.0",
+        "pyarrow": "23.0.1"
+      },
+      "gpu": "Tesla T4",
+      "cuda": "13.0",
+      "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+      "total_gpu_bytes": 15637086208
+    },
+    "input_features": 40,
+    "categorical_columns": [
+      "Cuisine",
+      "City",
+      "Restaurant Location",
+      "Endoresed By",
+      "Restaurant Type",
+      "Restaurant Theme",
+      "Cuisine 1",
+      "Cuisine 2"
+    ],
+    "all_outer_training_rows": true,
+    "seed": 10242,
+    "peak_gpu_allocated_bytes": 2477054976,
+    "peak_gpu_reserved_bytes": 4309647360,
+    "host_rss_bytes": 1611325440,
+    "query_layout": "256 rows, padded with the fixed first training row; target and ID excluded"
+  },
+  {
+    "name": "C8",
+    "training_rows": 2794,
+    "units": "raw INR millions",
+    "model_class": "causilo.estimators.CausiloRegressor",
+    "checkpoint_sha256": "9a4197d7c1060d187c19b62d4d83c74ce986c1f3911825576eb58c2ae4f0057d",
+    "checkpoint_revision": "94f2bd91db0737d4da59f347910662905ecb5a09",
+    "actual_source_hashes": {
+      "causilo.estimators": "74d35df8d35f681c3c458522a15d2bcd10e1f4aa35a53ae240d16d9686b3bbbf",
+      "causilo.checkpoints": "1c2f1577e61ea6fdcd8f0593610862be4d539a99fa8a62812c8f4a253aaf36d4",
+      "causilo.nn.layers.attention": "3aa33b9ea4f6d5caa2fb9e38233ed67d3d6fefdd7a44857c50d9017b91c853ea"
+    },
+    "runtime": {
+      "dependencies": {
+        "torch": "2.13.0",
+        "numpy": "2.5.4",
+        "pandas": "3.0.6",
+        "scikit-learn": "1.9.1",
+        "scipy": "1.18.1",
+        "causilo": "1.0.3",
+        "tabdpt": "1.3.1",
+        "numba": "0.68.0",
+        "llvmlite": "0.50.0",
+        "structured-data-models": "0.1.0.dev0",
+        "huggingface-hub": "1.33.0",
+        "safetensors": "0.8.0",
+        "pyarrow": "23.0.1"
+      },
+      "gpu": "Tesla T4",
+      "cuda": "13.0",
+      "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+      "total_gpu_bytes": 15637086208
+    },
+    "input_features": 40,
+    "categorical_columns": [
+      "Cuisine",
+      "City",
+      "Restaurant Location",
+      "Endoresed By",
+      "Restaurant Type",
+      "Restaurant Theme",
+      "Cuisine 1",
+      "Cuisine 2"
+    ],
+    "all_outer_training_rows": true,
+    "seed": 10242,
+    "peak_gpu_allocated_bytes": 2477054976,
+    "peak_gpu_reserved_bytes": 4309647360,
+    "host_rss_bytes": 1611800576,
+    "query_layout": "256 rows, padded with the fixed first training row; target and ID excluded"
+  },
+  {
+    "name": "C8",
+    "training_rows": 2794,
+    "units": "raw INR millions",
+    "model_class": "causilo.estimators.CausiloRegressor",
+    "checkpoint_sha256": "9a4197d7c1060d187c19b62d4d83c74ce986c1f3911825576eb58c2ae4f0057d",
+    "checkpoint_revision": "94f2bd91db0737d4da59f347910662905ecb5a09",
+    "actual_source_hashes": {
+      "causilo.estimators": "74d35df8d35f681c3c458522a15d2bcd10e1f4aa35a53ae240d16d9686b3bbbf",
+      "causilo.checkpoints": "1c2f1577e61ea6fdcd8f0593610862be4d539a99fa8a62812c8f4a253aaf36d4",
+      "causilo.nn.layers.attention": "3aa33b9ea4f6d5caa2fb9e38233ed67d3d6fefdd7a44857c50d9017b91c853ea"
+    },
+    "runtime": {
+      "dependencies": {
+        "torch": "2.13.0",
+        "numpy": "2.5.4",
+        "pandas": "3.0.6",
+        "scikit-learn": "1.9.1",
+        "scipy": "1.18.1",
+        "causilo": "1.0.3",
+        "tabdpt": "1.3.1",
+        "numba": "0.68.0",
+        "llvmlite": "0.50.0",
+        "structured-data-models": "0.1.0.dev0",
+        "huggingface-hub": "1.33.0",
+        "safetensors": "0.8.0",
+        "pyarrow": "23.0.1"
+      },
+      "gpu": "Tesla T4",
+      "cuda": "13.0",
+      "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+      "total_gpu_bytes": 15637086208
+    },
+    "input_features": 40,
+    "categorical_columns": [
+      "Cuisine",
+      "City",
+      "Restaurant Location",
+      "Endoresed By",
+      "Restaurant Type",
+      "Restaurant Theme",
+      "Cuisine 1",
+      "Cuisine 2"
+    ],
+    "all_outer_training_rows": true,
+    "seed": 10242,
+    "peak_gpu_allocated_bytes": 2477054976,
+    "peak_gpu_reserved_bytes": 4309647360,
+    "host_rss_bytes": 1613377536,
+    "query_layout": "256 rows, padded with the fixed first training row; target and ID excluded"
+  },
+  {
+    "name": "C8",
+    "training_rows": 2795,
+    "units": "raw INR millions",
+    "model_class": "causilo.estimators.CausiloRegressor",
+    "checkpoint_sha256": "9a4197d7c1060d187c19b62d4d83c74ce986c1f3911825576eb58c2ae4f0057d",
+    "checkpoint_revision": "94f2bd91db0737d4da59f347910662905ecb5a09",
+    "actual_source_hashes": {
+      "causilo.estimators": "74d35df8d35f681c3c458522a15d2bcd10e1f4aa35a53ae240d16d9686b3bbbf",
+      "causilo.checkpoints": "1c2f1577e61ea6fdcd8f0593610862be4d539a99fa8a62812c8f4a253aaf36d4",
+      "causilo.nn.layers.attention": "3aa33b9ea4f6d5caa2fb9e38233ed67d3d6fefdd7a44857c50d9017b91c853ea"
+    },
+    "runtime": {
+      "dependencies": {
+        "torch": "2.13.0",
+        "numpy": "2.5.4",
+        "pandas": "3.0.6",
+        "scikit-learn": "1.9.1",
+        "scipy": "1.18.1",
+        "causilo": "1.0.3",
+        "tabdpt": "1.3.1",
+        "numba": "0.68.0",
+        "llvmlite": "0.50.0",
+        "structured-data-models": "0.1.0.dev0",
+        "huggingface-hub": "1.33.0",
+        "safetensors": "0.8.0",
+        "pyarrow": "23.0.1"
+      },
+      "gpu": "Tesla T4",
+      "cuda": "13.0",
+      "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+      "total_gpu_bytes": 15637086208
+    },
+    "input_features": 40,
+    "categorical_columns": [
+      "Cuisine",
+      "City",
+      "Restaurant Location",
+      "Endoresed By",
+      "Restaurant Type",
+      "Restaurant Theme",
+      "Cuisine 1",
+      "Cuisine 2"
+    ],
+    "all_outer_training_rows": true,
+    "seed": 10242,
+    "peak_gpu_allocated_bytes": 2477343232,
+    "peak_gpu_reserved_bytes": 4309647360,
+    "host_rss_bytes": 1612255232,
+    "query_layout": "256 rows, padded with the fixed first training row; target and ID excluded"
+  },
+  {
+    "name": "C8",
+    "training_rows": 2795,
+    "units": "raw INR millions",
+    "model_class": "causilo.estimators.CausiloRegressor",
+    "checkpoint_sha256": "9a4197d7c1060d187c19b62d4d83c74ce986c1f3911825576eb58c2ae4f0057d",
+    "checkpoint_revision": "94f2bd91db0737d4da59f347910662905ecb5a09",
+    "actual_source_hashes": {
+      "causilo.estimators": "74d35df8d35f681c3c458522a15d2bcd10e1f4aa35a53ae240d16d9686b3bbbf",
+      "causilo.checkpoints": "1c2f1577e61ea6fdcd8f0593610862be4d539a99fa8a62812c8f4a253aaf36d4",
+      "causilo.nn.layers.attention": "3aa33b9ea4f6d5caa2fb9e38233ed67d3d6fefdd7a44857c50d9017b91c853ea"
+    },
+    "runtime": {
+      "dependencies": {
+        "torch": "2.13.0",
+        "numpy": "2.5.4",
+        "pandas": "3.0.6",
+        "scikit-learn": "1.9.1",
+        "scipy": "1.18.1",
+        "causilo": "1.0.3",
+        "tabdpt": "1.3.1",
+        "numba": "0.68.0",
+        "llvmlite": "0.50.0",
+        "structured-data-models": "0.1.0.dev0",
+        "huggingface-hub": "1.33.0",
+        "safetensors": "0.8.0",
+        "pyarrow": "23.0.1"
+      },
+      "gpu": "Tesla T4",
+      "cuda": "13.0",
+      "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+      "total_gpu_bytes": 15637086208
+    },
+    "input_features": 40,
+    "categorical_columns": [
+      "Cuisine",
+      "City",
+      "Restaurant Location",
+      "Endoresed By",
+      "Restaurant Type",
+      "Restaurant Theme",
+      "Cuisine 1",
+      "Cuisine 2"
+    ],
+    "all_outer_training_rows": true,
+    "seed": 10242,
+    "peak_gpu_allocated_bytes": 2477343232,
+    "peak_gpu_reserved_bytes": 4309647360,
+    "host_rss_bytes": 1611939840,
+    "query_layout": "256 rows, padded with the fixed first training row; target and ID excluded"
+  }
+]

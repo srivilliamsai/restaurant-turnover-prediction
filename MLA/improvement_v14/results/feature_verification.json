@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "features": 40,
+  "target_id_isolation": true,
+  "unknown_categories": true,
+  "all_training_rows_retained": true,
+  "validation_target_changes_do_not_change_training_targets": true,
+  "invalid_checkpoints_rejected": true
+}

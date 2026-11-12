@@ -1,0 +1,80 @@
+{"phase": "installing_dependencies", "pid": 85074, "task_elapsed_seconds": 127.1937210559845, "maximum_hours": 4}
+{"phase": "restarting_clean_kernel", "pid": 85233, "task_elapsed_seconds": 861.1498980522156, "maximum_hours": 4}
+{"phase": "uploading_frozen_workflow", "pid": 85233, "task_elapsed_seconds": 865.6758778095245, "maximum_hours": 4}
+V15 sources, official inputs and verified controls uploaded.
+{"server_completion_verified": true}
+{"phase": "running_audit", "pid": 85233, "task_elapsed_seconds": 879.5836138725281, "maximum_hours": 4}
+V15 foreground stage: audit timeout seconds 2715
+V15 stage complete: audit
+{"server_completion_verified": true}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"phase": "running_pilot", "pid": 85233, "task_elapsed_seconds": 926.1169657707214, "maximum_hours": 4}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"phase": "installing_dependencies", "pid": 85974, "task_elapsed_seconds": 1263.1224479675293, "maximum_hours": 4}
+V15 transport failure: RuntimeError ; authenticated details suppressed.
+{"phase": "stopped", "pid": 85974, "task_elapsed_seconds": 1296.8800020217896, "maximum_hours": 4, "error_type": "RuntimeError", "reason": "V15 command failed; inspect stage status and run.log"}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+V15 measured result archive prepared.
+{"server_completion_verified": true}
+V15 measured outputs collected locally.
+Owned V15 free T4 released.
+{"phase": "stopped", "pid": 85974, "task_elapsed_seconds": 1340.9004211425781, "maximum_hours": 4, "artifacts_collected": false, "owned_runtime_released": true}
+Traceback (most recent call last):
+  File "./improvement_v15_retry1/run_colab.py", line 91, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "./improvement_v15_retry1/run_colab.py", line 64, in main
+    control('setup',timeout=1700)
+  File "./improvement_v15_retry1/run_colab.py", line 54, in control
+    return command([sys.executable,CONTROL,action,*([value] if value else [])],timeout,backup=backup)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "./improvement_v15_retry1/run_colab.py", line 51, in command
+    if check and process.returncode:raise RuntimeError('V15 command failed; inspect stage status and run.log')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: V15 command failed; inspect stage status and run.log
+{"phase": "installing_dependencies", "pid": 86068, "task_elapsed_seconds": 1412.5797188282013, "maximum_hours": 4}
+{"phase": "installing_dependencies", "pid": 86149, "task_elapsed_seconds": 1528.2149848937988, "maximum_hours": 4}
+{"phase": "installing_dependencies", "pid": 86758, "task_elapsed_seconds": 1870.2969090938568, "maximum_hours": 4}
+{"existing_kernel_selected": true}
+V15 pinned dependencies installed; restart kernel before training.
+{"server_completion_verified": true}
+{"phase": "restarting_clean_kernel", "pid": 86758, "task_elapsed_seconds": 1923.9180319309235, "maximum_hours": 4}
+{"phase": "uploading_frozen_workflow", "pid": 86758, "task_elapsed_seconds": 1926.8105919361115, "maximum_hours": 4}
+V15 sources, official inputs and verified controls uploaded.
+{"server_completion_verified": true}
+{"phase": "running_fixed_pipeline", "pid": 86758, "task_elapsed_seconds": 1942.6458950042725, "maximum_hours": 4}
+V15 foreground stage: audit timeout seconds 1652
+V15 stage complete: audit
+V15 foreground stage: pilot timeout seconds 1649
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"phase": "monitoring_existing_pipeline", "pid": 87405, "maximum_hours": 4, "task_elapsed_seconds": 3133.697736978531}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "pilot", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 6, "stage_status": {"stage": "pilot", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 5, "stage_status": {"stage": "pilot", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 6, "stage_status": {"stage": "pilot", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 4, "stage_status": {"stage": "pilot", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 6, "stage_status": {"stage": "pilot", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 7, "stage_status": {"stage": "pilot", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 5, "stage_status": {"stage": "pilot", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 6, "stage_status": {"stage": "pilot", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 4, "stage_status": {"stage": "pilot", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 1, "stage_status": {"stage": "export", "status": "complete"}}
+{"connection_error_type": "RuntimeError", "frames": [{"file": "colab_control.py", "line": 58, "function": "run"}, {"file": "runtime.py", "line": 237, "function": "execute_code"}, {"file": "client.py", "line": 364, "function": "execute_interactive"}, {"file": "wsclient.py", "line": 1073, "function": "execute_interactive"}]}
+{"server_completion_verified": true}
+V15 measured outputs collected locally.
+Owned V15 free T4 released.
+{"phase": "complete", "pid": 87405, "maximum_hours": 4, "task_elapsed_seconds": 4545.872405052185, "artifacts_collected": true, "owned_runtime_released": true}

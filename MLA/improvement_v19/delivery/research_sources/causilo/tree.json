@@ -1,0 +1,665 @@
+{
+  "sha": "4d26d497de28734db52c6bfc2ea949c12cc17308",
+  "url": "https://api.github.com/repos/nums-ai/causilo/git/trees/4d26d497de28734db52c6bfc2ea949c12cc17308",
+  "tree": [
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f7d1a02589d185cbdb4f4ae66f87bc3c3274b0c2",
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/trees/f7d1a02589d185cbdb4f4ae66f87bc3c3274b0c2"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1bd2ae86cc357ed869bd4931b4d80a573db6941f",
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/trees/1bd2ae86cc357ed869bd4931b4d80a573db6941f"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7a37db368760376c08c39e7fb849e935fa52943",
+      "size": 890,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/f7a37db368760376c08c39e7fb849e935fa52943"
+    },
+    {
+      "path": ".github/workflows/publish.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5911086b463387086a2a2f9d2606af78d8a0db0",
+      "size": 2155,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/d5911086b463387086a2a2f9d2606af78d8a0db0"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e945bdb656549c8b54072f81bda97885ebc1e957",
+      "size": 108,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/e945bdb656549c8b54072f81bda97885ebc1e957"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a05f4a7be6162ff9fb109ef3365f646c9a164105",
+      "size": 11343,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/a05f4a7be6162ff9fb109ef3365f646c9a164105"
+    },
+    {
+      "path": "MANIFEST.in",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74bbd205320f3710088b34e7bac3dff65c863213",
+      "size": 222,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/74bbd205320f3710088b34e7bac3dff65c863213"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb0d3bc4d38661f7ef2c59f8485ffc0f7118abd5",
+      "size": 6332,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/cb0d3bc4d38661f7ef2c59f8485ffc0f7118abd5"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ee5c29bef29e8762eb94e7493fce78a13020e37f",
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/trees/ee5c29bef29e8762eb94e7493fce78a13020e37f"
+    },
+    {
+      "path": "docs/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ac50262bb5e279f20da42e8cb0eea3df2d1daf9a",
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/trees/ac50262bb5e279f20da42e8cb0eea3df2d1daf9a"
+    },
+    {
+      "path": "docs/assets/causilo-logo.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7cd1dc1af1ac3fef9634951438373a2a7024e7d0",
+      "size": 12459,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/7cd1dc1af1ac3fef9634951438373a2a7024e7d0"
+    },
+    {
+      "path": "docs/benchmarks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "855357a44a3b4ee0bcf8cbfbd1cdf68f5340613b",
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/trees/855357a44a3b4ee0bcf8cbfbd1cdf68f5340613b"
+    },
+    {
+      "path": "docs/benchmarks/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc998b09e96e3f902b986e8bcd14d7a744c0a397",
+      "size": 1239,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/bc998b09e96e3f902b986e8bcd14d7a744c0a397"
+    },
+    {
+      "path": "docs/benchmarks/classification-with-systems.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0ab69c7d5fc5a8568591052732a0a30e1365e9e",
+      "size": 8651,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/f0ab69c7d5fc5a8568591052732a0a30e1365e9e"
+    },
+    {
+      "path": "docs/benchmarks/classification-without-systems.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2089c4a5ef8926b46892146d3dfa013df0550cde",
+      "size": 8120,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/2089c4a5ef8926b46892146d3dfa013df0550cde"
+    },
+    {
+      "path": "docs/benchmarks/classification.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa0cf0695822c39cef5e8e0132eb4b7fdb09da88",
+      "size": 81984,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/fa0cf0695822c39cef5e8e0132eb4b7fdb09da88"
+    },
+    {
+      "path": "docs/benchmarks/overall-with-systems.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adc8ca46d8f9d586480ac933664643ecf3219da1",
+      "size": 8840,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/adc8ca46d8f9d586480ac933664643ecf3219da1"
+    },
+    {
+      "path": "docs/benchmarks/overall-without-systems.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3bfee0f63ffbc2fd5aa387358cee5783b726476d",
+      "size": 8315,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/3bfee0f63ffbc2fd5aa387358cee5783b726476d"
+    },
+    {
+      "path": "docs/benchmarks/overall.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93e06923c0434a1ea62c4a9d51230b4615873de1",
+      "size": 79403,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/93e06923c0434a1ea62c4a9d51230b4615873de1"
+    },
+    {
+      "path": "docs/benchmarks/provenance.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0b68ee7bac20ad4734b0a164ab9f026dee91bbd",
+      "size": 3848,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/c0b68ee7bac20ad4734b0a164ab9f026dee91bbd"
+    },
+    {
+      "path": "docs/benchmarks/regression-with-systems.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49f8d989c78a79aedbc5c73747f5aa91e95f093e",
+      "size": 8621,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/49f8d989c78a79aedbc5c73747f5aa91e95f093e"
+    },
+    {
+      "path": "docs/benchmarks/regression-without-systems.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7b65a0487fcb2914b044c16e84fba9e2227469d",
+      "size": 8099,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/b7b65a0487fcb2914b044c16e84fba9e2227469d"
+    },
+    {
+      "path": "docs/benchmarks/regression.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f52f3212a0317077ea735d53c938f083788d60c",
+      "size": 70204,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/6f52f3212a0317077ea735d53c938f083788d60c"
+    },
+    {
+      "path": "docs/benchmarks/resources-classification.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cada69de18d881ceea75da030f85eef1fa5aad03",
+      "size": 396,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/cada69de18d881ceea75da030f85eef1fa5aad03"
+    },
+    {
+      "path": "docs/benchmarks/resources-overall.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb4a9327a9e718b5325979d9faa61980ab63aac0",
+      "size": 399,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/eb4a9327a9e718b5325979d9faa61980ab63aac0"
+    },
+    {
+      "path": "docs/benchmarks/resources-regression.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "592bec56034e27d909cd7d33e812d7d7a40b2fd4",
+      "size": 393,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/592bec56034e27d909cd7d33e812d7d7a40b2fd4"
+    },
+    {
+      "path": "docs/inference.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f4cfd21de51ff2df9a243580ee03de6b16290b4",
+      "size": 3104,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/2f4cfd21de51ff2df9a243580ee03de6b16290b4"
+    },
+    {
+      "path": "examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f2dd681d3c7b5a2972fd31e0b6a89fff3ce2c444",
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/trees/f2dd681d3c7b5a2972fd31e0b6a89fff3ce2c444"
+    },
+    {
+      "path": "examples/cached_prediction.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eaeec5b2b63d7535dd06035c25a661bab5dbbb0c",
+      "size": 356,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/eaeec5b2b63d7535dd06035c25a661bab5dbbb0c"
+    },
+    {
+      "path": "examples/classification.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "021de1899e50ce87d8bd9019b07a49bfbb616134",
+      "size": 484,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/021de1899e50ce87d8bd9019b07a49bfbb616134"
+    },
+    {
+      "path": "examples/regression.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0bcc2cf19447d4edfa8dd37a79b17db1a12b24f",
+      "size": 468,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/e0bcc2cf19447d4edfa8dd37a79b17db1a12b24f"
+    },
+    {
+      "path": "examples/save_restore.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3865da04768f4105b48bf2f8c994bed18cd3739",
+      "size": 674,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/d3865da04768f4105b48bf2f8c994bed18cd3739"
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1abe16f8c6e9d2525cf3a7f2787fbedba9658cdb",
+      "size": 1511,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/1abe16f8c6e9d2525cf3a7f2787fbedba9658cdb"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "16632bf2d125dcdb07092024936a9befed8f8fa6",
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/trees/16632bf2d125dcdb07092024936a9befed8f8fa6"
+    },
+    {
+      "path": "src/causilo",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2d0160b00ff8ffd08ee0ec674e0161369d158b30",
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/trees/2d0160b00ff8ffd08ee0ec674e0161369d158b30"
+    },
+    {
+      "path": "src/causilo/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1e60bcf14ac95866ec0f1da09e51165f6f22869",
+      "size": 200,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/d1e60bcf14ac95866ec0f1da09e51165f6f22869"
+    },
+    {
+      "path": "src/causilo/checkpoints.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13ad8a1c429a4ceb49910a39d7a702d569031ff0",
+      "size": 2161,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/13ad8a1c429a4ceb49910a39d7a702d569031ff0"
+    },
+    {
+      "path": "src/causilo/data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9ed20a66baff2ad052de4e97923efb0dfc6086a3",
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/trees/9ed20a66baff2ad052de4e97923efb0dfc6086a3"
+    },
+    {
+      "path": "src/causilo/data/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73723955ac1ccc73fad30896602eac0c590f9979",
+      "size": 71,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/73723955ac1ccc73fad30896602eac0c590f9979"
+    },
+    {
+      "path": "src/causilo/data/dataset.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab7578b1e49d24b7c33077b238a5d4f8f089c126",
+      "size": 4883,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/ab7578b1e49d24b7c33077b238a5d4f8f089c126"
+    },
+    {
+      "path": "src/causilo/data/encoding.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6bc3c57ad925b218ad37d866d859e530b8a12ad",
+      "size": 5083,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/b6bc3c57ad925b218ad37d866d859e530b8a12ad"
+    },
+    {
+      "path": "src/causilo/data/ensemble.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf107554cbc5955b650e80581f34e08bf0db0a4a",
+      "size": 3508,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/bf107554cbc5955b650e80581f34e08bf0db0a4a"
+    },
+    {
+      "path": "src/causilo/data/normalization.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49f258892aef325bad911e6a341df703bd59b715",
+      "size": 6553,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/49f258892aef325bad911e6a341df703bd59b715"
+    },
+    {
+      "path": "src/causilo/ecoc.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a03df5cdaa233c5f3df7c5f065e8c66ccdf841c",
+      "size": 9203,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/5a03df5cdaa233c5f3df7c5f065e8c66ccdf841c"
+    },
+    {
+      "path": "src/causilo/engine.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d100c58f95011300d5ba7c1123e1121f2b15aad",
+      "size": 10137,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/0d100c58f95011300d5ba7c1123e1121f2b15aad"
+    },
+    {
+      "path": "src/causilo/estimators.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a71bb3a18a6afb4db70b50395464d84ce83446d5",
+      "size": 7302,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/a71bb3a18a6afb4db70b50395464d84ce83446d5"
+    },
+    {
+      "path": "src/causilo/execution",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3e558bb2dbba0ae8c4cdee14fd116cb51f00aa2a",
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/trees/3e558bb2dbba0ae8c4cdee14fd116cb51f00aa2a"
+    },
+    {
+      "path": "src/causilo/execution/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc48b0dee539675adb786b8ddc4d6b8f5bc1f4a6",
+      "size": 54,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/cc48b0dee539675adb786b8ddc4d6b8f5bc1f4a6"
+    },
+    {
+      "path": "src/causilo/execution/cached.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02bbfcd7e0b903b572fcc765707dbc762bb97c19",
+      "size": 3852,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/02bbfcd7e0b903b572fcc765707dbc762bb97c19"
+    },
+    {
+      "path": "src/causilo/execution/chunks.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6d587e0ad3898f12534bafe9423777df16ade2a",
+      "size": 7648,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/b6d587e0ad3898f12534bafe9423777df16ade2a"
+    },
+    {
+      "path": "src/causilo/execution/direct.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "524ae6ebf0b11168d463b8f195dbcf7c94efd295",
+      "size": 10030,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/524ae6ebf0b11168d463b8f195dbcf7c94efd295"
+    },
+    {
+      "path": "src/causilo/execution/memory.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2407f85b15e6fcdb3a931a452030d2f25a2d7ad",
+      "size": 10900,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/b2407f85b15e6fcdb3a931a452030d2f25a2d7ad"
+    },
+    {
+      "path": "src/causilo/execution/precision.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0c61b21a03c3fef85bb37c6ae5283930e420378",
+      "size": 732,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/b0c61b21a03c3fef85bb37c6ae5283930e420378"
+    },
+    {
+      "path": "src/causilo/execution/recompute.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84c12770546d16a61161cb392c2ad13ef8486aa8",
+      "size": 14370,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/84c12770546d16a61161cb392c2ad13ef8486aa8"
+    },
+    {
+      "path": "src/causilo/execution/runner.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4cce4a881cd72aba3d5f12c92ad9a6cdf0cc4b5",
+      "size": 7239,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/f4cce4a881cd72aba3d5f12c92ad9a6cdf0cc4b5"
+    },
+    {
+      "path": "src/causilo/model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0022812f25e9d360aafb383c9f54bd3208accd70",
+      "size": 2809,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/0022812f25e9d360aafb383c9f54bd3208accd70"
+    },
+    {
+      "path": "src/causilo/nn",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3fd552958276955d794f67b188549fcb4535cf5e",
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/trees/3fd552958276955d794f67b188549fcb4535cf5e"
+    },
+    {
+      "path": "src/causilo/nn/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e08084387affa9ad87c8b3be6de1f179d22af98e",
+      "size": 65,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/e08084387affa9ad87c8b3be6de1f179d22af98e"
+    },
+    {
+      "path": "src/causilo/nn/cache.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35714901bdedb70e4135842775e2ff35c37b6e61",
+      "size": 651,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/35714901bdedb70e4135842775e2ff35c37b6e61"
+    },
+    {
+      "path": "src/causilo/nn/column.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70359642306082f22f5cf4a80ce96137d148627a",
+      "size": 2489,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/70359642306082f22f5cf4a80ce96137d148627a"
+    },
+    {
+      "path": "src/causilo/nn/embeddings.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9949803f800bb4d169e2078d1203688a950d32c9",
+      "size": 2864,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/9949803f800bb4d169e2078d1203688a950d32c9"
+    },
+    {
+      "path": "src/causilo/nn/layers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4cd7e37ce45f47dcf87a14dc397621d6260296cf",
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/trees/4cd7e37ce45f47dcf87a14dc397621d6260296cf"
+    },
+    {
+      "path": "src/causilo/nn/layers/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f013d64b3595557c8d50d3f9bf48c82f93625622",
+      "size": 36,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/f013d64b3595557c8d50d3f9bf48c82f93625622"
+    },
+    {
+      "path": "src/causilo/nn/layers/attention.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4189b7c4c54aa811892ccd5a8f8998893ae0f1ee",
+      "size": 4989,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/4189b7c4c54aa811892ccd5a8f8998893ae0f1ee"
+    },
+    {
+      "path": "src/causilo/nn/layers/feedforward.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5f456db3394f5531b64595f1ae5e11308bd66d0",
+      "size": 636,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/a5f456db3394f5531b64595f1ae5e11308bd66d0"
+    },
+    {
+      "path": "src/causilo/nn/layers/scaling.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35856fcfa598612a067a6bf72bfcd11f84edba2e",
+      "size": 1673,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/35856fcfa598612a067a6bf72bfcd11f84edba2e"
+    },
+    {
+      "path": "src/causilo/nn/prediction.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3bf4c0f421166cc583ffa59d805ad7182c78ad01",
+      "size": 2652,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/3bf4c0f421166cc583ffa59d805ad7182c78ad01"
+    },
+    {
+      "path": "src/causilo/nn/row.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d20cf8b34c594804aaf14d52ba1f5d6302333ad",
+      "size": 6042,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/3d20cf8b34c594804aaf14d52ba1f5d6302333ad"
+    },
+    {
+      "path": "src/causilo/quantiles.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6aa786ea259ad61d7f5458b97b3bf4862e3f9c18",
+      "size": 2134,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/6aa786ea259ad61d7f5458b97b3bf4862e3f9c18"
+    },
+    {
+      "path": "src/causilo/serialization.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e86889f80efe5954b7f5add4d3ab153e3b4d4f8f",
+      "size": 8447,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/e86889f80efe5954b7f5add4d3ab153e3b4d4f8f"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3d3f39b35317a23f3b36758fe557729d852e3381",
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/trees/3d3f39b35317a23f3b36758fe557729d852e3381"
+    },
+    {
+      "path": "tests/helpers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "46e933be3f61151de42ad37855ce51ec7ad593ca",
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/trees/46e933be3f61151de42ad37855ce51ec7ad593ca"
+    },
+    {
+      "path": "tests/helpers/restore_probe.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d93706aa7141f666454f6f0332738cac129d4e8",
+      "size": 697,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/9d93706aa7141f666454f6f0332738cac129d4e8"
+    },
+    {
+      "path": "tests/test_ecoc.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5db8c2ecfc9ec49f5dba80404cd9ab66314af078",
+      "size": 3782,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/5db8c2ecfc9ec49f5dba80404cd9ab66314af078"
+    },
+    {
+      "path": "tests/test_embedding.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b480a74a51cceab4b60a12ee3a3bb9f92ecaf829",
+      "size": 1575,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/b480a74a51cceab4b60a12ee3a3bb9f92ecaf829"
+    },
+    {
+      "path": "tests/test_fitted_contract.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ca38b624d337b334fc562166a9ddbd0a4005dc7",
+      "size": 16671,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/6ca38b624d337b334fc562166a9ddbd0a4005dc7"
+    },
+    {
+      "path": "tests/test_input_precision.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88daef0f93febc663eafa3c567d2e74ffceac2f5",
+      "size": 3893,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/88daef0f93febc663eafa3c567d2e74ffceac2f5"
+    },
+    {
+      "path": "tests/test_inputs.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56f760b53d98acd930719dc4a49287e502ec8eb8",
+      "size": 3899,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/56f760b53d98acd930719dc4a49287e502ec8eb8"
+    },
+    {
+      "path": "tests/test_memory.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c54e888b04e3624268fbc3406a7f5594b0cce7a",
+      "size": 3923,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/4c54e888b04e3624268fbc3406a7f5594b0cce7a"
+    },
+    {
+      "path": "tests/test_normalization.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad200a588625e2ff37b117c7054d7b8a7bb0b9c5",
+      "size": 4298,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/ad200a588625e2ff37b117c7054d7b8a7bb0b9c5"
+    },
+    {
+      "path": "tests/test_partitioning.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ac0b2d313d2b4e789e4b2ac7227e17647d5c927",
+      "size": 2677,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/1ac0b2d313d2b4e789e4b2ac7227e17647d5c927"
+    },
+    {
+      "path": "tests/test_quantiles.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b97a72ca6aaa8add80acfa58685b37492320d088",
+      "size": 7303,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/b97a72ca6aaa8add80acfa58685b37492320d088"
+    },
+    {
+      "path": "tests/test_recompute.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "363052d8fb5fd15327bcc107fd22a2e0e9a65dc2",
+      "size": 21596,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/363052d8fb5fd15327bcc107fd22a2e0e9a65dc2"
+    },
+    {
+      "path": "tests/test_row.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "350dda2bd962f881a7f8a06b04d5848f4b74c268",
+      "size": 2252,
+      "url": "https://api.github.com/repos/nums-ai/causilo/git/blobs/350dda2bd962f881a7f8a06b04d5848f4b74c268"
+    }
+  ],
+  "truncated": false
+}

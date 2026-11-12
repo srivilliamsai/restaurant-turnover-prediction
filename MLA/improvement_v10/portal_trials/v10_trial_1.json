@@ -1,0 +1,23 @@
+{
+  "trial": 1,
+  "version": "V10",
+  "upload_actor": "user",
+  "recorded_at": "2026-10-27T19:06:45.336095+05:30",
+  "portal_rmse": 11925736.5011738,
+  "portal_rmse_exact": "11925736.5011738",
+  "previous_best_v9_rmse": 11904515.9864996,
+  "previous_best_v9_rmse_exact": "11904515.9864996",
+  "rmse_increase_exact": "21220.5146742",
+  "relative_deterioration_percent": 0.17825600552147836,
+  "current_leaderboard_rank_shown": 11,
+  "portal_retained_previous_best": true,
+  "recommended_version": "V9",
+  "csv_sha256": "f87948ad9025872e4701fa970a1d84eefd86aa8c3cacec7705b813ccfa11ec1b",
+  "csv_association": "User stated they would upload the supplied V10 CSV, then provided this portal-result screenshot; the screenshot does not expose a server-side file hash.",
+  "evidence_filename": "v10_trial_1.png",
+  "evidence_sha256": "41988360253f6466e4300d313af0a1057a3f0e77ab6d665e0433d4d917ae39c6",
+  "v10_trials_used": 1,
+  "v10_trial_cap": 1,
+  "one_time_coding_upload": "pending",
+  "deadline_timezone": "unverified"
+}

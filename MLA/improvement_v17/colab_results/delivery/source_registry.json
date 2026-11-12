@@ -1,0 +1,17 @@
+{
+  "xiaomi": {
+    "repository": "xiaomi-research/xiaomi-tabldm",
+    "revision": "03cfbb9e7069b821dcef32676dc19b40d294e348",
+    "archive_sha256": "05508739f9e22da6422a7ff56cd8ee91c19be46d119c0300ab18058bc94f9587"
+  },
+  "nori": {
+    "repository": "Synthefy/synthefy-nori",
+    "revision": "d22a8b4954bd6a4d56bea8a7bb606177bb50ac99",
+    "archive_sha256": "444fed887af53d2f498c4559857c1c334770a1da754ac743aad6d981ebc10218"
+  },
+  "tabpfn": {
+    "repository": "PriorLabs/TabPFN",
+    "revision": "1c0a4574aa3a9fa9f4f45612331a1fb08420e256",
+    "archive_sha256": "780f3cf0e232d05f7ab79cbb82020dbfd4bd14cbef6e54b7f93c28c97d4897dd"
+  }
+}

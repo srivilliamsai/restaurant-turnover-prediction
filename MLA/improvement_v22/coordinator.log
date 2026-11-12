@@ -1,0 +1,49 @@
+{"phase": "checking_user_selected_account", "pid": 30071, "task_elapsed_seconds": 831.1440298557281, "maximum_hours": 4}
+{"user_selected_account_verified": true, "active_assignments": 0, "epoch": 1793281969.58974, "account_identity_sha256": "REDACTED"}
+{"phase": "allocating_owned_free_t4", "pid": 30071, "task_elapsed_seconds": 833.6918652057648, "maximum_hours": 4, "allocation_number": 2}
+{"allocated": true, "owned_session": "v22-free-t4", "accelerator": "T4", "high_memory_requested": false}
+{"phase": "installing_dependencies", "pid": 30071, "task_elapsed_seconds": 838.6720321178436, "maximum_hours": 4}
+{"existing_kernel_selected": true}
+V22 pinned dependencies installed; restart kernel before training.
+{"server_completion_verified": true}
+{"phase": "restarting_clean_kernel", "pid": 30071, "task_elapsed_seconds": 874.799998998642, "maximum_hours": 4}
+{"phase": "uploading_frozen_workflow", "pid": 30071, "task_elapsed_seconds": 881.1112940311432, "maximum_hours": 4}
+V22 sources, official inputs and verified controls uploaded.
+{"server_completion_verified": true}
+{"phase": "running_audit", "pid": 30071, "task_elapsed_seconds": 895.5163850784302, "maximum_hours": 4}
+V22 foreground stage: audit timeout seconds 1799
+V22 stage complete: audit
+{"server_completion_verified": true}
+{"phase": "running_pilot", "pid": 30071, "task_elapsed_seconds": 905.7848508358002, "maximum_hours": 4}
+V22 foreground stage: pilot timeout seconds 1791
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+V22 stage complete: pilot
+{"server_completion_verified": true}
+{"phase": "running_screen", "pid": 30071, "task_elapsed_seconds": 1377.5925691127777, "maximum_hours": 4}
+V22 foreground stage: screen timeout seconds 1800
+{"snapshot": "saved", "new_complete_folds": 2, "stage_status": {"stage": "pilot", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 4, "stage_status": {"stage": "pilot", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 3, "stage_status": {"stage": "pilot", "status": "complete"}}
+V22 stage complete: screen
+{"server_completion_verified": true}
+{"snapshot": "saved", "new_complete_folds": 1, "stage_status": {"stage": "screen", "status": "complete"}}
+{"phase": "running_confirm", "pid": 30071, "task_elapsed_seconds": 1636.250077009201, "maximum_hours": 4}
+V22 foreground stage: confirm timeout seconds 2700
+V22 stage complete: confirm
+{"server_completion_verified": true}
+{"phase": "running_export", "pid": 30071, "task_elapsed_seconds": 1641.65878200531, "maximum_hours": 4}
+V22 foreground stage: export timeout seconds 5400
+V22 stage complete: export
+{"server_completion_verified": true}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "export", "status": "complete"}}
+{"phase": "collecting_completed_artifacts", "pid": 30071, "task_elapsed_seconds": 1662.5352618694305, "maximum_hours": 4}
+V22 measured result archive prepared.
+{"server_completion_verified": true}
+V22 measured outputs collected locally.
+Owned V22 free T4 released.
+{"phase": "complete", "pid": 30071, "task_elapsed_seconds": 1676.52121591568, "maximum_hours": 4, "artifacts_collected": true, "owned_runtime_released": true}

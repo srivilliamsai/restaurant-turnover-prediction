@@ -1,0 +1,18 @@
+AUDIT PASS: three fixed hypotheses, at most fifteen comparisons, seven verified baseline assignments.
+{"PILOT": "XIA32", "status": "engineering_excluded", "reason": "permutation_difference_INR: INR 2290.7257080078125"}
+{"PILOT": "NOR15", "status": "PASS", "reason": null}
+{"PILOT": "P35FT512", "status": "PASS", "reason": null}
+{"PILOT_COMPLETE": "PASS", "screen_settings": ["NOR15"]}
+{"setting": "NOR15", "scheme": "42", "fold_complete": 1}
+{"setting": "NOR15", "scheme": "42", "fold_complete": 2}
+{"setting": "NOR15", "scheme": "42", "fold_complete": 3}
+{"setting": "NOR15", "scheme": "42", "fold_complete": 4}
+{"setting": "NOR15", "scheme": "42", "fold_complete": 5}
+{"setting": "NOR15", "scheme": "71", "fold_complete": 1}
+{"setting": "NOR15", "scheme": "71", "fold_complete": 2}
+{"setting": "NOR15", "scheme": "71", "fold_complete": 3}
+{"setting": "NOR15", "scheme": "71", "fold_complete": 4}
+{"setting": "NOR15", "scheme": "71", "fold_complete": 5}
+{"SCREEN_SETTING_COMPLETE": "NOR15", "best_mean_relative_gain": 0.0009633188276558485}
+{"SCREEN_COMPLETE": true, "choices": []}
+V17 delivery complete: /content/mla_v17/delivery/V17_Report.md

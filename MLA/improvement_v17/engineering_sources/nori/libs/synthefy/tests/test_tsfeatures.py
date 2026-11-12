@@ -1,0 +1,211 @@
+"""Model-free contract tests for canonical time-series feature preparation."""
+
+from __future__ import annotations
+
+import numpy as np
+import pandas as pd
+import pytest
+
+
+pytest.importorskip("datasets")
+pytest.importorskip("gluonts")
+pytest.importorskip("joblib")
+pytest.importorskip("scipy")
+pytest.importorskip("statsmodels")
+
+import gluonts.time_feature
+
+from synthefy.nori_ts.tsfeatures import (
+    AdditionalCalendarFeature,
+    AutoSeasonalFeature,
+    CalendarFeature,
+    FeatureTransformer,
+    RunningIndexFeature,
+    TimeSeriesDataFrame,
+    generate_test_X,
+)
+
+
+def _tsdf(*, n: int = 48, item_id: int = 0) -> TimeSeriesDataFrame:
+    frame = pd.DataFrame(
+        {
+            "item_id": item_id,
+            "timestamp": pd.date_range("2021-01-01", periods=n, freq="h"),
+            "target": np.arange(n, dtype=float),
+        }
+    )
+    return TimeSeriesDataFrame.from_data_frame(frame)
+
+
+def _features():
+    return [RunningIndexFeature(), CalendarFeature(), AutoSeasonalFeature()]
+
+
+@pytest.mark.parametrize(
+    "feature,component,period,freq,start",
+    [
+        ("second_of_minute", "second", 60, "s", "2026-01-01"),
+        ("minute_of_hour", "minute", 60, "min", "2026-01-01"),
+        ("hour_of_day", "hour", 24, "h", "2026-01-01"),
+        ("day_of_week", "dayofweek", 7, "D", "2026-01-05"),
+        ("month_of_year", "month", 12, "MS", "2026-01-01"),
+    ],
+)
+def test_calendar_features_preserve_the_full_cycle(feature, component, period, freq, start):
+    train = TimeSeriesDataFrame.from_data_frame(
+        pd.DataFrame(
+            {
+                "item_id": 0,
+                "timestamp": pd.date_range(start, periods=period, freq=freq),
+                "target": np.arange(period, dtype=float),
+            }
+        )
+    )
+    horizon = generate_test_X(train, prediction_length=2, freq=freq)
+    history, future = FeatureTransformer([CalendarFeature()]).transform(train, horizon)
+    generated = pd.concat([history, future])
+    index = getattr(generated.index.get_level_values("timestamp"), component).to_numpy()
+    if component == "month":
+        index = index - 1
+    angle = 2 * np.pi * index / period
+    actual = generated[[f"{feature}_sin", f"{feature}_cos"]].to_numpy()
+
+    np.testing.assert_allclose(actual, np.column_stack([np.sin(angle), np.cos(angle)]), atol=1e-7)
+    # The wrap to the next cycle has the same spacing as every other step.
+    np.testing.assert_allclose(np.linalg.norm(np.diff(actual, axis=0), axis=1), 2 * np.sin(np.pi / period), atol=1e-7)
+
+
+@pytest.mark.parametrize(
+    "kwargs",
+    [{}, {"additional_seasonal_features": None}, {"additional_seasonal_features": {}}],
+    ids=["omitted", "none", "empty"],
+)
+def test_additional_calendar_generates_defaults_without_additions(kwargs):
+    frame = _tsdf()
+
+    pd.testing.assert_frame_equal(
+        AdditionalCalendarFeature(**kwargs).generate(frame),
+        CalendarFeature().generate(frame),
+    )
+
+
+def test_additional_calendar_merges_features_without_mutating_additions(monkeypatch):
+    monkeypatch.setattr(
+        gluonts.time_feature, "custom_hour_index", gluonts.time_feature.hour_of_day_index, raising=False
+    )
+    additions = {"custom_hour": [12], "hour_of_day": [12]}
+    feature = AdditionalCalendarFeature(components=["month"], additional_seasonal_features=additions)
+    frame = _tsdf()
+    generated = feature.generate(frame)
+
+    # Existing defaults keep precedence when an added feature has the same name.
+    pd.testing.assert_frame_equal(
+        generated.drop(columns=["custom_hour_sin", "custom_hour_cos"]),
+        CalendarFeature(components=["month"]).generate(frame),
+        check_like=True,
+    )
+    angle = 2 * np.pi * frame.index.get_level_values("timestamp").hour / 12
+    np.testing.assert_allclose(generated["custom_hour_sin"], np.sin(angle))
+    np.testing.assert_allclose(generated["custom_hour_cos"], np.cos(angle))
+    assert additions == {"custom_hour": [12], "hour_of_day": [12]}
+
+
+def test_generate_test_x_builds_a_contiguous_unknown_horizon():
+    train = _tsdf()
+    test = generate_test_X(train, prediction_length=6, freq="h")
+
+    assert len(test) == 6
+    assert test["target"].isna().all()
+    timestamps = test.index.get_level_values("timestamp")
+    assert timestamps[0] == train.index.get_level_values("timestamp").max() + pd.Timedelta(hours=1)
+
+
+def test_generate_test_x_uses_explicit_frequency_for_gappy_input():
+    train = TimeSeriesDataFrame.from_data_frame(
+        pd.DataFrame(
+            {
+                "item_id": [0, 0],
+                "timestamp": pd.to_datetime(["2021-01-01 00:00", "2021-01-01 03:00"]),
+                "target": [1.0, 2.0],
+            }
+        )
+    )
+
+    test = generate_test_X(train, prediction_length=2, freq="h")
+
+    assert test.index.get_level_values("timestamp").tolist() == list(
+        pd.date_range("2021-01-01 04:00", periods=2, freq="h")
+    )
+
+
+def test_canonical_transform_preserves_schema_and_boundary_state():
+    train = _tsdf()
+    test = generate_test_X(train, prediction_length=6, freq="h")
+
+    transformed_train, transformed_test = FeatureTransformer(_features()).transform(
+        train,
+        test,
+        target_column="target",
+    )
+
+    assert list(transformed_train.columns) == list(transformed_test.columns)
+    assert not transformed_train["target"].isna().any()
+    assert transformed_test["target"].isna().all()
+    running = np.concatenate(
+        [
+            transformed_train["running_index"].to_numpy(),
+            transformed_test["running_index"].to_numpy(),
+        ]
+    )
+    assert (np.diff(running) == 1).all()
+
+
+def test_generated_float_columns_are_float32_without_downcasting_target():
+    train = _tsdf()
+    test = generate_test_X(train, prediction_length=6, freq="h")
+
+    transformed_train, transformed_test = FeatureTransformer(_features()).transform(
+        train,
+        test,
+        target_column="target",
+    )
+
+    assert transformed_train["target"].dtype == np.dtype("float64")
+    assert transformed_test["target"].dtype == np.dtype("float64")
+    assert transformed_train["hour_of_day_sin"].dtype == np.dtype("float32")
+    assert transformed_test["hour_of_day_sin"].dtype == np.dtype("float32")
+
+
+def test_static_features_survive_train_and_horizon_transform():
+    train = _tsdf()
+    train.static_features = pd.DataFrame(
+        {"segment": ["retail"]},
+        index=pd.Index([0], name="item_id"),
+    )
+    test = generate_test_X(train, prediction_length=4, freq="h")
+
+    transformed_train, transformed_test = FeatureTransformer(_features()).transform(
+        train,
+        test,
+        target_column="target",
+    )
+
+    pd.testing.assert_frame_equal(transformed_train.static_features, train.static_features)
+    pd.testing.assert_frame_equal(transformed_test.static_features, train.static_features)
+
+
+def test_canonical_generators_restart_for_each_series():
+    train = TimeSeriesDataFrame(pd.concat([pd.DataFrame(_tsdf(item_id=item)) for item in (0, 1)]))
+    test = generate_test_X(train, prediction_length=4, freq="h")
+
+    transformed_train, transformed_test = FeatureTransformer(_features()).transform(
+        train,
+        test,
+        target_column="target",
+    )
+
+    for item in (0, 1):
+        history = transformed_train.xs(item, level="item_id")["running_index"].to_numpy()
+        horizon = transformed_test.xs(item, level="item_id")["running_index"].to_numpy()
+        assert history[0] == 0
+        assert horizon[0] == history[-1] + 1

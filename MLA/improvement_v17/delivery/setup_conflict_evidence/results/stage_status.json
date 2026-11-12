@@ -1,0 +1,6 @@
+{
+  "stage": "pilot",
+  "status": "failed",
+  "error_type": "AssertionError",
+  "reason": "{'numpy': '2.2.6', 'pandas': '3.0.6', 'scikit-learn': '1.9.1', 'scipy': '1.18.1', 'catboost': '1.2.10', 'interpret-core': '0.7.8', 'tabpfn': '9.2.0', 'tabicl': '2.2.0', 'torch': '2.11.0+cu130'}"
+}

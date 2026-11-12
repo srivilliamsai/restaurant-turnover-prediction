@@ -1,0 +1,12 @@
+{
+  "split_seed": 909,
+  "folds": 5,
+  "cache_reused": false,
+  "maximum_prediction_difference_INR": {
+    "old": 0.0,
+    "v2": 0.0,
+    "candidate": 0.0
+  },
+  "elapsed_seconds": 69.99994397163391,
+  "passed": true
+}

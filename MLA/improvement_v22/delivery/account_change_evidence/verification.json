@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "changed_authorization_fields": [
+    "account_change_authorized",
+    "account_change_instruction",
+    "account_identity_sha256"
+  ],
+  "original_clock_and_candidate_unchanged": true,
+  "prior_runtime_released": true,
+  "prior_account_active_assignments": 0,
+  "prior_accuracy_fold_count": 0,
+  "prior_saved_control_pilots_reproduced_INR": {
+    "BASE": 0.0,
+    "P35_8": 0.0
+  },
+  "prior_files": {
+    "local_tests.json": "6b6b66e090d51db024a261a620285e7d4d6c018436840d8b6c3fe50b7486fe3b",
+    "authorization.json": "df987d9022f72d37f3c38e1c35995eee6ae95b40889e8b55439473e909c002b1",
+    "source_frozen.json": "86743bafd55516ccb72ab629b856afa0ffd81f246e02fc446e0d3c7818bd4469",
+    "execution_source_manifest.json": "93524cebdabd708d93bc875891753c39f6b001c37fa3b08171d9912274fa5ba3",
+    "coordinator.log": "b1593837ebf57634f680ff57cd432a43a847b4b5973b05bb9c8b61cfa74d966c",
+    "account_release_check.json": "2142b91b44506d8ea5f712e501cb50aa97fd29cb52c97ea329e94aec2cd2496b",
+    "results/compute_budget.json": "a6e15d674f9fc4286e8bc4c52e0e57afb034bb35c4f7a698bef26665d48eeab5",
+    "results/feature_verification.json": "5d81453b191becfc679dd2ee121cfdebf5fd03d791406b242ca07201c6bf5570",
+    "results/reference_verification.json": "c18d25463fc81e43de890df8c52068718f4a41dfaf751070c3ad6e9cee23a34f",
+    "colab_results/run.log": "78fed27a5dbc88c2f526a2f841019f97b06f3a85e2d93c064d877481aa8bc603",
+    "colab_results/setup.log": "b3d09dec1961f7a4608cbffbf3290f08c01b085303ebb07ab62d161300783829",
+    "colab_results/resolved_models.json": "d39629e11cda2c9192b175f6db2526e52d22896c3502d7c20b4511e478e503b0",
+    "transport_run/allocations.json": "4b5dbf29e434b71247237a5bd1c8a0c520a14ab92420c984871968f9f5a9dc89",
+    "transport_run/runtime_release.json": "d568353a66dcb2ac8773b83381706fe937e37007c69b0b4391abe8df701b463c",
+    "transport_run/account_change_handoff.json": "38704f86d214f0cf4ebd52ed09085c757a6847bda22fd1eb40abe0def0036fef",
+    "transport_run/account_switch_requested.json": "87ae8ae25ca22811abf671c3bb3b09bf87b58054854b470874f4b8d5e2ec8432",
+    "transport_run/status.json": "bd0f56afd705bd01266f65f7aa755795a045973e76a38193466331f68f1baf92",
+    "transport_run/account_check.json": "809dc348f3ce0b50a8b7d3cd5dc4bcc04daff5a207b61d649fd3ce1f5d2f93bd",
+    "colab_results/results/experiment_plan.json": "220aded56c5cdc2e4178e4c0d579a3bc9b1ab75613eaee1f00fa40e6cb242a93",
+    "colab_results/results/audit.json": "8b2a559018720569fde63c6e0276357a9a15755d022a0d42557ba6536c39f404",
+    "colab_results/results/stage_status.json": "b95992decfc68638589381fe9c1b8f516684bf33000e19e6bc967231968ddaa4",
+    "colab_results/results/compute_budget.json": "a116be3649595b6b7996d6a10f06d42c486e4ee12767ffd61f3c2f747b881f6b",
+    "colab_results/results/runtime_heartbeat.json": "d0790a9b21ad6e12132a63024e50bab96f9bf6ae2e23666df86514ddfb45e4b5",
+    "colab_results/results/feature_verification.json": "5d81453b191becfc679dd2ee121cfdebf5fd03d791406b242ca07201c6bf5570",
+    "colab_results/results/control_pilot.json": "6447e7014622de992cc80090fdb3b2b1f1baacb0a17e3e5a16e264eec2863012",
+    "colab_results/results/reference_verification.json": "c18d25463fc81e43de890df8c52068718f4a41dfaf751070c3ad6e9cee23a34f"
+  }
+}

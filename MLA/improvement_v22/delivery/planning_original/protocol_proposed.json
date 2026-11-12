@@ -1,0 +1,87 @@
+{
+  "version": 22,
+  "status": "PROPOSED_NOT_EXECUTED",
+  "prepared_date_IST": "2026-10-29",
+  "hypothesis": "A fixed removal of Service and Comfortablility may improve generalization of the successful P35_8 component; domain separability is motivation, not proof of a label-preserving correction.",
+  "candidate": {
+    "id": "P35-SC38",
+    "feature_source": "original V14 forty-column feature builder",
+    "drop": ["Service", "Comfortablility"],
+    "expected_feature_count": 38,
+    "checkpoint_revision": "06bf2ba35c80a92a3b9abb436b99cf49e7a0365e",
+    "checkpoint_filename": "tabpfn-v3.5-20260909.safetensors",
+    "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+    "estimators": 8,
+    "seed": 10242,
+    "precision": "float32",
+    "readout": "predictive mean",
+    "target": "all original INR-million training targets",
+    "inference_adapter_rows": 500,
+    "other_settings": "exact original V14 P35_8 resolved parameters and pinned loader"
+  },
+  "control_formula": "0.25*original_V9 + 0.75*original_P35_8",
+  "candidate_formula": "0.25*original_V9 + 0.75*((1-w)*original_P35_8 + w*P35_SC38)",
+  "weights": [0.25, 0.5, 1.0],
+  "maximum_candidate_components": 1,
+  "maximum_development_comparisons": 3,
+  "development": [42, 71],
+  "maximum_new_development_fold_outputs": 10,
+  "qualification": {
+    "metric": "ordinary all-label RMSE in INR",
+    "positive_gain_on_each_development_assignment": true,
+    "minimum_mean_relative_gain_fraction": 0.002,
+    "rank": ["descending mean relative gain", "ascending replacement weight"],
+    "maximum_finalists": 1,
+    "no_finalist_action": "STOP_RETAIN_V14"
+  },
+  "confirmation": [48211, 48212, 48213, "strat:27421", "city"],
+  "maximum_new_confirmation_fold_outputs": 25,
+  "confirmation_gates": {
+    "positive_random_gains": "all three",
+    "minimum_mean_random_relative_gain_fraction": 0.002,
+    "conditional_paired_row_bootstrap": {
+      "draws": 5000,
+      "seed": 8319,
+      "lower_95_percent_gain_bound_strictly_positive": true,
+      "historically_examined_labels": true
+    },
+    "maximum_stratified_or_city_deterioration_fraction": 0.01,
+    "no_retuning_or_second_finalist": true
+  },
+  "engineering": {
+    "verify_all_35_inherited_P35_control_folds_before_accuracy": true,
+    "same_layout_and_fresh_export_max_absolute_difference_INR_strictly_below": 0.01,
+    "relative_tolerance": 0,
+    "query_behavior_max_absolute_difference_INR": 10,
+    "query_behavior_max_RMSE_change_INR": 1,
+    "minimum_individual_probes": 12,
+    "full_fold_permutation_and_split_checks": true,
+    "removed_feature_mutation_invariance": "new P35-SC38 component only",
+    "preserve_original_Mac_V7_state_boundary": true
+  },
+  "resources_proposed": {
+    "maximum_elapsed_hours": 4,
+    "delivery_reserve_hours": 1.5,
+    "workload_forecast_contingency_fraction": 0.3,
+    "free_T4_and_Mac_only": true,
+    "prior_ledgers_unchanged": true,
+    "not_yet_allocated": true
+  },
+  "historical_best": {
+    "version": 14,
+    "observed_portal_RMSE_INR": 11736110.7877709,
+    "csv_sha256": "39d49f79beb8549d04ffc78d134aad2407dc5e73914dc3c30e8bb162a3c0ba05",
+    "notebook_sha256": "86fae4ea97d6fd35c2ed485c60f26f02c98fccb3cbeda9a10228cc48e788318e"
+  },
+  "maximum_manual_portal_trials_after_full_qualification": 1,
+  "automatic_portal_upload": false,
+  "no_qualification_action": "Preserve exact scored V14; end campaign expansion pending documented data information.",
+  "planning_audit_only": {
+    "turnover_models_fitted": 0,
+    "GPU_allocations": 0,
+    "portal_uploads": 0,
+    "domain_classifier_recipes": ["logistic", "hist_gradient_boosting"],
+    "domain_classifier_views": ["ALL", "NO_SC", "SC_ONLY", "MISSINGNESS_ONLY"],
+    "domain_classifier_fits": 40
+  }
+}

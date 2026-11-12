@@ -1,0 +1,29 @@
+{
+  "implementation": "V11 bounded new-backbone workflow",
+  "files": {
+    "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+    "build_delivery.py": "d774562b5f433f92499a81be9c5b64e21aa4d0ab6eb1e0d1e82fcb05c108a0d4",
+    "colab_control.py": "d4f248fe735efa4ef2429c31cf3b128959e7de9ccc31a936d973e7b3438eeb1e",
+    "core.py": "29dc27ac833c348e57a8d8e511acbd32e6e951a112c7159049ca107fd3a38ac1",
+    "features.py": "7a494a5f362fa14438a94e45089d0d02c631cf7d6865abda2532522c1eb467d2",
+    "fresh_worker.py": "8310dbceca1adf742a511de863f149e5dc50f2d2d7c1fb8e7df75515265ac5d2",
+    "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+    "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+    "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+    "modeling.py": "0531e9bc43f6b7b2b1eaa4db6058dcd0e8ac95b3e7de6a62cd3268ee332cfed4",
+    "refit_controls.py": "64c219724a6393fea81b553adad5ee3b948ee6b078170f07c562330389c60ab9",
+    "run_stage.py": "b25da0412c36ccf13d70f18a22af5f99d9dedbb7d7030ab0da2ee88009a8b04f",
+    "verify.py": "b208ba4790aff37786087ec7a7ee2d8a2bbafc0e683e778086e5babc6f0c4823",
+    "workflow.py": "d7ef68a5469c26193af8890b6e4eebba258f0b89bdc6de8890dbffa68a71b957"
+  },
+  "provenance": "Own verified V9/V10 code and official general-purpose synthetic-pretrained model weights",
+  "no_gemini_exports_executed": true,
+  "transport_files": {
+    "transport/continue_finite.py": "eec73c9a89b8b485f3f5ecb0a4890c1ab638e6432d6e0e17ea1a4a4201856051",
+    "transport/finalize.py": "d4a9a4eae94398e44618862c42deb1550b6e186bb2c9ee1b919dde11ba463f9e",
+    "transport/launch_detached.py": "6d5460d39e92ee31a9e3e3ad6b85548f4725402016e1a1cc50532473810d5167",
+    "transport/stage_supervisor.py": "ea62a94303abcc516a5770f264c3ac65a407633c53add615cc55646e73451007",
+    "transport/verify_results.py": "6941b6e245a3178d9b2e2a07a1905636e761bcf1d4406ab47fec626cbc929c1f",
+    "transport/watch_backups.py": "aab585198e0d42db72cc2fef72f606fd14028a0e2798a6c4fb6e3c31c53f88e3"
+  }
+}

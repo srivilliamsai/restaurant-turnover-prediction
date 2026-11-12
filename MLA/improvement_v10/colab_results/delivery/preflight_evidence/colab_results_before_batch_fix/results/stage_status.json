@@ -1,0 +1,5 @@
+{
+  "stage": "pilot",
+  "status": "failed",
+  "error": "AssertionError('Prediction batch dependence: INR 1.2951331064105034')"
+}

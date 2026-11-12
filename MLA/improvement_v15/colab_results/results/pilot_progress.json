@@ -1,0 +1,186 @@
+{
+  "F40-T080": {
+    "status": "PASS",
+    "fold_seconds": 27.985125729000174,
+    "behavior": {
+      "permutation_difference_INR": 0.0,
+      "label_id_difference_INR": 0.0,
+      "batch_difference_INR": 0.0,
+      "individual_difference_INR": 0.0,
+      "rmse_difference_INR": {
+        "permutation": 0.0,
+        "batch": 0.0,
+        "individual": 0.0
+      },
+      "rows_checked": 699,
+      "individual_probes": 12,
+      "missing_unseen_inputs": true,
+      "behavior_tolerance_INR": 10.0,
+      "rmse_tolerance_INR": 1.0
+    },
+    "fresh_repeat_difference_INR": 0.0,
+    "target_metadata": {
+      "name": "F40-T080",
+      "training_rows": 2794,
+      "units": "raw INR millions",
+      "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+      "model_class": "tabpfn.regressor.TabPFNRegressor",
+      "view": "F40",
+      "input_features": 40,
+      "temperature": 0.8,
+      "date_expansion": true,
+      "datetime_dependencies": {
+        "skrub": "0.10.1",
+        "pyarrow": "23.0.1"
+      },
+      "architecture_classes": [
+        "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+      ],
+      "configuration_classes": [
+        "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"
+      ]
+    },
+    "peak_gpu_allocated_bytes": 7042150400,
+    "training_rows": 2794,
+    "validation_rows": 699,
+    "engineering_seconds": 253.82619298500003
+  },
+  "F40-T120": {
+    "status": "PASS",
+    "fold_seconds": 23.874477172999832,
+    "behavior": {
+      "permutation_difference_INR": 0.0,
+      "label_id_difference_INR": 0.0,
+      "batch_difference_INR": 0.0,
+      "individual_difference_INR": 0.0,
+      "rmse_difference_INR": {
+        "permutation": 0.0,
+        "batch": 0.0,
+        "individual": 0.0
+      },
+      "rows_checked": 699,
+      "individual_probes": 12,
+      "missing_unseen_inputs": true,
+      "behavior_tolerance_INR": 10.0,
+      "rmse_tolerance_INR": 1.0
+    },
+    "fresh_repeat_difference_INR": 0.0,
+    "target_metadata": {
+      "name": "F40-T120",
+      "training_rows": 2794,
+      "units": "raw INR millions",
+      "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+      "model_class": "tabpfn.regressor.TabPFNRegressor",
+      "view": "F40",
+      "input_features": 40,
+      "temperature": 1.2,
+      "date_expansion": true,
+      "datetime_dependencies": {
+        "skrub": "0.10.1",
+        "pyarrow": "23.0.1"
+      },
+      "architecture_classes": [
+        "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+      ],
+      "configuration_classes": [
+        "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"
+      ]
+    },
+    "peak_gpu_allocated_bytes": 7042150400,
+    "training_rows": 2794,
+    "validation_rows": 699,
+    "engineering_seconds": 257.61358170699987
+  },
+  "N32-T080": {
+    "status": "PASS",
+    "fold_seconds": 24.07377872500001,
+    "behavior": {
+      "permutation_difference_INR": 0.0,
+      "label_id_difference_INR": 0.0,
+      "batch_difference_INR": 0.0,
+      "individual_difference_INR": 0.0,
+      "rmse_difference_INR": {
+        "permutation": 0.0,
+        "batch": 0.0,
+        "individual": 0.0
+      },
+      "rows_checked": 699,
+      "individual_probes": 12,
+      "missing_unseen_inputs": true,
+      "behavior_tolerance_INR": 10.0,
+      "rmse_tolerance_INR": 1.0
+    },
+    "fresh_repeat_difference_INR": 0.0,
+    "target_metadata": {
+      "name": "N32-T080",
+      "training_rows": 2794,
+      "units": "raw INR millions",
+      "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+      "model_class": "tabpfn.regressor.TabPFNRegressor",
+      "view": "N32",
+      "input_features": 32,
+      "temperature": 0.8,
+      "date_expansion": true,
+      "datetime_dependencies": {
+        "skrub": "0.10.1",
+        "pyarrow": "23.0.1"
+      },
+      "architecture_classes": [
+        "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+      ],
+      "configuration_classes": [
+        "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"
+      ]
+    },
+    "peak_gpu_allocated_bytes": 7042150400,
+    "training_rows": 2794,
+    "validation_rows": 699,
+    "engineering_seconds": 257.3095816330001
+  },
+  "N32-T100": {
+    "status": "PASS",
+    "fold_seconds": 23.85474992599984,
+    "behavior": {
+      "permutation_difference_INR": 0.0,
+      "label_id_difference_INR": 0.0,
+      "batch_difference_INR": 0.0,
+      "individual_difference_INR": 0.0,
+      "rmse_difference_INR": {
+        "permutation": 0.0,
+        "batch": 0.0,
+        "individual": 0.0
+      },
+      "rows_checked": 699,
+      "individual_probes": 12,
+      "missing_unseen_inputs": true,
+      "behavior_tolerance_INR": 10.0,
+      "rmse_tolerance_INR": 1.0
+    },
+    "fresh_repeat_difference_INR": 0.0,
+    "target_metadata": {
+      "name": "N32-T100",
+      "training_rows": 2794,
+      "units": "raw INR millions",
+      "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+      "model_class": "tabpfn.regressor.TabPFNRegressor",
+      "view": "N32",
+      "input_features": 32,
+      "temperature": 1.0,
+      "date_expansion": true,
+      "datetime_dependencies": {
+        "skrub": "0.10.1",
+        "pyarrow": "23.0.1"
+      },
+      "architecture_classes": [
+        "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+      ],
+      "configuration_classes": [
+        "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"
+      ]
+    },
+    "peak_gpu_allocated_bytes": 7042150400,
+    "training_rows": 2794,
+    "validation_rows": 699,
+    "engineering_seconds": 257.343075968
+  }
+}

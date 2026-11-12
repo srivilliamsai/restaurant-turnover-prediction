@@ -1,0 +1,19 @@
+{
+  "maximum_difference_INR": 7.450580596923828e-09,
+  "fresh_full_fit": true,
+  "seconds": 114.49028741700022,
+  "checks": {
+    "rows": 500,
+    "columns": [
+      "Registration Number",
+      "Annual Turnover"
+    ],
+    "original_row_order": true,
+    "unique_ids": true,
+    "finite_nonnegative": true,
+    "permutation_invariance": true,
+    "target_id_invariance": true,
+    "missing_and_unseen_values": true,
+    "malformed_cases_rejected": 12
+  }
+}

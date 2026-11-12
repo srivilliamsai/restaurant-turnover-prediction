@@ -1,0 +1,7 @@
+{
+  "stage": "pilot",
+  "type": "AssertionError",
+  "message": "",
+  "traceback": "Traceback (most recent call last):\n  File \"/content/mla_v23/experiment.py\", line 176, in main\n    elif args.stage=='pilot':pilot()\n                             ~~~~~^^\n  File \"/content/mla_v23/experiment.py\", line 96, in pilot\n    single=np.array([adapter.infer(model,state,query.iloc[[i]])[0] for i in range(12)])\n                     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/content/mla_v23/adapter.py\", line 110, in infer\n    assert p.shape==(len(query),) and np.isfinite(p).all()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "epoch": 1793294933.7707727
+}

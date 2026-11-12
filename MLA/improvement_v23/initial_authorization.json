@@ -1,0 +1,17 @@
+{
+  "version": "V23",
+  "authorized": true,
+  "user_instruction": "what is next improment plan for v23 check interen deeply and start and give be bestvimpromemt",
+  "started_epoch": 1793292789.0,
+  "started_at_IST": "2026-10-29T22:23:09+05:30",
+  "start_basis": "Conservative start ten minutes before first task clock sample; includes initial inspection and internet research.",
+  "maximum_hours": 4,
+  "hard_stop_epoch": 1793307189.0,
+  "engineering_stop_epoch": 1793296389.0,
+  "training_stop_epoch": 1793301789.0,
+  "delivery_reserve_hours": 1.5,
+  "paid_resources": false,
+  "portal_uploads_authorized": 0,
+  "account_identity_sha256": "REDACTED",
+  "previous_ledgers_unchanged": true
+}

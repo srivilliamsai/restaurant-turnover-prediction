@@ -1,0 +1,59 @@
+{
+  "result": {
+    "status": "PASS",
+    "fold_seconds": 41.20470889699993,
+    "full_fit_predict_seconds": 20.641729450000184,
+    "behavior": {
+      "permutation_difference_INR": 2.5902662128210068,
+      "label_id_difference_INR": 0.0,
+      "batch_difference_INR": 2.5902662128210068,
+      "individual_difference_INR": 0.3237832747399807,
+      "rmse_difference_INR": {
+        "permutation": 0.0018624961376190186,
+        "batch": 0.0003614462912082672,
+        "individual": 0.04142097756266594
+      },
+      "other_query_rows_changed_difference_INR": 0.0,
+      "rows_checked": 699,
+      "individual_probes": 12,
+      "missing_unseen_inputs": true,
+      "behavior_tolerance_INR": 10.0,
+      "rmse_tolerance_INR": 1.0
+    },
+    "fresh_repeat_difference_INR": 0.0,
+    "save_reload_difference_INR": 0.0,
+    "target_metadata": {
+      "name": "NOR15",
+      "training_rows": 2794,
+      "units": "raw INR millions",
+      "all_original_training_targets_retained": true,
+      "seed": 10242,
+      "training_target_sha256": "63998c05f2bd6fe27bf536d3f74ed91f5542c3bcef6e4bbc3ed28bc9492ffa38",
+      "categorical_columns": [
+        "Cuisine",
+        "City",
+        "Restaurant Location",
+        "Endoresed By",
+        "Restaurant Type",
+        "Restaurant Theme",
+        "Cuisine 1",
+        "Cuisine 2"
+      ],
+      "features": 40,
+      "actual_estimators": 4,
+      "precision": "float32",
+      "internal_selection": false,
+      "public_interface": "NoriPredictor",
+      "train_only_config_sha256": "64ad0d97763387b1373f98dbfb00225bd7aa1312b57291a871eb607f056832ec",
+      "checkpoint_sha256": "b1313b45225066f74a78e99d5cd56dbd0015bdbeadf948252cf82d2a962766a2",
+      "fit_seconds": 6.125843712999995
+    },
+    "peak_gpu_allocated_bytes": 3821158400,
+    "training_rows": 2794,
+    "validation_rows": 699,
+    "full_training_rows": 3493,
+    "selection_uses_validation_rmse": false,
+    "engineering_seconds": 446.63141678399995
+  },
+  "result_sha256": "9721501773a00868affb3fd8d48a6f8144d5afafa46ba912c34472170df6e9ce"
+}

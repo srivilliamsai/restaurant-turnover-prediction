@@ -1,0 +1,2 @@
+AUDIT PASS: three fixed hypotheses, at most fifteen comparisons, seven verified baseline assignments.
+{"PILOT": "XIA32", "status": "engineering_excluded", "reason": "Expected a torch.device with a specified index or an integer, but got:cuda"}

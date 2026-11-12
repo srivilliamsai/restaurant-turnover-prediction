@@ -1,0 +1,20 @@
+{
+  "epoch": 1793254162.51669,
+  "pilot_processes": [
+    {
+      "pid": 3901,
+      "name": "python3",
+      "resident_bytes": 1914179584,
+      "cpu_seconds": 218.14000000000001,
+      "elapsed_seconds": 218.24746751785278
+    },
+    {
+      "pid": 4816,
+      "name": "python3",
+      "resident_bytes": 17039360,
+      "cpu_seconds": 0.09,
+      "elapsed_seconds": 0.2180042266845703
+    }
+  ],
+  "gpu": "Tesla T4, 100, 5569, 15360"
+}

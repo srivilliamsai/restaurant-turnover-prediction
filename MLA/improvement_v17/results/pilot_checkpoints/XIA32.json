@@ -1,0 +1,11 @@
+{
+  "result": {
+    "status": "engineering_excluded",
+    "error_type": "AssertionError",
+    "reason": "permutation_difference_INR: INR 2290.7257080078125",
+    "traceback": "Traceback (most recent call last):\n  File \"/content/mla_v17/pilot_worker.py\", line 31, in main\n    checks=verify.inference_checks(lambda raw:modeling.predict(fitted,raw),e.train.iloc[b],e.y[b])\n  File \"/content/mla_v17/verify.py\", line 137, in inference_checks\n    assert checks[name] <= 10., f'{name}: INR {checks[name]}'\n           ^^^^^^^^^^^^^^^^^^^\nAssertionError: permutation_difference_INR: INR 2290.7257080078125\n",
+    "engineering_seconds": 489.56850253700003,
+    "accuracy_tested": false
+  },
+  "result_sha256": "285c0d46b6a114970f91b4474b7603980931c882edb271bd31cf9884aabcca4a"
+}

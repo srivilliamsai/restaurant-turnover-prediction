@@ -1,0 +1,11 @@
+{
+  "attempts": 2,
+  "first_failure": "Isolated venv could not bootstrap ensurepip; no model fit had started.",
+  "repair": "venv --without-pip; base pip --python targets each isolated interpreter; no system site packages.",
+  "successful_setup_seconds": 288.3315062522888,
+  "clock_reset": false,
+  "ledger_started_epoch": 1793271502.0,
+  "attempts_scope": "First-runtime environment bootstrap attempts; subsequent restoration is recorded separately.",
+  "runtime_allocations": 2,
+  "replacement_environment_restore_seconds": 285.1636173725128
+}

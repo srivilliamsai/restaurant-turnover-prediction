@@ -1,0 +1,21 @@
+{
+  "by_stage": {
+    "audit": 3.0883913040161133,
+    "pilot": 933.6467304229736,
+    "screen": 234.80868411064148,
+    "confirm": 0.0006995201110839844,
+    "export": 1.6131794452667236
+  },
+  "seconds": 1764.5812118053436,
+  "maximum_hours": 4,
+  "measurement": "Conservative elapsed task wall time, including setup and interruptions.",
+  "interruptions": [
+    {
+      "name": "pilot",
+      "started_epoch": 1793281466.245735,
+      "reason": "User requested Google account change; owned runtime released; no accuracy folds."
+    }
+  ],
+  "run_complete": true,
+  "finalized_epoch": 1793282900.581215
+}

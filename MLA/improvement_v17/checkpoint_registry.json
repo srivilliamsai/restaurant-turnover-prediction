@@ -1,0 +1,16 @@
+{
+  "XIA32": {
+    "repo_id": "occams/Xiaomi-TabLDM",
+    "revision": "712e5635be9fd8728084cd5ae105ddecb31dc03c",
+    "filename": "checkpoints/reg_default.ckpt",
+    "sha256": "49ab2189c4d3240a2703863686dbc9268e016fd406a30eee0575628b1f390232",
+    "bytes": 569137336
+  },
+  "NOR15": {
+    "repo_id": "Synthefy/Nori-1-5",
+    "revision": "79afc5a65b2775d0c62977211a63620ce87846c7",
+    "filename": "nori.pt",
+    "sha256": "b1313b45225066f74a78e99d5cd56dbd0015bdbeadf948252cf82d2a962766a2",
+    "bytes": 83176401
+  }
+}

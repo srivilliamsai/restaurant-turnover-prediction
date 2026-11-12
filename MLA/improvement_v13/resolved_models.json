@@ -1,0 +1,66 @@
+{
+  "runtime": {
+    "dependencies": {
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1",
+      "catboost": "1.2.10",
+      "interpret-core": "0.7.8",
+      "tabpfn": "9.2.0",
+      "torch": "2.11.0+cu130"
+    },
+    "gpu": "Tesla T4",
+    "cuda": "13.0",
+    "precision": "float32",
+    "prediction_chunk": 500
+  },
+  "checkpoint": {
+    "repo_id": "Prior-Labs/TabPFN-v2-reg",
+    "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+    "filename": "tabpfn-v2-regressor.ckpt",
+    "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736"
+  },
+  "settings": {
+    "Q99": {
+      "target": "cap",
+      "quantile": 0.99
+    },
+    "Q995": {
+      "target": "cap",
+      "quantile": 0.995
+    },
+    "SQ2": {
+      "target": "sqrt_second_moment"
+    }
+  },
+  "target_units": "INR millions before target treatment",
+  "adapter": "500-row blocks; pad with first encoded training row; discard padded outputs",
+  "output_floor": 0.0,
+  "SQ2": "raw-space criterion.mean_of_square(logits) * 1e6",
+  "parameters": {
+    "auto_scale_n_estimators": true,
+    "average_before_softmax": false,
+    "categorical_features_indices": [],
+    "device": "cuda",
+    "differentiable_input": false,
+    "enable_torch_compile": false,
+    "eval_metric": null,
+    "fit_mode": "low_memory",
+    "ignore_pretraining_limits": false,
+    "inference_config": null,
+    "inference_precision": "torch.float32",
+    "keep_cache_on_device": true,
+    "kv_cache_precision": null,
+    "memory_saving_mode": true,
+    "model_path": "checkpoint_sha256:2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736",
+    "n_estimators": 16,
+    "n_jobs": null,
+    "n_preprocessing_jobs": 1,
+    "random_state": 10242,
+    "show_progress_bar": false,
+    "softmax_temperature": "auto",
+    "tuning_config": null
+  },
+  "distribution_source_sha256": "d36583139f7984df9a37297cf6e706a22db01a97871203af421d840c9f38d49b"
+}

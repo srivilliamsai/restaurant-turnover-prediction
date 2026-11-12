@@ -1,0 +1,128 @@
+{
+  "status": "Research and proposal only; no V16 training, runtime allocation, export or portal upload",
+  "prepared_date_IST": "2026-10-29",
+  "audit_method": "Python standard-library CSV review; no fitting or model selection beyond reconstructing the saved V15 ranking",
+  "data": {
+    "training_rows": 3493,
+    "test_rows": 500,
+    "targets_above_80M": 48,
+    "target_min_INR": 3500000,
+    "target_max_INR": 400000000,
+    "v15_comparisons": 20,
+    "best_v15_comparison": {
+      "name": "N32-T100",
+      "route": "P35-replacement",
+      "weight": "0.5",
+      "effective_new_share": "0.375",
+      "rmse_42": "19645329.984029375",
+      "gain_42": "3703.5721323937178",
+      "relative_gain_42": "0.00018848622360015816",
+      "rmse_71": "19644633.839852255",
+      "gain_71": "5271.6145586408675",
+      "relative_gain_71": "0.0002682768408668107",
+      "mean_relative_gain": "0.00022838153223348444"
+    },
+    "v15_error_correlation_range": [
+      0.9956033403788329,
+      0.9984571885744892
+    ],
+    "v14_csv_sha256": "39d49f79beb8549d04ffc78d134aad2407dc5e73914dc3c30e8bb162a3c0ba05",
+    "categorical_feature_audit": {
+      "Cuisine": {
+        "train_unique": 20,
+        "test_unique": 20,
+        "test_unseen_rows": 0,
+        "train_missing_rows": 0,
+        "test_missing_rows": 0
+      },
+      "City": {
+        "train_unique": 203,
+        "test_unique": 74,
+        "test_unseen_rows": 24,
+        "train_missing_rows": 396,
+        "test_missing_rows": 65
+      },
+      "Restaurant Location": {
+        "train_unique": 2,
+        "test_unique": 2,
+        "test_unseen_rows": 0,
+        "train_missing_rows": 0,
+        "test_missing_rows": 0
+      },
+      "Endoresed By": {
+        "train_unique": 3,
+        "test_unique": 3,
+        "test_unseen_rows": 0,
+        "train_missing_rows": 0,
+        "test_missing_rows": 0
+      },
+      "Restaurant Type": {
+        "train_unique": 4,
+        "test_unique": 4,
+        "test_unseen_rows": 0,
+        "train_missing_rows": 0,
+        "test_missing_rows": 0
+      },
+      "Restaurant Theme": {
+        "train_unique": 34,
+        "test_unique": 18,
+        "test_unseen_rows": 0,
+        "train_missing_rows": 0,
+        "test_missing_rows": 0
+      }
+    }
+  },
+  "category_audit_limit": "Whitespace/case normalized raw categories only; City figures precede the frozen city_map.json aliases and are not final model-vocabulary counts.",
+  "baseline": {
+    "version": "V14",
+    "actual_portal_rmse_INR": 11736110.7877709,
+    "formula": "0.25*V9 + 0.75*TabPFN-3.5 Base (8 estimators)",
+    "csv_sha256": "39d49f79beb8549d04ffc78d134aad2407dc5e73914dc3c30e8bb162a3c0ba05",
+    "portal_record": "improvement_v15_retry1/reference/v14_portal_trial.json",
+    "portal_rank_context": "9 in supplied October 28 screenshot; not a live leaderboard"
+  },
+  "historical_findings": {
+    "v12_realmlp": "R1 and R4 failed the fixed development gate; see improvement_v12/colab_results/delivery/V12_Report.md",
+    "v14_tabicl": "I8 completed screening; see improvement_v14/results/component_diagnostics.csv",
+    "v15": "20 comparisons; best N32-T100 replacement weight 0.5; no qualifier, no V15 portal score",
+    "untested_candidates": "Workspace search found TabM only in V11 deferral notes, and no Mitra experiment in reviewed source/reports.",
+    "root_current_best_file": "CURRENT_BEST.md still names V9; newer V14 portal evidence takes precedence."
+  },
+  "sources": [
+    {
+      "title": "Official TabM repository",
+      "url": "https://github.com/yandex-research/tabm",
+      "use": "Efficient shared-weight MLP ensemble; independent member losses and inference averaging"
+    },
+    {
+      "title": "Official TabM example",
+      "url": "https://github.com/yandex-research/tabm/blob/main/example.ipynb",
+      "use": "Regression preprocessing, numerical embeddings and training reference"
+    },
+    {
+      "title": "Mitra-v2 regressor model card",
+      "url": "https://huggingface.co/autogluon/mitra-regressor-2",
+      "use": "Distributional regression checkpoint; required adapter; documented fine-tuning example"
+    },
+    {
+      "title": "Official Mitra fine-tuning package",
+      "url": "https://huggingface.co/autogluon/mitra-finetune",
+      "use": "50-step eight-bag recipe, context policy, prediction-triggered fitting, CUDA and timing caveats"
+    },
+    {
+      "title": "Official FlashAttention hardware requirements",
+      "url": "https://github.com/Dao-AILab/flash-attention/blob/main/README.md",
+      "use": "T4 requires a separate Turing path; standard newer-GPU kernels cannot be assumed"
+    },
+    {
+      "title": "Official TabPFN regression fine-tuning example",
+      "url": "https://github.com/PriorLabs/TabPFN/blob/main/examples/finetune_regressor.py",
+      "use": "80 GB CUDA recommendation; insufficient evidence for a deadline-bound free-T4 plan"
+    },
+    {
+      "title": "Revisiting Tabular Deep Regression",
+      "url": "https://arxiv.org/abs/2610.13909",
+      "use": "Recent objective-function research; deferred because implementing its recipe broadens this bounded round"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "status": "PASS_FOR_SAVED_INTERRUPTION_EVIDENCE_ONLY",
+  "experiment_complete": false,
+  "accuracy_evaluated": false,
+  "verified_pilots": [
+    {
+      "name": "F40-T080",
+      "status": "PASS",
+      "fold_seconds": 27.985125729000174,
+      "engineering_seconds": 253.82619298500003,
+      "fresh_repeat_difference_INR": 0.0,
+      "peak_gpu_GiB": 6.558513641357422
+    },
+    {
+      "name": "F40-T120",
+      "status": "PASS",
+      "fold_seconds": 23.874477172999832,
+      "engineering_seconds": 257.61358170699987,
+      "fresh_repeat_difference_INR": 0.0,
+      "peak_gpu_GiB": 6.558513641357422
+    },
+    {
+      "name": "N32-T080",
+      "status": "PASS",
+      "fold_seconds": 24.07377872500001,
+      "engineering_seconds": 257.3095816330001,
+      "fresh_repeat_difference_INR": 0.0,
+      "peak_gpu_GiB": 6.558513641357422
+    },
+    {
+      "name": "N32-T100",
+      "status": "PASS",
+      "fold_seconds": 23.85474992599984,
+      "engineering_seconds": 257.343075968,
+      "fresh_repeat_difference_INR": 0.0,
+      "peak_gpu_GiB": 6.558513641357422
+    }
+  ],
+  "uncompleted_pilot": "N32-T120",
+  "new_accuracy_fold_outputs": 0,
+  "development_comparisons_completed": 0,
+  "confirmation_performed": false,
+  "new_v15_submission_exported": false,
+  "fresh_v15_notebook_executed": false,
+  "all_preserved_v14_files_unchanged": 439,
+  "source_and_data_identity_unchanged": true,
+  "best_observed_portal": {
+    "version": "V14",
+    "rmse": 11736110.7877709
+  },
+  "runtime_released": true,
+  "active_assignments_after_release": 0,
+  "reported_compute_unit_balance": 0.0,
+  "original_eight_hour_wall_clock_expired": true,
+  "same_budget_reset": false,
+  "recovery_requires_new_explicit_compute_allowance": true,
+  "epoch": 1793242091.4150279
+}

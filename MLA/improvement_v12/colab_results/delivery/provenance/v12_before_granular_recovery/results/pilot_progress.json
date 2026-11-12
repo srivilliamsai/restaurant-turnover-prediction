@@ -1,0 +1,50 @@
+{
+  "R1": {
+    "status": "PASS",
+    "fold_seconds": 54.86512459000005,
+    "repeat_difference_INR": 0.0,
+    "behavior": {
+      "permutation_difference_INR": 0.0,
+      "label_id_difference_INR": 0.0,
+      "batch_difference_INR": 0.0,
+      "individual_difference_INR": 0.0,
+      "missing_unseen_inputs": true
+    },
+    "peak_gpu_allocated_bytes": 81164288,
+    "training_rows": 2794,
+    "validation_rows": 699,
+    "engineering_seconds": 96.76553116900004
+  },
+  "R4": {
+    "status": "PASS",
+    "fold_seconds": 160.21270178299994,
+    "repeat_difference_INR": 0.0,
+    "behavior": {
+      "permutation_difference_INR": 0.0,
+      "label_id_difference_INR": 0.0,
+      "batch_difference_INR": 0.0,
+      "individual_difference_INR": 0.0,
+      "missing_unseen_inputs": true
+    },
+    "peak_gpu_allocated_bytes": 81164288,
+    "training_rows": 2794,
+    "validation_rows": 699,
+    "engineering_seconds": 320.85325269199996
+  },
+  "T32": {
+    "status": "PASS",
+    "fold_seconds": 245.82442483900002,
+    "repeat_difference_INR": 0.0,
+    "behavior": {
+      "permutation_difference_INR": 0.0,
+      "label_id_difference_INR": 0.0,
+      "batch_difference_INR": 0.0,
+      "individual_difference_INR": 0.0,
+      "missing_unseen_inputs": true
+    },
+    "peak_gpu_allocated_bytes": 373881856,
+    "training_rows": 2794,
+    "validation_rows": 699,
+    "engineering_seconds": 1505.69808385
+  }
+}

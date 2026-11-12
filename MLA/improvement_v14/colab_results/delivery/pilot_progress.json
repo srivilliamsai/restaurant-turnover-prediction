@@ -1,0 +1,72 @@
+{
+  "I8": {
+    "status": "PASS",
+    "fold_seconds": 11.559364498000036,
+    "behavior": {
+      "permutation_difference_INR": 7.62939453125,
+      "label_id_difference_INR": 0.0,
+      "batch_difference_INR": 3.814697265625,
+      "individual_difference_INR": 0.0,
+      "rmse_difference_INR": {
+        "permutation": 0.027425337582826614,
+        "batch": 0.030591782182455063,
+        "individual": 0.0
+      },
+      "rows_checked": 699,
+      "individual_probes": 12,
+      "missing_unseen_inputs": true,
+      "behavior_tolerance_INR": 10.0,
+      "rmse_tolerance_INR": 1.0
+    },
+    "fresh_repeat_difference_INR": 0.0,
+    "target_metadata": {
+      "name": "I8",
+      "training_rows": 2794,
+      "units": "raw INR millions",
+      "checkpoint_sha256": "0db9cb538f114e79026bf08f45f41ad8dd7ad2de2aaca9a5ca8cd3bd9748ae7a",
+      "model_class": "tabicl._sklearn.regressor.TabICLRegressor"
+    },
+    "peak_gpu_allocated_bytes": 2029224448,
+    "training_rows": 2794,
+    "validation_rows": 699,
+    "engineering_seconds": 30.271495617000028
+  },
+  "P35_8": {
+    "status": "PASS",
+    "fold_seconds": 22.19464035200002,
+    "behavior": {
+      "permutation_difference_INR": 0.0,
+      "label_id_difference_INR": 0.0,
+      "batch_difference_INR": 0.0,
+      "individual_difference_INR": 0.0,
+      "rmse_difference_INR": {
+        "permutation": 0.0,
+        "batch": 0.0,
+        "individual": 0.0
+      },
+      "rows_checked": 699,
+      "individual_probes": 12,
+      "missing_unseen_inputs": true,
+      "behavior_tolerance_INR": 10.0,
+      "rmse_tolerance_INR": 1.0
+    },
+    "fresh_repeat_difference_INR": 0.0,
+    "target_metadata": {
+      "name": "P35_8",
+      "training_rows": 2794,
+      "units": "raw INR millions",
+      "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+      "model_class": "tabpfn.regressor.TabPFNRegressor",
+      "architecture_classes": [
+        "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+      ],
+      "configuration_classes": [
+        "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"
+      ]
+    },
+    "peak_gpu_allocated_bytes": 7042150400,
+    "training_rows": 2794,
+    "validation_rows": 699,
+    "engineering_seconds": 247.54860044100008
+  }
+}

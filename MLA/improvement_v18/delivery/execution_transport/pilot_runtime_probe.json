@@ -1,0 +1,16 @@
+{
+  "epoch": 1793260216.014287,
+  "processes": [
+    {
+      "pid": 6801,
+      "task": "workflow.py",
+      "resident_bytes": 4082237440,
+      "cpu_seconds": 914.62,
+      "elapsed_seconds": 1339.757033109665
+    }
+  ],
+  "gpu": "Tesla T4, 100, 4583, 15360",
+  "disk_free_bytes": 72376283136,
+  "active_checkpoint_bytes": 0,
+  "active_checkpoint_files": 0
+}

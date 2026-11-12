@@ -1,0 +1,152 @@
+{
+  "version": "v4",
+  "v2_configs": {
+    "engineered": {
+      "kind": "cat",
+      "variant": "engineered",
+      "depth": 6,
+      "iterations": 260
+    },
+    "engineered_drop": {
+      "kind": "cat",
+      "variant": "engineered_drop",
+      "depth": 6,
+      "iterations": 216
+    },
+    "ordered_depth5": {
+      "kind": "cat",
+      "variant": "base",
+      "depth": 5,
+      "boosting_type": "Ordered",
+      "iterations": 219
+    },
+    "huber20_engineered": {
+      "kind": "cat",
+      "variant": "engineered_drop",
+      "depth": 5,
+      "loss": "Huber:delta=20000000",
+      "iterations": 699
+    },
+    "huber40": {
+      "kind": "cat",
+      "variant": "base",
+      "depth": 5,
+      "loss": "Huber:delta=40000000",
+      "iterations": 664
+    },
+    "clip120": {
+      "kind": "cat",
+      "variant": "base",
+      "depth": 5,
+      "cap": 120000000.0,
+      "iterations": 591
+    },
+    "spline_ridge": {
+      "kind": "spline",
+      "variant": "base",
+      "alpha": 100
+    },
+    "svr_core": {
+      "kind": "svr",
+      "variant": "core",
+      "C": 20
+    },
+    "huber40_engineered": {
+      "kind": "cat",
+      "variant": "engineered",
+      "depth": 5,
+      "loss": "Huber:delta=40000000",
+      "iterations": 619
+    },
+    "huber40_monotone": {
+      "kind": "cat",
+      "variant": "base",
+      "depth": 5,
+      "loss": "Huber:delta=40000000",
+      "monotone": true,
+      "iterations": 447
+    }
+  },
+  "v2_weights": {
+    "engineered": 0.06448907249408362,
+    "engineered_drop": 0.09631834163153197,
+    "ordered_depth5": 0.08507039177778712,
+    "huber20_engineered": 0.06274452861282048,
+    "huber40": 0.08855362607985372,
+    "clip120": 0.07794631558814363,
+    "spline_ridge": 0.15648185431084338,
+    "svr_core": 0.058428294374292714,
+    "huber40_engineered": 0.09327747966602483,
+    "huber40_monotone": 0.2166900954646185
+  },
+  "v3_parameters": {
+    "variant": "base",
+    "depth": 5,
+    "iterations": 850,
+    "delta": 40,
+    "subsample": 0.7,
+    "l2": 10
+  },
+  "v3_seeds": [
+    1042,
+    2042,
+    3042
+  ],
+  "v3_weight": 0.25,
+  "seeds": [
+    1042,
+    2042
+  ],
+  "components": {
+    "parameter_borders32": {
+      "variant": "base",
+      "parameters": {
+        "iterations": 850,
+        "learning_rate": 0.04,
+        "depth": 5,
+        "l2_leaf_reg": 10,
+        "loss_function": "Huber:delta=40000000",
+        "bootstrap_type": "Bernoulli",
+        "subsample": 0.7,
+        "border_count": 32
+      },
+      "weight": 0.375
+    },
+    "feature_categorical_ratings": {
+      "variant": "categorical_ratings",
+      "parameters": {
+        "iterations": 850,
+        "learning_rate": 0.04,
+        "depth": 5,
+        "l2_leaf_reg": 10,
+        "loss_function": "Huber:delta=40000000",
+        "bootstrap_type": "Bernoulli",
+        "subsample": 0.7
+      },
+      "weight": 0.375
+    }
+  },
+  "development": {
+    "baseline_rmse": 19839027.540841296,
+    "candidate_rmse": 19823848.416554824,
+    "settings_evaluated": 24,
+    "blends_evaluated": 78,
+    "selection_split": 42
+  },
+  "validation_plan": {
+    "new_splits": [
+      1701,
+      1711
+    ],
+    "previous_splits": [
+      71,
+      2026,
+      303,
+      909
+    ],
+    "stress": [
+      "city"
+    ],
+    "warning": "Resplits of reused training labels, not an external test; no retuning on these checks."
+  }
+}

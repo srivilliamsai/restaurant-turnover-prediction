@@ -1,0 +1,22 @@
+{
+  "source": "User screenshots Oct12 2026 22:22\u201322:23 IST; user reports uploading current v3 CSV",
+  "student": "submission",
+  "team": "submission",
+  "previous_portal_rmse": 12204615.6438253,
+  "latest_portal_rmse": 12094600.3216516,
+  "rank": 3,
+  "submissions": 2,
+  "leader_rmse": 11946659.0702364,
+  "leader_gap": 147941.25141520053,
+  "improvement": 110015.32217369974,
+  "files": {
+    "csv": {
+      "file": "./improvement_v4/rank3_confirmed_backup/submission.csv",
+      "sha256": "348a70dce82f58e486c87cdcc69c1a3efd07056c72c6eaf47da6d79213cf9943"
+    },
+    "ipynb": {
+      "file": "./improvement_v4/rank3_confirmed_backup/submission.ipynb",
+      "sha256": "e6ed88a21eb1a3755bb2a1b2c75c76df3fa9702af84feda49b3a3815b7094df6"
+    }
+  }
+}

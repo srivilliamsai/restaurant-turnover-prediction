@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "tests": 10,
+  "scope": [
+    "target and ID isolation",
+    "unseen categories",
+    "route membership",
+    "six-hour budget and delivery reserve",
+    "selection and confirmation gates",
+    "stale/corrupt/incomplete cache rejection",
+    "no-finalist branch"
+  ],
+  "python_syntax": "PASS",
+  "epoch": 1793272744.373513,
+  "budget_regression_check": "PASS"
+}

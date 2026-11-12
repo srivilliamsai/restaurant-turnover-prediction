@@ -1,0 +1,13 @@
+# V12 implementation progress
+
+The user explicitly raised the total cap from twelve to eighteen hours and required completion of all four settings. Earlier V12 charges remain in the same ledger; the delivery reserve is three hours, free compute only, with no automatic portal or coding upload.
+
+T32, R1 and R4 passed actual outer-fold-size pilots, including repeated fits and real permutation/batch/individual/missing/unseen checks. All measured numerical differences were zero. Measured fold times were 245.824, 54.865 and 160.213 seconds respectively. Their source/input/runtime witnesses and complete checkpoints are preserved. T4x16 was interrupted by the earlier stage guard; it has no passing result or validation score and must finish before development starts.
+
+The previous free T4 session ended while T4x16 was still in progress. Colab reported no active assignments; its API did not identify the cause. The stale transport was stopped and the unobserved interval was conservatively retained in the eighteen-hour ledger. The user signed in with another Colab account, and a new free T4 was obtained. The three completed pilots are migrated only after checking original witnesses and unchanged numerical implementation. No model, feature, target, loss, blend or qualification gate changes. All four pilots and all sixteen development blends remain required; an incomplete setting blocks advancement instead of being silently omitted.
+
+Disconnect recovery now checkpoints individual pilot predictions with full raw-query identities and separate first-fit/fresh-repeat-fit phases. Isolation counterfactuals cannot reuse their controls. Original measured prediction durations remain available for time forecasting. Exact cached outputs are backed up locally. Missing or unchanging stage heartbeats stop stale transports within five minutes. Integrity, phase separation, resume, and heartbeat software checks passed with zero new model fits. Prior source generations and all actual completed passes remain archived.
+
+The all-settings resume preflight checks the actual timeout, resume, blocked-development and no-finalist paths without fitting any model. Prior source generations and interrupted runs remain archived under provenance/. Source identity is frozen again before any V12 development fitting. Numerical models and official checkpoint/dependency versions retain the original frozen contract.
+
+V9 remains the best observed portal submission at 11,904,515.9864996. Its scored CSV and notebook are preserved unchanged. No V12 score or improvement is claimed before measured validation and qualification; no first-place result is promised.

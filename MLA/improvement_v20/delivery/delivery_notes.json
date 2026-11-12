@@ -1,0 +1,14 @@
+{
+  "decision": "Retain V14",
+  "new_submission_exported": false,
+  "fresh_V20_submission_notebook_executed": false,
+  "reason": "No development candidate qualified",
+  "qualification_floor_mean_relative_gain": 0.002,
+  "best_mean_relative_gain": 2.6389626759986543e-05,
+  "confirmation_performed": false,
+  "portal_uploads": 0,
+  "v14_files_byte_identical": true,
+  "all_three_engineering_pilots": "PASS",
+  "independent_review": "PASS",
+  "free_runtime_released": true
+}

@@ -1,0 +1,486 @@
+{
+  "context": {
+    "name": "FT512",
+    "spec": {
+      "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+      "model_version": "V3_5",
+      "tabpfn_version": "9.2.0",
+      "learning_rate": 3e-06,
+      "use_lr_scheduler": false,
+      "weight_decay": 0.01,
+      "epochs_max": 30,
+      "early_stopping_patience": 8,
+      "inner_validation_fraction": 0.15,
+      "inner_seed_base": 9091,
+      "query_fraction": 0.2,
+      "n_estimators_finetune": 1,
+      "n_estimators_validation": 1,
+      "n_estimators_final_inference": 1,
+      "use_fixed_preprocessing_seed": true,
+      "activation_checkpointing": true,
+      "crps_loss_weight": 1.0,
+      "mse_loss_weight": 1.0,
+      "mse_loss_clip": null,
+      "seed": 10242,
+      "epoch_zero_eligible": true,
+      "all_outer_training_rows_refitted": true,
+      "inference_context_subsampling": false,
+      "context_plus_query_rows": 512
+    },
+    "scheme": "42",
+    "fold": 1,
+    "inputs": {
+      "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+      "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+      "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+      "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+    },
+    "sources": {
+      "core.py": "466945c93654077fc6599700a73a7fdb23bdd415893e66635770dd7b3a1b086f",
+      "features.py": "86939252439cba79a803e1cc3563ecc83e5ff37dc4ab52b79edb71e3fd22fe1c",
+      "modeling.py": "6380180020158744654788e41d44af0ef1518c6f1fa130b1c3ffcca642f1ff46",
+      "workflow.py": "d0910de2bef1aa3397007921d67580d1060f413719189d09cccf44c194a1985a",
+      "verify.py": "8032e62e6eb8a0770ccf11eb324dd9640ef87d6ffb983c3e7d094858e3e7172e",
+      "delivery.py": "89459ed273dc457d6d517f4fcc13525e064fccd7c2b01aafdf8ccc2e7bfbd4c6",
+      "fresh_worker.py": "2bf9f9fadc22bf0b4db26a39fbb597da68ec5ded129efa9a8d26f525da619cd0",
+      "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+      "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+      "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+      "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+      "v5_contract.json": "3446412f01d536a31123142b984392216efd29094965500251386eac1814ab69",
+      "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+      "reference_manifest.json": "82417467e331d6e470fd1058c4ea4edb5a47f98021efc822176bd9a04b99bbd5",
+      "baseline_registry.json": "53e7ddb7fbfbe08162aa97fac8d5ad9dea4981aab3aa942b3e98ebdb2a3060b7",
+      "frozen_pfn.py": "ff4d383d269ffdc1b0021f7d0cac4e19240be130f2544bcc80dc41916a5262b5",
+      "new_models.py": "2cc4fef5221d8cb4a41421760687679b5a83c66248eb0d36a60253b44c68c48e",
+      "pilot_worker.py": "f9721329d6fcc6f8d395f175d6fd24ed954dcd9cf5533db655e1e66191a2bc6e",
+      "checkpoint_registry.json": "4dd0b5e632d00b688e6dca18892c46a80512eafbd2f5b783850d66a0f76a233c",
+      "source_registry.json": "4ddfe7ed70327ced487ee6b6ada889e37dbfc81c4785e4cbe7c1fd5fa7faf81a",
+      "protocol_proposed.json": "9753ec10e1b15210b12240b89c1609eaf65a6afd527fc657bcd684f31e2445f5",
+      "release_review_registry.json": "ba98e8ecee9cb9188b8ce87a8e607181c249c89727bfab2a63985b0267a8a470",
+      "mac_controls.py": "c6c01ea36a0a9f3a4c5a6e4c8110c4e07b83e5373c110e075f4a7844515208c3",
+      "control_worker.py": "4b5abe58acd90cedb8c2557166fda48a0daff2e8b75da67a87aa975678d61ee3"
+    },
+    "runtime_contract": {
+      "runtime": {
+        "dependencies": {
+          "numpy": "2.5.4",
+          "pandas": "3.0.6",
+          "scikit-learn": "1.9.1",
+          "scipy": "1.18.1",
+          "catboost": "1.2.10",
+          "interpret-core": "0.7.8",
+          "tabpfn": "9.2.0",
+          "tabicl": "2.2.0",
+          "torch": "2.11.0+cu130"
+        },
+        "gpu": "Tesla T4",
+        "cuda": "13.0",
+        "precision": "float32",
+        "prediction_chunk": 500,
+        "seed": 10242,
+        "datetime_dependencies": {
+          "skrub": "0.10.1",
+          "pyarrow": "23.0.1"
+        }
+      },
+      "new_runtime": {
+        "safetensors": "0.8.0",
+        "huggingface-hub": "1.33.0",
+        "nbformat": "5.11.1",
+        "nbclient": "0.10.4"
+      },
+      "new_module_sha256": {
+        "exaone/src/exaonetabular/__init__.py": "b935d9d03c57b82f0b282207fa0fc4f8dc874d27cd003a98bda3e0c551bbf419",
+        "exaone/src/exaonetabular/_execution.py": "32ed8088fbacca5b70dfb2c65d907f9a8ff44ee8cee34a81701f7a40996523d5",
+        "exaone/src/exaonetabular/_inference_preprocessing.py": "60699a4cfb614e525dd8b6279d07d7b51e95fe17870a99bbaa849f2986457063",
+        "exaone/src/exaonetabular/_power_transform.py": "b39be87515a8a6eb0da8fc8590b4208172f514e13d8d0f26ff6e3e2dc569e166",
+        "exaone/src/exaonetabular/checkpoint.py": "669c7344e5d52a277910d1c2b68dba1357cef544293186d84845a0d7a142faf3",
+        "exaone/src/exaonetabular/classifier.py": "d1c648565d1b09c780ea71a694852558d54a4008080582b98f5aa0e533d87454",
+        "exaone/src/exaonetabular/config.py": "c3a7ecaf7e2d7309b90e3e628438801b8a2599e1e3ef1eb24d15c757c3bcf163",
+        "exaone/src/exaonetabular/ecoc.py": "29280f7a1f9544d080d8d4d6c10d9935986944df586ee29e516e196a9e95db49",
+        "exaone/src/exaonetabular/ensemble.py": "a785043ef8792242e264e33c2fb0c1350231e638283a3784207bbcc6774859a5",
+        "exaone/src/exaonetabular/feature_selection/__init__.py": "ad8b05d9dcf32f3568df28955a4e386b4d3b37f18b605c2a6f7b7e72c1b48809",
+        "exaone/src/exaonetabular/feature_selection/selection.py": "98709f4d5f925ad8f8a73c49de5768a194cc412639fa1e93625b8d9136af00c7",
+        "exaone/src/exaonetabular/model/__init__.py": "8b9d6643deeba5da079fcbaea2a7c9a32f650f3f5cddb5883c2597da0dd9dbe7",
+        "exaone/src/exaonetabular/model/attention.py": "06eed04809a4a306a4af0f9a25e3f67d1175eb560eb3c9a0d23830e08f2a9b85",
+        "exaone/src/exaonetabular/model/encoders.py": "853769e414399ac9b0cc0fcbb22d00c54da8e4e07acf08857f403831b092ab69",
+        "exaone/src/exaonetabular/model/heads.py": "af863f16f28c1d2ea93a7a9a4b837a2ea1fcfd066c382ceaffc210498f9c9223",
+        "exaone/src/exaonetabular/model/layer.py": "562d1ff4b6a239ee91ece8b9fb0ce822fbc9bcc2b07c56edc173a1d098a4943d",
+        "exaone/src/exaonetabular/model/memory.py": "fdcfd8a48c92e7828bc53130b3343af8e9c1c8e427e419656e6bb7ca43819514",
+        "exaone/src/exaonetabular/model/mlp.py": "9c8c7a7ab3fa8128b1b9ee499e0d4fd461424af170e6e88333c40c5a20e67c24",
+        "exaone/src/exaonetabular/model/transformer.py": "12586d8dff9352084a13fd0a4dbfd28d38555fdf09fbcdb8cd42aa38aa8180fe",
+        "exaone/src/exaonetabular/preprocessing.py": "8a3fcdf5673bc79cbaacf56af4c6a521358bb82d5de831b930d3c735f8dcc033",
+        "exaone/src/exaonetabular/presets.py": "b1cfcaa65c0aa8f17e1ff4abf2c1b5013e2d157f0dc1154ce021c30d3516946c",
+        "exaone/src/exaonetabular/regressor.py": "c7156eb3398fea5faac75aaa667ee0d462b78049469090398d76387da30700c4",
+        "exaone/src/exaonetabular/runtime.py": "477d3871abb04bced2fab04a050ec4fa3fc18af74450a48e401b5fd40946eee5",
+        "exaone/src/exaonetabular/weights.py": "94d5b0f68330cf877b86f7629e33f2b0884158484ad87c3755f41a16de5f885a"
+      },
+      "models": {
+        "BASE": {
+          "checkpoint": {
+            "repo_id": "Prior-Labs/TabPFN-v2-reg",
+            "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+            "filename": "tabpfn-v2-regressor.ckpt",
+            "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736",
+            "version": "2"
+          }
+        },
+        "P35_8": {
+          "checkpoint": {
+            "repo_id": "Prior-Labs/tabpfn_3_5",
+            "revision": "06bf2ba35c80a92a3b9abb436b99cf49e7a0365e",
+            "filename": "tabpfn-v3.5-20260909.safetensors",
+            "sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+            "bytes": 876027932,
+            "version": "3.5",
+            "download_path": "/root/.cache/huggingface/hub/models--Prior-Labs--tabpfn_3_5/snapshots/06bf2ba35c80a92a3b9abb436b99cf49e7a0365e/tabpfn-v3.5-20260909.safetensors",
+            "local_loader_path": "/content/mla_v14/model_weights/tabpfn-v3.5-20260909.safetensors",
+            "local_suffix": ".safetensors",
+            "format_check": {
+              "format": "safetensors",
+              "header_bytes": 77296,
+              "tensor_entries": 595,
+              "metadata_keys": [
+                "architecture_name",
+                "config",
+                "inference_config"
+              ]
+            },
+            "installed_loader_path": "/usr/local/lib/python3.13/dist-packages/tabpfn/checkpoint.py",
+            "installed_loader_sha256": "f7c86363ccc96af4ffe10ec23221ed90dfea304f04b6c4e48330ba25bbf807de"
+          },
+          "parameters": {
+            "auto_scale_n_estimators": true,
+            "average_before_softmax": false,
+            "device": "cuda",
+            "differentiable_input": false,
+            "enable_torch_compile": false,
+            "eval_metric": null,
+            "fit_mode": "low_memory",
+            "ignore_pretraining_limits": false,
+            "inference_config": null,
+            "inference_precision": "torch.float32",
+            "keep_cache_on_device": true,
+            "kv_cache_precision": null,
+            "memory_saving_mode": true,
+            "model_path": "checkpoint_sha256:ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+            "n_estimators": 8,
+            "n_jobs": null,
+            "n_preprocessing_jobs": 1,
+            "random_state": 10242,
+            "show_progress_bar": false,
+            "softmax_temperature": "auto",
+            "tuning_config": null
+          }
+        }
+      },
+      "engineering_failures": {},
+      "settings": {
+        "FT512": {
+          "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+          "model_version": "V3_5",
+          "tabpfn_version": "9.2.0",
+          "learning_rate": 3e-06,
+          "use_lr_scheduler": false,
+          "weight_decay": 0.01,
+          "epochs_max": 30,
+          "early_stopping_patience": 8,
+          "inner_validation_fraction": 0.15,
+          "inner_seed_base": 9091,
+          "query_fraction": 0.2,
+          "n_estimators_finetune": 1,
+          "n_estimators_validation": 1,
+          "n_estimators_final_inference": 1,
+          "use_fixed_preprocessing_seed": true,
+          "activation_checkpointing": true,
+          "crps_loss_weight": 1.0,
+          "mse_loss_weight": 1.0,
+          "mse_loss_clip": null,
+          "seed": 10242,
+          "epoch_zero_eligible": true,
+          "all_outer_training_rows_refitted": true,
+          "inference_context_subsampling": false,
+          "context_plus_query_rows": 512
+        },
+        "EXA8": {
+          "source_revision": "d149d0f0441053f0cf6b2b45f4b2067a81619cf9",
+          "repo_id": "LG-AI-Research/EXAONE-Tabular",
+          "checkpoint_revision": "093ad1c2613e1e95d26df8610451d2e02ed53cbe",
+          "filename": "exaone-tabular-regressor-v1_default.safetensors",
+          "expected_checkpoint_sha256": "24891e14e649c6509f07ee62b5583e06544b68eaf9a9195ee58777eb9cf6fa0d",
+          "ensemble_count": 8,
+          "seed": 10242,
+          "compute_dtype": "float32",
+          "point_estimate": "mean",
+          "member_weighting": "uniform",
+          "n_svd": 0,
+          "svd_gate": false,
+          "svd_split": false,
+          "support_row_limit": 100000,
+          "feature_limit": 500,
+          "query_batch_limit": 500,
+          "maximum_gpu_budget_bytes": 12884901888,
+          "all_original_training_rows_required": true
+        },
+        "FT1024": {
+          "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+          "model_version": "V3_5",
+          "tabpfn_version": "9.2.0",
+          "learning_rate": 3e-06,
+          "use_lr_scheduler": false,
+          "weight_decay": 0.01,
+          "epochs_max": 30,
+          "early_stopping_patience": 8,
+          "inner_validation_fraction": 0.15,
+          "inner_seed_base": 9091,
+          "query_fraction": 0.2,
+          "n_estimators_finetune": 1,
+          "n_estimators_validation": 1,
+          "n_estimators_final_inference": 1,
+          "use_fixed_preprocessing_seed": true,
+          "activation_checkpointing": true,
+          "crps_loss_weight": 1.0,
+          "mse_loss_weight": 1.0,
+          "mse_loss_clip": null,
+          "seed": 10242,
+          "epoch_zero_eligible": true,
+          "all_outer_training_rows_refitted": true,
+          "inference_context_subsampling": false,
+          "context_plus_query_rows": 1024
+        }
+      },
+      "adapter": "Fixed 500-row blocks; BASE first training row; new model maximum-observed training row; discard padding.",
+      "output_floor": 0.0,
+      "selection_uses_validation_rmse": false,
+      "source_registry": {
+        "exaone": {
+          "repository": "LGAI-Research/EXAONE-Tabular",
+          "revision": "d149d0f0441053f0cf6b2b45f4b2067a81619cf9",
+          "commit_date": "2026-10-28T04:17:46Z",
+          "files": {
+            "README.md": {
+              "url": "https://raw.githubusercontent.com/LGAI-Research/EXAONE-Tabular/d149d0f0441053f0cf6b2b45f4b2067a81619cf9/README.md",
+              "sha256": "4ba2c9f4f220026b2e25b4816c5c1820d1b66799274c4dffdd861fd1bba0deec",
+              "bytes": 26291
+            },
+            "pyproject.toml": {
+              "url": "https://raw.githubusercontent.com/LGAI-Research/EXAONE-Tabular/d149d0f0441053f0cf6b2b45f4b2067a81619cf9/pyproject.toml",
+              "sha256": "493d3ebda470123e08baa95317237f1ccac9e45045b44ee47ba90a0c11000aaf",
+              "bytes": 1588
+            },
+            "src/exaonetabular/config.py": {
+              "url": "https://raw.githubusercontent.com/LGAI-Research/EXAONE-Tabular/d149d0f0441053f0cf6b2b45f4b2067a81619cf9/src/exaonetabular/config.py",
+              "sha256": "c3a7ecaf7e2d7309b90e3e628438801b8a2599e1e3ef1eb24d15c757c3bcf163",
+              "bytes": 21780
+            },
+            "src/exaonetabular/presets.py": {
+              "url": "https://raw.githubusercontent.com/LGAI-Research/EXAONE-Tabular/d149d0f0441053f0cf6b2b45f4b2067a81619cf9/src/exaonetabular/presets.py",
+              "sha256": "b1cfcaa65c0aa8f17e1ff4abf2c1b5013e2d157f0dc1154ce021c30d3516946c",
+              "bytes": 3529
+            },
+            "src/exaonetabular/_inference_preprocessing.py": {
+              "url": "https://raw.githubusercontent.com/LGAI-Research/EXAONE-Tabular/d149d0f0441053f0cf6b2b45f4b2067a81619cf9/src/exaonetabular/_inference_preprocessing.py",
+              "sha256": "60699a4cfb614e525dd8b6279d07d7b51e95fe17870a99bbaa849f2986457063",
+              "bytes": 10202
+            },
+            "src/exaonetabular/checkpoint.py": {
+              "url": "https://raw.githubusercontent.com/LGAI-Research/EXAONE-Tabular/d149d0f0441053f0cf6b2b45f4b2067a81619cf9/src/exaonetabular/checkpoint.py",
+              "sha256": "669c7344e5d52a277910d1c2b68dba1357cef544293186d84845a0d7a142faf3",
+              "bytes": 14136
+            },
+            "src/exaonetabular/preprocessing.py": {
+              "url": "https://raw.githubusercontent.com/LGAI-Research/EXAONE-Tabular/d149d0f0441053f0cf6b2b45f4b2067a81619cf9/src/exaonetabular/preprocessing.py",
+              "sha256": "8a3fcdf5673bc79cbaacf56af4c6a521358bb82d5de831b930d3c735f8dcc033",
+              "bytes": 12502
+            },
+            "src/exaonetabular/regressor.py": {
+              "url": "https://raw.githubusercontent.com/LGAI-Research/EXAONE-Tabular/d149d0f0441053f0cf6b2b45f4b2067a81619cf9/src/exaonetabular/regressor.py",
+              "sha256": "c7156eb3398fea5faac75aaa667ee0d462b78049469090398d76387da30700c4",
+              "bytes": 20753
+            }
+          }
+        },
+        "tabpfn": {
+          "repository": "PriorLabs/TabPFN",
+          "revision": "1c0a4574aa3a9fa9f4f45612331a1fb08420e256",
+          "commit_date": "2026-10-28T16:16:48Z",
+          "files": {
+            "examples/finetune_regressor.py": {
+              "url": "https://raw.githubusercontent.com/PriorLabs/TabPFN/1c0a4574aa3a9fa9f4f45612331a1fb08420e256/examples/finetune_regressor.py",
+              "sha256": "e6601842e26ad96942608a5d3fd2729b776e6be5dc8ecb317017fa3cdeaa7502",
+              "bytes": 5487
+            },
+            "src/tabpfn/finetuning/finetuned_regressor.py": {
+              "url": "https://raw.githubusercontent.com/PriorLabs/TabPFN/1c0a4574aa3a9fa9f4f45612331a1fb08420e256/src/tabpfn/finetuning/finetuned_regressor.py",
+              "sha256": "63141daeecddac82dffc8cee2409b1e3b7a82b54278f09a16779b656043144dc",
+              "bytes": 23787
+            },
+            "src/tabpfn/finetuning/finetuned_base.py": {
+              "url": "https://raw.githubusercontent.com/PriorLabs/TabPFN/1c0a4574aa3a9fa9f4f45612331a1fb08420e256/src/tabpfn/finetuning/finetuned_base.py",
+              "sha256": "fe78fda84ad87711bc67c923fa83625ab918fcb4cbadf35d3e894b6f5a7c603f",
+              "bytes": 57602
+            },
+            "src/tabpfn/finetuning/train_util.py": {
+              "url": "https://raw.githubusercontent.com/PriorLabs/TabPFN/1c0a4574aa3a9fa9f4f45612331a1fb08420e256/src/tabpfn/finetuning/train_util.py",
+              "sha256": "0824c69f00f83c29b0eb70134d6bbd8b3c43835a2b5fb5190d9b66dc7aa2c63d",
+              "bytes": 10607
+            }
+          }
+        },
+        "tabfm": {
+          "repository": "google-research/tabfm",
+          "revision": "fbb665569425fd2f490c6576b3af967876fe11ff",
+          "commit_date": "2026-08-18T17:12:51Z",
+          "files": {
+            "README.md": {
+              "url": "https://raw.githubusercontent.com/google-research/tabfm/fbb665569425fd2f490c6576b3af967876fe11ff/README.md",
+              "sha256": "e6a0e0e36ccd18174f5aaa97dd98a4661e25fc3014f4bdb9ffd3d2a4790fe146",
+              "bytes": 6506
+            },
+            "requirements.txt": {
+              "url": "https://raw.githubusercontent.com/google-research/tabfm/fbb665569425fd2f490c6576b3af967876fe11ff/requirements.txt",
+              "sha256": "8a52b978c2e796db297d51c68e78ac19c941d2121afae37aae34af2aa4c28b29",
+              "bytes": 4007
+            }
+          }
+        }
+      },
+      "checkpoint_registry": {
+        "EXA8": {
+          "repo_id": "LG-AI-Research/EXAONE-Tabular",
+          "revision": "093ad1c2613e1e95d26df8610451d2e02ed53cbe",
+          "filename": "exaone-tabular-regressor-v1_default.safetensors",
+          "sha256": "24891e14e649c6509f07ee62b5583e06544b68eaf9a9195ee58777eb9cf6fa0d"
+        }
+      },
+      "new_inference_layout": "500 rows, fixed first training-row padding; float32 inference"
+    },
+    "train_indices": "1f7897014ea73cf369e8adae906c6a15724ca91bd237dfa0ad872cb15e3397e5",
+    "valid_indices": "ba3635482cf581e06114f33e417e0b5a197d60820b6d3c3286ae8e8a86b614cb",
+    "training_targets": "7ffa7e0292a90d6eefa17197bcdbdd5a130ae910c917897da23b2cc05c44e84f",
+    "row_ids": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+    "target_units": "raw INR millions"
+  },
+  "sha256": "ae670bb7a268dec37cf75064cb260ea40384a00c6e7812e0c0baf8cc227c5d3d",
+  "fit_metadata": {
+    "name": "FT512",
+    "training_rows": 2794,
+    "units": "raw INR millions",
+    "all_original_training_targets_retained": true,
+    "seed": 10242,
+    "training_target_sha256": "7ffa7e0292a90d6eefa17197bcdbdd5a130ae910c917897da23b2cc05c44e84f",
+    "categorical_columns": [
+      "Cuisine",
+      "City",
+      "Restaurant Location",
+      "Endoresed By",
+      "Restaurant Type",
+      "Restaurant Theme",
+      "Cuisine 1",
+      "Cuisine 2"
+    ],
+    "features": 40,
+    "inner_training_rows": 2374,
+    "inner_validation_rows": 420,
+    "inner_seed": 9092,
+    "inner_train_sha256": "021cb096928968a7b7ed817f3b446a1e0305bd27175e2323ff204ad253fa354b",
+    "inner_validation_sha256": "d5c3aa14f4b9d6b749284fda05cb49e70feff08bd78096ea7a03796174ec7166",
+    "inner_policy": "random-15-percent",
+    "selected_epochs": 9,
+    "inner_epochs_run": 17,
+    "inner_history": [
+      {
+        "epoch": 0,
+        "mse_millions_squared": 146.97841273438064
+      },
+      {
+        "epoch": 1,
+        "mse_millions_squared": 146.287965060409
+      },
+      {
+        "epoch": 2,
+        "mse_millions_squared": 143.36497480753894
+      },
+      {
+        "epoch": 3,
+        "mse_millions_squared": 143.4356351891975
+      },
+      {
+        "epoch": 4,
+        "mse_millions_squared": 143.01574034094241
+      },
+      {
+        "epoch": 5,
+        "mse_millions_squared": 142.59312102319953
+      },
+      {
+        "epoch": 6,
+        "mse_millions_squared": 142.69142973164801
+      },
+      {
+        "epoch": 7,
+        "mse_millions_squared": 142.43372988176696
+      },
+      {
+        "epoch": 8,
+        "mse_millions_squared": 142.57972718369967
+      },
+      {
+        "epoch": 9,
+        "mse_millions_squared": 142.3112153859645
+      },
+      {
+        "epoch": 10,
+        "mse_millions_squared": 142.33898163641146
+      },
+      {
+        "epoch": 11,
+        "mse_millions_squared": 142.51334862018115
+      },
+      {
+        "epoch": 12,
+        "mse_millions_squared": 142.53430719042092
+      },
+      {
+        "epoch": 13,
+        "mse_millions_squared": 143.12884721793148
+      },
+      {
+        "epoch": 14,
+        "mse_millions_squared": 144.10815755226963
+      },
+      {
+        "epoch": 15,
+        "mse_millions_squared": 145.23496956027088
+      },
+      {
+        "epoch": 16,
+        "mse_millions_squared": 145.95887102429936
+      },
+      {
+        "epoch": 17,
+        "mse_millions_squared": 146.84806059884562
+      }
+    ],
+    "outer_validation_used_for_epoch_selection": false,
+    "precision": "CUDA-AMP-training/float32-inference",
+    "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+    "matched_original_architectures": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+    ],
+    "installed_finetune_source_sha256": "315413cd044720d1edc9962d6697ed55cea90f3e7181d1a2a1c41ac8ccde18fa",
+    "learning_rate": 3e-06,
+    "use_lr_scheduler": false,
+    "setup_seconds": 5.045627088999936,
+    "selection_seconds": 182.448730049,
+    "refit_seconds": 36.70862142399983,
+    "inner_optimizer_steps": 68,
+    "full_subset_refitted": true,
+    "actual_estimators": 1,
+    "context_plus_query_rows": 512,
+    "matched_unadapted_inner_mse_millions_squared": 146.97841273438064,
+    "fit_seconds": 227.612895686,
+    "last_query_seconds": 2.5033978400001615
+  }
+}

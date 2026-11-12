@@ -1,0 +1,7 @@
+{
+  "reason": "Ensure a fresh standalone process creates its runtime checkpoint directory before a supported fine-tuning call.",
+  "accuracy_tested": false,
+  "prior_source_sha256": "7a0881130a82e66b000d777775e039814385b1bf0e592d9e75a5caa3faf97051",
+  "corrected_source_sha256": "111a878a482170a5409687bb2d8b0f4a97859a09697dcb9daf0429b2466bde24",
+  "recipes_weights_and_gates_unchanged": true
+}

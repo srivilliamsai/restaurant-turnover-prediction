@@ -1,0 +1,37 @@
+{
+  "v2_weight": 0.5,
+  "additional_weights": {
+    "bag_subsample_h40": 0.5
+  },
+  "specs": {
+    "bag_subsample_h40": {
+      "variant": "base",
+      "depth": 5,
+      "iterations": 850,
+      "delta": 40,
+      "subsample": 0.7,
+      "l2": 10
+    }
+  },
+  "model_seeds": [
+    1042,
+    2042,
+    3042
+  ],
+  "development": {
+    "name": "bag_subsample_h40",
+    "new_weight": 0.5,
+    "rmse": 19839027.540841296,
+    "gain": 10460.370932716876,
+    "fold_wins": 3
+  },
+  "baseline_development_rmse": 19849487.911774013,
+  "development_split_seed": 42,
+  "confirmation_split_seeds": [
+    71,
+    2026,
+    303,
+    909
+  ],
+  "selection": "Fixed configurations; seed42 development only. Coarse 25% blending grid. Seed909 unseen during this round selection, but all labeled rows were involved in previous development. No independent external test is claimed."
+}

@@ -1,0 +1,44 @@
+{
+  "inputs": {
+    "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+    "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+    "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+    "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+  },
+  "sources": {
+    "models.py": "029de9731d057d8827ff6c7f1789f7669b408eeb3626e50a1677db223614edf8",
+    "workflow.py": "c99c63e5575e514ec030828a40c16511c8aa0fab5edb04c842d555c347114e8a",
+    "reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+    "scored_reference.json": "7148150a20525f1bee168fe6a0b6fd44d8b1244348881ee962aca464affa74cd"
+  },
+  "preserved_v5": {
+    "submission.csv": "66a673efc5f31bc9f4010de033999fd3712444b8f6dd0478c97e77bb3934630d",
+    "submission.ipynb": "46b7366227f295844988b8512d012ecfa141aa7b81b42df42f565082e4880f48"
+  },
+  "target_rows": 3493,
+  "tail_above_80M": 48,
+  "nearest_neighbor_tail_above80M": 1,
+  "median_nearest_target_gap_INR": 10500000.0,
+  "train_feature_duplicates": 0,
+  "cross_train_test_duplicates": 0,
+  "labels_changed": 0,
+  "verified_unit_errors": 0,
+  "label_audit_conclusion": "No independently verified unit error; retain all original labels. Dissimilarity is not evidence of an incorrect label.",
+  "portal_v5_rmse": 12046722.3691139,
+  "leader_screenshot_rmse": 4796740.5600053,
+  "rules_source": "full competition instructions supplied by user on 26 October 2026",
+  "stated_metric": "ordinary RMSE across the 500 test predictions",
+  "csv_submission_limit": null,
+  "final_notebook_submissions": 1,
+  "portal_uploads": 0,
+  "external_data_used": false,
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "catboost": "1.2.10",
+    "sklearn": "1.9.1",
+    "scipy": "1.18.1"
+  },
+  "utc": "2026-10-26T10:39:35.385661+00:00"
+}

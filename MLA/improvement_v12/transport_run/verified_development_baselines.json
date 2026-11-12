@@ -1,0 +1,25 @@
+{
+  "uses_verified_existing_predictions_only": true,
+  "new_fits": 0,
+  "rows": [
+    {
+      "assignment": 42,
+      "V9_RMSE_INR": 19731241.728233285,
+      "0.20_percent_of_V9_RMSE_INR": 39462.48345646657,
+      "rows": 3493
+    },
+    {
+      "assignment": 71,
+      "V9_RMSE_INR": 19733020.080547012,
+      "0.20_percent_of_V9_RMSE_INR": 39466.040161094024,
+      "rows": 3493
+    }
+  ],
+  "input_hashes": {
+    "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+    "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+    "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+    "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+  },
+  "baseline_registry_sha256": "5c63246a01b863637d6763082be04308badf84ebbb317a1d94aa0bde51c72e72"
+}

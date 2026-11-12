@@ -1,0 +1,5 @@
+{
+  "stage": "pilot",
+  "status": "failed",
+  "error": "Supervised stage/total time allowance exhausted; incomplete candidates cannot be exported."
+}

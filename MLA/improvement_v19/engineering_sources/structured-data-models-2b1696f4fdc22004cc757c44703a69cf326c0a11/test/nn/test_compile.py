@@ -1,0 +1,315 @@
+# SPDX-FileCopyrightText: Copyright (c) 2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-License-Identifier: Apache-2.0
+
+import os
+from collections.abc import Callable
+
+import pytest
+import torch
+from torch import Tensor
+
+from sdm.nn import (
+    SDPA,
+    Attention,
+    InducedTransformerBlock,
+    QASSMax,
+    RotaryEmbedding,
+    TransformerBlock,
+)
+from sdm.testing import withCUDA
+
+# Skip all tests in this test file if it is not a full test run (FULL_TEST=1).
+pytestmark = [
+    pytest.mark.skipif(
+        os.getenv("FULL_TEST", "0") != "1",
+        reason="Fast test run",
+    ),
+    pytest.mark.usefixtures("compilation"),
+]
+
+
+def fullgraph(module: torch.nn.Module) -> Callable[..., Tensor]:
+    # `fullgraph=True` raises on any graph break; the eager backend skips
+    # code generation, keeping the tests fast while staying numerically
+    # identical to the uncompiled module.
+    return torch.compile(module, fullgraph=True, backend="eager")
+
+
+@withCUDA
+@pytest.mark.parametrize(
+    "key_len_fn",
+    [
+        lambda: 4,
+        lambda: torch.tensor([[1], [2]]),
+        lambda: torch.tensor([[1, 2, 0], [3, 4, 1]]),
+    ],
+)
+def test_qassmax_compile(
+    device: torch.device,
+    key_len_fn: Callable[[], Tensor | int],
+) -> None:
+    module = QASSMax(channels=2, num_heads=3, hidden_channels=4, device=device)
+    query = torch.randn(2, 3, 3, 2, device=device)
+    key_len = key_len_fn()
+    if isinstance(key_len, Tensor):
+        key_len = key_len.to(device)
+
+    expected = module(query, key_len=key_len)
+    out = fullgraph(module)(query, key_len=key_len)
+    torch.testing.assert_close(out, expected)
+
+
+@withCUDA
+@pytest.mark.parametrize("partial_rotary_factor", [1.0, 0.25])
+def test_rotary_embedding_compile(
+    device: torch.device,
+    partial_rotary_factor: float,
+) -> None:
+    module = RotaryEmbedding(
+        channels=16,
+        layout="split_half",
+        partial_rotary_factor=partial_rotary_factor,
+        device=device,
+    )
+    x = torch.randn(2, 5, 3, 16, device=device)
+
+    expected = module(x)
+    out = fullgraph(module)(x)
+    torch.testing.assert_close(out, expected)
+
+
+@withCUDA
+@pytest.mark.parametrize(
+    ("num_key_value_heads", "qassmax", "masking"),
+    [
+        (None, False, None),
+        (None, True, "attn_mask"),
+        (None, False, "seqused"),
+        (1, False, None),
+        (2, True, "attn_mask"),
+    ],
+)
+def test_sdpa_compile(
+    device: torch.device,
+    num_key_value_heads: int | None,
+    qassmax: bool,
+    masking: str | None,
+) -> None:
+    channels = 4
+    num_query_heads = 4
+    module = SDPA(
+        num_query_heads=num_query_heads,
+        num_key_value_heads=num_key_value_heads,
+        query_scaling=QASSMax(
+            channels,
+            num_query_heads,
+            device=device,
+        )
+        if qassmax
+        else None,
+    )
+
+    kv_heads = num_key_value_heads or num_query_heads
+    query = torch.randn(2, 3, num_query_heads, channels, device=device)
+    key = torch.randn(2, 5, kv_heads, channels, device=device)
+    value = torch.randn(2, 5, kv_heads, channels, device=device)
+    attn_mask = seqused = None
+    if masking == "attn_mask":
+        attn_mask = torch.ones(2, 1, 3, 5, dtype=torch.bool, device=device)
+        attn_mask[..., 1:] = torch.randint(
+            0, 2, (2, 1, 3, 4), dtype=torch.bool, device=device
+        )
+    elif masking == "seqused":
+        seqused = torch.tensor([3, 1], dtype=torch.int32, device=device)
+
+    expected = module(
+        query=query,
+        key=key,
+        value=value,
+        seqused_key_value=seqused,
+        attn_mask=attn_mask,
+    )
+    out = fullgraph(module)(
+        query=query,
+        key=key,
+        value=value,
+        seqused_key_value=seqused,
+        attn_mask=attn_mask,
+    )
+    torch.testing.assert_close(out, expected)
+
+
+@withCUDA
+@pytest.mark.parametrize(
+    ("num_key_value_heads", "kv_heads"),
+    [(1, 1), (2, 2), (4, 4), (4, 1), (4, 2)],
+)
+@pytest.mark.parametrize("batch_shape", [(), (2, 1)])
+def test_sdpa_compile_dynamic_shapes(
+    device: torch.device,
+    num_key_value_heads: int,
+    kv_heads: int,
+    batch_shape: tuple[int, ...],
+) -> None:
+    module = SDPA(
+        num_query_heads=4, num_key_value_heads=num_key_value_heads
+    ).eval()
+    compiled = fullgraph(module)
+    with torch.inference_mode():
+        for query_rows, key_rows in [(3, 5), (7, 9), (1, 4)]:
+            query = torch.randn(*batch_shape, query_rows, 4, 8, device=device)
+            key = torch.randn(
+                *batch_shape, key_rows, kv_heads, 8, device=device
+            )
+            value = torch.randn_like(key)
+            index = [query.ndim - 3, query.ndim - 2]
+            torch._dynamo.mark_dynamic(query, index)
+            torch._dynamo.mark_dynamic(key, index)
+            torch._dynamo.mark_dynamic(value, index)
+            expected = module(query=query, key=key, value=value)
+            out = compiled(query=query, key=key, value=value)
+            torch.testing.assert_close(out, expected)
+
+
+@withCUDA
+@pytest.mark.parametrize(
+    ("num_key_value_heads", "qassmax", "self_attn"),
+    [
+        (None, False, True),
+        (None, True, False),
+        (1, False, True),
+        (2, True, False),
+    ],
+)
+def test_attention_compile(
+    device: torch.device,
+    num_key_value_heads: int | None,
+    qassmax: bool,
+    self_attn: bool,
+) -> None:
+    channels = 8
+    module = Attention(
+        channels=channels,
+        num_query_heads=4,
+        num_key_value_heads=num_key_value_heads,
+        query_scaling=QASSMax(channels // 4, num_heads=4, device=device)
+        if qassmax
+        else None,
+        device=device,
+    )
+    query = torch.randn(2, 3, channels, device=device)
+    key_value = (
+        None if self_attn else torch.randn(2, 5, channels, device=device)
+    )
+
+    expected = module(query=query, key_value=key_value)
+    out = fullgraph(module)(query=query, key_value=key_value)
+    torch.testing.assert_close(out, expected)
+
+
+@withCUDA
+def test_attention_compile_key_value_cache(device: torch.device) -> None:
+    module = Attention(channels=8, num_query_heads=2, device=device)
+    query = torch.randn(2, 3, 8, device=device)
+    key_value = torch.randn(2, 5, 8, device=device)
+
+    expected, expected_kv = module(
+        query=query, key_value=key_value, return_key_value=True
+    )
+    out, kv = fullgraph(module)(
+        query=query, key_value=key_value, return_key_value=True
+    )
+    torch.testing.assert_close(out, expected)
+    torch.testing.assert_close(kv.key, expected_kv.key)
+    torch.testing.assert_close(kv.value, expected_kv.value)
+
+    # Replaying the cached projections also compiles without graph breaks.
+    expected = module(query=query, key_value=expected_kv)
+    out = fullgraph(module)(query=query, key_value=kv)
+    torch.testing.assert_close(out, expected)
+
+
+@withCUDA
+@pytest.mark.parametrize(
+    ("qassmax", "masking"),
+    [
+        (False, None),
+        (True, None),
+        (False, "seqused"),
+        (True, "attn_mask"),
+    ],
+)
+def test_transformer_block_compile(
+    device: torch.device,
+    qassmax: bool,
+    masking: str | None,
+) -> None:
+    channels = 8
+    module = TransformerBlock(
+        channels=channels,
+        num_query_heads=2,
+        mlp=torch.nn.Identity(),
+        query_scaling=QASSMax(channels // 2, num_heads=2, device=device)
+        if qassmax
+        else None,
+        device=device,
+    )
+    query = torch.randn(2, 3, channels, device=device)
+    key_value = torch.randn(2, 5, channels, device=device)
+    attn_mask = seqused = None
+    if masking == "attn_mask":
+        attn_mask = torch.ones(2, 1, 3, 5, dtype=torch.bool, device=device)
+        attn_mask[..., 1:] = torch.randint(
+            0, 2, (2, 1, 3, 4), dtype=torch.bool, device=device
+        )
+    elif masking == "seqused":
+        seqused = torch.tensor([3, 1], dtype=torch.int32, device=device)
+
+    expected = module(
+        query=query,
+        key_value=key_value,
+        seqused_key_value=seqused,
+        attn_mask=attn_mask,
+    )
+    out = fullgraph(module)(
+        query=query,
+        key_value=key_value,
+        seqused_key_value=seqused,
+        attn_mask=attn_mask,
+    )
+    torch.testing.assert_close(out, expected)
+
+
+@withCUDA
+@pytest.mark.parametrize("self_attn", [False, True])
+def test_induced_transformer_block_compile(
+    device: torch.device,
+    self_attn: bool,
+) -> None:
+    channels = 8
+    module = InducedTransformerBlock(
+        channels=channels,
+        num_inducing_points=4,
+        inducing_block=TransformerBlock(
+            channels=channels,
+            num_query_heads=2,
+            mlp=torch.nn.Identity(),
+            query_scaling=QASSMax(channels // 2, num_heads=2, device=device),
+            device=device,
+        ),
+        output_block=TransformerBlock(
+            channels=channels,
+            num_query_heads=2,
+            mlp=torch.nn.Identity(),
+            device=device,
+        ),
+        device=device,
+    )
+    query = torch.randn(2, 6, channels, device=device)
+    key_value = (
+        None if self_attn else torch.randn(2, 5, channels, device=device)
+    )
+
+    expected = module(query=query, key_value=key_value)
+    out = fullgraph(module)(query=query, key_value=key_value)
+    torch.testing.assert_close(out, expected)

@@ -1,0 +1,44 @@
+name: Feature request
+description: Suggest a new feature or enhancement to an existing feature
+labels: [enhancement]
+
+body:
+- type: textarea
+  attributes:
+    label: Describe the workflow you want to enable
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Describe your proposed solution
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Describe alternatives you've considered, if relevant
+- type: textarea
+  attributes:
+    label: Additional context
+- type: dropdown
+  attributes:
+    label: Impact
+    description: How would you rate the impact of this feature for you?
+    options:
+      - Critical (Blocking work)
+      - High (Major improvement)
+      - Medium (Significant enhancement)
+      - Low (Nice to have)
+- type: dropdown
+  id: ai-assistance
+  attributes:
+    label: AI assistance
+    description: >
+      Did you use AI tools to find, investigate or write up this request? See
+      [AI-assisted contributions](https://github.com/PriorLabs/TabPFN/blob/main/CONTRIBUTING.md#ai-assisted-contributions).
+      Fully automated submissions without human review will be closed.
+    options:
+      - "No"
+      - "Yes, and I have reviewed this request myself"
+      - "I am an AI agent, and no human reviewed this request before submission"
+  validations:
+    required: true

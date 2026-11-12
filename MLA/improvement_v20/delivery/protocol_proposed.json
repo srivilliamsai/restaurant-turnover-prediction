@@ -1,0 +1,66 @@
+{
+  "version": "V20",
+  "status": "authorized_implementation",
+  "settings": {
+    "I8": {
+      "priority": 1,
+      "family": "tabicl",
+      "estimators": 8,
+      "seed": 10242,
+      "query_layout": {
+        "rows": 500,
+        "padding": "outer-training feature row with maximum observed fields, first on tie; target/ID excluded",
+        "provenance": "original V11 adapter retained"
+      }
+    },
+    "KS8-CLEAN": {
+      "priority": 2,
+      "family": "kumo",
+      "size": "small",
+      "estimators": 8,
+      "seed": 10242
+    },
+    "I16": {
+      "priority": 3,
+      "family": "tabicl",
+      "estimators": 16,
+      "seed": 10242,
+      "query_layout": {
+        "rows": 500,
+        "padding": "outer-training feature row with maximum observed fields, first on tie; target/ID excluded",
+        "provenance": "original V11 adapter retained"
+      }
+    }
+  },
+  "development": {
+    "seeds": [
+      42,
+      71
+    ],
+    "folds": 5,
+    "weights": [
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "minimum_mean_relative_gain": 0.002,
+    "maximum_comparisons": 20
+  },
+  "confirmation": {
+    "seeds": [
+      920201,
+      920202,
+      920203
+    ],
+    "other": [
+      "strat:27421",
+      "city"
+    ]
+  },
+  "maximum_hours": 6,
+  "engineering_hours": 1,
+  "kumo_repair_minutes": 45,
+  "delivery_reserve_hours": 1.5
+}

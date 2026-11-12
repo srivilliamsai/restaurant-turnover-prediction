@@ -1,0 +1,589 @@
+{
+  "status": "PASS",
+  "checked_at_IST": "2026-10-29T18:12:10.058778+05:30",
+  "scope": "Planning evidence. No turnover-model fits, new checkpoints, GPU allocations or portal actions.",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1"
+  },
+  "script_sha256": "fd4a9c58aadeae4ec4a69d3a22788f8c562faa8c52cd630d253876842b9c717d",
+  "input_sha256": {
+    "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+    "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+    "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+    "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+  },
+  "scored_reference_sha256": {
+    "improvement_v21/reference/scored_v14.csv": "39d49f79beb8549d04ffc78d134aad2407dc5e73914dc3c30e8bb162a3c0ba05",
+    "improvement_v21/reference/scored_v14.ipynb": "86fae4ea97d6fd35c2ed485c60f26f02c98fccb3cbeda9a10228cc48e788318e"
+  },
+  "training_rows": 3493,
+  "test_rows": 500,
+  "predictor_count": 32,
+  "exact_train_predictor_duplicates": 0,
+  "exact_test_predictor_duplicates": 0,
+  "exact_train_test_predictor_matches": 0,
+  "numeric_shift": {
+    "Facebook Popularity Quotient": {
+      "train_mean": 77.9387153800825,
+      "test_mean": 77.54123999999999,
+      "train_missing": 99,
+      "test_missing": 0,
+      "KS": 0.052219210371243385,
+      "train_observed": 3394,
+      "test_observed": 500
+    },
+    "Instagram Popularity Quotient": {
+      "train_mean": 74.40468431771895,
+      "test_mean": 74.75326000000001,
+      "train_missing": 56,
+      "test_missing": 0,
+      "KS": 0.04916089613034613,
+      "train_observed": 3437,
+      "test_observed": 500
+    },
+    "Fire Audit": {
+      "train_mean": 0.7887202977383339,
+      "test_mean": 0.814,
+      "train_missing": 0,
+      "test_missing": 0,
+      "KS": 0.025279702261666204,
+      "train_observed": 3493,
+      "test_observed": 500
+    },
+    "Liquor License Obtained": {
+      "train_mean": 0.9882622387632408,
+      "test_mean": 0.986,
+      "train_missing": 0,
+      "test_missing": 0,
+      "KS": 0.002262238763240767,
+      "train_observed": 3493,
+      "test_observed": 500
+    },
+    "Situated in a Multi Complex": {
+      "train_mean": 0.8081878041797882,
+      "test_mean": 0.788,
+      "train_missing": 0,
+      "test_missing": 0,
+      "KS": 0.020187804179788132,
+      "train_observed": 3493,
+      "test_observed": 500
+    },
+    "Dedicated Parking": {
+      "train_mean": 0.8018894932722588,
+      "test_mean": 0.808,
+      "train_missing": 0,
+      "test_missing": 0,
+      "KS": 0.006110506727741188,
+      "train_observed": 3493,
+      "test_observed": 500
+    },
+    "Open Sitting Available": {
+      "train_mean": 0.8001717721156599,
+      "test_mean": 0.804,
+      "train_missing": 0,
+      "test_missing": 0,
+      "KS": 0.0038282278843400908,
+      "train_observed": 3493,
+      "test_observed": 500
+    },
+    "Resturant Tier": {
+      "train_mean": 1.9265389082462254,
+      "test_mean": 1.932,
+      "train_missing": 49,
+      "test_missing": 0,
+      "KS": 0.005461091753774669,
+      "train_observed": 3444,
+      "test_observed": 500
+    },
+    "Restaurant Zomato Rating": {
+      "train_mean": 2.696535929000859,
+      "test_mean": 2.704,
+      "train_missing": 0,
+      "test_missing": 0,
+      "KS": 0.015778986544517593,
+      "train_observed": 3493,
+      "test_observed": 500
+    },
+    "Restaurant City Tier": {
+      "train_mean": 0.30146006298310907,
+      "test_mean": 0.292,
+      "train_missing": 0,
+      "test_missing": 0,
+      "KS": 0.009460062983109085,
+      "train_observed": 3493,
+      "test_observed": 500
+    },
+    "Order Wait Time": {
+      "train_mean": 5.509590609791011,
+      "test_mean": 5.564,
+      "train_missing": 0,
+      "test_missing": 0,
+      "KS": 0.025288290867449215,
+      "train_observed": 3493,
+      "test_observed": 500
+    },
+    "Staff Responsivness": {
+      "train_mean": 4.538505582593759,
+      "test_mean": 4.574,
+      "train_missing": 0,
+      "test_missing": 0,
+      "KS": 0.014494131119381581,
+      "train_observed": 3493,
+      "test_observed": 500
+    },
+    "Value for Money": {
+      "train_mean": 4.526481534497567,
+      "test_mean": 4.512,
+      "train_missing": 0,
+      "test_missing": 0,
+      "KS": 0.026771829373031797,
+      "train_observed": 3493,
+      "test_observed": 500
+    },
+    "Hygiene Rating": {
+      "train_mean": 4.661895219009447,
+      "test_mean": 4.632,
+      "train_missing": 0,
+      "test_missing": 0,
+      "KS": 0.026501002004008067,
+      "train_observed": 3493,
+      "test_observed": 500
+    },
+    "Food Rating": {
+      "train_mean": 7.522759805324935,
+      "test_mean": 7.468,
+      "train_missing": 0,
+      "test_missing": 0,
+      "KS": 0.022925279129687892,
+      "train_observed": 3493,
+      "test_observed": 500
+    },
+    "Overall Restaurant Rating": {
+      "train_mean": 8.479427003962206,
+      "test_mean": 8.469957081545065,
+      "train_missing": 212,
+      "test_missing": 34,
+      "KS": 0.019518020911137482,
+      "train_observed": 3281,
+      "test_observed": 466
+    },
+    "Live Music Rating": {
+      "train_mean": 4.01282991202346,
+      "test_mean": 4.032663316582915,
+      "train_missing": 765,
+      "test_missing": 102,
+      "KS": 0.01336779203937577,
+      "train_observed": 2728,
+      "test_observed": 398
+    },
+    "Comedy Gigs Rating": {
+      "train_mean": 2.9326732673267326,
+      "test_mean": 3.0153846153846153,
+      "train_missing": 2483,
+      "test_missing": 370,
+      "KS": 0.07996953541508,
+      "train_observed": 1010,
+      "test_observed": 130
+    },
+    "Value Deals Rating": {
+      "train_mean": 3.6552162849872776,
+      "test_mean": 3.5217391304347827,
+      "train_missing": 2707,
+      "test_missing": 385,
+      "KS": 0.06470848545193052,
+      "train_observed": 786,
+      "test_observed": 115
+    },
+    "Live Sports Rating": {
+      "train_mean": 3.5902439024390245,
+      "test_mean": 3.689655172413793,
+      "train_missing": 3288,
+      "test_missing": 471,
+      "KS": 0.10361648444070648,
+      "train_observed": 205,
+      "test_observed": 29
+    },
+    "Ambience": {
+      "train_mean": 6.423010380622838,
+      "test_mean": 6.372,
+      "train_missing": 25,
+      "test_missing": 0,
+      "KS": 0.02225374855824691,
+      "train_observed": 3468,
+      "test_observed": 500
+    },
+    "Lively": {
+      "train_mean": 6.874892642427713,
+      "test_mean": 6.778,
+      "train_missing": 0,
+      "test_missing": 0,
+      "KS": 0.03064300028628686,
+      "train_observed": 3493,
+      "test_observed": 500
+    },
+    "Service": {
+      "train_mean": 4.546807901517321,
+      "test_mean": 5.364,
+      "train_missing": 0,
+      "test_missing": 0,
+      "KS": 0.18937875751503008,
+      "train_observed": 3493,
+      "test_observed": 500
+    },
+    "Comfortablility": {
+      "train_mean": 3.231319782421987,
+      "test_mean": 4.26,
+      "train_missing": 0,
+      "test_missing": 0,
+      "KS": 0.22799713713140562,
+      "train_observed": 3493,
+      "test_observed": 500
+    },
+    "Privacy": {
+      "train_mean": 6.275121671915259,
+      "test_mean": 6.202,
+      "train_missing": 0,
+      "test_missing": 0,
+      "KS": 0.024289722301746364,
+      "train_observed": 3493,
+      "test_observed": 500
+    }
+  },
+  "V14_control_metrics": {
+    "42": {
+      "rmse_INR": 19649033.55616177,
+      "tail_gt80M_rows": 48,
+      "tail_gt80M_squared_error_share": 0.6814448422008784,
+      "largest_five_squared_error_share": 0.3484374612409716,
+      "largest_five_ids": [
+        62180,
+        61238,
+        60780,
+        61760,
+        60501
+      ]
+    },
+    "71": {
+      "rmse_INR": 19649905.454410896,
+      "tail_gt80M_rows": 48,
+      "tail_gt80M_squared_error_share": 0.6810383553555371,
+      "largest_five_squared_error_share": 0.34841317666114546,
+      "largest_five_ids": [
+        62180,
+        61238,
+        60780,
+        61760,
+        60501
+      ]
+    }
+  },
+  "verified_control_fold_outputs": [
+    {
+      "file": "improvement_v21/provenance/v14_cache/P35_8_42_fold0.npz",
+      "sha256": "70db217f5351f068c050a5fc55b141c6157ae254fb5dbcf9205b03c1a811bf4b"
+    },
+    {
+      "file": "improvement_v21/provenance/v14_cache/P35_8_42_fold1.npz",
+      "sha256": "1a2c95f89a92391c6ea0d5f031a8b43a3250091d438bc6bcb36e9ba859524c2a"
+    },
+    {
+      "file": "improvement_v21/provenance/v14_cache/P35_8_42_fold2.npz",
+      "sha256": "fe34e2e395b71919f6b07bd6f1f6cd75db112a11100db913ac1e15809f11d1a9"
+    },
+    {
+      "file": "improvement_v21/provenance/v14_cache/P35_8_42_fold3.npz",
+      "sha256": "704af5643de727ee92506109a23039b774e6b4fed0dc955fe5752e26fc538611"
+    },
+    {
+      "file": "improvement_v21/provenance/v14_cache/P35_8_42_fold4.npz",
+      "sha256": "c060831220c4d941f8ecfa50d405f78c4e07eaed15cb3c36cd3673a646ab0467"
+    },
+    {
+      "file": "improvement_v21/provenance/v14_cache/P35_8_71_fold0.npz",
+      "sha256": "3ed7fcd64a6d0c79f45e28f6b34fce6f9c2f4c9fbd018aeb6a19536cd6583326"
+    },
+    {
+      "file": "improvement_v21/provenance/v14_cache/P35_8_71_fold1.npz",
+      "sha256": "26a386c7053ee792ee60e9fb448e1494a355b2689c3b05ac42ed8208a5cef1a7"
+    },
+    {
+      "file": "improvement_v21/provenance/v14_cache/P35_8_71_fold2.npz",
+      "sha256": "2d64187394ebdcdde8229022c630fe7d8f226570a69b31bfc47c5c0ba719ad2c"
+    },
+    {
+      "file": "improvement_v21/provenance/v14_cache/P35_8_71_fold3.npz",
+      "sha256": "dce0e2ee7dc88ef1cbd2c4003c661c817ce73be0b48bc94f4df0f1f4a27cb55f"
+    },
+    {
+      "file": "improvement_v21/provenance/v14_cache/P35_8_71_fold4.npz",
+      "sha256": "59439f07a93f0a024c5acca6750f8c8a02ffd7c7540684fb67811bb08ab26ec7"
+    }
+  ],
+  "sampling_sensitivity": {
+    "draws": 10000,
+    "sample_size": 500,
+    "seed": 2202,
+    "RMSE_INR_quantiles": {
+      "p01": 11690588.288584564,
+      "p05": 12805566.254290968,
+      "p50": 18808946.703461897,
+      "p95": 26573912.734661877,
+      "p99": 29332871.70046875
+    },
+    "fraction_at_or_below_historical_portal": 0.0112,
+    "limitation": "Illustrative sampling of fixed assignment-42 OOF residuals only. Not a hidden-test estimate, rank forecast, confidence interval, or identification of the portal sampling mechanism."
+  },
+  "domain_classifier": {
+    "protocol": "Five stratified held-out domain folds, seed 2201; fold-fitted imputation/scaling/vocabulary. Domain labels are train/test membership. IDs and turnover excluded. Fixed recipes, no tuning.",
+    "views": {
+      "ALL": {
+        "logistic": {
+          "OOF_AUC": 0.6881906670483826,
+          "fold_AUC": [
+            0.6755364806866953,
+            0.7112875536480687,
+            0.7312303290414879,
+            0.6624498567335243,
+            0.6647564469914041
+          ]
+        },
+        "hist_gradient_boosting": {
+          "OOF_AUC": 0.6829304322931578,
+          "fold_AUC": [
+            0.6824606580829757,
+            0.7098283261802576,
+            0.7026037195994278,
+            0.6719914040114614,
+            0.6556876790830946
+          ]
+        }
+      },
+      "NO_SC": {
+        "logistic": {
+          "OOF_AUC": 0.525481820784426,
+          "fold_AUC": [
+            0.4980829756795422,
+            0.5212589413447782,
+            0.5482546494992846,
+            0.5177507163323782,
+            0.5432091690544413
+          ]
+        },
+        "hist_gradient_boosting": {
+          "OOF_AUC": 0.4825233323790438,
+          "fold_AUC": [
+            0.4731616595135908,
+            0.4808011444921316,
+            0.4884692417739628,
+            0.4744985673352435,
+            0.49616045845272205
+          ]
+        }
+      },
+      "SC_ONLY": {
+        "logistic": {
+          "OOF_AUC": 0.6921528771829373,
+          "fold_AUC": [
+            0.6871673819742489,
+            0.7241201716738198,
+            0.7148640915593706,
+            0.6878939828080229,
+            0.6554871060171921
+          ]
+        },
+        "hist_gradient_boosting": {
+          "OOF_AUC": 0.6936965359290008,
+          "fold_AUC": [
+            0.704585121602289,
+            0.7233690987124464,
+            0.7062160228898426,
+            0.6981590257879656,
+            0.6710601719197707
+          ]
+        }
+      },
+      "MISSINGNESS_ONLY": {
+        "logistic": {
+          "OOF_AUC": 0.5144291440022903,
+          "fold_AUC": [
+            0.5006723891273247,
+            0.49747496423462084,
+            0.5329041487839771,
+            0.5361962750716333,
+            0.5182449856733524
+          ]
+        },
+        "hist_gradient_boosting": {
+          "OOF_AUC": 0.5189768107643858,
+          "fold_AUC": [
+            0.503755364806867,
+            0.5028898426323319,
+            0.5312517882689557,
+            0.5510744985673353,
+            0.5479799426934098
+          ]
+        }
+      }
+    },
+    "prediction_file": "domain_predictions.npz",
+    "prediction_sha256": "59d7b5fe0d105b2fb598357329b6faa6d957332f74e91459062a2ba0143ca8c6",
+    "limitation": "Domain separability measures observed feature differences, not target error, label-preserving corruption, or the validity of feature removal. These diagnostics cannot validate covariate-shift assumptions."
+  },
+  "historical_screening": [
+    {
+      "version": "15_retry1",
+      "comparisons": 20,
+      "best": {
+        "name": "N32-T100",
+        "route": "P35-replacement",
+        "weight": 0.5,
+        "effective_new_share": 0.375,
+        "rmse_42": 19645329.984029375,
+        "gain_42": 3703.5721323937178,
+        "relative_gain_42": 0.0001884862236001,
+        "rmse_71": 19644633.839852255,
+        "gain_71": 5271.6145586408675,
+        "relative_gain_71": 0.0002682768408668,
+        "mean_relative_gain": 0.0002283815322334
+      },
+      "screening_sha256": "06ebb245b7424fb58003c03ecf641b37f20185c9bd8b0014b21b13ad8b093c54",
+      "independent_review_sha256": "016b8d6eb52138e04fd2f220f7c63ef077013292204fc6c4823b2ca05a8ed418",
+      "review_status": "PASS",
+      "qualification_floor_fraction": 0.002
+    },
+    {
+      "version": "16",
+      "comparisons": 5,
+      "best": {
+        "name": "TM32-PLE",
+        "route": "V14-blend",
+        "weight": 0.1,
+        "effective_new_share": 0.1,
+        "rmse_42": 19645892.932171565,
+        "gain_42": 3140.6239902041852,
+        "relative_gain_42": 0.0001598360540851,
+        "rmse_71": 19640533.620240767,
+        "gain_71": 9371.83417012915,
+        "relative_gain_71": 0.0004769404204957,
+        "mean_relative_gain": 0.0003183882372904
+      },
+      "screening_sha256": "87a07521519781e7dfcd2127d52cba74df393e75314539d907851a5030ddb63a",
+      "independent_review_sha256": "2b8a932b956210feb8085e37298d68edeea3ec0ba35a894faf773b18318e00c7",
+      "review_status": "PASS",
+      "qualification_floor_fraction": 0.002
+    },
+    {
+      "version": "17",
+      "comparisons": 5,
+      "best": {
+        "name": "NOR15",
+        "route": "V14-blend",
+        "weight": 0.5,
+        "effective_new_share": 0.5,
+        "rmse_42": 19626495.839896,
+        "gain_42": 22537.716265767813,
+        "relative_gain_42": 0.0011470139842425,
+        "rmse_71": 19634585.922984365,
+        "gain_71": 15319.531426530331,
+        "relative_gain_71": 0.0007796236710691,
+        "mean_relative_gain": 0.0009633188276558
+      },
+      "screening_sha256": "6d18d1154de487ede1b8a15ecf181614ecdb4c6a295a04b47b0c198de1ad2c58",
+      "independent_review_sha256": "d4e5736671dcf8da42f8eaa09b60c1a4e1a3bfc91bd6bc77c103da6ce59643ff",
+      "review_status": "PASS",
+      "qualification_floor_fraction": 0.002
+    },
+    {
+      "version": "18",
+      "comparisons": 10,
+      "best": {
+        "name": "FT512",
+        "route": "FT512",
+        "weight": 0.5,
+        "effective_new_share": 0.5,
+        "components": 1,
+        "rmse_42": 19668808.122767005,
+        "gain_42": -19774.56660523638,
+        "relative_gain_42": -0.0010063887645525,
+        "rmse_71": 19614441.41119483,
+        "gain_71": 35464.04321606457,
+        "relative_gain_71": 0.0018047945980373,
+        "mean_relative_gain": 0.0003992029167423
+      },
+      "screening_sha256": "26dc085095b60e2643ec2bc8620aeaa85ae11a68cada2b56f311339eedb2e8cd",
+      "independent_review_sha256": "3b06392740bb78aa0fc77945b6503185a5d98acb120948fc2249d2eabbf5d537",
+      "review_status": "PASS",
+      "qualification_floor_fraction": 0.002
+    },
+    {
+      "version": "19",
+      "comparisons": 15,
+      "best": {
+        "name": "C8",
+        "route": "C8",
+        "weight": 0.25,
+        "effective_new_share": 0.25,
+        "components": 1,
+        "rmse_42": 19647339.00802136,
+        "gain_42": 1694.548140410334,
+        "relative_gain_42": 8.624078815718333e-05,
+        "rmse_71": 19646415.48079871,
+        "gain_71": 3489.9736121818423,
+        "relative_gain_71": 0.0001776076541578,
+        "mean_relative_gain": 0.0001319242211575
+      },
+      "screening_sha256": "47dcd3c8e374e524b4da05cf2a4f6a8efd808d8e0fb56ddcb723af5104210ba7",
+      "independent_review_sha256": "14e6eca8dd9ef3a6774bba2af10552c4b5b183bb86ec9b6270d795bd563e3bd4",
+      "review_status": "PASS",
+      "qualification_floor_fraction": 0.002
+    },
+    {
+      "version": "20",
+      "comparisons": 20,
+      "best": {
+        "name": "I16",
+        "route": "I16",
+        "weight": 0.1,
+        "effective_new_share": 0.1,
+        "components": 1,
+        "rmse_42": 19646951.354386657,
+        "gain_42": 2082.2017751149833,
+        "relative_gain_42": 0.0001059696788222,
+        "rmse_71": 19650950.641239166,
+        "gain_71": -1045.1868282705543,
+        "relative_gain_71": -5.319042530232313e-05,
+        "mean_relative_gain": 2.6389626759986543e-05
+      },
+      "screening_sha256": "ce92020ccfad7748023a63102916c5deaa839ccf1ec90e533fd172e97d4fe293",
+      "independent_review_sha256": "08102e10bd30a42a84962f1337ce351fba0798d4e553fbccc1453b2c94894424",
+      "review_status": "PASS",
+      "qualification_floor_fraction": 0.002
+    },
+    {
+      "version": "21",
+      "comparisons": 6,
+      "best": {
+        "name": "S",
+        "route": "P35-replacement",
+        "weight": 0.25,
+        "effective_new_share": 0.1875,
+        "rmse_42": 19646252.058116,
+        "gain_42": 2781.498045768589,
+        "relative_gain_42": 0.0001415590256802,
+        "rmse_71": 19650776.66937527,
+        "gain_71": -871.2149643786252,
+        "relative_gain_71": -4.433685273447766e-05,
+        "mean_relative_gain": 4.861108647288084e-05
+      },
+      "screening_sha256": "e3619e108a4e4ec575e5be7906617b27d0e9b402c3a0ab47f61f654275964ffd",
+      "independent_review_sha256": "2fff1b4ad53a4fad6ae230919dd818a9ee2140d16108843ac82c3d03dfe1019b",
+      "review_status": "PASS",
+      "qualification_floor_fraction": 0.002
+    }
+  ],
+  "elapsed_seconds": 5.158109167008661
+}

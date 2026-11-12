@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checks": [
+    "All 35 V9 and 35 V14 fold witnesses and original inputs verified.",
+    "Group counts, strength-20 shrinkage and unseen-group fallback reconstructed independently.",
+    "Exact feature counts, six comparisons and fixed-quarter V9 replacement algebra verified.",
+    "Development floor, both-assignment gains, ranking, bootstrap and stress checks enforced.",
+    "Substantive query-order dependence and twelve malformed CSV cases rejected."
+  ],
+  "new_models_fitted": 0
+}

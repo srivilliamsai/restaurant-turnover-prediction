@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "feature_views": {
+    "P35-SC38": 38
+  },
+  "malformed_dates": "missing opening year and month",
+  "target_id_isolation": true,
+  "unknown_categories": true,
+  "all_training_rows_retained": true,
+  "exact_two_column_projection": true,
+  "removed_feature_mutation_invariance": true,
+  "query_independence": true,
+  "validation_target_changes_do_not_change_training_targets": true,
+  "invalid_checkpoints_rejected": true
+}

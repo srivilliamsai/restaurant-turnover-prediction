@@ -1,0 +1,18 @@
+{
+  "FROZEN": [
+    {
+      "name": "tabpfn_raw_v7",
+      "mode": "ensemble16",
+      "group": "tabpfn",
+      "family": "tabpfn",
+      "weight": 0.5,
+      "rmse_42": 19731241.65831727,
+      "gain_42": 84572.11934881657,
+      "rmse_71": 19733020.017403986,
+      "gain_71": 57759.32214908674,
+      "mean_rmse": 19732130.83786063
+    }
+  ],
+  "lock_sha256": "0be8a79c77c85b6b5c29a3efcb238e2d8d9d147e1ae2025e8e218a5246ad9ba5",
+  "development_configurations": 36
+}

@@ -1,0 +1,26 @@
+{
+  "repo_id": "stable-ai/LimiX-2",
+  "revision": "de07b679e74a41b50b9de18251a8fa245e537440",
+  "files": [
+    {
+      "rfilename": "LICENSE",
+      "blobId": "593cdb86c49c634572ca740dc14512d97c7469c7",
+      "size": 10348
+    },
+    {
+      "rfilename": "LimiX-2.ckpt",
+      "blobId": "c52316f4e14853c3f22065cb489dd4ed40b7410a",
+      "size": 1625774719,
+      "lfs": {
+        "sha256": "ed01f7a0a18d25451bc9d1058b479ba6b68048aa1ebde06156c8fcfaf8b8fe81",
+        "size": 1625774719,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "e8945291f947f29304bbb958c417ba24194696b0",
+      "size": 27164
+    }
+  ]
+}

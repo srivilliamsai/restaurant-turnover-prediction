@@ -1,0 +1,5 @@
+{
+  "source_metadata_note": "The inherited audit ranking description mentions setting-name tie order. Actual V18 selection, accepted protocol and independent reconstruction use descending mean gain, lower new weight, fewer components, then route ID. Raw audit metadata is retained.",
+  "early_checkpoint_recovery_note": "Best-checkpoint files are saved through the public API during training. An interrupted inner fit is replayed from its original checkpoint because public saved state does not include the complete selection history; all elapsed/recomputed work is charged.",
+  "deadline_override": "User instructed start and complete the processes without waiting for further deadline information; this run uses the eighteen-hour cap, with a three-hour delivery reserve."
+}

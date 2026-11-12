@@ -1,0 +1,470 @@
+[
+  {
+    "name": "P35-SC38_P35-replacement@0.25",
+    "scheme": "42",
+    "net_squared_error_reduction": 1008604798027452.5,
+    "largest_positive_ten_rows": [
+      60167,
+      61238,
+      61867,
+      62150,
+      61240,
+      62409,
+      60780,
+      60772,
+      62153,
+      61984
+    ],
+    "top_ten_positive_reduction": 561758824614484.4,
+    "tail_gt80M_reduction": 214214148511379.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 9261.062107672915,
+    "exclusion_is_selection_criterion": false,
+    "survey_bin_prediction_changes": [
+      {
+        "column": "Service",
+        "bin": "0-3",
+        "rows": 927,
+        "mean_prediction_change_INR": 39977.41983935787,
+        "mean_absolute_prediction_change_INR": 100118.22133778484,
+        "used_for_selection": false
+      },
+      {
+        "column": "Service",
+        "bin": "4-6",
+        "rows": 2068,
+        "mean_prediction_change_INR": -1709.2523268711757,
+        "mean_absolute_prediction_change_INR": 87784.23959295423,
+        "used_for_selection": false
+      },
+      {
+        "column": "Service",
+        "bin": "7-10",
+        "rows": 498,
+        "mean_prediction_change_INR": -20788.484073422354,
+        "mean_absolute_prediction_change_INR": 102713.0420291157,
+        "used_for_selection": false
+      },
+      {
+        "column": "Comfortablility",
+        "bin": "0-3",
+        "rows": 1991,
+        "mean_prediction_change_INR": -28564.37839352292,
+        "mean_absolute_prediction_change_INR": 90029.94143173819,
+        "used_for_selection": false
+      },
+      {
+        "column": "Comfortablility",
+        "bin": "4-6",
+        "rows": 1296,
+        "mean_prediction_change_INR": 48015.49021995955,
+        "mean_absolute_prediction_change_INR": 92200.4171904209,
+        "used_for_selection": false
+      },
+      {
+        "column": "Comfortablility",
+        "bin": "7-10",
+        "rows": 206,
+        "mean_prediction_change_INR": 86481.89983974444,
+        "mean_absolute_prediction_change_INR": 129889.02679358875,
+        "used_for_selection": false
+      }
+    ]
+  },
+  {
+    "name": "P35-SC38_P35-replacement@0.25",
+    "scheme": "71",
+    "net_squared_error_reduction": 989370234647851.9,
+    "largest_positive_ten_rows": [
+      60167,
+      61238,
+      60928,
+      60065,
+      62153,
+      62561,
+      62180,
+      62876,
+      60772,
+      60962
+    ],
+    "top_ten_positive_reduction": 743669585617872.4,
+    "tail_gt80M_reduction": 575497471878515.9,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 6955.689534490928,
+    "exclusion_is_selection_criterion": false,
+    "survey_bin_prediction_changes": [
+      {
+        "column": "Service",
+        "bin": "0-3",
+        "rows": 927,
+        "mean_prediction_change_INR": 46503.121544060836,
+        "mean_absolute_prediction_change_INR": 98940.49785120062,
+        "used_for_selection": false
+      },
+      {
+        "column": "Service",
+        "bin": "4-6",
+        "rows": 2068,
+        "mean_prediction_change_INR": 635.4286695358918,
+        "mean_absolute_prediction_change_INR": 84224.66759617186,
+        "used_for_selection": false
+      },
+      {
+        "column": "Service",
+        "bin": "7-10",
+        "rows": 498,
+        "mean_prediction_change_INR": -22565.457810756005,
+        "mean_absolute_prediction_change_INR": 91307.31136912765,
+        "used_for_selection": false
+      },
+      {
+        "column": "Comfortablility",
+        "bin": "0-3",
+        "rows": 1991,
+        "mean_prediction_change_INR": -23564.834821891087,
+        "mean_absolute_prediction_change_INR": 84333.7357563832,
+        "used_for_selection": false
+      },
+      {
+        "column": "Comfortablility",
+        "bin": "4-6",
+        "rows": 1296,
+        "mean_prediction_change_INR": 45577.784880414845,
+        "mean_absolute_prediction_change_INR": 89694.73420611312,
+        "used_for_selection": false
+      },
+      {
+        "column": "Comfortablility",
+        "bin": "7-10",
+        "rows": 206,
+        "mean_prediction_change_INR": 102105.04415318271,
+        "mean_absolute_prediction_change_INR": 132100.25114898244,
+        "used_for_selection": false
+      }
+    ]
+  },
+  {
+    "name": "P35-SC38_P35-replacement@0.5",
+    "scheme": "42",
+    "net_squared_error_reduction": 1902710906334708.0,
+    "largest_positive_ten_rows": [
+      60167,
+      61238,
+      61867,
+      62150,
+      61240,
+      62409,
+      60780,
+      60772,
+      62153,
+      61984
+    ],
+    "top_ten_positive_reduction": 1118162293237786.8,
+    "tail_gt80M_reduction": 426158048914037.6,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 17493.130682617426,
+    "exclusion_is_selection_criterion": false,
+    "survey_bin_prediction_changes": [
+      {
+        "column": "Service",
+        "bin": "0-3",
+        "rows": 927,
+        "mean_prediction_change_INR": 79954.83967871571,
+        "mean_absolute_prediction_change_INR": 200236.44267556982,
+        "used_for_selection": false
+      },
+      {
+        "column": "Service",
+        "bin": "4-6",
+        "rows": 2068,
+        "mean_prediction_change_INR": -3418.5046537422477,
+        "mean_absolute_prediction_change_INR": 175568.47918590857,
+        "used_for_selection": false
+      },
+      {
+        "column": "Service",
+        "bin": "7-10",
+        "rows": 498,
+        "mean_prediction_change_INR": -41576.96814684496,
+        "mean_absolute_prediction_change_INR": 205426.08405823135,
+        "used_for_selection": false
+      },
+      {
+        "column": "Comfortablility",
+        "bin": "0-3",
+        "rows": 1991,
+        "mean_prediction_change_INR": -57128.7567870459,
+        "mean_absolute_prediction_change_INR": 180059.8828634765,
+        "used_for_selection": false
+      },
+      {
+        "column": "Comfortablility",
+        "bin": "4-6",
+        "rows": 1296,
+        "mean_prediction_change_INR": 96030.98043991935,
+        "mean_absolute_prediction_change_INR": 184400.8343808418,
+        "used_for_selection": false
+      },
+      {
+        "column": "Comfortablility",
+        "bin": "7-10",
+        "rows": 206,
+        "mean_prediction_change_INR": 172963.7996794884,
+        "mean_absolute_prediction_change_INR": 259778.053587178,
+        "used_for_selection": false
+      }
+    ]
+  },
+  {
+    "name": "P35-SC38_P35-replacement@0.5",
+    "scheme": "71",
+    "net_squared_error_reduction": 1867049657558889.5,
+    "largest_positive_ten_rows": [
+      60167,
+      61238,
+      60928,
+      60065,
+      62153,
+      62561,
+      62180,
+      62876,
+      60772,
+      60962
+    ],
+    "top_ten_positive_reduction": 1481039184609901.5,
+    "tail_gt80M_reduction": 1147075447782299.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 12906.241460615769,
+    "exclusion_is_selection_criterion": false,
+    "survey_bin_prediction_changes": [
+      {
+        "column": "Service",
+        "bin": "0-3",
+        "rows": 927,
+        "mean_prediction_change_INR": 93006.24308812176,
+        "mean_absolute_prediction_change_INR": 197880.99570240115,
+        "used_for_selection": false
+      },
+      {
+        "column": "Service",
+        "bin": "4-6",
+        "rows": 2068,
+        "mean_prediction_change_INR": 1270.8573390718188,
+        "mean_absolute_prediction_change_INR": 168449.33519234354,
+        "used_for_selection": false
+      },
+      {
+        "column": "Service",
+        "bin": "7-10",
+        "rows": 498,
+        "mean_prediction_change_INR": -45130.915621512504,
+        "mean_absolute_prediction_change_INR": 182614.62273825548,
+        "used_for_selection": false
+      },
+      {
+        "column": "Comfortablility",
+        "bin": "0-3",
+        "rows": 1991,
+        "mean_prediction_change_INR": -47129.66964378217,
+        "mean_absolute_prediction_change_INR": 168667.47151276626,
+        "used_for_selection": false
+      },
+      {
+        "column": "Comfortablility",
+        "bin": "4-6",
+        "rows": 1296,
+        "mean_prediction_change_INR": 91155.56976082952,
+        "mean_absolute_prediction_change_INR": 179389.46841222612,
+        "used_for_selection": false
+      },
+      {
+        "column": "Comfortablility",
+        "bin": "7-10",
+        "rows": 206,
+        "mean_prediction_change_INR": 204210.08830636603,
+        "mean_absolute_prediction_change_INR": 264200.502297965,
+        "used_for_selection": false
+      }
+    ]
+  },
+  {
+    "name": "P35-SC38_P35-replacement@1.0",
+    "scheme": "42",
+    "net_squared_error_reduction": 3347427053788428.0,
+    "largest_positive_ten_rows": [
+      60167,
+      61238,
+      61867,
+      62150,
+      61240,
+      62409,
+      60780,
+      60772,
+      62153,
+      61984
+    ],
+    "top_ten_positive_reduction": 2214903162510866.0,
+    "tail_gt80M_reduction": 843235105393040.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 30864.070963721722,
+    "exclusion_is_selection_criterion": false,
+    "survey_bin_prediction_changes": [
+      {
+        "column": "Service",
+        "bin": "0-3",
+        "rows": 927,
+        "mean_prediction_change_INR": 159909.6793574314,
+        "mean_absolute_prediction_change_INR": 400472.88535113947,
+        "used_for_selection": false
+      },
+      {
+        "column": "Service",
+        "bin": "4-6",
+        "rows": 2068,
+        "mean_prediction_change_INR": -6837.009307484721,
+        "mean_absolute_prediction_change_INR": 351136.9583718173,
+        "used_for_selection": false
+      },
+      {
+        "column": "Service",
+        "bin": "7-10",
+        "rows": 498,
+        "mean_prediction_change_INR": -83153.93629368993,
+        "mean_absolute_prediction_change_INR": 410852.1681164624,
+        "used_for_selection": false
+      },
+      {
+        "column": "Comfortablility",
+        "bin": "0-3",
+        "rows": 1991,
+        "mean_prediction_change_INR": -114257.51357409198,
+        "mean_absolute_prediction_change_INR": 360119.76572695305,
+        "used_for_selection": false
+      },
+      {
+        "column": "Comfortablility",
+        "bin": "4-6",
+        "rows": 1296,
+        "mean_prediction_change_INR": 192061.9608798386,
+        "mean_absolute_prediction_change_INR": 368801.66876168357,
+        "used_for_selection": false
+      },
+      {
+        "column": "Comfortablility",
+        "bin": "7-10",
+        "rows": 206,
+        "mean_prediction_change_INR": 345927.5993589769,
+        "mean_absolute_prediction_change_INR": 519556.10717435624,
+        "used_for_selection": false
+      }
+    ]
+  },
+  {
+    "name": "P35-SC38_P35-replacement@1.0",
+    "scheme": "71",
+    "net_squared_error_reduction": 3287336068170583.0,
+    "largest_positive_ten_rows": [
+      60167,
+      61238,
+      60928,
+      60065,
+      62561,
+      62153,
+      62180,
+      62876,
+      60772,
+      60962
+    ],
+    "top_ten_positive_reduction": 2936878422716678.0,
+    "tail_gt80M_reduction": 2278472911665765.5,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 21787.59573426284,
+    "exclusion_is_selection_criterion": false,
+    "survey_bin_prediction_changes": [
+      {
+        "column": "Service",
+        "bin": "0-3",
+        "rows": 927,
+        "mean_prediction_change_INR": 186012.48617624343,
+        "mean_absolute_prediction_change_INR": 395761.99140480236,
+        "used_for_selection": false
+      },
+      {
+        "column": "Service",
+        "bin": "4-6",
+        "rows": 2068,
+        "mean_prediction_change_INR": 2541.7146781435313,
+        "mean_absolute_prediction_change_INR": 336898.6703846871,
+        "used_for_selection": false
+      },
+      {
+        "column": "Service",
+        "bin": "7-10",
+        "rows": 498,
+        "mean_prediction_change_INR": -90261.83124302456,
+        "mean_absolute_prediction_change_INR": 365229.2454765107,
+        "used_for_selection": false
+      },
+      {
+        "column": "Comfortablility",
+        "bin": "0-3",
+        "rows": 1991,
+        "mean_prediction_change_INR": -94259.33928756438,
+        "mean_absolute_prediction_change_INR": 337334.94302553247,
+        "used_for_selection": false
+      },
+      {
+        "column": "Comfortablility",
+        "bin": "4-6",
+        "rows": 1296,
+        "mean_prediction_change_INR": 182311.13952165897,
+        "mean_absolute_prediction_change_INR": 358778.93682445225,
+        "used_for_selection": false
+      },
+      {
+        "column": "Comfortablility",
+        "bin": "7-10",
+        "rows": 206,
+        "mean_prediction_change_INR": 408420.17661273247,
+        "mean_absolute_prediction_change_INR": 528401.0045959303,
+        "used_for_selection": false
+      }
+    ]
+  }
+]

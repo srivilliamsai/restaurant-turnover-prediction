@@ -1,0 +1,516 @@
+{
+  "status": "PASS",
+  "checked_at_IST": "2026-10-29T16:24:55.506419+05:30",
+  "scope": "Original input checks and saved-prediction reconstruction only; no model fits, installations or runtime allocation.",
+  "script_sha256": "e2816044ee0cc0a66f3b8d4bc0a7990ec1b4d53529419bba08ee3dee1a37b6c6",
+  "inputs": {
+    "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+    "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+    "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+    "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+  },
+  "references": {
+    "improvement_v19/reference/scored_v14.csv": "39d49f79beb8549d04ffc78d134aad2407dc5e73914dc3c30e8bb162a3c0ba05",
+    "improvement_v19/reference/scored_v14.ipynb": "86fae4ea97d6fd35c2ed485c60f26f02c98fccb3cbeda9a10228cc48e788318e"
+  },
+  "training_rows": 3493,
+  "test_rows": 500,
+  "source_predictors": 32,
+  "target_quantiles_INR": {
+    "min": 3500000.0,
+    "p50": 30000000.0,
+    "p95": 57000000.0,
+    "p99": 100000000.0,
+    "max": 400000000.0
+  },
+  "tail_gt80M_rows": 48,
+  "exact_duplicate_predictor_rows_train": 0,
+  "exact_duplicate_predictor_rows_test": 0,
+  "exact_train_test_predictor_matches": 0,
+  "missing_train": {
+    "Facebook Popularity Quotient": 99,
+    "Instagram Popularity Quotient": 56,
+    "Resturant Tier": 49,
+    "Overall Restaurant Rating": 212,
+    "Live Music Rating": 765,
+    "Comedy Gigs Rating": 2483,
+    "Value Deals Rating": 2707,
+    "Live Sports Rating": 3288,
+    "Ambience": 25
+  },
+  "missing_test": {
+    "Overall Restaurant Rating": 34,
+    "Live Music Rating": 102,
+    "Comedy Gigs Rating": 370,
+    "Value Deals Rating": 385,
+    "Live Sports Rating": 471
+  },
+  "covariate_diagnostics": {
+    "numeric_KS_statistics": {
+      "Facebook Popularity Quotient": 0.052219210371243385,
+      "Instagram Popularity Quotient": 0.04916089613034613,
+      "Fire Audit": 0.025279702261666204,
+      "Liquor License Obtained": 0.002262238763240767,
+      "Situated in a Multi Complex": 0.020187804179788132,
+      "Dedicated Parking": 0.006110506727741188,
+      "Open Sitting Available": 0.0038282278843400908,
+      "Resturant Tier": 0.005461091753774669,
+      "Restaurant Zomato Rating": 0.015778986544517593,
+      "Restaurant City Tier": 0.009460062983109085,
+      "Order Wait Time": 0.025288290867449215,
+      "Staff Responsivness": 0.014494131119381581,
+      "Value for Money": 0.026771829373031797,
+      "Hygiene Rating": 0.026501002004008067,
+      "Food Rating": 0.022925279129687892,
+      "Overall Restaurant Rating": 0.019518020911137482,
+      "Live Music Rating": 0.01336779203937577,
+      "Comedy Gigs Rating": 0.07996953541508,
+      "Value Deals Rating": 0.06470848545193052,
+      "Live Sports Rating": 0.10361648444070648,
+      "Ambience": 0.02225374855824691,
+      "Lively": 0.03064300028628686,
+      "Service": 0.18937875751503008,
+      "Comfortablility": 0.22799713713140562,
+      "Privacy": 0.024289722301746364
+    },
+    "categorical_total_variation": {
+      "Cuisine": 0.11366447180074432,
+      "City": 0.20271228170626968,
+      "Restaurant Location": 0.004950472373318041,
+      "Endoresed By": 0.03743028914972803,
+      "Restaurant Type": 0.006137990266246754,
+      "Restaurant Theme": 0.0742513598625823
+    }
+  },
+  "covariate_diagnostics_limitation": "Raw marginal distributions only; these do not identify the hidden target distribution or justify label removal/reweighting.",
+  "verified_fold_outputs": [
+    {
+      "file": "improvement_v19/provenance/v14_cache/P35_8_42_fold0.npz",
+      "sha256": "70db217f5351f068c050a5fc55b141c6157ae254fb5dbcf9205b03c1a811bf4b"
+    },
+    {
+      "file": "improvement_v19/results/cache/C8_42_fold0.npz",
+      "sha256": "b793c697c0b9107a67cb54c789d161b2ef00a71e48a74d2793ff9c25b60eb748"
+    },
+    {
+      "file": "improvement_v19/results/cache/D8_42_fold0.npz",
+      "sha256": "e5779bac06d16533cce96e5af3b35b8cba1a28f100e3c07feef04dc504b9374e"
+    },
+    {
+      "file": "improvement_v19/provenance/v14_cache/P35_8_42_fold1.npz",
+      "sha256": "1a2c95f89a92391c6ea0d5f031a8b43a3250091d438bc6bcb36e9ba859524c2a"
+    },
+    {
+      "file": "improvement_v19/results/cache/C8_42_fold1.npz",
+      "sha256": "f796a3429eeb8e1fe0987e32a45fa862d818bc64ed7b1ce15caad54fd08056fe"
+    },
+    {
+      "file": "improvement_v19/results/cache/D8_42_fold1.npz",
+      "sha256": "abca9b613fbd1f960607a22be211b554734fae15c24ada2be00a652cc68e51ea"
+    },
+    {
+      "file": "improvement_v19/provenance/v14_cache/P35_8_42_fold2.npz",
+      "sha256": "fe34e2e395b71919f6b07bd6f1f6cd75db112a11100db913ac1e15809f11d1a9"
+    },
+    {
+      "file": "improvement_v19/results/cache/C8_42_fold2.npz",
+      "sha256": "167f2358714973cf75448a6c7317c49bf8ed7663180431563bb94cd4de6c7498"
+    },
+    {
+      "file": "improvement_v19/results/cache/D8_42_fold2.npz",
+      "sha256": "c0d4354e97a984d71dd57f34799e8a44e2147d1e385c7d4d1935d72780c7a191"
+    },
+    {
+      "file": "improvement_v19/provenance/v14_cache/P35_8_42_fold3.npz",
+      "sha256": "704af5643de727ee92506109a23039b774e6b4fed0dc955fe5752e26fc538611"
+    },
+    {
+      "file": "improvement_v19/results/cache/C8_42_fold3.npz",
+      "sha256": "5569705c94391e1e79a508628e2ad8cbee215000180fef596bdfc64c55fb900f"
+    },
+    {
+      "file": "improvement_v19/results/cache/D8_42_fold3.npz",
+      "sha256": "a6d19a946131342d88e0f6af52de90f118f4ebeaf4c7999dc500bb5d95490e96"
+    },
+    {
+      "file": "improvement_v19/provenance/v14_cache/P35_8_42_fold4.npz",
+      "sha256": "c060831220c4d941f8ecfa50d405f78c4e07eaed15cb3c36cd3673a646ab0467"
+    },
+    {
+      "file": "improvement_v19/results/cache/C8_42_fold4.npz",
+      "sha256": "0d5df2059c337b9b5a578eab4ded0eb36b3a1401044d0563000343b09ef38a21"
+    },
+    {
+      "file": "improvement_v19/results/cache/D8_42_fold4.npz",
+      "sha256": "9a295bc5466ca2ae7cb9b7970e98c52c58654875d4e613509d51a526d2c4b058"
+    },
+    {
+      "file": "improvement_v19/provenance/v14_cache/P35_8_71_fold0.npz",
+      "sha256": "3ed7fcd64a6d0c79f45e28f6b34fce6f9c2f4c9fbd018aeb6a19536cd6583326"
+    },
+    {
+      "file": "improvement_v19/results/cache/C8_71_fold0.npz",
+      "sha256": "d99167381519bff3e771d40d923a8272c1e82a82fd6c14eeea3e9678f37e33b5"
+    },
+    {
+      "file": "improvement_v19/results/cache/D8_71_fold0.npz",
+      "sha256": "0ceac0c8870d84036f6916967b5cbecb4a5dc1233d88bfdbc3f957aae197abd1"
+    },
+    {
+      "file": "improvement_v19/provenance/v14_cache/P35_8_71_fold1.npz",
+      "sha256": "26a386c7053ee792ee60e9fb448e1494a355b2689c3b05ac42ed8208a5cef1a7"
+    },
+    {
+      "file": "improvement_v19/results/cache/C8_71_fold1.npz",
+      "sha256": "9ea20e64ca10e5dd95ebf4e89f8656a5ba04205b34fbd95b118fcb00c4e07500"
+    },
+    {
+      "file": "improvement_v19/results/cache/D8_71_fold1.npz",
+      "sha256": "54ad8d6f9d0436097353656c6d27540843683b748cefd341829861154edd5f90"
+    },
+    {
+      "file": "improvement_v19/provenance/v14_cache/P35_8_71_fold2.npz",
+      "sha256": "2d64187394ebdcdde8229022c630fe7d8f226570a69b31bfc47c5c0ba719ad2c"
+    },
+    {
+      "file": "improvement_v19/results/cache/C8_71_fold2.npz",
+      "sha256": "3022336727ea286299764f6dc42d5bc9be59cb6c10eca7b9cad0e35f8fb526fe"
+    },
+    {
+      "file": "improvement_v19/results/cache/D8_71_fold2.npz",
+      "sha256": "7b9f82c1040aeba86910dc2a310cc8d7754630ad33ef72c51b86d94df10d4b07"
+    },
+    {
+      "file": "improvement_v19/provenance/v14_cache/P35_8_71_fold3.npz",
+      "sha256": "dce0e2ee7dc88ef1cbd2c4003c661c817ce73be0b48bc94f4df0f1f4a27cb55f"
+    },
+    {
+      "file": "improvement_v19/results/cache/C8_71_fold3.npz",
+      "sha256": "d9d957acd94f0774e5dd5b5a35183b557404a801a81885bc5c3077bcde37f308"
+    },
+    {
+      "file": "improvement_v19/results/cache/D8_71_fold3.npz",
+      "sha256": "1b835a39a4427c818220e5e71f8da08834413c9ca4a8dec84d6371a694cd1850"
+    },
+    {
+      "file": "improvement_v19/provenance/v14_cache/P35_8_71_fold4.npz",
+      "sha256": "59439f07a93f0a024c5acca6750f8c8a02ffd7c7540684fb67811bb08ab26ec7"
+    },
+    {
+      "file": "improvement_v19/results/cache/C8_71_fold4.npz",
+      "sha256": "d6744993126db7e40850558d5de67f927fc7038fa10deab99683dfa8d2bdc386"
+    },
+    {
+      "file": "improvement_v19/results/cache/D8_71_fold4.npz",
+      "sha256": "072c5893d37b67ee1635f25e78e46745d459c90f75dfa8d0837b916273def1d3"
+    }
+  ],
+  "candidate_fold_outputs": 20,
+  "control_fold_outputs": 10,
+  "comparisons_reconstructed": 15,
+  "max_metric_difference_INR": 0.0,
+  "v19_best": {
+    "name": "C8",
+    "weight": 0.25,
+    "mean_relative_gain": 0.00013192422115752638,
+    "assignments": {
+      "42": {
+        "rmse_INR": 19647339.00802136,
+        "gain_INR": 1694.5481404103339
+      },
+      "71": {
+        "rmse_INR": 19646415.480798714,
+        "gain_INR": 3489.9736121818423
+      }
+    }
+  },
+  "v14_portal_rmse_INR": 11736110.7877709,
+  "diagnostics": {
+    "42": {
+      "v14_rmse_INR": 19649033.55616177,
+      "tail_gt80M_squared_error_share": 0.6814448422008784,
+      "largest_five_squared_error_share": 0.3484374612409716,
+      "components": {
+        "C8": {
+          "rmse_INR": 19694084.161762357,
+          "residual_correlation": 0.9964931703619218,
+          "residual_correlation_target_le80M": 0.989736429547233
+        },
+        "D8": {
+          "rmse_INR": 19929553.44570957,
+          "residual_correlation": 0.9889027343588931,
+          "residual_correlation_target_le80M": 0.967721135880493
+        },
+        "CORE_EQUAL": {
+          "rmse_INR": 19754314.660718985,
+          "residual_correlation": 0.995534954656994,
+          "residual_correlation_target_le80M": 0.9868091058794626
+        }
+      }
+    },
+    "71": {
+      "v14_rmse_INR": 19649905.454410896,
+      "tail_gt80M_squared_error_share": 0.6810383553555371,
+      "largest_five_squared_error_share": 0.3484131766611455,
+      "components": {
+        "C8": {
+          "rmse_INR": 19697536.73330066,
+          "residual_correlation": 0.9958330366356912,
+          "residual_correlation_target_le80M": 0.9879510678354791
+        },
+        "D8": {
+          "rmse_INR": 19929427.745031957,
+          "residual_correlation": 0.989305165012595,
+          "residual_correlation_target_le80M": 0.9690847390469127
+        },
+        "CORE_EQUAL": {
+          "rmse_INR": 19757104.84558448,
+          "residual_correlation": 0.9953649893344676,
+          "residual_correlation_target_le80M": 0.9864795017878921
+        }
+      }
+    }
+  },
+  "untested_accuracy_families": {
+    "TabICLv2_V11": {
+      "status": "unavailable",
+      "reason": {
+        "error_type": "AssertionError",
+        "message": "permutation dependence INR 3.814697265625"
+      }
+    },
+    "Kumo_Small_V19": {
+      "status": "engineering_excluded",
+      "error_type": "RuntimeError",
+      "reason": "AttributeError: module 'numba.cuda.types' has no attribute 'NPDatetime'",
+      "accuracy_tested": false
+    }
+  },
+  "comparisons": [
+    {
+      "name": "C8",
+      "weight": 0.1,
+      "mean_relative_gain": 0.00011054858925688298,
+      "assignments": {
+        "42": {
+          "rmse_INR": 19647318.08822663,
+          "gain_INR": 1715.4679351374507
+        },
+        "71": {
+          "rmse_INR": 19647276.45981348,
+          "gain_INR": 2628.994597416371
+        }
+      }
+    },
+    {
+      "name": "C8",
+      "weight": 0.25,
+      "mean_relative_gain": 0.00013192422115752638,
+      "assignments": {
+        "42": {
+          "rmse_INR": 19647339.00802136,
+          "gain_INR": 1694.5481404103339
+        },
+        "71": {
+          "rmse_INR": 19646415.480798714,
+          "gain_INR": 3489.9736121818423
+        }
+      }
+    },
+    {
+      "name": "C8",
+      "weight": 0.5,
+      "mean_relative_gain": -0.00021761627680758934,
+      "assignments": {
+        "42": {
+          "rmse_INR": 19654290.59461744,
+          "gain_INR": -5257.038455672562
+        },
+        "71": {
+          "rmse_INR": 19653200.46121075,
+          "gain_INR": -3295.006799854338
+        }
+      }
+    },
+    {
+      "name": "C8",
+      "weight": 0.75,
+      "mean_relative_gain": -0.0010481176753202174,
+      "assignments": {
+        "42": {
+          "rmse_INR": 19669879.148988727,
+          "gain_INR": -20845.592826958746
+        },
+        "71": {
+          "rmse_INR": 19670249.76304033,
+          "gain_INR": -20344.308629434556
+        }
+      }
+    },
+    {
+      "name": "C8",
+      "weight": 1.0,
+      "mean_relative_gain": -0.002358379885406929,
+      "assignments": {
+        "42": {
+          "rmse_INR": 19694084.161762357,
+          "gain_INR": -45050.605600588024
+        },
+        "71": {
+          "rmse_INR": 19697536.73330066,
+          "gain_INR": -47631.2788897641
+        }
+      }
+    },
+    {
+      "name": "D8",
+      "weight": 0.1,
+      "mean_relative_gain": -0.0004229235011850958,
+      "assignments": {
+        "42": {
+          "rmse_INR": 19657050.378768206,
+          "gain_INR": -8016.822606436908
+        },
+        "71": {
+          "rmse_INR": 19658509.089694694,
+          "gain_INR": -8603.63528379798
+        }
+      }
+    },
+    {
+      "name": "D8",
+      "weight": 0.25,
+      "mean_relative_gain": -0.001478199430364121,
+      "assignments": {
+        "42": {
+          "rmse_INR": 19677489.83457508,
+          "gain_INR": -28456.278413310647
+        },
+        "71": {
+          "rmse_INR": 19679540.87138906,
+          "gain_INR": -29635.416978165507
+        }
+      }
+    },
+    {
+      "name": "D8",
+      "weight": 0.5,
+      "mean_relative_gain": -0.00435496734674573,
+      "assignments": {
+        "42": {
+          "rmse_INR": 19733906.485160362,
+          "gain_INR": -84872.92899859324
+        },
+        "71": {
+          "rmse_INR": 19736178.15253656,
+          "gain_INR": -86272.69812566414
+        }
+      }
+    },
+    {
+      "name": "D8",
+      "weight": 0.75,
+      "mean_relative_gain": -0.008618337284445738,
+      "assignments": {
+        "42": {
+          "rmse_INR": 19818044.722346276,
+          "gain_INR": -169011.1661845073
+        },
+        "71": {
+          "rmse_INR": 19819585.814220585,
+          "gain_INR": -169680.35980968922
+        }
+      }
+    },
+    {
+      "name": "D8",
+      "weight": 1.0,
+      "mean_relative_gain": -0.014250822456730934,
+      "assignments": {
+        "42": {
+          "rmse_INR": 19929553.44570957,
+          "gain_INR": -280519.8895478025
+        },
+        "71": {
+          "rmse_INR": 19929427.745031957,
+          "gain_INR": -279522.2906210609
+        }
+      }
+    },
+    {
+      "name": "CORE_EQUAL",
+      "weight": 0.1,
+      "mean_relative_gain": -0.0001268736288402891,
+      "assignments": {
+        "42": {
+          "rmse_INR": 19651602.429477897,
+          "gain_INR": -2568.873316127807
+        },
+        "71": {
+          "rmse_INR": 19652322.576727364,
+          "gain_INR": -2417.122316468507
+        }
+      }
+    },
+    {
+      "name": "CORE_EQUAL",
+      "weight": 0.25,
+      "mean_relative_gain": -0.0004901080165078958,
+      "assignments": {
+        "42": {
+          "rmse_INR": 19658781.772156075,
+          "gain_INR": -9748.215994305909
+        },
+        "71": {
+          "rmse_INR": 19659417.958226863,
+          "gain_INR": -9512.50381596759
+        }
+      }
+    },
+    {
+      "name": "CORE_EQUAL",
+      "weight": 0.5,
+      "mean_relative_gain": -0.0015559921378175173,
+      "assignments": {
+        "42": {
+          "rmse_INR": 19679604.47927088,
+          "gain_INR": -30570.923109110445
+        },
+        "71": {
+          "rmse_INR": 19680483.37155188,
+          "gain_INR": -30577.917140983045
+        }
+      }
+    },
+    {
+      "name": "CORE_EQUAL",
+      "weight": 0.75,
+      "mean_relative_gain": -0.0031958168761292917,
+      "assignments": {
+        "42": {
+          "rmse_INR": 19711466.581079625,
+          "gain_INR": -62433.02491785586
+        },
+        "71": {
+          "rmse_INR": 19713064.658046406,
+          "gain_INR": -63159.20363551006
+        }
+      }
+    },
+    {
+      "name": "CORE_EQUAL",
+      "weight": 1.0,
+      "mean_relative_gain": -0.005406773277480401,
+      "assignments": {
+        "42": {
+          "rmse_INR": 19754314.660718985,
+          "gain_INR": -105281.10455721617
+        },
+        "71": {
+          "rmse_INR": 19757104.84558448,
+          "gain_INR": -107199.39117358252
+        }
+      }
+    }
+  ]
+}

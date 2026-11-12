@@ -1,0 +1,137 @@
+{
+  "context": {
+    "name": "N16",
+    "scheme": "71",
+    "fold": 3,
+    "inputs": {
+      "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+      "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+      "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+      "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+    },
+    "sources": {
+      "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+      "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+      "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+      "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+      "features.py": "7a494a5f362fa14438a94e45089d0d02c631cf7d6865abda2532522c1eb467d2",
+      "modeling.py": "0531e9bc43f6b7b2b1eaa4db6058dcd0e8ac95b3e7de6a62cd3268ee332cfed4",
+      "core.py": "29dc27ac833c348e57a8d8e511acbd32e6e951a112c7159049ca107fd3a38ac1",
+      "verify.py": "b208ba4790aff37786087ec7a7ee2d8a2bbafc0e683e778086e5babc6f0c4823",
+      "workflow.py": "d7ef68a5469c26193af8890b6e4eebba258f0b89bdc6de8890dbffa68a71b957",
+      "fresh_worker.py": "8310dbceca1adf742a511de863f149e5dc50f2d2d7c1fb8e7df75515265ac5d2",
+      "refit_controls.py": "64c219724a6393fea81b553adad5ee3b948ee6b078170f07c562330389c60ab9",
+      "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+      "v5_contract.json": "3446412f01d536a31123142b984392216efd29094965500251386eac1814ab69",
+      "reference_manifest.json": "a9e227449d7f7273862710a484a38e3c9d075f99d6eb04d9cbc7de13a8229cc5",
+      "baseline_registry.json": "5c63246a01b863637d6763082be04308badf84ebbb317a1d94aa0bde51c72e72"
+    },
+    "model_contract": {
+      "runtime": {
+        "dependencies": {
+          "numpy": "2.5.4",
+          "pandas": "3.0.6",
+          "scikit-learn": "1.9.1",
+          "scipy": "1.18.1",
+          "catboost": "1.2.10",
+          "interpret-core": "0.7.8",
+          "tabpfn": "9.2.0",
+          "torch": "2.11.0+cu130",
+          "tabicl": "2.2.0"
+        },
+        "gpu": "Tesla T4",
+        "cuda": "13.0",
+        "precision": "float32",
+        "seed": 10242,
+        "target": "raw INR millions",
+        "prediction_chunk": 500
+      },
+      "models": {
+        "BASE": {
+          "checkpoint": {
+            "repo_id": "Prior-Labs/TabPFN-v2-reg",
+            "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+            "filename": "tabpfn-v2-regressor.ckpt",
+            "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736",
+            "version": "2"
+          }
+        },
+        "N": {
+          "checkpoint": {
+            "repo_id": "Prior-Labs/tabpfn_2_5",
+            "filename": "tabpfn-v2.5-regressor-v2.5_default.ckpt",
+            "revision": "6c45f3a6d0d07c6c5f62572e04a0c2929de91b8b",
+            "sha256": "6e0308b7e5f3a8325b798b96d986b2b282c3608b1cda6e2991425a2a261d40b8",
+            "version": "2.5"
+          },
+          "fallback_reason": {
+            "error_type": "UnpicklingError",
+            "message": "Weights only load failed. In PyTorch 2.6, we changed the default value of the `weights_only` argument in `torch.load` from `False` to `True`. Re-running `torch.load` with `weights_only` set to `False` will likely succeed, but it can result in arbitrary code execution. Do it only if you got the file from a trusted source.\nPlease file an issue with the following so that we can make `weights_only=True` compatible with your use case: WeightsUnpickler error: \n\nUnsupported operand 240\n\nCheck the docum"
+          },
+          "params_8": {
+            "auto_scale_n_estimators": true,
+            "average_before_softmax": false,
+            "device": "cuda",
+            "differentiable_input": false,
+            "enable_torch_compile": false,
+            "eval_metric": null,
+            "fit_mode": "low_memory",
+            "ignore_pretraining_limits": false,
+            "inference_config": null,
+            "inference_precision": "torch.float32",
+            "keep_cache_on_device": true,
+            "kv_cache_precision": null,
+            "memory_saving_mode": true,
+            "model_path": "checkpoint_sha256:6e0308b7e5f3a8325b798b96d986b2b282c3608b1cda6e2991425a2a261d40b8",
+            "n_estimators": 8,
+            "n_jobs": null,
+            "n_preprocessing_jobs": 1,
+            "random_state": 10242,
+            "show_progress_bar": false,
+            "softmax_temperature": "auto",
+            "tuning_config": null
+          },
+          "params_16": {
+            "auto_scale_n_estimators": true,
+            "average_before_softmax": false,
+            "device": "cuda",
+            "differentiable_input": false,
+            "enable_torch_compile": false,
+            "eval_metric": null,
+            "fit_mode": "low_memory",
+            "ignore_pretraining_limits": false,
+            "inference_config": null,
+            "inference_precision": "torch.float32",
+            "keep_cache_on_device": true,
+            "kv_cache_precision": null,
+            "memory_saving_mode": true,
+            "model_path": "checkpoint_sha256:6e0308b7e5f3a8325b798b96d986b2b282c3608b1cda6e2991425a2a261d40b8",
+            "n_estimators": 16,
+            "n_jobs": null,
+            "n_preprocessing_jobs": 1,
+            "random_state": 10242,
+            "show_progress_bar": false,
+            "softmax_temperature": "auto",
+            "tuning_config": null
+          }
+        }
+      },
+      "engineering_failures": {
+        "N_pilot": {
+          "error_type": "UnpicklingError",
+          "message": "Weights only load failed. In PyTorch 2.6, we changed the default value of the `weights_only` argument in `torch.load` from `False` to `True`. Re-running `torch.load` with `weights_only` set to `False` will likely succeed, but it can result in arbitrary code execution. Do it only if you got the file from a trusted source.\nPlease file an issue with the following so that we can make `weights_only=True` compatible with your use case: WeightsUnpickler error: \n\nUnsupported operand 240\n\nCheck the docum"
+        }
+      },
+      "selection_uses_validation_rmse": false,
+      "adapter": "Fixed 500 rows; BASE pads its first training row; new models pad a maximum-observed training row; discard padding predictions."
+    },
+    "training_rows": "bc37e2c89cb68ce7a6362899972b1775c5b2dd085474c18f63124109e8d8cd29",
+    "validation_rows": "7978442dac5bd81ff34393313d67fdcc1a58255f113226ae7c1c566341ff7dc9",
+    "target_hash": "61c2f5f74aedcdc330a291eac6bd03dff8de065983b372b634f19b6ac3fa86d0",
+    "row_order": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+    "fold_hash": "369051948161e2c7ce035455beac8aa9b2a832e49fe341aa6bcd3407d9adc9f4"
+  },
+  "sha256": "48e16b6da4e3a7eb9af3dcf6ed4b042c14742f0958925ab4ebb0dc8e454e0e3c",
+  "feature_map_sha256": "8866b16a14ac351b29c92815a27847f97b935e212d52c09593c08c89ac8287a5",
+  "vocabulary_sha256": "3c9c93dd71423300a8a6335d88dc59517ece80aeed32efec7455dd94b392303d"
+}

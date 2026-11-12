@@ -1,0 +1,104 @@
+{
+  "S": {
+    "status": "PASS",
+    "fold_seconds": 25.35211871299998,
+    "behavior": {
+      "permutation_difference_INR": 0.0,
+      "label_id_difference_INR": 0.0,
+      "batch_difference_INR": 0.0,
+      "individual_difference_INR": 0.0,
+      "rmse_difference_INR": {
+        "permutation": 0.0,
+        "batch": 0.0,
+        "individual": 0.0
+      },
+      "rows_checked": 699,
+      "individual_probes": 12,
+      "missing_unseen_inputs": true,
+      "behavior_tolerance_INR": 10.0,
+      "rmse_tolerance_INR": 1.0
+    },
+    "fresh_repeat_difference_INR": 0.0,
+    "target_metadata": {
+      "name": "S",
+      "training_rows": 2794,
+      "units": "raw INR millions",
+      "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+      "model_class": "tabpfn.regressor.TabPFNRegressor",
+      "view": "S",
+      "input_features": 56,
+      "temperature": "checkpoint default",
+      "feature_state_sha256": "1b1f181a6265017147f6bc5b996d997653324c165e0809ceabf11db0d2e37b44",
+      "date_expansion": true,
+      "datetime_dependencies": {
+        "skrub": "0.10.1",
+        "pyarrow": "23.0.1"
+      },
+      "architecture_classes": [
+        "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+      ],
+      "configuration_classes": [
+        "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"
+      ]
+    },
+    "full_data_seconds": 18.487362490000123,
+    "full_data_training_rows": 3493,
+    "full_data_query_rows": 500,
+    "reload_difference_INR": 0.0,
+    "peak_gpu_allocated_bytes": 9508628480,
+    "training_rows": 2794,
+    "validation_rows": 699,
+    "engineering_seconds": 308.50722249699993
+  },
+  "C+S+G": {
+    "status": "PASS",
+    "fold_seconds": 28.234828268,
+    "behavior": {
+      "permutation_difference_INR": 0.0,
+      "label_id_difference_INR": 0.0,
+      "batch_difference_INR": 0.0,
+      "individual_difference_INR": 0.0,
+      "rmse_difference_INR": {
+        "permutation": 0.0,
+        "batch": 0.0,
+        "individual": 0.0
+      },
+      "rows_checked": 699,
+      "individual_probes": 12,
+      "missing_unseen_inputs": true,
+      "behavior_tolerance_INR": 10.0,
+      "rmse_tolerance_INR": 1.0
+    },
+    "fresh_repeat_difference_INR": 0.0,
+    "target_metadata": {
+      "name": "C+S+G",
+      "training_rows": 2794,
+      "units": "raw INR millions",
+      "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+      "model_class": "tabpfn.regressor.TabPFNRegressor",
+      "view": "C+S+G",
+      "input_features": 66,
+      "temperature": "checkpoint default",
+      "feature_state_sha256": "eaaff75ee34aea51b240f6a3d498fe5fd8f01562024482694c84c8899f478164",
+      "date_expansion": true,
+      "datetime_dependencies": {
+        "skrub": "0.10.1",
+        "pyarrow": "23.0.1"
+      },
+      "architecture_classes": [
+        "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+      ],
+      "configuration_classes": [
+        "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"
+      ]
+    },
+    "full_data_seconds": 19.42131909999989,
+    "full_data_training_rows": 3493,
+    "full_data_query_rows": 500,
+    "reload_difference_INR": 0.0,
+    "peak_gpu_allocated_bytes": 9367408128,
+    "training_rows": 2794,
+    "validation_rows": 699,
+    "engineering_seconds": 344.5265451350001
+  }
+}

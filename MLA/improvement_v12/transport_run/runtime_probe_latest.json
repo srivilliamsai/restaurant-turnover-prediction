@@ -1,0 +1,16 @@
+{
+  "checked_at_UTC": "2026-10-28T10:46:33.084420+00:00",
+  "method": "Live Colab CLI console: nvidia-smi and ps",
+  "gpu": "Tesla T4",
+  "gpu_utilization_percent": 100,
+  "gpu_memory_used_MiB": 1087,
+  "gpu_memory_total_MiB": 15360,
+  "active_worker_pid": 8898,
+  "worker_state": "Rl",
+  "worker_CPU_percent": 100,
+  "setting": "T4x16",
+  "supervisor_pid": 8858,
+  "pilot_parent_pid": 8859,
+  "console_closed_without_interrupting_training": true,
+  "validation_score_available": false
+}

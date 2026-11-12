@@ -1,0 +1,452 @@
+{
+  "context": {
+    "name": "F40-T120",
+    "spec": {
+      "family": "TabPFN-3.5 Base",
+      "estimators": 8,
+      "view": "F40",
+      "temperature": 1.2,
+      "target": "raw INR millions"
+    },
+    "scheme": "42",
+    "fold": 1,
+    "inputs": {
+      "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+      "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+      "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+      "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+    },
+    "sources": {
+      "core.py": "9f94246bfb16644502ba7107fdcffaa935f43439664926185313e802d06716bb",
+      "features.py": "ccf2a22927d7226814dabd4f85f58ad0f107cc217d414bd17528f5ae48b3c89c",
+      "modeling.py": "5e5fead43a93870661e51a16d9c5dd8c6cc3a13ff1a719f4da5ff9b8f4e87d76",
+      "workflow.py": "662ff06d0146ea9c6db8f6361bd6772e1618a6513ecea924ab0a94ff10ca0815",
+      "verify.py": "69442c0d1ac4353ac7fa735f32921a6f2ea3b9aa8231a040d06adaa0da817c6a",
+      "delivery.py": "924b23814c0cad4afd927c860a759b4c467ea0143a3137a141de4c1bc6842ed8",
+      "fresh_worker.py": "8befec4e89fc1dc580b0d745f0d9a422ce20dba360aabb8b7586d95c4c653b61",
+      "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+      "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+      "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+      "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+      "v5_contract.json": "3446412f01d536a31123142b984392216efd29094965500251386eac1814ab69",
+      "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+      "reference_manifest.json": "82417467e331d6e470fd1058c4ea4edb5a47f98021efc822176bd9a04b99bbd5",
+      "baseline_registry.json": "53e7ddb7fbfbe08162aa97fac8d5ad9dea4981aab3aa942b3e98ebdb2a3060b7"
+    },
+    "runtime_contract": {
+      "runtime": {
+        "dependencies": {
+          "numpy": "2.5.4",
+          "pandas": "3.0.6",
+          "scikit-learn": "1.9.1",
+          "scipy": "1.18.1",
+          "catboost": "1.2.10",
+          "interpret-core": "0.7.8",
+          "tabpfn": "9.2.0",
+          "tabicl": "2.2.0",
+          "torch": "2.11.0+cu130"
+        },
+        "gpu": "Tesla T4",
+        "cuda": "13.0",
+        "precision": "float32",
+        "prediction_chunk": 500,
+        "seed": 10242,
+        "datetime_dependencies": {
+          "skrub": "0.10.1",
+          "pyarrow": "23.0.1"
+        }
+      },
+      "models": {
+        "BASE": {
+          "checkpoint": {
+            "repo_id": "Prior-Labs/TabPFN-v2-reg",
+            "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+            "filename": "tabpfn-v2-regressor.ckpt",
+            "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736",
+            "version": "2"
+          },
+          "parameters": {
+            "auto_scale_n_estimators": true,
+            "average_before_softmax": false,
+            "device": "cuda",
+            "differentiable_input": false,
+            "enable_torch_compile": false,
+            "eval_metric": null,
+            "fit_mode": "low_memory",
+            "ignore_pretraining_limits": false,
+            "inference_config": null,
+            "inference_precision": "torch.float32",
+            "keep_cache_on_device": true,
+            "kv_cache_precision": null,
+            "memory_saving_mode": true,
+            "model_path": "checkpoint_sha256:2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736",
+            "n_estimators": 16,
+            "n_jobs": null,
+            "n_preprocessing_jobs": 1,
+            "random_state": 10242,
+            "show_progress_bar": false,
+            "softmax_temperature": "auto",
+            "tuning_config": null
+          }
+        },
+        "P35_8": {
+          "checkpoint": {
+            "repo_id": "Prior-Labs/tabpfn_3_5",
+            "revision": "06bf2ba35c80a92a3b9abb436b99cf49e7a0365e",
+            "filename": "tabpfn-v3.5-20260909.safetensors",
+            "sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+            "bytes": 876027932,
+            "version": "3.5",
+            "download_path": "/root/.cache/huggingface/hub/models--Prior-Labs--tabpfn_3_5/snapshots/06bf2ba35c80a92a3b9abb436b99cf49e7a0365e/tabpfn-v3.5-20260909.safetensors",
+            "local_loader_path": "/content/mla_v14/model_weights/tabpfn-v3.5-20260909.safetensors",
+            "local_suffix": ".safetensors",
+            "format_check": {
+              "format": "safetensors",
+              "header_bytes": 77296,
+              "tensor_entries": 595,
+              "metadata_keys": [
+                "architecture_name",
+                "config",
+                "inference_config"
+              ]
+            },
+            "installed_loader_path": "/usr/local/lib/python3.13/dist-packages/tabpfn/checkpoint.py",
+            "installed_loader_sha256": "f7c86363ccc96af4ffe10ec23221ed90dfea304f04b6c4e48330ba25bbf807de"
+          },
+          "parameters": {
+            "auto_scale_n_estimators": true,
+            "average_before_softmax": false,
+            "device": "cuda",
+            "differentiable_input": false,
+            "enable_torch_compile": false,
+            "eval_metric": null,
+            "fit_mode": "low_memory",
+            "ignore_pretraining_limits": false,
+            "inference_config": null,
+            "inference_precision": "torch.float32",
+            "keep_cache_on_device": true,
+            "kv_cache_precision": null,
+            "memory_saving_mode": true,
+            "model_path": "checkpoint_sha256:ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+            "n_estimators": 8,
+            "n_jobs": null,
+            "n_preprocessing_jobs": 1,
+            "random_state": 10242,
+            "show_progress_bar": false,
+            "softmax_temperature": "auto",
+            "tuning_config": null
+          }
+        },
+        "F40-T080": {
+          "checkpoint": {
+            "repo_id": "Prior-Labs/tabpfn_3_5",
+            "revision": "06bf2ba35c80a92a3b9abb436b99cf49e7a0365e",
+            "filename": "tabpfn-v3.5-20260909.safetensors",
+            "sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+            "bytes": 876027932,
+            "version": "3.5",
+            "download_path": "/root/.cache/huggingface/hub/models--Prior-Labs--tabpfn_3_5/snapshots/06bf2ba35c80a92a3b9abb436b99cf49e7a0365e/tabpfn-v3.5-20260909.safetensors",
+            "local_loader_path": "/content/mla_v14/model_weights/tabpfn-v3.5-20260909.safetensors",
+            "local_suffix": ".safetensors",
+            "format_check": {
+              "format": "safetensors",
+              "header_bytes": 77296,
+              "tensor_entries": 595,
+              "metadata_keys": [
+                "architecture_name",
+                "config",
+                "inference_config"
+              ]
+            },
+            "installed_loader_path": "/usr/local/lib/python3.13/dist-packages/tabpfn/checkpoint.py",
+            "installed_loader_sha256": "f7c86363ccc96af4ffe10ec23221ed90dfea304f04b6c4e48330ba25bbf807de"
+          },
+          "parameters": {
+            "auto_scale_n_estimators": true,
+            "average_before_softmax": false,
+            "device": "cuda",
+            "differentiable_input": false,
+            "enable_torch_compile": false,
+            "eval_metric": null,
+            "fit_mode": "low_memory",
+            "ignore_pretraining_limits": false,
+            "inference_config": null,
+            "inference_precision": "torch.float32",
+            "keep_cache_on_device": true,
+            "kv_cache_precision": null,
+            "memory_saving_mode": true,
+            "model_path": "checkpoint_sha256:ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+            "n_estimators": 8,
+            "n_jobs": null,
+            "n_preprocessing_jobs": 1,
+            "random_state": 10242,
+            "show_progress_bar": false,
+            "softmax_temperature": 0.8,
+            "tuning_config": null
+          }
+        },
+        "F40-T120": {
+          "checkpoint": {
+            "repo_id": "Prior-Labs/tabpfn_3_5",
+            "revision": "06bf2ba35c80a92a3b9abb436b99cf49e7a0365e",
+            "filename": "tabpfn-v3.5-20260909.safetensors",
+            "sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+            "bytes": 876027932,
+            "version": "3.5",
+            "download_path": "/root/.cache/huggingface/hub/models--Prior-Labs--tabpfn_3_5/snapshots/06bf2ba35c80a92a3b9abb436b99cf49e7a0365e/tabpfn-v3.5-20260909.safetensors",
+            "local_loader_path": "/content/mla_v14/model_weights/tabpfn-v3.5-20260909.safetensors",
+            "local_suffix": ".safetensors",
+            "format_check": {
+              "format": "safetensors",
+              "header_bytes": 77296,
+              "tensor_entries": 595,
+              "metadata_keys": [
+                "architecture_name",
+                "config",
+                "inference_config"
+              ]
+            },
+            "installed_loader_path": "/usr/local/lib/python3.13/dist-packages/tabpfn/checkpoint.py",
+            "installed_loader_sha256": "f7c86363ccc96af4ffe10ec23221ed90dfea304f04b6c4e48330ba25bbf807de"
+          },
+          "parameters": {
+            "auto_scale_n_estimators": true,
+            "average_before_softmax": false,
+            "device": "cuda",
+            "differentiable_input": false,
+            "enable_torch_compile": false,
+            "eval_metric": null,
+            "fit_mode": "low_memory",
+            "ignore_pretraining_limits": false,
+            "inference_config": null,
+            "inference_precision": "torch.float32",
+            "keep_cache_on_device": true,
+            "kv_cache_precision": null,
+            "memory_saving_mode": true,
+            "model_path": "checkpoint_sha256:ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+            "n_estimators": 8,
+            "n_jobs": null,
+            "n_preprocessing_jobs": 1,
+            "random_state": 10242,
+            "show_progress_bar": false,
+            "softmax_temperature": 1.2,
+            "tuning_config": null
+          }
+        },
+        "N32-T080": {
+          "checkpoint": {
+            "repo_id": "Prior-Labs/tabpfn_3_5",
+            "revision": "06bf2ba35c80a92a3b9abb436b99cf49e7a0365e",
+            "filename": "tabpfn-v3.5-20260909.safetensors",
+            "sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+            "bytes": 876027932,
+            "version": "3.5",
+            "download_path": "/root/.cache/huggingface/hub/models--Prior-Labs--tabpfn_3_5/snapshots/06bf2ba35c80a92a3b9abb436b99cf49e7a0365e/tabpfn-v3.5-20260909.safetensors",
+            "local_loader_path": "/content/mla_v14/model_weights/tabpfn-v3.5-20260909.safetensors",
+            "local_suffix": ".safetensors",
+            "format_check": {
+              "format": "safetensors",
+              "header_bytes": 77296,
+              "tensor_entries": 595,
+              "metadata_keys": [
+                "architecture_name",
+                "config",
+                "inference_config"
+              ]
+            },
+            "installed_loader_path": "/usr/local/lib/python3.13/dist-packages/tabpfn/checkpoint.py",
+            "installed_loader_sha256": "f7c86363ccc96af4ffe10ec23221ed90dfea304f04b6c4e48330ba25bbf807de"
+          },
+          "parameters": {
+            "auto_scale_n_estimators": true,
+            "average_before_softmax": false,
+            "device": "cuda",
+            "differentiable_input": false,
+            "enable_torch_compile": false,
+            "eval_metric": null,
+            "fit_mode": "low_memory",
+            "ignore_pretraining_limits": false,
+            "inference_config": null,
+            "inference_precision": "torch.float32",
+            "keep_cache_on_device": true,
+            "kv_cache_precision": null,
+            "memory_saving_mode": true,
+            "model_path": "checkpoint_sha256:ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+            "n_estimators": 8,
+            "n_jobs": null,
+            "n_preprocessing_jobs": 1,
+            "random_state": 10242,
+            "show_progress_bar": false,
+            "softmax_temperature": 0.8,
+            "tuning_config": null
+          }
+        },
+        "N32-T100": {
+          "checkpoint": {
+            "repo_id": "Prior-Labs/tabpfn_3_5",
+            "revision": "06bf2ba35c80a92a3b9abb436b99cf49e7a0365e",
+            "filename": "tabpfn-v3.5-20260909.safetensors",
+            "sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+            "bytes": 876027932,
+            "version": "3.5",
+            "download_path": "/root/.cache/huggingface/hub/models--Prior-Labs--tabpfn_3_5/snapshots/06bf2ba35c80a92a3b9abb436b99cf49e7a0365e/tabpfn-v3.5-20260909.safetensors",
+            "local_loader_path": "/content/mla_v14/model_weights/tabpfn-v3.5-20260909.safetensors",
+            "local_suffix": ".safetensors",
+            "format_check": {
+              "format": "safetensors",
+              "header_bytes": 77296,
+              "tensor_entries": 595,
+              "metadata_keys": [
+                "architecture_name",
+                "config",
+                "inference_config"
+              ]
+            },
+            "installed_loader_path": "/usr/local/lib/python3.13/dist-packages/tabpfn/checkpoint.py",
+            "installed_loader_sha256": "f7c86363ccc96af4ffe10ec23221ed90dfea304f04b6c4e48330ba25bbf807de"
+          },
+          "parameters": {
+            "auto_scale_n_estimators": true,
+            "average_before_softmax": false,
+            "device": "cuda",
+            "differentiable_input": false,
+            "enable_torch_compile": false,
+            "eval_metric": null,
+            "fit_mode": "low_memory",
+            "ignore_pretraining_limits": false,
+            "inference_config": null,
+            "inference_precision": "torch.float32",
+            "keep_cache_on_device": true,
+            "kv_cache_precision": null,
+            "memory_saving_mode": true,
+            "model_path": "checkpoint_sha256:ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+            "n_estimators": 8,
+            "n_jobs": null,
+            "n_preprocessing_jobs": 1,
+            "random_state": 10242,
+            "show_progress_bar": false,
+            "softmax_temperature": 1.0,
+            "tuning_config": null
+          }
+        },
+        "N32-T120": {
+          "checkpoint": {
+            "repo_id": "Prior-Labs/tabpfn_3_5",
+            "revision": "06bf2ba35c80a92a3b9abb436b99cf49e7a0365e",
+            "filename": "tabpfn-v3.5-20260909.safetensors",
+            "sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+            "bytes": 876027932,
+            "version": "3.5",
+            "download_path": "/root/.cache/huggingface/hub/models--Prior-Labs--tabpfn_3_5/snapshots/06bf2ba35c80a92a3b9abb436b99cf49e7a0365e/tabpfn-v3.5-20260909.safetensors",
+            "local_loader_path": "/content/mla_v14/model_weights/tabpfn-v3.5-20260909.safetensors",
+            "local_suffix": ".safetensors",
+            "format_check": {
+              "format": "safetensors",
+              "header_bytes": 77296,
+              "tensor_entries": 595,
+              "metadata_keys": [
+                "architecture_name",
+                "config",
+                "inference_config"
+              ]
+            },
+            "installed_loader_path": "/usr/local/lib/python3.13/dist-packages/tabpfn/checkpoint.py",
+            "installed_loader_sha256": "f7c86363ccc96af4ffe10ec23221ed90dfea304f04b6c4e48330ba25bbf807de"
+          },
+          "parameters": {
+            "auto_scale_n_estimators": true,
+            "average_before_softmax": false,
+            "device": "cuda",
+            "differentiable_input": false,
+            "enable_torch_compile": false,
+            "eval_metric": null,
+            "fit_mode": "low_memory",
+            "ignore_pretraining_limits": false,
+            "inference_config": null,
+            "inference_precision": "torch.float32",
+            "keep_cache_on_device": true,
+            "kv_cache_precision": null,
+            "memory_saving_mode": true,
+            "model_path": "checkpoint_sha256:ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+            "n_estimators": 8,
+            "n_jobs": null,
+            "n_preprocessing_jobs": 1,
+            "random_state": 10242,
+            "show_progress_bar": false,
+            "softmax_temperature": 1.2,
+            "tuning_config": null
+          }
+        }
+      },
+      "engineering_failures": {},
+      "settings": {
+        "F40-T080": {
+          "family": "TabPFN-3.5 Base",
+          "estimators": 8,
+          "view": "F40",
+          "temperature": 0.8,
+          "target": "raw INR millions"
+        },
+        "F40-T120": {
+          "family": "TabPFN-3.5 Base",
+          "estimators": 8,
+          "view": "F40",
+          "temperature": 1.2,
+          "target": "raw INR millions"
+        },
+        "N32-T080": {
+          "family": "TabPFN-3.5 Base",
+          "estimators": 8,
+          "view": "N32",
+          "temperature": 0.8,
+          "target": "raw INR millions"
+        },
+        "N32-T100": {
+          "family": "TabPFN-3.5 Base",
+          "estimators": 8,
+          "view": "N32",
+          "temperature": 1.0,
+          "target": "raw INR millions"
+        },
+        "N32-T120": {
+          "family": "TabPFN-3.5 Base",
+          "estimators": 8,
+          "view": "N32",
+          "temperature": 1.2,
+          "target": "raw INR millions"
+        }
+      },
+      "target_units": "raw INR millions",
+      "adapter": "Fixed 500-row blocks; BASE first training row; new model maximum-observed training row; discard padding.",
+      "output_floor": 0.0,
+      "selection_uses_validation_rmse": false
+    },
+    "train_indices": "1f7897014ea73cf369e8adae906c6a15724ca91bd237dfa0ad872cb15e3397e5",
+    "valid_indices": "ba3635482cf581e06114f33e417e0b5a197d60820b6d3c3286ae8e8a86b614cb",
+    "training_targets": "7ffa7e0292a90d6eefa17197bcdbdd5a130ae910c917897da23b2cc05c44e84f",
+    "row_ids": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+    "target_units": "raw INR millions"
+  },
+  "sha256": "0ee964acee5170121f722315124fd5b8793e900fe181624d6e43b46010ea45f0",
+  "fit_metadata": {
+    "name": "F40-T120",
+    "training_rows": 2794,
+    "units": "raw INR millions",
+    "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+    "model_class": "tabpfn.regressor.TabPFNRegressor",
+    "view": "F40",
+    "input_features": 40,
+    "temperature": 1.2,
+    "date_expansion": true,
+    "datetime_dependencies": {
+      "skrub": "0.10.1",
+      "pyarrow": "23.0.1"
+    },
+    "architecture_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+    ],
+    "configuration_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"
+    ]
+  }
+}

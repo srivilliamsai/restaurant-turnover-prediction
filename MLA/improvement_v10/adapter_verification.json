@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "fixed_internal_rows": 500,
+  "full_500_input_unchanged": true,
+  "split_and_1001_row_output_order": true,
+  "padding_outputs_discarded": true,
+  "no_prediction_rounding": true
+}

@@ -1,0 +1,1526 @@
+{
+  "inputs": {
+    "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+    "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+    "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+    "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+  },
+  "row_ids_sha256": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+  "schemes": {
+    "42": {
+      "file": "reference/v9_42.npz",
+      "sha256": "78d87ced373af298d30a1e41a6ce71074e346829f8058e35bde79c397f206ffa",
+      "fold_sha256": "f8c856fc074d5653672bbf04d4b38cf3b0c3f2e8dc87ce77daf7bcd0ebe501a4",
+      "row_ids_sha256": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+      "inputs": {
+        "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+        "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+        "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+        "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+      },
+      "v7_witness": {
+        "file": "reference/oof_42.npz",
+        "sha256": "25d687601f3d33808999407dcf4b2490fa608f8d0cc1bab76a70df6f0b6a723b",
+        "fold_sha256": "f8c856fc074d5653672bbf04d4b38cf3b0c3f2e8dc87ce77daf7bcd0ebe501a4",
+        "row_ids_sha256": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+        "verified_from": [
+          {
+            "kind": "original-platform V7 snapshot",
+            "file": "baseline_snapshots/v7_42.npz",
+            "sha256": "48c19dded9e46b1b5a0760ce42abb5cad33d62cc3300f92958bdf6a727026f29",
+            "fold_sha256": "f8c856fc074d5653672bbf04d4b38cf3b0c3f2e8dc87ce77daf7bcd0ebe501a4",
+            "train_ids": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "source_metadata": [
+              {
+                "context": {
+                  "name": "v5",
+                  "inputs": {
+                    "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+                    "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+                    "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+                    "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+                  },
+                  "sources": {
+                    "models.py": "029de9731d057d8827ff6c7f1789f7669b408eeb3626e50a1677db223614edf8",
+                    "workflow.py": "c99c63e5575e514ec030828a40c16511c8aa0fab5edb04c842d555c347114e8a",
+                    "reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+                    "scored_reference.json": "7148150a20525f1bee168fe6a0b6fd44d8b1244348881ee962aca464affa74cd"
+                  },
+                  "contract": "fec9f422b498cdbf84a3a8fcb093f405302e3bd2e1c29a14f62b9b1fbe04a376",
+                  "spec": null,
+                  "seeds": [
+                    10242,
+                    20242
+                  ],
+                  "training_rows": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+                  "extra": {
+                    "scheme": "42",
+                    "folds": "f8c856fc074d5653672bbf04d4b38cf3b0c3f2e8dc87ce77daf7bcd0ebe501a4"
+                  }
+                },
+                "sha256": "5d828869dc82845157432dccf58e6395f3310280b882651f8204b7a0f7a8f421",
+                "diagnostics": {
+                  "origin": "verified actual v6 frozen-v5 predictions",
+                  "source_sha256": "7646a11fd435821666a6266832a9018a23338f1b94e5097909d3e667367f2c9c"
+                }
+              },
+              {
+                "context": {
+                  "name": "residual_tree_l2",
+                  "inputs": {
+                    "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+                    "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+                    "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+                    "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+                  },
+                  "sources": {
+                    "models.py": "029de9731d057d8827ff6c7f1789f7669b408eeb3626e50a1677db223614edf8",
+                    "workflow.py": "c99c63e5575e514ec030828a40c16511c8aa0fab5edb04c842d555c347114e8a",
+                    "reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+                    "scored_reference.json": "7148150a20525f1bee168fe6a0b6fd44d8b1244348881ee962aca464affa74cd"
+                  },
+                  "contract": "fec9f422b498cdbf84a3a8fcb093f405302e3bd2e1c29a14f62b9b1fbe04a376",
+                  "spec": {
+                    "family": "residual",
+                    "kind": "cat",
+                    "loss": "RMSE"
+                  },
+                  "seeds": [
+                    10242,
+                    20242
+                  ],
+                  "training_rows": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+                  "extra": {
+                    "scheme": "42"
+                  }
+                },
+                "sha256": "da659505f22193bcdb927421fafe56d6f7d59864d916f407194edc5451a80c67"
+              }
+            ]
+          },
+          {
+            "kind": "verified original V9 TabPFN fold",
+            "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_42_fold0.npz",
+            "sha256": "a559550b71c9a5d9c4d70aa42b24238f46e6acc343bb806791979f0c2e177881",
+            "metadata_sha256": "f1f8f36b25bcecda6960e09a9e9f65c8813c3d5488c71d99c4f9ae83d134ccf6"
+          },
+          {
+            "kind": "verified original V9 TabPFN fold",
+            "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_42_fold1.npz",
+            "sha256": "fd8a57156a45ed0bd0f56190b1ca766193ab6402017ed9fa6374d4fc18d1cd2a",
+            "metadata_sha256": "7c8f67f15d3083f2ee9f2184230ae49169703d9d6ff834b7e2c5d197f2b84c1b"
+          },
+          {
+            "kind": "verified original V9 TabPFN fold",
+            "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_42_fold2.npz",
+            "sha256": "9ddf5576beb24cb2f38824bdc9d353071dc620bd0039294dff4f3c673dc0d17f",
+            "metadata_sha256": "0c95df93cc4427c432c4ba8848018b6d15dbdaddf11895357238fb0b69b0fac6"
+          },
+          {
+            "kind": "verified original V9 TabPFN fold",
+            "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_42_fold3.npz",
+            "sha256": "416672b3b7463350fc89f572480487ada687e03430394a68004a5432f964e2af",
+            "metadata_sha256": "7883223458805bdf601fb24ab5de9ff675af38345d89c107df4975345b8b6c91"
+          },
+          {
+            "kind": "verified original V9 TabPFN fold",
+            "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_42_fold4.npz",
+            "sha256": "03f2a167bc47c1e4f11322921bb6876e9e04f12b6ef54210dcae62243be8218c",
+            "metadata_sha256": "e8ddd412f516b6777be214865fa75a7b63597273b8bd9ccb873567ea5a649719"
+          }
+        ],
+        "v9_rmse": 19731241.65831727
+      },
+      "v7_witness_file": "provenance/original_42.npz",
+      "v7_witness_sha256": "25d687601f3d33808999407dcf4b2490fa608f8d0cc1bab76a70df6f0b6a723b",
+      "tabpfn_fold_witnesses": [
+        {
+          "context": {
+            "name": "BASE",
+            "scheme": "42",
+            "fold": 0,
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "sources": {
+              "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+              "core.py": "6bdd9fe9915f5adcd263fdade0785574d1050470c52be7d48e1d6c620676ab31",
+              "features.py": "01e5ecd5db41b248d13c2597735e776a16f730ca54337845610c73e309642a6f",
+              "fresh_worker.py": "98d204f3895ce08d1ca2759fb9a6b7b1af8ab05cd8f3fc1377c1366169824d71",
+              "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+              "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+              "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+              "modeling.py": "22d19bd4490e619100580d1a8d2d64990b8a9995d12accee18820c0606ccbe6d",
+              "refit_city.py": "dbde194cafee94f2ee245451f8a2b1c0db58a04c38b6cce2aa0fdfe573ff95ea",
+              "verify.py": "cef69a3ab872909adb10624614aa27ad09314a6220707473bf950e9bcd8ab960",
+              "workflow.py": "026dda398f1774c01e6ab336f14178eb90636e5d4ebddaa411f04bbc3e86e220",
+              "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+              "reference_manifest.json": "99469dd0e16cfca0068d1fed9b3f6d881b9671bca8e0b36270c12abb854fe961"
+            },
+            "execution_contract": {
+              "torch": "2.11.0+cu130",
+              "tabpfn": "9.2.0",
+              "cuda": "13.0",
+              "gpu": "Tesla T4",
+              "precision": "float32",
+              "checkpoint": {
+                "repo_id": "Prior-Labs/TabPFN-v2-reg",
+                "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+                "filename": "tabpfn-v2-regressor.ckpt",
+                "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736"
+              }
+            },
+            "train_indices": "8634da4e6c9ace0322909b3751a85c8b57d595ff9e1292e207da808bc1cc7e57",
+            "valid_indices": "8360304ee9fe72e340fde1c7ad04eeb9bf848f6f6b06d9b08ea57aec6f788b70",
+            "training_targets": "63998c05f2bd6fe27bf536d3f74ed91f5542c3bcef6e4bbc3ed28bc9492ffa38",
+            "configuration": {},
+            "seed": 10242,
+            "estimators": 16,
+            "city_fold_sha256": "f8c856fc074d5653672bbf04d4b38cf3b0c3f2e8dc87ce77daf7bcd0ebe501a4"
+          },
+          "sha256": "6fcfc7faf777ee5ad884b0da909f9885a096441e9fad27a57dafc1701ef14c48",
+          "feature_map_sha256": "cee5d121ed916606407e418ace2ce94774cfa85bc8b01fedec42fdb7e2153754",
+          "vocabulary_sha256": "fd41350465a29226b03b7a77433e16810c01a07dc0d5a6420b8eb9b6e2a2c9d8",
+          "feature_count": 40
+        },
+        {
+          "context": {
+            "name": "BASE",
+            "scheme": "42",
+            "fold": 1,
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "sources": {
+              "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+              "core.py": "6bdd9fe9915f5adcd263fdade0785574d1050470c52be7d48e1d6c620676ab31",
+              "features.py": "01e5ecd5db41b248d13c2597735e776a16f730ca54337845610c73e309642a6f",
+              "fresh_worker.py": "98d204f3895ce08d1ca2759fb9a6b7b1af8ab05cd8f3fc1377c1366169824d71",
+              "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+              "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+              "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+              "modeling.py": "22d19bd4490e619100580d1a8d2d64990b8a9995d12accee18820c0606ccbe6d",
+              "refit_city.py": "dbde194cafee94f2ee245451f8a2b1c0db58a04c38b6cce2aa0fdfe573ff95ea",
+              "verify.py": "cef69a3ab872909adb10624614aa27ad09314a6220707473bf950e9bcd8ab960",
+              "workflow.py": "026dda398f1774c01e6ab336f14178eb90636e5d4ebddaa411f04bbc3e86e220",
+              "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+              "reference_manifest.json": "99469dd0e16cfca0068d1fed9b3f6d881b9671bca8e0b36270c12abb854fe961"
+            },
+            "execution_contract": {
+              "torch": "2.11.0+cu130",
+              "tabpfn": "9.2.0",
+              "cuda": "13.0",
+              "gpu": "Tesla T4",
+              "precision": "float32",
+              "checkpoint": {
+                "repo_id": "Prior-Labs/TabPFN-v2-reg",
+                "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+                "filename": "tabpfn-v2-regressor.ckpt",
+                "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736"
+              }
+            },
+            "train_indices": "1f7897014ea73cf369e8adae906c6a15724ca91bd237dfa0ad872cb15e3397e5",
+            "valid_indices": "ba3635482cf581e06114f33e417e0b5a197d60820b6d3c3286ae8e8a86b614cb",
+            "training_targets": "7ffa7e0292a90d6eefa17197bcdbdd5a130ae910c917897da23b2cc05c44e84f",
+            "configuration": {},
+            "seed": 10242,
+            "estimators": 16,
+            "city_fold_sha256": "f8c856fc074d5653672bbf04d4b38cf3b0c3f2e8dc87ce77daf7bcd0ebe501a4"
+          },
+          "sha256": "814445ce8e84cf5f0daefbf58d676ad3ffb32b32cc463642f0432995aa2cd3ae",
+          "feature_map_sha256": "cee5d121ed916606407e418ace2ce94774cfa85bc8b01fedec42fdb7e2153754",
+          "vocabulary_sha256": "cb6d96c8f551029beb0d0e2e638bc064325f73a9fb28ea1f5cfaa579712a8235",
+          "feature_count": 40
+        },
+        {
+          "context": {
+            "name": "BASE",
+            "scheme": "42",
+            "fold": 2,
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "sources": {
+              "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+              "core.py": "6bdd9fe9915f5adcd263fdade0785574d1050470c52be7d48e1d6c620676ab31",
+              "features.py": "01e5ecd5db41b248d13c2597735e776a16f730ca54337845610c73e309642a6f",
+              "fresh_worker.py": "98d204f3895ce08d1ca2759fb9a6b7b1af8ab05cd8f3fc1377c1366169824d71",
+              "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+              "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+              "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+              "modeling.py": "22d19bd4490e619100580d1a8d2d64990b8a9995d12accee18820c0606ccbe6d",
+              "refit_city.py": "dbde194cafee94f2ee245451f8a2b1c0db58a04c38b6cce2aa0fdfe573ff95ea",
+              "verify.py": "cef69a3ab872909adb10624614aa27ad09314a6220707473bf950e9bcd8ab960",
+              "workflow.py": "026dda398f1774c01e6ab336f14178eb90636e5d4ebddaa411f04bbc3e86e220",
+              "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+              "reference_manifest.json": "99469dd0e16cfca0068d1fed9b3f6d881b9671bca8e0b36270c12abb854fe961"
+            },
+            "execution_contract": {
+              "torch": "2.11.0+cu130",
+              "tabpfn": "9.2.0",
+              "cuda": "13.0",
+              "gpu": "Tesla T4",
+              "precision": "float32",
+              "checkpoint": {
+                "repo_id": "Prior-Labs/TabPFN-v2-reg",
+                "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+                "filename": "tabpfn-v2-regressor.ckpt",
+                "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736"
+              }
+            },
+            "train_indices": "213a553d067503b1cde7b84c9d1f7fc0f36867331ef63928cf4b307ca7dfc4d7",
+            "valid_indices": "aa877d3e6699e829f41cd8171bfd3feff94de0465a59fda4b3f21922967cc0db",
+            "training_targets": "a6bb0d88d3a2eb330834a7f56ae01fa3c4ebf6be89368ba6aa04954067fac07b",
+            "configuration": {},
+            "seed": 10242,
+            "estimators": 16,
+            "city_fold_sha256": "f8c856fc074d5653672bbf04d4b38cf3b0c3f2e8dc87ce77daf7bcd0ebe501a4"
+          },
+          "sha256": "ead5f23d11146d8964d12e939452e59fcf68442401928f47f39356604155743d",
+          "feature_map_sha256": "cee5d121ed916606407e418ace2ce94774cfa85bc8b01fedec42fdb7e2153754",
+          "vocabulary_sha256": "3833c888895189e0d2391fc0d9b84ac0961206cc832cfb5d2192248b0de67b22",
+          "feature_count": 40
+        },
+        {
+          "context": {
+            "name": "BASE",
+            "scheme": "42",
+            "fold": 3,
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "sources": {
+              "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+              "core.py": "6bdd9fe9915f5adcd263fdade0785574d1050470c52be7d48e1d6c620676ab31",
+              "features.py": "01e5ecd5db41b248d13c2597735e776a16f730ca54337845610c73e309642a6f",
+              "fresh_worker.py": "98d204f3895ce08d1ca2759fb9a6b7b1af8ab05cd8f3fc1377c1366169824d71",
+              "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+              "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+              "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+              "modeling.py": "22d19bd4490e619100580d1a8d2d64990b8a9995d12accee18820c0606ccbe6d",
+              "refit_city.py": "dbde194cafee94f2ee245451f8a2b1c0db58a04c38b6cce2aa0fdfe573ff95ea",
+              "verify.py": "cef69a3ab872909adb10624614aa27ad09314a6220707473bf950e9bcd8ab960",
+              "workflow.py": "026dda398f1774c01e6ab336f14178eb90636e5d4ebddaa411f04bbc3e86e220",
+              "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+              "reference_manifest.json": "99469dd0e16cfca0068d1fed9b3f6d881b9671bca8e0b36270c12abb854fe961"
+            },
+            "execution_contract": {
+              "torch": "2.11.0+cu130",
+              "tabpfn": "9.2.0",
+              "cuda": "13.0",
+              "gpu": "Tesla T4",
+              "precision": "float32",
+              "checkpoint": {
+                "repo_id": "Prior-Labs/TabPFN-v2-reg",
+                "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+                "filename": "tabpfn-v2-regressor.ckpt",
+                "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736"
+              }
+            },
+            "train_indices": "72fbdb80d352e8f37132f1b5416ef7649d8456e55b4c146740bdf536a0d08bf5",
+            "valid_indices": "c1aebbd1db7b8c44238138e0dc82b79e15e9554479429fb3e8585badc8be4533",
+            "training_targets": "0bb2d184b2c120b46fc334222086013e3129863b1ad3182ac35075a3802db80f",
+            "configuration": {},
+            "seed": 10242,
+            "estimators": 16,
+            "city_fold_sha256": "f8c856fc074d5653672bbf04d4b38cf3b0c3f2e8dc87ce77daf7bcd0ebe501a4"
+          },
+          "sha256": "54594bc3533f96834d46851b9693cf17317112546a890e9e09c5cea17e6078ca",
+          "feature_map_sha256": "cee5d121ed916606407e418ace2ce94774cfa85bc8b01fedec42fdb7e2153754",
+          "vocabulary_sha256": "26348a731f1ea6fb81cb6f9c8ebf49bbefd06e0544fd07883e607c42ca7616cd",
+          "feature_count": 40
+        },
+        {
+          "context": {
+            "name": "BASE",
+            "scheme": "42",
+            "fold": 4,
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "sources": {
+              "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+              "core.py": "6bdd9fe9915f5adcd263fdade0785574d1050470c52be7d48e1d6c620676ab31",
+              "features.py": "01e5ecd5db41b248d13c2597735e776a16f730ca54337845610c73e309642a6f",
+              "fresh_worker.py": "98d204f3895ce08d1ca2759fb9a6b7b1af8ab05cd8f3fc1377c1366169824d71",
+              "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+              "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+              "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+              "modeling.py": "22d19bd4490e619100580d1a8d2d64990b8a9995d12accee18820c0606ccbe6d",
+              "refit_city.py": "dbde194cafee94f2ee245451f8a2b1c0db58a04c38b6cce2aa0fdfe573ff95ea",
+              "verify.py": "cef69a3ab872909adb10624614aa27ad09314a6220707473bf950e9bcd8ab960",
+              "workflow.py": "026dda398f1774c01e6ab336f14178eb90636e5d4ebddaa411f04bbc3e86e220",
+              "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+              "reference_manifest.json": "99469dd0e16cfca0068d1fed9b3f6d881b9671bca8e0b36270c12abb854fe961"
+            },
+            "execution_contract": {
+              "torch": "2.11.0+cu130",
+              "tabpfn": "9.2.0",
+              "cuda": "13.0",
+              "gpu": "Tesla T4",
+              "precision": "float32",
+              "checkpoint": {
+                "repo_id": "Prior-Labs/TabPFN-v2-reg",
+                "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+                "filename": "tabpfn-v2-regressor.ckpt",
+                "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736"
+              }
+            },
+            "train_indices": "d11da5e8c4d14dbcd69f13b6f0a839222cc502dd136159e5207dea3c01e44d95",
+            "valid_indices": "b8641b3bbbebd1c51221db1137830ca0e29d9fd6a0455f7cfbbd6b7e7f306970",
+            "training_targets": "ee2f3ef90fc26e6fce3918b88a5a27e90ca8f6b6b11e81425e2a24e0be52d203",
+            "configuration": {},
+            "seed": 10242,
+            "estimators": 16,
+            "city_fold_sha256": "f8c856fc074d5653672bbf04d4b38cf3b0c3f2e8dc87ce77daf7bcd0ebe501a4"
+          },
+          "sha256": "1d9ea2efa0df8dd426c2bbca7acd9a118853c82836b15f540d5ef974ac691dea",
+          "feature_map_sha256": "cee5d121ed916606407e418ace2ce94774cfa85bc8b01fedec42fdb7e2153754",
+          "vocabulary_sha256": "375a44900dedf848c6e411417f748b69f3633ebfa472063c58bef641560ae7bb",
+          "feature_count": 40
+        }
+      ],
+      "control_behavior": "Original-Mac V7 plus matching fixed-500-row TabPFN v2 controls; full 500-row scored CSV reproduction remains required."
+    },
+    "71": {
+      "file": "reference/v9_71.npz",
+      "sha256": "1f1b5dbfdb9196366ceaf38f97d5c1e29e4da95c7786368d108e8cf87a2bd2e5",
+      "fold_sha256": "369051948161e2c7ce035455beac8aa9b2a832e49fe341aa6bcd3407d9adc9f4",
+      "row_ids_sha256": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+      "inputs": {
+        "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+        "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+        "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+        "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+      },
+      "v7_witness": {
+        "file": "reference/oof_71.npz",
+        "sha256": "9daad2ef5359d0341477977c1bef19bd915a57129d780b605643342188c0ea54",
+        "fold_sha256": "369051948161e2c7ce035455beac8aa9b2a832e49fe341aa6bcd3407d9adc9f4",
+        "row_ids_sha256": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+        "verified_from": [
+          {
+            "kind": "original-platform V7 snapshot",
+            "file": "baseline_snapshots/v7_71.npz",
+            "sha256": "d2dc4282cfc3d6771c7e1ffd62629d24f204da19d975e430190e6640774c8b06",
+            "fold_sha256": "369051948161e2c7ce035455beac8aa9b2a832e49fe341aa6bcd3407d9adc9f4",
+            "train_ids": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "source_metadata": [
+              {
+                "context": {
+                  "name": "v5",
+                  "inputs": {
+                    "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+                    "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+                    "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+                    "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+                  },
+                  "sources": {
+                    "models.py": "029de9731d057d8827ff6c7f1789f7669b408eeb3626e50a1677db223614edf8",
+                    "workflow.py": "c99c63e5575e514ec030828a40c16511c8aa0fab5edb04c842d555c347114e8a",
+                    "reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+                    "scored_reference.json": "7148150a20525f1bee168fe6a0b6fd44d8b1244348881ee962aca464affa74cd"
+                  },
+                  "contract": "fec9f422b498cdbf84a3a8fcb093f405302e3bd2e1c29a14f62b9b1fbe04a376",
+                  "spec": null,
+                  "seeds": [
+                    10242,
+                    20242
+                  ],
+                  "training_rows": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+                  "extra": {
+                    "scheme": "71",
+                    "folds": "369051948161e2c7ce035455beac8aa9b2a832e49fe341aa6bcd3407d9adc9f4"
+                  }
+                },
+                "sha256": "c8283fd4fe1e24671168944c752ce8b205a742100f59fb8027718e26fb4ed87b",
+                "diagnostics": {
+                  "origin": "verified actual v6 frozen-v5 predictions",
+                  "source_sha256": "5375f1a0e0e3682e454392ebf6486885af498ec12b450807611d163968bc0652"
+                }
+              },
+              {
+                "context": {
+                  "name": "residual_tree_l2",
+                  "inputs": {
+                    "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+                    "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+                    "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+                    "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+                  },
+                  "sources": {
+                    "models.py": "029de9731d057d8827ff6c7f1789f7669b408eeb3626e50a1677db223614edf8",
+                    "workflow.py": "c99c63e5575e514ec030828a40c16511c8aa0fab5edb04c842d555c347114e8a",
+                    "reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+                    "scored_reference.json": "7148150a20525f1bee168fe6a0b6fd44d8b1244348881ee962aca464affa74cd"
+                  },
+                  "contract": "fec9f422b498cdbf84a3a8fcb093f405302e3bd2e1c29a14f62b9b1fbe04a376",
+                  "spec": {
+                    "family": "residual",
+                    "kind": "cat",
+                    "loss": "RMSE"
+                  },
+                  "seeds": [
+                    10242,
+                    20242
+                  ],
+                  "training_rows": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+                  "extra": {
+                    "scheme": "71"
+                  }
+                },
+                "sha256": "28c1a02dfc5d13b758e279943a345551847c2f8a168d879e56fa7553bf826a6a"
+              }
+            ]
+          },
+          {
+            "kind": "verified original V9 TabPFN fold",
+            "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_71_fold0.npz",
+            "sha256": "e2c3b99713a31f852e7448566cdeb7f7bf9d9c64639fc55397d1e796cde06a38",
+            "metadata_sha256": "4de8ed8785f5f16027489f3dd036b3e6477bf642d8cdedc7fc730c3f87e36335"
+          },
+          {
+            "kind": "verified original V9 TabPFN fold",
+            "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_71_fold1.npz",
+            "sha256": "627fd8bd1fb43cf9ad5f13502c487034074e02eec727fad4d14f44fd8176c09a",
+            "metadata_sha256": "55b211b316109265fdce602696ac560e7219c2b1a9da028a209f091ab4f5044b"
+          },
+          {
+            "kind": "verified original V9 TabPFN fold",
+            "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_71_fold2.npz",
+            "sha256": "4aeabaf3e73dca430cb61950d028b3141eeeca91b3e2d83268d89e146ba0be25",
+            "metadata_sha256": "1906009dbc88987633e2811406e2e1e2644753f463d77e881e538563b754ad71"
+          },
+          {
+            "kind": "verified original V9 TabPFN fold",
+            "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_71_fold3.npz",
+            "sha256": "3a5f80646e497f2dbfefba860ff39951185870d859bbb4394e4ef0f2ec25ba65",
+            "metadata_sha256": "696766f5c4ec82e881ca9c0a7cbb42223cc53c9c32167171c134a6252eb94694"
+          },
+          {
+            "kind": "verified original V9 TabPFN fold",
+            "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_71_fold4.npz",
+            "sha256": "b05641a45edc9c1ee5c2d2625593db26a632d7fac8c00f095ba87a74f264cbb8",
+            "metadata_sha256": "5daa2ee14e38ea9dc72125864b81474b3b4219692ca2801d078becbb7f2a5035"
+          }
+        ],
+        "v9_rmse": 19733020.017403986
+      },
+      "v7_witness_file": "provenance/original_71.npz",
+      "v7_witness_sha256": "9daad2ef5359d0341477977c1bef19bd915a57129d780b605643342188c0ea54",
+      "tabpfn_fold_witnesses": [
+        {
+          "context": {
+            "name": "BASE",
+            "scheme": "71",
+            "fold": 0,
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "sources": {
+              "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+              "core.py": "6bdd9fe9915f5adcd263fdade0785574d1050470c52be7d48e1d6c620676ab31",
+              "features.py": "01e5ecd5db41b248d13c2597735e776a16f730ca54337845610c73e309642a6f",
+              "fresh_worker.py": "98d204f3895ce08d1ca2759fb9a6b7b1af8ab05cd8f3fc1377c1366169824d71",
+              "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+              "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+              "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+              "modeling.py": "22d19bd4490e619100580d1a8d2d64990b8a9995d12accee18820c0606ccbe6d",
+              "refit_city.py": "dbde194cafee94f2ee245451f8a2b1c0db58a04c38b6cce2aa0fdfe573ff95ea",
+              "verify.py": "cef69a3ab872909adb10624614aa27ad09314a6220707473bf950e9bcd8ab960",
+              "workflow.py": "026dda398f1774c01e6ab336f14178eb90636e5d4ebddaa411f04bbc3e86e220",
+              "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+              "reference_manifest.json": "99469dd0e16cfca0068d1fed9b3f6d881b9671bca8e0b36270c12abb854fe961"
+            },
+            "execution_contract": {
+              "torch": "2.11.0+cu130",
+              "tabpfn": "9.2.0",
+              "cuda": "13.0",
+              "gpu": "Tesla T4",
+              "precision": "float32",
+              "checkpoint": {
+                "repo_id": "Prior-Labs/TabPFN-v2-reg",
+                "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+                "filename": "tabpfn-v2-regressor.ckpt",
+                "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736"
+              }
+            },
+            "train_indices": "ba24295976a402406850e78ebbeb94aa6fc5be2da8b3f1ac2dd3b025f3f84159",
+            "valid_indices": "1ee05fe23b40c1f2c02b53338d9ade4eb1f93dd79ab96cee6667691e06d3e8b7",
+            "training_targets": "bc43caf0460c607eee65b54a82449b5a002cf48dea0e49da9ee44f1805dd48cb",
+            "configuration": {},
+            "seed": 10242,
+            "estimators": 16,
+            "city_fold_sha256": "369051948161e2c7ce035455beac8aa9b2a832e49fe341aa6bcd3407d9adc9f4"
+          },
+          "sha256": "f27a20fb74d66f1e2dec9c3a0f80fd913799d7d6caab6528c98b73c9aa95957e",
+          "feature_map_sha256": "cee5d121ed916606407e418ace2ce94774cfa85bc8b01fedec42fdb7e2153754",
+          "vocabulary_sha256": "1927aa13cb1d80cdf09f79c7f92bf610efcdbece0d209224286a684c07513e6a",
+          "feature_count": 40
+        },
+        {
+          "context": {
+            "name": "BASE",
+            "scheme": "71",
+            "fold": 1,
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "sources": {
+              "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+              "core.py": "6bdd9fe9915f5adcd263fdade0785574d1050470c52be7d48e1d6c620676ab31",
+              "features.py": "01e5ecd5db41b248d13c2597735e776a16f730ca54337845610c73e309642a6f",
+              "fresh_worker.py": "98d204f3895ce08d1ca2759fb9a6b7b1af8ab05cd8f3fc1377c1366169824d71",
+              "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+              "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+              "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+              "modeling.py": "22d19bd4490e619100580d1a8d2d64990b8a9995d12accee18820c0606ccbe6d",
+              "refit_city.py": "dbde194cafee94f2ee245451f8a2b1c0db58a04c38b6cce2aa0fdfe573ff95ea",
+              "verify.py": "cef69a3ab872909adb10624614aa27ad09314a6220707473bf950e9bcd8ab960",
+              "workflow.py": "026dda398f1774c01e6ab336f14178eb90636e5d4ebddaa411f04bbc3e86e220",
+              "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+              "reference_manifest.json": "99469dd0e16cfca0068d1fed9b3f6d881b9671bca8e0b36270c12abb854fe961"
+            },
+            "execution_contract": {
+              "torch": "2.11.0+cu130",
+              "tabpfn": "9.2.0",
+              "cuda": "13.0",
+              "gpu": "Tesla T4",
+              "precision": "float32",
+              "checkpoint": {
+                "repo_id": "Prior-Labs/TabPFN-v2-reg",
+                "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+                "filename": "tabpfn-v2-regressor.ckpt",
+                "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736"
+              }
+            },
+            "train_indices": "8a17533df98fe9e48c0efe4a3138ba0ad3e9eb1a1987748af2aba1328fd2efe6",
+            "valid_indices": "a8e09490e3e9a89d8357395bba654bb8a1b7419047d936664173fc32cb0e8d3f",
+            "training_targets": "2b57c1e6dd5e98b8a528b32cba82afeb64f5b41c68212a27e8b57db85764d9e7",
+            "configuration": {},
+            "seed": 10242,
+            "estimators": 16,
+            "city_fold_sha256": "369051948161e2c7ce035455beac8aa9b2a832e49fe341aa6bcd3407d9adc9f4"
+          },
+          "sha256": "802601f04479d44ccd75e15bdcab98a722752b3e3ea680139b6b2079815f8fe2",
+          "feature_map_sha256": "cee5d121ed916606407e418ace2ce94774cfa85bc8b01fedec42fdb7e2153754",
+          "vocabulary_sha256": "e6bee27992f95ab417675c77608feb9808251b01a6f6e12b4c9fdd611a39e6f0",
+          "feature_count": 40
+        },
+        {
+          "context": {
+            "name": "BASE",
+            "scheme": "71",
+            "fold": 2,
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "sources": {
+              "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+              "core.py": "6bdd9fe9915f5adcd263fdade0785574d1050470c52be7d48e1d6c620676ab31",
+              "features.py": "01e5ecd5db41b248d13c2597735e776a16f730ca54337845610c73e309642a6f",
+              "fresh_worker.py": "98d204f3895ce08d1ca2759fb9a6b7b1af8ab05cd8f3fc1377c1366169824d71",
+              "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+              "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+              "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+              "modeling.py": "22d19bd4490e619100580d1a8d2d64990b8a9995d12accee18820c0606ccbe6d",
+              "refit_city.py": "dbde194cafee94f2ee245451f8a2b1c0db58a04c38b6cce2aa0fdfe573ff95ea",
+              "verify.py": "cef69a3ab872909adb10624614aa27ad09314a6220707473bf950e9bcd8ab960",
+              "workflow.py": "026dda398f1774c01e6ab336f14178eb90636e5d4ebddaa411f04bbc3e86e220",
+              "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+              "reference_manifest.json": "99469dd0e16cfca0068d1fed9b3f6d881b9671bca8e0b36270c12abb854fe961"
+            },
+            "execution_contract": {
+              "torch": "2.11.0+cu130",
+              "tabpfn": "9.2.0",
+              "cuda": "13.0",
+              "gpu": "Tesla T4",
+              "precision": "float32",
+              "checkpoint": {
+                "repo_id": "Prior-Labs/TabPFN-v2-reg",
+                "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+                "filename": "tabpfn-v2-regressor.ckpt",
+                "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736"
+              }
+            },
+            "train_indices": "65669a94b9eb8c312c5961df44266ee7df8cf6789e471851d0bda696369785c0",
+            "valid_indices": "a3aa9ed518cc346945bbdc7b2d9c961c6ced7eced332d6d2439e07dea6825bdd",
+            "training_targets": "e236b96023251f17400b8c3ce488341df1daed1c126d73666074e1e4763e3362",
+            "configuration": {},
+            "seed": 10242,
+            "estimators": 16,
+            "city_fold_sha256": "369051948161e2c7ce035455beac8aa9b2a832e49fe341aa6bcd3407d9adc9f4"
+          },
+          "sha256": "1c217df929a7a09018bb3929fc88312db4c5c5534e9084254ac80775ddb1e92b",
+          "feature_map_sha256": "cee5d121ed916606407e418ace2ce94774cfa85bc8b01fedec42fdb7e2153754",
+          "vocabulary_sha256": "5faa78b4f6b445882b83f855c4d2a4f46d99695e513f518b93dfccdd6175c85d",
+          "feature_count": 40
+        },
+        {
+          "context": {
+            "name": "BASE",
+            "scheme": "71",
+            "fold": 3,
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "sources": {
+              "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+              "core.py": "6bdd9fe9915f5adcd263fdade0785574d1050470c52be7d48e1d6c620676ab31",
+              "features.py": "01e5ecd5db41b248d13c2597735e776a16f730ca54337845610c73e309642a6f",
+              "fresh_worker.py": "98d204f3895ce08d1ca2759fb9a6b7b1af8ab05cd8f3fc1377c1366169824d71",
+              "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+              "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+              "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+              "modeling.py": "22d19bd4490e619100580d1a8d2d64990b8a9995d12accee18820c0606ccbe6d",
+              "refit_city.py": "dbde194cafee94f2ee245451f8a2b1c0db58a04c38b6cce2aa0fdfe573ff95ea",
+              "verify.py": "cef69a3ab872909adb10624614aa27ad09314a6220707473bf950e9bcd8ab960",
+              "workflow.py": "026dda398f1774c01e6ab336f14178eb90636e5d4ebddaa411f04bbc3e86e220",
+              "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+              "reference_manifest.json": "99469dd0e16cfca0068d1fed9b3f6d881b9671bca8e0b36270c12abb854fe961"
+            },
+            "execution_contract": {
+              "torch": "2.11.0+cu130",
+              "tabpfn": "9.2.0",
+              "cuda": "13.0",
+              "gpu": "Tesla T4",
+              "precision": "float32",
+              "checkpoint": {
+                "repo_id": "Prior-Labs/TabPFN-v2-reg",
+                "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+                "filename": "tabpfn-v2-regressor.ckpt",
+                "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736"
+              }
+            },
+            "train_indices": "bc37e2c89cb68ce7a6362899972b1775c5b2dd085474c18f63124109e8d8cd29",
+            "valid_indices": "7978442dac5bd81ff34393313d67fdcc1a58255f113226ae7c1c566341ff7dc9",
+            "training_targets": "61c2f5f74aedcdc330a291eac6bd03dff8de065983b372b634f19b6ac3fa86d0",
+            "configuration": {},
+            "seed": 10242,
+            "estimators": 16,
+            "city_fold_sha256": "369051948161e2c7ce035455beac8aa9b2a832e49fe341aa6bcd3407d9adc9f4"
+          },
+          "sha256": "ef8f63a6e6222785c29fe1fd55182bb5b61ce8d0e5eeed71ec3152348402ac18",
+          "feature_map_sha256": "cee5d121ed916606407e418ace2ce94774cfa85bc8b01fedec42fdb7e2153754",
+          "vocabulary_sha256": "3c9c93dd71423300a8a6335d88dc59517ece80aeed32efec7455dd94b392303d",
+          "feature_count": 40
+        },
+        {
+          "context": {
+            "name": "BASE",
+            "scheme": "71",
+            "fold": 4,
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "sources": {
+              "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+              "core.py": "6bdd9fe9915f5adcd263fdade0785574d1050470c52be7d48e1d6c620676ab31",
+              "features.py": "01e5ecd5db41b248d13c2597735e776a16f730ca54337845610c73e309642a6f",
+              "fresh_worker.py": "98d204f3895ce08d1ca2759fb9a6b7b1af8ab05cd8f3fc1377c1366169824d71",
+              "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+              "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+              "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+              "modeling.py": "22d19bd4490e619100580d1a8d2d64990b8a9995d12accee18820c0606ccbe6d",
+              "refit_city.py": "dbde194cafee94f2ee245451f8a2b1c0db58a04c38b6cce2aa0fdfe573ff95ea",
+              "verify.py": "cef69a3ab872909adb10624614aa27ad09314a6220707473bf950e9bcd8ab960",
+              "workflow.py": "026dda398f1774c01e6ab336f14178eb90636e5d4ebddaa411f04bbc3e86e220",
+              "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+              "reference_manifest.json": "99469dd0e16cfca0068d1fed9b3f6d881b9671bca8e0b36270c12abb854fe961"
+            },
+            "execution_contract": {
+              "torch": "2.11.0+cu130",
+              "tabpfn": "9.2.0",
+              "cuda": "13.0",
+              "gpu": "Tesla T4",
+              "precision": "float32",
+              "checkpoint": {
+                "repo_id": "Prior-Labs/TabPFN-v2-reg",
+                "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+                "filename": "tabpfn-v2-regressor.ckpt",
+                "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736"
+              }
+            },
+            "train_indices": "b23ad0d9c77be802fa955c52ad29bacba899efeccde11460dc1eb1347de2f4a5",
+            "valid_indices": "77a493a6414809c32b0af66c4287ec6f3341eff36d0f678f0145ee70e933d772",
+            "training_targets": "94e201c10180c5c7d111d045fc0e09603fc4b8cceb4437e6ce26ce38dd9e94ea",
+            "configuration": {},
+            "seed": 10242,
+            "estimators": 16,
+            "city_fold_sha256": "369051948161e2c7ce035455beac8aa9b2a832e49fe341aa6bcd3407d9adc9f4"
+          },
+          "sha256": "605500ceeb8e362f713649353edca86eb5b6a107bc79e962a07e469aa13f8a52",
+          "feature_map_sha256": "cee5d121ed916606407e418ace2ce94774cfa85bc8b01fedec42fdb7e2153754",
+          "vocabulary_sha256": "ce2b6559c89902b5443ef042308640e43e202ad5c0b9b270c2cf2f8c9cfbcd62",
+          "feature_count": 40
+        }
+      ],
+      "control_behavior": "Original-Mac V7 plus matching fixed-500-row TabPFN v2 controls; full 500-row scored CSV reproduction remains required."
+    },
+    "strat:27421": {
+      "file": "reference/v9_strat_27421.npz",
+      "sha256": "12e60bb90ae889d470adee233a2bb24a9c9801956ec0ce3bba5c20be738b6848",
+      "fold_sha256": "67db8264d9d9d73fbc8379c98a739dda7d2b85904a111154feb79e4793cc344a",
+      "row_ids_sha256": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+      "inputs": {
+        "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+        "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+        "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+        "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+      },
+      "v7_witness": {
+        "file": "reference/oof_strat_27421.npz",
+        "sha256": "e12c635006e8f5adb230c6d7ac2724576a6c0bbeb72e9875d04c6aeb4c35e88b",
+        "fold_sha256": "67db8264d9d9d73fbc8379c98a739dda7d2b85904a111154feb79e4793cc344a",
+        "row_ids_sha256": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+        "verified_from": [
+          {
+            "kind": "original-platform V7 snapshot",
+            "file": "baseline_snapshots/v7_strat_27421.npz",
+            "sha256": "e504f31f2a1f260cffed4900890c1849bcfd42cf69be9ee697689d93adb66b2a",
+            "fold_sha256": "67db8264d9d9d73fbc8379c98a739dda7d2b85904a111154feb79e4793cc344a",
+            "train_ids": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "source_metadata": [
+              {
+                "context": {
+                  "name": "v5",
+                  "inputs": {
+                    "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+                    "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+                    "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+                    "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+                  },
+                  "sources": {
+                    "models.py": "029de9731d057d8827ff6c7f1789f7669b408eeb3626e50a1677db223614edf8",
+                    "workflow.py": "c99c63e5575e514ec030828a40c16511c8aa0fab5edb04c842d555c347114e8a",
+                    "reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+                    "scored_reference.json": "7148150a20525f1bee168fe6a0b6fd44d8b1244348881ee962aca464affa74cd"
+                  },
+                  "contract": "fec9f422b498cdbf84a3a8fcb093f405302e3bd2e1c29a14f62b9b1fbe04a376",
+                  "spec": null,
+                  "seeds": [
+                    10242,
+                    20242
+                  ],
+                  "training_rows": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+                  "extra": {
+                    "scheme": "strat:27421",
+                    "folds": "67db8264d9d9d73fbc8379c98a739dda7d2b85904a111154feb79e4793cc344a"
+                  }
+                },
+                "sha256": "5fb39dd4e3d9d872875191d377e246a29afc5e8c226d8de7c29f207c49cd7536",
+                "diagnostics": {
+                  "origin": "fresh frozen-v5 folds on v7 split assignment"
+                }
+              },
+              {
+                "context": {
+                  "name": "residual_tree_l2",
+                  "inputs": {
+                    "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+                    "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+                    "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+                    "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+                  },
+                  "sources": {
+                    "models.py": "029de9731d057d8827ff6c7f1789f7669b408eeb3626e50a1677db223614edf8",
+                    "workflow.py": "c99c63e5575e514ec030828a40c16511c8aa0fab5edb04c842d555c347114e8a",
+                    "reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+                    "scored_reference.json": "7148150a20525f1bee168fe6a0b6fd44d8b1244348881ee962aca464affa74cd"
+                  },
+                  "contract": "fec9f422b498cdbf84a3a8fcb093f405302e3bd2e1c29a14f62b9b1fbe04a376",
+                  "spec": {
+                    "family": "residual",
+                    "kind": "cat",
+                    "loss": "RMSE"
+                  },
+                  "seeds": [
+                    10242,
+                    20242
+                  ],
+                  "training_rows": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+                  "extra": {
+                    "scheme": "strat:27421"
+                  }
+                },
+                "sha256": "d00b367621d84db2f77f3211a7814bfeccfe2791404b6e8cefa2adea2a426f4a"
+              }
+            ]
+          },
+          {
+            "kind": "verified original V9 TabPFN fold",
+            "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_strat_27421_fold0.npz",
+            "sha256": "1ea5c6ab051d13898de270f3544f94a2be8de7e2f7bef0f69b10f41c0b3eb3f5",
+            "metadata_sha256": "8ded02e3555f39303392e9d3006e9d71f36243378cd9fbd1cb070d977af34c54"
+          },
+          {
+            "kind": "verified original V9 TabPFN fold",
+            "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_strat_27421_fold1.npz",
+            "sha256": "6bb5ace1ce2f50206c8892decebb1d19e15ecbb909cc8bed30c4d694f771c03e",
+            "metadata_sha256": "77ed099b8798162073648984b98e8748369a5e93f316c843e4c9873beb864f7a"
+          },
+          {
+            "kind": "verified original V9 TabPFN fold",
+            "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_strat_27421_fold2.npz",
+            "sha256": "eb8e441cd1909fb87837967535e7266240c83937ef483d94bbbde79f0079c9cc",
+            "metadata_sha256": "032213dab1a2d7c5f49ecdd554b046622b81040e59fb3f691d2a8fa414125fcd"
+          },
+          {
+            "kind": "verified original V9 TabPFN fold",
+            "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_strat_27421_fold3.npz",
+            "sha256": "ac88ea5956e55fad449b69a4e97a0f8600aea2969b4ae159772bc142b03d5577",
+            "metadata_sha256": "7b7f3472a0fbfdb6244d56ba06a9f02ef0602969ceed303b8654ea87dcce6e90"
+          },
+          {
+            "kind": "verified original V9 TabPFN fold",
+            "path": "./improvement_v9/colab_cli_runs/20261026T160148Z/partial_backup/results/cache/tabpfn_raw_v7_ensemble16_strat_27421_fold4.npz",
+            "sha256": "20b81c00c89993339bb9e33f03f582a983e7b34b5a9513c035e0f2bbb191918e",
+            "metadata_sha256": "54dbdeda79be1f539ee95d2c0d1dc1e8b6eb9bac0b0065c27cc014277845f4d7"
+          }
+        ],
+        "v9_rmse": 19726481.414450042
+      },
+      "v7_witness_file": "provenance/original_strat_27421.npz",
+      "v7_witness_sha256": "e12c635006e8f5adb230c6d7ac2724576a6c0bbeb72e9875d04c6aeb4c35e88b",
+      "tabpfn_fold_witnesses": [
+        {
+          "context": {
+            "name": "BASE",
+            "scheme": "strat:27421",
+            "fold": 0,
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "sources": {
+              "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+              "core.py": "6bdd9fe9915f5adcd263fdade0785574d1050470c52be7d48e1d6c620676ab31",
+              "features.py": "01e5ecd5db41b248d13c2597735e776a16f730ca54337845610c73e309642a6f",
+              "fresh_worker.py": "98d204f3895ce08d1ca2759fb9a6b7b1af8ab05cd8f3fc1377c1366169824d71",
+              "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+              "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+              "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+              "modeling.py": "22d19bd4490e619100580d1a8d2d64990b8a9995d12accee18820c0606ccbe6d",
+              "refit_city.py": "dbde194cafee94f2ee245451f8a2b1c0db58a04c38b6cce2aa0fdfe573ff95ea",
+              "verify.py": "cef69a3ab872909adb10624614aa27ad09314a6220707473bf950e9bcd8ab960",
+              "workflow.py": "026dda398f1774c01e6ab336f14178eb90636e5d4ebddaa411f04bbc3e86e220",
+              "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+              "reference_manifest.json": "99469dd0e16cfca0068d1fed9b3f6d881b9671bca8e0b36270c12abb854fe961"
+            },
+            "execution_contract": {
+              "torch": "2.11.0+cu130",
+              "tabpfn": "9.2.0",
+              "cuda": "13.0",
+              "gpu": "Tesla T4",
+              "precision": "float32",
+              "checkpoint": {
+                "repo_id": "Prior-Labs/TabPFN-v2-reg",
+                "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+                "filename": "tabpfn-v2-regressor.ckpt",
+                "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736"
+              }
+            },
+            "train_indices": "a3d5c94296efbcdb83f0ce77a67844a9c70cb477cfd8ad775e71b4e3aa5f4259",
+            "valid_indices": "2255711ce1e177dbf03a92a312db064d3978b79ccdfe3594431c7ffc630cc725",
+            "training_targets": "43561051e4cf4ae5f0a6465c2fe463c3f4612c509611c2805c775372b4a14f86",
+            "configuration": {},
+            "seed": 10242,
+            "estimators": 16,
+            "city_fold_sha256": "67db8264d9d9d73fbc8379c98a739dda7d2b85904a111154feb79e4793cc344a"
+          },
+          "sha256": "b9c0de0557a4bc51090b9488e57cca6e190bf16d06c876adfa7b908cb701417c",
+          "feature_map_sha256": "cee5d121ed916606407e418ace2ce94774cfa85bc8b01fedec42fdb7e2153754",
+          "vocabulary_sha256": "4401d7540d1a440d39e3ef0cd2ff78ad99d5f73de61915eb35699c22a203866e",
+          "feature_count": 40
+        },
+        {
+          "context": {
+            "name": "BASE",
+            "scheme": "strat:27421",
+            "fold": 1,
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "sources": {
+              "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+              "core.py": "6bdd9fe9915f5adcd263fdade0785574d1050470c52be7d48e1d6c620676ab31",
+              "features.py": "01e5ecd5db41b248d13c2597735e776a16f730ca54337845610c73e309642a6f",
+              "fresh_worker.py": "98d204f3895ce08d1ca2759fb9a6b7b1af8ab05cd8f3fc1377c1366169824d71",
+              "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+              "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+              "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+              "modeling.py": "22d19bd4490e619100580d1a8d2d64990b8a9995d12accee18820c0606ccbe6d",
+              "refit_city.py": "dbde194cafee94f2ee245451f8a2b1c0db58a04c38b6cce2aa0fdfe573ff95ea",
+              "verify.py": "cef69a3ab872909adb10624614aa27ad09314a6220707473bf950e9bcd8ab960",
+              "workflow.py": "026dda398f1774c01e6ab336f14178eb90636e5d4ebddaa411f04bbc3e86e220",
+              "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+              "reference_manifest.json": "99469dd0e16cfca0068d1fed9b3f6d881b9671bca8e0b36270c12abb854fe961"
+            },
+            "execution_contract": {
+              "torch": "2.11.0+cu130",
+              "tabpfn": "9.2.0",
+              "cuda": "13.0",
+              "gpu": "Tesla T4",
+              "precision": "float32",
+              "checkpoint": {
+                "repo_id": "Prior-Labs/TabPFN-v2-reg",
+                "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+                "filename": "tabpfn-v2-regressor.ckpt",
+                "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736"
+              }
+            },
+            "train_indices": "aa3e1d5429bb37c7ac659345a84d73926ab3ece7e4f138aa35305c89de7c6625",
+            "valid_indices": "222b3301ccaad01ae8a80089378ba5331bec92a505042c361463063b82999675",
+            "training_targets": "88a002a0617190777fe8808a462c60b8e44dbb86cf46c732bcdfc8b48f951304",
+            "configuration": {},
+            "seed": 10242,
+            "estimators": 16,
+            "city_fold_sha256": "67db8264d9d9d73fbc8379c98a739dda7d2b85904a111154feb79e4793cc344a"
+          },
+          "sha256": "1af75c5fdced925992e9bdf95a206fc8340f52c4c9341f3d5c372a8f534d9998",
+          "feature_map_sha256": "cee5d121ed916606407e418ace2ce94774cfa85bc8b01fedec42fdb7e2153754",
+          "vocabulary_sha256": "19e8a8a95e3c67631f3576a9d3af37cc48c8d5945aec109d156208de26df9075",
+          "feature_count": 40
+        },
+        {
+          "context": {
+            "name": "BASE",
+            "scheme": "strat:27421",
+            "fold": 2,
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "sources": {
+              "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+              "core.py": "6bdd9fe9915f5adcd263fdade0785574d1050470c52be7d48e1d6c620676ab31",
+              "features.py": "01e5ecd5db41b248d13c2597735e776a16f730ca54337845610c73e309642a6f",
+              "fresh_worker.py": "98d204f3895ce08d1ca2759fb9a6b7b1af8ab05cd8f3fc1377c1366169824d71",
+              "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+              "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+              "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+              "modeling.py": "22d19bd4490e619100580d1a8d2d64990b8a9995d12accee18820c0606ccbe6d",
+              "refit_city.py": "dbde194cafee94f2ee245451f8a2b1c0db58a04c38b6cce2aa0fdfe573ff95ea",
+              "verify.py": "cef69a3ab872909adb10624614aa27ad09314a6220707473bf950e9bcd8ab960",
+              "workflow.py": "026dda398f1774c01e6ab336f14178eb90636e5d4ebddaa411f04bbc3e86e220",
+              "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+              "reference_manifest.json": "99469dd0e16cfca0068d1fed9b3f6d881b9671bca8e0b36270c12abb854fe961"
+            },
+            "execution_contract": {
+              "torch": "2.11.0+cu130",
+              "tabpfn": "9.2.0",
+              "cuda": "13.0",
+              "gpu": "Tesla T4",
+              "precision": "float32",
+              "checkpoint": {
+                "repo_id": "Prior-Labs/TabPFN-v2-reg",
+                "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+                "filename": "tabpfn-v2-regressor.ckpt",
+                "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736"
+              }
+            },
+            "train_indices": "925cd9cf860427120708fcfc060b4eed14624f2e2c6196906fa8b48cb638208c",
+            "valid_indices": "e224d7666861ba790b69d7bb1a6c573f11a455be418ed6a3da09b79410cefddf",
+            "training_targets": "aada63d86932082679f6992d95443a162e213a5741e675d55ffc9553c703e79b",
+            "configuration": {},
+            "seed": 10242,
+            "estimators": 16,
+            "city_fold_sha256": "67db8264d9d9d73fbc8379c98a739dda7d2b85904a111154feb79e4793cc344a"
+          },
+          "sha256": "17519c8d674d7d7d706c993d6f76f66de77e1d87c5724dd305da854fda8d7972",
+          "feature_map_sha256": "cee5d121ed916606407e418ace2ce94774cfa85bc8b01fedec42fdb7e2153754",
+          "vocabulary_sha256": "17d616e7723455380d31a9948fee84fb84be3cc71fdf27a19c7b68a19e2ee84f",
+          "feature_count": 40
+        },
+        {
+          "context": {
+            "name": "BASE",
+            "scheme": "strat:27421",
+            "fold": 3,
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "sources": {
+              "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+              "core.py": "6bdd9fe9915f5adcd263fdade0785574d1050470c52be7d48e1d6c620676ab31",
+              "features.py": "01e5ecd5db41b248d13c2597735e776a16f730ca54337845610c73e309642a6f",
+              "fresh_worker.py": "98d204f3895ce08d1ca2759fb9a6b7b1af8ab05cd8f3fc1377c1366169824d71",
+              "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+              "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+              "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+              "modeling.py": "22d19bd4490e619100580d1a8d2d64990b8a9995d12accee18820c0606ccbe6d",
+              "refit_city.py": "dbde194cafee94f2ee245451f8a2b1c0db58a04c38b6cce2aa0fdfe573ff95ea",
+              "verify.py": "cef69a3ab872909adb10624614aa27ad09314a6220707473bf950e9bcd8ab960",
+              "workflow.py": "026dda398f1774c01e6ab336f14178eb90636e5d4ebddaa411f04bbc3e86e220",
+              "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+              "reference_manifest.json": "99469dd0e16cfca0068d1fed9b3f6d881b9671bca8e0b36270c12abb854fe961"
+            },
+            "execution_contract": {
+              "torch": "2.11.0+cu130",
+              "tabpfn": "9.2.0",
+              "cuda": "13.0",
+              "gpu": "Tesla T4",
+              "precision": "float32",
+              "checkpoint": {
+                "repo_id": "Prior-Labs/TabPFN-v2-reg",
+                "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+                "filename": "tabpfn-v2-regressor.ckpt",
+                "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736"
+              }
+            },
+            "train_indices": "460f3ea82077d1bff31d225acd8bfe2ec89ee66bbd29ac96eb11a00c540fe493",
+            "valid_indices": "8e91ff75745aa652fb06d5df2e2d4347e801818e8caab1b1bef8c57df6d4d013",
+            "training_targets": "2b81a2ba94125a8abb045b073bba9be4179acbd01d249995c53c28522d7f4a29",
+            "configuration": {},
+            "seed": 10242,
+            "estimators": 16,
+            "city_fold_sha256": "67db8264d9d9d73fbc8379c98a739dda7d2b85904a111154feb79e4793cc344a"
+          },
+          "sha256": "7a3315ae835e16e71c0bb7749b61d7f95db2a3e17952cd7ab549699a00c1e1db",
+          "feature_map_sha256": "cee5d121ed916606407e418ace2ce94774cfa85bc8b01fedec42fdb7e2153754",
+          "vocabulary_sha256": "e9d329e14f95c8d6d9725917e4bc94c8ae1670494ecb0ef536eb82483e17a7e9",
+          "feature_count": 40
+        },
+        {
+          "context": {
+            "name": "BASE",
+            "scheme": "strat:27421",
+            "fold": 4,
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "sources": {
+              "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+              "core.py": "6bdd9fe9915f5adcd263fdade0785574d1050470c52be7d48e1d6c620676ab31",
+              "features.py": "01e5ecd5db41b248d13c2597735e776a16f730ca54337845610c73e309642a6f",
+              "fresh_worker.py": "98d204f3895ce08d1ca2759fb9a6b7b1af8ab05cd8f3fc1377c1366169824d71",
+              "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+              "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+              "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+              "modeling.py": "22d19bd4490e619100580d1a8d2d64990b8a9995d12accee18820c0606ccbe6d",
+              "refit_city.py": "dbde194cafee94f2ee245451f8a2b1c0db58a04c38b6cce2aa0fdfe573ff95ea",
+              "verify.py": "cef69a3ab872909adb10624614aa27ad09314a6220707473bf950e9bcd8ab960",
+              "workflow.py": "026dda398f1774c01e6ab336f14178eb90636e5d4ebddaa411f04bbc3e86e220",
+              "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+              "reference_manifest.json": "99469dd0e16cfca0068d1fed9b3f6d881b9671bca8e0b36270c12abb854fe961"
+            },
+            "execution_contract": {
+              "torch": "2.11.0+cu130",
+              "tabpfn": "9.2.0",
+              "cuda": "13.0",
+              "gpu": "Tesla T4",
+              "precision": "float32",
+              "checkpoint": {
+                "repo_id": "Prior-Labs/TabPFN-v2-reg",
+                "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+                "filename": "tabpfn-v2-regressor.ckpt",
+                "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736"
+              }
+            },
+            "train_indices": "285a104264ec952ab2f8f2d404da4cd2e477695cd533ee17bb54d28b486874b9",
+            "valid_indices": "0eb5deb4194664ae29a23e87ab46fc01d81e717f5703ee263b8eacc961838342",
+            "training_targets": "a0b0df0f0b7c3d86e0f5d5ed5d441f2ec6af0cac71c9abf5c746ab00e80abba3",
+            "configuration": {},
+            "seed": 10242,
+            "estimators": 16,
+            "city_fold_sha256": "67db8264d9d9d73fbc8379c98a739dda7d2b85904a111154feb79e4793cc344a"
+          },
+          "sha256": "a1124781cb6efeafbd67cd6d3eaad7cd0100ad1ff09cedb5915a4d832b484ec6",
+          "feature_map_sha256": "cee5d121ed916606407e418ace2ce94774cfa85bc8b01fedec42fdb7e2153754",
+          "vocabulary_sha256": "8f14069fe6b448869f28fa5596feb497525ad058bef3b07852da9921a47e3056",
+          "feature_count": 40
+        }
+      ],
+      "control_behavior": "Original-Mac V7 plus matching fixed-500-row TabPFN v2 controls; full 500-row scored CSV reproduction remains required."
+    },
+    "city": {
+      "file": "reference/v9_city.npz",
+      "sha256": "f3f0ea4ed3d2513cb3ec36e1397d62927add7a2b6e1ccdbcf966750dfbe46792",
+      "fold_sha256": "0f837d3af050769bd40fe8852bc42adb22878b1e111d7758ff73662a8e2fe912",
+      "row_ids_sha256": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+      "inputs": {
+        "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+        "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+        "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+        "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+      },
+      "v7_witness": {
+        "inputs": {
+          "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+          "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+          "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+          "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+        },
+        "sources": {
+          "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+          "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+          "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+          "v5_contract.json": "3446412f01d536a31123142b984392216efd29094965500251386eac1814ab69"
+        },
+        "platform": {
+          "system": "Darwin",
+          "machine": "arm64",
+          "python": "3.12.14"
+        },
+        "row_ids_sha256": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+        "fold_sha256": "0f837d3af050769bd40fe8852bc42adb22878b1e111d7758ff73662a8e2fe912",
+        "sha256": "81a86445107c5fef9a7b038b66052423cd458c8180f61ad7b3772d41394d2a96",
+        "lock_sha256": "c50e3440cae659d78fd694396afd7748ae92c47616348b9ebb79092456014f22"
+      },
+      "v7_witness_file": "provenance/original_city.npz",
+      "v7_witness_sha256": "81a86445107c5fef9a7b038b66052423cd458c8180f61ad7b3772d41394d2a96",
+      "tabpfn_fold_witnesses": [
+        {
+          "context": {
+            "name": "BASE",
+            "scheme": "city",
+            "fold": 0,
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "sources": {
+              "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+              "core.py": "6bdd9fe9915f5adcd263fdade0785574d1050470c52be7d48e1d6c620676ab31",
+              "features.py": "01e5ecd5db41b248d13c2597735e776a16f730ca54337845610c73e309642a6f",
+              "fresh_worker.py": "98d204f3895ce08d1ca2759fb9a6b7b1af8ab05cd8f3fc1377c1366169824d71",
+              "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+              "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+              "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+              "modeling.py": "22d19bd4490e619100580d1a8d2d64990b8a9995d12accee18820c0606ccbe6d",
+              "refit_city.py": "dbde194cafee94f2ee245451f8a2b1c0db58a04c38b6cce2aa0fdfe573ff95ea",
+              "verify.py": "cef69a3ab872909adb10624614aa27ad09314a6220707473bf950e9bcd8ab960",
+              "workflow.py": "026dda398f1774c01e6ab336f14178eb90636e5d4ebddaa411f04bbc3e86e220",
+              "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+              "reference_manifest.json": "99469dd0e16cfca0068d1fed9b3f6d881b9671bca8e0b36270c12abb854fe961"
+            },
+            "execution_contract": {
+              "torch": "2.11.0+cu130",
+              "tabpfn": "9.2.0",
+              "cuda": "13.0",
+              "gpu": "Tesla T4",
+              "precision": "float32",
+              "checkpoint": {
+                "repo_id": "Prior-Labs/TabPFN-v2-reg",
+                "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+                "filename": "tabpfn-v2-regressor.ckpt",
+                "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736"
+              }
+            },
+            "train_indices": "b898f45cd536232e512862a1e1b966d6f3a4f0624c41f5616c5535a6d28364e4",
+            "valid_indices": "bba15b629ade079a5b3b0885f0108b83d8b866ec4db7b5a8782d339a2674ba08",
+            "training_targets": "2248bc839f40207fcedec70667c5fd8a3c8857a78ee8dd8323493f999929a77b",
+            "configuration": {},
+            "seed": 10242,
+            "estimators": 16,
+            "city_fold_sha256": "0f837d3af050769bd40fe8852bc42adb22878b1e111d7758ff73662a8e2fe912"
+          },
+          "sha256": "e488d52c55b14cb84cb977d1140c21ffd723d26ced3809e145142af7a135da47",
+          "feature_map_sha256": "cee5d121ed916606407e418ace2ce94774cfa85bc8b01fedec42fdb7e2153754",
+          "vocabulary_sha256": "f9c2b49a492b41283b69dcadf329d6f3948d0edb3345d21e8016338e8530eb59",
+          "feature_count": 40
+        },
+        {
+          "context": {
+            "name": "BASE",
+            "scheme": "city",
+            "fold": 1,
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "sources": {
+              "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+              "core.py": "6bdd9fe9915f5adcd263fdade0785574d1050470c52be7d48e1d6c620676ab31",
+              "features.py": "01e5ecd5db41b248d13c2597735e776a16f730ca54337845610c73e309642a6f",
+              "fresh_worker.py": "98d204f3895ce08d1ca2759fb9a6b7b1af8ab05cd8f3fc1377c1366169824d71",
+              "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+              "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+              "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+              "modeling.py": "22d19bd4490e619100580d1a8d2d64990b8a9995d12accee18820c0606ccbe6d",
+              "refit_city.py": "dbde194cafee94f2ee245451f8a2b1c0db58a04c38b6cce2aa0fdfe573ff95ea",
+              "verify.py": "cef69a3ab872909adb10624614aa27ad09314a6220707473bf950e9bcd8ab960",
+              "workflow.py": "026dda398f1774c01e6ab336f14178eb90636e5d4ebddaa411f04bbc3e86e220",
+              "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+              "reference_manifest.json": "99469dd0e16cfca0068d1fed9b3f6d881b9671bca8e0b36270c12abb854fe961"
+            },
+            "execution_contract": {
+              "torch": "2.11.0+cu130",
+              "tabpfn": "9.2.0",
+              "cuda": "13.0",
+              "gpu": "Tesla T4",
+              "precision": "float32",
+              "checkpoint": {
+                "repo_id": "Prior-Labs/TabPFN-v2-reg",
+                "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+                "filename": "tabpfn-v2-regressor.ckpt",
+                "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736"
+              }
+            },
+            "train_indices": "13f7db8caf4b96ed82131a4395b3cf1d8992f61ebab6d2d3b3df6969a749d888",
+            "valid_indices": "5d5facf571bfa56fc3d3563b7df76a051d6ce1282459c095af8577d8c731abba",
+            "training_targets": "f649908fccefbf91fe7a63f6f59f87f8a41cc9e1b0aed646e3ffab8a27d35562",
+            "configuration": {},
+            "seed": 10242,
+            "estimators": 16,
+            "city_fold_sha256": "0f837d3af050769bd40fe8852bc42adb22878b1e111d7758ff73662a8e2fe912"
+          },
+          "sha256": "411dddb1d54eb24ab424776579bef69df2d42f248ba1d90edd061d778af2609c",
+          "feature_map_sha256": "cee5d121ed916606407e418ace2ce94774cfa85bc8b01fedec42fdb7e2153754",
+          "vocabulary_sha256": "9c35cef5229149e1c9da0a1d0d32aaa9bb16e37bb2cdfd76c31415995cd91268",
+          "feature_count": 40
+        },
+        {
+          "context": {
+            "name": "BASE",
+            "scheme": "city",
+            "fold": 2,
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "sources": {
+              "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+              "core.py": "6bdd9fe9915f5adcd263fdade0785574d1050470c52be7d48e1d6c620676ab31",
+              "features.py": "01e5ecd5db41b248d13c2597735e776a16f730ca54337845610c73e309642a6f",
+              "fresh_worker.py": "98d204f3895ce08d1ca2759fb9a6b7b1af8ab05cd8f3fc1377c1366169824d71",
+              "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+              "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+              "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+              "modeling.py": "22d19bd4490e619100580d1a8d2d64990b8a9995d12accee18820c0606ccbe6d",
+              "refit_city.py": "dbde194cafee94f2ee245451f8a2b1c0db58a04c38b6cce2aa0fdfe573ff95ea",
+              "verify.py": "cef69a3ab872909adb10624614aa27ad09314a6220707473bf950e9bcd8ab960",
+              "workflow.py": "026dda398f1774c01e6ab336f14178eb90636e5d4ebddaa411f04bbc3e86e220",
+              "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+              "reference_manifest.json": "99469dd0e16cfca0068d1fed9b3f6d881b9671bca8e0b36270c12abb854fe961"
+            },
+            "execution_contract": {
+              "torch": "2.11.0+cu130",
+              "tabpfn": "9.2.0",
+              "cuda": "13.0",
+              "gpu": "Tesla T4",
+              "precision": "float32",
+              "checkpoint": {
+                "repo_id": "Prior-Labs/TabPFN-v2-reg",
+                "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+                "filename": "tabpfn-v2-regressor.ckpt",
+                "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736"
+              }
+            },
+            "train_indices": "42da587c18272fb9f8f8a3c9339b85ec449dba39ee8b729a8e07486725d763a6",
+            "valid_indices": "bedeb2bff2b93d531ab7b766411289f2891f2256f31046644e2107871b6ac850",
+            "training_targets": "6993e08dbc768c0c0d95e1ceae98b76c3ff66ee013430ab0d52d694fa2824aa4",
+            "configuration": {},
+            "seed": 10242,
+            "estimators": 16,
+            "city_fold_sha256": "0f837d3af050769bd40fe8852bc42adb22878b1e111d7758ff73662a8e2fe912"
+          },
+          "sha256": "1e4d5d6c95f3d438f3565399830e9843b5fed66e33044c61ce2bd5a8197ba0d4",
+          "feature_map_sha256": "cee5d121ed916606407e418ace2ce94774cfa85bc8b01fedec42fdb7e2153754",
+          "vocabulary_sha256": "4f07fdeddc2153a8c5974e57c06239c06d4af78ab5e3bc04adb9fefce49a7cee",
+          "feature_count": 40
+        },
+        {
+          "context": {
+            "name": "BASE",
+            "scheme": "city",
+            "fold": 3,
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "sources": {
+              "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+              "core.py": "6bdd9fe9915f5adcd263fdade0785574d1050470c52be7d48e1d6c620676ab31",
+              "features.py": "01e5ecd5db41b248d13c2597735e776a16f730ca54337845610c73e309642a6f",
+              "fresh_worker.py": "98d204f3895ce08d1ca2759fb9a6b7b1af8ab05cd8f3fc1377c1366169824d71",
+              "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+              "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+              "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+              "modeling.py": "22d19bd4490e619100580d1a8d2d64990b8a9995d12accee18820c0606ccbe6d",
+              "refit_city.py": "dbde194cafee94f2ee245451f8a2b1c0db58a04c38b6cce2aa0fdfe573ff95ea",
+              "verify.py": "cef69a3ab872909adb10624614aa27ad09314a6220707473bf950e9bcd8ab960",
+              "workflow.py": "026dda398f1774c01e6ab336f14178eb90636e5d4ebddaa411f04bbc3e86e220",
+              "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+              "reference_manifest.json": "99469dd0e16cfca0068d1fed9b3f6d881b9671bca8e0b36270c12abb854fe961"
+            },
+            "execution_contract": {
+              "torch": "2.11.0+cu130",
+              "tabpfn": "9.2.0",
+              "cuda": "13.0",
+              "gpu": "Tesla T4",
+              "precision": "float32",
+              "checkpoint": {
+                "repo_id": "Prior-Labs/TabPFN-v2-reg",
+                "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+                "filename": "tabpfn-v2-regressor.ckpt",
+                "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736"
+              }
+            },
+            "train_indices": "705354042a02b1e626f17273da49c2ba1e3246d06512dea2374805c4b9b92fc4",
+            "valid_indices": "8782bed45f386b33bbae096fff17f5169dcd3a5c2f033250fd8133c110afeb45",
+            "training_targets": "28fe1c53681d1a8de4fdc4880327cad1a5b423a3b3cdd4d3d9822e7803e3f11c",
+            "configuration": {},
+            "seed": 10242,
+            "estimators": 16,
+            "city_fold_sha256": "0f837d3af050769bd40fe8852bc42adb22878b1e111d7758ff73662a8e2fe912"
+          },
+          "sha256": "f5bd405cd08c772c3e41949f761c1e43636371b0bd30a1c6cc10180d0465a47c",
+          "feature_map_sha256": "cee5d121ed916606407e418ace2ce94774cfa85bc8b01fedec42fdb7e2153754",
+          "vocabulary_sha256": "3bdc954ee014c725f1ea13b26c9740b97ca5233255f76e0479bf1e19d5fbe464",
+          "feature_count": 40
+        },
+        {
+          "context": {
+            "name": "BASE",
+            "scheme": "city",
+            "fold": 4,
+            "inputs": {
+              "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+              "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+              "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+              "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+            },
+            "sources": {
+              "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+              "core.py": "6bdd9fe9915f5adcd263fdade0785574d1050470c52be7d48e1d6c620676ab31",
+              "features.py": "01e5ecd5db41b248d13c2597735e776a16f730ca54337845610c73e309642a6f",
+              "fresh_worker.py": "98d204f3895ce08d1ca2759fb9a6b7b1af8ab05cd8f3fc1377c1366169824d71",
+              "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+              "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+              "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+              "modeling.py": "22d19bd4490e619100580d1a8d2d64990b8a9995d12accee18820c0606ccbe6d",
+              "refit_city.py": "dbde194cafee94f2ee245451f8a2b1c0db58a04c38b6cce2aa0fdfe573ff95ea",
+              "verify.py": "cef69a3ab872909adb10624614aa27ad09314a6220707473bf950e9bcd8ab960",
+              "workflow.py": "026dda398f1774c01e6ab336f14178eb90636e5d4ebddaa411f04bbc3e86e220",
+              "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+              "reference_manifest.json": "99469dd0e16cfca0068d1fed9b3f6d881b9671bca8e0b36270c12abb854fe961"
+            },
+            "execution_contract": {
+              "torch": "2.11.0+cu130",
+              "tabpfn": "9.2.0",
+              "cuda": "13.0",
+              "gpu": "Tesla T4",
+              "precision": "float32",
+              "checkpoint": {
+                "repo_id": "Prior-Labs/TabPFN-v2-reg",
+                "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+                "filename": "tabpfn-v2-regressor.ckpt",
+                "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736"
+              }
+            },
+            "train_indices": "2f882f7854a6406bc6b514027ba864c407bcbe52f324e32fea57c5af834317f3",
+            "valid_indices": "261aaf35d74564450c092036f1ec3a7826097f345bdad7d41f74367ab61f558a",
+            "training_targets": "c545373326fef2330a7bd618c6c46ec0cd27f05b3d55d1a3dfe2a9998a81b82c",
+            "configuration": {},
+            "seed": 10242,
+            "estimators": 16,
+            "city_fold_sha256": "0f837d3af050769bd40fe8852bc42adb22878b1e111d7758ff73662a8e2fe912"
+          },
+          "sha256": "d4807d972de01b5d73e67a339de78000acdeffa2a30c830b7e2bfdb891ef38db",
+          "feature_map_sha256": "cee5d121ed916606407e418ace2ce94774cfa85bc8b01fedec42fdb7e2153754",
+          "vocabulary_sha256": "fb485aceabb3edeead6499548f8dc800a76715faabcdb5b1f31d39c50334acfe",
+          "feature_count": 40
+        }
+      ],
+      "control_behavior": "Original-Mac V7 plus matching fixed-500-row TabPFN v2 controls; full 500-row scored CSV reproduction remains required."
+    }
+  },
+  "generating_sources": {
+    "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+    "core.py": "6bdd9fe9915f5adcd263fdade0785574d1050470c52be7d48e1d6c620676ab31",
+    "features.py": "01e5ecd5db41b248d13c2597735e776a16f730ca54337845610c73e309642a6f",
+    "fresh_worker.py": "98d204f3895ce08d1ca2759fb9a6b7b1af8ab05cd8f3fc1377c1366169824d71",
+    "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+    "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+    "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+    "modeling.py": "22d19bd4490e619100580d1a8d2d64990b8a9995d12accee18820c0606ccbe6d",
+    "refit_city.py": "dbde194cafee94f2ee245451f8a2b1c0db58a04c38b6cce2aa0fdfe573ff95ea",
+    "verify.py": "cef69a3ab872909adb10624614aa27ad09314a6220707473bf950e9bcd8ab960",
+    "workflow.py": "026dda398f1774c01e6ab336f14178eb90636e5d4ebddaa411f04bbc3e86e220",
+    "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+    "reference_manifest.json": "99469dd0e16cfca0068d1fed9b3f6d881b9671bca8e0b36270c12abb854fe961"
+  },
+  "generating_contract": {
+    "torch": "2.11.0+cu130",
+    "tabpfn": "9.2.0",
+    "cuda": "13.0",
+    "gpu": "Tesla T4",
+    "precision": "float32",
+    "checkpoint": {
+      "repo_id": "Prior-Labs/TabPFN-v2-reg",
+      "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+      "filename": "tabpfn-v2-regressor.ckpt",
+      "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736"
+    }
+  }
+}

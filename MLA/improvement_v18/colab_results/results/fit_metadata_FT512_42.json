@@ -1,0 +1,490 @@
+[
+  {
+    "name": "FT512",
+    "training_rows": 2794,
+    "units": "raw INR millions",
+    "all_original_training_targets_retained": true,
+    "seed": 10242,
+    "training_target_sha256": "63998c05f2bd6fe27bf536d3f74ed91f5542c3bcef6e4bbc3ed28bc9492ffa38",
+    "categorical_columns": [
+      "Cuisine",
+      "City",
+      "Restaurant Location",
+      "Endoresed By",
+      "Restaurant Type",
+      "Restaurant Theme",
+      "Cuisine 1",
+      "Cuisine 2"
+    ],
+    "features": 40,
+    "inner_training_rows": 2374,
+    "inner_validation_rows": 420,
+    "inner_seed": 9091,
+    "inner_train_sha256": "7f75c6d798f5f3e1aec1348dcd7f28ed151479de37588d9ef49616d76d44b982",
+    "inner_validation_sha256": "78b66a263f116bce32eb4da28de7e21795134e6708d165edc8847f8b66befade",
+    "inner_policy": "random-15-percent",
+    "selected_epochs": 3,
+    "inner_epochs_run": 11,
+    "inner_history": [
+      {
+        "epoch": 0,
+        "mse_millions_squared": 257.5474534175994
+      },
+      {
+        "epoch": 1,
+        "mse_millions_squared": 257.73304344177683
+      },
+      {
+        "epoch": 2,
+        "mse_millions_squared": 257.7352424653391
+      },
+      {
+        "epoch": 3,
+        "mse_millions_squared": 257.2273356884834
+      },
+      {
+        "epoch": 4,
+        "mse_millions_squared": 257.77608703972226
+      },
+      {
+        "epoch": 5,
+        "mse_millions_squared": 258.79696040973283
+      },
+      {
+        "epoch": 6,
+        "mse_millions_squared": 259.8178175858402
+      },
+      {
+        "epoch": 7,
+        "mse_millions_squared": 260.66654442850415
+      },
+      {
+        "epoch": 8,
+        "mse_millions_squared": 261.5643458483341
+      },
+      {
+        "epoch": 9,
+        "mse_millions_squared": 262.24794906467395
+      },
+      {
+        "epoch": 10,
+        "mse_millions_squared": 262.67191368577375
+      },
+      {
+        "epoch": 11,
+        "mse_millions_squared": 262.986724311396
+      }
+    ],
+    "outer_validation_used_for_epoch_selection": false,
+    "precision": "CUDA-AMP-training/float32-inference",
+    "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+    "matched_original_architectures": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+    ],
+    "installed_finetune_source_sha256": "315413cd044720d1edc9962d6697ed55cea90f3e7181d1a2a1c41ac8ccde18fa",
+    "learning_rate": 3e-06,
+    "use_lr_scheduler": false,
+    "setup_seconds": 4.994448651000084,
+    "selection_seconds": 65.58794422099982,
+    "refit_seconds": 11.894385241999998,
+    "inner_optimizer_steps": 44,
+    "full_subset_refitted": true,
+    "actual_estimators": 1,
+    "context_plus_query_rows": 512,
+    "matched_unadapted_inner_mse_millions_squared": 257.5474534175994,
+    "fit_seconds": 85.70850726100002,
+    "last_query_seconds": 2.501090720000093
+  },
+  {
+    "name": "FT512",
+    "training_rows": 2794,
+    "units": "raw INR millions",
+    "all_original_training_targets_retained": true,
+    "seed": 10242,
+    "training_target_sha256": "7ffa7e0292a90d6eefa17197bcdbdd5a130ae910c917897da23b2cc05c44e84f",
+    "categorical_columns": [
+      "Cuisine",
+      "City",
+      "Restaurant Location",
+      "Endoresed By",
+      "Restaurant Type",
+      "Restaurant Theme",
+      "Cuisine 1",
+      "Cuisine 2"
+    ],
+    "features": 40,
+    "inner_training_rows": 2374,
+    "inner_validation_rows": 420,
+    "inner_seed": 9092,
+    "inner_train_sha256": "021cb096928968a7b7ed817f3b446a1e0305bd27175e2323ff204ad253fa354b",
+    "inner_validation_sha256": "d5c3aa14f4b9d6b749284fda05cb49e70feff08bd78096ea7a03796174ec7166",
+    "inner_policy": "random-15-percent",
+    "selected_epochs": 9,
+    "inner_epochs_run": 17,
+    "inner_history": [
+      {
+        "epoch": 0,
+        "mse_millions_squared": 146.97841273438064
+      },
+      {
+        "epoch": 1,
+        "mse_millions_squared": 146.287965060409
+      },
+      {
+        "epoch": 2,
+        "mse_millions_squared": 143.36497480753894
+      },
+      {
+        "epoch": 3,
+        "mse_millions_squared": 143.4356351891975
+      },
+      {
+        "epoch": 4,
+        "mse_millions_squared": 143.01574034094241
+      },
+      {
+        "epoch": 5,
+        "mse_millions_squared": 142.59312102319953
+      },
+      {
+        "epoch": 6,
+        "mse_millions_squared": 142.69142973164801
+      },
+      {
+        "epoch": 7,
+        "mse_millions_squared": 142.43372988176696
+      },
+      {
+        "epoch": 8,
+        "mse_millions_squared": 142.57972718369967
+      },
+      {
+        "epoch": 9,
+        "mse_millions_squared": 142.3112153859645
+      },
+      {
+        "epoch": 10,
+        "mse_millions_squared": 142.33898163641146
+      },
+      {
+        "epoch": 11,
+        "mse_millions_squared": 142.51334862018115
+      },
+      {
+        "epoch": 12,
+        "mse_millions_squared": 142.53430719042092
+      },
+      {
+        "epoch": 13,
+        "mse_millions_squared": 143.12884721793148
+      },
+      {
+        "epoch": 14,
+        "mse_millions_squared": 144.10815755226963
+      },
+      {
+        "epoch": 15,
+        "mse_millions_squared": 145.23496956027088
+      },
+      {
+        "epoch": 16,
+        "mse_millions_squared": 145.95887102429936
+      },
+      {
+        "epoch": 17,
+        "mse_millions_squared": 146.84806059884562
+      }
+    ],
+    "outer_validation_used_for_epoch_selection": false,
+    "precision": "CUDA-AMP-training/float32-inference",
+    "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+    "matched_original_architectures": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+    ],
+    "installed_finetune_source_sha256": "315413cd044720d1edc9962d6697ed55cea90f3e7181d1a2a1c41ac8ccde18fa",
+    "learning_rate": 3e-06,
+    "use_lr_scheduler": false,
+    "setup_seconds": 5.045627088999936,
+    "selection_seconds": 182.448730049,
+    "refit_seconds": 36.70862142399983,
+    "inner_optimizer_steps": 68,
+    "full_subset_refitted": true,
+    "actual_estimators": 1,
+    "context_plus_query_rows": 512,
+    "matched_unadapted_inner_mse_millions_squared": 146.97841273438064,
+    "fit_seconds": 227.612895686,
+    "last_query_seconds": 2.5033978400001615
+  },
+  {
+    "name": "FT512",
+    "training_rows": 2794,
+    "units": "raw INR millions",
+    "all_original_training_targets_retained": true,
+    "seed": 10242,
+    "training_target_sha256": "a6bb0d88d3a2eb330834a7f56ae01fa3c4ebf6be89368ba6aa04954067fac07b",
+    "categorical_columns": [
+      "Cuisine",
+      "City",
+      "Restaurant Location",
+      "Endoresed By",
+      "Restaurant Type",
+      "Restaurant Theme",
+      "Cuisine 1",
+      "Cuisine 2"
+    ],
+    "features": 40,
+    "inner_training_rows": 2374,
+    "inner_validation_rows": 420,
+    "inner_seed": 9093,
+    "inner_train_sha256": "15038303003a3369ea1ccf89fe103fe26f21413dd72ddb614a6b95174cab7602",
+    "inner_validation_sha256": "cbec6263f4114c99e2362916ec5465fe3c02a3c81b916d03062263853d1f9c27",
+    "inner_policy": "random-15-percent",
+    "selected_epochs": 5,
+    "inner_epochs_run": 13,
+    "inner_history": [
+      {
+        "epoch": 0,
+        "mse_millions_squared": 166.0079265345298
+      },
+      {
+        "epoch": 1,
+        "mse_millions_squared": 165.71417922241477
+      },
+      {
+        "epoch": 2,
+        "mse_millions_squared": 165.67213706020968
+      },
+      {
+        "epoch": 3,
+        "mse_millions_squared": 165.46070735599915
+      },
+      {
+        "epoch": 4,
+        "mse_millions_squared": 165.05652388537357
+      },
+      {
+        "epoch": 5,
+        "mse_millions_squared": 164.78883661320108
+      },
+      {
+        "epoch": 6,
+        "mse_millions_squared": 164.98234584136586
+      },
+      {
+        "epoch": 7,
+        "mse_millions_squared": 165.0617444133532
+      },
+      {
+        "epoch": 8,
+        "mse_millions_squared": 165.14877085386343
+      },
+      {
+        "epoch": 9,
+        "mse_millions_squared": 165.4791231074799
+      },
+      {
+        "epoch": 10,
+        "mse_millions_squared": 165.86135891498748
+      },
+      {
+        "epoch": 11,
+        "mse_millions_squared": 165.8991386404031
+      },
+      {
+        "epoch": 12,
+        "mse_millions_squared": 165.41422056043024
+      },
+      {
+        "epoch": 13,
+        "mse_millions_squared": 165.15070076643957
+      }
+    ],
+    "outer_validation_used_for_epoch_selection": false,
+    "precision": "CUDA-AMP-training/float32-inference",
+    "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+    "matched_original_architectures": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+    ],
+    "installed_finetune_source_sha256": "315413cd044720d1edc9962d6697ed55cea90f3e7181d1a2a1c41ac8ccde18fa",
+    "learning_rate": 3e-06,
+    "use_lr_scheduler": false,
+    "setup_seconds": 5.348674348999793,
+    "selection_seconds": 167.39333609999994,
+    "refit_seconds": 19.488225146999866,
+    "inner_optimizer_steps": 52,
+    "full_subset_refitted": true,
+    "actual_estimators": 1,
+    "context_plus_query_rows": 512,
+    "matched_unadapted_inner_mse_millions_squared": 166.0079265345298,
+    "fit_seconds": 195.45334608699977,
+    "last_query_seconds": 2.4768453479996424
+  },
+  {
+    "name": "FT512",
+    "training_rows": 2795,
+    "units": "raw INR millions",
+    "all_original_training_targets_retained": true,
+    "seed": 10242,
+    "training_target_sha256": "0bb2d184b2c120b46fc334222086013e3129863b1ad3182ac35075a3802db80f",
+    "categorical_columns": [
+      "Cuisine",
+      "City",
+      "Restaurant Location",
+      "Endoresed By",
+      "Restaurant Type",
+      "Restaurant Theme",
+      "Cuisine 1",
+      "Cuisine 2"
+    ],
+    "features": 40,
+    "inner_training_rows": 2375,
+    "inner_validation_rows": 420,
+    "inner_seed": 9094,
+    "inner_train_sha256": "b4575bc49f61b3abedb7e8d6773ce751756f7be4f756ba48264fcdf930d01866",
+    "inner_validation_sha256": "87be516f1bdb291bf8458a34f5244321a87e2f238d07d68b6ab3d61db5bede18",
+    "inner_policy": "random-15-percent",
+    "selected_epochs": 1,
+    "inner_epochs_run": 8,
+    "inner_history": [
+      {
+        "epoch": 0,
+        "mse_millions_squared": 648.1193672476589
+      },
+      {
+        "epoch": 1,
+        "mse_millions_squared": 646.9486765456868
+      },
+      {
+        "epoch": 2,
+        "mse_millions_squared": 647.5866785444274
+      },
+      {
+        "epoch": 3,
+        "mse_millions_squared": 648.1161801326533
+      },
+      {
+        "epoch": 4,
+        "mse_millions_squared": 648.2527477531289
+      },
+      {
+        "epoch": 5,
+        "mse_millions_squared": 648.023623632319
+      },
+      {
+        "epoch": 6,
+        "mse_millions_squared": 647.9757041475123
+      },
+      {
+        "epoch": 7,
+        "mse_millions_squared": 647.9394308546168
+      },
+      {
+        "epoch": 8,
+        "mse_millions_squared": 647.3258633974391
+      }
+    ],
+    "outer_validation_used_for_epoch_selection": false,
+    "precision": "CUDA-AMP-training/float32-inference",
+    "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+    "matched_original_architectures": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+    ],
+    "installed_finetune_source_sha256": "315413cd044720d1edc9962d6697ed55cea90f3e7181d1a2a1c41ac8ccde18fa",
+    "learning_rate": 3e-06,
+    "use_lr_scheduler": false,
+    "setup_seconds": 5.1204637300002105,
+    "selection_seconds": 37.78845127500017,
+    "refit_seconds": 4.307158111999797,
+    "inner_optimizer_steps": 32,
+    "full_subset_refitted": true,
+    "actual_estimators": 1,
+    "context_plus_query_rows": 512,
+    "matched_unadapted_inner_mse_millions_squared": 648.1193672476589,
+    "fit_seconds": 50.44184404099997,
+    "last_query_seconds": 2.5509873539999717
+  },
+  {
+    "name": "FT512",
+    "training_rows": 2795,
+    "units": "raw INR millions",
+    "all_original_training_targets_retained": true,
+    "seed": 10242,
+    "training_target_sha256": "ee2f3ef90fc26e6fce3918b88a5a27e90ca8f6b6b11e81425e2a24e0be52d203",
+    "categorical_columns": [
+      "Cuisine",
+      "City",
+      "Restaurant Location",
+      "Endoresed By",
+      "Restaurant Type",
+      "Restaurant Theme",
+      "Cuisine 1",
+      "Cuisine 2"
+    ],
+    "features": 40,
+    "inner_training_rows": 2375,
+    "inner_validation_rows": 420,
+    "inner_seed": 9095,
+    "inner_train_sha256": "4d434d6dc7859fa435048ebd1078841cba1817bd95290472a249ac5fd83350c6",
+    "inner_validation_sha256": "26d32de10c591dd4902440d433a3835107d3ded543af8d3c976bfb58486cd55e",
+    "inner_policy": "random-15-percent",
+    "selected_epochs": 1,
+    "inner_epochs_run": 8,
+    "inner_history": [
+      {
+        "epoch": 0,
+        "mse_millions_squared": 694.9185756352551
+      },
+      {
+        "epoch": 1,
+        "mse_millions_squared": 694.7469058348657
+      },
+      {
+        "epoch": 2,
+        "mse_millions_squared": 696.5658537391834
+      },
+      {
+        "epoch": 3,
+        "mse_millions_squared": 698.4116752166003
+      },
+      {
+        "epoch": 4,
+        "mse_millions_squared": 699.6118690711438
+      },
+      {
+        "epoch": 5,
+        "mse_millions_squared": 700.6479531159971
+      },
+      {
+        "epoch": 6,
+        "mse_millions_squared": 700.5286549379207
+      },
+      {
+        "epoch": 7,
+        "mse_millions_squared": 700.9007742447653
+      },
+      {
+        "epoch": 8,
+        "mse_millions_squared": 701.7658748463413
+      }
+    ],
+    "outer_validation_used_for_epoch_selection": false,
+    "precision": "CUDA-AMP-training/float32-inference",
+    "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+    "matched_original_architectures": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+    ],
+    "installed_finetune_source_sha256": "315413cd044720d1edc9962d6697ed55cea90f3e7181d1a2a1c41ac8ccde18fa",
+    "learning_rate": 3e-06,
+    "use_lr_scheduler": false,
+    "setup_seconds": 5.150248518000353,
+    "selection_seconds": 37.33209629699968,
+    "refit_seconds": 4.243771803000072,
+    "inner_optimizer_steps": 32,
+    "full_subset_refitted": true,
+    "actual_estimators": 1,
+    "context_plus_query_rows": 512,
+    "matched_unadapted_inner_mse_millions_squared": 694.9185756352551,
+    "fit_seconds": 49.94274838599995,
+    "last_query_seconds": 2.5296994549999
+  }
+]

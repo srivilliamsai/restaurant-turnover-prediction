@@ -1,0 +1,19 @@
+[
+  {
+    "allocation_number": 1,
+    "requested_epoch": 1793265862.126807,
+    "requested_epoch_basis": "campaign start lower bound; exact CLI request time not separately recorded",
+    "allocation_success_verified_epoch": 1793267177.696165,
+    "owned_session": "v19-free-t4",
+    "same_user_selected_account": true,
+    "high_memory_requested": false,
+    "paid_resources": false
+  },
+  {
+    "allocation_number": 2,
+    "requested_epoch": 1793269271.770616,
+    "same_user_selected_account": true,
+    "reason": "Owned free VM unavailable; bounded engineering recovery",
+    "paid_resources": false
+  }
+]

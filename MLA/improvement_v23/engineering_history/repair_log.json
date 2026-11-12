@@ -1,0 +1,7 @@
+{
+  "attempt1": "Torch compiler initialization inspected the minimal Mac Triton shim and failed before any prediction",
+  "repair": "Initialize Torch deterministic algorithms before the compatibility shim is imported",
+  "candidate_unchanged": true,
+  "accuracy_results_opened": false,
+  "deadline_unchanged": true
+}

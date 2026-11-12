@@ -1,0 +1,78 @@
+{
+  "settings": {
+    "P35-SC38": {
+      "family": "TabPFN-3.5 Base",
+      "estimators": 8,
+      "target": "raw INR millions",
+      "view": "SC38",
+      "drop": [
+        "Service",
+        "Comfortablility"
+      ]
+    }
+  },
+  "weights": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "routes": [
+    "P35-replacement"
+  ],
+  "development": [
+    42,
+    71
+  ],
+  "confirmation": [
+    48211,
+    48212,
+    48213,
+    "strat:27421",
+    "city"
+  ],
+  "formula": ".25*V9+.75*((1-w)*P35_original+w*M)",
+  "control": "V14",
+  "minimum_mean_relative_gain": 0.002,
+  "maximum_stress_deterioration": 0.01,
+  "maximum_finalists": 1,
+  "ranking": "descending mean relative gain, lower effective new-model share, setting name, route",
+  "behavior_tolerance_INR": 10.0,
+  "behavior_rmse_tolerance_INR": 1.0,
+  "same_layout_repeat_tolerance_INR": 0.01,
+  "maximum_hours": 4,
+  "stage_seconds": {
+    "audit": 2700,
+    "pilot": 2700,
+    "screen": 1800,
+    "confirm": 2700,
+    "export": 5400
+  },
+  "sources": {
+    "core.py": "778305bc851f53733452339e1e448af2ed6fb124cc47040bbdd6e0b1ce4ba1a5",
+    "features.py": "4294846f13ace69e64914955117ff0f629ce64927771db479e30ecd4f03d2fa1",
+    "modeling.py": "bfb1a0f610f3dc3df416121a8a384d96044cefc3b5cca99cce447761a6e21149",
+    "workflow.py": "6b1fe398001808da42944d7460debb6fc0fad141628aba5b28aebbd081d2b320",
+    "verify.py": "e7051620e0352c968cd3080e8b1bbb2036c5d9c003951fc8368b64e6a4bcf57f",
+    "delivery.py": "8713039a7868fac6b92e881ef2e70da8c1e2dfb0e63075492aceed8f5e3be83d",
+    "fresh_worker.py": "7684fd1f00c93e32746ae902333baceb32055cf4603e455563570350c6a49171",
+    "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+    "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+    "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+    "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+    "v5_contract.json": "3446412f01d536a31123142b984392216efd29094965500251386eac1814ab69",
+    "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+    "reference_manifest.json": "82417467e331d6e470fd1058c4ea4edb5a47f98021efc822176bd9a04b99bbd5",
+    "baseline_registry.json": "53e7ddb7fbfbe08162aa97fac8d5ad9dea4981aab3aa942b3e98ebdb2a3060b7",
+    "PLAN.md": "7f47d2583fd60f7dfc1b0b776ab777894c56b253c89f3dcbbf06d1f216dc7092",
+    "authorization.json": "e9d6503f1f182825cf6ac8cc985a3c0a99d84f4bb9c66deac8936eaf87b84e8e",
+    "test_v22.py": "fc1ec8816414b13348de6d3d95be301cedcff7471b21dc7c3db230306c7196fc",
+    "verify_results.py": "41dd0e06c44b58ec04ce4dd8e8e8c7eb2ff8ce9b25c66aff584bb752ff5ba8d7",
+    "protocol_proposed.json": "e77375a0d6cc91d8cc3afdf9228a0775636ba42e11da53e1345556e60c540706"
+  },
+  "inputs": {
+    "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+    "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+    "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+    "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+  }
+}

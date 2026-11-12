@@ -1,0 +1,57 @@
+{"phase": "checking_selected_account", "pid": 32701, "task_elapsed_seconds": 2705.871794939041, "maximum_hours": 4}
+{"user_selected_account_verified": true, "active_assignments": 0, "epoch": 1793283844.8353658, "account_identity_sha256": "REDACTED"}
+{"phase": "allocating_one_owned_free_t4", "pid": 32701, "task_elapsed_seconds": 2708.9324128627777, "maximum_hours": 4}
+{"allocated": true, "owned_session": "v22-rank-check-t4", "accelerator": "T4", "high_memory_requested": false}
+{"phase": "installing_pinned_environment", "pid": 32701, "task_elapsed_seconds": 2713.940045118332, "maximum_hours": 4}
+{"existing_kernel_selected": true}
+V22 pinned dependencies installed; restart kernel before training.
+{"server_completion_verified": true}
+V22 sources, official inputs and verified controls uploaded.
+{"server_completion_verified": true}
+{"phase": "exploratory_confirm", "pid": 32701, "task_elapsed_seconds": 2823.19464802742, "maximum_hours": 4}
+V22 foreground stage: confirm timeout seconds 2700
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {}}
+{"snapshot": "saved", "new_complete_folds": 2, "stage_status": {}}
+{"snapshot": "saved", "new_complete_folds": 4, "stage_status": {}}
+{"snapshot": "saved", "new_complete_folds": 6, "stage_status": {}}
+{"snapshot": "saved", "new_complete_folds": 5, "stage_status": {}}
+{"snapshot": "saved", "new_complete_folds": 5, "stage_status": {}}
+V22 stage complete: confirm
+{"server_completion_verified": true}
+{"snapshot": "saved", "new_complete_folds": 3, "stage_status": {}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "confirm", "status": "complete"}}
+{"phase": "exploratory_export", "pid": 32701, "task_elapsed_seconds": 3731.8055140972137, "maximum_hours": 4}
+V22 foreground stage: export timeout seconds 5398
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "confirm", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "confirm", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "confirm", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "confirm", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "confirm", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "confirm", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "confirm", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "confirm", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "confirm", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "confirm", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "confirm", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "confirm", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "confirm", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "confirm", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "confirm", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "confirm", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "confirm", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "confirm", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "confirm", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "confirm", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "confirm", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "confirm", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "confirm", "status": "complete"}}
+V22 stage complete: export
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "confirm", "status": "complete"}}
+{"server_completion_verified": true}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "export", "status": "complete"}}
+V22 measured result archive prepared.
+{"server_completion_verified": true}
+V22 measured outputs collected locally.
+Owned V22 free T4 released.
+{"phase": "complete", "pid": 32701, "task_elapsed_seconds": 6057.399540901184, "maximum_hours": 4, "artifacts_collected": true, "owned_runtime_released": true}

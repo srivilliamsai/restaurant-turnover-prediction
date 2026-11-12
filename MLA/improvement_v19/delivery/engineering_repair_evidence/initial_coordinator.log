@@ -1,0 +1,20 @@
+{"phase": "restarting_clean_kernel", "pid": 12439, "task_elapsed_seconds": 1452.0067880153656, "maximum_hours": 8}
+{"phase": "uploading_frozen_workflow", "pid": 12439, "task_elapsed_seconds": 1455.7563829421997, "maximum_hours": 8}
+V19 sources, official inputs and verified controls uploaded.
+{"server_completion_verified": true}
+{"phase": "running_audit", "pid": 12439, "task_elapsed_seconds": 1469.6438159942627, "maximum_hours": 8}
+V19 foreground stage: audit timeout seconds 21924
+V19 stage complete: audit
+{"server_completion_verified": true}
+{"phase": "running_pilot", "pid": 12439, "task_elapsed_seconds": 1482.754045009613, "maximum_hours": 8}
+V19 foreground stage: pilot timeout seconds 21914
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+V19 stage complete: pilot
+{"server_completion_verified": true}
+{"phase": "running_screen", "pid": 12439, "task_elapsed_seconds": 1932.2754969596863, "maximum_hours": 8}
+V19 foreground stage: screen timeout seconds 21465
+KeyboardInterrupt: remote V19 execution failed; inspect saved logs.
+V19 transport failure: AssertionError ; authenticated details suppressed.

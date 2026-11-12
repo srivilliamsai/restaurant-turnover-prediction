@@ -1,0 +1,59 @@
+{
+  "context": {
+    "name": "tabpfn_raw_v7",
+    "inputs": {
+      "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+      "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+      "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+      "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+    },
+    "sources": {
+      "engine.py": "af94e392d719ebbbf3bba49808cfb86580aa62552661d9d4e81c22d4806d4428",
+      "modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+      "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+      "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+      "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+      "v5_contract.json": "3446412f01d536a31123142b984392216efd29094965500251386eac1814ab69",
+      "reference_manifest.json": "be46ba7d91b5c583570f4ceaf4919c292d4fba460dec58998873084638ae2c78",
+      "workflow.py": "a0465205bc380403c9d6c2e1a853c45a9df89897f2c2e62cebd5db69098f29ca",
+      "pilot.py": "f013c39d3de3acf1de359e4e1b1a851c42a7667e794422551342be0987bb3379",
+      "gpu_runner.py": "414af446a93f4a21b016978851c79f2d0b943f6ddfaccb91cf4aaa70e249d015"
+    },
+    "runtime": {
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "sklearn": "1.9.1",
+      "scipy": "1.18.1",
+      "catboost": "1.2.10",
+      "interpret-core": "0.7.8"
+    },
+    "train_ids": "edb572a875a933693c5764826aa79c1ccf56759f8d1cad118088208cce765531",
+    "valid_ids": "cb0c109285dbf45c1744577fd5a2833d3e97ba124e0e4cb56306a9b47600818f",
+    "training_targets": "c1f585fc002e452df376197e5c20673d8e6a7c2853366935faa90448208026f7",
+    "extra": {
+      "scheme": "48211",
+      "fold": 4,
+      "mode": "ensemble16",
+      "spec": {
+        "family": "tabpfn",
+        "group": "tabpfn",
+        "target": "raw",
+        "representation": "v7"
+      }
+    },
+    "execution_contract": {
+      "torch": "2.11.0+cu130",
+      "tabpfn": "9.2.0",
+      "cuda": "13.0",
+      "gpu": "Tesla T4",
+      "precision": "float32",
+      "checkpoint": {
+        "repo_id": "Prior-Labs/TabPFN-v2-reg",
+        "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+        "filename": "tabpfn-v2-regressor.ckpt",
+        "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736"
+      }
+    }
+  },
+  "sha256": "24900c7e2545e62e19865ee6d969c0489d8326be8b9b149bd9e3279e3e48840f"
+}

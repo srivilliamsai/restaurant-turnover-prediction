@@ -1,0 +1,59 @@
+{
+  "complete": true,
+  "qualified": false,
+  "original_V22_development_gate_passed": false,
+  "original_confirmation_gate_passed": false,
+  "descriptive_positive_robustness": false,
+  "choice": {
+    "name": "P35-SC38",
+    "route": "P35-replacement",
+    "weight": 1.0,
+    "effective_new_share": 0.75
+  },
+  "metrics": {
+    "48211": {
+      "v14_rmse": 19661515.847807977,
+      "candidate_rmse": 19663356.15662751,
+      "gain": -1840.3088195323944,
+      "relative_gain": -9.359953900693607e-05
+    },
+    "48212": {
+      "v14_rmse": 19672213.5596034,
+      "candidate_rmse": 19667052.228014596,
+      "gain": 5161.331588804722,
+      "relative_gain": 0.00026236658997050744
+    },
+    "48213": {
+      "v14_rmse": 19619589.028592434,
+      "candidate_rmse": 19612878.817898396,
+      "gain": 6710.210694037378,
+      "relative_gain": 0.00034201586405598565
+    },
+    "strat:27421": {
+      "v14_rmse": 19663361.754943263,
+      "candidate_rmse": 19649943.072113093,
+      "gain": 13418.682830169797,
+      "relative_gain": 0.0006824205849132798
+    },
+    "city": {
+      "v14_rmse": 19924168.53482659,
+      "candidate_rmse": 19931279.093731757,
+      "gain": -7110.5589051656425,
+      "relative_gain": -0.00035688108604063905
+    }
+  },
+  "uncertainty": {
+    "resamples": 5000,
+    "seed": 8319,
+    "ci95_INR": [
+      -10988.593827496283,
+      17715.64584288404
+    ],
+    "interpretation": "Conditional paired-row robustness interval; excludes selection, retraining and hidden-test shift."
+  },
+  "mean_random_relative_gain": 0.0001702609716731857,
+  "decision": "Exploratory evidence only. Original V22 remains unqualified; V14 remains best observed until a lower actual portal score is returned.",
+  "hidden_test_score_known": false,
+  "rank_change_established": false,
+  "portal_uploads": 0
+}

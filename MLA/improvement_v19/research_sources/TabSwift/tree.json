@@ -1,0 +1,2989 @@
+{
+  "sha": "8edf8f0b4225bc03e1f5db011912619cd92b798d",
+  "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/8edf8f0b4225bc03e1f5db011912619cd92b798d",
+  "tree": [
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42db999cf48b4164cf7228492e409b22b1671fb1",
+      "size": 1070,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/42db999cf48b4164cf7228492e409b22b1671fb1"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94bf8a600f9eb44936ada3f15591ce4ccc369147",
+      "size": 6764,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/94bf8a600f9eb44936ada3f15591ce4ccc369147"
+    },
+    {
+      "path": "TALENT",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0ebc87f2cdcb6437e7a77a03093cb048ec0ed609",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/0ebc87f2cdcb6437e7a77a03093cb048ec0ed609"
+    },
+    {
+      "path": "TALENT/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6922b4970abcdd3f17b932666fd24ddfc5d602ea",
+      "size": 57,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/6922b4970abcdd3f17b932666fd24ddfc5d602ea"
+    },
+    {
+      "path": "TALENT/configs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "03b61be62669384b6bce0ffb521b87cbaa74c739",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/03b61be62669384b6bce0ffb521b87cbaa74c739"
+    },
+    {
+      "path": "TALENT/configs/classical_configs.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea3ed0e5d168fbd4762f4f4c4748328bcc9eb154",
+      "size": 467,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/ea3ed0e5d168fbd4762f4f4c4748328bcc9eb154"
+    },
+    {
+      "path": "TALENT/configs/deep_configs.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a7a8010e0de67e0a8a8a633eeba1c0aa7df85ed",
+      "size": 534,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/7a7a8010e0de67e0a8a8a633eeba1c0aa7df85ed"
+    },
+    {
+      "path": "TALENT/configs/default",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "23d2b5d3f4a3ea26c8a715265c1030fbccf7add4",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/23d2b5d3f4a3ea26c8a715265c1030fbccf7add4"
+    },
+    {
+      "path": "TALENT/configs/default/LinearRegression.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e07f051ccd65e2381a7c406cd37ecfd0b1eb364",
+      "size": 74,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/0e07f051ccd65e2381a7c406cd37ecfd0b1eb364"
+    },
+    {
+      "path": "TALENT/configs/default/LogReg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d79d3540e4de6e21ae31865f5e741275de66ed7",
+      "size": 131,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/8d79d3540e4de6e21ae31865f5e741275de66ed7"
+    },
+    {
+      "path": "TALENT/configs/default/NCM.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "acffb5808c9e01e566d6888a21002cbc2c0503d8",
+      "size": 61,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/acffb5808c9e01e566d6888a21002cbc2c0503d8"
+    },
+    {
+      "path": "TALENT/configs/default/NaiveBayes.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "180d7ccd43b18358fe6571ef34296efa34ddcdd0",
+      "size": 68,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/180d7ccd43b18358fe6571ef34296efa34ddcdd0"
+    },
+    {
+      "path": "TALENT/configs/default/PFN-v2.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1246bcb70479dc0d228d92436086f5e4f790e89",
+      "size": 134,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/f1246bcb70479dc0d228d92436086f5e4f790e89"
+    },
+    {
+      "path": "TALENT/configs/default/RandomForest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63899fab831c9d2a832272262f221e8c4de33975",
+      "size": 141,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/63899fab831c9d2a832272262f221e8c4de33975"
+    },
+    {
+      "path": "TALENT/configs/default/amformer.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bedae8bf513177d0700cb702d67c6caf64c661e7",
+      "size": 562,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/bedae8bf513177d0700cb702d67c6caf64c661e7"
+    },
+    {
+      "path": "TALENT/configs/default/autoint.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57c0855d8a0e069b1c9eb158f3d447f1ddada371",
+      "size": 519,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/57c0855d8a0e069b1c9eb158f3d447f1ddada371"
+    },
+    {
+      "path": "TALENT/configs/default/bishop.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "623815b5638f7fa9db1b70f56a87b8ae04cc5e0e",
+      "size": 575,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/623815b5638f7fa9db1b70f56a87b8ae04cc5e0e"
+    },
+    {
+      "path": "TALENT/configs/default/catboost.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48046ec72455e67965213f359a0e89e58b2a4105",
+      "size": 226,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/48046ec72455e67965213f359a0e89e58b2a4105"
+    },
+    {
+      "path": "TALENT/configs/default/danets.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8930b31f2b5ee01f115002b3cf4c269c0652fd9d",
+      "size": 324,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/8930b31f2b5ee01f115002b3cf4c269c0652fd9d"
+    },
+    {
+      "path": "TALENT/configs/default/dcn2.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc923dd46636f116359d020729a9bbfe0454b7f8",
+      "size": 387,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/cc923dd46636f116359d020729a9bbfe0454b7f8"
+    },
+    {
+      "path": "TALENT/configs/default/dnnr.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8b6dd3b2ac5824535dd3eb38626d0c911afb97a",
+      "size": 270,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/c8b6dd3b2ac5824535dd3eb38626d0c911afb97a"
+    },
+    {
+      "path": "TALENT/configs/default/dummy.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "244a81547292d99b78a23ca49a35034ce7082979",
+      "size": 63,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/244a81547292d99b78a23ca49a35034ce7082979"
+    },
+    {
+      "path": "TALENT/configs/default/excelformer.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f26140cc351c471adad991b84669887fd42f9511",
+      "size": 571,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/f26140cc351c471adad991b84669887fd42f9511"
+    },
+    {
+      "path": "TALENT/configs/default/ftt.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "691a4c9d96c518709efcac28f7fb472fe2c2e8c5",
+      "size": 629,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/691a4c9d96c518709efcac28f7fb472fe2c2e8c5"
+    },
+    {
+      "path": "TALENT/configs/default/grande.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13bc3ae0154d8327dc30e64ab8abb43a54561624",
+      "size": 438,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/13bc3ae0154d8327dc30e64ab8abb43a54561624"
+    },
+    {
+      "path": "TALENT/configs/default/grownet.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec9655aca0d732f542d9d1a49e664510a7376e78",
+      "size": 417,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/ec9655aca0d732f542d9d1a49e664510a7376e78"
+    },
+    {
+      "path": "TALENT/configs/default/hyperfast.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2afea40e68ddeaf40c9bd381ffa56908fe78402",
+      "size": 95,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/c2afea40e68ddeaf40c9bd381ffa56908fe78402"
+    },
+    {
+      "path": "TALENT/configs/default/knn.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "723781dc212dba08a00517346a6e45bd43a67342",
+      "size": 192,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/723781dc212dba08a00517346a6e45bd43a67342"
+    },
+    {
+      "path": "TALENT/configs/default/lightgbm.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89e900ce551ca404ca32815075d4900e0cd651ae",
+      "size": 108,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/89e900ce551ca404ca32815075d4900e0cd651ae"
+    },
+    {
+      "path": "TALENT/configs/default/linear.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6630060b4f4e218ca39293fa25ed53ad1567c366",
+      "size": 161,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/6630060b4f4e218ca39293fa25ed53ad1567c366"
+    },
+    {
+      "path": "TALENT/configs/default/mlp.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16fde321881b377be1f82fa4d35f197f35a595f1",
+      "size": 276,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/16fde321881b377be1f82fa4d35f197f35a595f1"
+    },
+    {
+      "path": "TALENT/configs/default/mlp_plr.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc2e18cc5a12fd812153bd5a60eec75124b6433d",
+      "size": 443,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/bc2e18cc5a12fd812153bd5a60eec75124b6433d"
+    },
+    {
+      "path": "TALENT/configs/default/modernNCA.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a96278a26cfebfc1bd65a9332da4316e62a21df",
+      "size": 585,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/5a96278a26cfebfc1bd65a9332da4316e62a21df"
+    },
+    {
+      "path": "TALENT/configs/default/node.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "981b96bef291d44d4f867b471252bc7e7945e694",
+      "size": 361,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/981b96bef291d44d4f867b471252bc7e7945e694"
+    },
+    {
+      "path": "TALENT/configs/default/protogate.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8aa2203a839acd36227afcbdb42f8d27715a99d5",
+      "size": 454,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/8aa2203a839acd36227afcbdb42f8d27715a99d5"
+    },
+    {
+      "path": "TALENT/configs/default/ptarl.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07f4fb320ddb46b06320cd12632649ca67ea5496",
+      "size": 510,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/07f4fb320ddb46b06320cd12632649ca67ea5496"
+    },
+    {
+      "path": "TALENT/configs/default/realmlp.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5deb882fec19da693f9ffdc2069671b71ccea2bd",
+      "size": 379,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/5deb882fec19da693f9ffdc2069671b71ccea2bd"
+    },
+    {
+      "path": "TALENT/configs/default/resnet.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd8eec5657a2f445d21412e4f78886fe57ce78c2",
+      "size": 402,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/cd8eec5657a2f445d21412e4f78886fe57ce78c2"
+    },
+    {
+      "path": "TALENT/configs/default/saint.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98e1607d419499273b52cce88b51105fd86e94b3",
+      "size": 379,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/98e1607d419499273b52cce88b51105fd86e94b3"
+    },
+    {
+      "path": "TALENT/configs/default/snn.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6aedff32d799e824c29e364ad5925e1c0d4cd924",
+      "size": 308,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/6aedff32d799e824c29e364ad5925e1c0d4cd924"
+    },
+    {
+      "path": "TALENT/configs/default/svm.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65505fb9695adb08ae9604e05cadb4437fd0f8fb",
+      "size": 61,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/65505fb9695adb08ae9604e05cadb4437fd0f8fb"
+    },
+    {
+      "path": "TALENT/configs/default/switchtab.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3baea6540214575add6601b9195468bbbdd7e9ef",
+      "size": 227,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/3baea6540214575add6601b9195468bbbdd7e9ef"
+    },
+    {
+      "path": "TALENT/configs/default/t2gformer.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13aba826b25082580d7e7bc56bf74a955835bfb4",
+      "size": 758,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/13aba826b25082580d7e7bc56bf74a955835bfb4"
+    },
+    {
+      "path": "TALENT/configs/default/tabcaps.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd133810647604a3087c94b7e06707b6b06d7705",
+      "size": 322,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/fd133810647604a3087c94b7e06707b6b06d7705"
+    },
+    {
+      "path": "TALENT/configs/default/tabm.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f5acb0c2e8f75ceedb985faee1e7bccd4338e21",
+      "size": 686,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/2f5acb0c2e8f75ceedb985faee1e7bccd4338e21"
+    },
+    {
+      "path": "TALENT/configs/default/tabnet.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29285b47338945084996b00ec1721f3d11e0134a",
+      "size": 265,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/29285b47338945084996b00ec1721f3d11e0134a"
+    },
+    {
+      "path": "TALENT/configs/default/tabpfn.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "236482d1062d879deb41a9875a72c6184fd27edf",
+      "size": 133,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/236482d1062d879deb41a9875a72c6184fd27edf"
+    },
+    {
+      "path": "TALENT/configs/default/tabptm.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c56df7ac6681ee4ef2b5490aecfad3c9cc85e51c",
+      "size": 302,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/c56df7ac6681ee4ef2b5490aecfad3c9cc85e51c"
+    },
+    {
+      "path": "TALENT/configs/default/tabr.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad5245483c888e5b0a9b2ed0949ed37eb35354b7",
+      "size": 821,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/ad5245483c888e5b0a9b2ed0949ed37eb35354b7"
+    },
+    {
+      "path": "TALENT/configs/default/tabswift.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8afcb8331315ee644cab2f6bdef63c1e432c3ec1",
+      "size": 136,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/8afcb8331315ee644cab2f6bdef63c1e432c3ec1"
+    },
+    {
+      "path": "TALENT/configs/default/tabtransformer.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "810ff2678e13365b1d75889625401fd1b2be33e3",
+      "size": 314,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/810ff2678e13365b1d75889625401fd1b2be33e3"
+    },
+    {
+      "path": "TALENT/configs/default/tangos.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37961df4f433fbad7dfe45e8bb2301bf3e75b855",
+      "size": 384,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/37961df4f433fbad7dfe45e8bb2301bf3e75b855"
+    },
+    {
+      "path": "TALENT/configs/default/trompt.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e837ea8001170c475b3539b02da8889a222093a",
+      "size": 237,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/7e837ea8001170c475b3539b02da8889a222093a"
+    },
+    {
+      "path": "TALENT/configs/default/xgboost.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "166f3c25fc54389b9dec655c09f011bcdf0b5a10",
+      "size": 347,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/166f3c25fc54389b9dec655c09f011bcdf0b5a10"
+    },
+    {
+      "path": "TALENT/configs/opt_space",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b12290487cc0fbed56a8241aec061d02d925b4d1",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/b12290487cc0fbed56a8241aec061d02d925b4d1"
+    },
+    {
+      "path": "TALENT/configs/opt_space/LinearRegression.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c682ec868537533eee3d43eecc612ae120c2e56",
+      "size": 96,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/2c682ec868537533eee3d43eecc612ae120c2e56"
+    },
+    {
+      "path": "TALENT/configs/opt_space/LogReg.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "323cf8f09a72d8cdbc9c7c8b9885a943dd7205c2",
+      "size": 439,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/323cf8f09a72d8cdbc9c7c8b9885a943dd7205c2"
+    },
+    {
+      "path": "TALENT/configs/opt_space/NCM.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87e60af9966cc18a1b2b1fb82c5ebbd12aae570b",
+      "size": 83,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/87e60af9966cc18a1b2b1fb82c5ebbd12aae570b"
+    },
+    {
+      "path": "TALENT/configs/opt_space/NaiveBayes.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "249f5bd64d175cae4d8f7cff249dcaddb00bfb01",
+      "size": 90,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/249f5bd64d175cae4d8f7cff249dcaddb00bfb01"
+    },
+    {
+      "path": "TALENT/configs/opt_space/PFN-v2.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1246bcb70479dc0d228d92436086f5e4f790e89",
+      "size": 134,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/f1246bcb70479dc0d228d92436086f5e4f790e89"
+    },
+    {
+      "path": "TALENT/configs/opt_space/RandomForest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd554d8bc3f8c95784d49cddef98c86593a408c4",
+      "size": 299,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/bd554d8bc3f8c95784d49cddef98c86593a408c4"
+    },
+    {
+      "path": "TALENT/configs/opt_space/amformer.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f93855ef4a47b2a9aaaca1577e903a17352b1c41",
+      "size": 995,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/f93855ef4a47b2a9aaaca1577e903a17352b1c41"
+    },
+    {
+      "path": "TALENT/configs/opt_space/autoint.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0acbcf576187bced4207ee2e973656c97e1cafab",
+      "size": 923,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/0acbcf576187bced4207ee2e973656c97e1cafab"
+    },
+    {
+      "path": "TALENT/configs/opt_space/bishop.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07a5160e4d439524fba76faa2f61b7a0182f5950",
+      "size": 2672,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/07a5160e4d439524fba76faa2f61b7a0182f5950"
+    },
+    {
+      "path": "TALENT/configs/opt_space/catboost.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7fbb2ea0624e126973eb03321d7a2adad9439af6",
+      "size": 646,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/7fbb2ea0624e126973eb03321d7a2adad9439af6"
+    },
+    {
+      "path": "TALENT/configs/opt_space/danets.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31e4e3448a35b279891086891972d7be40f15800",
+      "size": 697,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/31e4e3448a35b279891086891972d7be40f15800"
+    },
+    {
+      "path": "TALENT/configs/opt_space/dcn2.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b5da7f051d80d58e110c909eafe349a25460346",
+      "size": 1004,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/2b5da7f051d80d58e110c909eafe349a25460346"
+    },
+    {
+      "path": "TALENT/configs/opt_space/dnnr.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d74c0a6c56e48fbd5181a0b2f2db4e5b3ad78085",
+      "size": 879,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/d74c0a6c56e48fbd5181a0b2f2db4e5b3ad78085"
+    },
+    {
+      "path": "TALENT/configs/opt_space/dummy.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07153f075e8c442a944a3330159173fe04da65aa",
+      "size": 85,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/07153f075e8c442a944a3330159173fe04da65aa"
+    },
+    {
+      "path": "TALENT/configs/opt_space/excelformer.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55fffc4f6baca88b46b70d2b44dcee7276de2138",
+      "size": 1240,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/55fffc4f6baca88b46b70d2b44dcee7276de2138"
+    },
+    {
+      "path": "TALENT/configs/opt_space/ftt.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9eb9b9609157c5d5e127a423c69dc987173d792a",
+      "size": 1174,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/9eb9b9609157c5d5e127a423c69dc987173d792a"
+    },
+    {
+      "path": "TALENT/configs/opt_space/grande.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac459ee24ab47619eb0f1776482c1d406d9cc0f2",
+      "size": 1076,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/ac459ee24ab47619eb0f1776482c1d406d9cc0f2"
+    },
+    {
+      "path": "TALENT/configs/opt_space/grownet.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00e6ed07f894269bc0c9ff6c47c14bb14b562af6",
+      "size": 823,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/00e6ed07f894269bc0c9ff6c47c14bb14b562af6"
+    },
+    {
+      "path": "TALENT/configs/opt_space/hyperfast.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2afea40e68ddeaf40c9bd381ffa56908fe78402",
+      "size": 95,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/c2afea40e68ddeaf40c9bd381ffa56908fe78402"
+    },
+    {
+      "path": "TALENT/configs/opt_space/knn.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "176213b3916b6fb6afae63e05c884bef363b10fe",
+      "size": 563,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/176213b3916b6fb6afae63e05c884bef363b10fe"
+    },
+    {
+      "path": "TALENT/configs/opt_space/lightgbm.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c13aaa1849592943cc92dbe3a196d6ef86c5b130",
+      "size": 1001,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/c13aaa1849592943cc92dbe3a196d6ef86c5b130"
+    },
+    {
+      "path": "TALENT/configs/opt_space/linear.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9189d3b51c2e5e363ab902b03e4b47601a08655b",
+      "size": 351,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/9189d3b51c2e5e363ab902b03e4b47601a08655b"
+    },
+    {
+      "path": "TALENT/configs/opt_space/mlp.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4473dd2206c74506062c83afb84aea6cc3fdb90",
+      "size": 638,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/c4473dd2206c74506062c83afb84aea6cc3fdb90"
+    },
+    {
+      "path": "TALENT/configs/opt_space/mlp_plr.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f86b79faa5ab840361ae091ea92890d92c61ff28",
+      "size": 518,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/f86b79faa5ab840361ae091ea92890d92c61ff28"
+    },
+    {
+      "path": "TALENT/configs/opt_space/modernNCA.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8df0a1973bc3d8fcd86387e46155198e96351881",
+      "size": 1349,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/8df0a1973bc3d8fcd86387e46155198e96351881"
+    },
+    {
+      "path": "TALENT/configs/opt_space/node.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0c19e449094474e4ed547f20869e97e1dd749e2",
+      "size": 795,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/c0c19e449094474e4ed547f20869e97e1dd749e2"
+    },
+    {
+      "path": "TALENT/configs/opt_space/protogate.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55659ca6b6e0d8b33dba2086439d01ccf9ae2581",
+      "size": 1059,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/55659ca6b6e0d8b33dba2086439d01ccf9ae2581"
+    },
+    {
+      "path": "TALENT/configs/opt_space/ptarl.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d02d8847601c1ad8c2ec58cbf98d417a8c8da4e9",
+      "size": 746,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/d02d8847601c1ad8c2ec58cbf98d417a8c8da4e9"
+    },
+    {
+      "path": "TALENT/configs/opt_space/realmlp.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72a5225580336f524f5887ad93d25808ea6d3e66",
+      "size": 1602,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/72a5225580336f524f5887ad93d25808ea6d3e66"
+    },
+    {
+      "path": "TALENT/configs/opt_space/resnet.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ac30d8d00a7d06d152810bcd8ff1fb46c248b23",
+      "size": 927,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/4ac30d8d00a7d06d152810bcd8ff1fb46c248b23"
+    },
+    {
+      "path": "TALENT/configs/opt_space/saint.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "022aa78af79ed85ec421eab4b65a6fcd499b7551",
+      "size": 1281,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/022aa78af79ed85ec421eab4b65a6fcd499b7551"
+    },
+    {
+      "path": "TALENT/configs/opt_space/snn.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b44e089ef43f8e37749b319adeb8b45e557ad376",
+      "size": 745,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/b44e089ef43f8e37749b319adeb8b45e557ad376"
+    },
+    {
+      "path": "TALENT/configs/opt_space/svm.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad4c50b9696ca3679b35f3b40869e37a8b97579c",
+      "size": 181,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/ad4c50b9696ca3679b35f3b40869e37a8b97579c"
+    },
+    {
+      "path": "TALENT/configs/opt_space/switchtab.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c59b0dbf3d59202acec2364dadab15ad8df8c5f8",
+      "size": 451,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/c59b0dbf3d59202acec2364dadab15ad8df8c5f8"
+    },
+    {
+      "path": "TALENT/configs/opt_space/t2gformer.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5201e8c24f3190fb391f0fdc2b075e0d91b6be0c",
+      "size": 1345,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/5201e8c24f3190fb391f0fdc2b075e0d91b6be0c"
+    },
+    {
+      "path": "TALENT/configs/opt_space/tabcaps.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05e3563975d67a32857e45b007c6a5eb63067935",
+      "size": 862,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/05e3563975d67a32857e45b007c6a5eb63067935"
+    },
+    {
+      "path": "TALENT/configs/opt_space/tabm.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70559fd544754871f1455311271cc55e95181a08",
+      "size": 1217,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/70559fd544754871f1455311271cc55e95181a08"
+    },
+    {
+      "path": "TALENT/configs/opt_space/tabnet.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f12855a9fbc20bbe9c4fd08736f4be4b55c7a2d1",
+      "size": 726,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/f12855a9fbc20bbe9c4fd08736f4be4b55c7a2d1"
+    },
+    {
+      "path": "TALENT/configs/opt_space/tabpfn.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5e1d639f7a3fc3eec99bec9056e6d2f205b6c76",
+      "size": 92,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/f5e1d639f7a3fc3eec99bec9056e6d2f205b6c76"
+    },
+    {
+      "path": "TALENT/configs/opt_space/tabptm.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5e1d639f7a3fc3eec99bec9056e6d2f205b6c76",
+      "size": 92,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/f5e1d639f7a3fc3eec99bec9056e6d2f205b6c76"
+    },
+    {
+      "path": "TALENT/configs/opt_space/tabr.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd5dfa8cb7ed0c1996437aa82cce1b4c6cccbc95",
+      "size": 1347,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/bd5dfa8cb7ed0c1996437aa82cce1b4c6cccbc95"
+    },
+    {
+      "path": "TALENT/configs/opt_space/tabswift.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8afcb8331315ee644cab2f6bdef63c1e432c3ec1",
+      "size": 136,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/8afcb8331315ee644cab2f6bdef63c1e432c3ec1"
+    },
+    {
+      "path": "TALENT/configs/opt_space/tabtransformer.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "661fdb77fab5baa11a8b921bd0ea0605752485af",
+      "size": 1183,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/661fdb77fab5baa11a8b921bd0ea0605752485af"
+    },
+    {
+      "path": "TALENT/configs/opt_space/tangos.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce2aac5337453f6b28cec2d13ff5241a41ba5afd",
+      "size": 972,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/ce2aac5337453f6b28cec2d13ff5241a41ba5afd"
+    },
+    {
+      "path": "TALENT/configs/opt_space/trompt.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9ca6ab91f1117dbdcb05ee7a8444be51019fe3e",
+      "size": 835,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/f9ca6ab91f1117dbdcb05ee7a8444be51019fe3e"
+    },
+    {
+      "path": "TALENT/configs/opt_space/xgboost.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "996815b0703db2b590b981109fd5e39e5300026c",
+      "size": 1165,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/996815b0703db2b590b981109fd5e39e5300026c"
+    },
+    {
+      "path": "TALENT/model",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a8ef56d6e27c197d67f99c16333c4435d68f4c90",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/a8ef56d6e27c197d67f99c16333c4435d68f4c90"
+    },
+    {
+      "path": "TALENT/model/classical_methods",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "65c73d2ebbe54926dac1c395b8e246efd1278d7a",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/65c73d2ebbe54926dac1c395b8e246efd1278d7a"
+    },
+    {
+      "path": "TALENT/model/classical_methods/base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "449c1f41a074b17ad1fc417c653798d1e1bbecac",
+      "size": 6571,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/449c1f41a074b17ad1fc417c653798d1e1bbecac"
+    },
+    {
+      "path": "TALENT/model/classical_methods/catboost.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9db4208ffcea9fe5fc965e73b98003ed80b9ccd",
+      "size": 3926,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/b9db4208ffcea9fe5fc965e73b98003ed80b9ccd"
+    },
+    {
+      "path": "TALENT/model/classical_methods/dummy.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1315f9d1aecee162908e56608705c30f72333d00",
+      "size": 2715,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/1315f9d1aecee162908e56608705c30f72333d00"
+    },
+    {
+      "path": "TALENT/model/classical_methods/knn.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffdca5b48a5b4a00737503c89ebeca1fdb8d65d9",
+      "size": 2247,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/ffdca5b48a5b4a00737503c89ebeca1fdb8d65d9"
+    },
+    {
+      "path": "TALENT/model/classical_methods/lightgbm.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6818e84060b8c150f5e39586c86ae30413df149",
+      "size": 715,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/a6818e84060b8c150f5e39586c86ae30413df149"
+    },
+    {
+      "path": "TALENT/model/classical_methods/logreg.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "017576f072ba615b002c9097533e8ecbf11d0956",
+      "size": 1745,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/017576f072ba615b002c9097533e8ecbf11d0956"
+    },
+    {
+      "path": "TALENT/model/classical_methods/lr.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fa8ef9935ab78431328836d10c0f1ba46cbcf4f",
+      "size": 2505,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/0fa8ef9935ab78431328836d10c0f1ba46cbcf4f"
+    },
+    {
+      "path": "TALENT/model/classical_methods/naivebayes.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8fd044c7554094f3fd63abbc38e1c6a83b97e000",
+      "size": 370,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/8fd044c7554094f3fd63abbc38e1c6a83b97e000"
+    },
+    {
+      "path": "TALENT/model/classical_methods/ncm.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd684f49405c6598620600584f46fd4269247d6a",
+      "size": 2128,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/bd684f49405c6598620600584f46fd4269247d6a"
+    },
+    {
+      "path": "TALENT/model/classical_methods/randomforest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "435f11e572d2c66e30f18140ce64d2d9686ac6e2",
+      "size": 707,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/435f11e572d2c66e30f18140ce64d2d9686ac6e2"
+    },
+    {
+      "path": "TALENT/model/classical_methods/svm.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e34b441086f900e916278e8004c21019814dc785",
+      "size": 3077,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/e34b441086f900e916278e8004c21019814dc785"
+    },
+    {
+      "path": "TALENT/model/classical_methods/xgboost.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63eaa37d9348f761ba953aa9f759672b8eee9081",
+      "size": 2454,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/63eaa37d9348f761ba953aa9f759672b8eee9081"
+    },
+    {
+      "path": "TALENT/model/lib",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7c69b368cd4b91cf095711962967fb408efd25e7",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/7c69b368cd4b91cf095711962967fb408efd25e7"
+    },
+    {
+      "path": "TALENT/model/lib/TData.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fb229ce5a7b7b24ff73a712ba1e60d3a7d6ecdd",
+      "size": 1253,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/9fb229ce5a7b7b24ff73a712ba1e60d3a7d6ecdd"
+    },
+    {
+      "path": "TALENT/model/lib/amformer",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8efcda03b5cb09612bcf21aaf594c3a3ba9e727c",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/8efcda03b5cb09612bcf21aaf594c3a3ba9e727c"
+    },
+    {
+      "path": "TALENT/model/lib/amformer/blocks.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4de1c35c19ccf1fc38b100cb041169da06214473",
+      "size": 9118,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/4de1c35c19ccf1fc38b100cb041169da06214473"
+    },
+    {
+      "path": "TALENT/model/lib/bishop",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e944e16e08a27501474bf2f453bf6248c2338571",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/e944e16e08a27501474bf2f453bf6248c2338571"
+    },
+    {
+      "path": "TALENT/model/lib/bishop/attn.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "312f1e7a912eaa5b0c264197b2b8f96938cc8564",
+      "size": 6546,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/312f1e7a912eaa5b0c264197b2b8f96938cc8564"
+    },
+    {
+      "path": "TALENT/model/lib/bishop/decoder.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "426a45bb4c3bf7fd352032f7ac37c614363f86bb",
+      "size": 2991,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/426a45bb4c3bf7fd352032f7ac37c614363f86bb"
+    },
+    {
+      "path": "TALENT/model/lib/bishop/embed.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "370b83a88d859737f8c7d399c8df5b9ffe9f82af",
+      "size": 8504,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/370b83a88d859737f8c7d399c8df5b9ffe9f82af"
+    },
+    {
+      "path": "TALENT/model/lib/bishop/encoder.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0e02c91305b14ad63fdce88ae45215b2cf76f6b",
+      "size": 3485,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/c0e02c91305b14ad63fdce88ae45215b2cf76f6b"
+    },
+    {
+      "path": "TALENT/model/lib/bishop/entmax.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9e0ee730fce5259a706b2579622095d5d8ab83a",
+      "size": 14658,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/d9e0ee730fce5259a706b2579622095d5d8ab83a"
+    },
+    {
+      "path": "TALENT/model/lib/bishop/module.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "745237d522c3ac123af285642f7f81337b9b8672",
+      "size": 5333,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/745237d522c3ac123af285642f7f81337b9b8672"
+    },
+    {
+      "path": "TALENT/model/lib/danets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d5fd959662b6f7f5f71459449818673b75013159",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/d5fd959662b6f7f5f71459449818673b75013159"
+    },
+    {
+      "path": "TALENT/model/lib/danets/AcceleratedModule.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c08fb5685fc718caeb920d553bd2c2ee8313a46",
+      "size": 4700,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/4c08fb5685fc718caeb920d553bd2c2ee8313a46"
+    },
+    {
+      "path": "TALENT/model/lib/danets/sparsemax.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5d4a59e31e50508ae6e80183afdcdde4af8a991",
+      "size": 5904,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/a5d4a59e31e50508ae6e80183afdcdde4af8a991"
+    },
+    {
+      "path": "TALENT/model/lib/data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f0322214a5490190b293616f41d235f7f200b1c",
+      "size": 21113,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/2f0322214a5490190b293616f41d235f7f200b1c"
+    },
+    {
+      "path": "TALENT/model/lib/dnnr",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "db1c6e9ac78a5cb832e3dd811209d3a1f526a870",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/db1c6e9ac78a5cb832e3dd811209d3a1f526a870"
+    },
+    {
+      "path": "TALENT/model/lib/dnnr/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f435695fd03d581b516f4351cc72b3f1d95fae01",
+      "size": 268,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/f435695fd03d581b516f4351cc72b3f1d95fae01"
+    },
+    {
+      "path": "TALENT/model/lib/dnnr/dnnr.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f63d8be7d22f48844dc5bb47716e9a11fd759ed6",
+      "size": 27917,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/f63d8be7d22f48844dc5bb47716e9a11fd759ed6"
+    },
+    {
+      "path": "TALENT/model/lib/dnnr/nn_index.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5d98eb2199d5890c70b5d4c73fb927f2fded729",
+      "size": 3503,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/e5d98eb2199d5890c70b5d4c73fb927f2fded729"
+    },
+    {
+      "path": "TALENT/model/lib/dnnr/solver.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "956a10cce04cf2e29b8340f59ae26e29a817e3b7",
+      "size": 2355,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/956a10cce04cf2e29b8340f59ae26e29a817e3b7"
+    },
+    {
+      "path": "TALENT/model/lib/excelformer",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "efa59d6657f1fe59abe99e29a90de0848ab9340a",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/efa59d6657f1fe59abe99e29a90de0848ab9340a"
+    },
+    {
+      "path": "TALENT/model/lib/excelformer/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51da2644605b532b1aeb942a618f0786441b6843",
+      "size": 308,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/51da2644605b532b1aeb942a618f0786441b6843"
+    },
+    {
+      "path": "TALENT/model/lib/excelformer/aug_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0ee481d1f25754dbc21e777ad7fdef71ee71604",
+      "size": 1614,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/a0ee481d1f25754dbc21e777ad7fdef71ee71604"
+    },
+    {
+      "path": "TALENT/model/lib/excelformer/data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62cb367c4c86063101e2e6fd007875f484f9c4d1",
+      "size": 14835,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/62cb367c4c86063101e2e6fd007875f484f9c4d1"
+    },
+    {
+      "path": "TALENT/model/lib/excelformer/deep.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea4c221c293abfd88d23c02f9d54498847ef6d6d",
+      "size": 26250,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/ea4c221c293abfd88d23c02f9d54498847ef6d6d"
+    },
+    {
+      "path": "TALENT/model/lib/excelformer/env.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbfb5f6793a50954e1a8b6a09b2c257d224cd93b",
+      "size": 1234,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/cbfb5f6793a50954e1a8b6a09b2c257d224cd93b"
+    },
+    {
+      "path": "TALENT/model/lib/excelformer/loss.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b8a367f42f982f4d6ac4347a50609a47bea22a8",
+      "size": 1692,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/5b8a367f42f982f4d6ac4347a50609a47bea22a8"
+    },
+    {
+      "path": "TALENT/model/lib/excelformer/metrics.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10f6db1769d2594976372e7c372fb829519c7b5f",
+      "size": 2261,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/10f6db1769d2594976372e7c372fb829519c7b5f"
+    },
+    {
+      "path": "TALENT/model/lib/excelformer/util.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1d3c508eef353d4b5183c3c443a62a7f0e00b21",
+      "size": 13466,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/a1d3c508eef353d4b5183c3c443a62a7f0e00b21"
+    },
+    {
+      "path": "TALENT/model/lib/hyperfast",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5e414184e5021eab710c671fe10ac6db449a0dd7",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/5e414184e5021eab710c671fe10ac6db449a0dd7"
+    },
+    {
+      "path": "TALENT/model/lib/hyperfast/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "TALENT/model/lib/hyperfast/model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5da3e40b74c3864c78a34c133a8a220887e2c8f3",
+      "size": 5925,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/5da3e40b74c3864c78a34c133a8a220887e2c8f3"
+    },
+    {
+      "path": "TALENT/model/lib/hyperfast/utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edb69905f838f249a19a42a9c42d8ac0fd878dce",
+      "size": 11321,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/edb69905f838f249a19a42a9c42d8ac0fd878dce"
+    },
+    {
+      "path": "TALENT/model/lib/node",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "82ba6c9f62d7dfe3413c20807db3cedc1eeb407f",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/82ba6c9f62d7dfe3413c20807db3cedc1eeb407f"
+    },
+    {
+      "path": "TALENT/model/lib/node/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7f23c4e92cf3005ee1b219760ff3dbe18fe8ce5",
+      "size": 158,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/e7f23c4e92cf3005ee1b219760ff3dbe18fe8ce5"
+    },
+    {
+      "path": "TALENT/model/lib/node/arch.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5faf6f415484c788d2512667dc26820c3cce4a26",
+      "size": 1750,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/5faf6f415484c788d2512667dc26820c3cce4a26"
+    },
+    {
+      "path": "TALENT/model/lib/node/nn_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84df58a4b8397c4b4493a17b248852bb6e2c710c",
+      "size": 7483,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/84df58a4b8397c4b4493a17b248852bb6e2c710c"
+    },
+    {
+      "path": "TALENT/model/lib/node/odst.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "827e4d253e9e5a37e55f990614e338f9322d6db3",
+      "size": 8083,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/827e4d253e9e5a37e55f990614e338f9322d6db3"
+    },
+    {
+      "path": "TALENT/model/lib/node/utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a115fa9db3741924840c60ae693492f16d0b2d94",
+      "size": 4174,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/a115fa9db3741924840c60ae693492f16d0b2d94"
+    },
+    {
+      "path": "TALENT/model/lib/num_embeddings.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28629517bab9620d2240d14fdf9af81b0e426259",
+      "size": 23186,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/28629517bab9620d2240d14fdf9af81b0e426259"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8416da4f97a9ce044be4d9603f6aecdbca0a570f",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/8416da4f97a9ce044be4d9603f6aecdbca0a570f"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dd57f823611249061d903d989f28e7b9343668f6",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/dd57f823611249061d903d989f28e7b9343668f6"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c147f5c6d8004d81096df67431bd828bf736df45",
+      "size": 202,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/c147f5c6d8004d81096df67431bd828bf736df45"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/__pycache__",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3d20f207549f0874b8e665a66f88a068885f74e4",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/3d20f207549f0874b8e665a66f88a068885f74e4"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/__pycache__/__init__.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b954040f855e3f61d20bb064ebb6671c9913aa05",
+      "size": 360,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/b954040f855e3f61d20bb064ebb6671c9913aa05"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/__pycache__/base.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2eac3674f2cd2f5455874c507ff2fca69fec9cdc",
+      "size": 6438,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/2eac3674f2cd2f5455874c507ff2fca69fec9cdc"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/__pycache__/classifier.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d49710fbc76400784a0c5406ec49e423d4fe9e6",
+      "size": 19504,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/8d49710fbc76400784a0c5406ec49e423d4fe9e6"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/__pycache__/constants.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8179ef9247d46e4cfb070610d91df442664501cf",
+      "size": 4610,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/8179ef9247d46e4cfb070610d91df442664501cf"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/__pycache__/inference.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a89b7bb507decae0cb896c1e9e29a75ed132f9bf",
+      "size": 12452,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/a89b7bb507decae0cb896c1e9e29a75ed132f9bf"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/__pycache__/preprocessing.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d91b8681bfa264f212d1fa688d95cac1c07ea79d",
+      "size": 17133,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/d91b8681bfa264f212d1fa688d95cac1c07ea79d"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/__pycache__/regressor.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10cfdff3a8ac0eccf753e847672c6d3c51e250c7",
+      "size": 23460,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/10cfdff3a8ac0eccf753e847672c6d3c51e250c7"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/__pycache__/utils.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "161f4d8b81d6effecca270e98ac20122e6f09a7e",
+      "size": 19944,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/161f4d8b81d6effecca270e98ac20122e6f09a7e"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0870882419f5dd53237b52032af83a8e87b829a0",
+      "size": 8439,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/0870882419f5dd53237b52032af83a8e87b829a0"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/classifier.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9244f80788b441e3b7d344df3383259a53bd965",
+      "size": 24460,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/b9244f80788b441e3b7d344df3383259a53bd965"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/constants.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8543f71829a5221aaf48600d3b9706e0e8b76ad",
+      "size": 11921,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/d8543f71829a5221aaf48600d3b9706e0e8b76ad"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/inference.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92761249ea0a57bddb6b809a275d1a0ed127cca1",
+      "size": 17834,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/92761249ea0a57bddb6b809a275d1a0ed127cca1"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/model",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "31d2d37f06c2aa181b2e660e61ca0b409f229d83",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/31d2d37f06c2aa181b2e660e61ca0b409f229d83"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/model/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/model/__pycache__",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "53be75091459c8cd25c823adc4645b61198c4dd2",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/53be75091459c8cd25c823adc4645b61198c4dd2"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/model/__pycache__/__init__.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb8b1118fe7aed861446761c4336452fddd5291e",
+      "size": 171,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/bb8b1118fe7aed861446761c4336452fddd5291e"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/model/__pycache__/bar_distribution.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef0bcd9a3723fbf6c6474105f6e4846f796b9b13",
+      "size": 23807,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/ef0bcd9a3723fbf6c6474105f6e4846f796b9b13"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/model/__pycache__/config.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46dacd86842e9c08f82832984129dade5fa9e86b",
+      "size": 3339,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/46dacd86842e9c08f82832984129dade5fa9e86b"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/model/__pycache__/encoders.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbb3d44d3d3ea4f779e89a53594c33ffb9124ea1",
+      "size": 32597,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/cbb3d44d3d3ea4f779e89a53594c33ffb9124ea1"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/model/__pycache__/layer.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18b0bea24229aea3415ee34ff7f176dc08d45604",
+      "size": 12399,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/18b0bea24229aea3415ee34ff7f176dc08d45604"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/model/__pycache__/loading.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2916ab337a7dc7fc2879dada0f456191c51f0374",
+      "size": 13241,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/2916ab337a7dc7fc2879dada0f456191c51f0374"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/model/__pycache__/memory.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a4c69f5a1f66343aad836d74fe2b7b60ee95fde",
+      "size": 11236,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/4a4c69f5a1f66343aad836d74fe2b7b60ee95fde"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/model/__pycache__/mlp.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db56b57261bafb3ba33fdeb5065506c5494ca06a",
+      "size": 4639,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/db56b57261bafb3ba33fdeb5065506c5494ca06a"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/model/__pycache__/multi_head_attention.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c14a7d1003d027dfdb4c979eb39fcfbce89329c0",
+      "size": 15581,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/c14a7d1003d027dfdb4c979eb39fcfbce89329c0"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/model/__pycache__/preprocessing.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9f5f917ab9d5dc5dc01ef11dff7b0c0930d4902",
+      "size": 32682,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/c9f5f917ab9d5dc5dc01ef11dff7b0c0930d4902"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/model/__pycache__/transformer.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fd775ec9b2af48d19b4581de6800e9c76ff17ea",
+      "size": 22006,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/6fd775ec9b2af48d19b4581de6800e9c76ff17ea"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/model/bar_distribution.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24e36d5b663f0fd9a8466d621e276b0006d9ff7e",
+      "size": 32082,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/24e36d5b663f0fd9a8466d621e276b0006d9ff7e"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/model/config.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b48f75e8d08d883c1b13999fb7ed7c40cf04a7f2",
+      "size": 4400,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/b48f75e8d08d883c1b13999fb7ed7c40cf04a7f2"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/model/encoders.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ae5e698ece7a89f89276c9d8558b78e9d37aec1",
+      "size": 34783,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/2ae5e698ece7a89f89276c9d8558b78e9d37aec1"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/model/layer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42309c0c020b5b1b0cf153ca9e8ff6faabf86a9e",
+      "size": 17891,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/42309c0c020b5b1b0cf153ca9e8ff6faabf86a9e"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/model/loading.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee97cf2ab1ff35c9b0991ea8446d686d1cdb2a0d",
+      "size": 19273,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/ee97cf2ab1ff35c9b0991ea8446d686d1cdb2a0d"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/model/memory.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9445f72a6c1343ed8f7dd6d9608f1f56860dad7",
+      "size": 14121,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/e9445f72a6c1343ed8f7dd6d9608f1f56860dad7"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/model/mlp.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "058b92d8c8ba85e6678b4416264af3bb7af08de4",
+      "size": 4632,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/058b92d8c8ba85e6678b4416264af3bb7af08de4"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/model/multi_head_attention.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6972ee51375ef6432c9f9852942478e55ce0711",
+      "size": 28321,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/d6972ee51375ef6432c9f9852942478e55ce0711"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/model/preprocessing.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a33e6cc90c88ca20ad20301a8d7b91ce7c9d1e67",
+      "size": 46392,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/a33e6cc90c88ca20ad20301a8d7b91ce7c9d1e67"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/model/transformer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a814ad5948643cdb06f542d75d2c9c364f9ca03e",
+      "size": 32853,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/a814ad5948643cdb06f542d75d2c9c364f9ca03e"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/preprocessing.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed74fa3b099062d68e6e28a7bc809ae508694981",
+      "size": 23282,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/ed74fa3b099062d68e6e28a7bc809ae508694981"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/regressor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca5f53b91516b06cb09dbf3b33d02d5188b0f66e",
+      "size": 30313,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/ca5f53b91516b06cb09dbf3b33d02d5188b0f66e"
+    },
+    {
+      "path": "TALENT/model/lib/pfn_v2/tabpfn/utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b3941c693f1e28f0ee1e395c478b2ad3ef432e4",
+      "size": 28658,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/4b3941c693f1e28f0ee1e395c478b2ad3ef432e4"
+    },
+    {
+      "path": "TALENT/model/lib/ptarl",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e9fee14d4afc40d5c29033b82219cabbad3bc9d2",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/e9fee14d4afc40d5c29033b82219cabbad3bc9d2"
+    },
+    {
+      "path": "TALENT/model/lib/ptarl/utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bc328cf10f2b647d740cdc8cc11927c2bae7ff3",
+      "size": 8603,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/1bc328cf10f2b647d740cdc8cc11927c2bae7ff3"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2acfb809baa176e7943ae2963b60e8c99f2f155e",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/2acfb809baa176e7943ae2963b60e8c99f2f155e"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/alg_interfaces",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b0542123163a38e4048bdf680c5237bda2de5cd5",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/b0542123163a38e4048bdf680c5237bda2de5cd5"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/alg_interfaces/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/alg_interfaces/alg_interfaces.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68bd6ff08495258954299ec7c15e387027d8bdaa",
+      "size": 12132,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/68bd6ff08495258954299ec7c15e387027d8bdaa"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/alg_interfaces/base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11b6bc026d461fc0a84f83ce45486f9425f6db8c",
+      "size": 4856,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/11b6bc026d461fc0a84f83ce45486f9425f6db8c"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/alg_interfaces/nn_interfaces.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9766cd32c7daed8dea0ca7942d3e509841865e91",
+      "size": 12631,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/9766cd32c7daed8dea0ca7942d3e509841865e91"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3d601c29f0e40133e0ca9fd3c539be5910d2820f",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/3d601c29f0e40133e0ca9fd3c539be5910d2820f"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/data/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "size": 1,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/8b137891791fe96927ad78e64b0aad7bded08bdc"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/data/conversion.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97282351d1bdcef613238314c6d613445f0f84dc",
+      "size": 4840,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/97282351d1bdcef613238314c6d613445f0f84dc"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/data/data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52c602c0ead75edfb2a48338b482929b1b8fc96c",
+      "size": 9668,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/52c602c0ead75edfb2a48338b482929b1b8fc96c"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/data/nested_dict.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a48ed79c0291f8005f5056d58d8b5be686988712",
+      "size": 2348,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/a48ed79c0291f8005f5056d58d8b5be686988712"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/data/splits.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "847a28cb8d22732a77f07f2f08fa5b10909d89a4",
+      "size": 4545,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/847a28cb8d22732a77f07f2f08fa5b10909d89a4"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/nn_models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fdbfbee4111254f4e1d126700632da34949f4012",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/fdbfbee4111254f4e1d126700632da34949f4012"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/nn_models/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/nn_models/activations.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4579f1b4a706529258f195cb1f4db50800f1a77",
+      "size": 4186,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/f4579f1b4a706529258f195cb1f4db50800f1a77"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/nn_models/base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bdb0536ec11ea9c6c9cb0ecbd208271cda7d39c6",
+      "size": 44171,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/bdb0536ec11ea9c6c9cb0ecbd208271cda7d39c6"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/nn_models/categorical.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86c010e007f5d4a5be8dc2b1abd3b06e41114879",
+      "size": 22715,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/86c010e007f5d4a5be8dc2b1abd3b06e41114879"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/nn_models/models.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a56dfd43c155024c297bbc150fc02512238d5ad",
+      "size": 14668,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/8a56dfd43c155024c297bbc150fc02512238d5ad"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/nn_models/nn.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87a1c1822d0da65ca2fb69d676a119304a4626d3",
+      "size": 48694,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/87a1c1822d0da65ca2fb69d676a119304a4626d3"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/nn_models/pipeline.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ad815d7137025abb9f10547a13ed879cacb7346",
+      "size": 11632,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/5ad815d7137025abb9f10547a13ed879cacb7346"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/optim",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "49e595fd9a6a105b68eb993ea0dc9b5b48df368a",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/49e595fd9a6a105b68eb993ea0dc9b5b48df368a"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/optim/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/optim/optimizers.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adbe6672dd1184a6d73405b20b8ab2a472637218",
+      "size": 4983,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/adbe6672dd1184a6d73405b20b8ab2a472637218"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/optim/scheduling_adam.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8830733c2cb32a8b2446416b5bb3812e9e0d92a5",
+      "size": 6250,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/8830733c2cb32a8b2446416b5bb3812e9e0d92a5"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/sklearn",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "518aa48306e2ed139f8f74400f8809eb5e468972",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/518aa48306e2ed139f8f74400f8809eb5e468972"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/sklearn/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/sklearn/default_params.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01cc232ce24e622b9656456cb4d827c302cd5972",
+      "size": 9701,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/01cc232ce24e622b9656456cb4d827c302cd5972"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/sklearn/sklearn_base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b64c2279c7d5e1fafebce7c5146e8283ff5e24f1",
+      "size": 18619,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/b64c2279c7d5e1fafebce7c5146e8283ff5e24f1"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/sklearn/sklearn_interfaces.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c6836601af2be700dec87089aa970ce76af6367",
+      "size": 18876,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/8c6836601af2be700dec87089aa970ce76af6367"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/torch_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f84a1d2723cd8bfa62058e40136f47555e98139e",
+      "size": 3133,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/f84a1d2723cd8bfa62058e40136f47555e98139e"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/training",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4646e1ecde856dbccfdc3ab8694157f5408543c8",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/4646e1ecde856dbccfdc3ab8694157f5408543c8"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/training/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/training/auc_mu.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e25c44ac8e8ddbb228ae60f8fffaaaf8cd27c44b",
+      "size": 5287,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/e25c44ac8e8ddbb228ae60f8fffaaaf8cd27c44b"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/training/coord.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b37bc6de3259fc54a50c1766da88ef534065a11",
+      "size": 3946,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/5b37bc6de3259fc54a50c1766da88ef534065a11"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/training/lightning_callbacks.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "809e0df37f7514f00e400066bfa10b0fc0715f74",
+      "size": 7221,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/809e0df37f7514f00e400066bfa10b0fc0715f74"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/training/lightning_modules.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a568c3d1d925e49bf3e68cee759da9b67c7f4a22",
+      "size": 10012,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/a568c3d1d925e49bf3e68cee759da9b67c7f4a22"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/training/logging.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ecde34e610bdc5b10b53a174941dcc17949b192b",
+      "size": 624,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/ecde34e610bdc5b10b53a174941dcc17949b192b"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/training/metrics.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4612ad05fcf368c3778b585be311c4f77003dbf3",
+      "size": 27400,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/4612ad05fcf368c3778b585be311c4f77003dbf3"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/training/nn_creator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "899f4691b8fca7590af3c058111de69c623ea25d",
+      "size": 10577,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/899f4691b8fca7590af3c058111de69c623ea25d"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/training/scheduling.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a7a60a858698855f0c321164afdf64f1389b91a",
+      "size": 15511,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/3a7a60a858698855f0c321164afdf64f1389b91a"
+    },
+    {
+      "path": "TALENT/model/lib/realmlp/utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "189c28ebf23144ec18508ab5e44e45dbf4fb8c60",
+      "size": 14454,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/189c28ebf23144ec18508ab5e44e45dbf4fb8c60"
+    },
+    {
+      "path": "TALENT/model/lib/tabcaps",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "27c04f4bce8bffb701b34622ee2001d45b724120",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/27c04f4bce8bffb701b34622ee2001d45b724120"
+    },
+    {
+      "path": "TALENT/model/lib/tabcaps/lib",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "903cab0a97dcbf07f342d21d3740619d05f77da5",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/903cab0a97dcbf07f342d21d3740619d05f77da5"
+    },
+    {
+      "path": "TALENT/model/lib/tabcaps/lib/callbacks.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4cdb9b172e6ef6676c8e77f9fccb414b93990c9",
+      "size": 9626,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/d4cdb9b172e6ef6676c8e77f9fccb414b93990c9"
+    },
+    {
+      "path": "TALENT/model/lib/tabcaps/lib/logger.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f2dc3c0db5bcd59b690ff7f98bf4cfc9d99c645",
+      "size": 1962,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/3f2dc3c0db5bcd59b690ff7f98bf4cfc9d99c645"
+    },
+    {
+      "path": "TALENT/model/lib/tabcaps/lib/metrics.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "177b63253d61f1afd94105167f6a4b4da6c29266",
+      "size": 10518,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/177b63253d61f1afd94105167f6a4b4da6c29266"
+    },
+    {
+      "path": "TALENT/model/lib/tabcaps/lib/multiclass_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30046d52727654b7a1c048bab81778f79694154d",
+      "size": 10527,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/30046d52727654b7a1c048bab81778f79694154d"
+    },
+    {
+      "path": "TALENT/model/lib/tabcaps/lib/utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14aeca7935321afe0498534615508815574dccee",
+      "size": 6530,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/14aeca7935321afe0498534615508815574dccee"
+    },
+    {
+      "path": "TALENT/model/lib/tabcaps/model",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ac3363af9ca595e45c412f6ae2f0ff1a073097a1",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/ac3363af9ca595e45c412f6ae2f0ff1a073097a1"
+    },
+    {
+      "path": "TALENT/model/lib/tabcaps/model/AbstractLayer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c27176e54280e460308c7639691f0ff3dfe8b6f",
+      "size": 2554,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/3c27176e54280e460308c7639691f0ff3dfe8b6f"
+    },
+    {
+      "path": "TALENT/model/lib/tabcaps/model/capsule_loss.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f64a876254ebb3eeee5d8dad150516f8187a71c",
+      "size": 503,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/2f64a876254ebb3eeee5d8dad150516f8187a71c"
+    },
+    {
+      "path": "TALENT/model/lib/tabcaps/model/sparsemax.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d71697f7456b174d4536efd75fa9e5ccdaa810b",
+      "size": 6201,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/0d71697f7456b174d4536efd75fa9e5ccdaa810b"
+    },
+    {
+      "path": "TALENT/model/lib/tabcaps/model/tab_capsulenet.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6a3d2e15b63c9998b7f81592d3243814806f12d",
+      "size": 5852,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/d6a3d2e15b63c9998b7f81592d3243814806f12d"
+    },
+    {
+      "path": "TALENT/model/lib/tabcaps/model/tabcaps_model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7f876cb002a1bf244a865dca1a82189defd1e1b",
+      "size": 20024,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/a7f876cb002a1bf244a865dca1a82189defd1e1b"
+    },
+    {
+      "path": "TALENT/model/lib/tabm",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "35077b32a71a82fd025d2bf989ae4294231720c6",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/35077b32a71a82fd025d2bf989ae4294231720c6"
+    },
+    {
+      "path": "TALENT/model/lib/tabm/deep.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1031f1333ea3c229b1242c826c7967cbc1735815",
+      "size": 40713,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/1031f1333ea3c229b1242c826c7967cbc1735815"
+    },
+    {
+      "path": "TALENT/model/lib/tabm/tabm.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93f43bc597a15072246630fdcb9a2a2fd9b7d5b2",
+      "size": 1199,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/93f43bc597a15072246630fdcb9a2a2fd9b7d5b2"
+    },
+    {
+      "path": "TALENT/model/lib/tabnet",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a6fca857f06cfb649ab66a51672251ab84d504e3",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/a6fca857f06cfb649ab66a51672251ab84d504e3"
+    },
+    {
+      "path": "TALENT/model/lib/tabnet/abstract_model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18b2ad994278d0985af0bd9dedcd2d47bc51871b",
+      "size": 26146,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/18b2ad994278d0985af0bd9dedcd2d47bc51871b"
+    },
+    {
+      "path": "TALENT/model/lib/tabnet/augmentations.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9904065cd2722a340055861484667e11d01d7b9",
+      "size": 3236,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/d9904065cd2722a340055861484667e11d01d7b9"
+    },
+    {
+      "path": "TALENT/model/lib/tabnet/callbacks.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb031d54cc603cc75f5a9122079561b136762fd3",
+      "size": 8453,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/cb031d54cc603cc75f5a9122079561b136762fd3"
+    },
+    {
+      "path": "TALENT/model/lib/tabnet/metrics.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2dd76e6b9c4d0b6bcd51f21b72821406cd2ed06",
+      "size": 13607,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/f2dd76e6b9c4d0b6bcd51f21b72821406cd2ed06"
+    },
+    {
+      "path": "TALENT/model/lib/tabnet/multiclass_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8dbf08c56f2f94bc334c2550defe2beb083aee08",
+      "size": 12673,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/8dbf08c56f2f94bc334c2550defe2beb083aee08"
+    },
+    {
+      "path": "TALENT/model/lib/tabnet/multitask.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1de02901a8580bf02a358674d7684761666f3b1",
+      "size": 5919,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/a1de02901a8580bf02a358674d7684761666f3b1"
+    },
+    {
+      "path": "TALENT/model/lib/tabnet/pretraining.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "687ebbaf092d9452ce5d97a880f21f8d6284a8bc",
+      "size": 13539,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/687ebbaf092d9452ce5d97a880f21f8d6284a8bc"
+    },
+    {
+      "path": "TALENT/model/lib/tabnet/pretraining_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6d001ef4a9de6f558f835abb8b4e817a06b982b",
+      "size": 4182,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/e6d001ef4a9de6f558f835abb8b4e817a06b982b"
+    },
+    {
+      "path": "TALENT/model/lib/tabnet/sparsemax.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9862efa4be0edafb4c98e4b5f49e3d68bced3533",
+      "size": 8540,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/9862efa4be0edafb4c98e4b5f49e3d68bced3533"
+    },
+    {
+      "path": "TALENT/model/lib/tabnet/tab_model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70e0185e222a6299e467fef772676df8d6a4fd7d",
+      "size": 4721,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/70e0185e222a6299e467fef772676df8d6a4fd7d"
+    },
+    {
+      "path": "TALENT/model/lib/tabnet/tab_network.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05f41f7ec2648f859d1a82ae4d81d97aa782b456",
+      "size": 33097,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/05f41f7ec2648f859d1a82ae4d81d97aa782b456"
+    },
+    {
+      "path": "TALENT/model/lib/tabnet/utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "882dada9f854400d9fbfac9d33338234c5d37488",
+      "size": 17995,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/882dada9f854400d9fbfac9d33338234c5d37488"
+    },
+    {
+      "path": "TALENT/model/lib/tabpfn",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cc0e754bd17213b261795c39ee580797d1837756",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/cc0e754bd17213b261795c39ee580797d1837756"
+    },
+    {
+      "path": "TALENT/model/lib/tabpfn/__pycache__",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6271122a43334dddd99fc661e43653e57921e180",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/6271122a43334dddd99fc661e43653e57921e180"
+    },
+    {
+      "path": "TALENT/model/lib/tabpfn/__pycache__/encoders.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f86253947ca65ad754674d5ef8a4797d8a7beeeb",
+      "size": 8593,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/f86253947ca65ad754674d5ef8a4797d8a7beeeb"
+    },
+    {
+      "path": "TALENT/model/lib/tabpfn/__pycache__/layer.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1aea4b9a68624f08eb5265370ed169f6d6e8a215",
+      "size": 4846,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/1aea4b9a68624f08eb5265370ed169f6d6e8a215"
+    },
+    {
+      "path": "TALENT/model/lib/tabpfn/__pycache__/transformer.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb60730b1168b56b13e9f171cef7c0059eb0aaa3",
+      "size": 8880,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/cb60730b1168b56b13e9f171cef7c0059eb0aaa3"
+    },
+    {
+      "path": "TALENT/model/lib/tabpfn/__pycache__/utils.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "388e8ab1b71c937b4e5ea37bd050993f2132cb41",
+      "size": 14550,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/388e8ab1b71c937b4e5ea37bd050993f2132cb41"
+    },
+    {
+      "path": "TALENT/model/lib/tabpfn/encoders.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "665f9fa91c8a7755b6cc216843a6745e8c8a1ebd",
+      "size": 7171,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/665f9fa91c8a7755b6cc216843a6745e8c8a1ebd"
+    },
+    {
+      "path": "TALENT/model/lib/tabpfn/layer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31622196c94a32184ac2a625195d4640eb46760e",
+      "size": 6126,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/31622196c94a32184ac2a625195d4640eb46760e"
+    },
+    {
+      "path": "TALENT/model/lib/tabpfn/transformer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce29ec56190190206a0f8b3dc3dd94ebcf85ee90",
+      "size": 11759,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/ce29ec56190190206a0f8b3dc3dd94ebcf85ee90"
+    },
+    {
+      "path": "TALENT/model/lib/tabpfn/utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "882f5205e584115cc8cbd60f1752a6b9c04dbb47",
+      "size": 21043,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/882f5205e584115cc8cbd60f1752a6b9c04dbb47"
+    },
+    {
+      "path": "TALENT/model/lib/tabptm",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1e29ac2f1f6ae3dff2d048144b09c1fc11b7264e",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/1e29ac2f1f6ae3dff2d048144b09c1fc11b7264e"
+    },
+    {
+      "path": "TALENT/model/lib/tabptm/utils_tabptm.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f77785f5fb2b28ee5d9c0f67bc8f7d3bdd137c55",
+      "size": 1758,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/f77785f5fb2b28ee5d9c0f67bc8f7d3bdd137c55"
+    },
+    {
+      "path": "TALENT/model/lib/tabr",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5ad640027ccf21611d55d7d5170f151f7e95afd4",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/5ad640027ccf21611d55d7d5170f151f7e95afd4"
+    },
+    {
+      "path": "TALENT/model/lib/tabr/utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d2a66fd0a3c7987b3f541d35add68643f420739",
+      "size": 12259,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/7d2a66fd0a3c7987b3f541d35add68643f420739"
+    },
+    {
+      "path": "TALENT/model/lib/tabswift",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3a8e9577c22fc65f3e92aa5a67be8dd06b8fa928",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/3a8e9577c22fc65f3e92aa5a67be8dd06b8fa928"
+    },
+    {
+      "path": "TALENT/model/lib/tabswift/__about__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f102a9cadfa89ce554b3b26d2b90bfba2e05273c",
+      "size": 22,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/f102a9cadfa89ce554b3b26d2b90bfba2e05273c"
+    },
+    {
+      "path": "TALENT/model/lib/tabswift/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "782ad2fdcfea9e26c66b5849c7a222ff45ad6312",
+      "size": 43,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/782ad2fdcfea9e26c66b5849c7a222ff45ad6312"
+    },
+    {
+      "path": "TALENT/model/lib/tabswift/__pycache__ - \u5feb\u6377\u65b9\u5f0f.lnk",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7e56d1a82e1f6c5d647545c635feb9805fa352d",
+      "size": 1502,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/e7e56d1a82e1f6c5d647545c635feb9805fa352d"
+    },
+    {
+      "path": "TALENT/model/lib/tabswift/classifier.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68eb366c0f1f642c77e63113fa3d5f2ed34c2d76",
+      "size": 21347,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/68eb366c0f1f642c77e63113fa3d5f2ed34c2d76"
+    },
+    {
+      "path": "TALENT/model/lib/tabswift/model",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1da87e4d7d7dcaf21f351b20b1b7d8a84a09f2f4",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/1da87e4d7d7dcaf21f351b20b1b7d8a84a09f2f4"
+    },
+    {
+      "path": "TALENT/model/lib/tabswift/model/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "TALENT/model/lib/tabswift/model/attention.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b455591b250650732599f4fc4fab2999572904dc",
+      "size": 10864,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/b455591b250650732599f4fc4fab2999572904dc"
+    },
+    {
+      "path": "TALENT/model/lib/tabswift/model/encoders.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45a26e1a2c08cd59e9bea5f91b16fead85b964a7",
+      "size": 4027,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/45a26e1a2c08cd59e9bea5f91b16fead85b964a7"
+    },
+    {
+      "path": "TALENT/model/lib/tabswift/model/inference.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f28b225cf88081b3af6445a8f503b8e71f304b9",
+      "size": 23639,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/7f28b225cf88081b3af6445a8f503b8e71f304b9"
+    },
+    {
+      "path": "TALENT/model/lib/tabswift/model/layers.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cb1e6aa1364835c8e90c1197134a66c49cadd72",
+      "size": 15312,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/3cb1e6aa1364835c8e90c1197134a66c49cadd72"
+    },
+    {
+      "path": "TALENT/model/lib/tabswift/model/learning.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f69e5099993daa34f57daae02b6003a31413bfd",
+      "size": 19102,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/5f69e5099993daa34f57daae02b6003a31413bfd"
+    },
+    {
+      "path": "TALENT/model/lib/tabswift/model/tabswift.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79f5f1eca5370e704f5f7b77e506fd33c4221478",
+      "size": 14217,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/79f5f1eca5370e704f5f7b77e506fd33c4221478"
+    },
+    {
+      "path": "TALENT/model/lib/tabswift/preprocessing.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cce93e4935e3a04adecbae229ac21ece79815310",
+      "size": 37252,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/cce93e4935e3a04adecbae229ac21ece79815310"
+    },
+    {
+      "path": "TALENT/model/lib/tabswift/regressor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e4d64134750acc752eaa61b71e45c927f31a2a0",
+      "size": 20278,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/3e4d64134750acc752eaa61b71e45c927f31a2a0"
+    },
+    {
+      "path": "TALENT/model/lib/trompt",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5bf3e85c404f77e3cb824f7f3b8289ddd378dbc9",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/5bf3e85c404f77e3cb824f7f3b8289ddd378dbc9"
+    },
+    {
+      "path": "TALENT/model/lib/trompt/trompt.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1feeb2d6f477ab8daf4522c9d93822340450de70",
+      "size": 6195,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/1feeb2d6f477ab8daf4522c9d93822340450de70"
+    },
+    {
+      "path": "TALENT/model/methods",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7ee46989f5df47d3d54845aade1d464409fcf60a",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/7ee46989f5df47d3d54845aade1d464409fcf60a"
+    },
+    {
+      "path": "TALENT/model/methods/PFN_v2.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a740eecc03d1fbb0e2c62aad75f645c09e91a0a",
+      "size": 4890,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/9a740eecc03d1fbb0e2c62aad75f645c09e91a0a"
+    },
+    {
+      "path": "TALENT/model/methods/amformer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9942d1dbba27cab606a672b0c6a9438af89881bb",
+      "size": 816,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/9942d1dbba27cab606a672b0c6a9438af89881bb"
+    },
+    {
+      "path": "TALENT/model/methods/autoint.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91694c617d6c21bbe85117a582e1aa0324e8b457",
+      "size": 708,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/91694c617d6c21bbe85117a582e1aa0324e8b457"
+    },
+    {
+      "path": "TALENT/model/methods/base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "049a02955a2464fb1a757f710cfea03689bc6a13",
+      "size": 14841,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/049a02955a2464fb1a757f710cfea03689bc6a13"
+    },
+    {
+      "path": "TALENT/model/methods/bishop.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4b7fe7897f25b1943c6bdd4f11aff353d7752b5",
+      "size": 815,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/c4b7fe7897f25b1943c6bdd4f11aff353d7752b5"
+    },
+    {
+      "path": "TALENT/model/methods/danets.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "973253ae37ebdfe2bd5d6994346245bfe893801c",
+      "size": 1069,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/973253ae37ebdfe2bd5d6994346245bfe893801c"
+    },
+    {
+      "path": "TALENT/model/methods/dcn2.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a51f8b49a05b3e12df2947c4c2eedfd8287032c7",
+      "size": 706,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/a51f8b49a05b3e12df2947c4c2eedfd8287032c7"
+    },
+    {
+      "path": "TALENT/model/methods/dnnr.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74e04b9b0f2c018f48c1b32ce900f765c04920a3",
+      "size": 4879,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/74e04b9b0f2c018f48c1b32ce900f765c04920a3"
+    },
+    {
+      "path": "TALENT/model/methods/excelformer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bb48d405e36691a06f19c20b9942af4630ec165",
+      "size": 5544,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/7bb48d405e36691a06f19c20b9942af4630ec165"
+    },
+    {
+      "path": "TALENT/model/methods/ftt.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edaa1058de7f784f05b12854d1471fb1a121e585",
+      "size": 738,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/edaa1058de7f784f05b12854d1471fb1a121e585"
+    },
+    {
+      "path": "TALENT/model/methods/grande.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94cacbbb5f92099771106f59bce4d4cebc038b2f",
+      "size": 12325,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/94cacbbb5f92099771106f59bce4d4cebc038b2f"
+    },
+    {
+      "path": "TALENT/model/methods/grownet.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86f37f2543f8ab4a2a2cdbe77cc69b4fc8f62811",
+      "size": 9564,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/86f37f2543f8ab4a2a2cdbe77cc69b4fc8f62811"
+    },
+    {
+      "path": "TALENT/model/methods/hyperfast.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfbf9daba012ec7800791f8edcaf3602b3bffc6b",
+      "size": 4043,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/cfbf9daba012ec7800791f8edcaf3602b3bffc6b"
+    },
+    {
+      "path": "TALENT/model/methods/mlp.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63f9110588ff00d36902b4972bddc1636f7e145d",
+      "size": 647,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/63f9110588ff00d36902b4972bddc1636f7e145d"
+    },
+    {
+      "path": "TALENT/model/methods/mlp_plr.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6daf27392c264567c0e1a4a2c3b78952c92a4d6",
+      "size": 778,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/f6daf27392c264567c0e1a4a2c3b78952c92a4d6"
+    },
+    {
+      "path": "TALENT/model/methods/modernNCA.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e2ededc6c8be3cf06dd8e30f5215d62e3e93ea2",
+      "size": 14971,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/5e2ededc6c8be3cf06dd8e30f5215d62e3e93ea2"
+    },
+    {
+      "path": "TALENT/model/methods/node.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fdf1cc128ecb4863c4629343a718421ff7bd201",
+      "size": 648,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/2fdf1cc128ecb4863c4629343a718421ff7bd201"
+    },
+    {
+      "path": "TALENT/model/methods/protogate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "428483f8b099d0f0f4519efefae9391a1b68ac6e",
+      "size": 13294,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/428483f8b099d0f0f4519efefae9391a1b68ac6e"
+    },
+    {
+      "path": "TALENT/model/methods/ptarl.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4aac8be564191a8fb0a646e1e45ea9c663d1c9b2",
+      "size": 4685,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/4aac8be564191a8fb0a646e1e45ea9c663d1c9b2"
+    },
+    {
+      "path": "TALENT/model/methods/realmlp.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ba9af256736da5f7a740c61d958372786acd8bb",
+      "size": 7044,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/7ba9af256736da5f7a740c61d958372786acd8bb"
+    },
+    {
+      "path": "TALENT/model/methods/resnet.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87b5d7f461136dad1e733760eede560ca426bbb6",
+      "size": 656,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/87b5d7f461136dad1e733760eede560ca426bbb6"
+    },
+    {
+      "path": "TALENT/model/methods/saint.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab609fecfde152da70edbc92069bde30f8ccb846",
+      "size": 726,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/ab609fecfde152da70edbc92069bde30f8ccb846"
+    },
+    {
+      "path": "TALENT/model/methods/snn.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5200a47762ef2069b032dee13add459fb11e30a",
+      "size": 709,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/b5200a47762ef2069b032dee13add459fb11e30a"
+    },
+    {
+      "path": "TALENT/model/methods/switchtab.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e57005795c43301cb09d7467bd73848cac076dc",
+      "size": 7925,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/2e57005795c43301cb09d7467bd73848cac076dc"
+    },
+    {
+      "path": "TALENT/model/methods/t2gformer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b1e4f79e2cf5dce9095b8c7730b26a5f817f093",
+      "size": 3169,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/6b1e4f79e2cf5dce9095b8c7730b26a5f817f093"
+    },
+    {
+      "path": "TALENT/model/methods/tabcaps.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1e50173553388e181a1ff82b8879f435fa05aaa",
+      "size": 5764,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/c1e50173553388e181a1ff82b8879f435fa05aaa"
+    },
+    {
+      "path": "TALENT/model/methods/tabm.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d1fb83ce4925aa0b77e3f7f2e0296d418f2de4e",
+      "size": 6899,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/6d1fb83ce4925aa0b77e3f7f2e0296d418f2de4e"
+    },
+    {
+      "path": "TALENT/model/methods/tabnet.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "753857fb01b6d7e312ad342f27e66fbfeeb65cbc",
+      "size": 6315,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/753857fb01b6d7e312ad342f27e66fbfeeb65cbc"
+    },
+    {
+      "path": "TALENT/model/methods/tabpfn.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aea0718eab43650cdea9bbfd418d154348d9664f",
+      "size": 4282,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/aea0718eab43650cdea9bbfd418d154348d9664f"
+    },
+    {
+      "path": "TALENT/model/methods/tabptm.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6ef0745f1b09a52a598207a9d56380d357f685e",
+      "size": 20550,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/c6ef0745f1b09a52a598207a9d56380d357f685e"
+    },
+    {
+      "path": "TALENT/model/methods/tabr.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a596d081279c8a9665f475f61a22b4f0f4230345",
+      "size": 13880,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/a596d081279c8a9665f475f61a22b4f0f4230345"
+    },
+    {
+      "path": "TALENT/model/methods/tabswift.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4a7c90a983a1b0bab42372ba37af88569a68e33",
+      "size": 8297,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/f4a7c90a983a1b0bab42372ba37af88569a68e33"
+    },
+    {
+      "path": "TALENT/model/methods/tabtransformer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "feaecb65b06989bbb94b98a72e1650fd9d6a6e54",
+      "size": 837,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/feaecb65b06989bbb94b98a72e1650fd9d6a6e54"
+    },
+    {
+      "path": "TALENT/model/methods/tangos.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d6942779ef84343b1f962d67e7a2b6441ead116",
+      "size": 1989,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/7d6942779ef84343b1f962d67e7a2b6441ead116"
+    },
+    {
+      "path": "TALENT/model/methods/trompt.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebf02cf6c08ba8be1e008f546da28a44c0df3b54",
+      "size": 2926,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/ebf02cf6c08ba8be1e008f546da28a44c0df3b54"
+    },
+    {
+      "path": "TALENT/model/models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "002174fde3adb906301889569b358d2b0a24735d",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/002174fde3adb906301889569b358d2b0a24735d"
+    },
+    {
+      "path": "TALENT/model/models/PFN_v2.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed842a160ce021f63be06449b09361b188efddae",
+      "size": 53849,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/ed842a160ce021f63be06449b09361b188efddae"
+    },
+    {
+      "path": "TALENT/model/models/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "TALENT/model/models/amformer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4217dba247808a7503cf865489e68830cd71a6e7",
+      "size": 4937,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/4217dba247808a7503cf865489e68830cd71a6e7"
+    },
+    {
+      "path": "TALENT/model/models/autoint.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90f61d468ab87db431632cdea072e6d33692da3c",
+      "size": 9801,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/90f61d468ab87db431632cdea072e6d33692da3c"
+    },
+    {
+      "path": "TALENT/model/models/bishop.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ccb67328a23c22766dd0d5c5ffe12f70953123c",
+      "size": 5195,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/6ccb67328a23c22766dd0d5c5ffe12f70953123c"
+    },
+    {
+      "path": "TALENT/model/models/danets.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02d8d313c337d93293fe87c6649b51f7bcc10f06",
+      "size": 4368,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/02d8d313c337d93293fe87c6649b51f7bcc10f06"
+    },
+    {
+      "path": "TALENT/model/models/dcn2.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2dd13ad053393d37890e8a6f930a71c69a1f23f",
+      "size": 2556,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/e2dd13ad053393d37890e8a6f930a71c69a1f23f"
+    },
+    {
+      "path": "TALENT/model/models/dnnr.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "285e165a6affa180ba087db7059f314884c93852",
+      "size": 38,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/285e165a6affa180ba087db7059f314884c93852"
+    },
+    {
+      "path": "TALENT/model/models/excelformer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3f181aadfb23212995c8ffc955ccc1296ba8cfc",
+      "size": 11935,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/c3f181aadfb23212995c8ffc955ccc1296ba8cfc"
+    },
+    {
+      "path": "TALENT/model/models/ftt.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cab72c14f37e250f8a9030b0dc59540db53e08d8",
+      "size": 11457,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/cab72c14f37e250f8a9030b0dc59540db53e08d8"
+    },
+    {
+      "path": "TALENT/model/models/grande.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98cac202a1c2f76839e3ac8d0af9da76d1051625",
+      "size": 12601,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/98cac202a1c2f76839e3ac8d0af9da76d1051625"
+    },
+    {
+      "path": "TALENT/model/models/grownet.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38a3e0439111294412ae87de354ebb3b03120b84",
+      "size": 7464,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/38a3e0439111294412ae87de354ebb3b03120b84"
+    },
+    {
+      "path": "TALENT/model/models/hyperfast.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0863c54a88d520f8581f4f29d625551e652348e",
+      "size": 12096,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/d0863c54a88d520f8581f4f29d625551e652348e"
+    },
+    {
+      "path": "TALENT/model/models/mlp.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c064ed743f14f0dea547ddd1062f5bd682ba778e",
+      "size": 985,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/c064ed743f14f0dea547ddd1062f5bd682ba778e"
+    },
+    {
+      "path": "TALENT/model/models/mlp_plr.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52f948eebb8b853aa56a3d3c34f7fd31cabb6bcf",
+      "size": 1817,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/52f948eebb8b853aa56a3d3c34f7fd31cabb6bcf"
+    },
+    {
+      "path": "TALENT/model/models/modernNCA.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13ff0131342b7325774f02512b5a81fd01a601a0",
+      "size": 4422,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/13ff0131342b7325774f02512b5a81fd01a601a0"
+    },
+    {
+      "path": "TALENT/model/models/node.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "979dc802b32608c1b4c0ff379d370a10c3d3b1bd",
+      "size": 1146,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/979dc802b32608c1b4c0ff379d370a10c3d3b1bd"
+    },
+    {
+      "path": "TALENT/model/models/protogate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a647b72eecd59adca903131ff976bb9532585582",
+      "size": 10481,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/a647b72eecd59adca903131ff976bb9532585582"
+    },
+    {
+      "path": "TALENT/model/models/ptarl.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df0172634ccb9756b8d8d45d5ef1a887706f974a",
+      "size": 3639,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/df0172634ccb9756b8d8d45d5ef1a887706f974a"
+    },
+    {
+      "path": "TALENT/model/models/realmlp.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a1717953ccf970e7b0acaa67c089487e8dce63e",
+      "size": 19016,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/7a1717953ccf970e7b0acaa67c089487e8dce63e"
+    },
+    {
+      "path": "TALENT/model/models/resnet.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca8ee5a7c9c9224b85c331da54152faa50c9991e",
+      "size": 2897,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/ca8ee5a7c9c9224b85c331da54152faa50c9991e"
+    },
+    {
+      "path": "TALENT/model/models/saint.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73fa66bab0656d81db0f5adf3034d7e8b723d892",
+      "size": 13282,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/73fa66bab0656d81db0f5adf3034d7e8b723d892"
+    },
+    {
+      "path": "TALENT/model/models/snn.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c325e492aa58aadee89069a6b3d9e2a810ab0c5f",
+      "size": 2773,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/c325e492aa58aadee89069a6b3d9e2a810ab0c5f"
+    },
+    {
+      "path": "TALENT/model/models/switchtab.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "beedced2ab6f8dd8f042ae5e9f8fec09c21418fb",
+      "size": 3577,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/beedced2ab6f8dd8f042ae5e9f8fec09c21418fb"
+    },
+    {
+      "path": "TALENT/model/models/t2gformer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8435cf5510cccbdf9f4b3b83347f10c918db8e1f",
+      "size": 13409,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/8435cf5510cccbdf9f4b3b83347f10c918db8e1f"
+    },
+    {
+      "path": "TALENT/model/models/tabcaps.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "daf9ae65434601aff058917e882466cd4a4ec3f3",
+      "size": 3298,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/daf9ae65434601aff058917e882466cd4a4ec3f3"
+    },
+    {
+      "path": "TALENT/model/models/tabm.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea7aba97fdef80beeac5a0933e50e59845fc5f6f",
+      "size": 6570,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/ea7aba97fdef80beeac5a0933e50e59845fc5f6f"
+    },
+    {
+      "path": "TALENT/model/models/tabnet.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c734a509b70266fdb3d6968d2b83315b0d17bc08",
+      "size": 4828,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/c734a509b70266fdb3d6968d2b83315b0d17bc08"
+    },
+    {
+      "path": "TALENT/model/models/tabpfn.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "559ad84d81b54cf60cdf5843efbd43dc93248e51",
+      "size": 11451,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/559ad84d81b54cf60cdf5843efbd43dc93248e51"
+    },
+    {
+      "path": "TALENT/model/models/tabptm.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca4edb50fc0a6b96058eb16873e172db965bcdbf",
+      "size": 2060,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/ca4edb50fc0a6b96058eb16873e172db965bcdbf"
+    },
+    {
+      "path": "TALENT/model/models/tabr.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af17fb26f02c734b32256767899d6d4a37d28e02",
+      "size": 10743,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/af17fb26f02c734b32256767899d6d4a37d28e02"
+    },
+    {
+      "path": "TALENT/model/models/tabtransformer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7cf52a9e2ce2ef8da83a10751d2c8028bc98fa38",
+      "size": 8149,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/7cf52a9e2ce2ef8da83a10751d2c8028bc98fa38"
+    },
+    {
+      "path": "TALENT/model/models/tangos.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eda2ae398ab485b060478869e547875b74aff7e8",
+      "size": 3202,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/eda2ae398ab485b060478869e547875b74aff7e8"
+    },
+    {
+      "path": "TALENT/model/models/trompt.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4952094870bbc3781d41de27b9277f8ab49ab28a",
+      "size": 1374,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/4952094870bbc3781d41de27b9277f8ab49ab28a"
+    },
+    {
+      "path": "TALENT/model/utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c5448ac9cd01f2f43bf6f8512d5f1ad3505eae9",
+      "size": 34694,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/6c5448ac9cd01f2f43bf6f8512d5f1ad3505eae9"
+    },
+    {
+      "path": "resources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cd4ecf61b21a8179bbcd7b2bec7069f2ed8d9f4d",
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/trees/cd4ecf61b21a8179bbcd7b2bec7069f2ed8d9f4d"
+    },
+    {
+      "path": "resources/TabSwift.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e92f33a822442bea19d61847ba4cffcb9ab2907",
+      "size": 248589,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/1e92f33a822442bea19d61847ba4cffcb9ab2907"
+    },
+    {
+      "path": "test.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf8a31eef59e53a9e5df11b08c844983b6fc2f78",
+      "size": 337,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/cf8a31eef59e53a9e5df11b08c844983b6fc2f78"
+    },
+    {
+      "path": "train_model_deep.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d6220ecefef1319041a63d8cecfb6aedb0edae7",
+      "size": 1098,
+      "url": "https://api.github.com/repos/LAMDA-Tabular/TabSwift/git/blobs/7d6220ecefef1319041a63d8cecfb6aedb0edae7"
+    }
+  ],
+  "truncated": false
+}

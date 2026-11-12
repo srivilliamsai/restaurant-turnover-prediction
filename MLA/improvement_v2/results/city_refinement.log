@@ -1,0 +1,13 @@
+Canonical city check: raw_baseline 20219172.167890638
+Canonical city check: huber_baseline 20536669.352103
+Canonical city check: engineered 20168609.985379335
+Canonical city check: engineered_drop 20116330.994988035
+Canonical city check: ordered_depth5 20148858.455120444
+Canonical city check: huber20_engineered 20378160.169648048
+Canonical city check: huber40 20249342.35757523
+Canonical city check: clip120 20148006.878570415
+Canonical city check: spline_ridge 20250020.051805545
+Canonical city check: svr_core 20634084.537612256
+Canonical city check: huber40_engineered 20245585.47078459
+Canonical city check: huber40_monotone 20282015.77776563
+Corrected city-group comparison: {'Validation': 'City GroupKFold', 'Rank-3 model RMSE': 20227279.15726141, 'New candidate RMSE': 20092949.44448126, 'Reduction': 134329.7127801478}

@@ -1,0 +1,67 @@
+{
+  "code_cells": 10,
+  "figures": 2,
+  "elapsed_seconds": 49.831997871398926,
+  "validation": [
+    {
+      "Validation": "1701",
+      "Type": "New split",
+      "Previous submitted RMSE": 19867153.712843668,
+      "Current candidate RMSE": 19874296.406003367,
+      "Gain vs previous submitted": -7142.69315969944
+    },
+    {
+      "Validation": "1711",
+      "Type": "New split",
+      "Previous submitted RMSE": 19811265.638831757,
+      "Current candidate RMSE": 19812900.494528115,
+      "Gain vs previous submitted": -1634.8556963577867
+    },
+    {
+      "Validation": "71",
+      "Type": "Previous split",
+      "Previous submitted RMSE": 19870083.60766446,
+      "Current candidate RMSE": 19857784.247238502,
+      "Gain vs previous submitted": 12299.360425956547
+    },
+    {
+      "Validation": "2026",
+      "Type": "Previous split",
+      "Previous submitted RMSE": 19823207.7784541,
+      "Current candidate RMSE": 19818699.6071214,
+      "Gain vs previous submitted": 4508.171332698315
+    },
+    {
+      "Validation": "303",
+      "Type": "Previous split",
+      "Previous submitted RMSE": 19887896.096400928,
+      "Current candidate RMSE": 19878783.029105924,
+      "Gain vs previous submitted": 9113.067295003682
+    },
+    {
+      "Validation": "909",
+      "Type": "Previous split",
+      "Previous submitted RMSE": 19867479.321802314,
+      "Current candidate RMSE": 19847565.721879166,
+      "Gain vs previous submitted": 19913.59992314875
+    },
+    {
+      "Validation": "city",
+      "Type": "City stress",
+      "Previous submitted RMSE": 20129673.335451152,
+      "Current candidate RMSE": 20149537.41177406,
+      "Gain vs previous submitted": -19864.076322909445
+    }
+  ],
+  "means": {
+    "Previous submitted RMSE": 19854514.35933287,
+    "Current candidate RMSE": 19848338.250979416,
+    "Gain vs previous submitted": 6176.108353458345
+  },
+  "bootstrap_interval": [
+    -13527.062739946134,
+    25867.8858910391
+  ],
+  "validation_execution": "Reused explicitly hash-verified actual fold predictions; recomputed metrics; full fits and behavioral/export checks executed in this notebook. Colab defaults to uncached model training.",
+  "full_fit_reproduced": true
+}

@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "portal_uploads": 0,
+  "paid_resources_requested": false,
+  "archive": "./improvement_v9/V9_Portable_Delivery.zip",
+  "archive_sha256": "ab7ba8d0362081e5f6cbb36fd96e9bb878bef64d9df1b170f4af2ea1d183a2dc",
+  "qualified_candidates": 1,
+  "csv": "./improvement_v9/colab_cli_runs/20261026T160148Z/portable_delivery/submission/submission.csv",
+  "notebook": "./improvement_v9/colab_cli_runs/20261026T160148Z/portable_delivery/submission/submission.ipynb",
+  "report": "./improvement_v9/colab_cli_runs/20261026T160148Z/portable_delivery/V9_Report.md",
+  "owned_runtime_released": true,
+  "observed_portal_best": {
+    "version": "V9",
+    "trial": "v9_trial_1",
+    "rmse": 11904515.9864996,
+    "rank_in_screenshot": 9,
+    "csv_sha256": "5a384dc3d8bf58c4e29f0d6cac646aa33afe22bdcdd186cccd9758342769bbd4"
+  },
+  "observed_user_portal_trials": 1
+}

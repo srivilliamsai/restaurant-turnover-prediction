@@ -1,0 +1,11 @@
+{
+  "result": {
+    "status": "engineering_excluded",
+    "error_type": "RuntimeError",
+    "reason": "AttributeError: module 'numba.cuda.types' has no attribute 'NPDatetime'",
+    "traceback": "Traceback (most recent call last):\n  File \"/content/mla_v19/pilot_worker.py\", line 27, in main\n    fitted=modeling.fit(e.train.iloc[a],e.y[a],name,fold=0,scheme=42)\n  File \"/content/mla_v19/modeling.py\", line 42, in fit\n    fitted = new_models.fit(raw, target, name, fold=fold, scheme=scheme)\n  File \"/content/mla_v19/new_models.py\", line 128, in fit\n    metadata = remote.request('fit', {'raw': raw, 'target': np.asarray(target, float), 'name': name})\n  File \"/content/mla_v19/new_models.py\", line 94, in request\n    raise RuntimeError(status['error_type'] + ': ' + status['reason'])\nRuntimeError: AttributeError: module 'numba.cuda.types' has no attribute 'NPDatetime'\n",
+    "engineering_seconds": 18.355456892999996,
+    "accuracy_tested": false
+  },
+  "result_sha256": "f2d92e007378fcbfe59577aff5881bf3a83d694d4599702675ff6dba8f217bba"
+}

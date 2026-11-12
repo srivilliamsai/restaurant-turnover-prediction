@@ -1,0 +1,13 @@
+{
+  "complete": true,
+  "settings": 4,
+  "planned_settings": 8,
+  "skipped_settings": [
+    "tabpfn_raw_compact",
+    "tabpfn_raw_v7",
+    "tabpfn_sqrt_compact",
+    "tabpfn_sqrt_v7"
+  ],
+  "configurations": 16,
+  "shortlist": []
+}

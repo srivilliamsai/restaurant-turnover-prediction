@@ -1,0 +1,7 @@
+{
+  "reason": "Saving each 876MB model plus AdamW state every epoch creates multi-GB writes and can exhaust disk. Use supported best-checkpoint saving before any accuracy test.",
+  "epoch": 1793257859.425941,
+  "accuracy_tested": false,
+  "prior_task_clock_reset": false,
+  "original_start_epoch": 1793256772
+}

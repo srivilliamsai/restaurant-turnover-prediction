@@ -1,0 +1,7 @@
+[
+  {
+    "output_type": "stream",
+    "name": "stdout",
+    "text": "EXPORT_DIAGNOSTIC {\"maximum_difference_INR\": 427996.18365401775, \"rms_difference_INR\": 78829.08066100406, \"first_fresh\": [30560602.506812558, 39887561.27220857, 28477947.617295396, 44064312.40687268, 48131397.553160295], \"first_scored\": [30588990.151837457, 39920630.03803521, 28636360.13688083, 44086154.66921562, 48118488.8413544], \"saved_fit_sha256\": \"59411e198c10e429ecbff616a0e739be781824967de90fd2af24fe544ec15d53\"}\nERROR_FRAMES [{\"file\": \"interactiveshell.py\", \"function\": \"run_code\", \"line\": 3553}, {\"file\": \"804743025.py\", \"function\": \"<cell line: 0>\", \"line\": 2}, {\"file\": \"workflow.py\", \"function\": \"export\", \"line\": 229}, {\"file\": \"workflow.py\", \"function\": \"_export\", \"line\": 190}]\nKERNEL_AVAILABLE /content/v9_cli_20261026T160148Z/v9_fresh__h2_j7gd\n"
+  }
+]

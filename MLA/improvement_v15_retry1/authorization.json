@@ -1,0 +1,23 @@
+{
+  "version": "V15",
+  "maximum_hours": 4,
+  "paid_resources": false,
+  "started_epoch": 1793242201.0,
+  "hard_stop_epoch": 1793287800.0,
+  "settings": [
+    "F40-T080",
+    "F40-T120",
+    "N32-T080",
+    "N32-T100",
+    "N32-T120"
+  ],
+  "weights": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "user_authorization": "User replied yes to: May I run a fresh four-hour free-T4 retry to finish V15? Previous eight-hour attempt and charges are preserved in prior_attempt; this is a separately authorized retry, not a reset of that ledger.",
+  "attempt": "retry1",
+  "previous_attempt": "improvement_v15"
+}

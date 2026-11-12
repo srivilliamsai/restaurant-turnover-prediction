@@ -1,0 +1,5 @@
+{"validation": "18421", "previous_rmse": 19889372.50028427, "candidate_rmse": 19863662.63228201, "gain": 25709.86800225824, "seconds": 138.1155571937561}
+{"validation": "18422", "previous_rmse": 19860129.679240715, "candidate_rmse": 19816733.502104715, "gain": 43396.177136000246, "seconds": 127.64549493789673}
+{"validation": "2026", "previous_rmse": 19823207.7784541, "candidate_rmse": 19810210.84353932, "gain": 12996.934914778918, "seconds": 63.23785591125488}
+{"validation": "303", "previous_rmse": 19887896.096400928, "candidate_rmse": 19842435.757285036, "gain": 45460.339115891606, "seconds": 63.86931896209717}
+{"validation": "city", "previous_rmse": 20129673.335451152, "candidate_rmse": 20108310.640624102, "gain": 21362.69482704997, "seconds": 62.67969608306885}

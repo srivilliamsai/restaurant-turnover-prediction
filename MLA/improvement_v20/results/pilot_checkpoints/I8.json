@@ -1,0 +1,141 @@
+{
+  "result": {
+    "status": "PASS",
+    "fold_seconds": 15.419015972999887,
+    "full_fit_predict_seconds": 10.249357077000013,
+    "behavior": {
+      "permutation_difference_INR": 7.62939453125,
+      "label_id_difference_INR": 0.0,
+      "batch_difference_INR": 3.814697265625,
+      "individual_difference_INR": 0.0,
+      "rmse_difference_INR": {
+        "permutation": 0.027425337582826614,
+        "batch": 0.030591782182455063,
+        "individual": 0.0
+      },
+      "other_query_rows_changed_difference_INR": 0.0,
+      "rows_checked": 699,
+      "individual_probes": 12,
+      "missing_unseen_inputs": true,
+      "behavior_tolerance_INR": 10.0,
+      "prediction_rtol": 1e-06,
+      "rmse_tolerance_INR": 10.0
+    },
+    "fresh_repeat_difference_INR": 7.62939453125,
+    "save_reload_difference_INR": 0.0,
+    "target_metadata": {
+      "name": "I8",
+      "training_rows": 2794,
+      "units": "raw INR millions",
+      "model_class": "tabicl._sklearn.regressor.TabICLRegressor",
+      "checkpoint_sha256": "0db9cb538f114e79026bf08f45f41ad8dd7ad2de2aaca9a5ca8cd3bd9748ae7a",
+      "checkpoint_revision": "4dcd344ece2c00be9e831fdd35bed57b5ad83e19",
+      "actual_source_hashes": {
+        "tabicl._sklearn.regressor": "9bfc15027a63211e7ab15a2924c13eb7537937dbd3d53e2799b18cdbc8d09731",
+        "tabicl": "f40b23bee37298b180b86d3aed5444a0a9be154fd1e4b1cd02ee01b4bc112516"
+      },
+      "runtime": {
+        "dependencies": {
+          "torch": "2.11.0",
+          "numpy": "2.5.4",
+          "pandas": "3.0.6",
+          "scikit-learn": "1.9.1",
+          "scipy": "1.18.1",
+          "catboost": "1.2.10",
+          "tabicl": "2.2.0",
+          "structured-data-models": null,
+          "numba": null,
+          "cudf-cu13": null,
+          "huggingface-hub": "1.33.0",
+          "safetensors": "0.8.0",
+          "pyarrow": "23.0.1",
+          "joblib": "1.6.0"
+        },
+        "gpu": "Tesla T4",
+        "cuda": "13.0",
+        "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+        "total_gpu_bytes": 15637086208,
+        "cudf_discoverable": false,
+        "numba_discoverable": false
+      },
+      "input_features": 40,
+      "categorical_columns": [
+        "Cuisine",
+        "City",
+        "Restaurant Location",
+        "Endoresed By",
+        "Restaurant Type",
+        "Restaurant Theme",
+        "Cuisine 1",
+        "Cuisine 2"
+      ],
+      "all_outer_training_rows": true,
+      "seed": 10242,
+      "peak_gpu_allocated_bytes": 2029224448,
+      "peak_gpu_reserved_bytes": 2141192192,
+      "host_rss_bytes": 1377071104,
+      "query_layout": "Original V11 fixed 500 rows, padded with the training feature row having the most observed fields; no labels or IDs."
+    },
+    "full_target_metadata": {
+      "name": "I8",
+      "training_rows": 3493,
+      "units": "raw INR millions",
+      "model_class": "tabicl._sklearn.regressor.TabICLRegressor",
+      "checkpoint_sha256": "0db9cb538f114e79026bf08f45f41ad8dd7ad2de2aaca9a5ca8cd3bd9748ae7a",
+      "checkpoint_revision": "4dcd344ece2c00be9e831fdd35bed57b5ad83e19",
+      "actual_source_hashes": {
+        "tabicl._sklearn.regressor": "9bfc15027a63211e7ab15a2924c13eb7537937dbd3d53e2799b18cdbc8d09731",
+        "tabicl": "f40b23bee37298b180b86d3aed5444a0a9be154fd1e4b1cd02ee01b4bc112516"
+      },
+      "runtime": {
+        "dependencies": {
+          "torch": "2.11.0",
+          "numpy": "2.5.4",
+          "pandas": "3.0.6",
+          "scikit-learn": "1.9.1",
+          "scipy": "1.18.1",
+          "catboost": "1.2.10",
+          "tabicl": "2.2.0",
+          "structured-data-models": null,
+          "numba": null,
+          "cudf-cu13": null,
+          "huggingface-hub": "1.33.0",
+          "safetensors": "0.8.0",
+          "pyarrow": "23.0.1",
+          "joblib": "1.6.0"
+        },
+        "gpu": "Tesla T4",
+        "cuda": "13.0",
+        "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+        "total_gpu_bytes": 15637086208,
+        "cudf_discoverable": false,
+        "numba_discoverable": false
+      },
+      "input_features": 40,
+      "categorical_columns": [
+        "Cuisine",
+        "City",
+        "Restaurant Location",
+        "Endoresed By",
+        "Restaurant Type",
+        "Restaurant Theme",
+        "Cuisine 1",
+        "Cuisine 2"
+      ],
+      "all_outer_training_rows": true,
+      "seed": 10242,
+      "peak_gpu_allocated_bytes": 2477515264,
+      "peak_gpu_reserved_bytes": 2535456768,
+      "host_rss_bytes": 1336725504,
+      "query_layout": "Original V11 fixed 500 rows, padded with the training feature row having the most observed fields; no labels or IDs."
+    },
+    "peak_gpu_allocated_bytes": 2029224448,
+    "peak_gpu_reserved_bytes": 2141192192,
+    "training_rows": 2794,
+    "validation_rows": 699,
+    "full_training_rows": 3493,
+    "selection_uses_validation_rmse": false,
+    "engineering_seconds": 72.96325062300002
+  },
+  "result_sha256": "f129de3b57be3b3714e264f7a2f77d0a3743b13ed1eadabeecad97bec33a7560"
+}

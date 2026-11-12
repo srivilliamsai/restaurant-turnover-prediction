@@ -1,0 +1,13 @@
+{
+  "recommended": false,
+  "attempted": false,
+  "actual_portal_rmse": null,
+  "actual_portal_rank": null,
+  "qualified_candidate_hash": null,
+  "reason": "No development candidate reached the predeclared 0.20% improvement requirement; retain scored V14.",
+  "observed_best": {
+    "version": "V14",
+    "actual_portal_rmse": 11736110.7877709,
+    "csv_sha256": "39d49f79beb8549d04ffc78d134aad2407dc5e73914dc3c30e8bb162a3c0ba05"
+  }
+}

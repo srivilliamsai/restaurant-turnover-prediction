@@ -1,0 +1,23 @@
+{
+  "step": "preprocessing_passed",
+  "details": {
+    "members": [
+      {
+        "member": 0,
+        "support_rows": 2794,
+        "output_columns": 86,
+        "support_invariant_to_query": true
+      },
+      {
+        "member": 1,
+        "support_rows": 2794,
+        "output_columns": 44,
+        "support_invariant_to_query": true
+      }
+    ],
+    "unseen_categories_map_to_nan": true,
+    "feature_count": 40,
+    "target_and_ID_absent": true
+  },
+  "epoch": 1793294295.4457128
+}

@@ -1,0 +1,19 @@
+{
+  "status": "Candidate recommended for a new portal trial",
+  "recommended_for_trial": true,
+  "root_promoted": true,
+  "current_portal_rmse": 12094600.3216516,
+  "leader_portal_rmse": 11917847.2693885,
+  "candidate_portal_rmse": null,
+  "mean_local_reduction": 31890.829792232253,
+  "new_split_mean_reduction": 34553.02256912924,
+  "bootstrap_interval": [
+    3832.214441113826,
+    56418.51198312016
+  ],
+  "csv": "./improvement_v5/submission.csv",
+  "notebook": "./improvement_v5/submission.ipynb",
+  "report": "./improvement_v5/REPORT.md",
+  "csv_sha256": "66a673efc5f31bc9f4010de033999fd3712444b8f6dd0478c97e77bb3934630d",
+  "notebook_sha256": "46b7366227f295844988b8512d012ecfa141aa7b81b42df42f565082e4880f48"
+}

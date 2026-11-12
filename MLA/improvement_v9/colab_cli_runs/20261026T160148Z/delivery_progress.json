@@ -1,0 +1,9 @@
+{
+  "status": "needs_review",
+  "session": "v9-cli-t4",
+  "new_experiments": 0,
+  "portal_uploads": 0,
+  "paid_resources_requested": false,
+  "error_type": "RuntimeError",
+  "error": "Training driver failed; preserve its evidence for review."
+}

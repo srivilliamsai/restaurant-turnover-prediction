@@ -1,0 +1,30 @@
+{
+  "status": "immutable_metadata_locked_before_pilot",
+  "models": {
+    "I8": {
+      "model_repository": "jingang/TabICL",
+      "model_revision": "4dcd344ece2c00be9e831fdd35bed57b5ad83e19",
+      "filename": "tabicl-regressor-v2-20260212.ckpt",
+      "advertised_bytes": 114324594,
+      "advertised_sha256": "0db9cb538f114e79026bf08f45f41ad8dd7ad2de2aaca9a5ca8cd3bd9748ae7a",
+      "source_repository": "soda-inria/tabicl",
+      "package_version_or_source": "tabicl==2.2.0",
+      "weights_downloaded": false,
+      "downloaded_bytes_verified": false
+    },
+    "KS8-CLEAN": {
+      "model_repository": "nvidia/Kumo-Tabular",
+      "model_revision": "3c3e10bbdb590ace29e7026847f92db3c603096d",
+      "filename": "small/regressor.pt",
+      "advertised_bytes": 113968523,
+      "advertised_sha256": "fc672f536501d64356036050ac2acea7e46927f7b9ad38366abe048f88e7d423",
+      "source_repository": "NVIDIA/structured-data-models",
+      "source_commit": "2b1696f4fdc22004cc757c44703a69cf326c0a11",
+      "package_version_or_source": "reviewed source commit",
+      "metadata_file": "research_sources/nvidia_Kumo-Tabular_hub_metadata.json",
+      "weights_downloaded": false,
+      "downloaded_bytes_verified": false,
+      "inference_tested": false
+    }
+  }
+}

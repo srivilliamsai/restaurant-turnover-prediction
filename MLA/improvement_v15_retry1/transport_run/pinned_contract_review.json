@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "checked_settings": {
+    "F40-T080": {
+      "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+      "estimators": 8,
+      "seed": 10242,
+      "temperature": 0.8,
+      "automatic_calibration": false,
+      "precision": "torch.float32"
+    },
+    "F40-T120": {
+      "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+      "estimators": 8,
+      "seed": 10242,
+      "temperature": 1.2,
+      "automatic_calibration": false,
+      "precision": "torch.float32"
+    },
+    "N32-T080": {
+      "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+      "estimators": 8,
+      "seed": 10242,
+      "temperature": 0.8,
+      "automatic_calibration": false,
+      "precision": "torch.float32"
+    },
+    "N32-T100": {
+      "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+      "estimators": 8,
+      "seed": 10242,
+      "temperature": 1.0,
+      "automatic_calibration": false,
+      "precision": "torch.float32"
+    },
+    "N32-T120": {
+      "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+      "estimators": 8,
+      "seed": 10242,
+      "temperature": 1.2,
+      "automatic_calibration": false,
+      "precision": "torch.float32"
+    }
+  },
+  "original_v14_checkpoint_record_preserved": true,
+  "numerical_source_hashes_unchanged": true,
+  "development_scores_read": false
+}

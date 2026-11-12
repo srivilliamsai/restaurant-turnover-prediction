@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "proposed_cap_hours": 18,
+  "components": 3,
+  "maximum_comparisons": 25,
+  "FT_recipes_differ_only_in_context_size": true,
+  "published_FT_source_matches_executed_V17_pilot": true,
+  "public_EXAONE_metadata_matches_proposed_hash": true,
+  "local_document_links_valid": true,
+  "training_started": false,
+  "exact_extended_deadline_pending": true
+}

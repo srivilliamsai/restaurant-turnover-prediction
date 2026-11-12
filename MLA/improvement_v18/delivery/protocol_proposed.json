@@ -1,0 +1,185 @@
+{
+  "version": "V18",
+  "status": "PROPOSED_NOT_EXECUTING",
+  "planning_date_IST": "2026-10-29",
+  "execution_started_epoch": null,
+  "proposed_maximum_elapsed_hours": 18,
+  "shared_research_hours": 15,
+  "delivery_reserved_hours": 3,
+  "preferred_hours": {
+    "audit_implementation_setup_pilots": 2,
+    "development": 5,
+    "confirmation_including_new_controls": 7,
+    "recovery_contingency": 1,
+    "delivery": 3
+  },
+  "stage_targets_borrow_from_shared_research_pool": true,
+  "paid_resources": false,
+  "user_selected_colab_account_reused": true,
+  "maximum_owned_runtime_recovery_allocations": 2,
+  "deadline": {
+    "extension_confirmed_by_user": true,
+    "exact_deadline_IST": null,
+    "status": "awaiting_exact_date_time_timezone",
+    "total_cap_formula": "min(18h, deadline - execution_start - 1h)",
+    "training_stop_before_deadline_hours": 4,
+    "artifact_ready_before_deadline_hours": 1
+  },
+  "settings": {
+    "FT512": {
+      "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+      "model_version": "V3_5",
+      "tabpfn_version": "9.2.0",
+      "learning_rate": 3e-06,
+      "use_lr_scheduler": false,
+      "weight_decay": 0.01,
+      "epochs_max": 30,
+      "early_stopping_patience": 8,
+      "inner_validation_fraction": 0.15,
+      "inner_seed_base": 9091,
+      "query_fraction": 0.2,
+      "n_estimators_finetune": 1,
+      "n_estimators_validation": 1,
+      "n_estimators_final_inference": 1,
+      "use_fixed_preprocessing_seed": true,
+      "activation_checkpointing": true,
+      "crps_loss_weight": 1.0,
+      "mse_loss_weight": 1.0,
+      "mse_loss_clip": null,
+      "seed": 10242,
+      "epoch_zero_eligible": true,
+      "all_outer_training_rows_refitted": true,
+      "inference_context_subsampling": false,
+      "context_plus_query_rows": 512
+    },
+    "EXA8": {
+      "source_revision": "d149d0f0441053f0cf6b2b45f4b2067a81619cf9",
+      "repo_id": "LG-AI-Research/EXAONE-Tabular",
+      "checkpoint_revision": "093ad1c2613e1e95d26df8610451d2e02ed53cbe",
+      "filename": "exaone-tabular-regressor-v1_default.safetensors",
+      "expected_checkpoint_sha256": "24891e14e649c6509f07ee62b5583e06544b68eaf9a9195ee58777eb9cf6fa0d",
+      "ensemble_count": 8,
+      "seed": 10242,
+      "compute_dtype": "float32",
+      "point_estimate": "mean",
+      "member_weighting": "uniform",
+      "n_svd": 0,
+      "svd_gate": false,
+      "svd_split": false,
+      "support_row_limit": 100000,
+      "feature_limit": 500,
+      "query_batch_limit": 500,
+      "maximum_gpu_budget_bytes": 12884901888,
+      "all_original_training_rows_required": true
+    },
+    "FT1024": {
+      "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+      "model_version": "V3_5",
+      "tabpfn_version": "9.2.0",
+      "learning_rate": 3e-06,
+      "use_lr_scheduler": false,
+      "weight_decay": 0.01,
+      "epochs_max": 30,
+      "early_stopping_patience": 8,
+      "inner_validation_fraction": 0.15,
+      "inner_seed_base": 9091,
+      "query_fraction": 0.2,
+      "n_estimators_finetune": 1,
+      "n_estimators_validation": 1,
+      "n_estimators_final_inference": 1,
+      "use_fixed_preprocessing_seed": true,
+      "activation_checkpointing": true,
+      "crps_loss_weight": 1.0,
+      "mse_loss_weight": 1.0,
+      "mse_loss_clip": null,
+      "seed": 10242,
+      "epoch_zero_eligible": true,
+      "all_outer_training_rows_refitted": true,
+      "inference_context_subsampling": false,
+      "context_plus_query_rows": 1024
+    }
+  },
+  "engineering_priority": [
+    "FT512",
+    "EXA8",
+    "FT1024"
+  ],
+  "budget_drop_order": [
+    "FT1024",
+    "EXA8",
+    "FT512"
+  ],
+  "routes": {
+    "FT512": {
+      "FT512": 1.0
+    },
+    "EXA8": {
+      "EXA8": 1.0
+    },
+    "FT1024": {
+      "FT1024": 1.0
+    },
+    "FT512_EXA8": {
+      "FT512": 0.5,
+      "EXA8": 0.5
+    },
+    "FT1024_EXA8": {
+      "FT1024": 0.5,
+      "EXA8": 0.5
+    }
+  },
+  "weights": [
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "maximum_selectable_comparisons": 25,
+  "maximum_component_development_outer_evaluations": 30,
+  "matched_unadapted_control_development_evaluations": 10,
+  "development_schemes": [
+    42,
+    71
+  ],
+  "confirmation_schemes": [
+    918601,
+    918602,
+    918603,
+    "strat:27421",
+    "city"
+  ],
+  "new_random_baseline_control_fits": {
+    "original_Mac_V7": 15,
+    "T9": 15,
+    "P35_8": 15
+  },
+  "maximum_finalists": 1,
+  "development_gate": {
+    "all_assignments_gain_positive": true,
+    "minimum_mean_relative_gain": 0.002
+  },
+  "confirmation_gate": {
+    "all_three_random_gains_positive": true,
+    "minimum_mean_random_relative_gain": 0.002,
+    "paired_row_bootstrap_draws": 5000,
+    "bootstrap_seed": 8319,
+    "lower_95pct_gain_bound_above_zero": true,
+    "maximum_city_and_stratified_relative_deterioration": 0.01
+  },
+  "reproduction": {
+    "fresh_and_reload_max_difference_INR_exclusive": 0.01,
+    "permutation_batch_individual_max_difference_INR": 10,
+    "pilot_RMSE_max_difference_INR": 1,
+    "individual_probes_minimum": 12,
+    "output_rounding": false
+  },
+  "portal_uploads_automatic": 0,
+  "maximum_recommended_manual_trials": 1,
+  "reference_version": "V14",
+  "reference_portal_rmse_INR": 11736110.7877709,
+  "reference_csv_sha256": "39d49f79beb8549d04ffc78d134aad2407dc5e73914dc3c30e8bb162a3c0ba05",
+  "reference_notebook_sha256": "86fae4ea97d6fd35c2ed485c60f26f02c98fccb3cbeda9a10228cc48e788318e",
+  "prior_ledger_reset": false,
+  "new_holdout_claimed": false
+}

@@ -1,0 +1,518 @@
+{
+  "inputs": {
+    "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+    "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+    "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+    "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "catboost": "1.2.10",
+    "sklearn": "1.9.1",
+    "scipy": "1.18.1"
+  },
+  "decision": {
+    "candidates": [
+      {
+        "name": "residual_tree_l2",
+        "family": "residual",
+        "weight": 0.75,
+        "rmse_42": 19815813.77766609,
+        "gain_42": 1422.5499159097672,
+        "rmse_71": 19790779.339553073,
+        "gain_71": 49471.02210607007,
+        "mean_rmse": 19803296.558609582,
+        "metrics": {
+          "18421": {
+            "baseline": 19863662.63228201,
+            "candidate": 19832420.144617647,
+            "gain": 31242.48766436428,
+            "relative_change": -0.0015728462692268241
+          },
+          "18422": {
+            "baseline": 19816733.502104715,
+            "candidate": 19798032.98382704,
+            "gain": 18700.518277674913,
+            "relative_change": -0.0009436730970666662
+          },
+          "strat:27421": {
+            "baseline": 19828989.57780773,
+            "candidate": 19788419.321618978,
+            "gain": 40570.25618875027,
+            "relative_change": -0.0020460072375122484
+          },
+          "city": {
+            "baseline": 20136850.755091805,
+            "candidate": 20113476.98948276,
+            "gain": 23373.76560904458,
+            "relative_change": -0.0011607458332646425
+          }
+        },
+        "local_champion": true,
+        "experimental_eligible": true,
+        "mean_confirmation_gain": 24971.502971019596
+      },
+      {
+        "name": "tiers_d4_shrink300",
+        "family": "tiers",
+        "weight": 0.25,
+        "rmse_42": 19822850.286160864,
+        "gain_42": -5613.958578865975,
+        "rmse_71": 19837757.5945584,
+        "gain_71": 2492.7671007439494,
+        "mean_rmse": 19830303.94035963,
+        "metrics": {
+          "18421": {
+            "baseline": 19863662.63228201,
+            "candidate": 19868640.341680426,
+            "gain": -4977.70939841494,
+            "relative_change": 0.00025059373442659627
+          },
+          "18422": {
+            "baseline": 19816733.502104715,
+            "candidate": 19819044.12750258,
+            "gain": -2310.625397864729,
+            "relative_change": 0.0001165997109271455
+          },
+          "strat:27421": {
+            "baseline": 19828989.57780773,
+            "candidate": 19834990.79066159,
+            "gain": -6001.21285386011,
+            "relative_change": 0.0003026484446073674
+          },
+          "city": {
+            "baseline": 20136850.755091805,
+            "candidate": 20147551.177671194,
+            "gain": -10700.422579389066,
+            "relative_change": 0.0005313851063173392
+          }
+        },
+        "local_champion": false,
+        "experimental_eligible": true,
+        "mean_confirmation_gain": -3644.1673981398344
+      },
+      {
+        "name": "bands_d5_cal0",
+        "family": "bands",
+        "weight": 0.25,
+        "rmse_42": 19841251.155600127,
+        "gain_42": -24014.828018128872,
+        "rmse_71": 19850039.621594705,
+        "gain_71": -9789.259935561568,
+        "mean_rmse": 19845645.388597414,
+        "metrics": {
+          "18421": {
+            "baseline": 19863662.63228201,
+            "candidate": 19882829.421373464,
+            "gain": -19166.789091452956,
+            "relative_change": 0.0009649171679095847
+          },
+          "18422": {
+            "baseline": 19816733.502104715,
+            "candidate": 19840755.328738794,
+            "gain": -24021.826634079218,
+            "relative_change": 0.0012121991059488302
+          },
+          "strat:27421": {
+            "baseline": 19828989.57780773,
+            "candidate": 19841828.97692273,
+            "gain": -12839.399115003645,
+            "relative_change": 0.0006475064735207425
+          },
+          "city": {
+            "baseline": 20136850.755091805,
+            "candidate": 20100616.034163747,
+            "gain": 36234.72092805803,
+            "relative_change": -0.0017994234236897722
+          }
+        },
+        "local_champion": false,
+        "experimental_eligible": true,
+        "mean_confirmation_gain": -21594.307862766087
+      }
+    ],
+    "trials": [
+      {
+        "name": "residual_tree_l2",
+        "family": "residual",
+        "weight": 0.75,
+        "rmse_42": 19815813.77766609,
+        "gain_42": 1422.5499159097672,
+        "rmse_71": 19790779.339553073,
+        "gain_71": 49471.02210607007,
+        "mean_rmse": 19803296.558609582,
+        "metrics": {
+          "18421": {
+            "baseline": 19863662.63228201,
+            "candidate": 19832420.144617647,
+            "gain": 31242.48766436428,
+            "relative_change": -0.0015728462692268241
+          },
+          "18422": {
+            "baseline": 19816733.502104715,
+            "candidate": 19798032.98382704,
+            "gain": 18700.518277674913,
+            "relative_change": -0.0009436730970666662
+          },
+          "strat:27421": {
+            "baseline": 19828989.57780773,
+            "candidate": 19788419.321618978,
+            "gain": 40570.25618875027,
+            "relative_change": -0.0020460072375122484
+          },
+          "city": {
+            "baseline": 20136850.755091805,
+            "candidate": 20113476.98948276,
+            "gain": 23373.76560904458,
+            "relative_change": -0.0011607458332646425
+          }
+        },
+        "local_champion": true,
+        "experimental_eligible": true,
+        "mean_confirmation_gain": 24971.502971019596
+      },
+      {
+        "name": "tiers_d4_shrink300",
+        "family": "tiers",
+        "weight": 0.25,
+        "rmse_42": 19822850.286160864,
+        "gain_42": -5613.958578865975,
+        "rmse_71": 19837757.5945584,
+        "gain_71": 2492.7671007439494,
+        "mean_rmse": 19830303.94035963,
+        "metrics": {
+          "18421": {
+            "baseline": 19863662.63228201,
+            "candidate": 19868640.341680426,
+            "gain": -4977.70939841494,
+            "relative_change": 0.00025059373442659627
+          },
+          "18422": {
+            "baseline": 19816733.502104715,
+            "candidate": 19819044.12750258,
+            "gain": -2310.625397864729,
+            "relative_change": 0.0001165997109271455
+          },
+          "strat:27421": {
+            "baseline": 19828989.57780773,
+            "candidate": 19834990.79066159,
+            "gain": -6001.21285386011,
+            "relative_change": 0.0003026484446073674
+          },
+          "city": {
+            "baseline": 20136850.755091805,
+            "candidate": 20147551.177671194,
+            "gain": -10700.422579389066,
+            "relative_change": 0.0005313851063173392
+          }
+        },
+        "local_champion": false,
+        "experimental_eligible": true,
+        "mean_confirmation_gain": -3644.1673981398344
+      }
+    ],
+    "baseline_portal_rmse": 12046722.3691139,
+    "lock_sha256": "501309d04eecf815b7bf6c8ad579b3c9a07d979977ed4182878e64ca2f96c152",
+    "decision": "experimental CSVs for portal evaluation; keep best observed score",
+    "limitation": "All labels have been examined previously. No portal improvement is claimed."
+  },
+  "outputs": {
+    "candidates/trial_1/submission.csv": "5f20ea8d610e325c0eae4727b7ed8c737ce2d881239792c9a6af5ce4e3dec1ba",
+    "candidates/trial_1/submission.ipynb": "b0723c81bf424dc8df2cf06778e46586b82d3ee0bf731255cd2f2f05c1dbb078",
+    "candidates/trial_2/submission.csv": "16d4dd9003fd784049aea716a2beda5a42ca0100c979a4f2a6ecbadd26a542a7",
+    "candidates/trial_2/submission.ipynb": "cd59db7147f44f44b30745dad330cfc9287adc6403d533809204601dd1f89b0c",
+    "REPORT.md": "c43c825a8bddafe6819960d2ca89a83beec61e5cec7e9a330e28e46f7a2bb257",
+    "V7_Research_Colab.ipynb": "0ef42038b85868857283aa44b308ef02c8fb418d41e2cdb1fcef4b4ce5439df4",
+    "portal_result_2026-10-26.json": "535a11befd3ccc5786e66855dfa164fb2e19456f63ce0dedb855052a5c678f35",
+    "portal_trials.csv": "391c43e3c73de7b368f62d2e30782a8b43fa77f8a52e8fc70795b54c34f3beda"
+  },
+  "preserved_v5": {
+    "submission.csv": "66a673efc5f31bc9f4010de033999fd3712444b8f6dd0478c97e77bb3934630d",
+    "submission.ipynb": "46b7366227f295844988b8512d012ecfa141aa7b81b42df42f565082e4880f48"
+  },
+  "checks": [
+    {
+      "rows": 500,
+      "columns": [
+        "Registration Number",
+        "Annual Turnover"
+      ],
+      "finite_nonnegative": true,
+      "row_order": true,
+      "unique_ids": true,
+      "permutation_invariance": true,
+      "target_id_invariance": true,
+      "missing_unseen_values": true,
+      "malformed_cases_rejected": 12,
+      "trial": "trial_1",
+      "choice": {
+        "name": "residual_tree_l2",
+        "family": "residual",
+        "weight": 0.75,
+        "rmse_42": 19815813.77766609,
+        "gain_42": 1422.5499159097672,
+        "rmse_71": 19790779.339553073,
+        "gain_71": 49471.02210607007,
+        "mean_rmse": 19803296.558609582,
+        "metrics": {
+          "18421": {
+            "baseline": 19863662.63228201,
+            "candidate": 19832420.144617647,
+            "gain": 31242.48766436428,
+            "relative_change": -0.0015728462692268241
+          },
+          "18422": {
+            "baseline": 19816733.502104715,
+            "candidate": 19798032.98382704,
+            "gain": 18700.518277674913,
+            "relative_change": -0.0009436730970666662
+          },
+          "strat:27421": {
+            "baseline": 19828989.57780773,
+            "candidate": 19788419.321618978,
+            "gain": 40570.25618875027,
+            "relative_change": -0.0020460072375122484
+          },
+          "city": {
+            "baseline": 20136850.755091805,
+            "candidate": 20113476.98948276,
+            "gain": 23373.76560904458,
+            "relative_change": -0.0011607458332646425
+          }
+        },
+        "local_champion": true,
+        "experimental_eligible": true,
+        "mean_confirmation_gain": 24971.502971019596
+      },
+      "csv_sha256": "5f20ea8d610e325c0eae4727b7ed8c737ce2d881239792c9a6af5ce4e3dec1ba",
+      "prediction_rms_difference_from_v5": 460050.7326810312,
+      "conditional_portal_rmse_lower_bound": 11586671.63643287,
+      "can_mathematically_beat_shown_leader": false,
+      "bound_assumptions": "same 500 rows, given v5 score, ordinary unweighted RMSE as stated in rules",
+      "model_diagnostics": [
+        {
+          "seed": 10242,
+          "train_rows": 3493,
+          "family": "residual",
+          "inner_baseline": "three-fold v5 OOF within this outer training fold",
+          "mean_inner_residual_millions": 0.3638820391048544
+        },
+        {
+          "seed": 20242,
+          "train_rows": 3493,
+          "family": "residual",
+          "inner_baseline": "three-fold v5 OOF within this outer training fold",
+          "mean_inner_residual_millions": 0.3638820391048544
+        }
+      ]
+    },
+    {
+      "rows": 500,
+      "columns": [
+        "Registration Number",
+        "Annual Turnover"
+      ],
+      "finite_nonnegative": true,
+      "row_order": true,
+      "unique_ids": true,
+      "permutation_invariance": true,
+      "target_id_invariance": true,
+      "missing_unseen_values": true,
+      "malformed_cases_rejected": 12,
+      "trial": "trial_2",
+      "choice": {
+        "name": "tiers_d4_shrink300",
+        "family": "tiers",
+        "weight": 0.25,
+        "rmse_42": 19822850.286160864,
+        "gain_42": -5613.958578865975,
+        "rmse_71": 19837757.5945584,
+        "gain_71": 2492.7671007439494,
+        "mean_rmse": 19830303.94035963,
+        "metrics": {
+          "18421": {
+            "baseline": 19863662.63228201,
+            "candidate": 19868640.341680426,
+            "gain": -4977.70939841494,
+            "relative_change": 0.00025059373442659627
+          },
+          "18422": {
+            "baseline": 19816733.502104715,
+            "candidate": 19819044.12750258,
+            "gain": -2310.625397864729,
+            "relative_change": 0.0001165997109271455
+          },
+          "strat:27421": {
+            "baseline": 19828989.57780773,
+            "candidate": 19834990.79066159,
+            "gain": -6001.21285386011,
+            "relative_change": 0.0003026484446073674
+          },
+          "city": {
+            "baseline": 20136850.755091805,
+            "candidate": 20147551.177671194,
+            "gain": -10700.422579389066,
+            "relative_change": 0.0005313851063173392
+          }
+        },
+        "local_champion": false,
+        "experimental_eligible": true,
+        "mean_confirmation_gain": -3644.1673981398344
+      },
+      "csv_sha256": "16d4dd9003fd784049aea716a2beda5a42ca0100c979a4f2a6ecbadd26a542a7",
+      "prediction_rms_difference_from_v5": 503434.51658693317,
+      "conditional_portal_rmse_lower_bound": 11543287.852526966,
+      "can_mathematically_beat_shown_leader": false,
+      "bound_assumptions": "same 500 rows, given v5 score, ordinary unweighted RMSE as stated in rules",
+      "model_diagnostics": [
+        {
+          "seed": 10242,
+          "train_rows": 3493,
+          "family": "tiers",
+          "local_tiers": {
+            "1.0": {
+              "weight": 0.45750452079566006,
+              "rows": 253
+            },
+            "2.0": {
+              "weight": 0.9140647378974506,
+              "rows": 3191
+            }
+          }
+        },
+        {
+          "seed": 20242,
+          "train_rows": 3493,
+          "family": "tiers",
+          "local_tiers": {
+            "1.0": {
+              "weight": 0.45750452079566006,
+              "rows": 253
+            },
+            "2.0": {
+              "weight": 0.9140647378974506,
+              "rows": 3191
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "notebook_executions": [
+    {
+      "trial": "trial_1",
+      "code_cells": 10,
+      "figures": [
+        "trial_1_figure_1.png"
+      ],
+      "elapsed_seconds": 529.2875958330005,
+      "fresh_process": true,
+      "validation_checkpoint_reads": 0,
+      "fresh_five_fold_assignment": 18421,
+      "maximum_full_fit_difference": 0.0,
+      "maximum_oof_difference": 1.4901161193847656e-08,
+      "fresh_full_fit": true,
+      "checks": {
+        "rows": 500,
+        "columns": [
+          "Registration Number",
+          "Annual Turnover"
+        ],
+        "finite_nonnegative": true,
+        "row_order": true,
+        "unique_ids": true,
+        "permutation_invariance": true,
+        "target_id_invariance": true,
+        "missing_unseen_values": true,
+        "malformed_cases_rejected": 12
+      },
+      "portal_uploads": 0,
+      "csv_path": "./improvement_v7/results/notebook_trial_1/submission.csv"
+    },
+    {
+      "trial": "trial_2",
+      "code_cells": 10,
+      "figures": [
+        "trial_2_figure_1.png"
+      ],
+      "elapsed_seconds": 200.98647045899997,
+      "fresh_process": true,
+      "validation_checkpoint_reads": 0,
+      "fresh_five_fold_assignment": 18421,
+      "maximum_full_fit_difference": 0.0,
+      "maximum_oof_difference": 0.0,
+      "fresh_full_fit": true,
+      "checks": {
+        "rows": 500,
+        "columns": [
+          "Registration Number",
+          "Annual Turnover"
+        ],
+        "finite_nonnegative": true,
+        "row_order": true,
+        "unique_ids": true,
+        "permutation_invariance": true,
+        "target_id_invariance": true,
+        "missing_unseen_values": true,
+        "malformed_cases_rejected": 12
+      },
+      "portal_uploads": 0,
+      "csv_path": "./improvement_v7/results/notebook_trial_2/submission.csv"
+    }
+  ],
+  "portal_uploads": 0,
+  "portable_and_checkpoint_checks": {
+    "portable_audit_without_older_folders": true,
+    "verified_cache_reused": true,
+    "stale_context_rejected": true,
+    "corrupt_content_rejected": true,
+    "interrupted_write_without_metadata_recomputed": true,
+    "orphan_residual_checkpoint_quarantined_before_resume": true,
+    "note": "These are loader/checkpoint tests, not model accuracy tests."
+  },
+  "implementation": {
+    "models.py": "029de9731d057d8827ff6c7f1789f7669b408eeb3626e50a1677db223614edf8",
+    "verify_portable.py": "2f3082de83ceaa184d1e95b6ca95888aad47461b041b4463ec433931f265ba8b",
+    "execute_notebooks.py": "d09ca5c930ab262195f3807cc27edf569fd603bddffb963d8aa2b0831710831d",
+    "prepare_resume.py": "5b7490c9337b90e91db822fbbff366fba374971a6a3b961d9d23a2e6d50a8055",
+    "run_local.py": "9a9c15e0e5ec327f97d1e2fe328d8e7fa8a01c3371c6d0699dfc643ae762136a",
+    "reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+    "workflow.py": "c99c63e5575e514ec030828a40c16511c8aa0fab5edb04c842d555c347114e8a",
+    "verify_delivery.py": "53e4f124149ae560dfdcb6c1f5242d87f689cc3cde4fd98195d42d9eefedfec8",
+    "deliver.py": "32ec328cddd6481081238194b75c56b19a73f98ebf96d3048d98cf4b69bbed13"
+  },
+  "experiment_plan_sha256": "75d0038e218b146a49c25d87b7f4da8b7a9bd13eb27b0fdeb33b241c35cf3713",
+  "candidate_lock_sha256": "501309d04eecf815b7bf6c8ad579b3c9a07d979977ed4182878e64ca2f96c152",
+  "pre_portal_report_sha256": "2bf6547611f9d4b007e1533c599475fe897363f61866fa773e0db10520478e11",
+  "decision_context": "Frozen pre-upload local selection; see portal_observations for subsequent user-reported results.",
+  "portal_observations": [
+    {
+      "version": "v7_trial_1",
+      "portal_rmse": 12024316.5355221,
+      "rank_in_screenshot": 24,
+      "previous_best_portal_rmse": 12046722.3691139,
+      "rmse_reduction": 22405.8335918,
+      "relative_reduction_percent": 0.18599111779354527,
+      "csv": "candidates/trial_1/submission.csv",
+      "csv_sha256": "5f20ea8d610e325c0eae4727b7ed8c737ce2d881239792c9a6af5ce4e3dec1ba",
+      "source": "User-provided portal screenshot in this conversation",
+      "screenshot": "/tmp/TemporaryItems/NSIRD_screencaptureui_3Q4hNQ/Screenshot 2026-10-26 at 7.00.26\u202fPM.png",
+      "screenshot_date": "2026-10-26",
+      "submission_time": null,
+      "attribution": "Associated with Trial 1 from the preceding upload recommendation and user response. The screenshot does not independently display the filename or hash.",
+      "agent_performed_upload": false,
+      "recommended_current_submission": "v7_trial_1",
+      "trial_2_portal_score": null,
+      "screenshot_sha256": "14376a688da8a7de2c2644d17e8a54623f3934727f5dfd1a1fb0a6d7e8ef63a8"
+    }
+  ],
+  "current_best_observed": {
+    "version": "v7_trial_1",
+    "portal_rmse": 12024316.5355221,
+    "csv_sha256": "5f20ea8d610e325c0eae4727b7ed8c737ce2d881239792c9a6af5ce4e3dec1ba",
+    "attribution": "Associated with Trial 1 from the preceding upload recommendation and user response. The screenshot does not independently display the filename or hash."
+  },
+  "zip_context": "V7_Delivery.zip is the original pre-upload snapshot, preserved unchanged."
+}

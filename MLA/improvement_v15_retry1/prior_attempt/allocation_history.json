@@ -1,0 +1,16 @@
+{
+  "previous_account": {
+    "allocated": false,
+    "http_status": 503,
+    "http_reason": "Service Unavailable",
+    "request_method": "POST",
+    "observed_epoch": 1793211726.026657,
+    "source": "Sanitized diagnostic observed before human account switch"
+  },
+  "different_account": {
+    "allocated": true,
+    "owned_session": "v15-free-t4",
+    "accelerator": "T4",
+    "epoch": 1793212213.413239
+  }
+}

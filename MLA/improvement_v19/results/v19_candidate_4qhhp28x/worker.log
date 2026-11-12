@@ -1,0 +1,114 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Traceback (most recent call last):
+  File "/content/mla_v19/candidate_worker.py", line 24, in main
+    fitted = models.fit(**payload)
+  File "/content/mla_v19/candidate_models.py", line 95, in fit
+    model.fit(x=x, y=y_table, num_estimators=8, estimator_batch_size=1,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              generator=torch.Generator(device='cuda').manual_seed(SEED))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/mla_v19/candidate_env/lib/python3.13/site-packages/sdm/models/base/icl.py", line 277, in fit
+    contexts = recipe_execution.fit_transform(
+        x=x,
+    ...<4 lines>...
+        generator=generator,
+    )
+  File "/content/mla_v19/candidate_env/lib/python3.13/site-packages/sdm/processing/execution.py", line 210, in fit_transform
+    x: EnsembleTable = self.recipe.features.fit_transform_ensemble(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        inputs,
+        ^^^^^^^
+        generator=generator,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/content/mla_v19/candidate_env/lib/python3.13/site-packages/sdm/processing/ensemble.py", line 179, in fit_transform_ensemble
+    output = self._fit_transform_ensemble(
+        ensemble_table,
+        generator=generator,
+    )
+  File "/content/mla_v19/candidate_env/lib/python3.13/site-packages/sdm/processing/common/sequential.py", line 112, in _fit_transform_ensemble
+    out = child.fit_transform_ensemble(out, generator=generator)
+  File "/content/mla_v19/candidate_env/lib/python3.13/site-packages/sdm/processing/ensemble.py", line 179, in fit_transform_ensemble
+    output = self._fit_transform_ensemble(
+        ensemble_table,
+        generator=generator,
+    )
+  File "/content/mla_v19/candidate_env/lib/python3.13/site-packages/sdm/processing/common/stype.py", line 118, in _fit_transform_ensemble
+    self.processors[stype].fit_transform_ensemble(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        ensemble_table.select_stypes(stype),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        generator=generator,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/content/mla_v19/candidate_env/lib/python3.13/site-packages/sdm/processing/ensemble.py", line 179, in fit_transform_ensemble
+    output = self._fit_transform_ensemble(
+        ensemble_table,
+        generator=generator,
+    )
+  File "/content/mla_v19/candidate_env/lib/python3.13/site-packages/sdm/processing/common/sequential.py", line 112, in _fit_transform_ensemble
+    out = child.fit_transform_ensemble(out, generator=generator)
+  File "/content/mla_v19/candidate_env/lib/python3.13/site-packages/sdm/processing/ensemble.py", line 179, in fit_transform_ensemble
+    output = self._fit_transform_ensemble(
+        ensemble_table,
+        generator=generator,
+    )
+  File "/content/mla_v19/candidate_env/lib/python3.13/site-packages/sdm/processing/categorical/align.py", line 296, in _fit_transform_ensemble
+    group_categories, group_tables = self._fit_and_align(group)
+                                     ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/content/mla_v19/candidate_env/lib/python3.13/site-packages/sdm/processing/categorical/align.py", line 205, in _fit_and_align
+    fitted_categories, aligned_codes = self._fit_columns(
+                                       ~~~~~~~~~~~~~~~~~^
+        table,
+        ^^^^^^
+        align_codes=True,
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/content/mla_v19/candidate_env/lib/python3.13/site-packages/sdm/processing/categorical/align.py", line 180, in _fit_columns
+    fitted_categories, aligned_column_codes = self._fit_column(
+                                              ~~~~~~~~~~~~~~~~^
+        input_categories=input_categories,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        codes=codes[..., column_index],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        align_codes=align_codes,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/content/mla_v19/candidate_env/lib/python3.13/site-packages/sdm/processing/categorical/align.py", line 122, in _fit_column
+    ordered_categories, perm = input_categories.sort()
+                               ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/content/mla_v19/candidate_env/lib/python3.13/site-packages/sdm/tensor/var_len.py", line 621, in __torch_function__
+    return func(*args, **(kwargs or {}))
+  File "/content/mla_v19/candidate_env/lib/python3.13/site-packages/sdm/tensor/var_len.py", line 633, in __torch_dispatch__
+    return handler(*args, **(kwargs or {}))
+  File "/content/mla_v19/candidate_env/lib/python3.13/site-packages/sdm/tensor/string.py", line 545, in _sort
+    perm_ser = inp.to_cudf().argsort(ascending=not descending)
+               ~~~~~~~~~~~^^
+  File "/content/mla_v19/candidate_env/lib/python3.13/site-packages/sdm/tensor/string.py", line 243, in to_cudf
+    import cudf
+  File "/usr/local/lib/python3.13/dist-packages/cudf/__init__.py", line 15, in <module>
+    from numba import cuda
+  File "/usr/local/lib/python3.13/dist-packages/numba_cuda/numba/cuda/__init__.py", line 35, in <module>
+    from .device_init import *
+  File "/usr/local/lib/python3.13/dist-packages/numba_cuda/numba/cuda/device_init.py", line 6, in <module>
+    from numba.cuda import cg
+  File "/usr/local/lib/python3.13/dist-packages/numba_cuda/numba/cuda/cg.py", line 5, in <module>
+    from numba.cuda.extending import overload, overload_method
+  File "/usr/local/lib/python3.13/dist-packages/numba_cuda/numba/cuda/extending.py", line 17, in <module>
+    from numba.cuda.typing.typeof import typeof_impl  # noqa: F401
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/numba_cuda/numba/cuda/typing/__init__.py", line 10, in <module>
+    from .context import BaseContext, Context
+  File "/usr/local/lib/python3.13/dist-packages/numba_cuda/numba/cuda/typing/context.py", line 15, in <module>
+    from numba.cuda.typing.typeof import typeof, Purpose
+  File "/usr/local/lib/python3.13/dist-packages/numba_cuda/numba/cuda/typing/typeof.py", line 17, in <module>
+    from numba.cuda.np import numpy_support
+  File "/usr/local/lib/python3.13/dist-packages/numba_cuda/numba/cuda/np/numpy_support.py", line 184, in <module>
+    types.NPDatetime: "M8",
+    ^^^^^^^^^^^^^^^^
+AttributeError: module 'numba.cuda.types' has no attribute 'NPDatetime'
+

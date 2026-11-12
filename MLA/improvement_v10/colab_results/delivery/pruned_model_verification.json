@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "settings": {
+    "P": {
+      "status": "PASS",
+      "maximum_prediction_difference_INR": 0.0,
+      "training_rows": 2794
+    },
+    "C+S+P": {
+      "status": "PASS",
+      "maximum_prediction_difference_INR": 0.0,
+      "training_rows": 2794
+    }
+  },
+  "sources": {
+    "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+    "core.py": "6bdd9fe9915f5adcd263fdade0785574d1050470c52be7d48e1d6c620676ab31",
+    "features.py": "01e5ecd5db41b248d13c2597735e776a16f730ca54337845610c73e309642a6f",
+    "fresh_worker.py": "98d204f3895ce08d1ca2759fb9a6b7b1af8ab05cd8f3fc1377c1366169824d71",
+    "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+    "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+    "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+    "modeling.py": "22d19bd4490e619100580d1a8d2d64990b8a9995d12accee18820c0606ccbe6d",
+    "refit_city.py": "dbde194cafee94f2ee245451f8a2b1c0db58a04c38b6cce2aa0fdfe573ff95ea",
+    "verify.py": "cef69a3ab872909adb10624614aa27ad09314a6220707473bf950e9bcd8ab960",
+    "workflow.py": "026dda398f1774c01e6ab336f14178eb90636e5d4ebddaa411f04bbc3e86e220",
+    "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+    "reference_manifest.json": "99469dd0e16cfca0068d1fed9b3f6d881b9671bca8e0b36270c12abb854fe961"
+  },
+  "additional_parameter_settings": 0,
+  "purpose": "Required real-model input-invariance verification only."
+}

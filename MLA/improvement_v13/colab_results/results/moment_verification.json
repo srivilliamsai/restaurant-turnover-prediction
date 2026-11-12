@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "analytical_second_moment": 20.646003836791156,
+  "independent_quantile_integral": 20.646003836787838,
+  "difference": 3.318234575999668e-12
+}

@@ -1,0 +1,11 @@
+{
+  "seconds": 1185.5614195830058,
+  "by_stage": {
+    "setup": 109.86513858399849,
+    "audit": 5.000929757000009,
+    "pilot": 485.07331518499996,
+    "screen": 370.06969597299997
+  },
+  "maximum_hours": 8,
+  "measurement": "Accumulated stage wall time plus conservatively charged unobserved interruption interval."
+}

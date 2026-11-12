@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "inputs": {
+    "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+    "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+    "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+    "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+  },
+  "sources": {
+    "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+    "core.py": "e7ab06cf7ae943390e5e3052d988e11b3f49233a339837e0a5082eb3fdeb9c22",
+    "features.py": "01e5ecd5db41b248d13c2597735e776a16f730ca54337845610c73e309642a6f",
+    "fresh_worker.py": "98d204f3895ce08d1ca2759fb9a6b7b1af8ab05cd8f3fc1377c1366169824d71",
+    "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+    "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+    "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+    "modeling.py": "380b4459d2135e0b7807242e59059074f516b5c1c7003762a4bc5c5ba74e5a7d",
+    "refit_city.py": "dbde194cafee94f2ee245451f8a2b1c0db58a04c38b6cce2aa0fdfe573ff95ea",
+    "verify.py": "cef69a3ab872909adb10624614aa27ad09314a6220707473bf950e9bcd8ab960",
+    "workflow.py": "ea620bb223efe56c1769f4b10763d6cb92deac4a66175e4a64a5c70d4416148b",
+    "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+    "reference_manifest.json": "99469dd0e16cfca0068d1fed9b3f6d881b9671bca8e0b36270c12abb854fe961"
+  },
+  "train_rows": 3493,
+  "test_rows": 500,
+  "v9_portal_rmse": 11904515.9864996,
+  "original_targets_retained": true,
+  "source_inventory_sha256": "86b5e15c3e80711a804c8d89b33e4303196fcb3c62717a41025975f84c421387",
+  "scored_v9_sha256": "5a384dc3d8bf58c4e29f0d6cac646aa33afe22bdcdd186cccd9758342769bbd4",
+  "scored_v9_notebook_sha256": "38a39003d0d7fb805b8725beac9ae80933929f6782c412166deef4d4df2f6973",
+  "revised_city_fold_sha256": "0f837d3af050769bd40fe8852bc42adb22878b1e111d7758ff73662a8e2fe912",
+  "paid_resources_requested": false
+}

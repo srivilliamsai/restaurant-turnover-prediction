@@ -1,0 +1,171 @@
+{
+  "runtime": {
+    "dependencies": {
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1",
+      "catboost": "1.2.10",
+      "interpret-core": "0.7.8",
+      "tabpfn": "9.2.0",
+      "tabicl": "2.2.0",
+      "torch": "2.11.0+cu130"
+    },
+    "gpu": "Tesla T4",
+    "cuda": "13.0",
+    "precision": "float32",
+    "prediction_chunk": 500,
+    "seed": 10242,
+    "datetime_dependencies": {
+      "skrub": "0.10.1",
+      "pyarrow": "23.0.1"
+    }
+  },
+  "models": {
+    "BASE": {
+      "checkpoint": {
+        "repo_id": "Prior-Labs/TabPFN-v2-reg",
+        "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+        "filename": "tabpfn-v2-regressor.ckpt",
+        "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736",
+        "version": "2"
+      },
+      "parameters": {
+        "auto_scale_n_estimators": true,
+        "average_before_softmax": false,
+        "device": "cuda",
+        "differentiable_input": false,
+        "enable_torch_compile": false,
+        "eval_metric": null,
+        "fit_mode": "low_memory",
+        "ignore_pretraining_limits": false,
+        "inference_config": null,
+        "inference_precision": "torch.float32",
+        "keep_cache_on_device": true,
+        "kv_cache_precision": null,
+        "memory_saving_mode": true,
+        "model_path": "checkpoint_sha256:2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736",
+        "n_estimators": 16,
+        "n_jobs": null,
+        "n_preprocessing_jobs": 1,
+        "random_state": 10242,
+        "show_progress_bar": false,
+        "softmax_temperature": "auto",
+        "tuning_config": null
+      }
+    },
+    "P35_8": {
+      "checkpoint": {
+        "repo_id": "Prior-Labs/tabpfn_3_5",
+        "revision": "06bf2ba35c80a92a3b9abb436b99cf49e7a0365e",
+        "filename": "tabpfn-v3.5-20260909.safetensors",
+        "sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+        "bytes": 876027932,
+        "version": "3.5",
+        "download_path": "/root/.cache/huggingface/hub/models--Prior-Labs--tabpfn_3_5/snapshots/06bf2ba35c80a92a3b9abb436b99cf49e7a0365e/tabpfn-v3.5-20260909.safetensors",
+        "local_loader_path": "/content/mla_v14/model_weights/tabpfn-v3.5-20260909.safetensors",
+        "local_suffix": ".safetensors",
+        "format_check": {
+          "format": "safetensors",
+          "header_bytes": 77296,
+          "tensor_entries": 595,
+          "metadata_keys": [
+            "architecture_name",
+            "config",
+            "inference_config"
+          ]
+        },
+        "installed_loader_path": "/usr/local/lib/python3.13/dist-packages/tabpfn/checkpoint.py",
+        "installed_loader_sha256": "f7c86363ccc96af4ffe10ec23221ed90dfea304f04b6c4e48330ba25bbf807de"
+      },
+      "parameters": {
+        "auto_scale_n_estimators": true,
+        "average_before_softmax": false,
+        "device": "cuda",
+        "differentiable_input": false,
+        "enable_torch_compile": false,
+        "eval_metric": null,
+        "fit_mode": "low_memory",
+        "ignore_pretraining_limits": false,
+        "inference_config": null,
+        "inference_precision": "torch.float32",
+        "keep_cache_on_device": true,
+        "kv_cache_precision": null,
+        "memory_saving_mode": true,
+        "model_path": "checkpoint_sha256:ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+        "n_estimators": 8,
+        "n_jobs": null,
+        "n_preprocessing_jobs": 1,
+        "random_state": 10242,
+        "show_progress_bar": false,
+        "softmax_temperature": "auto",
+        "tuning_config": null
+      }
+    },
+    "P35-SC38": {
+      "checkpoint": {
+        "repo_id": "Prior-Labs/tabpfn_3_5",
+        "revision": "06bf2ba35c80a92a3b9abb436b99cf49e7a0365e",
+        "filename": "tabpfn-v3.5-20260909.safetensors",
+        "sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+        "bytes": 876027932,
+        "version": "3.5",
+        "download_path": "/root/.cache/huggingface/hub/models--Prior-Labs--tabpfn_3_5/snapshots/06bf2ba35c80a92a3b9abb436b99cf49e7a0365e/tabpfn-v3.5-20260909.safetensors",
+        "local_loader_path": "/content/mla_v14/model_weights/tabpfn-v3.5-20260909.safetensors",
+        "local_suffix": ".safetensors",
+        "format_check": {
+          "format": "safetensors",
+          "header_bytes": 77296,
+          "tensor_entries": 595,
+          "metadata_keys": [
+            "architecture_name",
+            "config",
+            "inference_config"
+          ]
+        },
+        "installed_loader_path": "/usr/local/lib/python3.13/dist-packages/tabpfn/checkpoint.py",
+        "installed_loader_sha256": "f7c86363ccc96af4ffe10ec23221ed90dfea304f04b6c4e48330ba25bbf807de"
+      },
+      "parameters": {
+        "auto_scale_n_estimators": true,
+        "average_before_softmax": false,
+        "device": "cuda",
+        "differentiable_input": false,
+        "enable_torch_compile": false,
+        "eval_metric": null,
+        "fit_mode": "low_memory",
+        "ignore_pretraining_limits": false,
+        "inference_config": null,
+        "inference_precision": "torch.float32",
+        "keep_cache_on_device": true,
+        "kv_cache_precision": null,
+        "memory_saving_mode": true,
+        "model_path": "checkpoint_sha256:ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+        "n_estimators": 8,
+        "n_jobs": null,
+        "n_preprocessing_jobs": 1,
+        "random_state": 10242,
+        "show_progress_bar": false,
+        "softmax_temperature": "auto",
+        "tuning_config": null
+      }
+    }
+  },
+  "engineering_failures": {},
+  "settings": {
+    "P35-SC38": {
+      "family": "TabPFN-3.5 Base",
+      "estimators": 8,
+      "target": "raw INR millions",
+      "view": "SC38",
+      "drop": [
+        "Service",
+        "Comfortablility"
+      ]
+    }
+  },
+  "target_units": "raw INR millions",
+  "adapter": "Fixed 500-row blocks; BASE first training row; new model maximum-observed training row; discard padding.",
+  "output_floor": 0.0,
+  "selection_uses_validation_rmse": false
+}

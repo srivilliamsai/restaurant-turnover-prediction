@@ -1,0 +1,33 @@
+{
+  "version": "October 12 candidate v3",
+  "portal_score": null,
+  "last_known_portal_score": 12204615.6438253,
+  "last_known_rank": 7,
+  "files": {
+    ".csv": {
+      "path": "./submission.csv",
+      "sha256": "348a70dce82f58e486c87cdcc69c1a3efd07056c72c6eaf47da6d79213cf9943"
+    },
+    ".ipynb": {
+      "path": "./submission.ipynb",
+      "sha256": "e6ed88a21eb1a3755bb2a1b2c75c76df3fa9702af84feda49b3a3815b7094df6"
+    }
+  },
+  "code_cells": 10,
+  "data_rows": 500,
+  "columns": [
+    "Registration Number",
+    "Annual Turnover"
+  ],
+  "mean_validation": {
+    "Submitted model RMSE": 19941966.979353134,
+    "Previous improved RMSE": 19880469.39184024,
+    "Current candidate RMSE": 19862166.701080453,
+    "Gain vs previous improved": 18302.690759792924
+  },
+  "caveats": [
+    "City stress test worsens versus v2",
+    "Incremental bootstrap gain interval includes zero",
+    "No new portal result available"
+  ]
+}

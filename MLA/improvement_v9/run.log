@@ -1,0 +1,26 @@
+{"audit": "PASS", "settings": 8, "v7_portal_rmse": 12024316.5355221}
+./improvement_v9/runtime_deps/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+./improvement_v9/runtime_deps/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+{"pilot": "ebm", "eligible": true, "status": "passed", "fit_rows": 2794, "validation_rows": 699, "settings": {"family": "ebm", "group": "ebm", "target": "raw", "representation": "v7", "interactions": 10}, "repeat_difference_INR": 0.0, "checks": {"rows": 500, "columns": ["Registration Number", "Annual Turnover"], "original_row_order": true, "unique_ids": true, "finite_nonnegative": true, "permutation_invariance": true, "target_id_invariance": true, "missing_and_unseen_values": true, "malformed_cases_rejected": 12}, "no_outer_validation_labels_passed_to_fit": true, "seconds": 5.677582707998226}
+{"component": "ebm_raw_i0", "mode": "plain", "scheme": "42", "rmse": 20128293.17476658}
+{"component": "ebm_raw_i0", "mode": "plain", "scheme": "71", "rmse": 20177102.825918783}
+{"screen_complete": "ebm_raw_i0", "settings_finished": 1, "of": 4}
+{"component": "ebm_raw_i10", "mode": "plain", "scheme": "42", "rmse": 20196774.17371493}
+{"component": "ebm_raw_i10", "mode": "plain", "scheme": "71", "rmse": 20169437.438364293}
+{"screen_complete": "ebm_raw_i10", "settings_finished": 2, "of": 4}
+{"component": "ebm_sqrt_i0", "mode": "plain", "scheme": "42", "rmse": 20067584.426961996}
+{"component": "ebm_sqrt_i0", "mode": "plain", "scheme": "71", "rmse": 20100445.04803211}
+{"screen_complete": "ebm_sqrt_i0", "settings_finished": 3, "of": 4}
+{"component": "ebm_sqrt_i10", "mode": "plain", "scheme": "42", "rmse": 20062016.280117363}
+{"component": "ebm_sqrt_i10", "mode": "plain", "scheme": "71", "rmse": 20067104.945102658}
+{"screen_complete": "ebm_sqrt_i10", "settings_finished": 4, "of": 4}
+{"screening_shortlist": []}
+{"FROZEN": [], "lock_sha256": "d04b5f52f7d7731112599f344b4c123e6562fbbed8c57dc5d570d2f81dbc8c7c", "development_configurations": 16}
+{"DECISION": "retain V7", "qualified": 0}
+Fresh scored-V7 full reproduction begins.
+inner fold 1/3 complete
+inner fold 2/3 complete
+inner fold 3/3 complete
+{"export": "complete", "qualified_files": 0, "v7_reproduction_max_difference": 7.450580596923828e-09}

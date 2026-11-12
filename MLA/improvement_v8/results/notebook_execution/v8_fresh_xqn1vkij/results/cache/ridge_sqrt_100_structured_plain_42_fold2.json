@@ -1,0 +1,43 @@
+{
+  "context": {
+    "name": "ridge_sqrt_100_structured",
+    "inputs": {
+      "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+      "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+      "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+      "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+    },
+    "sources": {
+      "engine.py": "9354369db39326d90534fd2542657005ca22b8b8680eec0e619902e6af6e4610",
+      "modeling.py": "44177560fc1ed64744662ba3159acff5026644ca74423f52cac6bcc3966eefb3",
+      "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+      "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+      "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+      "v5_contract.json": "3446412f01d536a31123142b984392216efd29094965500251386eac1814ab69",
+      "reference_manifest.json": "be46ba7d91b5c583570f4ceaf4919c292d4fba460dec58998873084638ae2c78"
+    },
+    "runtime": {
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "sklearn": "1.9.1",
+      "scipy": "1.18.1",
+      "catboost": "1.2.10"
+    },
+    "train_ids": "c125d337db2ca784f48144e0c6f51c3c70a37f2a7d1f38386c90e650d105fd1e",
+    "valid_ids": "d9a2a85b9b880c0c434575e13e5c8ad6a52f7369a7181120633333c082810ca5",
+    "training_targets": "a6bb0d88d3a2eb330834a7f56ae01fa3c4ebf6be89368ba6aa04954067fac07b",
+    "extra": {
+      "scheme": "42",
+      "fold": 2,
+      "mode": "plain",
+      "spec": {
+        "family": "ridge",
+        "group": "ridge",
+        "target": "sqrt",
+        "alpha": 100,
+        "structured": true
+      }
+    }
+  },
+  "sha256": "ab1e773ee528fcd7cd93a99a75822408334e3cb908936926cceb54af800dc96c"
+}

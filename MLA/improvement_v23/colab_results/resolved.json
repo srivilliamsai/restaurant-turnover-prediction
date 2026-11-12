@@ -1,0 +1,24 @@
+{
+  "versions": {
+    "torch": "2.11.0+cu130",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "einops": "0.8.2",
+    "kditransform": "1.2.0",
+    "huggingface-hub": "1.33.0",
+    "typing_extensions": "4.16.0",
+    "joblib": "1.6.0",
+    "nvtx": "0.2.16"
+  },
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "gpu": "Tesla T4",
+  "cuda": "13.0",
+  "checkpoint_sha256": "ed01f7a0a18d25451bc9d1058b479ba6b68048aa1ebde06156c8fcfaf8b8fe81",
+  "source_revision": "c76fa21bbb25fddca649e75a52dc9b1df66a659c",
+  "mixed_precision": false,
+  "seed": 10242,
+  "query_batch_size": 1024
+}

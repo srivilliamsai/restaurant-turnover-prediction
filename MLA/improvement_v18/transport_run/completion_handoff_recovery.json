@@ -1,0 +1,23 @@
+{
+  "epoch": 1793263057.430444,
+  "original_coordinator_pid": 3568,
+  "completed_stage": "screen",
+  "server_completion_markers_verified_ok": true,
+  "all_candidate_development_folds": 20,
+  "matched_control_folds": 10,
+  "fixed_blend_comparisons": 10,
+  "eligible_choices": 0,
+  "issue": "The local stage process remained open after the remote screen completion marker became ok.",
+  "recovery": "Run only the already-declared no-candidate decision, fallback export and collection on the existing runtime; then interrupt the waiting coordinator and verify its mandatory release.",
+  "new_allocation": false,
+  "model_recipes_or_selection_rules_changed": false,
+  "original_execution_clock_preserved": true,
+  "manual_declared_stages_completed": true,
+  "artifacts_collected": true,
+  "collected_archive_crc_verified": true,
+  "coordinator_interrupt_epoch": 1793263141.788445,
+  "waiting_coordinator_exit_code": 130,
+  "waiting_coordinator_cleanup_completed": true,
+  "owned_runtime_release_command_succeeded": true,
+  "explanation_of_raw_coordinator_status": "Raw coordinator says stopped/artifacts_collected=false because it was waiting on the completed screen process when interrupted. The manually completed decision/export stages and verified collected archive establish workflow completion; raw status is retained unmodified."
+}

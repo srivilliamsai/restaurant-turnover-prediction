@@ -1,0 +1,12 @@
+{
+  "by_stage": {
+    "audit": 1.497239351272583,
+    "pilot": 1307.299269914627,
+    "screen": 1196.628267288208,
+    "confirm": 0.0006697177886962891,
+    "export": 1.6869208812713623
+  },
+  "seconds": 4471.731544494629,
+  "maximum_hours": 4,
+  "measurement": "Conservative elapsed task wall time, including setup and interruptions."
+}

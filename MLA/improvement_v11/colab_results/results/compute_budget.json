@@ -1,0 +1,13 @@
+{
+  "seconds": 1985.7609945410077,
+  "by_stage": {
+    "setup": 164.3143671259968,
+    "audit": 10.001817518999971,
+    "pilot": 485.07331518499996,
+    "screen": 1070.199586235,
+    "export": 0.3094461250002496,
+    "local_finalization": 0.46187062399985734
+  },
+  "maximum_hours": 8,
+  "measurement": "Task computation/setup wall seconds; retained across resumes; local Mac receipts added once."
+}

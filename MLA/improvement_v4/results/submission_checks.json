@@ -1,0 +1,80 @@
+{
+  "passed": true,
+  "checks": {
+    "csv": {
+      "rows": 500,
+      "headers": [
+        "Registration Number",
+        "Annual Turnover"
+      ],
+      "unique_ids": 500,
+      "matches_test_order": true,
+      "finite_positive": true,
+      "sha256": "656027e4664cbfe8367e728b083dd29c56e4460c3d96c043300fe19ad895bbde",
+      "min": 11507763.874801291,
+      "max": 55274897.26557762
+    },
+    "invalid_examples": {
+      "rejected_cases": [
+        "missing_row",
+        "extra_row",
+        "reversed_rows",
+        "renamed_header",
+        "reversed_headers",
+        "extra_index_column",
+        "student_id_in_rows",
+        "duplicate_id",
+        "nan",
+        "positive_infinity",
+        "negative_infinity",
+        "negative_turnover"
+      ],
+      "validators": [
+        "independent_validate",
+        "pipeline.check_submission"
+      ]
+    },
+    "confirmed_v3_backup": {
+      "csv": {
+        "sha256": "348a70dce82f58e486c87cdcc69c1a3efd07056c72c6eaf47da6d79213cf9943",
+        "matches_confirmed_ledger": true
+      },
+      "ipynb": {
+        "sha256": "e6ed88a21eb1a3755bb2a1b2c75c76df3fa9702af84feda49b3a3815b7094df6",
+        "matches_confirmed_ledger": true
+      },
+      "portal_rmse": 12094600.3216516,
+      "rank_at_reported_submission": 3
+    },
+    "notebook": {
+      "code_cells": 10,
+      "executed_code_cells": 10,
+      "saved_errors": 0,
+      "output_items": 11,
+      "static_self_containment": "No workspace helper imports, relative imports, sys.path modifications, or external-source execution; all Python cells compile.",
+      "imported_modules": [
+        "catboost",
+        "google",
+        "hashlib",
+        "importlib",
+        "json",
+        "lightgbm",
+        "matplotlib",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "scipy",
+        "sklearn",
+        "subprocess",
+        "sys",
+        "warnings",
+        "xgboost"
+      ],
+      "sha256": "5d0129b1008f89d5be50c07d1faf61e4ae0da661faf385817ea573a5a3f591f5"
+    }
+  },
+  "failures": [],
+  "candidate_portal_score": null,
+  "scope": "CSV, backups and executed notebook"
+}

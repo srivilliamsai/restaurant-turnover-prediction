@@ -1,0 +1,9 @@
+{
+  "seconds": 154.35994951301473,
+  "by_stage": {
+    "screen": 56.67314693001754,
+    "export": 97.68680258299719
+  },
+  "maximum_hours": 18.0,
+  "measurement": "Checkpoint-computation seconds plus recorded fresh V7 export; notebook execution is separately recorded."
+}

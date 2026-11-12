@@ -1,0 +1,8 @@
+{
+  "phase": "stopped",
+  "pid": 3568,
+  "task_elapsed_seconds": 6372.714783906937,
+  "maximum_hours": 18,
+  "artifacts_collected": false,
+  "owned_runtime_released": true
+}

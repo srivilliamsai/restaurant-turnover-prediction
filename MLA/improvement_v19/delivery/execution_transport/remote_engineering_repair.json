@@ -1,0 +1,12 @@
+{
+  "original_accuracy_artifacts_present": [
+    "candidate_lock.json",
+    "component_diagnostics.csv",
+    "screening.csv"
+  ],
+  "existing_fold_files": 10,
+  "accuracy_results_reviewed": false,
+  "clock_reset": false,
+  "owned_workflow_processes_stopped": [],
+  "epoch": 1793267969.2302024
+}

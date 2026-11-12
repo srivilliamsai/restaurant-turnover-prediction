@@ -1,0 +1,8 @@
+{
+  "valid_roundtrip": true,
+  "changed_contract_rejected": true,
+  "different_split_rejected": true,
+  "changed_y_rejected": true,
+  "changed_file_rejected": true,
+  "unstamped_cache_rejected": true
+}

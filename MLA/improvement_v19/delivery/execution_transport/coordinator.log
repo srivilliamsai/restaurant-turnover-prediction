@@ -1,0 +1,27 @@
+{"phase": "reattaching_running_pilot", "pid": 14383, "task_elapsed_seconds": 4311.600636959076, "maximum_hours": 8}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "pilot", "status": "complete"}}
+{"phase": "running_screen", "pid": 14383, "task_elapsed_seconds": 4503.208904981613, "maximum_hours": 8}
+V19 foreground stage: screen timeout seconds 18891
+{"snapshot": "saved", "new_complete_folds": 6, "stage_status": {"stage": "pilot", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 11, "stage_status": {"stage": "pilot", "status": "complete"}}
+V19 stage complete: screen
+{"server_completion_verified": true}
+{"snapshot": "saved", "new_complete_folds": 3, "stage_status": {"stage": "screen", "status": "complete"}}
+{"phase": "running_confirm", "pid": 14383, "task_elapsed_seconds": 4846.87571310997, "maximum_hours": 8}
+V19 foreground stage: confirm timeout seconds 18552
+V19 stage complete: confirm
+{"server_completion_verified": true}
+{"phase": "running_export", "pid": 14383, "task_elapsed_seconds": 4883.163367033005, "maximum_hours": 8}
+V19 foreground stage: export timeout seconds 5400
+V19 stage complete: export
+{"server_completion_verified": true}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "export", "status": "complete"}}
+{"phase": "collecting_completed_artifacts", "pid": 14383, "task_elapsed_seconds": 4906.656162023544, "maximum_hours": 8}
+V19 measured result archive prepared.
+{"server_completion_verified": true}
+V19 measured outputs collected locally.
+Owned V19 free T4 released.
+{"phase": "complete", "pid": 14383, "task_elapsed_seconds": 4960.076519012451, "maximum_hours": 8, "artifacts_collected": true, "owned_runtime_released": true}

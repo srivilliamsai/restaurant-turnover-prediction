@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "archive_sha256": "e2f42d79e55e10a812f07af0a6141f377cf598ebb242e9fc06be8d1c7a9c450e",
+  "manifest_files_verified": 127,
+  "independent_review_included": true,
+  "runtime_release_included": true,
+  "v14_scored_files_preserved": true
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "old_notebook_bytes": 656480,
+  "new_notebook_bytes": 481311,
+  "old_longest_code_line": 580616,
+  "new_longest_code_line": 157,
+  "embedded_files": 18,
+  "all_embedded_file_hashes_verified": true,
+  "model_features_parameters_and_folds_unchanged": true,
+  "candidate_notebook_change": "same compression and line wrapping for generated coding notebooks",
+  "gpu_model_execution_claimed": false,
+  "sha256": "e0b2d8162a0e5639e06f0c504ec628ef5deabaf70161e04f63aa909e086938f8",
+  "fresh_setup_execution": "PASS",
+  "fresh_directory": "./improvement_v9/results/v9_lite_test_5qblz3ci/v9_fresh_p67q61oa",
+  "setup_feature_cache_and_fold_checks": "PASS"
+}

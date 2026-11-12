@@ -1,0 +1,99 @@
+{
+  "sqrt_d4_correct0": {
+    "power": 0.5,
+    "depth": 4,
+    "correct_mean": false
+  },
+  "sqrt_d4_correct1": {
+    "power": 0.5,
+    "depth": 4,
+    "correct_mean": true
+  },
+  "sqrt_d6_correct0": {
+    "power": 0.5,
+    "depth": 6,
+    "correct_mean": false
+  },
+  "sqrt_d6_correct1": {
+    "power": 0.5,
+    "depth": 6,
+    "correct_mean": true
+  },
+  "power075_correct0": {
+    "power": 0.75,
+    "depth": 5,
+    "correct_mean": false
+  },
+  "power075_correct1": {
+    "power": 0.75,
+    "depth": 5,
+    "correct_mean": true
+  },
+  "log_d4": {
+    "power": 0,
+    "depth": 4,
+    "correct_mean": true
+  },
+  "log_d6": {
+    "power": 0,
+    "depth": 6,
+    "correct_mean": true
+  },
+  "quantile0.5": {
+    "loss": "Quantile:alpha=0.5",
+    "depth": 5
+  },
+  "quantile0.6": {
+    "loss": "Quantile:alpha=0.6",
+    "depth": 5
+  },
+  "quantile0.7": {
+    "loss": "Quantile:alpha=0.7",
+    "depth": 5
+  },
+  "cap60": {
+    "cap": 60,
+    "depth": 5
+  },
+  "cap75": {
+    "cap": 75,
+    "depth": 5
+  },
+  "cap90": {
+    "cap": 90,
+    "depth": 5
+  },
+  "huber20_top15": {
+    "loss": "Huber:delta=20",
+    "topk": 15
+  },
+  "huber20_top25": {
+    "loss": "Huber:delta=20",
+    "topk": 25
+  },
+  "huber40_top15": {
+    "loss": "Huber:delta=40",
+    "topk": 15
+  },
+  "huber40_top25": {
+    "loss": "Huber:delta=40",
+    "topk": 25
+  },
+  "clean_h40": {
+    "variant": "clean",
+    "loss": "Huber:delta=40"
+  },
+  "rich_h40": {
+    "variant": "rich",
+    "loss": "Huber:delta=40"
+  },
+  "rich_h20": {
+    "variant": "rich",
+    "loss": "Huber:delta=20"
+  },
+  "subspace_h40": {
+    "loss": "Huber:delta=40",
+    "rsm": 0.5,
+    "iterations": 1200
+  }
+}

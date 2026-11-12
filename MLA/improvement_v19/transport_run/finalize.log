@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "all_fold_contexts_sources_targets_and_hashes_verified": 20,
+  "independently_recomputed_blends": 15,
+  "complete_component_fold_outputs_verified": 20,
+  "additional_control_and_diagnostic_fold_outputs": 0,
+  "maximum_metric_difference_INR": 3.725290298461914e-09,
+  "source_and_data_identity_unchanged": true,
+  "all_original_validation_targets": 3493,
+  "fixed_v14_blend_formula_independently_recomputed": true,
+  "baseline_v14_component_fold_witnesses_verified": 35,
+  "selection_recomputed": true,
+  "qualified": false,
+  "confirmation_performed": false,
+  "v14_scored_files_preserved": true,
+  "portal_uploads": 0
+}
+V19 delivery complete: ./improvement_v19/delivery/V19_Report.md
+{
+  "status": "PASS",
+  "qualified": false,
+  "folds": 20,
+  "comparisons": 15,
+  "best_mean_relative_gain": 0.00013192422115752638,
+  "delivery": "./improvement_v19/V19_Delivery.zip"
+}

@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "tests": 7,
+  "method": "unittest; preprocessing target/ID isolation, train-only statistics, derived/missing categories, grouped inner splits, blend formula, selection gate/tie break and persisted budget reserve",
+  "paid_resources": false
+}

@@ -1,0 +1,498 @@
+# SPDX-FileCopyrightText: Copyright (c) 2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-License-Identifier: Apache-2.0
+
+import io
+
+import pyarrow as pa
+import pytest
+import torch
+from torch._subclasses.fake_tensor import FakeTensorMode, is_fake
+
+from sdm import (
+    CategoricalTensor,
+    ColumnarTensor,
+    NullableTensor,
+    StringTensor,
+)
+from sdm.testing import onlyCUDA, onlyMPS
+
+
+@pytest.mark.parametrize("num_columns", [0, 1])
+def test_fake_zero_column_ops(num_columns: int) -> None:
+    columns = (torch.arange(6).view(2, 3),) if num_columns else ()
+    mode = FakeTensorMode()
+    fake = mode.from_tensor(ColumnarTensor(columns, size=(2, 3)))
+    empty = fake[..., :0]
+    index = mode.from_tensor(torch.tensor([1, 0]))
+
+    outputs = [
+        (empty, (2, 3, 0)),
+        (empty[:1], (1, 3, 0)),
+        (empty[index], (2, 3, 0)),
+        (torch.cat([empty, empty], dim=0), (4, 3, 0)),
+        (torch.stack([empty, empty], dim=0), (2, 2, 3, 0)),
+        *((part, (3, 0)) for part in empty.unbind(0)),
+        *((part, (1, 3, 0)) for part in empty.split([1, 1], dim=0)),
+    ]
+    for out, size in outputs:
+        assert type(out) is ColumnarTensor
+        assert is_fake(out)
+        assert out.size() == size
+        assert out.device == fake.device
+
+
+def test_init() -> None:
+    value1 = torch.arange(6).view(2, 3)
+    value2 = torch.randn(2, 3)
+
+    tensor = ColumnarTensor((value1, value2))
+    assert tensor.size() == (2, 3, 2)
+    assert tensor.device == value1.device == value2.device
+    assert repr(tensor) == "ColumnarTensor(size=(2, 3, 2))"
+
+    with pytest.raises(ValueError, match="to have size"):
+        ColumnarTensor((torch.ones(2),), size=(3,))
+
+    with pytest.raises(ValueError, match="to have size"):
+        ColumnarTensor((torch.ones(2), torch.ones(3)))
+
+    with pytest.raises(TypeError, match="single column tensor"):
+        ColumnarTensor(
+            (
+                CategoricalTensor(
+                    code=torch.randint(0, 2, (2, 1)),
+                    categories=(torch.arange(2),),
+                ),
+            )
+        )
+
+
+def test_empty() -> None:
+    tensor = ColumnarTensor((), size=(2, 3))
+    assert tensor.size() == (2, 3, 0)
+
+    with pytest.raises(ValueError, match="zero columnar data"):
+        ColumnarTensor(())
+
+    with pytest.raises(ValueError, match="to be non-empty"):
+        ColumnarTensor((), size=())
+
+
+def test_from_arrow() -> None:
+    tensor = ColumnarTensor.from_arrow(pa.array([1, 2, 3]))
+    assert tensor.size() == (3, 1)
+    assert isinstance(tensor._columns[0], torch.Tensor)
+    assert not isinstance(tensor._columns[0], StringTensor)
+    assert tensor.tolist() == [[1], [2], [3]]
+
+    tensor = ColumnarTensor.from_arrow(pa.array(["a", "bb", ""]))
+    assert tensor.size() == (3, 1)
+    assert isinstance(tensor._columns[0], StringTensor)
+    assert tensor.tolist() == [["a"], ["bb"], [""]]
+
+    tensor = ColumnarTensor.from_arrow(pa.array([1, None, 3]))
+    assert isinstance(tensor._columns[0], NullableTensor)
+    assert tensor.tolist() == [[1], [None], [3]]
+    assert tensor.to_arrow().to_pydict() == {"0": [1, None, 3]}
+
+
+def test_from_arrow_chunked_string() -> None:
+    tensor = ColumnarTensor.from_arrow(
+        pa.chunked_array([pa.array(["a", "b"]), pa.array(["c"])]),
+    )
+
+    assert tensor.to_arrow().column(0).type == pa.large_string()
+    assert tensor.to_arrow().to_pydict() == {"0": ["a", "b", "c"]}
+
+
+@onlyCUDA
+def test_from_arrow_cuda() -> None:
+    tensor = ColumnarTensor.from_arrow(pa.array([1, 2, 3]), device="cuda")
+    assert tensor.is_cuda
+    assert tensor[:, 0].equal(torch.tensor([1, 2, 3], device=tensor.device))
+
+
+@onlyCUDA
+def test_from_cudf() -> None:
+    cudf = pytest.importorskip("cudf")
+
+    tensor = ColumnarTensor.from_cudf(
+        cudf.Series([1, 2, 3], dtype="int64"),
+    )
+    assert tensor.size() == (3, 1)
+    assert tensor.is_cuda
+    assert tensor[:, 0].equal(torch.tensor([1, 2, 3], device=tensor.device))
+
+    tensor = ColumnarTensor.from_cudf(
+        cudf.Series([1.5, None, 3.5], dtype="float32"),
+    )
+    assert tensor.size() == (3, 1)
+    assert tensor.is_cuda
+    assert tensor[:, 0].is_floating_point()
+    assert tensor[:, 0].allclose(
+        torch.tensor([1.5, float("nan"), 3.5], device=tensor.device),
+        equal_nan=True,
+    )
+
+    tensor = ColumnarTensor.from_cudf(
+        cudf.Series(["a", "bb", ""]),
+    )
+    assert tensor.size() == (3, 1)
+    assert tensor.is_cuda
+    assert isinstance(tensor._columns[0], StringTensor)
+    assert tensor.tolist() == [["a"], ["bb"], [""]]
+
+    tensor = ColumnarTensor.from_cudf(
+        cudf.Series([1, None, 3], dtype="int64"),
+    )
+    assert isinstance(tensor._columns[0], NullableTensor)
+    assert tensor.tolist() == [[1], [None], [3]]
+    assert tensor.to_cudf().to_arrow().to_pydict() == {"0": [1, None, 3]}
+
+
+def test_to_arrow() -> None:
+    column1 = torch.arange(6).view(2, 3)
+    column2 = StringTensor.from_list([["a", "b", "c"], ["d", "e", "f"]])
+    tensor = ColumnarTensor((column1, column2))
+
+    table = tensor.to_arrow()
+    assert table.column_names == ["0", "1"]
+    assert table.to_pydict() == {
+        "0": [0, 1, 2, 3, 4, 5],
+        "1": ["a", "b", "c", "d", "e", "f"],
+    }
+
+
+@onlyCUDA
+def test_to_cudf() -> None:
+    pytest.importorskip("cudf")
+
+    column1 = torch.arange(6, device="cuda").view(2, 3)
+    column2 = StringTensor.from_list(
+        [["a", "b", "c"], ["d", "e", "f"]], device="cuda"
+    )
+    tensor = ColumnarTensor((column1, column2))
+
+    df = tensor.to_cudf()
+    assert df.columns.tolist() == ["0", "1"]
+    assert df.to_arrow().to_pydict() == {
+        "0": [0, 1, 2, 3, 4, 5],
+        "1": ["a", "b", "c", "d", "e", "f"],
+    }
+
+
+def test_save_load() -> None:
+    tensor = ColumnarTensor((torch.arange(3),))
+
+    buffer = io.BytesIO()
+    torch.save(tensor, buffer)
+    buffer.seek(0)
+    out = torch.load(buffer, weights_only=False)
+
+    assert isinstance(out, ColumnarTensor)
+    assert out.size() == (3, 1)
+
+
+def test_to_copy() -> None:
+    column1 = torch.arange(12).view(2, 3, 2)[..., 0]
+    column2 = torch.randn(2, 3, 2)[..., 1]
+    tensor = ColumnarTensor((column1, column2))
+
+    assert not tensor.is_contiguous()
+
+    out = tensor.contiguous()
+    assert isinstance(out, ColumnarTensor)
+    assert out.size() == tensor.size()
+    assert out.is_contiguous()
+    assert out.tolist() == tensor.tolist()
+
+    out = tensor.clone()
+    assert isinstance(out, ColumnarTensor)
+    assert out.size() == tensor.size()
+    assert out.tolist() == tensor.tolist()
+
+    out = tensor.to("cpu")
+    assert isinstance(out, ColumnarTensor)
+    assert out.is_cpu
+    assert out.tolist() == tensor.tolist()
+
+    with pytest.raises(TypeError, match="convert"):
+        tensor.to(torch.float32)
+
+
+def test_empty_clone_preserves_device() -> None:
+    tensor = ColumnarTensor((), size=(2, 3), device="meta")
+
+    out = tensor.clone()
+
+    assert type(out) is ColumnarTensor
+    assert out.size() == tensor.size()
+    assert out.device == tensor.device
+
+
+def test_empty_resolves_mps_device_index() -> None:
+    with FakeTensorMode():
+        tensor = ColumnarTensor((), size=(2, 3), device="mps")
+
+    assert tensor.device == torch.device("mps", 0)
+
+
+@onlyMPS
+def test_empty_to_mps_in_inference_mode() -> None:
+    tensor = ColumnarTensor((), size=(2, 3))
+
+    with torch.inference_mode():
+        out = tensor.to(torch.device("mps"))
+
+    assert out.device == torch.empty(0, device="mps").device
+
+
+@onlyCUDA
+def test_to_cuda() -> None:
+    tensor = ColumnarTensor(
+        (
+            torch.arange(3),
+            StringTensor.from_list(["a", "bb", "c"]),
+        )
+    )
+
+    out = tensor.to("cuda")
+    assert isinstance(out, ColumnarTensor)
+    assert out.device.type == "cuda"
+    assert out.tolist() == tensor.tolist()
+
+
+def test_view_ops() -> None:
+    tensor = ColumnarTensor(
+        (
+            torch.arange(6).view(2, 3),
+            torch.arange(10, 16).view(2, 3),
+        )
+    )
+
+    out = tensor.view(6, 2)
+    assert isinstance(out, ColumnarTensor)
+    assert out.size() == (6, 2)
+    assert out.tolist() == [
+        [0, 10],
+        [1, 11],
+        [2, 12],
+        [3, 13],
+        [4, 14],
+        [5, 15],
+    ]
+
+    with pytest.raises(RuntimeError, match="Can't reshape"):
+        _ = tensor.view(-1)
+
+    out = tensor.unsqueeze(0)
+    assert isinstance(out, ColumnarTensor)
+    assert out.size() == (1, 2, 3, 2)
+
+    out = tensor.unsqueeze(0).squeeze(0)
+    assert isinstance(out, ColumnarTensor)
+    assert out.size() == tensor.size()
+
+    with pytest.raises(RuntimeError, match="unsqueeze"):
+        _ = tensor.unsqueeze(-1)
+
+    out = tensor.unsqueeze(1).expand(-1, 4, 3, -1)
+    assert isinstance(out, ColumnarTensor)
+    assert out.size() == (2, 4, 3, 2)
+
+    out = tensor.transpose(0, 1)
+    assert isinstance(out, ColumnarTensor)
+    assert out.size() == (3, 2, 2)
+
+    out = tensor.permute(1, 0, 2)
+    assert isinstance(out, ColumnarTensor)
+    assert out.size() == (3, 2, 2)
+
+    with pytest.raises(RuntimeError, match="column dimension"):
+        _ = tensor.permute(2, 0, 1)
+
+
+def test_slicing_ops() -> None:
+    tensor = ColumnarTensor(
+        (
+            torch.arange(24).view(2, 3, 4),
+            torch.arange(100, 124).view(2, 3, 4),
+        )
+    )
+
+    out = tensor.select(0, 1)
+    assert isinstance(out, ColumnarTensor)
+    assert out.size() == (3, 4, 2)
+
+    out = tensor.select(-1, 1)
+    assert not isinstance(out, ColumnarTensor)
+    assert out.equal(tensor._columns[1])
+
+    out = tensor[:, 1:]
+    assert isinstance(out, ColumnarTensor)
+    assert out.size() == (2, 2, 4, 2)
+
+    out = tensor[..., 1:]
+    assert isinstance(out, ColumnarTensor)
+    assert out.size() == (2, 3, 4, 1)
+    assert out._columns == (tensor._columns[1],)
+
+    out = tensor.narrow(1, 1, 1)
+    assert isinstance(out, ColumnarTensor)
+    assert out.size() == (2, 1, 4, 2)
+
+    rows = tensor.unbind(0)
+    assert len(rows) == 2
+    assert all(isinstance(row, ColumnarTensor) for row in rows)
+    assert rows[0].size() == (3, 4, 2)
+
+    columns = tensor.unbind(-1)
+    assert len(columns) == 2
+    assert columns[0].equal(tensor._columns[0])
+    assert columns[1].equal(tensor._columns[1])
+
+    chunks = tensor.split(1, dim=1)
+    assert len(chunks) == 3
+    assert all(isinstance(chunk, ColumnarTensor) for chunk in chunks)
+    assert chunks[0].size() == (2, 1, 4, 2)
+
+    chunks = tensor.split(1, dim=-1)
+    assert len(chunks) == 2
+    assert chunks[0].size() == (2, 3, 4, 1)
+    assert chunks[0]._columns == (tensor._columns[0],)
+
+
+def test_index_ops() -> None:
+    tensor = ColumnarTensor(
+        (
+            torch.arange(24).view(2, 3, 4),
+            torch.arange(100, 124).view(2, 3, 4),
+        )
+    )
+
+    out = tensor.index_select(1, torch.tensor([2, 0]))
+    assert isinstance(out, ColumnarTensor)
+    assert out.size() == (2, 2, 4, 2)
+
+    out = tensor.index_select(-1, torch.tensor([1, 0]))
+    assert isinstance(out, ColumnarTensor)
+    assert out.size() == tensor.size()
+    assert out._columns[0].equal(tensor._columns[1])
+    assert out._columns[1].equal(tensor._columns[0])
+
+    out = tensor[:, torch.tensor([2, 0])]
+    assert isinstance(out, ColumnarTensor)
+    assert out.size() == (2, 2, 4, 2)
+
+    out = tensor[..., torch.tensor([1, 0])]
+    assert isinstance(out, ColumnarTensor)
+    assert out.size() == tensor.size()
+    assert out._columns[0].equal(tensor._columns[1])
+    assert out._columns[1].equal(tensor._columns[0])
+
+    out = tensor[..., torch.tensor([True, False])]
+    assert isinstance(out, ColumnarTensor)
+    assert out.size() == (2, 3, 4, 1)
+    assert out._columns[0].equal(tensor._columns[0])
+
+    mask = torch.tensor([[True, False, True], [False, True, False]])
+    out = tensor[mask]
+    assert isinstance(out, ColumnarTensor)
+    assert out.size() == (3, 4, 2)
+
+    with pytest.raises(RuntimeError, match="column dimension"):
+        _ = tensor[torch.tensor([0]), :, :, torch.tensor([1])]
+
+
+def test_cat_stack() -> None:
+    tensor1 = ColumnarTensor(
+        (
+            torch.arange(6).view(2, 3),
+            torch.arange(10, 16).view(2, 3),
+        )
+    )
+    tensor2 = ColumnarTensor(
+        (
+            torch.arange(20, 26).view(2, 3),
+            torch.arange(30, 36).view(2, 3),
+        )
+    )
+
+    out = torch.cat([tensor1, tensor2], dim=0)
+    assert isinstance(out, ColumnarTensor)
+    assert out.size() == (4, 3, 2)
+    assert out._columns[0].equal(
+        torch.cat([tensor1._columns[0], tensor2._columns[0]])
+    )
+
+    out = torch.cat([tensor1, tensor2], dim=-1)
+    assert isinstance(out, ColumnarTensor)
+    assert out.size() == (2, 3, 4)
+    assert out._columns == (*tensor1._columns, *tensor2._columns)
+
+    out = torch.stack([tensor1, tensor2], dim=0)
+    assert isinstance(out, ColumnarTensor)
+    assert out.size() == (2, 2, 3, 2)
+
+    with pytest.raises(RuntimeError, match="stack after"):
+        _ = torch.stack([tensor1, tensor2], dim=-1)
+
+
+def test_tolist() -> None:
+    tensor = ColumnarTensor(
+        (
+            torch.tensor([[1, 2], [3, 4]]),
+            torch.tensor([[10, 20], [30, 40]]),
+        )
+    )
+
+    assert tensor.tolist() == [
+        [[1, 10], [2, 20]],
+        [[3, 30], [4, 40]],
+    ]
+
+
+@pytest.mark.parametrize("num_columns", [0, 2])
+def test_pin_memory(num_columns: int) -> None:
+    tensor = ColumnarTensor(
+        (
+            torch.randn(2, 3),
+            torch.arange(6).view(2, 3),
+        )[:num_columns],
+        size=(2, 3),
+    )
+
+    assert not tensor.is_pinned()
+
+
+@onlyCUDA
+@pytest.mark.parametrize("num_columns", [0, 2])
+def test_pin_memory_cuda(num_columns: int) -> None:
+    tensor = ColumnarTensor(
+        (
+            torch.randn(2, 3),
+            torch.arange(6).view(2, 3),
+        )[:num_columns],
+        size=(2, 3),
+    )
+
+    out = tensor.pin_memory()
+    expected = torch.empty(2, 3, num_columns).pin_memory()
+    assert out.is_pinned() == expected.is_pinned()
+    assert out.size() == tensor.size()
+
+
+def test_share_memory() -> None:
+    tensor = ColumnarTensor(
+        (
+            torch.randn(2, 3),
+            torch.arange(6).view(2, 3),
+        )
+    )
+
+    assert not tensor.is_shared()
+    try:
+        tensor.share_memory_()
+        assert tensor.is_shared()
+    except RuntimeError:
+        pass

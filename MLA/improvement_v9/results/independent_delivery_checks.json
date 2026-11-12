@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "independent_development_scores": 32,
+  "all_original_labels": true,
+  "segment_rows": 96,
+  "fold_rows": 160,
+  "fresh_cpu_notebook_executed": true,
+  "gpu_execution_pending_user": true,
+  "qualified_csvs": 0,
+  "v7_preserved": true,
+  "portal_uploads": 0
+}

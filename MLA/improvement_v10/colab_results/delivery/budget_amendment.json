@@ -1,0 +1,12 @@
+{
+  "authorized_by": "Direct human reply to the budget question in this chat",
+  "authorization": "Raise total cap to 24 hours and finish V10",
+  "recorded_utc": "2026-10-27T08:22:41.969923+00:00",
+  "global_cap_hours": 24,
+  "free_compute_only": true,
+  "experiment_settings_unchanged": 6,
+  "prior_charged_seconds": 44241.62088493535,
+  "remaining_epoch_maximum_hours": 11.710660865295736,
+  "prior_ledger_sha256": "9bbba92695b52c1cd7b8ddc64a512a9a3a38e6188254087a257735c054149eb3",
+  "accounting": "Global total = prior charged seconds + new epoch seconds. Stage totals carry forward to enforce the unchanged stage allowances. No old charge or checkpoint is discarded."
+}

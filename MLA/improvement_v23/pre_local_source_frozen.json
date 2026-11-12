@@ -1,0 +1,20 @@
+{
+  "files_sha256": {
+    "experiment.py": "4cba1781a65ee3c3ce4d10aac05356252e1c4674f9c9c116af9aaad10d74d629",
+    "adapter.py": "9464b511786c4456330bb6e50275bf0c65f9383c4a8486660e783daa674ddca6",
+    "protocol.json": "fcaa4896b8a9ea806578b2fb1bd07e01cd45f8d13190169359525b3a2eded352",
+    "authorization.json": "0d5e35ffb0b93f0dd4915561ff89f446b0b34c7b75264be4c66d0337c146af1b",
+    "controls.npz": "383bbae2d1bdef07b7fb413245cad1532f6f84f114a330079f1fd8bb1b838a23",
+    "partitions.json": "266da3c0123422da7f29363e493fbdf8c2c2c06809d1a318f5b13ead1c1371be",
+    "feature_train.csv": "76a3a098ef88df8b40e97489cf24456386f9dc6a9da2b94849867fb3f0ed29c0",
+    "feature_test.csv": "e441fb547fc858291ef180f9baa3aaefdc713c897d755efe37fe3036b52c2bdf",
+    "history_audit.json": "2da7793c85ef9742c7f685bd1583dfe0e294ceda1a835f0e41b1bafc231cbb11",
+    "PLAN.md": "a4b828d8f964ae16ec9f2ecafef34d640ac5bd13e6f65ee47d6cb5c6431756fd",
+    "RESEARCH_SOURCES.md": "5c94e2809e42cf5c6a75195cf8dfcd2b975fb8ed774cd51d3593c8c093e0b9d7",
+    "research_sources/source_manifest.json": "c9cbaaa384d314da84d100a122cb8bc29786e5d0226d25635751b1f257992d72",
+    "research_sources/checkpoint_manifest.json": "293f8d3860655517bb243595453c530b1c154779abfa4beb25d8fb08c666a9f7"
+  },
+  "frozen_epoch": 1793293800.1736052,
+  "accuracy_results_opened": false,
+  "reason": "User one-hour amendment before fitting"
+}

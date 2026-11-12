@@ -1,0 +1,17 @@
+{
+  "BASE": {
+    "status": "PASS",
+    "seconds": 122.99813944400012,
+    "maximum_existing_fold_difference_INR": 0.0
+  },
+  "P35_8": {
+    "status": "PASS",
+    "seconds": 44.987363232999996,
+    "maximum_existing_fold_difference_INR": 0.0
+  },
+  "UNADAPTED": {
+    "status": "PASS",
+    "seconds": 9.400285760000088,
+    "maximum_existing_fold_difference_INR": null
+  }
+}

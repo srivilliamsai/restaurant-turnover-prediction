@@ -1,0 +1,31 @@
+Second development quantile0.7 20165630.846439287
+Second development sqrt_d6_correct1 19893055.092063513
+Second development quantile0.6 19929850.696671132
+Second development sqrt_d4_correct1 19915592.76915391
+Second development rich_h20 19931954.575184252
+Second development subspace_h40 19855942.39329603
+LOCKED {
+  "sqrt_d6_correct1": {
+    "spec": {
+      "power": 0.5,
+      "depth": 6,
+      "correct_mean": true
+    },
+    "weight": 0.25
+  },
+  "subspace_h40": {
+    "spec": {
+      "loss": "Huber:delta=40",
+      "rsm": 0.5,
+      "iterations": 1200
+    },
+    "weight": 0.25
+  },
+  "quantile0.6": {
+    "spec": {
+      "loss": "Quantile:alpha=0.6",
+      "depth": 5
+    },
+    "weight": 0.25
+  }
+}

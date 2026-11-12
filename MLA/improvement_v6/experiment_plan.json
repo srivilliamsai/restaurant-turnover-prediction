@@ -1,0 +1,61 @@
+{
+  "specs": {
+    "native_l2_7": {
+      "family": "native_l2",
+      "kind": "lgb",
+      "objective": "regression",
+      "leaves": 7
+    },
+    "native_l2_15": {
+      "family": "native_l2",
+      "kind": "lgb",
+      "objective": "regression",
+      "leaves": 15
+    },
+    "native_huber_7": {
+      "family": "native_huber",
+      "kind": "lgb",
+      "objective": "huber",
+      "leaves": 7
+    },
+    "native_huber_15": {
+      "family": "native_huber",
+      "kind": "lgb",
+      "objective": "huber",
+      "leaves": 15
+    },
+    "sqrt_crossfit": {
+      "family": "sqrt_crossfit",
+      "kind": "sqrt"
+    },
+    "domain_huber": {
+      "family": "domain_huber",
+      "kind": "weighted"
+    }
+  },
+  "model_seeds": [
+    10242,
+    20242
+  ],
+  "development": [
+    42,
+    71
+  ],
+  "confirmation": [
+    18421,
+    18422,
+    "city"
+  ],
+  "candidate_weights": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "maximum_shortlist": 2,
+  "different_families": true,
+  "acceptance": "gain > 0 on both random confirmation assignments; city relative RMSE increase <= 0.01",
+  "city_groups": "existing v5 clean city normalization; baseline refitted on identical groups",
+  "maximum_portal_trials": 2,
+  "search_deadline_seconds": 4200
+}

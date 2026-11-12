@@ -1,0 +1,42 @@
+{
+  "rf_mf0.7_leaf2_capNone": {
+    "max_features": 0.7,
+    "min_samples_leaf": 2,
+    "cap": null
+  },
+  "rf_mf0.7_leaf2_cap100000000.0": {
+    "max_features": 0.7,
+    "min_samples_leaf": 2,
+    "cap": 100000000.0
+  },
+  "rf_mf0.7_leaf8_capNone": {
+    "max_features": 0.7,
+    "min_samples_leaf": 8,
+    "cap": null
+  },
+  "rf_mf0.7_leaf8_cap100000000.0": {
+    "max_features": 0.7,
+    "min_samples_leaf": 8,
+    "cap": 100000000.0
+  },
+  "rf_mf1.0_leaf2_capNone": {
+    "max_features": 1.0,
+    "min_samples_leaf": 2,
+    "cap": null
+  },
+  "rf_mf1.0_leaf2_cap100000000.0": {
+    "max_features": 1.0,
+    "min_samples_leaf": 2,
+    "cap": 100000000.0
+  },
+  "rf_mf1.0_leaf8_capNone": {
+    "max_features": 1.0,
+    "min_samples_leaf": 8,
+    "cap": null
+  },
+  "rf_mf1.0_leaf8_cap100000000.0": {
+    "max_features": 1.0,
+    "min_samples_leaf": 8,
+    "cap": 100000000.0
+  }
+}

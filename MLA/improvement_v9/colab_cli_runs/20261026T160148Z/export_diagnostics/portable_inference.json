@@ -1,0 +1,21 @@
+{
+  "maximum_difference_from_scored_V7_INR": 2.2351741790771484e-08,
+  "checks": {
+    "rows": 500,
+    "columns": [
+      "Registration Number",
+      "Annual Turnover"
+    ],
+    "original_row_order": true,
+    "unique_ids": true,
+    "finite_nonnegative": true,
+    "permutation_invariance": true,
+    "target_id_invariance": true,
+    "missing_and_unseen_values": true,
+    "malformed_cases_rejected": 12
+  },
+  "fitting_platform": "verified fresh Darwin arm64 fit",
+  "inference_platform": "Linux x86_64 Colab",
+  "checkpoint_sha256": "63ab212c7249ab857fc52004a97341662c5b110db7e21f19ae6b20dcdfc1090d",
+  "fresh_Colab_V7_retraining_claimed": false
+}

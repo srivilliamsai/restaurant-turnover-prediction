@@ -1,0 +1,26 @@
+{
+  "complete": true,
+  "qualified": false,
+  "outer_fold_outputs": 30,
+  "blend_comparisons": 10,
+  "best": {
+    "name": "FT512",
+    "route": "FT512",
+    "weight": "0.5",
+    "effective_new_share": "0.5",
+    "components": "1",
+    "rmse_42": "19668808.122767005",
+    "gain_42": "-19774.56660523638",
+    "relative_gain_42": "-0.0010063887645525064",
+    "rmse_71": "19614441.41119483",
+    "gain_71": "35464.04321606457",
+    "relative_gain_71": "0.0018047945980373056",
+    "mean_relative_gain": "0.00039920291674239963"
+  },
+  "all_original_labels": 3493,
+  "owned_runtime_released": true,
+  "portal_uploads": 0,
+  "elapsed_seconds_including_setup_and_local_verification": 7708.898750066757,
+  "maximum_hours": 18,
+  "paid_resources": false
+}

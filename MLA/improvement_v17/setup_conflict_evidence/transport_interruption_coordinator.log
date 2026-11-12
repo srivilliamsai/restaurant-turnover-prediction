@@ -1,0 +1,28 @@
+{"phase": "installing_dependencies", "pid": 96772, "task_elapsed_seconds": 524.1651849746704, "maximum_hours": 6}
+{"existing_kernel_selected": true}
+V17 pinned dependencies installed; restart kernel before training.
+{"server_completion_verified": true}
+{"phase": "restarting_clean_kernel", "pid": 96772, "task_elapsed_seconds": 571.5230751037598, "maximum_hours": 6}
+{"phase": "uploading_frozen_workflow", "pid": 96772, "task_elapsed_seconds": 574.4317629337311, "maximum_hours": 6}
+V17 transport failure: ConnectionError ; authenticated details suppressed.
+{"phase": "stopped", "pid": 96772, "task_elapsed_seconds": 586.3332200050354, "maximum_hours": 6, "error_type": "RuntimeError", "reason": "V17 command failed; inspect stage status and run.log"}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "pilot", "status": "failed", "error_type": "AssertionError", "reason": "{'numpy': '2.2.6', 'pandas': '3.0.6', 'scikit-learn': '1.9.1', 'scipy': '1.18.1', 'catboost': '1.2.10', 'interpret-core': '0.7.8', 'tabpfn': '9.2.0', 'tabicl': '2.2.0', 'torch': '2.11.0+cu130'}"}}
+V17 measured result archive prepared.
+{"server_completion_verified": true}
+V17 measured outputs collected locally.
+Owned V17 free T4 released.
+{"phase": "stopped", "pid": 96772, "task_elapsed_seconds": 618.0716359615326, "maximum_hours": 6, "artifacts_collected": false, "owned_runtime_released": true}
+Traceback (most recent call last):
+  File "./improvement_v17/run_colab.py", line 95, in <module>
+    p=subprocess.run([sys.executable,str(CONTROL),'release'],stdin=subprocess.DEVNULL,capture_output=True,text=True,timeout=150,env=ENV)
+                ^^^^^^
+  File "./improvement_v17/run_colab.py", line 69, in main
+    upload_ok=False
+    ^^^^^^^^^^^^^^^^
+  File "./improvement_v17/run_colab.py", line 54, in control
+    return command([sys.executable,CONTROL,action,*([value] if value else [])],timeout,backup=backup)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "./improvement_v17/run_colab.py", line 51, in command
+    if check and process.returncode:raise RuntimeError('V17 command failed; inspect stage status and run.log')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: V17 command failed; inspect stage status and run.log

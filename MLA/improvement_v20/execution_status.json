@@ -1,0 +1,16 @@
+{
+  "status": "COMPLETE",
+  "completed_epoch": 1793274914.598374,
+  "development_scores_generated": true,
+  "completed_candidate_development_folds": 30,
+  "fixed_blend_comparisons": 20,
+  "confirmation_performed": false,
+  "qualified": false,
+  "maximum_hours": 6,
+  "original_started_epoch": 1793271502.0,
+  "paid_resources": false,
+  "portal_uploads": 0,
+  "independent_reconstruction": "PASS",
+  "owned_runtime_released": true,
+  "active_assignments_after_release": 0
+}

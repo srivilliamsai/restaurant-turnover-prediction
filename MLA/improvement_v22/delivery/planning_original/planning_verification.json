@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "protocol_consistent": true,
+  "all_original_input_and_scored_artifact_hashes_unchanged": true,
+  "historical_comparisons_count": 81,
+  "historical_review_receipts_report_PASS": 7,
+  "planning_control_fold_witnesses": 10,
+  "domain_AUCs_independently_recomputed_with_rank_sum": 8,
+  "maximum_AUC_difference": 1.1102230246251565e-16,
+  "broken_local_markdown_links": [],
+  "turnover_models_fitted": 0,
+  "portal_uploads": 0,
+  "scope": "Planning artifact and diagnostic validation only; no claim of independent refitting of historical models."
+}

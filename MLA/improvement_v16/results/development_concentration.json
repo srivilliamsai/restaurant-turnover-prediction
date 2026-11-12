@@ -1,0 +1,282 @@
+[
+  {
+    "name": "TM32-PLE_V14-blend@0.1",
+    "scheme": "42",
+    "net_squared_error_reduction": 431073186757603.5,
+    "largest_positive_ten_rows": [
+      60928,
+      62180,
+      61238,
+      60167,
+      61240,
+      63486,
+      60065,
+      63480,
+      61518,
+      63243
+    ],
+    "top_ten_positive_reduction": 2071745339198532.5,
+    "tail_gt80M_reduction": 908014517087713.1,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 1359.3638310469687,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "TM32-PLE_V14-blend@0.1",
+    "scheme": "71",
+    "net_squared_error_reduction": 1286204613820687.0,
+    "largest_positive_ten_rows": [
+      61747,
+      61238,
+      62180,
+      62971,
+      60928,
+      63243,
+      63318,
+      62537,
+      60300,
+      61473
+    ],
+    "top_ten_positive_reduction": 3827294932679241.0,
+    "tail_gt80M_reduction": 1678980312168792.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 5544.824247246608,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "TM32-PLE_V14-blend@0.25",
+    "scheme": "42",
+    "net_squared_error_reduction": -521517640460385.75,
+    "largest_positive_ten_rows": [
+      60928,
+      62180,
+      61238,
+      60167,
+      61240,
+      63486,
+      60065,
+      63480,
+      61518,
+      63243
+    ],
+    "top_ten_positive_reduction": 5131976582183986.0,
+    "tail_gt80M_reduction": 2198990233151378.8,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -11011.452655985951,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "TM32-PLE_V14-blend@0.25",
+    "scheme": "71",
+    "net_squared_error_reduction": 921361754725401.0,
+    "largest_positive_ten_rows": [
+      61747,
+      61238,
+      62180,
+      62971,
+      60928,
+      63243,
+      62537,
+      63318,
+      60300,
+      61473
+    ],
+    "top_ten_positive_reduction": 9110124965033796.0,
+    "tail_gt80M_reduction": 3846779515213912.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -6775.462348785251,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "TM32-PLE_V14-blend@0.5",
+    "scheme": "42",
+    "net_squared_error_reduction": -6373703972102218.0,
+    "largest_positive_ten_rows": [
+      60928,
+      62180,
+      61238,
+      60167,
+      61240,
+      63486,
+      60065,
+      63480,
+      61518,
+      63243
+    ],
+    "top_ten_positive_reduction": 1.0105997278326846e+16,
+    "tail_gt80M_reduction": 4161160267743009.5,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -69921.65103287064,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "TM32-PLE_V14-blend@0.5",
+    "scheme": "71",
+    "net_squared_error_reduction": -5804442423303357.0,
+    "largest_positive_ten_rows": [
+      61747,
+      61238,
+      62180,
+      60928,
+      62971,
+      63243,
+      62537,
+      60300,
+      61473,
+      60944
+    ],
+    "top_ten_positive_reduction": 1.6807240670297394e+16,
+    "tail_gt80M_reduction": 6524654813067918.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -82129.83158040233,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "TM32-PLE_V14-blend@0.75",
+    "scheme": "42",
+    "net_squared_error_reduction": -1.7556558994925458e+16,
+    "largest_positive_ten_rows": [
+      60928,
+      62180,
+      61238,
+      60167,
+      61240,
+      63486,
+      63480,
+      60065,
+      61518,
+      63243
+    ],
+    "top_ten_positive_reduction": 1.4922062088428606e+16,
+    "tail_gt80M_reduction": 5886510103774931.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -176203.11795893498,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "TM32-PLE_V14-blend@0.75",
+    "scheme": "71",
+    "net_squared_error_reduction": -2.01774125340862e+16,
+    "largest_positive_ten_rows": [
+      61747,
+      61238,
+      62180,
+      60928,
+      62971,
+      63243,
+      62537,
+      60300,
+      61473,
+      60944
+    ],
+    "top_ten_positive_reduction": 2.344462498700581e+16,
+    "tail_gt80M_reduction": 8033625893562066.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -225100.0906596426,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "TM32-PLE_V14-blend@1.0",
+    "scheme": "42",
+    "net_squared_error_reduction": -3.4070082708930184e+16,
+    "largest_positive_ten_rows": [
+      62180,
+      60928,
+      61238,
+      60167,
+      61240,
+      63486,
+      63480,
+      61518,
+      60065,
+      63243
+    ],
+    "top_ten_positive_reduction": 1.9580171012489196e+16,
+    "tail_gt80M_reduction": 7375039741247066.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -328923.5809516497,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "TM32-PLE_V14-blend@1.0",
+    "scheme": "71",
+    "net_squared_error_reduction": -4.219754857762318e+16,
+    "largest_positive_ten_rows": [
+      61238,
+      61747,
+      62180,
+      60928,
+      62971,
+      63243,
+      62537,
+      61473,
+      60300,
+      60944
+    ],
+    "top_ten_positive_reduction": 2.890451862475399e+16,
+    "tail_gt80M_reduction": 8373692756696315.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": -433907.87114682794,
+    "exclusion_is_selection_criterion": false
+  }
+]

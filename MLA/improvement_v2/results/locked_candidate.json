@@ -1,0 +1,90 @@
+{
+  "weights": {
+    "engineered": 0.06448879667411939,
+    "engineered_drop": 0.09631834098033361,
+    "ordered_depth5": 0.08507039180511998,
+    "huber20_engineered": 0.06274427299849898,
+    "huber40": 0.08855374203849962,
+    "clip120": 0.07794622281100098,
+    "spline_ridge": 0.15648201545257337,
+    "svr_core": 0.058428250481525085,
+    "huber40_engineered": 0.09327786382071425,
+    "huber40_monotone": 0.21669010293761476
+  },
+  "configs": {
+    "engineered": {
+      "kind": "cat",
+      "variant": "engineered",
+      "depth": 6,
+      "iterations": 260
+    },
+    "engineered_drop": {
+      "kind": "cat",
+      "variant": "engineered_drop",
+      "depth": 6,
+      "iterations": 216
+    },
+    "ordered_depth5": {
+      "kind": "cat",
+      "variant": "base",
+      "depth": 5,
+      "boosting_type": "Ordered",
+      "iterations": 219
+    },
+    "huber20_engineered": {
+      "kind": "cat",
+      "variant": "engineered_drop",
+      "depth": 5,
+      "loss": "Huber:delta=20000000",
+      "iterations": 699
+    },
+    "huber40": {
+      "kind": "cat",
+      "variant": "base",
+      "depth": 5,
+      "loss": "Huber:delta=40000000",
+      "iterations": 664
+    },
+    "clip120": {
+      "kind": "cat",
+      "variant": "base",
+      "depth": 5,
+      "cap": 120000000.0,
+      "iterations": 591
+    },
+    "spline_ridge": {
+      "kind": "spline",
+      "variant": "base",
+      "alpha": 100
+    },
+    "svr_core": {
+      "kind": "svr",
+      "variant": "core",
+      "C": 20
+    },
+    "huber40_engineered": {
+      "kind": "cat",
+      "variant": "engineered",
+      "depth": 5,
+      "loss": "Huber:delta=40000000",
+      "iterations": 619
+    },
+    "huber40_monotone": {
+      "kind": "cat",
+      "variant": "base",
+      "depth": 5,
+      "loss": "Huber:delta=40000000",
+      "monotone": true,
+      "iterations": 447
+    }
+  },
+  "confirmation_split_seeds": [
+    71,
+    2026,
+    303
+  ],
+  "development_rmse": 19815351.43226744,
+  "selection": "Nonnegative weights summing to 1; objective = MSE in millions + 2 * sum(weights squared); discard weights < 0.05 and renormalize. Weights use development OOF seed 42 only. Seeds 71 and 2026 were inspected for the earlier 30-model ensemble; seed 303 was reserved until after the expanded 38-model ensemble was frozen. All CV uses the same labeled data and is not an independent test set.",
+  "model_seed_schedule": "42 + fold_number (one based)",
+  "final_seed": 42
+}

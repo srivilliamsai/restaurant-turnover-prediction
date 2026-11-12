@@ -1,0 +1,205 @@
+{
+  "candidates": [
+    {
+      "name": "residual_tree_l2",
+      "family": "residual",
+      "weight": 0.75,
+      "rmse_42": 19815813.77766609,
+      "gain_42": 1422.5499159097672,
+      "rmse_71": 19790779.339553073,
+      "gain_71": 49471.02210607007,
+      "mean_rmse": 19803296.558609582,
+      "metrics": {
+        "18421": {
+          "baseline": 19863662.63228201,
+          "candidate": 19832420.144617647,
+          "gain": 31242.48766436428,
+          "relative_change": -0.0015728462692268241
+        },
+        "18422": {
+          "baseline": 19816733.502104715,
+          "candidate": 19798032.98382704,
+          "gain": 18700.518277674913,
+          "relative_change": -0.0009436730970666662
+        },
+        "strat:27421": {
+          "baseline": 19828989.57780773,
+          "candidate": 19788419.321618978,
+          "gain": 40570.25618875027,
+          "relative_change": -0.0020460072375122484
+        },
+        "city": {
+          "baseline": 20136850.755091805,
+          "candidate": 20113476.98948276,
+          "gain": 23373.76560904458,
+          "relative_change": -0.0011607458332646425
+        }
+      },
+      "local_champion": true,
+      "experimental_eligible": true,
+      "mean_confirmation_gain": 24971.502971019596
+    },
+    {
+      "name": "tiers_d4_shrink300",
+      "family": "tiers",
+      "weight": 0.25,
+      "rmse_42": 19822850.286160864,
+      "gain_42": -5613.958578865975,
+      "rmse_71": 19837757.5945584,
+      "gain_71": 2492.7671007439494,
+      "mean_rmse": 19830303.94035963,
+      "metrics": {
+        "18421": {
+          "baseline": 19863662.63228201,
+          "candidate": 19868640.341680426,
+          "gain": -4977.70939841494,
+          "relative_change": 0.00025059373442659627
+        },
+        "18422": {
+          "baseline": 19816733.502104715,
+          "candidate": 19819044.12750258,
+          "gain": -2310.625397864729,
+          "relative_change": 0.0001165997109271455
+        },
+        "strat:27421": {
+          "baseline": 19828989.57780773,
+          "candidate": 19834990.79066159,
+          "gain": -6001.21285386011,
+          "relative_change": 0.0003026484446073674
+        },
+        "city": {
+          "baseline": 20136850.755091805,
+          "candidate": 20147551.177671194,
+          "gain": -10700.422579389066,
+          "relative_change": 0.0005313851063173392
+        }
+      },
+      "local_champion": false,
+      "experimental_eligible": true,
+      "mean_confirmation_gain": -3644.1673981398344
+    },
+    {
+      "name": "bands_d5_cal0",
+      "family": "bands",
+      "weight": 0.25,
+      "rmse_42": 19841251.155600127,
+      "gain_42": -24014.828018128872,
+      "rmse_71": 19850039.621594705,
+      "gain_71": -9789.259935561568,
+      "mean_rmse": 19845645.388597414,
+      "metrics": {
+        "18421": {
+          "baseline": 19863662.63228201,
+          "candidate": 19882829.421373464,
+          "gain": -19166.789091452956,
+          "relative_change": 0.0009649171679095847
+        },
+        "18422": {
+          "baseline": 19816733.502104715,
+          "candidate": 19840755.328738794,
+          "gain": -24021.826634079218,
+          "relative_change": 0.0012121991059488302
+        },
+        "strat:27421": {
+          "baseline": 19828989.57780773,
+          "candidate": 19841828.97692273,
+          "gain": -12839.399115003645,
+          "relative_change": 0.0006475064735207425
+        },
+        "city": {
+          "baseline": 20136850.755091805,
+          "candidate": 20100616.034163747,
+          "gain": 36234.72092805803,
+          "relative_change": -0.0017994234236897722
+        }
+      },
+      "local_champion": false,
+      "experimental_eligible": true,
+      "mean_confirmation_gain": -21594.307862766087
+    }
+  ],
+  "trials": [
+    {
+      "name": "residual_tree_l2",
+      "family": "residual",
+      "weight": 0.75,
+      "rmse_42": 19815813.77766609,
+      "gain_42": 1422.5499159097672,
+      "rmse_71": 19790779.339553073,
+      "gain_71": 49471.02210607007,
+      "mean_rmse": 19803296.558609582,
+      "metrics": {
+        "18421": {
+          "baseline": 19863662.63228201,
+          "candidate": 19832420.144617647,
+          "gain": 31242.48766436428,
+          "relative_change": -0.0015728462692268241
+        },
+        "18422": {
+          "baseline": 19816733.502104715,
+          "candidate": 19798032.98382704,
+          "gain": 18700.518277674913,
+          "relative_change": -0.0009436730970666662
+        },
+        "strat:27421": {
+          "baseline": 19828989.57780773,
+          "candidate": 19788419.321618978,
+          "gain": 40570.25618875027,
+          "relative_change": -0.0020460072375122484
+        },
+        "city": {
+          "baseline": 20136850.755091805,
+          "candidate": 20113476.98948276,
+          "gain": 23373.76560904458,
+          "relative_change": -0.0011607458332646425
+        }
+      },
+      "local_champion": true,
+      "experimental_eligible": true,
+      "mean_confirmation_gain": 24971.502971019596
+    },
+    {
+      "name": "tiers_d4_shrink300",
+      "family": "tiers",
+      "weight": 0.25,
+      "rmse_42": 19822850.286160864,
+      "gain_42": -5613.958578865975,
+      "rmse_71": 19837757.5945584,
+      "gain_71": 2492.7671007439494,
+      "mean_rmse": 19830303.94035963,
+      "metrics": {
+        "18421": {
+          "baseline": 19863662.63228201,
+          "candidate": 19868640.341680426,
+          "gain": -4977.70939841494,
+          "relative_change": 0.00025059373442659627
+        },
+        "18422": {
+          "baseline": 19816733.502104715,
+          "candidate": 19819044.12750258,
+          "gain": -2310.625397864729,
+          "relative_change": 0.0001165997109271455
+        },
+        "strat:27421": {
+          "baseline": 19828989.57780773,
+          "candidate": 19834990.79066159,
+          "gain": -6001.21285386011,
+          "relative_change": 0.0003026484446073674
+        },
+        "city": {
+          "baseline": 20136850.755091805,
+          "candidate": 20147551.177671194,
+          "gain": -10700.422579389066,
+          "relative_change": 0.0005313851063173392
+        }
+      },
+      "local_champion": false,
+      "experimental_eligible": true,
+      "mean_confirmation_gain": -3644.1673981398344
+    }
+  ],
+  "baseline_portal_rmse": 12046722.3691139,
+  "lock_sha256": "501309d04eecf815b7bf6c8ad579b3c9a07d979977ed4182878e64ca2f96c152",
+  "decision": "experimental CSVs for portal evaluation; keep best observed score",
+  "limitation": "All labels have been examined previously. No portal improvement is claimed."
+}

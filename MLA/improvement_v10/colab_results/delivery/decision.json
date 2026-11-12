@@ -1,0 +1,61 @@
+{
+  "complete": true,
+  "qualified": true,
+  "choice": {
+    "name": "C",
+    "replacement_weight": 1.0,
+    "feature_count": 42,
+    "rmse_42": 19726316.67014788,
+    "gain_42": 4925.058085404336,
+    "rmse_71": 19729419.599104185,
+    "gain_71": 3600.4814428277314,
+    "mean_rmse": 19727868.13462603
+  },
+  "metrics": {
+    "48211": {
+      "v9_rmse": 19743626.58666369,
+      "candidate_rmse": 19736521.92408793,
+      "gain": 7104.662575758994,
+      "relative_change": -0.00035984587454451766
+    },
+    "48212": {
+      "v9_rmse": 19816597.33709491,
+      "candidate_rmse": 19812530.038468108,
+      "gain": 4067.2986268028617,
+      "relative_change": -0.00020524707433955403
+    },
+    "48213": {
+      "v9_rmse": 19711188.541631036,
+      "candidate_rmse": 19710108.760130223,
+      "gain": 1079.78150081262,
+      "relative_change": -5.4780131524378994e-05
+    },
+    "strat:27421": {
+      "v9_rmse": 19726481.457054287,
+      "candidate_rmse": 19724283.493621204,
+      "gain": 2197.963433083147,
+      "relative_change": -0.00011142197040403534
+    },
+    "city": {
+      "v9_rmse": 20061150.77388296,
+      "candidate_rmse": 20042973.913286358,
+      "gain": 18176.86059660092,
+      "relative_change": -0.0009060726775587113
+    }
+  },
+  "uncertainty": {
+    "resamples": 5000,
+    "seed": 8319,
+    "ci95_INR": [
+      -6546.864572899276,
+      15187.13937504401
+    ],
+    "positive_fraction": 0.768,
+    "interpretation": "Conditional paired restaurant rows across three random assignments; excludes selection, retraining and distribution uncertainty."
+  },
+  "lock_sha256": "c50e3440cae659d78fd694396afd7748ae92c47616348b9ebb79092456014f22",
+  "decision": "one qualified V10 portal trial",
+  "mean_random_gain": 4083.9142344581583,
+  "baseline_portal_rmse": 11904515.9864996,
+  "portal_uploads": 0
+}

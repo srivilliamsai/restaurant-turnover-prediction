@@ -1,0 +1,14 @@
+{
+  "status": "PROPOSED_NOT_EXECUTED",
+  "files_sha256": {
+    "PLAN.md": "5dc3aadcbae2896c6264f38c3c135844cb38625e9c809257ac0ddb3a29e2609e",
+    "README.md": "fbac92bfa1a4cc8e16d18d7d881c96343cf4fbe699ef232540d7ed20278dda90",
+    "RESEARCH_SOURCES.md": "bd055fddbbe24a1ff34a8f4d95fcb1aa37aa797aa7fbcf0ba3499fa70340b76a",
+    "audit_evidence.py": "fd4a9c58aadeae4ec4a69d3a22788f8c562faa8c52cd630d253876842b9c717d",
+    "domain_predictions.npz": "59d7b5fe0d105b2fb598357329b6faa6d957332f74e91459062a2ba0143ca8c6",
+    "evidence_audit.json": "e538a7889d77c1dbee3b760f2ab522c95e04d9397a843783c4ee689feffb8eed",
+    "planning_verification.json": "47de101d60da0f9e367e68223ba1ef1229099153b5b41e539e17894f08190e6d",
+    "protocol_proposed.json": "e77375a0d6cc91d8cc3afdf9228a0775636ba42e11da53e1345556e60c540706"
+  },
+  "relative_base_directory": "planning_original"
+}

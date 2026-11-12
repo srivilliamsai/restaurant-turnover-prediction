@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "independently_recomputed_blends": 12,
+  "complete_fold_outputs_verified": 30,
+  "maximum_metric_difference_INR": 3.725290298461914e-09,
+  "source_and_data_identity_unchanged": true,
+  "all_original_validation_targets": 3493,
+  "fold_local_thresholds": {
+    "Q99": {
+      "42": [
+        102535000.00000007,
+        100000000.0,
+        90070000.00000016,
+        100000000.0,
+        100149999.99999987
+      ],
+      "71": [
+        100175000.0000004,
+        93140000.00000033,
+        100175000.0000004,
+        102529999.99999997,
+        88119999.9999999
+      ]
+    },
+    "Q995": {
+      "42": [
+        150000000.0,
+        130069999.9999997,
+        121314999.99999869,
+        150900000.000006,
+        130060000.0000004
+      ],
+      "71": [
+        132629999.99999738,
+        130000000.0,
+        130699999.9999971,
+        150000000.0,
+        130060000.0000004
+      ]
+    },
+    "SQ2": {
+      "42": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "71": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  "selection_recomputed": true,
+  "qualified": false,
+  "confirmation_performed": false,
+  "v9_scored_files_preserved": true,
+  "portal_uploads": 0
+}

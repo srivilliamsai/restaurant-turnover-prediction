@@ -1,0 +1,10 @@
+{
+  "elapsed_seconds": 38.48162508010864,
+  "rows": 500,
+  "sha256": "66a673efc5f31bc9f4010de033999fd3712444b8f6dd0478c97e77bb3934630d",
+  "confirmed_v3_maximum_reproduction_difference": 1.4901161193847656e-08,
+  "mean_absolute_prediction_change": 806498.6414744223,
+  "prediction_min": 11554282.572022807,
+  "prediction_max": 59912040.45047937,
+  "candidate_portal_rmse": null
+}

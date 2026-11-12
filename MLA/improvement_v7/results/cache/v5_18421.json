@@ -1,0 +1,33 @@
+{
+  "context": {
+    "name": "v5",
+    "inputs": {
+      "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+      "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+      "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+      "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+    },
+    "sources": {
+      "models.py": "029de9731d057d8827ff6c7f1789f7669b408eeb3626e50a1677db223614edf8",
+      "workflow.py": "c99c63e5575e514ec030828a40c16511c8aa0fab5edb04c842d555c347114e8a",
+      "reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+      "scored_reference.json": "7148150a20525f1bee168fe6a0b6fd44d8b1244348881ee962aca464affa74cd"
+    },
+    "contract": "fec9f422b498cdbf84a3a8fcb093f405302e3bd2e1c29a14f62b9b1fbe04a376",
+    "spec": null,
+    "seeds": [
+      10242,
+      20242
+    ],
+    "training_rows": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+    "extra": {
+      "scheme": "18421",
+      "folds": "e37e2a10c72383417abc3e3adb012d799760ad8a0b4b7eb3b61e726147b9a367"
+    }
+  },
+  "sha256": "982faa30c0453ce196b5e5f90f814a8c51b490457d4560b040adcbaa061affd0",
+  "diagnostics": {
+    "origin": "verified actual v6 frozen-v5 predictions",
+    "source_sha256": "d90945aee987bee30826a88a802873c8656bb9dd325e8383ed81f6140d4e2a72"
+  }
+}

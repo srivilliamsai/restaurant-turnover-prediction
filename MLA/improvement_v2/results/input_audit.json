@@ -1,0 +1,14 @@
+{
+  "rank3_csv_sha256": "4af3baed59f32ce09c3ece33735467ebf2325ac7565362f1b34ca9783645df27",
+  "reported_public_rmse": 12204615.6438253,
+  "reported_rank": 3,
+  "reference_leader_rmse": 11946659.0702364,
+  "source": "User screenshots from 2026-10-11; hidden labels unavailable",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "files": {
+    "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+    "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+    "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb",
+    "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e"
+  }
+}

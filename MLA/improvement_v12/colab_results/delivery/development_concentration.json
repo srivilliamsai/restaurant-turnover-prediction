@@ -1,0 +1,2178 @@
+[
+  {
+    "name": "T32@0.25",
+    "scheme": "42",
+    "net_sse_reduction": 154988148857659.53,
+    "largest_ten_positive_share": 1.547781501585192,
+    "largest_positive_rows": [
+      {
+        "training_row": 1759,
+        "restaurant_id": 61760,
+        "turnover": 300000000.0,
+        "sse_reduction": 56897544182696.0
+      },
+      {
+        "training_row": 1237,
+        "restaurant_id": 61238,
+        "turnover": 400000000.0,
+        "sse_reduction": 41428288112544.0
+      },
+      {
+        "training_row": 1239,
+        "restaurant_id": 61240,
+        "turnover": 202000000.0,
+        "sse_reduction": 32669230099908.0
+      },
+      {
+        "training_row": 927,
+        "restaurant_id": 60928,
+        "turnover": 130000000.0,
+        "sse_reduction": 20699997678454.0
+      },
+      {
+        "training_row": 2560,
+        "restaurant_id": 62561,
+        "turnover": 180000000.0,
+        "sse_reduction": 20448201640432.0
+      },
+      {
+        "training_row": 500,
+        "restaurant_id": 60501,
+        "turnover": 260000000.0,
+        "sse_reduction": 20429117929736.0
+      },
+      {
+        "training_row": 2226,
+        "restaurant_id": 62227,
+        "turnover": 120000000.0,
+        "sse_reduction": 13685574192141.0
+      },
+      {
+        "training_row": 2486,
+        "restaurant_id": 62487,
+        "turnover": 8000000.0,
+        "sse_reduction": 12357671073487.75
+      },
+      {
+        "training_row": 1049,
+        "restaurant_id": 61050,
+        "turnover": 80000000.0,
+        "sse_reduction": 11499429446482.25
+      },
+      {
+        "training_row": 2760,
+        "restaurant_id": 62761,
+        "turnover": 9500000.0,
+        "sse_reduction": 9772735410936.5
+      }
+    ]
+  },
+  {
+    "name": "T32@0.25",
+    "scheme": "71",
+    "net_sse_reduction": 45409592352927.7,
+    "largest_ten_positive_share": 4.162381156419262,
+    "largest_positive_rows": [
+      {
+        "training_row": 1759,
+        "restaurant_id": 61760,
+        "turnover": 300000000.0,
+        "sse_reduction": 37349281281472.0
+      },
+      {
+        "training_row": 2486,
+        "restaurant_id": 62487,
+        "turnover": 8000000.0,
+        "sse_reduction": 24311569507321.75
+      },
+      {
+        "training_row": 779,
+        "restaurant_id": 60780,
+        "turnover": 350000000.0,
+        "sse_reduction": 23540489223376.0
+      },
+      {
+        "training_row": 771,
+        "restaurant_id": 60772,
+        "turnover": 130000000.0,
+        "sse_reduction": 17210812984093.0
+      },
+      {
+        "training_row": 1746,
+        "restaurant_id": 61747,
+        "turnover": 132000000.0,
+        "sse_reduction": 16506429401744.0
+      },
+      {
+        "training_row": 927,
+        "restaurant_id": 60928,
+        "turnover": 130000000.0,
+        "sse_reduction": 16178571037386.0
+      },
+      {
+        "training_row": 2179,
+        "restaurant_id": 62180,
+        "turnover": 400000000.0,
+        "sse_reduction": 15594155084976.0
+      },
+      {
+        "training_row": 166,
+        "restaurant_id": 60167,
+        "turnover": 186000000.0,
+        "sse_reduction": 15131940878816.0
+      },
+      {
+        "training_row": 2213,
+        "restaurant_id": 62214,
+        "turnover": 180000000.0,
+        "sse_reduction": 11963883299568.0
+      },
+      {
+        "training_row": 2273,
+        "restaurant_id": 62274,
+        "turnover": 72000000.0,
+        "sse_reduction": 11224898831753.75
+      }
+    ]
+  },
+  {
+    "name": "T32@0.5",
+    "scheme": "42",
+    "net_sse_reduction": 296114555482034.06,
+    "largest_ten_positive_share": 1.6194630387601245,
+    "largest_positive_rows": [
+      {
+        "training_row": 1759,
+        "restaurant_id": 61760,
+        "turnover": 300000000.0,
+        "sse_reduction": 113772545382512.0
+      },
+      {
+        "training_row": 1237,
+        "restaurant_id": 61238,
+        "turnover": 400000000.0,
+        "sse_reduction": 82848797633040.0
+      },
+      {
+        "training_row": 1239,
+        "restaurant_id": 61240,
+        "turnover": 202000000.0,
+        "sse_reduction": 65321501789832.0
+      },
+      {
+        "training_row": 927,
+        "restaurant_id": 60928,
+        "turnover": 130000000.0,
+        "sse_reduction": 41377136925088.0
+      },
+      {
+        "training_row": 2560,
+        "restaurant_id": 62561,
+        "turnover": 180000000.0,
+        "sse_reduction": 40888304825964.0
+      },
+      {
+        "training_row": 500,
+        "restaurant_id": 60501,
+        "turnover": 260000000.0,
+        "sse_reduction": 40853972876816.0
+      },
+      {
+        "training_row": 2226,
+        "restaurant_id": 62227,
+        "turnover": 120000000.0,
+        "sse_reduction": 27359346054837.0
+      },
+      {
+        "training_row": 2486,
+        "restaurant_id": 62487,
+        "turnover": 8000000.0,
+        "sse_reduction": 24665820973508.25
+      },
+      {
+        "training_row": 1049,
+        "restaurant_id": 61050,
+        "turnover": 80000000.0,
+        "sse_reduction": 22955774888721.5
+      },
+      {
+        "training_row": 2760,
+        "restaurant_id": 62761,
+        "turnover": 9500000.0,
+        "sse_reduction": 19503376491719.625
+      }
+    ]
+  },
+  {
+    "name": "T32@0.5",
+    "scheme": "71",
+    "net_sse_reduction": 77926763214679.84,
+    "largest_ten_positive_share": 4.847573252147211,
+    "largest_positive_rows": [
+      {
+        "training_row": 1759,
+        "restaurant_id": 61760,
+        "turnover": 300000000.0,
+        "sse_reduction": 74688995135744.0
+      },
+      {
+        "training_row": 2486,
+        "restaurant_id": 62487,
+        "turnover": 8000000.0,
+        "sse_reduction": 48469806137024.0
+      },
+      {
+        "training_row": 779,
+        "restaurant_id": 60780,
+        "turnover": 350000000.0,
+        "sse_reduction": 47078238360768.0
+      },
+      {
+        "training_row": 771,
+        "restaurant_id": 60772,
+        "turnover": 130000000.0,
+        "sse_reduction": 34403496865352.0
+      },
+      {
+        "training_row": 1746,
+        "restaurant_id": 61747,
+        "turnover": 132000000.0,
+        "sse_reduction": 32997981260236.0
+      },
+      {
+        "training_row": 927,
+        "restaurant_id": 60928,
+        "turnover": 130000000.0,
+        "sse_reduction": 32342716748226.0
+      },
+      {
+        "training_row": 2179,
+        "restaurant_id": 62180,
+        "turnover": 400000000.0,
+        "sse_reduction": 31187434905088.0
+      },
+      {
+        "training_row": 166,
+        "restaurant_id": 60167,
+        "turnover": 186000000.0,
+        "sse_reduction": 30257893682956.0
+      },
+      {
+        "training_row": 2213,
+        "restaurant_id": 62214,
+        "turnover": 180000000.0,
+        "sse_reduction": 23924506687388.0
+      },
+      {
+        "training_row": 2273,
+        "restaurant_id": 62274,
+        "turnover": 72000000.0,
+        "sse_reduction": 22404623203109.25
+      }
+    ]
+  },
+  {
+    "name": "T32@0.75",
+    "scheme": "42",
+    "net_sse_reduction": 423379219873165.25,
+    "largest_ten_positive_share": 1.698185292233022,
+    "largest_positive_rows": [
+      {
+        "training_row": 1759,
+        "restaurant_id": 61760,
+        "turnover": 300000000.0,
+        "sse_reduction": 170625003599480.0
+      },
+      {
+        "training_row": 1237,
+        "restaurant_id": 61238,
+        "turnover": 400000000.0,
+        "sse_reduction": 124261528561488.0
+      },
+      {
+        "training_row": 1239,
+        "restaurant_id": 61240,
+        "turnover": 202000000.0,
+        "sse_reduction": 97956815069748.0
+      },
+      {
+        "training_row": 927,
+        "restaurant_id": 60928,
+        "turnover": 130000000.0,
+        "sse_reduction": 62031417739910.0
+      },
+      {
+        "training_row": 2560,
+        "restaurant_id": 62561,
+        "turnover": 180000000.0,
+        "sse_reduction": 61320309556620.0
+      },
+      {
+        "training_row": 500,
+        "restaurant_id": 60501,
+        "turnover": 260000000.0,
+        "sse_reduction": 61274564841240.0
+      },
+      {
+        "training_row": 2226,
+        "restaurant_id": 62227,
+        "turnover": 120000000.0,
+        "sse_reduction": 41021315588087.0
+      },
+      {
+        "training_row": 2486,
+        "restaurant_id": 62487,
+        "turnover": 8000000.0,
+        "sse_reduction": 36924449700060.25
+      },
+      {
+        "training_row": 1049,
+        "restaurant_id": 61050,
+        "turnover": 80000000.0,
+        "sse_reduction": 34369036326717.25
+      },
+      {
+        "training_row": 2760,
+        "restaurant_id": 62761,
+        "turnover": 9500000.0,
+        "sse_reduction": 29191923242349.5
+      }
+    ]
+  },
+  {
+    "name": "T32@0.75",
+    "scheme": "71",
+    "net_sse_reduction": 97551512585241.64,
+    "largest_ten_positive_share": 5.80443059631107,
+    "largest_positive_rows": [
+      {
+        "training_row": 1759,
+        "restaurant_id": 61760,
+        "turnover": 300000000.0,
+        "sse_reduction": 112019141562816.0
+      },
+      {
+        "training_row": 2486,
+        "restaurant_id": 62487,
+        "turnover": 8000000.0,
+        "sse_reduction": 72474709889107.75
+      },
+      {
+        "training_row": 779,
+        "restaurant_id": 60780,
+        "turnover": 350000000.0,
+        "sse_reduction": 70613247412096.0
+      },
+      {
+        "training_row": 771,
+        "restaurant_id": 60772,
+        "turnover": 130000000.0,
+        "sse_reduction": 51578051643773.0
+      },
+      {
+        "training_row": 1746,
+        "restaurant_id": 61747,
+        "turnover": 132000000.0,
+        "sse_reduction": 49474655575486.0
+      },
+      {
+        "training_row": 927,
+        "restaurant_id": 60928,
+        "turnover": 130000000.0,
+        "sse_reduction": 48492437132520.0
+      },
+      {
+        "training_row": 2179,
+        "restaurant_id": 62180,
+        "turnover": 400000000.0,
+        "sse_reduction": 46779839460448.0
+      },
+      {
+        "training_row": 166,
+        "restaurant_id": 60167,
+        "turnover": 186000000.0,
+        "sse_reduction": 45377858412432.0
+      },
+      {
+        "training_row": 2213,
+        "restaurant_id": 62214,
+        "turnover": 180000000.0,
+        "sse_reduction": 35881870163456.0
+      },
+      {
+        "training_row": 2273,
+        "restaurant_id": 62274,
+        "turnover": 72000000.0,
+        "sse_reduction": 33539173114066.25
+      }
+    ]
+  },
+  {
+    "name": "T32@1.0",
+    "scheme": "42",
+    "net_sse_reduction": 536782142031017.1,
+    "largest_ten_positive_share": 1.7850391693217227,
+    "largest_positive_rows": [
+      {
+        "training_row": 1759,
+        "restaurant_id": 61760,
+        "turnover": 300000000.0,
+        "sse_reduction": 227454918833568.0
+      },
+      {
+        "training_row": 1237,
+        "restaurant_id": 61238,
+        "turnover": 400000000.0,
+        "sse_reduction": 165666480897904.0
+      },
+      {
+        "training_row": 1239,
+        "restaurant_id": 61240,
+        "turnover": 202000000.0,
+        "sse_reduction": 130575169939676.0
+      },
+      {
+        "training_row": 927,
+        "restaurant_id": 60928,
+        "turnover": 130000000.0,
+        "sse_reduction": 82662840122910.0
+      },
+      {
+        "training_row": 2560,
+        "restaurant_id": 62561,
+        "turnover": 180000000.0,
+        "sse_reduction": 81744215832388.0
+      },
+      {
+        "training_row": 500,
+        "restaurant_id": 60501,
+        "turnover": 260000000.0,
+        "sse_reduction": 81690893823000.0
+      },
+      {
+        "training_row": 2226,
+        "restaurant_id": 62227,
+        "turnover": 120000000.0,
+        "sse_reduction": 54671482791895.0
+      },
+      {
+        "training_row": 2486,
+        "restaurant_id": 62487,
+        "turnover": 8000000.0,
+        "sse_reduction": 49133557253145.75
+      },
+      {
+        "training_row": 1049,
+        "restaurant_id": 61050,
+        "turnover": 80000000.0,
+        "sse_reduction": 45739213760468.75
+      },
+      {
+        "training_row": 2760,
+        "restaurant_id": 62761,
+        "turnover": 9500000.0,
+        "sse_reduction": 38838375662826.25
+      }
+    ]
+  },
+  {
+    "name": "T32@1.0",
+    "scheme": "71",
+    "net_sse_reduction": 104283840464662.44,
+    "largest_ten_positive_share": 7.234466071731137,
+    "largest_positive_rows": [
+      {
+        "training_row": 1759,
+        "restaurant_id": 61760,
+        "turnover": 300000000.0,
+        "sse_reduction": 149339720562688.0
+      },
+      {
+        "training_row": 2486,
+        "restaurant_id": 62487,
+        "turnover": 8000000.0,
+        "sse_reduction": 96326280763573.25
+      },
+      {
+        "training_row": 779,
+        "restaurant_id": 60780,
+        "turnover": 350000000.0,
+        "sse_reduction": 94145516377408.0
+      },
+      {
+        "training_row": 771,
+        "restaurant_id": 60772,
+        "turnover": 130000000.0,
+        "sse_reduction": 68734477319364.0
+      },
+      {
+        "training_row": 1746,
+        "restaurant_id": 61747,
+        "turnover": 132000000.0,
+        "sse_reduction": 65936452347490.0
+      },
+      {
+        "training_row": 927,
+        "restaurant_id": 60928,
+        "turnover": 130000000.0,
+        "sse_reduction": 64627732190266.0
+      },
+      {
+        "training_row": 2179,
+        "restaurant_id": 62180,
+        "turnover": 400000000.0,
+        "sse_reduction": 62371368750976.0
+      },
+      {
+        "training_row": 166,
+        "restaurant_id": 60167,
+        "turnover": 186000000.0,
+        "sse_reduction": 60491835067252.0
+      },
+      {
+        "training_row": 2213,
+        "restaurant_id": 62214,
+        "turnover": 180000000.0,
+        "sse_reduction": 47835973727780.0
+      },
+      {
+        "training_row": 2273,
+        "restaurant_id": 62274,
+        "turnover": 72000000.0,
+        "sse_reduction": 44628548564625.75
+      }
+    ]
+  },
+  {
+    "name": "T4x16@0.25",
+    "scheme": "42",
+    "net_sse_reduction": 65129637170325.09,
+    "largest_ten_positive_share": 3.2256906768261993,
+    "largest_positive_rows": [
+      {
+        "training_row": 1237,
+        "restaurant_id": 61238,
+        "turnover": 400000000.0,
+        "sse_reduction": 46434468976144.0
+      },
+      {
+        "training_row": 1759,
+        "restaurant_id": 61760,
+        "turnover": 300000000.0,
+        "sse_reduction": 41144322049368.0
+      },
+      {
+        "training_row": 1239,
+        "restaurant_id": 61240,
+        "turnover": 202000000.0,
+        "sse_reduction": 26188222316240.0
+      },
+      {
+        "training_row": 166,
+        "restaurant_id": 60167,
+        "turnover": 186000000.0,
+        "sse_reduction": 23142178145232.0
+      },
+      {
+        "training_row": 2560,
+        "restaurant_id": 62561,
+        "turnover": 180000000.0,
+        "sse_reduction": 16399322706872.0
+      },
+      {
+        "training_row": 1049,
+        "restaurant_id": 61050,
+        "turnover": 80000000.0,
+        "sse_reduction": 13334114008318.5
+      },
+      {
+        "training_row": 3479,
+        "restaurant_id": 63480,
+        "turnover": 200000000.0,
+        "sse_reduction": 12674472094296.0
+      },
+      {
+        "training_row": 3,
+        "restaurant_id": 60004,
+        "turnover": 110000000.0,
+        "sse_reduction": 10859065240427.0
+      },
+      {
+        "training_row": 2226,
+        "restaurant_id": 62227,
+        "turnover": 120000000.0,
+        "sse_reduction": 10660903121000.0
+      },
+      {
+        "training_row": 2405,
+        "restaurant_id": 62406,
+        "turnover": 68000000.0,
+        "sse_reduction": 9250994747493.25
+      }
+    ]
+  },
+  {
+    "name": "T4x16@0.25",
+    "scheme": "71",
+    "net_sse_reduction": 68134595200782.2,
+    "largest_ten_positive_share": 2.3240825298493606,
+    "largest_positive_rows": [
+      {
+        "training_row": 1237,
+        "restaurant_id": 61238,
+        "turnover": 400000000.0,
+        "sse_reduction": 25534403076384.0
+      },
+      {
+        "training_row": 2560,
+        "restaurant_id": 62561,
+        "turnover": 180000000.0,
+        "sse_reduction": 19901023409212.0
+      },
+      {
+        "training_row": 1759,
+        "restaurant_id": 61760,
+        "turnover": 300000000.0,
+        "sse_reduction": 18894277419696.0
+      },
+      {
+        "training_row": 2179,
+        "restaurant_id": 62180,
+        "turnover": 400000000.0,
+        "sse_reduction": 17561469086736.0
+      },
+      {
+        "training_row": 2486,
+        "restaurant_id": 62487,
+        "turnover": 8000000.0,
+        "sse_reduction": 17544722998356.5
+      },
+      {
+        "training_row": 394,
+        "restaurant_id": 60395,
+        "turnover": 120000000.0,
+        "sse_reduction": 16584453214058.0
+      },
+      {
+        "training_row": 2149,
+        "restaurant_id": 62150,
+        "turnover": 120000000.0,
+        "sse_reduction": 14736553737322.0
+      },
+      {
+        "training_row": 1239,
+        "restaurant_id": 61240,
+        "turnover": 202000000.0,
+        "sse_reduction": 10370021012104.0
+      },
+      {
+        "training_row": 3,
+        "restaurant_id": 60004,
+        "turnover": 110000000.0,
+        "sse_reduction": 8854586986272.0
+      },
+      {
+        "training_row": 2273,
+        "restaurant_id": 62274,
+        "turnover": 72000000.0,
+        "sse_reduction": 8368911444355.5
+      }
+    ]
+  },
+  {
+    "name": "T4x16@0.5",
+    "scheme": "42",
+    "net_sse_reduction": 119351068900557.44,
+    "largest_ten_positive_share": 3.519031118495962,
+    "largest_positive_rows": [
+      {
+        "training_row": 1237,
+        "restaurant_id": 61238,
+        "turnover": 400000000.0,
+        "sse_reduction": 92859165628592.0
+      },
+      {
+        "training_row": 1759,
+        "restaurant_id": 61760,
+        "turnover": 300000000.0,
+        "sse_reduction": 82276857282512.0
+      },
+      {
+        "training_row": 1239,
+        "restaurant_id": 61240,
+        "turnover": 202000000.0,
+        "sse_reduction": 52365548443232.0
+      },
+      {
+        "training_row": 166,
+        "restaurant_id": 60167,
+        "turnover": 186000000.0,
+        "sse_reduction": 46270401277016.0
+      },
+      {
+        "training_row": 2560,
+        "restaurant_id": 62561,
+        "turnover": 180000000.0,
+        "sse_reduction": 32793436949452.0
+      },
+      {
+        "training_row": 1049,
+        "restaurant_id": 61050,
+        "turnover": 80000000.0,
+        "sse_reduction": 26610264862637.75
+      },
+      {
+        "training_row": 3479,
+        "restaurant_id": 63480,
+        "turnover": 200000000.0,
+        "sse_reduction": 25346465762264.0
+      },
+      {
+        "training_row": 3,
+        "restaurant_id": 60004,
+        "turnover": 110000000.0,
+        "sse_reduction": 21693549717849.5
+      },
+      {
+        "training_row": 2226,
+        "restaurant_id": 62227,
+        "turnover": 120000000.0,
+        "sse_reduction": 21314645683778.0
+      },
+      {
+        "training_row": 2405,
+        "restaurant_id": 62406,
+        "turnover": 68000000.0,
+        "sse_reduction": 18469789879484.0
+      }
+    ]
+  },
+  {
+    "name": "T4x16@0.5",
+    "scheme": "71",
+    "net_sse_reduction": 126382319875503.64,
+    "largest_ten_positive_share": 2.5042232321514666,
+    "largest_positive_rows": [
+      {
+        "training_row": 1237,
+        "restaurant_id": 61238,
+        "turnover": 400000000.0,
+        "sse_reduction": 51065812349232.0
+      },
+      {
+        "training_row": 2560,
+        "restaurant_id": 62561,
+        "turnover": 180000000.0,
+        "sse_reduction": 39794457185452.0
+      },
+      {
+        "training_row": 1759,
+        "restaurant_id": 61760,
+        "turnover": 300000000.0,
+        "sse_reduction": 37786106699296.0
+      },
+      {
+        "training_row": 2179,
+        "restaurant_id": 62180,
+        "turnover": 400000000.0,
+        "sse_reduction": 35121828128640.0
+      },
+      {
+        "training_row": 2486,
+        "restaurant_id": 62487,
+        "turnover": 8000000.0,
+        "sse_reduction": 35009731276223.5
+      },
+      {
+        "training_row": 394,
+        "restaurant_id": 60395,
+        "turnover": 120000000.0,
+        "sse_reduction": 33129343593883.0
+      },
+      {
+        "training_row": 2149,
+        "restaurant_id": 62150,
+        "turnover": 120000000.0,
+        "sse_reduction": 29436646475953.5
+      },
+      {
+        "training_row": 1239,
+        "restaurant_id": 61240,
+        "turnover": 202000000.0,
+        "sse_reduction": 20738345350812.0
+      },
+      {
+        "training_row": 3,
+        "restaurant_id": 60004,
+        "turnover": 110000000.0,
+        "sse_reduction": 17694533003472.0
+      },
+      {
+        "training_row": 2273,
+        "restaurant_id": 62274,
+        "turnover": 72000000.0,
+        "sse_reduction": 16712737502470.25
+      }
+    ]
+  },
+  {
+    "name": "T4x16@0.75",
+    "scheme": "42",
+    "net_sse_reduction": 162664295190738.12,
+    "largest_ten_positive_share": 3.8713854537401535,
+    "largest_positive_rows": [
+      {
+        "training_row": 1237,
+        "restaurant_id": 61238,
+        "turnover": 400000000.0,
+        "sse_reduction": 139274089957440.0
+      },
+      {
+        "training_row": 1759,
+        "restaurant_id": 61760,
+        "turnover": 300000000.0,
+        "sse_reduction": 123397605699416.0
+      },
+      {
+        "training_row": 1239,
+        "restaurant_id": 61240,
+        "turnover": 202000000.0,
+        "sse_reduction": 78531978380956.0
+      },
+      {
+        "training_row": 166,
+        "restaurant_id": 60167,
+        "turnover": 186000000.0,
+        "sse_reduction": 69384669395356.0
+      },
+      {
+        "training_row": 2560,
+        "restaurant_id": 62561,
+        "turnover": 180000000.0,
+        "sse_reduction": 49182342727740.0
+      },
+      {
+        "training_row": 1049,
+        "restaurant_id": 61050,
+        "turnover": 80000000.0,
+        "sse_reduction": 39828452562957.5
+      },
+      {
+        "training_row": 3479,
+        "restaurant_id": 63480,
+        "turnover": 200000000.0,
+        "sse_reduction": 38015981003876.0
+      },
+      {
+        "training_row": 3,
+        "restaurant_id": 60004,
+        "turnover": 110000000.0,
+        "sse_reduction": 32503453432266.0
+      },
+      {
+        "training_row": 2226,
+        "restaurant_id": 62227,
+        "turnover": 120000000.0,
+        "sse_reduction": 31961227688337.0
+      },
+      {
+        "training_row": 2405,
+        "restaurant_id": 62406,
+        "turnover": 68000000.0,
+        "sse_reduction": 27656385395973.5
+      }
+    ]
+  },
+  {
+    "name": "T4x16@0.75",
+    "scheme": "71",
+    "net_sse_reduction": 174743174023862.34,
+    "largest_ten_positive_share": 2.7149407133797507,
+    "largest_positive_rows": [
+      {
+        "training_row": 1237,
+        "restaurant_id": 61238,
+        "turnover": 400000000.0,
+        "sse_reduction": 76594227818464.0
+      },
+      {
+        "training_row": 2560,
+        "restaurant_id": 62561,
+        "turnover": 180000000.0,
+        "sse_reduction": 59680301328728.0
+      },
+      {
+        "training_row": 1759,
+        "restaurant_id": 61760,
+        "turnover": 300000000.0,
+        "sse_reduction": 56675487838736.0
+      },
+      {
+        "training_row": 2179,
+        "restaurant_id": 62180,
+        "turnover": 400000000.0,
+        "sse_reduction": 52681077125648.0
+      },
+      {
+        "training_row": 2486,
+        "restaurant_id": 62487,
+        "turnover": 8000000.0,
+        "sse_reduction": 52395024833600.75
+      },
+      {
+        "training_row": 394,
+        "restaurant_id": 60395,
+        "turnover": 120000000.0,
+        "sse_reduction": 49634671139476.5
+      },
+      {
+        "training_row": 2149,
+        "restaurant_id": 62150,
+        "turnover": 120000000.0,
+        "sse_reduction": 44100278215896.0
+      },
+      {
+        "training_row": 1239,
+        "restaurant_id": 61240,
+        "turnover": 202000000.0,
+        "sse_reduction": 31104973016092.0
+      },
+      {
+        "training_row": 3,
+        "restaurant_id": 60004,
+        "turnover": 110000000.0,
+        "sse_reduction": 26519838051599.5
+      },
+      {
+        "training_row": 2273,
+        "restaurant_id": 62274,
+        "turnover": 72000000.0,
+        "sse_reduction": 25031478174346.0
+      }
+    ]
+  },
+  {
+    "name": "T4x16@1.0",
+    "scheme": "42",
+    "net_sse_reduction": 195069316040970.75,
+    "largest_ten_positive_share": 4.302553895773329,
+    "largest_positive_rows": [
+      {
+        "training_row": 1237,
+        "restaurant_id": 61238,
+        "turnover": 400000000.0,
+        "sse_reduction": 185679241962688.0
+      },
+      {
+        "training_row": 1759,
+        "restaurant_id": 61760,
+        "turnover": 300000000.0,
+        "sse_reduction": 164506567300064.0
+      },
+      {
+        "training_row": 1239,
+        "restaurant_id": 61240,
+        "turnover": 202000000.0,
+        "sse_reduction": 104687512129428.0
+      },
+      {
+        "training_row": 166,
+        "restaurant_id": 60167,
+        "turnover": 186000000.0,
+        "sse_reduction": 92484982500260.0
+      },
+      {
+        "training_row": 2560,
+        "restaurant_id": 62561,
+        "turnover": 180000000.0,
+        "sse_reduction": 65566040041736.0
+      },
+      {
+        "training_row": 1049,
+        "restaurant_id": 61050,
+        "turnover": 80000000.0,
+        "sse_reduction": 52988677109278.0
+      },
+      {
+        "training_row": 3479,
+        "restaurant_id": 63480,
+        "turnover": 200000000.0,
+        "sse_reduction": 50683017819148.0
+      },
+      {
+        "training_row": 3,
+        "restaurant_id": 60004,
+        "turnover": 110000000.0,
+        "sse_reduction": 43288776383679.0
+      },
+      {
+        "training_row": 2226,
+        "restaurant_id": 62227,
+        "turnover": 120000000.0,
+        "sse_reduction": 42600649134676.0
+      },
+      {
+        "training_row": 2405,
+        "restaurant_id": 62406,
+        "turnover": 68000000.0,
+        "sse_reduction": 36810781296960.5
+      }
+    ]
+  },
+  {
+    "name": "T4x16@1.0",
+    "scheme": "71",
+    "net_sse_reduction": 213217157646023.03,
+    "largest_ten_positive_share": 2.9647420371562965,
+    "largest_positive_rows": [
+      {
+        "training_row": 1237,
+        "restaurant_id": 61238,
+        "turnover": 400000000.0,
+        "sse_reduction": 102119649484144.0
+      },
+      {
+        "training_row": 2560,
+        "restaurant_id": 62561,
+        "turnover": 180000000.0,
+        "sse_reduction": 79558555839036.0
+      },
+      {
+        "training_row": 1759,
+        "restaurant_id": 61760,
+        "turnover": 300000000.0,
+        "sse_reduction": 75562420838064.0
+      },
+      {
+        "training_row": 2179,
+        "restaurant_id": 62180,
+        "turnover": 400000000.0,
+        "sse_reduction": 70239216077824.0
+      },
+      {
+        "training_row": 2486,
+        "restaurant_id": 62487,
+        "turnover": 8000000.0,
+        "sse_reduction": 69700603670488.5
+      },
+      {
+        "training_row": 394,
+        "restaurant_id": 60395,
+        "turnover": 120000000.0,
+        "sse_reduction": 66100435850839.0
+      },
+      {
+        "training_row": 2149,
+        "restaurant_id": 62150,
+        "turnover": 120000000.0,
+        "sse_reduction": 58727448957149.0
+      },
+      {
+        "training_row": 1239,
+        "restaurant_id": 61240,
+        "turnover": 202000000.0,
+        "sse_reduction": 41469904007964.0
+      },
+      {
+        "training_row": 3,
+        "restaurant_id": 60004,
+        "turnover": 110000000.0,
+        "sse_reduction": 35330502130655.5
+      },
+      {
+        "training_row": 2273,
+        "restaurant_id": 62274,
+        "turnover": 72000000.0,
+        "sse_reduction": 33325133459981.5
+      }
+    ]
+  },
+  {
+    "name": "R1@0.25",
+    "scheme": "42",
+    "net_sse_reduction": -1775587289795120.5,
+    "largest_ten_positive_share": -6.065390677817218,
+    "largest_positive_rows": [
+      {
+        "training_row": 961,
+        "restaurant_id": 60962,
+        "turnover": 200000000.0,
+        "sse_reduction": 2339633590766808.0
+      },
+      {
+        "training_row": 1746,
+        "restaurant_id": 61747,
+        "turnover": 132000000.0,
+        "sse_reduction": 2274873923679318.0
+      },
+      {
+        "training_row": 771,
+        "restaurant_id": 60772,
+        "turnover": 130000000.0,
+        "sse_reduction": 1747164625627644.0
+      },
+      {
+        "training_row": 500,
+        "restaurant_id": 60501,
+        "turnover": 260000000.0,
+        "sse_reduction": 897303309309496.0
+      },
+      {
+        "training_row": 2970,
+        "restaurant_id": 62971,
+        "turnover": 80000000.0,
+        "sse_reduction": 804901292210286.5
+      },
+      {
+        "training_row": 2106,
+        "restaurant_id": 62107,
+        "turnover": 130000000.0,
+        "sse_reduction": 707845393056575.0
+      },
+      {
+        "training_row": 1035,
+        "restaurant_id": 61036,
+        "turnover": 86000000.0,
+        "sse_reduction": 593839166031808.2
+      },
+      {
+        "training_row": 2152,
+        "restaurant_id": 62153,
+        "turnover": 32000000.0,
+        "sse_reduction": 483387880616076.1
+      },
+      {
+        "training_row": 92,
+        "restaurant_id": 60093,
+        "turnover": 150000000.0,
+        "sse_reduction": 464721408675252.0
+      },
+      {
+        "training_row": 2179,
+        "restaurant_id": 62180,
+        "turnover": 400000000.0,
+        "sse_reduction": 455960005200800.0
+      }
+    ]
+  },
+  {
+    "name": "R1@0.25",
+    "scheme": "71",
+    "net_sse_reduction": -2248539710038216.0,
+    "largest_ten_positive_share": -3.189462369211663,
+    "largest_positive_rows": [
+      {
+        "training_row": 2179,
+        "restaurant_id": 62180,
+        "turnover": 400000000.0,
+        "sse_reduction": 1445621085632736.0
+      },
+      {
+        "training_row": 1746,
+        "restaurant_id": 61747,
+        "turnover": 132000000.0,
+        "sse_reduction": 1382966433099147.0
+      },
+      {
+        "training_row": 927,
+        "restaurant_id": 60928,
+        "turnover": 130000000.0,
+        "sse_reduction": 1201221650391605.0
+      },
+      {
+        "training_row": 2536,
+        "restaurant_id": 62537,
+        "turnover": 200000000.0,
+        "sse_reduction": 1138593492216596.0
+      },
+      {
+        "training_row": 2208,
+        "restaurant_id": 62209,
+        "turnover": 70000000.0,
+        "sse_reduction": 414739236506251.9
+      },
+      {
+        "training_row": 681,
+        "restaurant_id": 60682,
+        "turnover": 64500000.0,
+        "sse_reduction": 367046413667920.1
+      },
+      {
+        "training_row": 3,
+        "restaurant_id": 60004,
+        "turnover": 110000000.0,
+        "sse_reduction": 316103732088980.5
+      },
+      {
+        "training_row": 2152,
+        "restaurant_id": 62153,
+        "turnover": 32000000.0,
+        "sse_reduction": 315869819811749.2
+      },
+      {
+        "training_row": 2622,
+        "restaurant_id": 62623,
+        "turnover": 3500000.0,
+        "sse_reduction": 295280536391764.25
+      },
+      {
+        "training_row": 2408,
+        "restaurant_id": 62409,
+        "turnover": 100000000.0,
+        "sse_reduction": 294190391038244.0
+      }
+    ]
+  },
+  {
+    "name": "R1@0.5",
+    "scheme": "42",
+    "net_sse_reduction": -2.777363955195322e+16,
+    "largest_ten_positive_share": -0.7346060784000613,
+    "largest_positive_rows": [
+      {
+        "training_row": 961,
+        "restaurant_id": 60962,
+        "turnover": 200000000.0,
+        "sse_reduction": 4551822382073912.0
+      },
+      {
+        "training_row": 1746,
+        "restaurant_id": 61747,
+        "turnover": 132000000.0,
+        "sse_reduction": 4217643934693466.0
+      },
+      {
+        "training_row": 771,
+        "restaurant_id": 60772,
+        "turnover": 130000000.0,
+        "sse_reduction": 3305245467117958.0
+      },
+      {
+        "training_row": 500,
+        "restaurant_id": 60501,
+        "turnover": 260000000.0,
+        "sse_reduction": 1786307928286832.0
+      },
+      {
+        "training_row": 2970,
+        "restaurant_id": 62971,
+        "turnover": 80000000.0,
+        "sse_reduction": 1487339270074176.0
+      },
+      {
+        "training_row": 2106,
+        "restaurant_id": 62107,
+        "turnover": 130000000.0,
+        "sse_reduction": 1378548630494012.0
+      },
+      {
+        "training_row": 1035,
+        "restaurant_id": 61036,
+        "turnover": 86000000.0,
+        "sse_reduction": 1014289723961525.2
+      },
+      {
+        "training_row": 92,
+        "restaurant_id": 60093,
+        "turnover": 150000000.0,
+        "sse_reduction": 923132529155526.0
+      },
+      {
+        "training_row": 2179,
+        "restaurant_id": 62180,
+        "turnover": 400000000.0,
+        "sse_reduction": 911172783717488.0
+      },
+      {
+        "training_row": 2152,
+        "restaurant_id": 62153,
+        "turnover": 32000000.0,
+        "sse_reduction": 827181784582296.6
+      }
+    ]
+  },
+  {
+    "name": "R1@0.5",
+    "scheme": "71",
+    "net_sse_reduction": -2.633166835634013e+16,
+    "largest_ten_positive_share": -0.5164321270761228,
+    "largest_positive_rows": [
+      {
+        "training_row": 2179,
+        "restaurant_id": 62180,
+        "turnover": 400000000.0,
+        "sse_reduction": 2883681352893168.0
+      },
+      {
+        "training_row": 1746,
+        "restaurant_id": 61747,
+        "turnover": 132000000.0,
+        "sse_reduction": 2652888177763844.0
+      },
+      {
+        "training_row": 927,
+        "restaurant_id": 60928,
+        "turnover": 130000000.0,
+        "sse_reduction": 2317257027437619.0
+      },
+      {
+        "training_row": 2536,
+        "restaurant_id": 62537,
+        "turnover": 200000000.0,
+        "sse_reduction": 2251263512250976.0
+      },
+      {
+        "training_row": 681,
+        "restaurant_id": 60682,
+        "turnover": 64500000.0,
+        "sse_reduction": 682024968165416.5
+      },
+      {
+        "training_row": 3,
+        "restaurant_id": 60004,
+        "turnover": 110000000.0,
+        "sse_reduction": 612393122379918.5
+      },
+      {
+        "training_row": 2408,
+        "restaurant_id": 62409,
+        "turnover": 100000000.0,
+        "sse_reduction": 576712825541266.5
+      },
+      {
+        "training_row": 2622,
+        "restaurant_id": 62623,
+        "turnover": 3500000.0,
+        "sse_reduction": 571496615246673.8
+      },
+      {
+        "training_row": 2152,
+        "restaurant_id": 62153,
+        "turnover": 32000000.0,
+        "sse_reduction": 553882140739044.1
+      },
+      {
+        "training_row": 2486,
+        "restaurant_id": 62487,
+        "turnover": 8000000.0,
+        "sse_reduction": 496919756309840.0
+      }
+    ]
+  },
+  {
+    "name": "R1@0.75",
+    "scheme": "42",
+    "net_sse_reduction": -7.799415678647402e+16,
+    "largest_ten_positive_share": -0.37122085020037093,
+    "largest_positive_rows": [
+      {
+        "training_row": 961,
+        "restaurant_id": 60962,
+        "turnover": 200000000.0,
+        "sse_reduction": 6636566373921328.0
+      },
+      {
+        "training_row": 1746,
+        "restaurant_id": 61747,
+        "turnover": 132000000.0,
+        "sse_reduction": 5828310033042448.0
+      },
+      {
+        "training_row": 771,
+        "restaurant_id": 60772,
+        "turnover": 130000000.0,
+        "sse_reduction": 4674242524470946.0
+      },
+      {
+        "training_row": 500,
+        "restaurant_id": 60501,
+        "turnover": 260000000.0,
+        "sse_reduction": 2667013856931984.0
+      },
+      {
+        "training_row": 2970,
+        "restaurant_id": 62971,
+        "turnover": 80000000.0,
+        "sse_reduction": 2047313933591668.8
+      },
+      {
+        "training_row": 2106,
+        "restaurant_id": 62107,
+        "turnover": 130000000.0,
+        "sse_reduction": 2012109712312307.0
+      },
+      {
+        "training_row": 92,
+        "restaurant_id": 60093,
+        "turnover": 150000000.0,
+        "sse_reduction": 1375233361440832.0
+      },
+      {
+        "training_row": 2179,
+        "restaurant_id": 62180,
+        "turnover": 400000000.0,
+        "sse_reduction": 1365638335550048.0
+      },
+      {
+        "training_row": 1035,
+        "restaurant_id": 61036,
+        "turnover": 86000000.0,
+        "sse_reduction": 1261351673789150.5
+      },
+      {
+        "training_row": 562,
+        "restaurant_id": 60563,
+        "turnover": 18000000.0,
+        "sse_reduction": 1085277387885202.4
+      }
+    ]
+  },
+  {
+    "name": "R1@0.75",
+    "scheme": "71",
+    "net_sse_reduction": -7.224938593890598e+16,
+    "largest_ten_positive_share": -0.2733859926551403,
+    "largest_positive_rows": [
+      {
+        "training_row": 2179,
+        "restaurant_id": 62180,
+        "turnover": 400000000.0,
+        "sse_reduction": 4314180801781184.0
+      },
+      {
+        "training_row": 1746,
+        "restaurant_id": 61747,
+        "turnover": 132000000.0,
+        "sse_reduction": 3809765233994097.0
+      },
+      {
+        "training_row": 927,
+        "restaurant_id": 60928,
+        "turnover": 130000000.0,
+        "sse_reduction": 3348106131138038.0
+      },
+      {
+        "training_row": 2536,
+        "restaurant_id": 62537,
+        "turnover": 200000000.0,
+        "sse_reduction": 3338010060103128.0
+      },
+      {
+        "training_row": 681,
+        "restaurant_id": 60682,
+        "turnover": 64500000.0,
+        "sse_reduction": 944935663492490.0
+      },
+      {
+        "training_row": 3,
+        "restaurant_id": 60004,
+        "turnover": 110000000.0,
+        "sse_reduction": 888868170872811.0
+      },
+      {
+        "training_row": 2408,
+        "restaurant_id": 62409,
+        "turnover": 100000000.0,
+        "sse_reduction": 847567303509069.0
+      },
+      {
+        "training_row": 2622,
+        "restaurant_id": 62623,
+        "turnover": 3500000.0,
+        "sse_reduction": 828648236564728.0
+      },
+      {
+        "training_row": 2486,
+        "restaurant_id": 62487,
+        "turnover": 8000000.0,
+        "sse_reduction": 717851529394719.8
+      },
+      {
+        "training_row": 2152,
+        "restaurant_id": 62153,
+        "turnover": 32000000.0,
+        "sse_reduction": 714036962781884.8
+      }
+    ]
+  },
+  {
+    "name": "R1@1.0",
+    "scheme": "42",
+    "net_sse_reduction": -1.5243713899335782e+17,
+    "largest_ten_positive_share": -0.23955774431331697,
+    "largest_positive_rows": [
+      {
+        "training_row": 961,
+        "restaurant_id": 60962,
+        "turnover": 200000000.0,
+        "sse_reduction": 8593865566309050.0
+      },
+      {
+        "training_row": 1746,
+        "restaurant_id": 61747,
+        "turnover": 132000000.0,
+        "sse_reduction": 7106872218726263.0
+      },
+      {
+        "training_row": 771,
+        "restaurant_id": 60772,
+        "turnover": 130000000.0,
+        "sse_reduction": 5854155797686604.0
+      },
+      {
+        "training_row": 500,
+        "restaurant_id": 60501,
+        "turnover": 260000000.0,
+        "sse_reduction": 3539421095244952.0
+      },
+      {
+        "training_row": 2106,
+        "restaurant_id": 62107,
+        "turnover": 130000000.0,
+        "sse_reduction": 2608528638511464.0
+      },
+      {
+        "training_row": 2970,
+        "restaurant_id": 62971,
+        "turnover": 80000000.0,
+        "sse_reduction": 2484825282762765.0
+      },
+      {
+        "training_row": 92,
+        "restaurant_id": 60093,
+        "turnover": 150000000.0,
+        "sse_reduction": 1821023905531160.0
+      },
+      {
+        "training_row": 2179,
+        "restaurant_id": 62180,
+        "turnover": 400000000.0,
+        "sse_reduction": 1819356660698496.0
+      },
+      {
+        "training_row": 562,
+        "restaurant_id": 60563,
+        "turnover": 18000000.0,
+        "sse_reduction": 1354422985838934.0
+      },
+      {
+        "training_row": 1035,
+        "restaurant_id": 61036,
+        "turnover": 86000000.0,
+        "sse_reduction": 1335025015514684.5
+      }
+    ]
+  },
+  {
+    "name": "R1@1.0",
+    "scheme": "71",
+    "net_sse_reduction": -1.3995435787166384e+17,
+    "largest_ten_positive_share": -0.1828754365491702,
+    "largest_positive_rows": [
+      {
+        "training_row": 2179,
+        "restaurant_id": 62180,
+        "turnover": 400000000.0,
+        "sse_reduction": 5737119432296896.0
+      },
+      {
+        "training_row": 1746,
+        "restaurant_id": 61747,
+        "turnover": 132000000.0,
+        "sse_reduction": 4853597601789899.0
+      },
+      {
+        "training_row": 2536,
+        "restaurant_id": 62537,
+        "turnover": 200000000.0,
+        "sse_reduction": 4398833135773064.0
+      },
+      {
+        "training_row": 927,
+        "restaurant_id": 60928,
+        "turnover": 130000000.0,
+        "sse_reduction": 4293768961492862.0
+      },
+      {
+        "training_row": 681,
+        "restaurant_id": 60682,
+        "turnover": 64500000.0,
+        "sse_reduction": 1155778499649140.5
+      },
+      {
+        "training_row": 3,
+        "restaurant_id": 60004,
+        "turnover": 110000000.0,
+        "sse_reduction": 1145528877567661.2
+      },
+      {
+        "training_row": 2408,
+        "restaurant_id": 62409,
+        "turnover": 100000000.0,
+        "sse_reduction": 1106753824941650.5
+      },
+      {
+        "training_row": 2622,
+        "restaurant_id": 62623,
+        "turnover": 3500000.0,
+        "sse_reduction": 1066735400345927.5
+      },
+      {
+        "training_row": 2486,
+        "restaurant_id": 62487,
+        "turnover": 8000000.0,
+        "sse_reduction": 920431232432905.9
+      },
+      {
+        "training_row": 1239,
+        "restaurant_id": 61240,
+        "turnover": 202000000.0,
+        "sse_reduction": 915667326449316.0
+      }
+    ]
+  },
+  {
+    "name": "R4@0.25",
+    "scheme": "42",
+    "net_sse_reduction": -4737714437745076.0,
+    "largest_ten_positive_share": -1.3638521553399066,
+    "largest_positive_rows": [
+      {
+        "training_row": 1746,
+        "restaurant_id": 61747,
+        "turnover": 132000000.0,
+        "sse_reduction": 2061269561157357.0
+      },
+      {
+        "training_row": 771,
+        "restaurant_id": 60772,
+        "turnover": 130000000.0,
+        "sse_reduction": 758143733452184.0
+      },
+      {
+        "training_row": 943,
+        "restaurant_id": 60944,
+        "turnover": 105000000.0,
+        "sse_reduction": 536429949178472.0
+      },
+      {
+        "training_row": 1517,
+        "restaurant_id": 61518,
+        "turnover": 205000000.0,
+        "sse_reduction": 526191006563600.0
+      },
+      {
+        "training_row": 961,
+        "restaurant_id": 60962,
+        "turnover": 200000000.0,
+        "sse_reduction": 509833059649996.0
+      },
+      {
+        "training_row": 2970,
+        "restaurant_id": 62971,
+        "turnover": 80000000.0,
+        "sse_reduction": 477871088449891.5
+      },
+      {
+        "training_row": 562,
+        "restaurant_id": 60563,
+        "turnover": 18000000.0,
+        "sse_reduction": 450046018826007.0
+      },
+      {
+        "training_row": 927,
+        "restaurant_id": 60928,
+        "turnover": 130000000.0,
+        "sse_reduction": 401108944920518.0
+      },
+      {
+        "training_row": 1239,
+        "restaurant_id": 61240,
+        "turnover": 202000000.0,
+        "sse_reduction": 370575853624288.0
+      },
+      {
+        "training_row": 2152,
+        "restaurant_id": 62153,
+        "turnover": 32000000.0,
+        "sse_reduction": 370072831481301.25
+      }
+    ]
+  },
+  {
+    "name": "R4@0.25",
+    "scheme": "71",
+    "net_sse_reduction": 3943052149682077.0,
+    "largest_ten_positive_share": 2.3144530522698266,
+    "largest_positive_rows": [
+      {
+        "training_row": 1746,
+        "restaurant_id": 61747,
+        "turnover": 132000000.0,
+        "sse_reduction": 5815869573591200.0
+      },
+      {
+        "training_row": 2970,
+        "restaurant_id": 62971,
+        "turnover": 80000000.0,
+        "sse_reduction": 645175483875748.0
+      },
+      {
+        "training_row": 927,
+        "restaurant_id": 60928,
+        "turnover": 130000000.0,
+        "sse_reduction": 485770165635453.0
+      },
+      {
+        "training_row": 943,
+        "restaurant_id": 60944,
+        "turnover": 105000000.0,
+        "sse_reduction": 466860602582099.0
+      },
+      {
+        "training_row": 2152,
+        "restaurant_id": 62153,
+        "turnover": 32000000.0,
+        "sse_reduction": 322688860762007.75
+      },
+      {
+        "training_row": 2179,
+        "restaurant_id": 62180,
+        "turnover": 400000000.0,
+        "sse_reduction": 296257260516672.0
+      },
+      {
+        "training_row": 2622,
+        "restaurant_id": 62623,
+        "turnover": 3500000.0,
+        "sse_reduction": 296090000669407.25
+      },
+      {
+        "training_row": 1239,
+        "restaurant_id": 61240,
+        "turnover": 202000000.0,
+        "sse_reduction": 278629090405728.0
+      },
+      {
+        "training_row": 2208,
+        "restaurant_id": 62209,
+        "turnover": 70000000.0,
+        "sse_reduction": 267519290839535.78
+      },
+      {
+        "training_row": 64,
+        "restaurant_id": 60065,
+        "turnover": 60000000.0,
+        "sse_reduction": 251148754212933.6
+      }
+    ]
+  },
+  {
+    "name": "R4@0.5",
+    "scheme": "42",
+    "net_sse_reduction": -3.4082634574460404e+16,
+    "largest_ten_positive_share": -0.36398363806098366,
+    "largest_positive_rows": [
+      {
+        "training_row": 1746,
+        "restaurant_id": 61747,
+        "turnover": 132000000.0,
+        "sse_reduction": 3853831138703967.0
+      },
+      {
+        "training_row": 771,
+        "restaurant_id": 60772,
+        "turnover": 130000000.0,
+        "sse_reduction": 1482815436541227.0
+      },
+      {
+        "training_row": 1517,
+        "restaurant_id": 61518,
+        "turnover": 205000000.0,
+        "sse_reduction": 1048480977082892.0
+      },
+      {
+        "training_row": 943,
+        "restaurant_id": 60944,
+        "turnover": 105000000.0,
+        "sse_reduction": 1026176616795093.5
+      },
+      {
+        "training_row": 961,
+        "restaurant_id": 60962,
+        "turnover": 200000000.0,
+        "sse_reduction": 1013865571435984.0
+      },
+      {
+        "training_row": 2970,
+        "restaurant_id": 62971,
+        "turnover": 80000000.0,
+        "sse_reduction": 915236926345767.2
+      },
+      {
+        "training_row": 562,
+        "restaurant_id": 60563,
+        "turnover": 18000000.0,
+        "sse_reduction": 843059148107751.2
+      },
+      {
+        "training_row": 927,
+        "restaurant_id": 60928,
+        "turnover": 130000000.0,
+        "sse_reduction": 793456233748250.0
+      },
+      {
+        "training_row": 1239,
+        "restaurant_id": 61240,
+        "turnover": 202000000.0,
+        "sse_reduction": 738957875036780.0
+      },
+      {
+        "training_row": 92,
+        "restaurant_id": 60093,
+        "turnover": 150000000.0,
+        "sse_reduction": 689641403317452.0
+      }
+    ]
+  },
+  {
+    "name": "R4@0.5",
+    "scheme": "71",
+    "net_sse_reduction": -4957417726222530.0,
+    "largest_ten_positive_share": -3.033381078518779,
+    "largest_positive_rows": [
+      {
+        "training_row": 1746,
+        "restaurant_id": 61747,
+        "turnover": 132000000.0,
+        "sse_reduction": 8764669441824865.0
+      },
+      {
+        "training_row": 2970,
+        "restaurant_id": 62971,
+        "turnover": 80000000.0,
+        "sse_reduction": 1213753349744590.0
+      },
+      {
+        "training_row": 927,
+        "restaurant_id": 60928,
+        "turnover": 130000000.0,
+        "sse_reduction": 958187402641659.0
+      },
+      {
+        "training_row": 943,
+        "restaurant_id": 60944,
+        "turnover": 105000000.0,
+        "sse_reduction": 902456216133260.0
+      },
+      {
+        "training_row": 2179,
+        "restaurant_id": 62180,
+        "turnover": 400000000.0,
+        "sse_reduction": 592198298481120.0
+      },
+      {
+        "training_row": 2622,
+        "restaurant_id": 62623,
+        "turnover": 3500000.0,
+        "sse_reduction": 573007369458104.2
+      },
+      {
+        "training_row": 2152,
+        "restaurant_id": 62153,
+        "turnover": 32000000.0,
+        "sse_reduction": 563625200672397.9
+      },
+      {
+        "training_row": 1239,
+        "restaurant_id": 61240,
+        "turnover": 202000000.0,
+        "sse_reduction": 556028093196016.0
+      },
+      {
+        "training_row": 771,
+        "restaurant_id": 60772,
+        "turnover": 130000000.0,
+        "sse_reduction": 477980865604362.0
+      },
+      {
+        "training_row": 2208,
+        "restaurant_id": 62209,
+        "turnover": 70000000.0,
+        "sse_reduction": 435830891280633.6
+      }
+    ]
+  },
+  {
+    "name": "R4@0.75",
+    "scheme": "42",
+    "net_sse_reduction": -8.803476041014573e+16,
+    "largest_ten_positive_share": -0.20335658467936776,
+    "largest_positive_rows": [
+      {
+        "training_row": 1746,
+        "restaurant_id": 61747,
+        "turnover": 132000000.0,
+        "sse_reduction": 5377684732639832.0
+      },
+      {
+        "training_row": 771,
+        "restaurant_id": 60772,
+        "turnover": 130000000.0,
+        "sse_reduction": 2174015109267135.0
+      },
+      {
+        "training_row": 1517,
+        "restaurant_id": 61518,
+        "turnover": 205000000.0,
+        "sse_reduction": 1566869911557876.0
+      },
+      {
+        "training_row": 961,
+        "restaurant_id": 60962,
+        "turnover": 200000000.0,
+        "sse_reduction": 1512097535357988.0
+      },
+      {
+        "training_row": 943,
+        "restaurant_id": 60944,
+        "turnover": 105000000.0,
+        "sse_reduction": 1469240002849864.2
+      },
+      {
+        "training_row": 2970,
+        "restaurant_id": 62971,
+        "turnover": 80000000.0,
+        "sse_reduction": 1312097513687628.0
+      },
+      {
+        "training_row": 562,
+        "restaurant_id": 60563,
+        "turnover": 18000000.0,
+        "sse_reduction": 1179039387845232.0
+      },
+      {
+        "training_row": 927,
+        "restaurant_id": 60928,
+        "turnover": 130000000.0,
+        "sse_reduction": 1177041866483195.0
+      },
+      {
+        "training_row": 1239,
+        "restaurant_id": 61240,
+        "turnover": 202000000.0,
+        "sse_reduction": 1105146064237492.0
+      },
+      {
+        "training_row": 92,
+        "restaurant_id": 60093,
+        "turnover": 150000000.0,
+        "sse_reduction": 1029216086147408.0
+      }
+    ]
+  },
+  {
+    "name": "R4@0.75",
+    "scheme": "71",
+    "net_sse_reduction": -2.670140962771408e+16,
+    "largest_ten_positive_share": -0.6678507738116858,
+    "largest_positive_rows": [
+      {
+        "training_row": 1746,
+        "restaurant_id": 61747,
+        "turnover": 132000000.0,
+        "sse_reduction": 8846399604700998.0
+      },
+      {
+        "training_row": 2970,
+        "restaurant_id": 62971,
+        "turnover": 80000000.0,
+        "sse_reduction": 1705733597606526.8
+      },
+      {
+        "training_row": 927,
+        "restaurant_id": 60928,
+        "turnover": 130000000.0,
+        "sse_reduction": 1417251711018614.0
+      },
+      {
+        "training_row": 943,
+        "restaurant_id": 60944,
+        "turnover": 105000000.0,
+        "sse_reduction": 1306786840653483.0
+      },
+      {
+        "training_row": 2179,
+        "restaurant_id": 62180,
+        "turnover": 400000000.0,
+        "sse_reduction": 887823113893248.0
+      },
+      {
+        "training_row": 1239,
+        "restaurant_id": 61240,
+        "turnover": 202000000.0,
+        "sse_reduction": 832197008370840.0
+      },
+      {
+        "training_row": 2622,
+        "restaurant_id": 62623,
+        "turnover": 3500000.0,
+        "sse_reduction": 830752106366090.8
+      },
+      {
+        "training_row": 2152,
+        "restaurant_id": 62153,
+        "turnover": 32000000.0,
+        "sse_reduction": 722809019731170.4
+      },
+      {
+        "training_row": 771,
+        "restaurant_id": 60772,
+        "turnover": 130000000.0,
+        "sse_reduction": 711574359699556.0
+      },
+      {
+        "training_row": 332,
+        "restaurant_id": 60333,
+        "turnover": 18000000.0,
+        "sse_reduction": 571229719691121.8
+      }
+    ]
+  },
+  {
+    "name": "R4@1.0",
+    "scheme": "42",
+    "net_sse_reduction": -1.6659409194480138e+17,
+    "largest_ten_positive_share": -0.13763284742952667,
+    "largest_positive_rows": [
+      {
+        "training_row": 1746,
+        "restaurant_id": 61747,
+        "turnover": 132000000.0,
+        "sse_reduction": 6632830342964954.0
+      },
+      {
+        "training_row": 771,
+        "restaurant_id": 60772,
+        "turnover": 130000000.0,
+        "sse_reduction": 2831742751629905.0
+      },
+      {
+        "training_row": 1517,
+        "restaurant_id": 61518,
+        "turnover": 205000000.0,
+        "sse_reduction": 2081357809988556.0
+      },
+      {
+        "training_row": 961,
+        "restaurant_id": 60962,
+        "turnover": 200000000.0,
+        "sse_reduction": 2004528951415996.0
+      },
+      {
+        "training_row": 943,
+        "restaurant_id": 60944,
+        "turnover": 105000000.0,
+        "sse_reduction": 1865620107342783.2
+      },
+      {
+        "training_row": 2970,
+        "restaurant_id": 62971,
+        "turnover": 80000000.0,
+        "sse_reduction": 1668452850475473.5
+      },
+      {
+        "training_row": 927,
+        "restaurant_id": 60928,
+        "turnover": 130000000.0,
+        "sse_reduction": 1551865843125354.0
+      },
+      {
+        "training_row": 1239,
+        "restaurant_id": 61240,
+        "turnover": 202000000.0,
+        "sse_reduction": 1469140421226400.0
+      },
+      {
+        "training_row": 562,
+        "restaurant_id": 60563,
+        "turnover": 18000000.0,
+        "sse_reduction": 1457986738038448.8
+      },
+      {
+        "training_row": 92,
+        "restaurant_id": 60093,
+        "turnover": 150000000.0,
+        "sse_reduction": 1365293423091514.0
+      }
+    ]
+  },
+  {
+    "name": "R4@1.0",
+    "scheme": "71",
+    "net_sse_reduction": -6.128892355479224e+16,
+    "largest_ten_positive_share": -0.28616594750596064,
+    "largest_positive_rows": [
+      {
+        "training_row": 1746,
+        "restaurant_id": 61747,
+        "turnover": 132000000.0,
+        "sse_reduction": 6061060062219598.0
+      },
+      {
+        "training_row": 2970,
+        "restaurant_id": 62971,
+        "turnover": 80000000.0,
+        "sse_reduction": 2121116227461558.0
+      },
+      {
+        "training_row": 927,
+        "restaurant_id": 60928,
+        "turnover": 130000000.0,
+        "sse_reduction": 1862963090766318.0
+      },
+      {
+        "training_row": 943,
+        "restaurant_id": 60944,
+        "turnover": 105000000.0,
+        "sse_reduction": 1679852476142768.5
+      },
+      {
+        "training_row": 2179,
+        "restaurant_id": 62180,
+        "turnover": 400000000.0,
+        "sse_reduction": 1183131706753136.0
+      },
+      {
+        "training_row": 1239,
+        "restaurant_id": 61240,
+        "turnover": 202000000.0,
+        "sse_reduction": 1107135835930212.0
+      },
+      {
+        "training_row": 2622,
+        "restaurant_id": 62623,
+        "turnover": 3500000.0,
+        "sse_reduction": 1069324211393367.2
+      },
+      {
+        "training_row": 771,
+        "restaurant_id": 60772,
+        "turnover": 130000000.0,
+        "sse_reduction": 941569894656754.0
+      },
+      {
+        "training_row": 2152,
+        "restaurant_id": 62153,
+        "turnover": 32000000.0,
+        "sse_reduction": 800240317938325.4
+      },
+      {
+        "training_row": 562,
+        "restaurant_id": 60563,
+        "turnover": 18000000.0,
+        "sse_reduction": 712409057415472.6
+      }
+    ]
+  }
+]

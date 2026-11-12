@@ -1,0 +1,236 @@
+{"setting": "BASE", "scheme": "42", "fold_complete": 1, "folds": 5}
+{"setting": "BASE", "scheme": "42", "fold_complete": 2, "folds": 5}
+{"setting": "BASE", "scheme": "42", "fold_complete": 3, "folds": 5}
+{"setting": "BASE", "scheme": "42", "fold_complete": 4, "folds": 5}
+{"setting": "BASE", "scheme": "42", "fold_complete": 5, "folds": 5}
+{"setting": "BASE", "scheme": "71", "fold_complete": 1, "folds": 5}
+{"setting": "BASE", "scheme": "71", "fold_complete": 2, "folds": 5}
+{"setting": "BASE", "scheme": "71", "fold_complete": 3, "folds": 5}
+{"setting": "BASE", "scheme": "71", "fold_complete": 4, "folds": 5}
+{"setting": "BASE", "scheme": "71", "fold_complete": 5, "folds": 5}
+{"setting": "C", "scheme": "42", "fold_complete": 1, "folds": 5}
+{"setting": "C", "scheme": "42", "fold_complete": 2, "folds": 5}
+{"setting": "C", "scheme": "42", "fold_complete": 3, "folds": 5}
+{"setting": "C", "scheme": "42", "fold_complete": 4, "folds": 5}
+{"setting": "C", "scheme": "42", "fold_complete": 5, "folds": 5}
+{"setting": "C", "scheme": "71", "fold_complete": 1, "folds": 5}
+{"setting": "C", "scheme": "71", "fold_complete": 2, "folds": 5}
+{"setting": "C", "scheme": "71", "fold_complete": 3, "folds": 5}
+{"setting": "C", "scheme": "71", "fold_complete": 4, "folds": 5}
+{"setting": "C", "scheme": "71", "fold_complete": 5, "folds": 5}
+{"setting": "S", "scheme": "42", "fold_complete": 1, "folds": 5}
+{"setting": "S", "scheme": "42", "fold_complete": 2, "folds": 5}
+{"setting": "S", "scheme": "42", "fold_complete": 3, "folds": 5}
+{"setting": "S", "scheme": "42", "fold_complete": 4, "folds": 5}
+{"setting": "S", "scheme": "42", "fold_complete": 5, "folds": 5}
+{"setting": "S", "scheme": "71", "fold_complete": 1, "folds": 5}
+S: fitted 2794 original targets, 56 features, 16 estimators
+{"setting": "S", "scheme": "71", "fold_complete": 2, "folds": 5}
+S: fitted 2794 original targets, 56 features, 16 estimators
+{"setting": "S", "scheme": "71", "fold_complete": 3, "folds": 5}
+S: fitted 2795 original targets, 56 features, 16 estimators
+{"setting": "S", "scheme": "71", "fold_complete": 4, "folds": 5}
+S: fitted 2795 original targets, 56 features, 16 estimators
+{"setting": "S", "scheme": "71", "fold_complete": 5, "folds": 5}
+C+S: fitted 2794 original targets, 58 features, 16 estimators
+{"setting": "C+S", "scheme": "42", "fold_complete": 1, "folds": 5}
+C+S: fitted 2794 original targets, 58 features, 16 estimators
+{"setting": "C+S", "scheme": "42", "fold_complete": 2, "folds": 5}
+C+S: fitted 2794 original targets, 58 features, 16 estimators
+{"setting": "C+S", "scheme": "42", "fold_complete": 3, "folds": 5}
+C+S: fitted 2795 original targets, 58 features, 16 estimators
+{"setting": "C+S", "scheme": "42", "fold_complete": 4, "folds": 5}
+C+S: fitted 2795 original targets, 58 features, 16 estimators
+{"setting": "C+S", "scheme": "42", "fold_complete": 5, "folds": 5}
+C+S: fitted 2794 original targets, 58 features, 16 estimators
+{"setting": "C+S", "scheme": "71", "fold_complete": 1, "folds": 5}
+C+S: fitted 2794 original targets, 58 features, 16 estimators
+{"setting": "C+S", "scheme": "71", "fold_complete": 2, "folds": 5}
+C+S: fitted 2794 original targets, 58 features, 16 estimators
+{"setting": "C+S", "scheme": "71", "fold_complete": 3, "folds": 5}
+C+S: fitted 2795 original targets, 58 features, 16 estimators
+{"setting": "C+S", "scheme": "71", "fold_complete": 4, "folds": 5}
+C+S: fitted 2795 original targets, 58 features, 16 estimators
+{"setting": "C+S", "scheme": "71", "fold_complete": 5, "folds": 5}
+C+S+G: fitted 2794 original targets, 66 features, 16 estimators
+{"setting": "C+S+G", "scheme": "42", "fold_complete": 1, "folds": 5}
+C+S+G: fitted 2794 original targets, 66 features, 16 estimators
+{"setting": "C+S+G", "scheme": "42", "fold_complete": 2, "folds": 5}
+C+S+G: fitted 2794 original targets, 66 features, 16 estimators
+{"setting": "C+S+G", "scheme": "42", "fold_complete": 3, "folds": 5}
+C+S+G: fitted 2795 original targets, 66 features, 16 estimators
+{"setting": "C+S+G", "scheme": "42", "fold_complete": 4, "folds": 5}
+C+S+G: fitted 2795 original targets, 66 features, 16 estimators
+{"setting": "C+S+G", "scheme": "42", "fold_complete": 5, "folds": 5}
+C+S+G: fitted 2794 original targets, 66 features, 16 estimators
+{"setting": "C+S+G", "scheme": "71", "fold_complete": 1, "folds": 5}
+C+S+G: fitted 2794 original targets, 66 features, 16 estimators
+{"setting": "C+S+G", "scheme": "71", "fold_complete": 2, "folds": 5}
+C+S+G: fitted 2794 original targets, 66 features, 16 estimators
+{"setting": "C+S+G", "scheme": "71", "fold_complete": 3, "folds": 5}
+C+S+G: fitted 2795 original targets, 66 features, 16 estimators
+{"setting": "C+S+G", "scheme": "71", "fold_complete": 4, "folds": 5}
+C+S+G: fitted 2795 original targets, 66 features, 16 estimators
+{"setting": "C+S+G", "scheme": "71", "fold_complete": 5, "folds": 5}
+P: fitted 2794 original targets, 38 features, 16 estimators
+{"setting": "P", "scheme": "42", "fold_complete": 1, "folds": 5}
+P: fitted 2794 original targets, 38 features, 16 estimators
+{"setting": "P", "scheme": "42", "fold_complete": 2, "folds": 5}
+P: fitted 2794 original targets, 38 features, 16 estimators
+{"setting": "P", "scheme": "42", "fold_complete": 3, "folds": 5}
+P: fitted 2795 original targets, 38 features, 16 estimators
+{"setting": "P", "scheme": "42", "fold_complete": 4, "folds": 5}
+P: fitted 2795 original targets, 38 features, 16 estimators
+{"setting": "P", "scheme": "42", "fold_complete": 5, "folds": 5}
+P: fitted 2794 original targets, 38 features, 16 estimators
+{"setting": "P", "scheme": "71", "fold_complete": 1, "folds": 5}
+P: fitted 2794 original targets, 38 features, 16 estimators
+{"setting": "P", "scheme": "71", "fold_complete": 2, "folds": 5}
+P: fitted 2794 original targets, 38 features, 16 estimators
+{"setting": "P", "scheme": "71", "fold_complete": 3, "folds": 5}
+P: fitted 2795 original targets, 38 features, 16 estimators
+{"setting": "P", "scheme": "71", "fold_complete": 4, "folds": 5}
+P: fitted 2795 original targets, 38 features, 16 estimators
+{"setting": "P", "scheme": "71", "fold_complete": 5, "folds": 5}
+C+S+P: fitted 2794 original targets, 56 features, 16 estimators
+{"setting": "C+S+P", "scheme": "42", "fold_complete": 1, "folds": 5}
+C+S+P: fitted 2794 original targets, 56 features, 16 estimators
+{"setting": "C+S+P", "scheme": "42", "fold_complete": 2, "folds": 5}
+C+S+P: fitted 2794 original targets, 56 features, 16 estimators
+{"setting": "C+S+P", "scheme": "42", "fold_complete": 3, "folds": 5}
+C+S+P: fitted 2795 original targets, 56 features, 16 estimators
+{"setting": "C+S+P", "scheme": "42", "fold_complete": 4, "folds": 5}
+C+S+P: fitted 2795 original targets, 56 features, 16 estimators
+{"setting": "C+S+P", "scheme": "42", "fold_complete": 5, "folds": 5}
+C+S+P: fitted 2794 original targets, 56 features, 16 estimators
+{"setting": "C+S+P", "scheme": "71", "fold_complete": 1, "folds": 5}
+C+S+P: fitted 2794 original targets, 56 features, 16 estimators
+{"setting": "C+S+P", "scheme": "71", "fold_complete": 2, "folds": 5}
+C+S+P: fitted 2794 original targets, 56 features, 16 estimators
+{"setting": "C+S+P", "scheme": "71", "fold_complete": 3, "folds": 5}
+C+S+P: fitted 2795 original targets, 56 features, 16 estimators
+{"setting": "C+S+P", "scheme": "71", "fold_complete": 4, "folds": 5}
+C+S+P: fitted 2795 original targets, 56 features, 16 estimators
+{"setting": "C+S+P", "scheme": "71", "fold_complete": 5, "folds": 5}
+{"SCREENING_COMPLETE": true, "qualified_for_confirmation": {"name": "C", "replacement_weight": 1.0, "feature_count": 42, "rmse_42": 19726316.67014788, "gain_42": 4925.058085404336, "rmse_71": 19729419.599104185, "gain_71": 3600.4814428277314, "mean_rmse": 19727868.13462603}}
+STAGE_PROCESS_EXIT screen 0 elapsed_seconds 6811.144 charged_hours 2.0661
+BASE: fitted 2794 original targets, 40 features, 16 estimators
+{"setting": "BASE", "scheme": "48211", "fold_complete": 1, "folds": 5}
+BASE: fitted 2794 original targets, 40 features, 16 estimators
+{"setting": "BASE", "scheme": "48211", "fold_complete": 2, "folds": 5}
+BASE: fitted 2794 original targets, 40 features, 16 estimators
+{"setting": "BASE", "scheme": "48211", "fold_complete": 3, "folds": 5}
+BASE: fitted 2795 original targets, 40 features, 16 estimators
+{"setting": "BASE", "scheme": "48211", "fold_complete": 4, "folds": 5}
+BASE: fitted 2795 original targets, 40 features, 16 estimators
+{"setting": "BASE", "scheme": "48211", "fold_complete": 5, "folds": 5}
+C: fitted 2794 original targets, 42 features, 16 estimators
+{"setting": "C", "scheme": "48211", "fold_complete": 1, "folds": 5}
+C: fitted 2794 original targets, 42 features, 16 estimators
+{"setting": "C", "scheme": "48211", "fold_complete": 2, "folds": 5}
+C: fitted 2794 original targets, 42 features, 16 estimators
+{"setting": "C", "scheme": "48211", "fold_complete": 3, "folds": 5}
+C: fitted 2795 original targets, 42 features, 16 estimators
+{"setting": "C", "scheme": "48211", "fold_complete": 4, "folds": 5}
+C: fitted 2795 original targets, 42 features, 16 estimators
+{"setting": "C", "scheme": "48211", "fold_complete": 5, "folds": 5}
+{"CONFIRMATION": "48211", "v9_rmse": 19743626.58666369, "candidate_rmse": 19736521.92408793, "gain": 7104.662575758994, "relative_change": -0.00035984587454451766}
+BASE: fitted 2794 original targets, 40 features, 16 estimators
+{"setting": "BASE", "scheme": "48212", "fold_complete": 1, "folds": 5}
+BASE: fitted 2794 original targets, 40 features, 16 estimators
+{"setting": "BASE", "scheme": "48212", "fold_complete": 2, "folds": 5}
+BASE: fitted 2794 original targets, 40 features, 16 estimators
+{"setting": "BASE", "scheme": "48212", "fold_complete": 3, "folds": 5}
+BASE: fitted 2795 original targets, 40 features, 16 estimators
+{"setting": "BASE", "scheme": "48212", "fold_complete": 4, "folds": 5}
+BASE: fitted 2795 original targets, 40 features, 16 estimators
+{"setting": "BASE", "scheme": "48212", "fold_complete": 5, "folds": 5}
+C: fitted 2794 original targets, 42 features, 16 estimators
+{"setting": "C", "scheme": "48212", "fold_complete": 1, "folds": 5}
+C: fitted 2794 original targets, 42 features, 16 estimators
+{"setting": "C", "scheme": "48212", "fold_complete": 2, "folds": 5}
+C: fitted 2794 original targets, 42 features, 16 estimators
+{"setting": "C", "scheme": "48212", "fold_complete": 3, "folds": 5}
+C: fitted 2795 original targets, 42 features, 16 estimators
+{"setting": "C", "scheme": "48212", "fold_complete": 4, "folds": 5}
+C: fitted 2795 original targets, 42 features, 16 estimators
+{"setting": "C", "scheme": "48212", "fold_complete": 5, "folds": 5}
+{"CONFIRMATION": "48212", "v9_rmse": 19816597.33709491, "candidate_rmse": 19812530.038468108, "gain": 4067.2986268028617, "relative_change": -0.00020524707433955403}
+BASE: fitted 2794 original targets, 40 features, 16 estimators
+{"setting": "BASE", "scheme": "48213", "fold_complete": 1, "folds": 5}
+BASE: fitted 2794 original targets, 40 features, 16 estimators
+{"setting": "BASE", "scheme": "48213", "fold_complete": 2, "folds": 5}
+BASE: fitted 2794 original targets, 40 features, 16 estimators
+{"setting": "BASE", "scheme": "48213", "fold_complete": 3, "folds": 5}
+BASE: fitted 2795 original targets, 40 features, 16 estimators
+{"setting": "BASE", "scheme": "48213", "fold_complete": 4, "folds": 5}
+BASE: fitted 2795 original targets, 40 features, 16 estimators
+{"setting": "BASE", "scheme": "48213", "fold_complete": 5, "folds": 5}
+C: fitted 2794 original targets, 42 features, 16 estimators
+{"setting": "C", "scheme": "48213", "fold_complete": 1, "folds": 5}
+C: fitted 2794 original targets, 42 features, 16 estimators
+{"setting": "C", "scheme": "48213", "fold_complete": 2, "folds": 5}
+C: fitted 2794 original targets, 42 features, 16 estimators
+{"setting": "C", "scheme": "48213", "fold_complete": 3, "folds": 5}
+C: fitted 2795 original targets, 42 features, 16 estimators
+{"setting": "C", "scheme": "48213", "fold_complete": 4, "folds": 5}
+C: fitted 2795 original targets, 42 features, 16 estimators
+{"setting": "C", "scheme": "48213", "fold_complete": 5, "folds": 5}
+{"CONFIRMATION": "48213", "v9_rmse": 19711188.541631036, "candidate_rmse": 19710108.760130223, "gain": 1079.78150081262, "relative_change": -5.4780131524378994e-05}
+BASE: fitted 2794 original targets, 40 features, 16 estimators
+{"setting": "BASE", "scheme": "strat:27421", "fold_complete": 1, "folds": 5}
+BASE: fitted 2794 original targets, 40 features, 16 estimators
+{"setting": "BASE", "scheme": "strat:27421", "fold_complete": 2, "folds": 5}
+BASE: fitted 2794 original targets, 40 features, 16 estimators
+{"setting": "BASE", "scheme": "strat:27421", "fold_complete": 3, "folds": 5}
+BASE: fitted 2795 original targets, 40 features, 16 estimators
+{"setting": "BASE", "scheme": "strat:27421", "fold_complete": 4, "folds": 5}
+BASE: fitted 2795 original targets, 40 features, 16 estimators
+{"setting": "BASE", "scheme": "strat:27421", "fold_complete": 5, "folds": 5}
+C: fitted 2794 original targets, 42 features, 16 estimators
+{"setting": "C", "scheme": "strat:27421", "fold_complete": 1, "folds": 5}
+C: fitted 2794 original targets, 42 features, 16 estimators
+{"setting": "C", "scheme": "strat:27421", "fold_complete": 2, "folds": 5}
+C: fitted 2794 original targets, 42 features, 16 estimators
+{"setting": "C", "scheme": "strat:27421", "fold_complete": 3, "folds": 5}
+C: fitted 2795 original targets, 42 features, 16 estimators
+{"setting": "C", "scheme": "strat:27421", "fold_complete": 4, "folds": 5}
+C: fitted 2795 original targets, 42 features, 16 estimators
+{"setting": "C", "scheme": "strat:27421", "fold_complete": 5, "folds": 5}
+{"CONFIRMATION": "strat:27421", "v9_rmse": 19726481.457054287, "candidate_rmse": 19724283.493621204, "gain": 2197.963433083147, "relative_change": -0.00011142197040403534}
+BASE: fitted 2794 original targets, 40 features, 16 estimators
+{"setting": "BASE", "scheme": "city", "fold_complete": 1, "folds": 5}
+BASE: fitted 2794 original targets, 40 features, 16 estimators
+{"setting": "BASE", "scheme": "city", "fold_complete": 2, "folds": 5}
+BASE: fitted 2794 original targets, 40 features, 16 estimators
+{"setting": "BASE", "scheme": "city", "fold_complete": 3, "folds": 5}
+BASE: fitted 2795 original targets, 40 features, 16 estimators
+{"setting": "BASE", "scheme": "city", "fold_complete": 4, "folds": 5}
+BASE: fitted 2795 original targets, 40 features, 16 estimators
+{"setting": "BASE", "scheme": "city", "fold_complete": 5, "folds": 5}
+C: fitted 2794 original targets, 42 features, 16 estimators
+{"setting": "C", "scheme": "city", "fold_complete": 1, "folds": 5}
+C: fitted 2794 original targets, 42 features, 16 estimators
+{"setting": "C", "scheme": "city", "fold_complete": 2, "folds": 5}
+C: fitted 2794 original targets, 42 features, 16 estimators
+{"setting": "C", "scheme": "city", "fold_complete": 3, "folds": 5}
+C: fitted 2795 original targets, 42 features, 16 estimators
+{"setting": "C", "scheme": "city", "fold_complete": 4, "folds": 5}
+C: fitted 2795 original targets, 42 features, 16 estimators
+{"setting": "C", "scheme": "city", "fold_complete": 5, "folds": 5}
+{"CONFIRMATION": "city", "v9_rmse": 20061150.77388296, "candidate_rmse": 20042973.913286358, "gain": 18176.86059660092, "relative_change": -0.0009060726775587113}
+{"DECISION": "one qualified V10 portal trial"}
+STAGE_PROCESS_EXIT confirm 0 elapsed_seconds 6156.043 charged_hours 3.7761
+BASE: fitted 3493 original targets, 40 features, 16 estimators
+C: fitted 3493 original targets, 42 features, 16 estimators
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+Fresh notebook verification PASS; delivery archive: /content/mla_v10/V10_Delivery.zip
+{"EXPORT": "PASS", "qualified": true, "delivery": "/content/mla_v10/delivery"}
+STAGE_PROCESS_EXIT export 0 elapsed_seconds 2345.378 charged_hours 4.6184

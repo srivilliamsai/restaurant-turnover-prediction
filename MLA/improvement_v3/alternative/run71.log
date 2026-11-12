@@ -1,0 +1,3 @@
+{"name": "spline_full_a30_h40", "seed": 71, "rmse": 20008760.57698882, "blend15_rmse": 19885675.470504332, "baseline_rmse": 19891238.885366585, "mean_prediction": 29748291.573455725, "seconds": 0.5524399280548096}
+{"name": "spline_full_a30", "seed": 71, "rmse": 20162628.2608245, "blend15_rmse": 19887850.593167145, "baseline_rmse": 19891238.885366585, "mean_prediction": 30730592.513253223, "seconds": 0.3831307888031006}
+{"name": "spline_full_a100_c120", "seed": 71, "rmse": 20023738.931798246, "blend15_rmse": 19889475.064525887, "baseline_rmse": 19891238.885366585, "mean_prediction": 30170034.47017086, "seconds": 0.41297101974487305}

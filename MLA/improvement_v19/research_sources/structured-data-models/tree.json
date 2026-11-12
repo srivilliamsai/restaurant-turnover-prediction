@@ -1,0 +1,4187 @@
+{
+  "sha": "2b1696f4fdc22004cc757c44703a69cf326c0a11",
+  "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/2b1696f4fdc22004cc757c44703a69cf326c0a11",
+  "tree": [
+    {
+      "path": ".agents",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "73d607ce7ddfa5f570eb2ff08e71eb0c91b10a99",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/73d607ce7ddfa5f570eb2ff08e71eb0c91b10a99"
+    },
+    {
+      "path": ".agents/skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e52f346ede94c3a67c50a67c487e5c9c0e0eea94",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/e52f346ede94c3a67c50a67c487e5c9c0e0eea94"
+    },
+    {
+      "path": ".agents/skills/docstring",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1327090f5845d6acceca5f01687115e12c8f2317",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/1327090f5845d6acceca5f01687115e12c8f2317"
+    },
+    {
+      "path": ".agents/skills/docstring/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44d525030af337fd495f79aa2b81cf107dd4adeb",
+      "size": 4932,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/44d525030af337fd495f79aa2b81cf107dd4adeb"
+    },
+    {
+      "path": ".agents/skills/port-external-models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "51648c5658cef5cecc0466a113b40ba553022e1a",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/51648c5658cef5cecc0466a113b40ba553022e1a"
+    },
+    {
+      "path": ".agents/skills/port-external-models/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50885ace4c99a740560e01b3c98d64969d909108",
+      "size": 5225,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/50885ace4c99a740560e01b3c98d64969d909108"
+    },
+    {
+      "path": ".agents/skills/processor-development",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4cde32941c607ad4f99aeb71915b12cda68fa47d",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/4cde32941c607ad4f99aeb71915b12cda68fa47d"
+    },
+    {
+      "path": ".agents/skills/processor-development/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e1af7838e59e509b9c23c320b0245fd5a197c2a",
+      "size": 5811,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/0e1af7838e59e509b9c23c320b0245fd5a197c2a"
+    },
+    {
+      "path": ".agents/skills/recipe-development",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c6d37b6be6d6501d840316e8257b4c7b7c1b0486",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/c6d37b6be6d6501d840316e8257b4c7b7c1b0486"
+    },
+    {
+      "path": ".agents/skills/recipe-development/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5fd2dcfcc5601b60eec3ce21588317ac621914da",
+      "size": 621,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/5fd2dcfcc5601b60eec3ce21588317ac621914da"
+    },
+    {
+      "path": ".claude",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "db7303d7253e65d1b1ca5eb38dc6c91e72b18b1a",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/db7303d7253e65d1b1ca5eb38dc6c91e72b18b1a"
+    },
+    {
+      "path": ".claude/skills",
+      "mode": "120000",
+      "type": "blob",
+      "sha": "2b7a412b8fa0fb7e985b0793321bd4e698f2b6cd",
+      "size": 17,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/2b7a412b8fa0fb7e985b0793321bd4e698f2b6cd"
+    },
+    {
+      "path": ".coderabbit.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06f2c83ae26bb34645b2c64f4e3a0c3bc0762e75",
+      "size": 5046,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/06f2c83ae26bb34645b2c64f4e3a0c3bc0762e75"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2fe9f6aa13d1df7d5c1812655d80bbc1b52e431a",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/2fe9f6aa13d1df7d5c1812655d80bbc1b52e431a"
+    },
+    {
+      "path": ".github/CODEOWNERS",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fec6fcaeb5d90f51248d5c7ba7dd02857e24688",
+      "size": 42,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/6fec6fcaeb5d90f51248d5c7ba7dd02857e24688"
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f9e4df9415b27bf27ae59542b7ce740c8a34f917",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/f9e4df9415b27bf27ae59542b7ce740c8a34f917"
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE/default.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3476e18fd9d8acdb3a0becf2b2721f8af41cc9ec",
+      "size": 960,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/3476e18fd9d8acdb3a0becf2b2721f8af41cc9ec"
+    },
+    {
+      "path": ".github/copy-pr-bot.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cfbdc7f05f17ca41bf53589524bb0f9564d1891",
+      "size": 59,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/4cfbdc7f05f17ca41bf53589524bb0f9564d1891"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0b5792b97f85f591084e53d849f3e3dc0e3bfb39",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/0b5792b97f85f591084e53d849f3e3dc0e3bfb39"
+    },
+    {
+      "path": ".github/workflows/doc.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60a2245173f802e5eefbdd951d36f09d07f8f471",
+      "size": 1675,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/60a2245173f802e5eefbdd951d36f09d07f8f471"
+    },
+    {
+      "path": ".github/workflows/lint.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd0824f3c3aee73f42025d031768e94f13b3b659",
+      "size": 1251,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/fd0824f3c3aee73f42025d031768e94f13b3b659"
+    },
+    {
+      "path": ".github/workflows/publish.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29de83ae0b554cc8caa4fa41ad79baa4dae4d311",
+      "size": 1228,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/29de83ae0b554cc8caa4fa41ad79baa4dae4d311"
+    },
+    {
+      "path": ".github/workflows/test-gpu.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fb8d757737cd85dcbf8758daf8179e5353d496c",
+      "size": 8561,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/6fb8d757737cd85dcbf8758daf8179e5353d496c"
+    },
+    {
+      "path": ".github/workflows/test.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79128cc434c9ff51bbbaa26a8f1685214ba3b7f4",
+      "size": 1982,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/79128cc434c9ff51bbbaa26a8f1685214ba3b7f4"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5763ae048812f545452d38c7f184720c18955b4",
+      "size": 4607,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/b5763ae048812f545452d38c7f184720c18955b4"
+    },
+    {
+      "path": ".pre-commit-config.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09c1f1d7a8448597a712ea2913134062f82ab594",
+      "size": 1848,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/09c1f1d7a8448597a712ea2913134062f82ab594"
+    },
+    {
+      "path": "AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e621e6a85beebbd73ddfda8d9b3c6b0576bc541",
+      "size": 10776,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/8e621e6a85beebbd73ddfda8d9b3c6b0576bc541"
+    },
+    {
+      "path": "CLAUDE.md",
+      "mode": "120000",
+      "type": "blob",
+      "sha": "47dc3e3d863cfb5727b87d785d09abf9743c0a72",
+      "size": 9,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec87c621d7e20f90471126cfef8a4844fc55a161",
+      "size": 3617,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/ec87c621d7e20f90471126cfef8a4844fc55a161"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9239ee3f604d890edc9613a4ecf2576396275aa7",
+      "size": 8516,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/9239ee3f604d890edc9613a4ecf2576396275aa7"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "001a3281169d6ade30cd1a44544029254ba490a8",
+      "size": 11432,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/001a3281169d6ade30cd1a44544029254ba490a8"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9cb2a48b8904027730c90487c9331b63c73df19a",
+      "size": 9061,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/9cb2a48b8904027730c90487c9331b63c73df19a"
+    },
+    {
+      "path": "SECURITY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "654bb7e1b06b67807f2f1d95cd20fb5527eedbd9",
+      "size": 1911,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/654bb7e1b06b67807f2f1d95cd20fb5527eedbd9"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7dac166b03468dcad2f7e83c5d940e9a2c2406a3",
+      "size": 4443,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/7dac166b03468dcad2f7e83c5d940e9a2c2406a3"
+    },
+    {
+      "path": "benchmark",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2fe1873a0948a9917363a664e1d3556f5e628603",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/2fe1873a0948a9917363a664e1d3556f5e628603"
+    },
+    {
+      "path": "benchmark/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f95a3988f009d3997b6ffcfef39047729f40ee1c",
+      "size": 956,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/f95a3988f009d3997b6ffcfef39047729f40ee1c"
+    },
+    {
+      "path": "benchmark/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d51c4fe1e08967768e21c6c1a0b22bcfbaa9f832",
+      "size": 138,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/d51c4fe1e08967768e21c6c1a0b22bcfbaa9f832"
+    },
+    {
+      "path": "benchmark/relational",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1a9e83f80894702ba6c00d8f4e184dc0ff27a76c",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/1a9e83f80894702ba6c00d8f4e184dc0ff27a76c"
+    },
+    {
+      "path": "benchmark/relational/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec016d79cbf8838a81d2b41e8437a275b39c8b45",
+      "size": 128,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/ec016d79cbf8838a81d2b41e8437a275b39c8b45"
+    },
+    {
+      "path": "benchmark/relational/relarena",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "15aecbc78dc361b7a4ea5c6da57897ab9847c515",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/15aecbc78dc361b7a4ea5c6da57897ab9847c515"
+    },
+    {
+      "path": "benchmark/relational/relarena/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "538e01775c3cd5aa1d3865d54e5aabcebe27dc95",
+      "size": 4114,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/538e01775c3cd5aa1d3865d54e5aabcebe27dc95"
+    },
+    {
+      "path": "benchmark/relational/relarena/kumo_relational.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca77b3fe4321462db0ac74c0c227c905d9aa63b1",
+      "size": 10236,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/ca77b3fe4321462db0ac74c0c227c905d9aa63b1"
+    },
+    {
+      "path": "benchmark/tabular",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a92029eb2b808e0130597bb4a3be55afa4ada9c2",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/a92029eb2b808e0130597bb4a3be55afa4ada9c2"
+    },
+    {
+      "path": "benchmark/tabular/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "332fb34324dcd988050ba301c0daee2446497b5f",
+      "size": 3580,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/332fb34324dcd988050ba301c0daee2446497b5f"
+    },
+    {
+      "path": "benchmark/tabular/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d51c4fe1e08967768e21c6c1a0b22bcfbaa9f832",
+      "size": 138,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/d51c4fe1e08967768e21c6c1a0b22bcfbaa9f832"
+    },
+    {
+      "path": "benchmark/tabular/beyondarena",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b78d2af35e28acf641d87ca9eb985d643caf3c77",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/b78d2af35e28acf641d87ca9eb985d643caf3c77"
+    },
+    {
+      "path": "benchmark/tabular/beyondarena/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d51c4fe1e08967768e21c6c1a0b22bcfbaa9f832",
+      "size": 138,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/d51c4fe1e08967768e21c6c1a0b22bcfbaa9f832"
+    },
+    {
+      "path": "benchmark/tabular/beyondarena/evaluate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93bc73dedd5ed33cf5cc20a2ad6ec1f6362da83f",
+      "size": 1995,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/93bc73dedd5ed33cf5cc20a2ad6ec1f6362da83f"
+    },
+    {
+      "path": "benchmark/tabular/beyondarena/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "173f0044bb2b9d51d631956611c805f32a2ad007",
+      "size": 3139,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/173f0044bb2b9d51d631956611c805f32a2ad007"
+    },
+    {
+      "path": "benchmark/tabular/finetune.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cffa1e88a45ba1df50008401806526013a931fd6",
+      "size": 7808,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/cffa1e88a45ba1df50008401806526013a931fd6"
+    },
+    {
+      "path": "benchmark/tabular/model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bcb8e3c6ca0e9976d25e683c5563a8d32e09ed51",
+      "size": 18304,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/bcb8e3c6ca0e9976d25e683c5563a8d32e09ed51"
+    },
+    {
+      "path": "benchmark/tabular/scoringbench",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4371bea5cad8954fd8ae0fce0cb12cadfcde5095",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/4371bea5cad8954fd8ae0fce0cb12cadfcde5095"
+    },
+    {
+      "path": "benchmark/tabular/scoringbench/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbf4d90b5793c8682df69f4b11d474033a0f4980",
+      "size": 2359,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/fbf4d90b5793c8682df69f4b11d474033a0f4980"
+    },
+    {
+      "path": "benchmark/tabular/scoringbench/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d51c4fe1e08967768e21c6c1a0b22bcfbaa9f832",
+      "size": 138,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/d51c4fe1e08967768e21c6c1a0b22bcfbaa9f832"
+    },
+    {
+      "path": "benchmark/tabular/scoringbench/evaluate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0cd57e49cb20352f887055482b9f4ef998296123",
+      "size": 3714,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/0cd57e49cb20352f887055482b9f4ef998296123"
+    },
+    {
+      "path": "benchmark/tabular/scoringbench/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8618b22a7fd99910c5c777d9c8ab8d82f897336",
+      "size": 5870,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/b8618b22a7fd99910c5c777d9c8ab8d82f897336"
+    },
+    {
+      "path": "benchmark/tabular/scoringbench/models.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de76496cbde67c7cbb2e8a437b29408462296387",
+      "size": 6654,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/de76496cbde67c7cbb2e8a437b29408462296387"
+    },
+    {
+      "path": "benchmark/tabular/tabarena",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "421c8455c13ec2644a05caa1673d6d44c8a65883",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/421c8455c13ec2644a05caa1673d6d44c8a65883"
+    },
+    {
+      "path": "benchmark/tabular/tabarena/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d51c4fe1e08967768e21c6c1a0b22bcfbaa9f832",
+      "size": 138,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/d51c4fe1e08967768e21c6c1a0b22bcfbaa9f832"
+    },
+    {
+      "path": "benchmark/tabular/tabarena/evaluate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cba53f8869297cb15d3a8d49521883586a4fb179",
+      "size": 1948,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/cba53f8869297cb15d3a8d49521883586a4fb179"
+    },
+    {
+      "path": "benchmark/tabular/tabarena/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "798d2cc6a19af163c62732956b30446b636ae6e1",
+      "size": 3158,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/798d2cc6a19af163c62732956b30446b636ae6e1"
+    },
+    {
+      "path": "benchmark/tabular/talent",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a92fb175bdd55d1538f60cc65cc77e5f956d8459",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/a92fb175bdd55d1538f60cc65cc77e5f956d8459"
+    },
+    {
+      "path": "benchmark/tabular/talent/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e490bb5e6a3055e8b8c85e38bea33ffc5257ec3",
+      "size": 2745,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/7e490bb5e6a3055e8b8c85e38bea33ffc5257ec3"
+    },
+    {
+      "path": "benchmark/tabular/talent/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d51c4fe1e08967768e21c6c1a0b22bcfbaa9f832",
+      "size": 138,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/d51c4fe1e08967768e21c6c1a0b22bcfbaa9f832"
+    },
+    {
+      "path": "benchmark/tabular/talent/evaluate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7fa2cb9b42ed7b9b0dae1a7a42137594352370e",
+      "size": 7240,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/b7fa2cb9b42ed7b9b0dae1a7a42137594352370e"
+    },
+    {
+      "path": "benchmark/tabular/talent/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c593a20cbb56d820ae50d03de5195dd57d302a57",
+      "size": 4657,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/c593a20cbb56d820ae50d03de5195dd57d302a57"
+    },
+    {
+      "path": "benchmark/tabular/talent/models.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "602a62ae39de2eeb54a7b28e6863d1a90059ce60",
+      "size": 15139,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/602a62ae39de2eeb54a7b28e6863d1a90059ce60"
+    },
+    {
+      "path": "benchmark/timeseries",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1cea2d615f02df9894a0f68ceabb2364e5793dd1",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/1cea2d615f02df9894a0f68ceabb2364e5793dd1"
+    },
+    {
+      "path": "benchmark/timeseries/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77073eb84e11f09b163b6793cb76270e21017ddf",
+      "size": 179,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/77073eb84e11f09b163b6793cb76270e21017ddf"
+    },
+    {
+      "path": "benchmark/timeseries/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d51c4fe1e08967768e21c6c1a0b22bcfbaa9f832",
+      "size": 138,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/d51c4fe1e08967768e21c6c1a0b22bcfbaa9f832"
+    },
+    {
+      "path": "benchmark/timeseries/fev_bench",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f639c853c840244cfa315957244b09a5e10ad9a0",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/f639c853c840244cfa315957244b09a5e10ad9a0"
+    },
+    {
+      "path": "benchmark/timeseries/fev_bench/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "658d9111cb7f0ebd53db9c95644eafceeb19e2a3",
+      "size": 1492,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/658d9111cb7f0ebd53db9c95644eafceeb19e2a3"
+    },
+    {
+      "path": "benchmark/timeseries/fev_bench/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a93993cec8569a31907852591fbccb8bb0b5e3b",
+      "size": 213,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/4a93993cec8569a31907852591fbccb8bb0b5e3b"
+    },
+    {
+      "path": "benchmark/timeseries/fev_bench/evaluate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2edd45e6ab115664dc8a2a12d2bfd426817d3639",
+      "size": 1339,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/2edd45e6ab115664dc8a2a12d2bfd426817d3639"
+    },
+    {
+      "path": "benchmark/timeseries/fev_bench/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "828c016da046afaabbf5cfb3e3ac14317f11be27",
+      "size": 2119,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/828c016da046afaabbf5cfb3e3ac14317f11be27"
+    },
+    {
+      "path": "benchmark/timeseries/fev_bench/predictor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d8ba0762a48203f3019b157ae73a81adacba1bc",
+      "size": 8421,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/6d8ba0762a48203f3019b157ae73a81adacba1bc"
+    },
+    {
+      "path": "benchmark/timeseries/gift_eval",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7cc15fd672816fdf03a004978d033c92231712ed",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/7cc15fd672816fdf03a004978d033c92231712ed"
+    },
+    {
+      "path": "benchmark/timeseries/gift_eval/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ef2833ce3e75ba351dc90b63af7746affbd3ee9",
+      "size": 1509,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/2ef2833ce3e75ba351dc90b63af7746affbd3ee9"
+    },
+    {
+      "path": "benchmark/timeseries/gift_eval/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "697d39861a9e2095443c719cb33f001072c43679",
+      "size": 278,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/697d39861a9e2095443c719cb33f001072c43679"
+    },
+    {
+      "path": "benchmark/timeseries/gift_eval/datasets.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1879d2619c98a8711b39975839cef7d6dc4b61e",
+      "size": 1976,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/c1879d2619c98a8711b39975839cef7d6dc4b61e"
+    },
+    {
+      "path": "benchmark/timeseries/gift_eval/evaluate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b981d19eac313885aa586ea300583572a145dee1",
+      "size": 1577,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/b981d19eac313885aa586ea300583572a145dee1"
+    },
+    {
+      "path": "benchmark/timeseries/gift_eval/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f2fd8d2fd30c3c6ffd1715cdc71032055824a57",
+      "size": 4160,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/3f2fd8d2fd30c3c6ffd1715cdc71032055824a57"
+    },
+    {
+      "path": "benchmark/timeseries/model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1b87ac5d41b6e656f8e0b5ad0ac3f79ad9beca2",
+      "size": 819,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/d1b87ac5d41b6e656f8e0b5ad0ac3f79ad9beca2"
+    },
+    {
+      "path": "benchmark/timeseries/predictor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c774326b6b47d3a029271596019896f7f8ac10f",
+      "size": 4795,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/7c774326b6b47d3a029271596019896f7f8ac10f"
+    },
+    {
+      "path": "benchmark/timeseries/time_bench",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "74002cb65a853c54541c3d822b92b6401591e9a9",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/74002cb65a853c54541c3d822b92b6401591e9a9"
+    },
+    {
+      "path": "benchmark/timeseries/time_bench/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52bf2a125319e0829b0155583475aeec3b5bd8bb",
+      "size": 1469,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/52bf2a125319e0829b0155583475aeec3b5bd8bb"
+    },
+    {
+      "path": "benchmark/timeseries/time_bench/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d51c4fe1e08967768e21c6c1a0b22bcfbaa9f832",
+      "size": 138,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/d51c4fe1e08967768e21c6c1a0b22bcfbaa9f832"
+    },
+    {
+      "path": "benchmark/timeseries/time_bench/evaluate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7943cf595f869a9c97ea1c14872678ed8af6c35",
+      "size": 2129,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/e7943cf595f869a9c97ea1c14872678ed8af6c35"
+    },
+    {
+      "path": "benchmark/timeseries/time_bench/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a80b776d5cc2fa54e9f1d6bb3edc67e92199c83",
+      "size": 3187,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/6a80b776d5cc2fa54e9f1d6bb3edc67e92199c83"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7e0d09db6eddc5b2a4d8f2fc11cc6aa84f4f45fe",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/7e0d09db6eddc5b2a4d8f2fc11cc6aa84f4f45fe"
+    },
+    {
+      "path": "docs/Makefile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ffb321d30948cbb64bca48e4bb15a12cfa5c7aa",
+      "size": 404,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/3ffb321d30948cbb64bca48e4bb15a12cfa5c7aa"
+    },
+    {
+      "path": "docs/source",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bcdef3f5c6e807adefe67c6d711c125024f20ca2",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/bcdef3f5c6e807adefe67c6d711c125024f20ca2"
+    },
+    {
+      "path": "docs/source/_static",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9eccd3e926e5130a45bc8ea8f157260faad3faea",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/9eccd3e926e5130a45bc8ea8f157260faad3faea"
+    },
+    {
+      "path": "docs/source/_static/custom.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfd2611c0061fc2c3c6aa50f0f4aec488ef7f0dc",
+      "size": 407,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/dfd2611c0061fc2c3c6aa50f0f4aec488ef7f0dc"
+    },
+    {
+      "path": "docs/source/_templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4ff54ae8af48656a8d6dd0c790a15caa3f0e29e0",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/4ff54ae8af48656a8d6dd0c790a15caa3f0e29e0"
+    },
+    {
+      "path": "docs/source/_templates/autosummary",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ccd531a414d8a93cedc35a4caac87e822200f644",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/ccd531a414d8a93cedc35a4caac87e822200f644"
+    },
+    {
+      "path": "docs/source/_templates/autosummary/class.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d1c2ceaf3104cf34d3450bfc2ea91b2ab65ee23",
+      "size": 235,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/0d1c2ceaf3104cf34d3450bfc2ea91b2ab65ee23"
+    },
+    {
+      "path": "docs/source/_templates/autosummary/function.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7dea81379a9914cf15e8a124bbe3986be2405569",
+      "size": 100,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/7dea81379a9914cf15e8a124bbe3986be2405569"
+    },
+    {
+      "path": "docs/source/_templates/autosummary/model_class.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6dcdc9ccaecc6ba6b428ceba576bcd4636c7898",
+      "size": 1463,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/b6dcdc9ccaecc6ba6b428ceba576bcd4636c7898"
+    },
+    {
+      "path": "docs/source/_templates/autosummary/processor_class.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bcbeb8d36046dd6dd6bb7b0c7a2053c6abee833f",
+      "size": 820,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/bcbeb8d36046dd6dd6bb7b0c7a2053c6abee833f"
+    },
+    {
+      "path": "docs/source/_templates/autosummary/tensor_class.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16dd3f1475cf1cab85a6106ddc23ffe80f772d25",
+      "size": 277,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/16dd3f1475cf1cab85a6106ddc23ffe80f772d25"
+    },
+    {
+      "path": "docs/source/_templates/partials",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "51fa918ad035965692dfd295d591653d0d565d69",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/51fa918ad035965692dfd295d591653d0d565d69"
+    },
+    {
+      "path": "docs/source/_templates/partials/site-foot.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "docs/source/api",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7a6e47b4574800799402bfa5c6f75695afde6a2f",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/7a6e47b4574800799402bfa5c6f75695afde6a2f"
+    },
+    {
+      "path": "docs/source/api/evaluation.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67a9d8fb128470f647e24efbf144bcd3c51d4ff3",
+      "size": 179,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/67a9d8fb128470f647e24efbf144bcd3c51d4ff3"
+    },
+    {
+      "path": "docs/source/api/explain.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5627be958c0d14188fc600479e59f81fa7da5c59",
+      "size": 167,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/5627be958c0d14188fc600479e59f81fa7da5c59"
+    },
+    {
+      "path": "docs/source/api/internal",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "136c1ab65e1d8c1c92014404ad22d0e22cb548d3",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/136c1ab65e1d8c1c92014404ad22d0e22cb548d3"
+    },
+    {
+      "path": "docs/source/api/internal/cache.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cdea2b69e61825034624647a2f78f17a2b52c3dc",
+      "size": 68,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/cdea2b69e61825034624647a2f78f17a2b52c3dc"
+    },
+    {
+      "path": "docs/source/api/internal/device_mixin.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "640f678f0db78b840bcd97c50eb8eb7f4e593bf2",
+      "size": 93,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/640f678f0db78b840bcd97c50eb8eb7f4e593bf2"
+    },
+    {
+      "path": "docs/source/api/internal/ensemble_table.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36af80b3b3973f60f6d2805eda6a31a3807b1854",
+      "size": 86,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/36af80b3b3973f60f6d2805eda6a31a3807b1854"
+    },
+    {
+      "path": "docs/source/api/internal/kv_cache_entry.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6119d048f71cca05068f3c5967a18e9acfdff91a",
+      "size": 89,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/6119d048f71cca05068f3c5967a18e9acfdff91a"
+    },
+    {
+      "path": "docs/source/api/internal/related_tables_schema.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f679f2df0bfe0bec1c66b8871340f3929fd5d436",
+      "size": 120,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/f679f2df0bfe0bec1c66b8871340f3929fd5d436"
+    },
+    {
+      "path": "docs/source/api/internal/relational_sampler_output.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc5c0a0c7b58f788c18895d9f18aa181b65f7abb",
+      "size": 135,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/cc5c0a0c7b58f788c18895d9f18aa181b65f7abb"
+    },
+    {
+      "path": "docs/source/api/internal/stype_config.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "313d73124265f7826b96b3226591252ec64de57f",
+      "size": 255,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/313d73124265f7826b96b3226591252ec64de57f"
+    },
+    {
+      "path": "docs/source/api/internal/table_schema.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fcbd8c78191a73ee363ec47977d1098e9652a0f0",
+      "size": 93,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/fcbd8c78191a73ee363ec47977d1098e9652a0f0"
+    },
+    {
+      "path": "docs/source/api/models.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a7b49bc259743c26d9fe450886fcf8bbd47b558",
+      "size": 2831,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/9a7b49bc259743c26d9fe450886fcf8bbd47b558"
+    },
+    {
+      "path": "docs/source/api/nn.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7473b0d7529314a64708ade08ee6ed0d5c83c926",
+      "size": 147,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/7473b0d7529314a64708ade08ee6ed0d5c83c926"
+    },
+    {
+      "path": "docs/source/api/processing.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60fd37cbaa02c70a7c7d71d7c00bc8a5d36bac57",
+      "size": 1837,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/60fd37cbaa02c70a7c7d71d7c00bc8a5d36bac57"
+    },
+    {
+      "path": "docs/source/api/relational.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0df64e125107da9c7294169523d1be489db6eab",
+      "size": 179,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/e0df64e125107da9c7294169523d1be489db6eab"
+    },
+    {
+      "path": "docs/source/api/sdm.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e074feeb7fdb8c13ee75010772ac3cb97803e914",
+      "size": 116,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/e074feeb7fdb8c13ee75010772ac3cb97803e914"
+    },
+    {
+      "path": "docs/source/api/tensor.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e01084d1b38597d34e388557b18308b186941544",
+      "size": 189,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/e01084d1b38597d34e388557b18308b186941544"
+    },
+    {
+      "path": "docs/source/conf.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b471dd8330dec9e399ffe6ae23ff8058a7a6cf5",
+      "size": 5476,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/6b471dd8330dec9e399ffe6ae23ff8058a7a6cf5"
+    },
+    {
+      "path": "docs/source/forecasting.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bdde01ed6943b0da142a4422f69bee24467a1789",
+      "size": 9062,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/bdde01ed6943b0da142a4422f69bee24467a1789"
+    },
+    {
+      "path": "docs/source/icl.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9e06193601e9142d018bde29fcfa8dcc2891be3",
+      "size": 15715,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/b9e06193601e9142d018bde29fcfa8dcc2891be3"
+    },
+    {
+      "path": "docs/source/images",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "99ae706b6346c1bb35e77dad9cfe5378619ec844",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/99ae706b6346c1bb35e77dad9cfe5378619ec844"
+    },
+    {
+      "path": "docs/source/images/ensemble_dark.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0cd2ae5376f2d5671c1c4b0ee05ce61f771cb64",
+      "size": 104432,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/b0cd2ae5376f2d5671c1c4b0ee05ce61f771cb64"
+    },
+    {
+      "path": "docs/source/images/ensemble_light.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "990b01ebf7a93530b14a2aae67e861684dc5746c",
+      "size": 104432,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/990b01ebf7a93530b14a2aae67e861684dc5746c"
+    },
+    {
+      "path": "docs/source/images/forecasting_dark.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f2b386f671a4584453b3b5e6414b62d0ce4565d",
+      "size": 52979,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/8f2b386f671a4584453b3b5e6414b62d0ce4565d"
+    },
+    {
+      "path": "docs/source/images/forecasting_light.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "182edce93a8123e3f374bb28cfe44dc7dff154d3",
+      "size": 52987,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/182edce93a8123e3f374bb28cfe44dc7dff154d3"
+    },
+    {
+      "path": "docs/source/images/graph_dark.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e90372ba16d45c937f044ac4d1766b3db9e2b786",
+      "size": 57688,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/e90372ba16d45c937f044ac4d1766b3db9e2b786"
+    },
+    {
+      "path": "docs/source/images/graph_light.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c8e50854f66bee847058fdfe55b1aafd94d2901",
+      "size": 57688,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/2c8e50854f66bee847058fdfe55b1aafd94d2901"
+    },
+    {
+      "path": "docs/source/images/kumo_anomaly_light.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe6501709600da032932335efb2dcd19bd488f7f",
+      "size": 64447,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/fe6501709600da032932335efb2dcd19bd488f7f"
+    },
+    {
+      "path": "docs/source/images/kumo_forecast_light.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7e73706ce3bdc6fd047c5dc5273ae41d74f76da",
+      "size": 112170,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/c7e73706ce3bdc6fd047c5dc5273ae41d74f76da"
+    },
+    {
+      "path": "docs/source/images/kumo_relational_dark.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9739fc0c8e0b4bcd61a0de4859de4e96d1ed9f1",
+      "size": 317516,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/b9739fc0c8e0b4bcd61a0de4859de4e96d1ed9f1"
+    },
+    {
+      "path": "docs/source/images/kumo_relational_light.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8650abcbcd4b2729f8c3557614b1b613636c12d0",
+      "size": 316585,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/8650abcbcd4b2729f8c3557614b1b613636c12d0"
+    },
+    {
+      "path": "docs/source/images/kumo_tabular.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6557e32b4ada70527a29d7fed0e8fe0f6be8046f",
+      "size": 404052,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/6557e32b4ada70527a29d7fed0e8fe0f6be8046f"
+    },
+    {
+      "path": "docs/source/images/logo_dark.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84708afd8c73bea011838bd3d4aa7f63486661ed",
+      "size": 19192,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/84708afd8c73bea011838bd3d4aa7f63486661ed"
+    },
+    {
+      "path": "docs/source/images/logo_light.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c731de739f189949782d0e40b1ec6ae849e542b3",
+      "size": 19228,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/c731de739f189949782d0e40b1ec6ae849e542b3"
+    },
+    {
+      "path": "docs/source/images/nanotabicl_dark.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c673300e30499f7982fffd6255aec02e544439b3",
+      "size": 82149,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/c673300e30499f7982fffd6255aec02e544439b3"
+    },
+    {
+      "path": "docs/source/images/nanotabicl_light.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e90d5d8a110cd4f5354fed1d928ec352ab445706",
+      "size": 82165,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/e90d5d8a110cd4f5354fed1d928ec352ab445706"
+    },
+    {
+      "path": "docs/source/images/nvidia.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7514d0ed39fb339000818cb7d91fafc9195aca23",
+      "size": 772,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/7514d0ed39fb339000818cb7d91fafc9195aca23"
+    },
+    {
+      "path": "docs/source/images/pipeline_dark.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4356ad9d5f29bb51124583a1f9fc6298acf3dd9",
+      "size": 426916,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/a4356ad9d5f29bb51124583a1f9fc6298acf3dd9"
+    },
+    {
+      "path": "docs/source/images/pipeline_light.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "384793c369fac132d1583f4d52fca0d1be4a642b",
+      "size": 426916,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/384793c369fac132d1583f4d52fca0d1be4a642b"
+    },
+    {
+      "path": "docs/source/images/tabfm_dark.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec74f7f68864276677edea6d935da7538cfaf339",
+      "size": 136057,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/ec74f7f68864276677edea6d935da7538cfaf339"
+    },
+    {
+      "path": "docs/source/images/tabfm_light.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98a37650f6b518b1e4741e6e57a9e6c14e3e5043",
+      "size": 136599,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/98a37650f6b518b1e4741e6e57a9e6c14e3e5043"
+    },
+    {
+      "path": "docs/source/images/tabicl_dark.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "795ebf5bc971ea07cea22677af7a4b9742b97187",
+      "size": 613377,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/795ebf5bc971ea07cea22677af7a4b9742b97187"
+    },
+    {
+      "path": "docs/source/images/tabicl_light.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ad8644cd9451cd2edfd5c05faa6dd47d9b2334b",
+      "size": 611939,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/6ad8644cd9451cd2edfd5c05faa6dd47d9b2334b"
+    },
+    {
+      "path": "docs/source/images/table_dark.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc1ff0b5aeb2db6d273ed260a08a587b52780dab",
+      "size": 213053,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/fc1ff0b5aeb2db6d273ed260a08a587b52780dab"
+    },
+    {
+      "path": "docs/source/images/table_light.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27e5f8c91c5931ff6755c59109f4d5750764fa96",
+      "size": 213053,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/27e5f8c91c5931ff6755c59109f4d5750764fa96"
+    },
+    {
+      "path": "docs/source/images/timesfm3_dark.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8828003af09a579c463fa3109aef1aed3b1aaa15",
+      "size": 859079,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/8828003af09a579c463fa3109aef1aed3b1aaa15"
+    },
+    {
+      "path": "docs/source/images/timesfm3_light.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9b7d18e1832a767960e9e7a76b150a25ecf12b1",
+      "size": 840730,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/a9b7d18e1832a767960e9e7a76b150a25ecf12b1"
+    },
+    {
+      "path": "docs/source/index.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61e3ef40b7f5dddf47d2806e60a7f5ce5876aeba",
+      "size": 659,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/61e3ef40b7f5dddf47d2806e60a7f5ce5876aeba"
+    },
+    {
+      "path": "docs/source/install.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e465eca870fe7a9d2d232114517a53ff0592f6b",
+      "size": 512,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/0e465eca870fe7a9d2d232114517a53ff0592f6b"
+    },
+    {
+      "path": "docs/source/nanotabicl.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e28116b6c5aa39a67f2353e5f61dc4c0bfbd1542",
+      "size": 12354,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/e28116b6c5aa39a67f2353e5f61dc4c0bfbd1542"
+    },
+    {
+      "path": "docs/source/nim.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d479aedcd6c810b4a5599d90c32d388ea7ae1c25",
+      "size": 4704,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/d479aedcd6c810b4a5599d90c32d388ea7ae1c25"
+    },
+    {
+      "path": "docs/source/overview.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68c35cbbdf98c45d0dc82f7bb9c6a4c60ec13d5c",
+      "size": 4691,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/68c35cbbdf98c45d0dc82f7bb9c6a4c60ec13d5c"
+    },
+    {
+      "path": "docs/source/processing.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4912702dd46e1435d019e535819f77fd21739c61",
+      "size": 7462,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/4912702dd46e1435d019e535819f77fd21739c61"
+    },
+    {
+      "path": "docs/source/tensor.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28715b39a1759d7db7ce0174b0302d61ad56d0fd",
+      "size": 8893,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/28715b39a1759d7db7ce0174b0302d61ad56d0fd"
+    },
+    {
+      "path": "examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a10fb4559962dcc6d6c0d4f1514fb3221e794667",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/a10fb4559962dcc6d6c0d4f1514fb3221e794667"
+    },
+    {
+      "path": "examples/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "467e72d4600b781788d64f9770fd57688ac437a7",
+      "size": 419,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/467e72d4600b781788d64f9770fd57688ac437a7"
+    },
+    {
+      "path": "examples/relational",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "62385d9bdaacfa539c12cec11ed3f2c53ad363bc",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/62385d9bdaacfa539c12cec11ed3f2c53ad363bc"
+    },
+    {
+      "path": "examples/relational/relbench",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0ee638dfc6cad4c3884b36a8fe727dd3b18c1385",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/0ee638dfc6cad4c3884b36a8fe727dd3b18c1385"
+    },
+    {
+      "path": "examples/relational/relbench/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "953ef92df02d809853373b7229cac29dfdbd526b",
+      "size": 3845,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/953ef92df02d809853373b7229cac29dfdbd526b"
+    },
+    {
+      "path": "examples/relational/relbench/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "722e32240f1990c57ff206e14cddead037e6cfb9",
+      "size": 11024,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/722e32240f1990c57ff206e14cddead037e6cfb9"
+    },
+    {
+      "path": "examples/relational/salt",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "13192ca3f8ebbf329578d1c546380d64e0ff70d7",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/13192ca3f8ebbf329578d1c546380d64e0ff70d7"
+    },
+    {
+      "path": "examples/relational/salt/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af378d81d2fd71ec4f8bb5d399f157b558858dbb",
+      "size": 2608,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/af378d81d2fd71ec4f8bb5d399f157b558858dbb"
+    },
+    {
+      "path": "examples/relational/salt/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58a73ba57b26231ba0b7d6c1fd2667aed7e62abd",
+      "size": 7002,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/58a73ba57b26231ba0b7d6c1fd2667aed7e62abd"
+    },
+    {
+      "path": "examples/tabular",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8485ca1c6da05f6f5f457bbfb34427538451d983",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/8485ca1c6da05f6f5f457bbfb34427538451d983"
+    },
+    {
+      "path": "examples/tabular/finetune.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "059b7e07a81409b61f832a6c51d3cb86ff575102",
+      "size": 5678,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/059b7e07a81409b61f832a6c51d3cb86ff575102"
+    },
+    {
+      "path": "examples/tabular/quickstart.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e465be5155e707891ffefe90d45160649827a70",
+      "size": 1716,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/2e465be5155e707891ffefe90d45160649827a70"
+    },
+    {
+      "path": "examples/tabular/text.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6486d0963907d5a87983987861e76055fe97eca6",
+      "size": 2298,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/6486d0963907d5a87983987861e76055fe97eca6"
+    },
+    {
+      "path": "examples/timeseries",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "785d132f210f2a85352193078595ed02992f4ef9",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/785d132f210f2a85352193078595ed02992f4ef9"
+    },
+    {
+      "path": "examples/timeseries/anomaly.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23d4b81c990c48ef9a718c54f898f0b02c439fd9",
+      "size": 896,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/23d4b81c990c48ef9a718c54f898f0b02c439fd9"
+    },
+    {
+      "path": "examples/timeseries/forecast.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a3e7bb60fa4593f197b6794f4305cc7cf8848b0",
+      "size": 3798,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/4a3e7bb60fa4593f197b6794f4305cc7cf8848b0"
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee24ad0381daf41894458837c72c0b4d5bc80b92",
+      "size": 6803,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/ee24ad0381daf41894458837c72c0b4d5bc80b92"
+    },
+    {
+      "path": "sdm",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d5954fa9b2b49c3e5339fbe9ceb16cc61e25a6e2",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/d5954fa9b2b49c3e5339fbe9ceb16cc61e25a6e2"
+    },
+    {
+      "path": "sdm/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0afc235a5d6de5f541ceaa62f67cd78f40a3f59e",
+      "size": 1423,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/0afc235a5d6de5f541ceaa62f67cd78f40a3f59e"
+    },
+    {
+      "path": "sdm/_constants.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0bea52bb30225d68d273f9844eb79f4c54a5202b",
+      "size": 236,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/0bea52bb30225d68d273f9844eb79f4c54a5202b"
+    },
+    {
+      "path": "sdm/_inference.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99843f11a2a4bb517db9f95737a2ba874e4ca953",
+      "size": 1381,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/99843f11a2a4bb517db9f95737a2ba874e4ca953"
+    },
+    {
+      "path": "sdm/_kernels",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ed7adc1d788c194e4624e96ab933a30f9f60153e",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/ed7adc1d788c194e4624e96ab933a30f9f60153e"
+    },
+    {
+      "path": "sdm/_kernels/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "863dc555ecd67d76794e08ebb2b06eef3c206629",
+      "size": 320,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/863dc555ecd67d76794e08ebb2b06eef3c206629"
+    },
+    {
+      "path": "sdm/_kernels/rmsnorm_cast.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e140249f7e5592e5a9f3f8fa5c60ffe65fc854c",
+      "size": 3052,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/5e140249f7e5592e5a9f3f8fa5c60ffe65fc854c"
+    },
+    {
+      "path": "sdm/_kernels/segment_multi_reduce.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ac21f1447223f43b763f9e7fce9c382b8b34b29",
+      "size": 3656,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/9ac21f1447223f43b763f9e7fce9c382b8b34b29"
+    },
+    {
+      "path": "sdm/_kernels/triton",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3712a49975f2cfe83c77a89128405866d6252752",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/3712a49975f2cfe83c77a89128405866d6252752"
+    },
+    {
+      "path": "sdm/_kernels/triton/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5447c527ba4895133315990c84e3a358390adb0",
+      "size": 247,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/e5447c527ba4895133315990c84e3a358390adb0"
+    },
+    {
+      "path": "sdm/_kernels/triton/rmsnorm_cast.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85e3ddf6cf9acc531bd79167ed23e518fe0cc72d",
+      "size": 4046,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/85e3ddf6cf9acc531bd79167ed23e518fe0cc72d"
+    },
+    {
+      "path": "sdm/_kernels/triton/segment_multi_reduce.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2bc862571d462bb901dcc51dd068f1963eaab77b",
+      "size": 5230,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/2bc862571d462bb901dcc51dd068f1963eaab77b"
+    },
+    {
+      "path": "sdm/_memory.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9688ce10f5bc6f3d28d813a6be4be3887609eb6",
+      "size": 2312,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/f9688ce10f5bc6f3d28d813a6be4be3887609eb6"
+    },
+    {
+      "path": "sdm/_warnings.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa85b52a721c6a01d29f0f5ad1f5ffabc51c1388",
+      "size": 738,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/fa85b52a721c6a01d29f0f5ad1f5ffabc51c1388"
+    },
+    {
+      "path": "sdm/cache.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59c6c0db06de6c1ba23c4966ed78b0fb70b3950e",
+      "size": 6364,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/59c6c0db06de6c1ba23c4966ed78b0fb70b3950e"
+    },
+    {
+      "path": "sdm/ensemble.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83fbbe14e94f3b08489fee4232ccbbe198912fd0",
+      "size": 17872,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/83fbbe14e94f3b08489fee4232ccbbe198912fd0"
+    },
+    {
+      "path": "sdm/evaluation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "af3144d95060ea5b321c7d9b6c258b051d5739d2",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/af3144d95060ea5b321c7d9b6c258b051d5739d2"
+    },
+    {
+      "path": "sdm/evaluation/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d3b78251ee8eca67165253b2ac04ee5b3c5356c",
+      "size": 306,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/7d3b78251ee8eca67165253b2ac04ee5b3c5356c"
+    },
+    {
+      "path": "sdm/evaluation/classification.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1e4d2010996cddf3987ec054445856f6e2ccf2b",
+      "size": 6937,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/c1e4d2010996cddf3987ec054445856f6e2ccf2b"
+    },
+    {
+      "path": "sdm/explain",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b0d412a97a62fc49351b3cb075712128d6f4139b",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/b0d412a97a62fc49351b3cb075712128d6f4139b"
+    },
+    {
+      "path": "sdm/explain/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b50bb0f51d0adb1c332b2fe453b68b036938baa",
+      "size": 350,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/2b50bb0f51d0adb1c332b2fe453b68b036938baa"
+    },
+    {
+      "path": "sdm/explain/base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01cb14689fd774ad70a67aacce6ab024f322baff",
+      "size": 3668,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/01cb14689fd774ad70a67aacce6ab024f322baff"
+    },
+    {
+      "path": "sdm/explain/gradient.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36bf7ef473a025eefcc4819b1a55f8540b137498",
+      "size": 5208,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/36bf7ef473a025eefcc4819b1a55f8540b137498"
+    },
+    {
+      "path": "sdm/models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9931fb7be0f7cfc836938bfb280b28844c2b62c0",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/9931fb7be0f7cfc836938bfb280b28844c2b62c0"
+    },
+    {
+      "path": "sdm/models/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30e914f36c26e06a0a8dd83ccc24039fe24d9cfe",
+      "size": 774,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/30e914f36c26e06a0a8dd83ccc24039fe24d9cfe"
+    },
+    {
+      "path": "sdm/models/_huggingface.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "468b8740de3fc6373a22fc0d667ca75ce6a6c6d5",
+      "size": 1981,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/468b8740de3fc6373a22fc0d667ca75ce6a6c6d5"
+    },
+    {
+      "path": "sdm/models/base",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d4497e88ab06d3f69d3d7edaca5bbd4d14498b7d",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/d4497e88ab06d3f69d3d7edaca5bbd4d14498b7d"
+    },
+    {
+      "path": "sdm/models/base/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5bce05a58a305f395e98316f003b1d8ff1ece670",
+      "size": 410,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/5bce05a58a305f395e98316f003b1d8ff1ece670"
+    },
+    {
+      "path": "sdm/models/base/callback.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d815b9bca4a3f537b9184b6a732415b4255da9c4",
+      "size": 2290,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/d815b9bca4a3f537b9184b6a732415b4255da9c4"
+    },
+    {
+      "path": "sdm/models/base/ecoc.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "901b61835e25be220ba5a3777e094ae92379efcd",
+      "size": 7748,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/901b61835e25be220ba5a3777e094ae92379efcd"
+    },
+    {
+      "path": "sdm/models/base/icl.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78734c8892010d991251c59c8824e256d2df6b89",
+      "size": 35860,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/78734c8892010d991251c59c8824e256d2df6b89"
+    },
+    {
+      "path": "sdm/models/base/model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b48d1ecfdfb821970ebe32ce8d7d22c01a45f1e",
+      "size": 5688,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/1b48d1ecfdfb821970ebe32ce8d7d22c01a45f1e"
+    },
+    {
+      "path": "sdm/models/kumo",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "50001f26c0f12c6ad02835fb71f5cb7931ee3f19",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/50001f26c0f12c6ad02835fb71f5cb7931ee3f19"
+    },
+    {
+      "path": "sdm/models/kumo/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17a53b7f7e09324088619c7b791c72e5cde30ab1",
+      "size": 555,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/17a53b7f7e09324088619c7b791c72e5cde30ab1"
+    },
+    {
+      "path": "sdm/models/kumo/relational",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "22569b43cfd14d846097240b8798fdf5df92a4df",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/22569b43cfd14d846097240b8798fdf5df92a4df"
+    },
+    {
+      "path": "sdm/models/kumo/relational/NOTICE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3d52530f92a8b6f1ef410e37b24f8b312aba647",
+      "size": 206,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/e3d52530f92a8b6f1ef410e37b24f8b312aba647"
+    },
+    {
+      "path": "sdm/models/kumo/relational/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e39b474fc695de085478e0757b0db141d8011af6",
+      "size": 260,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/e39b474fc695de085478e0757b0db141d8011af6"
+    },
+    {
+      "path": "sdm/models/kumo/relational/graph.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "618f991d6b407dc883a74e52e28ad0e2f4886776",
+      "size": 3392,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/618f991d6b407dc883a74e52e28ad0e2f4886776"
+    },
+    {
+      "path": "sdm/models/kumo/relational/invariant_gnn.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dde8da99233936051d26d5c6db340d02fc20d2f4",
+      "size": 3895,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/dde8da99233936051d26d5c6db340d02fc20d2f4"
+    },
+    {
+      "path": "sdm/models/kumo/relational/model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01160b4c5306de1e7bf44c777fb0c4c6f40211d0",
+      "size": 22576,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/01160b4c5306de1e7bf44c777fb0c4c6f40211d0"
+    },
+    {
+      "path": "sdm/models/kumo/relational/recipe.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bcc2d9e72fd6d0d1c7ab50e6e182db21d55e0272",
+      "size": 579,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/bcc2d9e72fd6d0d1c7ab50e6e182db21d55e0272"
+    },
+    {
+      "path": "sdm/models/kumo/relational/task.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7dd47cbb2b3d7bf6fcb0cb84da33c259bf97b27c",
+      "size": 3917,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/7dd47cbb2b3d7bf6fcb0cb84da33c259bf97b27c"
+    },
+    {
+      "path": "sdm/models/kumo/tabular",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3b27ace81f0c07fc6eba7f5419fd954e968309cd",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/3b27ace81f0c07fc6eba7f5419fd954e968309cd"
+    },
+    {
+      "path": "sdm/models/kumo/tabular/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b379efc38a36529b013a52b9561287ecc28e997a",
+      "size": 425,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/b379efc38a36529b013a52b9561287ecc28e997a"
+    },
+    {
+      "path": "sdm/models/kumo/tabular/batching.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a372eb03e691f420bbd6143400b3be2fe5fb8696",
+      "size": 4968,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/a372eb03e691f420bbd6143400b3be2fe5fb8696"
+    },
+    {
+      "path": "sdm/models/kumo/tabular/block.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4207cab3043021c28222494a22449d407e30ef74",
+      "size": 3175,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/4207cab3043021c28222494a22449d407e30ef74"
+    },
+    {
+      "path": "sdm/models/kumo/tabular/cell_embedding.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7529820b50e3d43c36f21a8bdc63729c72722373",
+      "size": 2590,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/7529820b50e3d43c36f21a8bdc63729c72722373"
+    },
+    {
+      "path": "sdm/models/kumo/tabular/icl.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efb75ff3f0ca88f8d006cddcb0bb7ed24c8468a1",
+      "size": 5391,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/efb75ff3f0ca88f8d006cddcb0bb7ed24c8468a1"
+    },
+    {
+      "path": "sdm/models/kumo/tabular/model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b946f963e357357e571f686e441142886f767a3b",
+      "size": 11614,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/b946f963e357357e571f686e441142886f767a3b"
+    },
+    {
+      "path": "sdm/models/kumo/tabular/recipe.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "504aab6a3d2af27c9eca4bcf5d76f28e93d2f0dc",
+      "size": 2245,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/504aab6a3d2af27c9eca4bcf5d76f28e93d2f0dc"
+    },
+    {
+      "path": "sdm/models/kumo/tabular/row_embedding.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6714c5ce5e8aa8e1993e7ec189756da81ccb3a81",
+      "size": 7611,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/6714c5ce5e8aa8e1993e7ec189756da81ccb3a81"
+    },
+    {
+      "path": "sdm/models/kumo/timeseries",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e35ee2fce0231e50221764e18d8870c946912b01",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/e35ee2fce0231e50221764e18d8870c946912b01"
+    },
+    {
+      "path": "sdm/models/kumo/timeseries/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ca084ba71200e42d7717ff5eba40406e015985e",
+      "size": 465,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/6ca084ba71200e42d7717ff5eba40406e015985e"
+    },
+    {
+      "path": "sdm/models/kumo/timeseries/anomaly",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1e98d6d9f029de4ddca21f863afcf0b2779f60c9",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/1e98d6d9f029de4ddca21f863afcf0b2779f60c9"
+    },
+    {
+      "path": "sdm/models/kumo/timeseries/anomaly/NOTICE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61ed20d3f2bdf88f7ae2c6c48314472fb65f9c78",
+      "size": 172,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/61ed20d3f2bdf88f7ae2c6c48314472fb65f9c78"
+    },
+    {
+      "path": "sdm/models/kumo/timeseries/anomaly/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4fb71b05c8b2d5065e9e5e5321e316e043cba77",
+      "size": 259,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/f4fb71b05c8b2d5065e9e5e5321e316e043cba77"
+    },
+    {
+      "path": "sdm/models/kumo/timeseries/anomaly/block.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "975e50468ef4436774ff5d49a8469a763082ef08",
+      "size": 6074,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/975e50468ef4436774ff5d49a8469a763082ef08"
+    },
+    {
+      "path": "sdm/models/kumo/timeseries/anomaly/ckpt.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "014c666483383aac7c884ffbd793bdfc754979b4",
+      "size": 896,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/014c666483383aac7c884ffbd793bdfc754979b4"
+    },
+    {
+      "path": "sdm/models/kumo/timeseries/anomaly/denoiser.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc69ce792f648a9e094a3b1a59edd5102969a6c0",
+      "size": 3628,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/dc69ce792f648a9e094a3b1a59edd5102969a6c0"
+    },
+    {
+      "path": "sdm/models/kumo/timeseries/anomaly/embedding.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9f154bc9a46a3b5bed5ffd39cde2b78f37f56c9",
+      "size": 6476,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/f9f154bc9a46a3b5bed5ffd39cde2b78f37f56c9"
+    },
+    {
+      "path": "sdm/models/kumo/timeseries/anomaly/model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e234b82a8c85f6e9a0e0cbe68c7a8c015281e78",
+      "size": 11896,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/5e234b82a8c85f6e9a0e0cbe68c7a8c015281e78"
+    },
+    {
+      "path": "sdm/models/kumo/timeseries/anomaly/noise_schedule.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e47f3880bb1b9fe084b0c7b8e88f93a554773fb4",
+      "size": 4329,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/e47f3880bb1b9fe084b0c7b8e88f93a554773fb4"
+    },
+    {
+      "path": "sdm/models/kumo/timeseries/anomaly/recipe.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27f040df01d9c963f7468531a434c8562b78ecbd",
+      "size": 440,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/27f040df01d9c963f7468531a434c8562b78ecbd"
+    },
+    {
+      "path": "sdm/models/kumo/timeseries/anomaly/sampling.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b35362d06b6d9d85c5d00e78d2ba4f5b0109a25",
+      "size": 5228,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/7b35362d06b6d9d85c5d00e78d2ba4f5b0109a25"
+    },
+    {
+      "path": "sdm/models/kumo/timeseries/anomaly/schedule.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7e1d983ac220ff227c271ca1c138ca2d8b7bf75",
+      "size": 3061,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/c7e1d983ac220ff227c271ca1c138ca2d8b7bf75"
+    },
+    {
+      "path": "sdm/models/kumo/timeseries/anomaly/threshold.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "072e19ed36b334c49e86f8744b4b1f3a9295c323",
+      "size": 8853,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/072e19ed36b334c49e86f8744b4b1f3a9295c323"
+    },
+    {
+      "path": "sdm/models/kumo/timeseries/forecast",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1401abf8fa97d533177b06949eef29e7e8686ec8",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/1401abf8fa97d533177b06949eef29e7e8686ec8"
+    },
+    {
+      "path": "sdm/models/kumo/timeseries/forecast/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a769a8ab99328a6b3e62e4215ba2ccd2fcf6e8b",
+      "size": 263,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/2a769a8ab99328a6b3e62e4215ba2ccd2fcf6e8b"
+    },
+    {
+      "path": "sdm/models/kumo/timeseries/forecast/block.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2bae299b94b91920acebbcb7d8a08aab8232909",
+      "size": 2661,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/e2bae299b94b91920acebbcb7d8a08aab8232909"
+    },
+    {
+      "path": "sdm/models/kumo/timeseries/forecast/ckpt.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cda65f060142f1aa3fd4416ea834f79af30eb203",
+      "size": 2197,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/cda65f060142f1aa3fd4416ea834f79af30eb203"
+    },
+    {
+      "path": "sdm/models/kumo/timeseries/forecast/cross.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a3509f5fa2c83a8da45787e9c8fc7e17a9661b9",
+      "size": 1521,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/9a3509f5fa2c83a8da45787e9c8fc7e17a9661b9"
+    },
+    {
+      "path": "sdm/models/kumo/timeseries/forecast/darr.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7eafb6975de7782b4777cbc9ac7f0d8b24450ab7",
+      "size": 1359,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/7eafb6975de7782b4777cbc9ac7f0d8b24450ab7"
+    },
+    {
+      "path": "sdm/models/kumo/timeseries/forecast/icl.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d40c706797b82200fa775347744ae6b2e5e9fcbd",
+      "size": 2889,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/d40c706797b82200fa775347744ae6b2e5e9fcbd"
+    },
+    {
+      "path": "sdm/models/kumo/timeseries/forecast/model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6e7d80bab2f1f0af7f7e1b061e1e58e00dde539",
+      "size": 13414,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/d6e7d80bab2f1f0af7f7e1b061e1e58e00dde539"
+    },
+    {
+      "path": "sdm/models/kumo/timeseries/forecast/recipe.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec8300b07fe600a327c4306e57560761ae64994a",
+      "size": 533,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/ec8300b07fe600a327c4306e57560761ae64994a"
+    },
+    {
+      "path": "sdm/models/tabfm",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e642b52ac4615685dc7af2f059a0f84bae21d996",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/e642b52ac4615685dc7af2f059a0f84bae21d996"
+    },
+    {
+      "path": "sdm/models/tabfm/LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "931856731d07dde4095582a579ff17c9a3384737",
+      "size": 11730,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/931856731d07dde4095582a579ff17c9a3384737"
+    },
+    {
+      "path": "sdm/models/tabfm/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a6fd6c206d4e510f88c036677c314f17f72eca8",
+      "size": 223,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/8a6fd6c206d4e510f88c036677c314f17f72eca8"
+    },
+    {
+      "path": "sdm/models/tabfm/block.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d01d6b5963ca3dae77947bb11f5930bc74421ecb",
+      "size": 3261,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/d01d6b5963ca3dae77947bb11f5930bc74421ecb"
+    },
+    {
+      "path": "sdm/models/tabfm/cell_embedding.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f82aea47628ee3fdd60f6c80b025b6600fbd93d",
+      "size": 9178,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/0f82aea47628ee3fdd60f6c80b025b6600fbd93d"
+    },
+    {
+      "path": "sdm/models/tabfm/ckpt.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "808797404817ebcfecbbbe6d5c98154bdf28046f",
+      "size": 8361,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/808797404817ebcfecbbbe6d5c98154bdf28046f"
+    },
+    {
+      "path": "sdm/models/tabfm/icl.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8efa1a7049c99e63eb73a04aea15c7eb25afe1c4",
+      "size": 3741,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/8efa1a7049c99e63eb73a04aea15c7eb25afe1c4"
+    },
+    {
+      "path": "sdm/models/tabfm/model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "391998128766cc531bf2dda606f9d6e29f02be69",
+      "size": 9694,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/391998128766cc531bf2dda606f9d6e29f02be69"
+    },
+    {
+      "path": "sdm/models/tabfm/recipe.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82d3994d9453e2d5cc77fcd74e033c9947ab601d",
+      "size": 1492,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/82d3994d9453e2d5cc77fcd74e033c9947ab601d"
+    },
+    {
+      "path": "sdm/models/tabfm/row_embedding.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d49a7d22d40544cf716385016db85c06124d6303",
+      "size": 8397,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/d49a7d22d40544cf716385016db85c06124d6303"
+    },
+    {
+      "path": "sdm/models/tabiclv2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ef3e1d6e7e5d7e04f70638e13d5e78814750da15",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/ef3e1d6e7e5d7e04f70638e13d5e78814750da15"
+    },
+    {
+      "path": "sdm/models/tabiclv2/LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1a4adb8f63bfa79ef24b3a5773174841d0727ce",
+      "size": 1690,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/f1a4adb8f63bfa79ef24b3a5773174841d0727ce"
+    },
+    {
+      "path": "sdm/models/tabiclv2/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1617b2dce33bce5f43343d70123100338c760d56",
+      "size": 235,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/1617b2dce33bce5f43343d70123100338c760d56"
+    },
+    {
+      "path": "sdm/models/tabiclv2/block.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea61cd28e6c8fdd6b589b852f0acce7ed000499c",
+      "size": 2535,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/ea61cd28e6c8fdd6b589b852f0acce7ed000499c"
+    },
+    {
+      "path": "sdm/models/tabiclv2/ckpt.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f77c8e152d4fdcb0659976546f18df80072a034e",
+      "size": 4835,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/f77c8e152d4fdcb0659976546f18df80072a034e"
+    },
+    {
+      "path": "sdm/models/tabiclv2/icl.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1903354d1b16bda96ce7d72c3bc61affda138b1",
+      "size": 14125,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/d1903354d1b16bda96ce7d72c3bc61affda138b1"
+    },
+    {
+      "path": "sdm/models/tabiclv2/model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30bdc5278474877d5f9205399e671ddb1d6a923e",
+      "size": 10755,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/30bdc5278474877d5f9205399e671ddb1d6a923e"
+    },
+    {
+      "path": "sdm/models/tabiclv2/recipe.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ede7e8b203ed99e23bef610ca1f3e231a39aebd5",
+      "size": 1510,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/ede7e8b203ed99e23bef610ca1f3e231a39aebd5"
+    },
+    {
+      "path": "sdm/models/tabiclv2/row_embedding.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "caf0ab3a4b51eb1870c278ae852c59dd97ff6685",
+      "size": 9173,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/caf0ab3a4b51eb1870c278ae852c59dd97ff6685"
+    },
+    {
+      "path": "sdm/models/timesfm3",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "17fe33cece89b4689ded60b775a90d3a478c59db",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/17fe33cece89b4689ded60b775a90d3a478c59db"
+    },
+    {
+      "path": "sdm/models/timesfm3/LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e7ced78eedb86bcb8e70d0bf0b89cb3738bf452",
+      "size": 11752,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/8e7ced78eedb86bcb8e70d0bf0b89cb3738bf452"
+    },
+    {
+      "path": "sdm/models/timesfm3/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbed6111ba11027f299e12b5916e00d24b887048",
+      "size": 234,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/cbed6111ba11027f299e12b5916e00d24b887048"
+    },
+    {
+      "path": "sdm/models/timesfm3/block.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbfa658f0af1408239fd3957f3fa8ad0244144ce",
+      "size": 4318,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/fbfa658f0af1408239fd3957f3fa8ad0244144ce"
+    },
+    {
+      "path": "sdm/models/timesfm3/ckpt.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "063626baa3127a016eb94e52ae449f3eb9aa60ab",
+      "size": 3057,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/063626baa3127a016eb94e52ae449f3eb9aa60ab"
+    },
+    {
+      "path": "sdm/models/timesfm3/icl.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d51b2524531a28f0f90e920b61f34a9fc3f48cea",
+      "size": 3744,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/d51b2524531a28f0f90e920b61f34a9fc3f48cea"
+    },
+    {
+      "path": "sdm/models/timesfm3/model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29dd0a85a49d7bd5250e7eade1ad4a85a10db3f8",
+      "size": 13870,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/29dd0a85a49d7bd5250e7eade1ad4a85a10db3f8"
+    },
+    {
+      "path": "sdm/models/timesfm3/recipe.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a0659ee4e166e5e7f2a0f0262c9711fe50e8504",
+      "size": 1079,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/0a0659ee4e166e5e7f2a0f0262c9711fe50e8504"
+    },
+    {
+      "path": "sdm/models/timesfm3/util.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3b004769c68e8537194d9d96f84e841433e922a",
+      "size": 5876,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/c3b004769c68e8537194d9d96f84e841433e922a"
+    },
+    {
+      "path": "sdm/models/timestral",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "27e136551d0e2aa15773c448045074ee6b2f7462",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/27e136551d0e2aa15773c448045074ee6b2f7462"
+    },
+    {
+      "path": "sdm/models/timestral/LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88e0185f07225f6a51237e1fe5ad8e81f364babc",
+      "size": 11467,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/88e0185f07225f6a51237e1fe5ad8e81f364babc"
+    },
+    {
+      "path": "sdm/models/timestral/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94822d579d186656d38c5c2750edcd250ed849d2",
+      "size": 170,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/94822d579d186656d38c5c2750edcd250ed849d2"
+    },
+    {
+      "path": "sdm/models/timestral/block.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b34752aae995e201af4cf6bcbc0826085ee88e64",
+      "size": 2649,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/b34752aae995e201af4cf6bcbc0826085ee88e64"
+    },
+    {
+      "path": "sdm/models/timestral/icl.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87935d891036dc16e15dcf95e4840650e162e54b",
+      "size": 2897,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/87935d891036dc16e15dcf95e4840650e162e54b"
+    },
+    {
+      "path": "sdm/nn",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c779882ece5413b5464fcab6543e06d5d31ea236",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/c779882ece5413b5464fcab6543e06d5d31ea236"
+    },
+    {
+      "path": "sdm/nn/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b10072f067d1333d38ffdc40c1025474355ea746",
+      "size": 907,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/b10072f067d1333d38ffdc40c1025474355ea746"
+    },
+    {
+      "path": "sdm/nn/_buffer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38e07bc6c55a16148c13e46daf3a7662a61a66c1",
+      "size": 3002,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/38e07bc6c55a16148c13e46daf3a7662a61a66c1"
+    },
+    {
+      "path": "sdm/nn/attention.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f58aaca4882cc30859a0b4226cc76da937b9eda0",
+      "size": 36669,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/f58aaca4882cc30859a0b4226cc76da937b9eda0"
+    },
+    {
+      "path": "sdm/nn/glu.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "847fa83566628a392ecac801e170b786ae8f5c9a",
+      "size": 2486,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/847fa83566628a392ecac801e170b786ae8f5c9a"
+    },
+    {
+      "path": "sdm/nn/linear.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cce1e1a2d1c383c92941e458a86c33ece389c920",
+      "size": 1307,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/cce1e1a2d1c383c92941e458a86c33ece389c920"
+    },
+    {
+      "path": "sdm/nn/revin.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc3562816330d74f4e19727df06b947aeb7e095a",
+      "size": 3287,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/dc3562816330d74f4e19727df06b947aeb7e095a"
+    },
+    {
+      "path": "sdm/nn/rms_norm.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee72bedccef940a93c0725b0dd52c2592e4033c3",
+      "size": 2234,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/ee72bedccef940a93c0725b0dd52c2592e4033c3"
+    },
+    {
+      "path": "sdm/nn/rope.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "857eb417183031f26e236a3541bcafe59a519786",
+      "size": 4105,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/857eb417183031f26e236a3541bcafe59a519786"
+    },
+    {
+      "path": "sdm/nn/scaling.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4084b5a74f7319ad7bda3107aeb53490af519601",
+      "size": 8759,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/4084b5a74f7319ad7bda3107aeb53490af519601"
+    },
+    {
+      "path": "sdm/nn/set_transformer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9247d48af26f8c48b7d829b37db9b8ace666aaa8",
+      "size": 6276,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/9247d48af26f8c48b7d829b37db9b8ace666aaa8"
+    },
+    {
+      "path": "sdm/nn/sinusoidal.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "531530eccd3ba0c6511cd35eaa1ca7f313d501b1",
+      "size": 1422,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/531530eccd3ba0c6511cd35eaa1ca7f313d501b1"
+    },
+    {
+      "path": "sdm/nn/softplus.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfe399618c321b47376b5c1080b45486d0bd3a73",
+      "size": 2086,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/dfe399618c321b47376b5c1080b45486d0bd3a73"
+    },
+    {
+      "path": "sdm/processing",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "746af527dc9195f1d2e4dede689d77b6febbee2d",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/746af527dc9195f1d2e4dede689d77b6febbee2d"
+    },
+    {
+      "path": "sdm/processing/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91230c732ef24acf793c8bcaa5e20223a7ea17f6",
+      "size": 2444,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/91230c732ef24acf793c8bcaa5e20223a7ea17f6"
+    },
+    {
+      "path": "sdm/processing/base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13df1d08c62a84198936c9c36e7e09af171207b8",
+      "size": 8785,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/13df1d08c62a84198936c9c36e7e09af171207b8"
+    },
+    {
+      "path": "sdm/processing/categorical",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "34a8166ab26a279da98089243972ffa6c3654588",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/34a8166ab26a279da98089243972ffa6c3654588"
+    },
+    {
+      "path": "sdm/processing/categorical/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5aae2dd6c784ad82bbb14b26fea189681a88360e",
+      "size": 536,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/5aae2dd6c784ad82bbb14b26fea189681a88360e"
+    },
+    {
+      "path": "sdm/processing/categorical/_categorical.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd70622158ea8a62fa89403503a2f66109d1bc10",
+      "size": 2234,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/dd70622158ea8a62fa89403503a2f66109d1bc10"
+    },
+    {
+      "path": "sdm/processing/categorical/align.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a4cbcf924d20a69da63930c3f743beeb4e1178d",
+      "size": 22556,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/3a4cbcf924d20a69da63930c3f743beeb4e1178d"
+    },
+    {
+      "path": "sdm/processing/categorical/count.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2adf1b88f04dca71c4d142266f3a9e55ee147c49",
+      "size": 4777,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/2adf1b88f04dca71c4d142266f3a9e55ee147c49"
+    },
+    {
+      "path": "sdm/processing/categorical/impute.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b25fc14b2013be43629194b36c49fb38fbf57e9",
+      "size": 3907,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/2b25fc14b2013be43629194b36c49fb38fbf57e9"
+    },
+    {
+      "path": "sdm/processing/categorical/shuffle.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22cf4f31d8d2b1307d96fcb1e283776fbce3d8c1",
+      "size": 7995,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/22cf4f31d8d2b1307d96fcb1e283776fbce3d8c1"
+    },
+    {
+      "path": "sdm/processing/common",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "40989da79ba2d8966929c8d432682bf0ae026fad",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/40989da79ba2d8966929c8d432682bf0ae026fad"
+    },
+    {
+      "path": "sdm/processing/common/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6944eacbb2c386c5f730f41081f75804a434aebd",
+      "size": 1080,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/6944eacbb2c386c5f730f41081f75804a434aebd"
+    },
+    {
+      "path": "sdm/processing/common/callable.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4427b78028f43b21e69881eb4914d4d9912b48db",
+      "size": 900,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/4427b78028f43b21e69881eb4914d4d9912b48db"
+    },
+    {
+      "path": "sdm/processing/common/choice.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a38445269082fec2dde1f29d6b893cfaa7cf4a29",
+      "size": 6418,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/a38445269082fec2dde1f29d6b893cfaa7cf4a29"
+    },
+    {
+      "path": "sdm/processing/common/drop.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49be559476b499dc08ba615d063e7feb8e4654de",
+      "size": 975,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/49be559476b499dc08ba615d063e7feb8e4654de"
+    },
+    {
+      "path": "sdm/processing/common/ensemble.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e06e215413e0a5ffd40a86659e6e4a612177ea36",
+      "size": 7218,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/e06e215413e0a5ffd40a86659e6e4a612177ea36"
+    },
+    {
+      "path": "sdm/processing/common/identity.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23136a9ac2ee10cd24ca88660c8a4bf100415ce5",
+      "size": 544,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/23136a9ac2ee10cd24ca88660c8a4bf100415ce5"
+    },
+    {
+      "path": "sdm/processing/common/select.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90475e0a6d2af5202f3897a70c8f7c4cb049ccc7",
+      "size": 4129,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/90475e0a6d2af5202f3897a70c8f7c4cb049ccc7"
+    },
+    {
+      "path": "sdm/processing/common/sequential.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec929e8207f099a25f7223719328b074914f0876",
+      "size": 4821,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/ec929e8207f099a25f7223719328b074914f0876"
+    },
+    {
+      "path": "sdm/processing/common/shuffle.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15d93f7b10393431ab8c54f8a94cfc8e4a4270e5",
+      "size": 7210,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/15d93f7b10393431ab8c54f8a94cfc8e4a4270e5"
+    },
+    {
+      "path": "sdm/processing/common/stype.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47dd78b8a222e184b7348d26f34ed887318e52c3",
+      "size": 7214,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/47dd78b8a222e184b7348d26f34ed887318e52c3"
+    },
+    {
+      "path": "sdm/processing/common/table.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ced21cadfe58bb3aea88c7496bd6ebcc8f6f675a",
+      "size": 3945,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/ced21cadfe58bb3aea88c7496bd6ebcc8f6f675a"
+    },
+    {
+      "path": "sdm/processing/common/task.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6bbc439c86c8bd3678763187cf3d2a507b19226",
+      "size": 4202,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/a6bbc439c86c8bd3678763187cf3d2a507b19226"
+    },
+    {
+      "path": "sdm/processing/common/to_numerical.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b95b32e9de0f470675015c4bc44a712e92a1220",
+      "size": 2059,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/1b95b32e9de0f470675015c4bc44a712e92a1220"
+    },
+    {
+      "path": "sdm/processing/datetime",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9bdbdb0f15f4e51886173f2cbc351fcf20a53718",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/9bdbdb0f15f4e51886173f2cbc351fcf20a53718"
+    },
+    {
+      "path": "sdm/processing/datetime/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48c4e0f44ecd39b4706c8a85cc2dc8f54d1357c7",
+      "size": 277,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/48c4e0f44ecd39b4706c8a85cc2dc8f54d1357c7"
+    },
+    {
+      "path": "sdm/processing/datetime/calendar.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "611c55439c544110b231aaee894a0ede6b9ac688",
+      "size": 6708,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/611c55439c544110b231aaee894a0ede6b9ac688"
+    },
+    {
+      "path": "sdm/processing/ensemble.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ece89286e272c37c8fdbb6de59d057db8af34fe",
+      "size": 6791,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/9ece89286e272c37c8fdbb6de59d057db8af34fe"
+    },
+    {
+      "path": "sdm/processing/execution.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d832dddb8b7afcae8147583f738e987d6b1386f3",
+      "size": 18842,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/d832dddb8b7afcae8147583f738e987d6b1386f3"
+    },
+    {
+      "path": "sdm/processing/numerical",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8a8c8e489fc9ba7b92152edc26ce90fd2b3eb6b6",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/8a8c8e489fc9ba7b92152edc26ce90fd2b3eb6b6"
+    },
+    {
+      "path": "sdm/processing/numerical/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "673cfff32a21204a8cf15451aceb664eefc562e6",
+      "size": 1579,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/673cfff32a21204a8cf15451aceb664eefc562e6"
+    },
+    {
+      "path": "sdm/processing/numerical/_stats.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26c83bf4c4376a080696d88ee6b19784a26be09b",
+      "size": 849,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/26c83bf4c4376a080696d88ee6b19784a26be09b"
+    },
+    {
+      "path": "sdm/processing/numerical/cast.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a32cdc81f287048125684df2eeb470f617250ae",
+      "size": 1103,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/4a32cdc81f287048125684df2eeb470f617250ae"
+    },
+    {
+      "path": "sdm/processing/numerical/clip.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51b12d632dc24fc9f7b301950e21dd26b01a6de7",
+      "size": 3188,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/51b12d632dc24fc9f7b301950e21dd26b01a6de7"
+    },
+    {
+      "path": "sdm/processing/numerical/constant.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3da99604ca7e515b1994f8f09a8b0abfbd1b7824",
+      "size": 8566,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/3da99604ca7e515b1994f8f09a8b0abfbd1b7824"
+    },
+    {
+      "path": "sdm/processing/numerical/detrend.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3d8eaaacf2357919a24634473d3ab715f0e961d",
+      "size": 4900,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/a3d8eaaacf2357919a24634473d3ab715f0e961d"
+    },
+    {
+      "path": "sdm/processing/numerical/flip_sign.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57cec8958c88a95f9ff1c2b6d6a959f1586cb644",
+      "size": 2765,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/57cec8958c88a95f9ff1c2b6d6a959f1586cb644"
+    },
+    {
+      "path": "sdm/processing/numerical/impute.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01e486692da2fff3a1d4c13ea763e01bd8ebddf1",
+      "size": 1682,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/01e486692da2fff3a1d4c13ea763e01bd8ebddf1"
+    },
+    {
+      "path": "sdm/processing/numerical/interpolate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66bd4dc4808ec428711f804bf1d212329ffada95",
+      "size": 5357,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/66bd4dc4808ec428711f804bf1d212329ffada95"
+    },
+    {
+      "path": "sdm/processing/numerical/min_max_scale.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19150934596a4b78a557519ba5cb43ea112971c1",
+      "size": 1746,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/19150934596a4b78a557519ba5cb43ea112971c1"
+    },
+    {
+      "path": "sdm/processing/numerical/pca.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fee8df35103ad551b61ed51de7123c916369b917",
+      "size": 2081,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/fee8df35103ad551b61ed51de7123c916369b917"
+    },
+    {
+      "path": "sdm/processing/numerical/power.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa7709daeeba2bb297dc4876f94d389116277582",
+      "size": 11211,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/aa7709daeeba2bb297dc4876f94d389116277582"
+    },
+    {
+      "path": "sdm/processing/numerical/quantile.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9c276fc1bcc4c224d13e7f7c212a8e175414b37",
+      "size": 10527,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/e9c276fc1bcc4c224d13e7f7c212a8e175414b37"
+    },
+    {
+      "path": "sdm/processing/numerical/quantile_clip.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8f64775a44fe2482ec3cff348260292fd9d30f5",
+      "size": 2071,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/f8f64775a44fe2482ec3cff348260292fd9d30f5"
+    },
+    {
+      "path": "sdm/processing/numerical/random_projection.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ad600422aef2138bba276643fa4edc005052c7e",
+      "size": 2740,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/2ad600422aef2138bba276643fa4edc005052c7e"
+    },
+    {
+      "path": "sdm/processing/numerical/rank_gaussian.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd95a19eb0544e6a9defcdeacb200201f2a70d74",
+      "size": 7187,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/fd95a19eb0544e6a9defcdeacb200201f2a70d74"
+    },
+    {
+      "path": "sdm/processing/numerical/robust_scale.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5edc2ff83a31a3ca91e100197a386dfa1075a922",
+      "size": 3364,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/5edc2ff83a31a3ca91e100197a386dfa1075a922"
+    },
+    {
+      "path": "sdm/processing/numerical/sigma_clip.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d633cfe64d665c6ee4cbe627168cbb9cef22eba3",
+      "size": 5032,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/d633cfe64d665c6ee4cbe627168cbb9cef22eba3"
+    },
+    {
+      "path": "sdm/processing/numerical/standardize.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a03c7b3808575570bcd506603fe7b9c8778aef96",
+      "size": 3040,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/a03c7b3808575570bcd506603fe7b9c8778aef96"
+    },
+    {
+      "path": "sdm/processing/numerical/warp.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3e679f3b3d68948dee1b78c9de7ca9580d9a34a",
+      "size": 3350,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/d3e679f3b3d68948dee1b78c9de7ca9580d9a34a"
+    },
+    {
+      "path": "sdm/processing/output",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e27d823dacc066729f40392c436b7421e5c1a7af",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/e27d823dacc066729f40392c436b7421e5c1a7af"
+    },
+    {
+      "path": "sdm/processing/output/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4609a3ade518ecde56937215da0c9e9a17b8d671",
+      "size": 496,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/4609a3ade518ecde56937215da0c9e9a17b8d671"
+    },
+    {
+      "path": "sdm/processing/output/clip.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6885376105e0283d0778d90e36c4c04a07aea18c",
+      "size": 1500,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/6885376105e0283d0778d90e36c4c04a07aea18c"
+    },
+    {
+      "path": "sdm/processing/output/reduce.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f513fbde114807a45fe126b2d5907a9ebaf31b7",
+      "size": 2719,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/1f513fbde114807a45fe126b2d5907a9ebaf31b7"
+    },
+    {
+      "path": "sdm/processing/output/softmax.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3305e4b182110f59a1594b8e31bfc64173b963b6",
+      "size": 1503,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/3305e4b182110f59a1594b8e31bfc64173b963b6"
+    },
+    {
+      "path": "sdm/processing/output/sort.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9990936f5d1f2fd354f2abe68bdd31280fdbc184",
+      "size": 1403,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/9990936f5d1f2fd354f2abe68bdd31280fdbc184"
+    },
+    {
+      "path": "sdm/processing/recipe.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7aa903da483a91ec3507711743a63ba24a1f77e",
+      "size": 6699,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/f7aa903da483a91ec3507711743a63ba24a1f77e"
+    },
+    {
+      "path": "sdm/processing/series.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29c0c24ae70286a62e3795b6f38a86d7fe5e1edb",
+      "size": 491,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/29c0c24ae70286a62e3795b6f38a86d7fe5e1edb"
+    },
+    {
+      "path": "sdm/processing/target.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "caa401958ba123ca42b7c4ad7e0b1feb75ecd6b0",
+      "size": 443,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/caa401958ba123ca42b7c4ad7e0b1feb75ecd6b0"
+    },
+    {
+      "path": "sdm/processing/text",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "279e54b664b09a72fbdc64e81b51cc2cc2cb4f5e",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/279e54b664b09a72fbdc64e81b51cc2cc2cb4f5e"
+    },
+    {
+      "path": "sdm/processing/text/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "779842b00f31dbb1dc1b7c4db393c286a6686189",
+      "size": 335,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/779842b00f31dbb1dc1b7c4db393c286a6686189"
+    },
+    {
+      "path": "sdm/processing/text/sentence_transformer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5248bee5f17c995f8d8f833850c76e221f67aaf7",
+      "size": 16461,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/5248bee5f17c995f8d8f833850c76e221f67aaf7"
+    },
+    {
+      "path": "sdm/processing/text/tfidf.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8c6852038b8fa9598500804fa1bbb8a82e77199",
+      "size": 17536,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/f8c6852038b8fa9598500804fa1bbb8a82e77199"
+    },
+    {
+      "path": "sdm/relational",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "83f01c45336581d09fbcd299e61449689274da27",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/83f01c45336581d09fbcd299e61449689274da27"
+    },
+    {
+      "path": "sdm/relational/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "490058340f6eac5dcd06407dea1b206229302245",
+      "size": 463,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/490058340f6eac5dcd06407dea1b206229302245"
+    },
+    {
+      "path": "sdm/relational/backend",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7108f1c377ae9245f8fc01fd2587f9db3bfa8aa4",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/7108f1c377ae9245f8fc01fd2587f9db3bfa8aa4"
+    },
+    {
+      "path": "sdm/relational/backend/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34d6c8326e778ebe67908964518c33abb5309c0e",
+      "size": 417,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/34d6c8326e778ebe67908964518c33abb5309c0e"
+    },
+    {
+      "path": "sdm/relational/backend/_cugraph.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41627ab67a327f6ee0b41385ffc78a4b6098f5be",
+      "size": 19116,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/41627ab67a327f6ee0b41385ffc78a4b6098f5be"
+    },
+    {
+      "path": "sdm/relational/backend/_pyg_lib.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17876ddc22313bf3bdd703bea4f61c20a651bf9d",
+      "size": 6464,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/17876ddc22313bf3bdd703bea4f61c20a651bf9d"
+    },
+    {
+      "path": "sdm/relational/data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef8fad6b8aec6f5037dc266c7bb382bd11c8a2c8",
+      "size": 13403,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/ef8fad6b8aec6f5037dc266c7bb382bd11c8a2c8"
+    },
+    {
+      "path": "sdm/relational/join.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e3c1360878d9b96e9ab004cca651ea6e7edad96",
+      "size": 5514,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/9e3c1360878d9b96e9ab004cca651ea6e7edad96"
+    },
+    {
+      "path": "sdm/relational/sampler.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3b18391eaba34947c5b41f37470a8599a49b2e2",
+      "size": 9231,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/c3b18391eaba34947c5b41f37470a8599a49b2e2"
+    },
+    {
+      "path": "sdm/relational/task.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3568836c888031e4ab11769031497037f8350ca7",
+      "size": 15341,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/3568836c888031e4ab11769031497037f8350ca7"
+    },
+    {
+      "path": "sdm/stype.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40e80dc7deee661b01019607426f4d10d42c2ed1",
+      "size": 14324,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/40e80dc7deee661b01019607426f4d10d42c2ed1"
+    },
+    {
+      "path": "sdm/task.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81236e2f82dc71d4ec4b522b411bc393daa99829",
+      "size": 1486,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/81236e2f82dc71d4ec4b522b411bc393daa99829"
+    },
+    {
+      "path": "sdm/tensor",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7f6d5d168337956cd49e76f1229f7710eb802efc",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/7f6d5d168337956cd49e76f1229f7710eb802efc"
+    },
+    {
+      "path": "sdm/tensor/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37fc9410f950f2c872d4e2b0cf407b99de93072d",
+      "size": 592,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/37fc9410f950f2c872d4e2b0cf407b99de93072d"
+    },
+    {
+      "path": "sdm/tensor/categorical.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f7e56d24988f9d3d507537b07243f6b66ef5f81",
+      "size": 32940,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/2f7e56d24988f9d3d507537b07243f6b66ef5f81"
+    },
+    {
+      "path": "sdm/tensor/columnar.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1a18da813610692b27374951766930134ddfdf9",
+      "size": 37693,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/c1a18da813610692b27374951766930134ddfdf9"
+    },
+    {
+      "path": "sdm/tensor/io",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0df8634bf25910fb5a52371814fbeed42a8db972",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/0df8634bf25910fb5a52371814fbeed42a8db972"
+    },
+    {
+      "path": "sdm/tensor/io/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf97389d328158824f72c225d9466afeb322fe35",
+      "size": 538,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/cf97389d328158824f72c225d9466afeb322fe35"
+    },
+    {
+      "path": "sdm/tensor/io/arrow.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46ca4556ac458c076180023ba51700817669fae8",
+      "size": 3625,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/46ca4556ac458c076180023ba51700817669fae8"
+    },
+    {
+      "path": "sdm/tensor/io/cudf.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a710fed348771631b5e505d440d374a1fad4c24b",
+      "size": 1382,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/a710fed348771631b5e505d440d374a1fad4c24b"
+    },
+    {
+      "path": "sdm/tensor/mixin.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78f91cf6ec9009e51f04e06bbb08718a7d0434b0",
+      "size": 4149,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/78f91cf6ec9009e51f04e06bbb08718a7d0434b0"
+    },
+    {
+      "path": "sdm/tensor/nullable.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc51c8ec256472726816f5a7a22a59e2f7a49d4f",
+      "size": 28379,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/fc51c8ec256472726816f5a7a22a59e2f7a49d4f"
+    },
+    {
+      "path": "sdm/tensor/string.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d3d4e7ac083ac4e060acfc7caf43bb373af48a9",
+      "size": 18309,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/6d3d4e7ac083ac4e060acfc7caf43bb373af48a9"
+    },
+    {
+      "path": "sdm/tensor/table.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "996fc8b0e60a6189ea37b106999835650dea54d8",
+      "size": 71935,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/996fc8b0e60a6189ea37b106999835650dea54d8"
+    },
+    {
+      "path": "sdm/tensor/var_len.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fae8102ef237099bdb44d50e74428992e1f93ac3",
+      "size": 48276,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/fae8102ef237099bdb44d50e74428992e1f93ac3"
+    },
+    {
+      "path": "sdm/testing",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "02aa4d903c5e65277811d5bf70d3f421de5da297",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/02aa4d903c5e65277811d5bf70d3f421de5da297"
+    },
+    {
+      "path": "sdm/testing/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ead8c76714eb5f3cf8b77f8ddc98f4e6bbe8859",
+      "size": 325,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/4ead8c76714eb5f3cf8b77f8ddc98f4e6bbe8859"
+    },
+    {
+      "path": "sdm/testing/decorators.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea4c983bb1cbc0e00f6e6ddd553349cb065bd7f9",
+      "size": 1555,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/ea4c983bb1cbc0e00f6e6ddd553349cb065bd7f9"
+    },
+    {
+      "path": "sdm/testing/memory.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4aea0411f790d8aa2c9e444b90cd42ae4b1c2f33",
+      "size": 2991,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/4aea0411f790d8aa2c9e444b90cd42ae4b1c2f33"
+    },
+    {
+      "path": "test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "51cc815223d65a242f41c47e9951e395d1554242",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/51cc815223d65a242f41c47e9951e395d1554242"
+    },
+    {
+      "path": "test/_kernels",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3878c1810922fa206be2049ea73b3a2ae6f8ccde",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/3878c1810922fa206be2049ea73b3a2ae6f8ccde"
+    },
+    {
+      "path": "test/_kernels/test_rmsnorm_cast.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "976645bc9205b7e1bf1be9c5180cfa1ad8d9462c",
+      "size": 5762,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/976645bc9205b7e1bf1be9c5180cfa1ad8d9462c"
+    },
+    {
+      "path": "test/_kernels/test_segment_multi_reduce.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5997102c3a41b92805bcc9049b2008131f058cd0",
+      "size": 11250,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/5997102c3a41b92805bcc9049b2008131f058cd0"
+    },
+    {
+      "path": "test/conftest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "561ab8d0026c851a609bd2e131aee5f9b00a8516",
+      "size": 4538,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/561ab8d0026c851a609bd2e131aee5f9b00a8516"
+    },
+    {
+      "path": "test/docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b32821ff04a3c87aa6b33539a8f24715d9068488",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/b32821ff04a3c87aa6b33539a8f24715d9068488"
+    },
+    {
+      "path": "test/docs/test_nanotabicl.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "619c5709b43028b738d1dc63f8af5b1a93ba3530",
+      "size": 661,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/619c5709b43028b738d1dc63f8af5b1a93ba3530"
+    },
+    {
+      "path": "test/evaluation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "da0ee2dcaaa023e97eb4d324d93413b8c3d30705",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/da0ee2dcaaa023e97eb4d324d93413b8c3d30705"
+    },
+    {
+      "path": "test/evaluation/test_classification.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68e93d008f0494a2ba209a2fea934caa5080333f",
+      "size": 1725,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/68e93d008f0494a2ba209a2fea934caa5080333f"
+    },
+    {
+      "path": "test/explain",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "830f7b64ef648fd05fd4f857670db842464d3c9f",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/830f7b64ef648fd05fd4f857670db842464d3c9f"
+    },
+    {
+      "path": "test/explain/test_base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4dc0a3a26fb63db28ed3dcd2d733b3a459521017",
+      "size": 1486,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/4dc0a3a26fb63db28ed3dcd2d733b3a459521017"
+    },
+    {
+      "path": "test/explain/test_gradient.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13bc7f812ed59ce1709556eb49ffa06224839e61",
+      "size": 4477,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/13bc7f812ed59ce1709556eb49ffa06224839e61"
+    },
+    {
+      "path": "test/models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e5d249ae29be666d5b0490a1d4a69d3a3363701a",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/e5d249ae29be666d5b0490a1d4a69d3a3363701a"
+    },
+    {
+      "path": "test/models/base",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6098de216a079e421355f1a5ee3e51818a4eb21f",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/6098de216a079e421355f1a5ee3e51818a4eb21f"
+    },
+    {
+      "path": "test/models/base/test_ecoc.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e812c6cd9e03793478aa71b6c6116e9a4d4bff75",
+      "size": 3859,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/e812c6cd9e03793478aa71b6c6116e9a4d4bff75"
+    },
+    {
+      "path": "test/models/base/test_icl.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e78844108ed417d2b334ae4d26dc1ac6efbbfc20",
+      "size": 24682,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/e78844108ed417d2b334ae4d26dc1ac6efbbfc20"
+    },
+    {
+      "path": "test/models/kumo",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d6be4b904b438b7d15e2b503098137102a3fdc28",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/d6be4b904b438b7d15e2b503098137102a3fdc28"
+    },
+    {
+      "path": "test/models/kumo/relational",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f79137aca2428884b65123e400e2eb6514d70be3",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/f79137aca2428884b65123e400e2eb6514d70be3"
+    },
+    {
+      "path": "test/models/kumo/relational/test_model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a39f698e60ed8867d4834369fe167dbe9c80fe6c",
+      "size": 9769,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/a39f698e60ed8867d4834369fe167dbe9c80fe6c"
+    },
+    {
+      "path": "test/models/kumo/tabular",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7f8a790dd183e983251d622e13133a48b8205aba",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/7f8a790dd183e983251d622e13133a48b8205aba"
+    },
+    {
+      "path": "test/models/kumo/tabular/test_batching.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e59212e60f3c6218d525cc14734335090a6c1f1",
+      "size": 2627,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/0e59212e60f3c6218d525cc14734335090a6c1f1"
+    },
+    {
+      "path": "test/models/kumo/tabular/test_block.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1df0c858d829e8c88c61063db327361f4f9d0d52",
+      "size": 2621,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/1df0c858d829e8c88c61063db327361f4f9d0d52"
+    },
+    {
+      "path": "test/models/kumo/tabular/test_cell_embedding.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20a63ce1efe020f3576c11df728f0275ca42542f",
+      "size": 4181,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/20a63ce1efe020f3576c11df728f0275ca42542f"
+    },
+    {
+      "path": "test/models/kumo/tabular/test_icl.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e47e85a1c7cdc7568ddde00add4700d74bf2d88",
+      "size": 2235,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/6e47e85a1c7cdc7568ddde00add4700d74bf2d88"
+    },
+    {
+      "path": "test/models/kumo/tabular/test_model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3836ab78d3b70838d50c4b4a7ff66873dfe3a2b9",
+      "size": 11879,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/3836ab78d3b70838d50c4b4a7ff66873dfe3a2b9"
+    },
+    {
+      "path": "test/models/kumo/tabular/test_recipe.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b09ca9440ef0753aab9a21ac9c142d131b12198",
+      "size": 5096,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/9b09ca9440ef0753aab9a21ac9c142d131b12198"
+    },
+    {
+      "path": "test/models/kumo/tabular/test_row_embedding.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29fa0380e3f0fe110bd2eead5944eea52c6f2416",
+      "size": 1412,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/29fa0380e3f0fe110bd2eead5944eea52c6f2416"
+    },
+    {
+      "path": "test/models/kumo/timeseries",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "599713e5cca6086e25e4fbdc9b540f14f4df9fe6",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/599713e5cca6086e25e4fbdc9b540f14f4df9fe6"
+    },
+    {
+      "path": "test/models/kumo/timeseries/anomaly",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0771a0aaa1d76e66f30cd0b28111324e1ccf602e",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/0771a0aaa1d76e66f30cd0b28111324e1ccf602e"
+    },
+    {
+      "path": "test/models/kumo/timeseries/anomaly/test_block.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92347cd8820853f8d7a0dd878e8ef116374a941d",
+      "size": 5689,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/92347cd8820853f8d7a0dd878e8ef116374a941d"
+    },
+    {
+      "path": "test/models/kumo/timeseries/anomaly/test_denoiser.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bed3cadf758f381d67b63710479d2cc41b6dc09f",
+      "size": 1195,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/bed3cadf758f381d67b63710479d2cc41b6dc09f"
+    },
+    {
+      "path": "test/models/kumo/timeseries/anomaly/test_embedding.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "805d890460bc60b2ac520761fdc85cb1a7d6d3f9",
+      "size": 2495,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/805d890460bc60b2ac520761fdc85cb1a7d6d3f9"
+    },
+    {
+      "path": "test/models/kumo/timeseries/anomaly/test_model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e1c6c71e63269c8fd4dadaa39beb64502ff6ce5",
+      "size": 849,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/6e1c6c71e63269c8fd4dadaa39beb64502ff6ce5"
+    },
+    {
+      "path": "test/models/kumo/timeseries/anomaly/test_noise_schedule.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5cfb867ccbf40b67f753045ce0f221519aa820ad",
+      "size": 4621,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/5cfb867ccbf40b67f753045ce0f221519aa820ad"
+    },
+    {
+      "path": "test/models/kumo/timeseries/anomaly/test_sampling.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c7276f0280861ba3336a73d484bd189d4ccaaab",
+      "size": 2650,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/9c7276f0280861ba3336a73d484bd189d4ccaaab"
+    },
+    {
+      "path": "test/models/kumo/timeseries/anomaly/test_schedule.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21e67ee870efd9cdea0ac6e08409079d3375d0ab",
+      "size": 3329,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/21e67ee870efd9cdea0ac6e08409079d3375d0ab"
+    },
+    {
+      "path": "test/models/kumo/timeseries/anomaly/test_side_embedding.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76961164ef5a2b59afe15a490dd18af0ef1aa069",
+      "size": 3674,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/76961164ef5a2b59afe15a490dd18af0ef1aa069"
+    },
+    {
+      "path": "test/models/kumo/timeseries/anomaly/test_threshold.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "700dc5d300130e30f64b36ebec289cce26758c92",
+      "size": 748,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/700dc5d300130e30f64b36ebec289cce26758c92"
+    },
+    {
+      "path": "test/models/kumo/timeseries/forecast",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a8e5a5aaf79ecc6083ebf94e7caec39ba64f2d40",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/a8e5a5aaf79ecc6083ebf94e7caec39ba64f2d40"
+    },
+    {
+      "path": "test/models/kumo/timeseries/forecast/test_cross.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75866969f5181cae0f736b2b9f6b5ddf4e94cfb4",
+      "size": 782,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/75866969f5181cae0f736b2b9f6b5ddf4e94cfb4"
+    },
+    {
+      "path": "test/models/kumo/timeseries/forecast/test_icl.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13dbae5f3a9c084d5526ff3e03d42279b3c1d521",
+      "size": 934,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/13dbae5f3a9c084d5526ff3e03d42279b3c1d521"
+    },
+    {
+      "path": "test/models/kumo/timeseries/forecast/test_model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79390666a343549c32e392cc910bb2fdaa7e8aa3",
+      "size": 1853,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/79390666a343549c32e392cc910bb2fdaa7e8aa3"
+    },
+    {
+      "path": "test/models/tabfm",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8442490f069bfa5ae544c6e60a36878a62693553",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/8442490f069bfa5ae544c6e60a36878a62693553"
+    },
+    {
+      "path": "test/models/tabfm/test_cell_embedding.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03aba4cbead50ddc240acd472c5a96592810b713",
+      "size": 2990,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/03aba4cbead50ddc240acd472c5a96592810b713"
+    },
+    {
+      "path": "test/models/tabfm/test_model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "850a686ea564f3139ebc4df0229ec9283274779a",
+      "size": 2981,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/850a686ea564f3139ebc4df0229ec9283274779a"
+    },
+    {
+      "path": "test/models/tabiclv2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "111a2647e0229b3cf247b7b056be1f15890fdb30",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/111a2647e0229b3cf247b7b056be1f15890fdb30"
+    },
+    {
+      "path": "test/models/tabiclv2/test_icl.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "917630f0db570fac89de293115e850ca9be52f1f",
+      "size": 8193,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/917630f0db570fac89de293115e850ca9be52f1f"
+    },
+    {
+      "path": "test/models/tabiclv2/test_model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e33cd6dcf104d94d0b7332724df5b2d01b5db5d6",
+      "size": 10087,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/e33cd6dcf104d94d0b7332724df5b2d01b5db5d6"
+    },
+    {
+      "path": "test/models/timesfm3",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f7edcfbb7cb14a532519e011b9262e8ed25c1b76",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/f7edcfbb7cb14a532519e011b9262e8ed25c1b76"
+    },
+    {
+      "path": "test/models/timesfm3/test_block.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbebd0b640b5e027fd31d9af1c0b9eb240415e27",
+      "size": 492,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/cbebd0b640b5e027fd31d9af1c0b9eb240415e27"
+    },
+    {
+      "path": "test/models/timesfm3/test_icl.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40df5c707707b1df13a1eb807f15e2cebeb52530",
+      "size": 809,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/40df5c707707b1df13a1eb807f15e2cebeb52530"
+    },
+    {
+      "path": "test/models/timesfm3/test_model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b944ecc8c9a017de41f14fcac7da74c97b5ff1d3",
+      "size": 1129,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/b944ecc8c9a017de41f14fcac7da74c97b5ff1d3"
+    },
+    {
+      "path": "test/models/timesfm3/test_util.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53efca311e8924443e2a23c66207f660b2064d8f",
+      "size": 3479,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/53efca311e8924443e2a23c66207f660b2064d8f"
+    },
+    {
+      "path": "test/models/timestral",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5051f743ae1d29e72b04e764e915e82f4abe6eac",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/5051f743ae1d29e72b04e764e915e82f4abe6eac"
+    },
+    {
+      "path": "test/models/timestral/test_icl.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "136140316f2c1d37cfb0244f283e171f0fa5cdd2",
+      "size": 840,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/136140316f2c1d37cfb0244f283e171f0fa5cdd2"
+    },
+    {
+      "path": "test/nn",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3e0468bc77a2d8ed821fe22f0b1c02279e3112ba",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/3e0468bc77a2d8ed821fe22f0b1c02279e3112ba"
+    },
+    {
+      "path": "test/nn/test_attention.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83d43f82d19f0d8a0869116386ce07194388ddfa",
+      "size": 22208,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/83d43f82d19f0d8a0869116386ce07194388ddfa"
+    },
+    {
+      "path": "test/nn/test_buffer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba8f6093abd15c1ca2eada9c937f7998ebb34f1a",
+      "size": 4073,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/ba8f6093abd15c1ca2eada9c937f7998ebb34f1a"
+    },
+    {
+      "path": "test/nn/test_compile.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d61f15a4368ccf43fa0ab0395bbed54c06492d7d",
+      "size": 9283,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/d61f15a4368ccf43fa0ab0395bbed54c06492d7d"
+    },
+    {
+      "path": "test/nn/test_glu.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f56a415398ab9b3bd7dd0ecfc68d7ed7086742ac",
+      "size": 459,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/f56a415398ab9b3bd7dd0ecfc68d7ed7086742ac"
+    },
+    {
+      "path": "test/nn/test_linear.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e968597be5ab9df9de589095b09c8e4d49decc5",
+      "size": 703,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/2e968597be5ab9df9de589095b09c8e4d49decc5"
+    },
+    {
+      "path": "test/nn/test_revin.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c70585c70c9d0144411c696ecb82fa824b4b62e",
+      "size": 832,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/6c70585c70c9d0144411c696ecb82fa824b4b62e"
+    },
+    {
+      "path": "test/nn/test_rms_norm.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28cc6b1b435f4988944af6895116d07518abf8a5",
+      "size": 4609,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/28cc6b1b435f4988944af6895116d07518abf8a5"
+    },
+    {
+      "path": "test/nn/test_rope.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6485fcb43979739df61b0d55220061b5735754a7",
+      "size": 2354,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/6485fcb43979739df61b0d55220061b5735754a7"
+    },
+    {
+      "path": "test/nn/test_scaling.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eeb84fb76c95d792a9a3bfe98ff86bb90e344b7d",
+      "size": 2539,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/eeb84fb76c95d792a9a3bfe98ff86bb90e344b7d"
+    },
+    {
+      "path": "test/nn/test_set_transformer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fee0217e8783b404b6946a98ba9162f16e193fa4",
+      "size": 5398,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/fee0217e8783b404b6946a98ba9162f16e193fa4"
+    },
+    {
+      "path": "test/nn/test_sinusoidal.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef0b7acd551f83a2f0f02bb706b3a96be9107450",
+      "size": 725,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/ef0b7acd551f83a2f0f02bb706b3a96be9107450"
+    },
+    {
+      "path": "test/processing",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "774c395143e6c497231807d4e38e5dfe3e406200",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/774c395143e6c497231807d4e38e5dfe3e406200"
+    },
+    {
+      "path": "test/processing/categorical",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2af59b5650d646a1b3db915e2dbbda87c3b85244",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/2af59b5650d646a1b3db915e2dbbda87c3b85244"
+    },
+    {
+      "path": "test/processing/categorical/test_align.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52cf0a6b95630aefbc341437072bf167283b5afb",
+      "size": 16017,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/52cf0a6b95630aefbc341437072bf167283b5afb"
+    },
+    {
+      "path": "test/processing/categorical/test_count.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "493b9faad083bc4c17e043dfb52446b610a9f398",
+      "size": 4783,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/493b9faad083bc4c17e043dfb52446b610a9f398"
+    },
+    {
+      "path": "test/processing/categorical/test_impute.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e875703806f5a447767a613f267b0e0d11ebc9a0",
+      "size": 4593,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/e875703806f5a447767a613f267b0e0d11ebc9a0"
+    },
+    {
+      "path": "test/processing/categorical/test_shuffle.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b05948a6479cca4238147566da8e810d610c5153",
+      "size": 7123,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/b05948a6479cca4238147566da8e810d610c5153"
+    },
+    {
+      "path": "test/processing/common",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c62bc0971fd52b5d34783c2447012e0b11605f0a",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/c62bc0971fd52b5d34783c2447012e0b11605f0a"
+    },
+    {
+      "path": "test/processing/common/test_choice.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aeec54426f4b2c5ac47d166597adffc37c3f8ef2",
+      "size": 7380,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/aeec54426f4b2c5ac47d166597adffc37c3f8ef2"
+    },
+    {
+      "path": "test/processing/common/test_drop.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5669d419e078e8418fd1bf989240f88804b714c0",
+      "size": 1164,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/5669d419e078e8418fd1bf989240f88804b714c0"
+    },
+    {
+      "path": "test/processing/common/test_identity.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5dd5658d8d1d63c74d21f3d49a28926c93d7f20e",
+      "size": 945,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/5dd5658d8d1d63c74d21f3d49a28926c93d7f20e"
+    },
+    {
+      "path": "test/processing/common/test_select.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a701f727820f6ef2faf73f1221cdf6237541df7",
+      "size": 1556,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/3a701f727820f6ef2faf73f1221cdf6237541df7"
+    },
+    {
+      "path": "test/processing/common/test_sequential.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfaa507da83af957a8751003753db0a11027e2e5",
+      "size": 6766,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/cfaa507da83af957a8751003753db0a11027e2e5"
+    },
+    {
+      "path": "test/processing/common/test_shuffle.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c601d641ce1917960f4324a2b4710fe53064c1f",
+      "size": 4962,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/4c601d641ce1917960f4324a2b4710fe53064c1f"
+    },
+    {
+      "path": "test/processing/common/test_stype.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0025b40307c8f290332a552a799f8e2d0b60f8fe",
+      "size": 6189,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/0025b40307c8f290332a552a799f8e2d0b60f8fe"
+    },
+    {
+      "path": "test/processing/common/test_table.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a32fd8c93c904373322c07d54d7248585e6653b",
+      "size": 1530,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/1a32fd8c93c904373322c07d54d7248585e6653b"
+    },
+    {
+      "path": "test/processing/common/test_task.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f81cf0a3d0b424996b511af846bf58627bbfdf5d",
+      "size": 2753,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/f81cf0a3d0b424996b511af846bf58627bbfdf5d"
+    },
+    {
+      "path": "test/processing/common/test_to_numerical.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c9d5fbcadb0010ef63ddf7f5b2f5dea4c5462cb",
+      "size": 2417,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/7c9d5fbcadb0010ef63ddf7f5b2f5dea4c5462cb"
+    },
+    {
+      "path": "test/processing/datetime",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c98de7ab938dce371517eb1a6d21d179857208be",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/c98de7ab938dce371517eb1a6d21d179857208be"
+    },
+    {
+      "path": "test/processing/datetime/test_calendar.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24275e43a44bb7849b613bcff45015e93c922acb",
+      "size": 2140,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/24275e43a44bb7849b613bcff45015e93c922acb"
+    },
+    {
+      "path": "test/processing/numerical",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2e93656b593e48bbc745ca8ff01fbdb82e48e6aa",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/2e93656b593e48bbc745ca8ff01fbdb82e48e6aa"
+    },
+    {
+      "path": "test/processing/numerical/test_cast.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea622849212b5814585bd5495af57148ee146bcc",
+      "size": 946,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/ea622849212b5814585bd5495af57148ee146bcc"
+    },
+    {
+      "path": "test/processing/numerical/test_clip.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f131a1ec128de7d914e2359493cafa94f4ee6247",
+      "size": 2818,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/f131a1ec128de7d914e2359493cafa94f4ee6247"
+    },
+    {
+      "path": "test/processing/numerical/test_constant.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95340d0006d6ee95d9f28906735b03d4e170f14e",
+      "size": 4558,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/95340d0006d6ee95d9f28906735b03d4e170f14e"
+    },
+    {
+      "path": "test/processing/numerical/test_detrend.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "010abfefe2ca0492d63a39f58262fd1288f6e7de",
+      "size": 2328,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/010abfefe2ca0492d63a39f58262fd1288f6e7de"
+    },
+    {
+      "path": "test/processing/numerical/test_flip_sign.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f71b9f0921c30fc7728f8c6175b1a13d3d4b28e",
+      "size": 1687,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/0f71b9f0921c30fc7728f8c6175b1a13d3d4b28e"
+    },
+    {
+      "path": "test/processing/numerical/test_impute.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3435b8ede6201c6b5ddd4b8a6cc4ac2e5fa54900",
+      "size": 2322,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/3435b8ede6201c6b5ddd4b8a6cc4ac2e5fa54900"
+    },
+    {
+      "path": "test/processing/numerical/test_interpolate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88bf4fd4b9d15dd138a2b00b0b033d09562fc6f0",
+      "size": 2386,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/88bf4fd4b9d15dd138a2b00b0b033d09562fc6f0"
+    },
+    {
+      "path": "test/processing/numerical/test_min_max_scale.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "984b784afce1f818a6d0905817302c7427fcc110",
+      "size": 902,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/984b784afce1f818a6d0905817302c7427fcc110"
+    },
+    {
+      "path": "test/processing/numerical/test_pca.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "964c727285af68f9e0c415d89d0549a71cb75b61",
+      "size": 1325,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/964c727285af68f9e0c415d89d0549a71cb75b61"
+    },
+    {
+      "path": "test/processing/numerical/test_power.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97920a953bf627314b1f0b31e157546073f12167",
+      "size": 12619,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/97920a953bf627314b1f0b31e157546073f12167"
+    },
+    {
+      "path": "test/processing/numerical/test_quantile.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "853535da25324dfe9b914285c716d3c227f3b52d",
+      "size": 7903,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/853535da25324dfe9b914285c716d3c227f3b52d"
+    },
+    {
+      "path": "test/processing/numerical/test_quantile_clip.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60f33ce1363548340e0271f6265dd61700922cbf",
+      "size": 3333,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/60f33ce1363548340e0271f6265dd61700922cbf"
+    },
+    {
+      "path": "test/processing/numerical/test_random_projection.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52a358f44d6fb575e3d32b504cc5bdbdd1b1c8ad",
+      "size": 976,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/52a358f44d6fb575e3d32b504cc5bdbdd1b1c8ad"
+    },
+    {
+      "path": "test/processing/numerical/test_rank_gaussian.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2eedb2cb421d838c0bf79bf48c21897d47a3470f",
+      "size": 10231,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/2eedb2cb421d838c0bf79bf48c21897d47a3470f"
+    },
+    {
+      "path": "test/processing/numerical/test_robust_scale.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "191dfd8d6f717dcc910d81a852089bd3e95140fd",
+      "size": 5844,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/191dfd8d6f717dcc910d81a852089bd3e95140fd"
+    },
+    {
+      "path": "test/processing/numerical/test_sigma_clip.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8056d77e719353d9900d5bc4a6849f2ffb670ac9",
+      "size": 5779,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/8056d77e719353d9900d5bc4a6849f2ffb670ac9"
+    },
+    {
+      "path": "test/processing/numerical/test_standardize.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "744da9b86a059a964995bd9daf1dddb11371128f",
+      "size": 5358,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/744da9b86a059a964995bd9daf1dddb11371128f"
+    },
+    {
+      "path": "test/processing/numerical/test_warp.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ea2976d185ec27924c9bfac199f0b45b38e1f9e",
+      "size": 682,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/7ea2976d185ec27924c9bfac199f0b45b38e1f9e"
+    },
+    {
+      "path": "test/processing/output",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7dd6201b8a8341d37162a970e545174e46db6f30",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/7dd6201b8a8341d37162a970e545174e46db6f30"
+    },
+    {
+      "path": "test/processing/output/test_clip.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3567a7128cd12f97c04ca0d168e784384410d054",
+      "size": 999,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/3567a7128cd12f97c04ca0d168e784384410d054"
+    },
+    {
+      "path": "test/processing/output/test_reduce.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09adfe169dcb7edaffa692651fb95d57e4dd3402",
+      "size": 4357,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/09adfe169dcb7edaffa692651fb95d57e4dd3402"
+    },
+    {
+      "path": "test/processing/output/test_softmax.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9e91e025a9e0c631ca99f007052f26ee806dea4",
+      "size": 1363,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/f9e91e025a9e0c631ca99f007052f26ee806dea4"
+    },
+    {
+      "path": "test/processing/output/test_sort.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b94eeec4cba00b88d470b32010f659b17799a9e",
+      "size": 1220,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/1b94eeec4cba00b88d470b32010f659b17799a9e"
+    },
+    {
+      "path": "test/processing/test_contract.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd3ebe6e206895c8ebdf583725abfafd01579090",
+      "size": 12457,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/bd3ebe6e206895c8ebdf583725abfafd01579090"
+    },
+    {
+      "path": "test/processing/test_ensemble.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8d555bfc5dce7a11931ea68ce1c9d94851ed19f",
+      "size": 7994,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/b8d555bfc5dce7a11931ea68ce1c9d94851ed19f"
+    },
+    {
+      "path": "test/processing/test_execution.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "580bdf1f9d35f76427e4546d9a20ef4839cb006a",
+      "size": 10985,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/580bdf1f9d35f76427e4546d9a20ef4839cb006a"
+    },
+    {
+      "path": "test/processing/test_fitted_guard.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "164d4d3a645c64db65266fc4bfec16f35dc40168",
+      "size": 4747,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/164d4d3a645c64db65266fc4bfec16f35dc40168"
+    },
+    {
+      "path": "test/processing/test_recipe.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d2f7c8f9a51fc1c95bbf373e4105e744f0c9344",
+      "size": 4551,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/3d2f7c8f9a51fc1c95bbf373e4105e744f0c9344"
+    },
+    {
+      "path": "test/processing/text",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "21c4fe52af8453a47eab3c03fb9a56a57cdf6a17",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/21c4fe52af8453a47eab3c03fb9a56a57cdf6a17"
+    },
+    {
+      "path": "test/processing/text/test_sentence_transformer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7396b045b85e5dadf2a98c8064affcef279a9158",
+      "size": 10704,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/7396b045b85e5dadf2a98c8064affcef279a9158"
+    },
+    {
+      "path": "test/processing/text/test_tfidf.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39096bdae4e80fff969d5b123cb8ae1515c69ec7",
+      "size": 10237,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/39096bdae4e80fff969d5b123cb8ae1515c69ec7"
+    },
+    {
+      "path": "test/relational",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "38c8b95d30ce51a908c5ff54fc6a4f63a3d9035c",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/38c8b95d30ce51a908c5ff54fc6a4f63a3d9035c"
+    },
+    {
+      "path": "test/relational/backend",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b5305689ad173def7717a1c83a896c2a25921eba",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/b5305689ad173def7717a1c83a896c2a25921eba"
+    },
+    {
+      "path": "test/relational/backend/test_cugraph.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91f5ef5c69ffc883e750b1eae86c481637043b66",
+      "size": 13973,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/91f5ef5c69ffc883e750b1eae86c481637043b66"
+    },
+    {
+      "path": "test/relational/backend/test_sampler_parity.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "323d3460433e4948129913bfe9207f4c304ad342",
+      "size": 7950,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/323d3460433e4948129913bfe9207f4c304ad342"
+    },
+    {
+      "path": "test/relational/test_data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa012c50ee8920fda8e98bf7e8af3be498b00c10",
+      "size": 1716,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/aa012c50ee8920fda8e98bf7e8af3be498b00c10"
+    },
+    {
+      "path": "test/relational/test_join.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39d843bda4175fb7f6fe2731de46bec3495ed0a6",
+      "size": 2659,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/39d843bda4175fb7f6fe2731de46bec3495ed0a6"
+    },
+    {
+      "path": "test/relational/test_sampler.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ba9406c556211a7315cef1aa73cfc5b314cec75",
+      "size": 8401,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/0ba9406c556211a7315cef1aa73cfc5b314cec75"
+    },
+    {
+      "path": "test/tensor",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9e7bc4e4e2e99f5c45812ddbb5da7fd088360710",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/9e7bc4e4e2e99f5c45812ddbb5da7fd088360710"
+    },
+    {
+      "path": "test/tensor/test_categorical.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1780770b2d96ab1111b747584b9466be2596b05",
+      "size": 21484,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/e1780770b2d96ab1111b747584b9466be2596b05"
+    },
+    {
+      "path": "test/tensor/test_columnar.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95f215d075e3bf4e3c22f239d212bcd84e66f23d",
+      "size": 14239,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/95f215d075e3bf4e3c22f239d212bcd84e66f23d"
+    },
+    {
+      "path": "test/tensor/test_io.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d782b540cd0b1c5108f0b47d7d2e0314e7fde39f",
+      "size": 2391,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/d782b540cd0b1c5108f0b47d7d2e0314e7fde39f"
+    },
+    {
+      "path": "test/tensor/test_nullable.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c2c7ac4c023e2451d6b2ca0c98f601e272e5b27",
+      "size": 3009,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/2c2c7ac4c023e2451d6b2ca0c98f601e272e5b27"
+    },
+    {
+      "path": "test/tensor/test_record_stream.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f93eeaaaea24a1972b5c13096e17e7b2598c754",
+      "size": 1001,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/4f93eeaaaea24a1972b5c13096e17e7b2598c754"
+    },
+    {
+      "path": "test/tensor/test_string.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3311c440c149747d744dd755fd8ec16c262a0d3b",
+      "size": 12817,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/3311c440c149747d744dd755fd8ec16c262a0d3b"
+    },
+    {
+      "path": "test/tensor/test_table.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35d2981e8ec026f7f5440f1c1f79a4b49a4bf67a",
+      "size": 51575,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/35d2981e8ec026f7f5440f1c1f79a4b49a4bf67a"
+    },
+    {
+      "path": "test/tensor/test_var_len.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04c6f641b49cc36df912bbcd2dea747b9a478d9f",
+      "size": 32142,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/04c6f641b49cc36df912bbcd2dea747b9a478d9f"
+    },
+    {
+      "path": "test/test_cache.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d05102f090b6e011e3838187a03a3dc40f0d6269",
+      "size": 3700,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/d05102f090b6e011e3838187a03a3dc40f0d6269"
+    },
+    {
+      "path": "test/test_ensemble.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27e1a09a62e4e18f13283685656b3b634c3c2683",
+      "size": 10072,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/27e1a09a62e4e18f13283685656b3b634c3c2683"
+    },
+    {
+      "path": "test/test_stype.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff0c655bd299fa29764486740b7c72b7f06bf68c",
+      "size": 4256,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/ff0c655bd299fa29764486740b7c72b7f06bf68c"
+    },
+    {
+      "path": "third_party",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3eb5b04810f36f3dbaeb9460aa42e062f5d10448",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/3eb5b04810f36f3dbaeb9460aa42e062f5d10448"
+    },
+    {
+      "path": "third_party/contributor-covenant",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0b09bb2b735037fd39215fd282b4d256bb1508e2",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/0b09bb2b735037fd39215fd282b4d256bb1508e2"
+    },
+    {
+      "path": "third_party/contributor-covenant/LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6ce9a074667ec3c4493c68539bd13aa0cfbe3c4",
+      "size": 1085,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/b6ce9a074667ec3c4493c68539bd13aa0cfbe3c4"
+    },
+    {
+      "path": "third_party/dpm-solver",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f98a4eef226f5b2fdc1132a320e7185dfe240361",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/f98a4eef226f5b2fdc1132a320e7185dfe240361"
+    },
+    {
+      "path": "third_party/dpm-solver/LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e241ffb2c6a9359cec31afe3a4950bb9a3a39ea",
+      "size": 1065,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/7e241ffb2c6a9359cec31afe3a4950bb9a3a39ea"
+    },
+    {
+      "path": "third_party/pytorch",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "daf3d1d2b68b7b76004820afe5e06b83e11b1b0a",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/daf3d1d2b68b7b76004820afe5e06b83e11b1b0a"
+    },
+    {
+      "path": "third_party/pytorch/LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c23172f7aff0254e4f0f163fb2e6e355cbaec5f4",
+      "size": 3464,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/c23172f7aff0254e4f0f163fb2e6e355cbaec5f4"
+    },
+    {
+      "path": "third_party/tabpfn-extensions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f3de7f4063a71f55d28d24ff74e841de531d1aaf",
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/trees/f3de7f4063a71f55d28d24ff74e841de531d1aaf"
+    },
+    {
+      "path": "third_party/tabpfn-extensions/LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "582ab0b9313c2774a9128f76b4ae4a2e1867b3a0",
+      "size": 11346,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/582ab0b9313c2774a9128f76b4ae4a2e1867b3a0"
+    },
+    {
+      "path": "uv.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb028a17985aa1518988725a7a7c7716c1bfdadd",
+      "size": 368844,
+      "url": "https://api.github.com/repos/NVIDIA/structured-data-models/git/blobs/bb028a17985aa1518988725a7a7c7716c1bfdadd"
+    }
+  ],
+  "truncated": false
+}

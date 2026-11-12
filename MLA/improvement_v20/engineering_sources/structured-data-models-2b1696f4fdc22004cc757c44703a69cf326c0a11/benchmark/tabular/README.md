@@ -1,0 +1,134 @@
+# Tabular Benchmarks
+
+This directory contains benchmarks of `structured-data-models` on TabArena/BeyondArena, [ScoringBench](scoringbench/), and [TALENT](talent/).
+
+## TabArena and BeyondArena setup
+
+Run the commands below from the repository root:
+
+```bash
+pip install . \
+  "autogluon.tabular>=1.6.4b20260924,<=1.7.0" \
+  "tabarena[data-foundry,plot,preprocessing]>=0.1.1.dev20260924104714,<=0.2.0"
+```
+
+______________________________________________________________________
+
+> [!NOTE]
+> Weights of `TabFM` are distributed under the [TabFM Non-Commercial License v1.0](https://huggingface.co/google/tabfm-1.0.0-pytorch/blob/main/LICENSE).
+> Review the license before running the `TabFM` benchmark, which will download its weights noninteractively.
+
+## TabArena
+
+### Run
+
+- **`TabICLv2`:**
+
+  ```bash
+  python -m benchmark.tabular.tabarena.main --model tabiclv2
+  ```
+
+- **`KumoTabular`:**
+
+  ```bash
+  python -m benchmark.tabular.tabarena.main --model kumo-tabular-large
+  python -m benchmark.tabular.tabarena.main --model kumo-tabular-medium
+  python -m benchmark.tabular.tabarena.main --model kumo-tabular-small
+  ```
+
+- **`TabFM`:**
+
+  ```bash
+  python -m benchmark.tabular.tabarena.main --model tabfm
+  ```
+
+Pass a dataset name to run only that TabArena dataset:
+
+```bash
+python -m benchmark.tabular.tabarena.main \
+  --model kumo-tabular-large \
+  --dataset blood-transfusion-service-center
+```
+
+### Fine-tuning
+
+`--model tabiclv2-ft`, `--model kumo-tabular-large-ft`, `--model kumo-tabular-small-ft`, and `--model tabfm-ft` full fine-tune every parameter of the model on each dataset's training split before evaluating (see `benchmark/tabular/finetune.py`):
+
+```bash
+python -m benchmark.tabular.tabarena.main \
+  --model tabiclv2-ft \
+  --finetune_epochs 75 \
+  --finetune_lr 1e-6
+```
+
+### Evaluate
+
+Evaluate all available model results with:
+
+```bash
+python -m benchmark.tabular.tabarena.evaluate
+```
+
+______________________________________________________________________
+
+## BeyondArena
+
+### Run
+
+- **`TabICLv2`:**
+
+  ```bash
+  python -m benchmark.tabular.beyondarena.main --model tabiclv2
+  ```
+
+- **`KumoTabular`:**
+
+  ```bash
+  python -m benchmark.tabular.beyondarena.main --model kumo-tabular-large
+  python -m benchmark.tabular.beyondarena.main --model kumo-tabular-medium
+  python -m benchmark.tabular.beyondarena.main --model kumo-tabular-small
+  ```
+
+- **`TabFM`:**
+
+  ```bash
+  python -m benchmark.tabular.beyondarena.main --model tabfm
+  ```
+
+By default, each command evaluates the recommended `core` subset.
+Repeat `--subset` to combine filters:
+
+```bash
+python -m benchmark.tabular.beyondarena.main \
+  --model tabiclv2 \
+  --subset core \
+  --subset grouped
+```
+
+Pass a dataset name to run only that BeyondArena dataset.
+Use `--subset lite` for its first split:
+
+```bash
+python -m benchmark.tabular.beyondarena.main \
+  --model tabiclv2 \
+  --dataset parkinsons_biomedical_voice_measurements \
+  --subset lite
+```
+
+Available subset filters include problem types (`classification`, `regression`), size buckets (`tiny`, `small`, `medium`, `large`), split regimes (`iid`, `temporal`, `grouped`), feature groups (`low-dim`, `high-dim`, `text`, `high-cardinality`), and split selections (`core`, `lite`, `all`). Prefix a filter with `!` to negate it.
+
+### Fine-tuning
+
+Same `-ft` model variants and `--finetune_*` flags as TabArena above:
+
+```bash
+python -m benchmark.tabular.beyondarena.main --model kumo-tabular-small-ft --subset lite
+```
+
+### Evaluate
+
+Evaluate all available model results with:
+
+```bash
+python -m benchmark.tabular.beyondarena.evaluate
+```

@@ -1,0 +1,31 @@
+{
+  "implementation": "Accepted V12, four fixed settings and at most sixteen blends",
+  "files": {
+    "all_settings_preflight.py": "1b040434cfc0560ef6a9148f89b9a7bc819c6112a1d06b6e8a346ede5fc9e2d5",
+    "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+    "build_delivery.py": "736905e5891fb371ddba0e36aa68a10efd5366949347c58d8b7a402e14698e42",
+    "colab_control.py": "e5dcd1ad045a0abf330d4f3352bd56d32c2f3071ba7d79103eb7d9865f39d074",
+    "core.py": "38100b3567594fed932baaba13b76ecfb3a4b1c9e97077949e218d4ca31ccff2",
+    "features.py": "35f45dd164c11c71abe8a37a15f376dd1ac7427714c2701ad4bd3769153c8c5c",
+    "fresh_worker.py": "0cd94f1bfa83f80bbf9ec653002178f29406c59c4fbafa4e6c0452a5aaf09ec9",
+    "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+    "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+    "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+    "modeling.py": "5b99aa60dae114c9dcbb622576871ff84787ddad21fce144a32ca482f3f1d35b",
+    "preflight.py": "6f05301ffaa57d5f372d1dff627faa3992e3c39aba231ecbb3c87b8c5b50172a",
+    "refit_controls.py": "4c6910752aacd19977141d4486f265cdf0ae642b2879162076110992a48fc708",
+    "resume_preflight.py": "34a256f3d7ab278bf3810c7c436e12142b0a38743017b1773c6c4c9e2a9ed186",
+    "run_stage.py": "b25da0412c36ccf13d70f18a22af5f99d9dedbb7d7030ab0da2ee88009a8b04f",
+    "verify.py": "4d719dffb62554bb5f0224931655bc9a13c8451d7b017c8736a53ee1a4a1b227",
+    "workflow.py": "35f2a1e1b8c56a11dc5eeb8b1cb470270b5a33d9224a443ef50b57a40976ae3d"
+  },
+  "transport_files": {
+    "transport/continue_finite.py": "80677838cf4c045d34f783235cff40998e0fde7b5b5b82367bd376d047057aa6",
+    "transport/finalize.py": "4afccff1e9541c2cda795bb839f27dac74277c049e002b68f33dbf2fd4e3249a",
+    "transport/launch_detached.py": "7a66459c335989a1edbbaf93368fd30a31b806c608d31170b073fc7dbb577357",
+    "transport/stage_supervisor.py": "30422b80a706b0cc5d78d19d5fd0feea254569af3cf0a29795a88aca5c0610a7",
+    "transport/verify_results.py": "e1ca9ff39c1348dce62931a67ba9794ff6d76f4b575d742dd1839ee0711057aa",
+    "transport/watch_backups.py": "56f6d2a14afec40f0d42a386f265bc0c2600d50c8c18440e4f255d7647bbf9f5"
+  },
+  "source_provenance": "Own verified V9-V11 implementation; official general-purpose TabPFN checkpoint and official RealMLP implementation; no Gemini exports executed."
+}

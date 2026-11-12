@@ -1,0 +1,142 @@
+[
+  {
+    "name": "P35_8",
+    "scheme": "48211",
+    "net_squared_error_reduction": 1.1301899662511302e+16,
+    "largest_positive_ten_rows": [
+      61238,
+      60772,
+      61747,
+      62971,
+      60928,
+      60944,
+      62150,
+      60167,
+      62227,
+      63272
+    ],
+    "top_ten_positive_reduction": 9866788750276734.0,
+    "tail_gt80M_reduction": 7468972776532533.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 94580.44604511932,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "P35_8",
+    "scheme": "48212",
+    "net_squared_error_reduction": 1.991549209489485e+16,
+    "largest_positive_ten_rows": [
+      61238,
+      60772,
+      60928,
+      61747,
+      60780,
+      60944,
+      62153,
+      60167,
+      62150,
+      62600
+    ],
+    "top_ten_positive_reduction": 1.3283915551727906e+16,
+    "tail_gt80M_reduction": 1.1970027949690008e+16,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 139821.2814145889,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "P35_8",
+    "scheme": "48213",
+    "net_squared_error_reduction": 1.2584161494507256e+16,
+    "largest_positive_ten_rows": [
+      61747,
+      60772,
+      60167,
+      61238,
+      62971,
+      60944,
+      60501,
+      60780,
+      60199,
+      62227
+    ],
+    "top_ten_positive_reduction": 1.0429745242987436e+16,
+    "tail_gt80M_reduction": 8117905012205452.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 101113.00834404491,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "P35_8",
+    "scheme": "strat:27421",
+    "net_squared_error_reduction": 8684559167905720.0,
+    "largest_positive_ten_rows": [
+      61747,
+      60772,
+      60944,
+      62971,
+      62180,
+      61240,
+      62227,
+      62600,
+      62687,
+      62214
+    ],
+    "top_ten_positive_reduction": 8923662663109404.0,
+    "tail_gt80M_reduction": 5580011330925407.0,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 83815.53912993148,
+    "exclusion_is_selection_criterion": false
+  },
+  {
+    "name": "P35_8",
+    "scheme": "city",
+    "net_squared_error_reduction": 1.9132134039039656e+16,
+    "largest_positive_ten_rows": [
+      61238,
+      60772,
+      60962,
+      62180,
+      60944,
+      60199,
+      62107,
+      62214,
+      61747,
+      63480
+    ],
+    "top_ten_positive_reduction": 1.1107183171289612e+16,
+    "tail_gt80M_reduction": 1.4308280671061948e+16,
+    "excluded_baseline_top_five_ids": [
+      60501,
+      61760,
+      60780,
+      61238,
+      62180
+    ],
+    "gain_excluding_baseline_top_five_INR": 141284.10931286402,
+    "exclusion_is_selection_criterion": false
+  }
+]

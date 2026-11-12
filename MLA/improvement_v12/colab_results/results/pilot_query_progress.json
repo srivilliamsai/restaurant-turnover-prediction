@@ -1,0 +1,10 @@
+{
+  "setting": "T4x16",
+  "phase": "fresh_repeat_fit",
+  "completed_query_key": "f05e9c85d08be9fbfbd4d07ac7d6eb287e61034147692ce2e47347321380dabc",
+  "rows": 699,
+  "reused": false,
+  "original_inference_seconds": 455.87513764599953,
+  "prediction_files": 10,
+  "no_validation_rmse_measured": true
+}

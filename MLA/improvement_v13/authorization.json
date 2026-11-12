@@ -1,0 +1,19 @@
+{
+  "version": "V13",
+  "maximum_hours": 8,
+  "paid_resources": false,
+  "started_epoch": 1793197390.704163,
+  "portal_uploads": 0,
+  "settings": [
+    "Q99",
+    "Q995",
+    "SQ2"
+  ],
+  "weights": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "user_authorization": "User explicitly requested implementation of the complete V13 plan."
+}

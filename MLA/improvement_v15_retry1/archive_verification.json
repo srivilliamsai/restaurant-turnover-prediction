@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "archive_bytes": 37086581,
+  "archive_sha256": "5a5f2aaad8f0835b0db6608c9299a4c816e06b31b7d0717ca9fa005e4d31b366",
+  "archive_entries": 452,
+  "manifest_files_verified": 120,
+  "csv_and_notebook_are_preserved_v14": true,
+  "new_v15_submission_exported": false,
+  "nested_original_attempt_included": true,
+  "epoch": 1793249378.640256
+}

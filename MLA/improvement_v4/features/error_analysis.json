@@ -1,0 +1,289 @@
+{
+  "v3_rmse": 19839027.540841296,
+  "candidate_rmse": 19829850.767892215,
+  "gain": 9176.772949080914,
+  "bootstrap": {
+    "repetitions": 5000,
+    "seed": 4917,
+    "ci95": [
+      -15187.80982003957,
+      33946.19973494243
+    ],
+    "fraction_positive": 0.7682,
+    "interpretation": "Conditional paired case-bootstrap; model/feature selection optimism and retraining variability are not represented. Development-only, not independent confirmation."
+  },
+  "prediction_change": {
+    "mean": -117385.60542469122,
+    "mean_absolute": 511134.2738024221,
+    "median_absolute": 412507.5284643248,
+    "p95_absolute": 1299185.0705836017,
+    "maximum_absolute": 3778113.415831648,
+    "fraction_increased": 0.41797881477240195
+  },
+  "foldwise": [
+    {
+      "fold": 1,
+      "n": 699,
+      "v3_rmse": 18810714.842806794,
+      "candidate_rmse": 18763004.98724326,
+      "gain": 47709.85556353256,
+      "tail_gt100m": 4
+    },
+    {
+      "fold": 2,
+      "n": 699,
+      "v3_rmse": 22358306.929813873,
+      "candidate_rmse": 22370527.999404553,
+      "gain": -12221.069590680301,
+      "tail_gt100m": 6
+    },
+    {
+      "fold": 3,
+      "n": 699,
+      "v3_rmse": 20233122.998195376,
+      "candidate_rmse": 20264114.881771885,
+      "gain": -30991.88357650861,
+      "tail_gt100m": 11
+    },
+    {
+      "fold": 4,
+      "n": 698,
+      "v3_rmse": 14853650.457609553,
+      "candidate_rmse": 14828882.351774773,
+      "gain": 24768.10583478026,
+      "tail_gt100m": 7
+    },
+    {
+      "fold": 5,
+      "n": 698,
+      "v3_rmse": 22001590.89089738,
+      "candidate_rmse": 21976677.62961289,
+      "gain": 24913.261284489185,
+      "tail_gt100m": 5
+    }
+  ],
+  "segments": [
+    {
+      "segment": "all",
+      "n": 3493,
+      "v3_rmse": 19839027.540841296,
+      "candidate_rmse": 19829850.767892215,
+      "gain": 9176.772949080914,
+      "v3_squared_error_share": 1.0,
+      "candidate_squared_error_share": 1.0,
+      "total_squared_error_reduction_share": 1.0
+    },
+    {
+      "segment": "<=100m",
+      "n": 3460,
+      "v3_rmse": 11709534.110212311,
+      "candidate_rmse": 11699017.224206505,
+      "gain": 10516.886005805805,
+      "v3_squared_error_share": 0.34507697684705074,
+      "candidate_squared_error_share": 0.3447762821153325,
+      "total_squared_error_reduction_share": 0.6698835458486064
+    },
+    {
+      "segment": ">100m",
+      "n": 33,
+      "v3_rmse": 165180140.86324826,
+      "candidate_rmse": 165141632.54761648,
+      "gain": 38508.31563177705,
+      "v3_squared_error_share": 0.6549230231529494,
+      "candidate_squared_error_share": 0.6552237178846676,
+      "total_squared_error_reduction_share": 0.3301164541513935
+    },
+    {
+      "segment": ">200m",
+      "n": 8,
+      "v3_rmse": 271254782.5082483,
+      "candidate_rmse": 271172062.5311227,
+      "gain": 82719.97712564468,
+      "v3_squared_error_share": 0.4281593660383724,
+      "candidate_squared_error_share": 0.4282944023101217,
+      "total_squared_error_reduction_share": 0.28229492781879156
+    }
+  ],
+  "coverage": [
+    {
+      "feature": "Resturant Tier",
+      "train_categories": 3,
+      "test_categories": 2,
+      "unknown_test_categories": [],
+      "test_rows_unknown": 0,
+      "unseen_validation_rows": 0,
+      "non_integer_values": 0,
+      "numeric_to_string_collisions": 0
+    },
+    {
+      "feature": "Restaurant City Tier",
+      "train_categories": 2,
+      "test_categories": 2,
+      "unknown_test_categories": [],
+      "test_rows_unknown": 0,
+      "unseen_validation_rows": 0,
+      "non_integer_values": 0,
+      "numeric_to_string_collisions": 0
+    },
+    {
+      "feature": "Restaurant Zomato Rating",
+      "train_categories": 6,
+      "test_categories": 5,
+      "unknown_test_categories": [],
+      "test_rows_unknown": 0,
+      "unseen_validation_rows": 0,
+      "non_integer_values": 0,
+      "numeric_to_string_collisions": 0
+    },
+    {
+      "feature": "Order Wait Time",
+      "train_categories": 10,
+      "test_categories": 10,
+      "unknown_test_categories": [],
+      "test_rows_unknown": 0,
+      "unseen_validation_rows": 0,
+      "non_integer_values": 0,
+      "numeric_to_string_collisions": 0
+    },
+    {
+      "feature": "Staff Responsivness",
+      "train_categories": 8,
+      "test_categories": 6,
+      "unknown_test_categories": [],
+      "test_rows_unknown": 0,
+      "unseen_validation_rows": 1,
+      "non_integer_values": 0,
+      "numeric_to_string_collisions": 0
+    },
+    {
+      "feature": "Value for Money",
+      "train_categories": 7,
+      "test_categories": 6,
+      "unknown_test_categories": [],
+      "test_rows_unknown": 0,
+      "unseen_validation_rows": 1,
+      "non_integer_values": 0,
+      "numeric_to_string_collisions": 0
+    },
+    {
+      "feature": "Hygiene Rating",
+      "train_categories": 9,
+      "test_categories": 8,
+      "unknown_test_categories": [],
+      "test_rows_unknown": 0,
+      "unseen_validation_rows": 2,
+      "non_integer_values": 0,
+      "numeric_to_string_collisions": 0
+    },
+    {
+      "feature": "Food Rating",
+      "train_categories": 6,
+      "test_categories": 6,
+      "unknown_test_categories": [],
+      "test_rows_unknown": 0,
+      "unseen_validation_rows": 0,
+      "non_integer_values": 0,
+      "numeric_to_string_collisions": 0
+    },
+    {
+      "feature": "Overall Restaurant Rating",
+      "train_categories": 6,
+      "test_categories": 6,
+      "unknown_test_categories": [],
+      "test_rows_unknown": 0,
+      "unseen_validation_rows": 0,
+      "non_integer_values": 0,
+      "numeric_to_string_collisions": 0
+    },
+    {
+      "feature": "Ambience",
+      "train_categories": 12,
+      "test_categories": 11,
+      "unknown_test_categories": [],
+      "test_rows_unknown": 0,
+      "unseen_validation_rows": 0,
+      "non_integer_values": 0,
+      "numeric_to_string_collisions": 0
+    },
+    {
+      "feature": "Lively",
+      "train_categories": 11,
+      "test_categories": 11,
+      "unknown_test_categories": [],
+      "test_rows_unknown": 0,
+      "unseen_validation_rows": 0,
+      "non_integer_values": 0,
+      "numeric_to_string_collisions": 0
+    },
+    {
+      "feature": "Service",
+      "train_categories": 11,
+      "test_categories": 11,
+      "unknown_test_categories": [],
+      "test_rows_unknown": 0,
+      "unseen_validation_rows": 1,
+      "non_integer_values": 0,
+      "numeric_to_string_collisions": 0
+    },
+    {
+      "feature": "Comfortablility",
+      "train_categories": 11,
+      "test_categories": 11,
+      "unknown_test_categories": [],
+      "test_rows_unknown": 0,
+      "unseen_validation_rows": 0,
+      "non_integer_values": 0,
+      "numeric_to_string_collisions": 0
+    },
+    {
+      "feature": "Privacy",
+      "train_categories": 11,
+      "test_categories": 11,
+      "unknown_test_categories": [],
+      "test_rows_unknown": 0,
+      "unseen_validation_rows": 0,
+      "non_integer_values": 0,
+      "numeric_to_string_collisions": 0
+    },
+    {
+      "feature": "Live Music Rating",
+      "train_categories": 9,
+      "test_categories": 8,
+      "unknown_test_categories": [],
+      "test_rows_unknown": 0,
+      "unseen_validation_rows": 0,
+      "non_integer_values": 0,
+      "numeric_to_string_collisions": 0
+    },
+    {
+      "feature": "Comedy Gigs Rating",
+      "train_categories": 7,
+      "test_categories": 7,
+      "unknown_test_categories": [],
+      "test_rows_unknown": 0,
+      "unseen_validation_rows": 1,
+      "non_integer_values": 0,
+      "numeric_to_string_collisions": 0
+    },
+    {
+      "feature": "Value Deals Rating",
+      "train_categories": 8,
+      "test_categories": 6,
+      "unknown_test_categories": [],
+      "test_rows_unknown": 0,
+      "unseen_validation_rows": 2,
+      "non_integer_values": 0,
+      "numeric_to_string_collisions": 0
+    },
+    {
+      "feature": "Live Sports Rating",
+      "train_categories": 6,
+      "test_categories": 6,
+      "unknown_test_categories": [],
+      "test_rows_unknown": 0,
+      "unseen_validation_rows": 0,
+      "non_integer_values": 0,
+      "numeric_to_string_collisions": 0
+    }
+  ]
+}

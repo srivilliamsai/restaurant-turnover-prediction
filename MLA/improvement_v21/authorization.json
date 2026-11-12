@@ -1,0 +1,26 @@
+{
+  "version": "V21",
+  "authorized": true,
+  "user_instruction": "start",
+  "started_epoch": 1793275200,
+  "started_at_IST": "2026-10-29T17:30:00+05:30",
+  "maximum_hours": 6,
+  "delivery_reserve_hours": 1.5,
+  "hard_stop_epoch": 1793296800,
+  "training_stop_epoch": 1793291400,
+  "engineering_stop_epoch": 1793280600,
+  "paid_resources": false,
+  "settings": [
+    "S",
+    "C+S+G"
+  ],
+  "weights": [
+    0.25,
+    0.5,
+    1
+  ],
+  "account_identity_sha256": "REDACTED",
+  "clock_reset": false,
+  "cap_policy": "Six-hour operational ceiling for this finite two-setting experiment; prior ledgers unchanged.",
+  "portal_uploads_authorized": 0
+}

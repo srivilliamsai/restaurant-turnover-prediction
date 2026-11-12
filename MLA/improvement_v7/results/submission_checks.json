@@ -1,0 +1,168 @@
+[
+  {
+    "rows": 500,
+    "columns": [
+      "Registration Number",
+      "Annual Turnover"
+    ],
+    "finite_nonnegative": true,
+    "row_order": true,
+    "unique_ids": true,
+    "permutation_invariance": true,
+    "target_id_invariance": true,
+    "missing_unseen_values": true,
+    "malformed_cases_rejected": 12,
+    "trial": "trial_1",
+    "choice": {
+      "name": "residual_tree_l2",
+      "family": "residual",
+      "weight": 0.75,
+      "rmse_42": 19815813.77766609,
+      "gain_42": 1422.5499159097672,
+      "rmse_71": 19790779.339553073,
+      "gain_71": 49471.02210607007,
+      "mean_rmse": 19803296.558609582,
+      "metrics": {
+        "18421": {
+          "baseline": 19863662.63228201,
+          "candidate": 19832420.144617647,
+          "gain": 31242.48766436428,
+          "relative_change": -0.0015728462692268241
+        },
+        "18422": {
+          "baseline": 19816733.502104715,
+          "candidate": 19798032.98382704,
+          "gain": 18700.518277674913,
+          "relative_change": -0.0009436730970666662
+        },
+        "strat:27421": {
+          "baseline": 19828989.57780773,
+          "candidate": 19788419.321618978,
+          "gain": 40570.25618875027,
+          "relative_change": -0.0020460072375122484
+        },
+        "city": {
+          "baseline": 20136850.755091805,
+          "candidate": 20113476.98948276,
+          "gain": 23373.76560904458,
+          "relative_change": -0.0011607458332646425
+        }
+      },
+      "local_champion": true,
+      "experimental_eligible": true,
+      "mean_confirmation_gain": 24971.502971019596
+    },
+    "csv_sha256": "5f20ea8d610e325c0eae4727b7ed8c737ce2d881239792c9a6af5ce4e3dec1ba",
+    "prediction_rms_difference_from_v5": 460050.7326810312,
+    "conditional_portal_rmse_lower_bound": 11586671.63643287,
+    "can_mathematically_beat_shown_leader": false,
+    "bound_assumptions": "same 500 rows, given v5 score, ordinary unweighted RMSE as stated in rules",
+    "model_diagnostics": [
+      {
+        "seed": 10242,
+        "train_rows": 3493,
+        "family": "residual",
+        "inner_baseline": "three-fold v5 OOF within this outer training fold",
+        "mean_inner_residual_millions": 0.3638820391048544
+      },
+      {
+        "seed": 20242,
+        "train_rows": 3493,
+        "family": "residual",
+        "inner_baseline": "three-fold v5 OOF within this outer training fold",
+        "mean_inner_residual_millions": 0.3638820391048544
+      }
+    ]
+  },
+  {
+    "rows": 500,
+    "columns": [
+      "Registration Number",
+      "Annual Turnover"
+    ],
+    "finite_nonnegative": true,
+    "row_order": true,
+    "unique_ids": true,
+    "permutation_invariance": true,
+    "target_id_invariance": true,
+    "missing_unseen_values": true,
+    "malformed_cases_rejected": 12,
+    "trial": "trial_2",
+    "choice": {
+      "name": "tiers_d4_shrink300",
+      "family": "tiers",
+      "weight": 0.25,
+      "rmse_42": 19822850.286160864,
+      "gain_42": -5613.958578865975,
+      "rmse_71": 19837757.5945584,
+      "gain_71": 2492.7671007439494,
+      "mean_rmse": 19830303.94035963,
+      "metrics": {
+        "18421": {
+          "baseline": 19863662.63228201,
+          "candidate": 19868640.341680426,
+          "gain": -4977.70939841494,
+          "relative_change": 0.00025059373442659627
+        },
+        "18422": {
+          "baseline": 19816733.502104715,
+          "candidate": 19819044.12750258,
+          "gain": -2310.625397864729,
+          "relative_change": 0.0001165997109271455
+        },
+        "strat:27421": {
+          "baseline": 19828989.57780773,
+          "candidate": 19834990.79066159,
+          "gain": -6001.21285386011,
+          "relative_change": 0.0003026484446073674
+        },
+        "city": {
+          "baseline": 20136850.755091805,
+          "candidate": 20147551.177671194,
+          "gain": -10700.422579389066,
+          "relative_change": 0.0005313851063173392
+        }
+      },
+      "local_champion": false,
+      "experimental_eligible": true,
+      "mean_confirmation_gain": -3644.1673981398344
+    },
+    "csv_sha256": "16d4dd9003fd784049aea716a2beda5a42ca0100c979a4f2a6ecbadd26a542a7",
+    "prediction_rms_difference_from_v5": 503434.51658693317,
+    "conditional_portal_rmse_lower_bound": 11543287.852526966,
+    "can_mathematically_beat_shown_leader": false,
+    "bound_assumptions": "same 500 rows, given v5 score, ordinary unweighted RMSE as stated in rules",
+    "model_diagnostics": [
+      {
+        "seed": 10242,
+        "train_rows": 3493,
+        "family": "tiers",
+        "local_tiers": {
+          "1.0": {
+            "weight": 0.45750452079566006,
+            "rows": 253
+          },
+          "2.0": {
+            "weight": 0.9140647378974506,
+            "rows": 3191
+          }
+        }
+      },
+      {
+        "seed": 20242,
+        "train_rows": 3493,
+        "family": "tiers",
+        "local_tiers": {
+          "1.0": {
+            "weight": 0.45750452079566006,
+            "rows": 253
+          },
+          "2.0": {
+            "weight": 0.9140647378974506,
+            "rows": 3191
+          }
+        }
+      }
+    ]
+  }
+]

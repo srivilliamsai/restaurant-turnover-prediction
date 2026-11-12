@@ -1,0 +1,229 @@
+{
+  "status": "PASS",
+  "settings": {
+    "C8": {
+      "status": "engineering_excluded",
+      "error_type": "AssertionError",
+      "reason": "batch_difference_INR: INR 373.18046268075705",
+      "traceback": "Traceback (most recent call last):\n  File \"/content/mla_v19/pilot_worker.py\", line 31, in main\n    checks=verify.inference_checks(lambda raw:modeling.predict(fitted,raw),e.train.iloc[b],e.y[b])\n  File \"/content/mla_v19/verify.py\", line 140, in inference_checks\n    assert np.allclose(other, expected, atol=10., rtol=1e-6), f'{name}: INR {checks[name]}'\n           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: batch_difference_INR: INR 373.18046268075705\n",
+      "engineering_seconds": 39.79612047400019,
+      "accuracy_tested": false
+    },
+    "KS8": {
+      "status": "engineering_excluded",
+      "error_type": "RuntimeError",
+      "reason": "ImportError: Numba needs NumPy 2.2 or less. Got NumPy 2.5.",
+      "traceback": "Traceback (most recent call last):\n  File \"/content/mla_v19/pilot_worker.py\", line 27, in main\n    fitted=modeling.fit(e.train.iloc[a],e.y[a],name,fold=0,scheme=42)\n  File \"/content/mla_v19/modeling.py\", line 42, in fit\n    fitted = new_models.fit(raw, target, name, fold=fold, scheme=scheme)\n  File \"/content/mla_v19/new_models.py\", line 119, in fit\n    metadata = remote.request('fit', {'raw': raw, 'target': np.asarray(target, float), 'name': name})\n  File \"/content/mla_v19/new_models.py\", line 85, in request\n    raise RuntimeError(status['error_type'] + ': ' + status['reason'])\nRuntimeError: ImportError: Numba needs NumPy 2.2 or less. Got NumPy 2.5.\n",
+      "engineering_seconds": 16.277223881000054,
+      "accuracy_tested": false
+    },
+    "D8": {
+      "status": "PASS",
+      "fold_seconds": 20.240404506000004,
+      "full_fit_predict_seconds": 14.888096068000095,
+      "behavior": {
+        "permutation_difference_INR": 7.62939453125,
+        "label_id_difference_INR": 0.0,
+        "batch_difference_INR": 7.62939453125,
+        "individual_difference_INR": 15.2587890625,
+        "rmse_difference_INR": {
+          "permutation": 0.01396353542804718,
+          "batch": 0.20910362154245377,
+          "individual": 2.8792647439986467
+        },
+        "other_query_rows_changed_difference_INR": 0.0,
+        "rows_checked": 699,
+        "individual_probes": 12,
+        "missing_unseen_inputs": true,
+        "behavior_tolerance_INR": 10.0,
+        "prediction_rtol": 1e-06,
+        "rmse_tolerance_INR": 10.0
+      },
+      "fresh_repeat_difference_INR": 0.0,
+      "save_reload_difference_INR": 0.0,
+      "target_metadata": {
+        "name": "D8",
+        "training_rows": 2794,
+        "units": "raw INR millions",
+        "model_class": "tabdpt.regressor.TabDPTRegressor",
+        "checkpoint_sha256": "97dc3b60bfad6b42ec1a07b7e121d86b0fc7c9fd67c8d2eaac3d815da197eacb",
+        "checkpoint_revision": "a5ca6e01c0fa09ec68c73e958e5199d1932abb3a",
+        "actual_source_hashes": {
+          "tabdpt.regressor": "03f420c110e19039dbbd912d80ecb36c407292cc96ce41de91d75d43992e9c2e",
+          "tabdpt.estimator": "81a345826a5534d9e4a5916ab4dd11f815a17787703eb54a42b7c968a2992678",
+          "tabdpt.model": "f7059d9040d46d883bc9f4df1456c77c369f9b3d9d59c3bf31c7e077af0fb381",
+          "tabdpt.utils": "5b6eb9ad2f49f18e99d1a850209263924ff8a2941a0b976a57511408803237c7"
+        },
+        "runtime": {
+          "dependencies": {
+            "torch": "2.13.0",
+            "numpy": "2.5.4",
+            "pandas": "3.0.6",
+            "scikit-learn": "1.9.1",
+            "scipy": "1.18.1",
+            "causilo": "1.0.3",
+            "tabdpt": "1.3.1",
+            "structured-data-models": "0.1.0.dev0",
+            "huggingface-hub": "1.33.0",
+            "safetensors": "0.8.0",
+            "pyarrow": "23.0.1"
+          },
+          "gpu": "Tesla T4",
+          "cuda": "13.0",
+          "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+          "total_gpu_bytes": 15637086208
+        },
+        "input_features": 40,
+        "categorical_columns": [
+          "Cuisine",
+          "City",
+          "Restaurant Location",
+          "Endoresed By",
+          "Restaurant Type",
+          "Restaurant Theme",
+          "Cuisine 1",
+          "Cuisine 2"
+        ],
+        "all_outer_training_rows": true,
+        "seed": 10242,
+        "peak_gpu_allocated_bytes": 509666304,
+        "peak_gpu_reserved_bytes": 564133888,
+        "host_rss_bytes": 1665228800
+      },
+      "full_target_metadata": {
+        "name": "D8",
+        "training_rows": 3493,
+        "units": "raw INR millions",
+        "model_class": "tabdpt.regressor.TabDPTRegressor",
+        "checkpoint_sha256": "97dc3b60bfad6b42ec1a07b7e121d86b0fc7c9fd67c8d2eaac3d815da197eacb",
+        "checkpoint_revision": "a5ca6e01c0fa09ec68c73e958e5199d1932abb3a",
+        "actual_source_hashes": {
+          "tabdpt.regressor": "03f420c110e19039dbbd912d80ecb36c407292cc96ce41de91d75d43992e9c2e",
+          "tabdpt.estimator": "81a345826a5534d9e4a5916ab4dd11f815a17787703eb54a42b7c968a2992678",
+          "tabdpt.model": "f7059d9040d46d883bc9f4df1456c77c369f9b3d9d59c3bf31c7e077af0fb381",
+          "tabdpt.utils": "5b6eb9ad2f49f18e99d1a850209263924ff8a2941a0b976a57511408803237c7"
+        },
+        "runtime": {
+          "dependencies": {
+            "torch": "2.13.0",
+            "numpy": "2.5.4",
+            "pandas": "3.0.6",
+            "scikit-learn": "1.9.1",
+            "scipy": "1.18.1",
+            "causilo": "1.0.3",
+            "tabdpt": "1.3.1",
+            "structured-data-models": "0.1.0.dev0",
+            "huggingface-hub": "1.33.0",
+            "safetensors": "0.8.0",
+            "pyarrow": "23.0.1"
+          },
+          "gpu": "Tesla T4",
+          "cuda": "13.0",
+          "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+          "total_gpu_bytes": 15637086208
+        },
+        "input_features": 40,
+        "categorical_columns": [
+          "Cuisine",
+          "City",
+          "Restaurant Location",
+          "Endoresed By",
+          "Restaurant Type",
+          "Restaurant Theme",
+          "Cuisine 1",
+          "Cuisine 2"
+        ],
+        "all_outer_training_rows": true,
+        "seed": 10242,
+        "peak_gpu_allocated_bytes": 509666304,
+        "peak_gpu_reserved_bytes": 580911104,
+        "host_rss_bytes": 1620885504
+      },
+      "peak_gpu_allocated_bytes": 509666304,
+      "peak_gpu_reserved_bytes": 564133888,
+      "training_rows": 2794,
+      "validation_rows": 699,
+      "full_training_rows": 3493,
+      "selection_uses_validation_rmse": false,
+      "engineering_seconds": 168.11217296300015
+    },
+    "KM8": {
+      "status": "engineering_excluded",
+      "error_type": "RuntimeError",
+      "reason": "ImportError: Numba needs NumPy 2.2 or less. Got NumPy 2.5.",
+      "traceback": "Traceback (most recent call last):\n  File \"/content/mla_v19/pilot_worker.py\", line 27, in main\n    fitted=modeling.fit(e.train.iloc[a],e.y[a],name,fold=0,scheme=42)\n  File \"/content/mla_v19/modeling.py\", line 42, in fit\n    fitted = new_models.fit(raw, target, name, fold=fold, scheme=scheme)\n  File \"/content/mla_v19/new_models.py\", line 119, in fit\n    metadata = remote.request('fit', {'raw': raw, 'target': np.asarray(target, float), 'name': name})\n  File \"/content/mla_v19/new_models.py\", line 85, in request\n    raise RuntimeError(status['error_type'] + ': ' + status['reason'])\nRuntimeError: ImportError: Numba needs NumPy 2.2 or less. Got NumPy 2.5.\n",
+      "engineering_seconds": 16.250342359000115,
+      "accuracy_tested": false
+    }
+  },
+  "screen_settings": [
+    "D8"
+  ],
+  "routes": {
+    "D8": {
+      "D8": 1.0
+    }
+  },
+  "engineering_feasible_settings": [
+    "D8"
+  ],
+  "budget_exclusions": {},
+  "screen_forecast_seconds": 263.12525857800006,
+  "confirmation_forecast_seconds": 5572.283234817161,
+  "full_data_and_fresh_notebook_forecast_seconds": 2378.7090497768004,
+  "forecast_fits_budget": true,
+  "selection_uses_validation_rmse": false,
+  "sources": {
+    "core.py": "0f912c0ae24adf244291d31b6a8348a073eaf8086e23059aaf36d6c6a500463e",
+    "features.py": "a033e459df5b9776f95a9ef683ccba174b1edaab7f63901c50cfa71e9bee8b99",
+    "modeling.py": "e344038c0445ab87742dc4b00f07dd919b32a6a228bc8b74a87f823d3c429e3c",
+    "workflow.py": "eee5ef74da8af9752f67519c7f9e72d3e4633acce4f6917952fe6712ded9ac3e",
+    "verify.py": "650a4e5fa1e25060689a575f97305ac27153a7e5b4aa3ac2c64c08ff5ca598ff",
+    "delivery.py": "df7b6a39f220e40faf1b377b0c57a0c00687cf3e1fdb76239960a9b4025188d5",
+    "fresh_worker.py": "99141f44ed395f25c00f8241aca4c3eb260e7dacc80a1a3a811af88ecefc01ec",
+    "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+    "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+    "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+    "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+    "v5_contract.json": "3446412f01d536a31123142b984392216efd29094965500251386eac1814ab69",
+    "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+    "reference_manifest.json": "82417467e331d6e470fd1058c4ea4edb5a47f98021efc822176bd9a04b99bbd5",
+    "baseline_registry.json": "53e7ddb7fbfbe08162aa97fac8d5ad9dea4981aab3aa942b3e98ebdb2a3060b7",
+    "frozen_pfn.py": "ff4d383d269ffdc1b0021f7d0cac4e19240be130f2544bcc80dc41916a5262b5",
+    "new_models.py": "250ca3a6bc70ddc0ca4ff4a753794ae1dcd96dcf5e026b6f77c05d3eeeba3b42",
+    "candidate_models.py": "d5dc25a15b33527486de0b888da460640d73390a708f96f8d28343a32664b29c",
+    "candidate_worker.py": "a70cb7f5406a194eacbd7e653a84c0c5f60480fa602799be31993ff8049c9e0d",
+    "pilot_worker.py": "5f16c9e4902d97a91875c043b4e1e2cd118650d9cd016cd000181667a938e7c8",
+    "checkpoint_registry.json": "d4989d804e9295c9a8f6087205b3de52e737a8aa3f16c06d87c59b3a63daeb3b",
+    "source_registry.json": "1377f16dee1a9b08e8d2b3d5bb36713a79fa48f015af79baf1110ee5ccf69273",
+    "protocol_proposed.json": "7323dad4cac79b866c659efef5c6450c643ef9074e4f833ee3edfc2e584435e9",
+    "mac_controls.py": "c6c01ea36a0a9f3a4c5a6e4c8110c4e07b83e5373c110e075f4a7844515208c3",
+    "control_worker.py": "79c40d599b5aff4a3a120464723d9fd1075200195787d7e4e157827e10945fca",
+    "setup_environment.py": "611c5aafc843e93affc9236681c8f11c97b273439f3a49f5f363a4ce7ab16524",
+    "runtime_lock.json": "7a535e017dbc638ebd33855b2e53617b9b0f81479469bb7904ac01f5695b0920"
+  },
+  "inputs": {
+    "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+    "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+    "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+    "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+  },
+  "model_contract_sha256": "a0f71a56b517c63049037586a9829ad23f764f97ae30d16d6bf198b64685e96c",
+  "control_timings": {
+    "BASE": {
+      "status": "PASS",
+      "seconds": 126.18525685600002,
+      "maximum_existing_fold_difference_INR": 0.0
+    },
+    "P35_8": {
+      "status": "PASS",
+      "seconds": 44.79667778199996,
+      "maximum_existing_fold_difference_INR": 0.0
+    }
+  },
+  "original_mac_control_timing": {
+    "status": "PASS",
+    "seconds": 81.04217245800828,
+    "maximum_difference_INR": 1.4901161193847656e-08
+  }
+}

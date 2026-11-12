@@ -1,0 +1,26 @@
+{
+  "complete": true,
+  "qualified": false,
+  "outer_fold_outputs": 20,
+  "blend_comparisons": 15,
+  "best": {
+    "name": "C8",
+    "route": "C8",
+    "weight": "0.25",
+    "effective_new_share": "0.25",
+    "components": "1",
+    "rmse_42": "19647339.00802136",
+    "gain_42": "1694.5481404103339",
+    "relative_gain_42": "8.624078815718333e-05",
+    "rmse_71": "19646415.480798714",
+    "gain_71": "3489.9736121818423",
+    "relative_gain_71": "0.00017760765415786943",
+    "mean_relative_gain": "0.00013192422115752638"
+  },
+  "all_original_labels": 3493,
+  "owned_runtime_released": true,
+  "portal_uploads": 0,
+  "elapsed_seconds_including_setup_and_local_verification": 5011.305458068848,
+  "maximum_hours": 8,
+  "paid_resources": false
+}

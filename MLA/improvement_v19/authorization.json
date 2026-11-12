@@ -1,0 +1,15 @@
+{
+  "user_instruction": "start",
+  "authorized": true,
+  "started_epoch": 1793265862.126807,
+  "started_at_IST": "2026-10-29T14:54:22.126807+05:30",
+  "maximum_hours": 8,
+  "delivery_reserve_hours": 1.5,
+  "hard_stop_epoch": 1793294662.126807,
+  "training_stop_epoch": 1793289262.126807,
+  "paid_resources": false,
+  "account_identity_sha256": "REDACTED",
+  "competition_deadline_recorded": false,
+  "deadline_policy": "Use authorized eight-hour ceiling unless a confirmed earlier deadline shortens it.",
+  "clock_reset": false
+}

@@ -1,0 +1,92 @@
+AUDIT PASS: two fixed backbones, sixteen comparisons, seven verified baseline assignments.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/usr/local/lib/python3.13/dist-packages/tabicl/_sklearn/preprocessing.py:138: UserWarning: The following categorical columns have a cardinality above 40: ['City']. High-cardinality columns might benefit from a better encoding than ordinal encoding, e.g. Skrub's TableVectorizer for strings.
+  warnings.warn(
+/usr/local/lib/python3.13/dist-packages/tabicl/_sklearn/preprocessing.py:138: UserWarning: The following categorical columns have a cardinality above 40: ['City']. High-cardinality columns might benefit from a better encoding than ordinal encoding, e.g. Skrub's TableVectorizer for strings.
+  warnings.warn(
+{"PILOT": "I8", "status": "PASS", "fold_seconds": 11.559364498000036, "behavior": {"permutation_difference_INR": 7.62939453125, "label_id_difference_INR": 0.0, "batch_difference_INR": 3.814697265625, "individual_difference_INR": 0.0, "rmse_difference_INR": {"permutation": 0.027425337582826614, "batch": 0.030591782182455063, "individual": 0.0}, "rows_checked": 699, "individual_probes": 12, "missing_unseen_inputs": true, "behavior_tolerance_INR": 10.0, "rmse_tolerance_INR": 1.0}, "fresh_repeat_difference_INR": 0.0, "target_metadata": {"name": "I8", "training_rows": 2794, "units": "raw INR millions", "checkpoint_sha256": "0db9cb538f114e79026bf08f45f41ad8dd7ad2de2aaca9a5ca8cd3bd9748ae7a", "model_class": "tabicl._sklearn.regressor.TabICLRegressor"}, "peak_gpu_allocated_bytes": 2029224448, "training_rows": 2794, "validation_rows": 699, "engineering_seconds": 30.271495617000028}
+{"PILOT": "P35_8", "status": "PASS", "fold_seconds": 22.19464035200002, "behavior": {"permutation_difference_INR": 0.0, "label_id_difference_INR": 0.0, "batch_difference_INR": 0.0, "individual_difference_INR": 0.0, "rmse_difference_INR": {"permutation": 0.0, "batch": 0.0, "individual": 0.0}, "rows_checked": 699, "individual_probes": 12, "missing_unseen_inputs": true, "behavior_tolerance_INR": 10.0, "rmse_tolerance_INR": 1.0}, "fresh_repeat_difference_INR": 0.0, "target_metadata": {"name": "P35_8", "training_rows": 2794, "units": "raw INR millions", "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3", "model_class": "tabpfn.regressor.TabPFNRegressor", "architecture_classes": ["tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"], "configuration_classes": ["tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"]}, "peak_gpu_allocated_bytes": 7042150400, "training_rows": 2794, "validation_rows": 699, "engineering_seconds": 247.54860044100008}
+{"PILOT_COMPLETE": "PASS", "screen_settings": ["I8", "P35_8"]}
+/usr/local/lib/python3.13/dist-packages/tabicl/_sklearn/preprocessing.py:138: UserWarning: The following categorical columns have a cardinality above 40: ['City']. High-cardinality columns might benefit from a better encoding than ordinal encoding, e.g. Skrub's TableVectorizer for strings.
+  warnings.warn(
+{"setting": "I8", "scheme": "42", "fold_complete": 1}
+/usr/local/lib/python3.13/dist-packages/tabicl/_sklearn/preprocessing.py:138: UserWarning: The following categorical columns have a cardinality above 40: ['City']. High-cardinality columns might benefit from a better encoding than ordinal encoding, e.g. Skrub's TableVectorizer for strings.
+  warnings.warn(
+{"setting": "I8", "scheme": "42", "fold_complete": 2}
+/usr/local/lib/python3.13/dist-packages/tabicl/_sklearn/preprocessing.py:138: UserWarning: The following categorical columns have a cardinality above 40: ['City']. High-cardinality columns might benefit from a better encoding than ordinal encoding, e.g. Skrub's TableVectorizer for strings.
+  warnings.warn(
+{"setting": "I8", "scheme": "42", "fold_complete": 3}
+/usr/local/lib/python3.13/dist-packages/tabicl/_sklearn/preprocessing.py:138: UserWarning: The following categorical columns have a cardinality above 40: ['City']. High-cardinality columns might benefit from a better encoding than ordinal encoding, e.g. Skrub's TableVectorizer for strings.
+  warnings.warn(
+{"setting": "I8", "scheme": "42", "fold_complete": 4}
+/usr/local/lib/python3.13/dist-packages/tabicl/_sklearn/preprocessing.py:138: UserWarning: The following categorical columns have a cardinality above 40: ['City']. High-cardinality columns might benefit from a better encoding than ordinal encoding, e.g. Skrub's TableVectorizer for strings.
+  warnings.warn(
+{"setting": "I8", "scheme": "42", "fold_complete": 5}
+/usr/local/lib/python3.13/dist-packages/tabicl/_sklearn/preprocessing.py:138: UserWarning: The following categorical columns have a cardinality above 40: ['City']. High-cardinality columns might benefit from a better encoding than ordinal encoding, e.g. Skrub's TableVectorizer for strings.
+  warnings.warn(
+{"setting": "I8", "scheme": "71", "fold_complete": 1}
+/usr/local/lib/python3.13/dist-packages/tabicl/_sklearn/preprocessing.py:138: UserWarning: The following categorical columns have a cardinality above 40: ['City']. High-cardinality columns might benefit from a better encoding than ordinal encoding, e.g. Skrub's TableVectorizer for strings.
+  warnings.warn(
+{"setting": "I8", "scheme": "71", "fold_complete": 2}
+/usr/local/lib/python3.13/dist-packages/tabicl/_sklearn/preprocessing.py:138: UserWarning: The following categorical columns have a cardinality above 40: ['City']. High-cardinality columns might benefit from a better encoding than ordinal encoding, e.g. Skrub's TableVectorizer for strings.
+  warnings.warn(
+{"setting": "I8", "scheme": "71", "fold_complete": 3}
+/usr/local/lib/python3.13/dist-packages/tabicl/_sklearn/preprocessing.py:138: UserWarning: The following categorical columns have a cardinality above 40: ['City']. High-cardinality columns might benefit from a better encoding than ordinal encoding, e.g. Skrub's TableVectorizer for strings.
+  warnings.warn(
+{"setting": "I8", "scheme": "71", "fold_complete": 4}
+/usr/local/lib/python3.13/dist-packages/tabicl/_sklearn/preprocessing.py:138: UserWarning: The following categorical columns have a cardinality above 40: ['City']. High-cardinality columns might benefit from a better encoding than ordinal encoding, e.g. Skrub's TableVectorizer for strings.
+  warnings.warn(
+{"setting": "I8", "scheme": "71", "fold_complete": 5}
+{"SCREEN_SETTING_COMPLETE": "I8", "best_mean_relative_gain": 0.0007619759472961185}
+{"setting": "P35_8", "scheme": "42", "fold_complete": 1}
+{"setting": "P35_8", "scheme": "42", "fold_complete": 2}
+{"setting": "P35_8", "scheme": "42", "fold_complete": 3}
+{"setting": "P35_8", "scheme": "42", "fold_complete": 4}
+{"setting": "P35_8", "scheme": "42", "fold_complete": 5}
+{"setting": "P35_8", "scheme": "71", "fold_complete": 1}
+{"setting": "P35_8", "scheme": "71", "fold_complete": 2}
+{"setting": "P35_8", "scheme": "71", "fold_complete": 3}
+{"setting": "P35_8", "scheme": "71", "fold_complete": 4}
+{"setting": "P35_8", "scheme": "71", "fold_complete": 5}
+{"SCREEN_SETTING_COMPLETE": "P35_8", "best_mean_relative_gain": 0.004189176488272968}
+{"SCREEN_COMPLETE": true, "choices": [{"name": "P35_8", "route": "A", "weight": 0.75, "effective_new_share": 0.75, "rmse_42": 19649033.55616177, "gain_42": 82208.17207151651, "relative_gain_42": 0.004166396276717114, "rmse_71": 19649905.454410896, "gain_71": 83114.62613611668, "relative_gain_71": 0.004211956699828823, "mean_relative_gain": 0.004189176488272968}]}
+{"setting": "P35_8", "scheme": "48211", "fold_complete": 1}
+{"setting": "P35_8", "scheme": "48211", "fold_complete": 2}
+{"setting": "P35_8", "scheme": "48211", "fold_complete": 3}
+{"setting": "P35_8", "scheme": "48211", "fold_complete": 4}
+{"setting": "P35_8", "scheme": "48211", "fold_complete": 5}
+{"CONFIRMATION": "48211", "v9_rmse": 19743626.58666369, "candidate_rmse": 19661515.847807977, "gain": 82110.73885571212, "relative_gain": 0.004158847843646709}
+{"setting": "P35_8", "scheme": "48212", "fold_complete": 1}
+{"setting": "P35_8", "scheme": "48212", "fold_complete": 2}
+{"setting": "P35_8", "scheme": "48212", "fold_complete": 3}
+{"setting": "P35_8", "scheme": "48212", "fold_complete": 4}
+{"setting": "P35_8", "scheme": "48212", "fold_complete": 5}
+{"CONFIRMATION": "48212", "v9_rmse": 19816597.33709491, "candidate_rmse": 19672213.5596034, "gain": 144383.7774915099, "relative_gain": 0.007286002487482364}
+{"setting": "P35_8", "scheme": "48213", "fold_complete": 1}
+{"setting": "P35_8", "scheme": "48213", "fold_complete": 2}
+{"setting": "P35_8", "scheme": "48213", "fold_complete": 3}
+{"setting": "P35_8", "scheme": "48213", "fold_complete": 4}
+{"setting": "P35_8", "scheme": "48213", "fold_complete": 5}
+{"CONFIRMATION": "48213", "v9_rmse": 19711188.541631036, "candidate_rmse": 19619589.028592434, "gain": 91599.51303860173, "relative_gain": 0.0046470821810231724}
+{"setting": "P35_8", "scheme": "strat:27421", "fold_complete": 1}
+{"setting": "P35_8", "scheme": "strat:27421", "fold_complete": 2}
+{"setting": "P35_8", "scheme": "strat:27421", "fold_complete": 3}
+{"setting": "P35_8", "scheme": "strat:27421", "fold_complete": 4}
+{"setting": "P35_8", "scheme": "strat:27421", "fold_complete": 5}
+{"CONFIRMATION": "strat:27421", "v9_rmse": 19726481.457054287, "candidate_rmse": 19663361.754943263, "gain": 63119.70211102441, "relative_gain": 0.0031997445793077554}
+{"setting": "P35_8", "scheme": "city", "fold_complete": 1}
+{"setting": "P35_8", "scheme": "city", "fold_complete": 2}
+{"setting": "P35_8", "scheme": "city", "fold_complete": 3}
+{"setting": "P35_8", "scheme": "city", "fold_complete": 4}
+{"setting": "P35_8", "scheme": "city", "fold_complete": 5}
+{"CONFIRMATION": "city", "v9_rmse": 20061150.77388296, "candidate_rmse": 19924168.53482659, "gain": 136982.23905636743, "relative_gain": 0.006828234362043712}
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+V14 delivery complete: /content/mla_v14/delivery/V14_Report.md

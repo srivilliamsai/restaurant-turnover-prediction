@@ -1,0 +1,379 @@
+V9_CLI_RUN: ./improvement_v9/colab_cli_runs/20261026T160148Z
+Installing pinned packages before a clean kernel restart.
+Python: 3.13.16
+{'numpy': '2.5.4', 'pandas': '3.0.6', 'scikit-learn': '1.9.1', 'scipy': '1.18.1', 'catboost': '1.2.10', 'interpret-core': '0.7.8', 'tabpfn': '9.2.0'}
+CUDA available: True
+GPU: Tesla T4
+V9_CELL 1/10 START
+Python: 3.13.16
+{'numpy': '2.5.4', 'pandas': '3.0.6', 'scikit-learn': '1.9.1', 'scipy': '1.18.1', 'catboost': '1.2.10', 'interpret-core': '0.7.8', 'tabpfn': '9.2.0'}
+CUDA available: True
+GPU: Tesla T4
+V9_CELL 1/10 COMPLETE
+V9_CELL 2/10 START
+Research root: /content/v9_cli_20261026T160148Z/v9_fresh__h2_j7gd
+V9_CELL 2/10 COMPLETE
+V9_CELL 3/10 START
+{"audit": "PASS", "settings": 8, "v7_portal_rmse": 12024316.5355221}
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+{
+  "valid_stale_corrupt_interrupted_checkpoints": true,
+  "fold_local_vocabularies_and_unseen_missing": true,
+  "feature_schemas_and_target_id_exclusion": true,
+  "ebm_all_settings_behavior": true,
+  "outer_validation_labels_excluded_from_model_fit": true,
+  "all_original_fit_targets_retained": true,
+  "status": "PASS",
+  "gpu_model_fit_tested": false
+}
+PASS: input, implementation, snapshot and scored-file hashes; feature/cache/fold checks.
+V9_CELL 3/10 COMPLETE
+V9_CELL 4/10 START
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+{"pilot": "ebm", "eligible": true, "status": "passed", "fit_rows": 2794, "validation_rows": 699, "settings": {"family": "ebm", "group": "ebm", "target": "raw", "representation": "v7", "interactions": 10}, "repeat_difference_INR": 0.0, "checks": {"rows": 500, "columns": ["Registration Number", "Annual Turnover"], "original_row_order": true, "unique_ids": true, "finite_nonnegative": true, "permutation_invariance": true, "target_id_invariance": true, "missing_and_unseen_values": true, "malformed_cases_rejected": 12}, "no_outer_validation_labels_passed_to_fit": true, "seconds": 20.347465478000004}
+/usr/local/lib/python3.13/dist-packages/huggingface_hub/utils/_auth.py:138: UserWarning: 
+Error while fetching `HF_TOKEN` secret value from your vault: 'Requesting secret HF_TOKEN timed out. Secrets can only be fetched when running from the Colab UI.'.
+  warnings.warn(f"\nError while fetching `HF_TOKEN` secret value from your vault: '{str(e)}'.")
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+{"pilot": "tabpfn", "eligible": true, "status": "passed", "fit_rows": 2794, "validation_rows": 699, "settings": {"family": "tabpfn", "group": "tabpfn", "target": "raw", "representation": "compact"}, "repeat_difference_INR": 0.0, "checks": {"rows": 500, "columns": ["Registration Number", "Annual Turnover"], "original_row_order": true, "unique_ids": true, "finite_nonnegative": true, "permutation_invariance": true, "target_id_invariance": true, "missing_and_unseen_values": true, "malformed_cases_rejected": 12}, "no_outer_validation_labels_passed_to_fit": true, "execution_contract": {"torch": "2.11.0+cu130", "tabpfn": "9.2.0", "cuda": "13.0", "gpu": "Tesla T4", "precision": "float32", "checkpoint": {"repo_id": "Prior-Labs/TabPFN-v2-reg", "revision": "4972a65a1b30806315c6f92499959ffbfc69a673", "filename": "tabpfn-v2-regressor.ckpt", "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736"}}, "seconds": 145.78177921199995}
+V9_CELL 4/10 COMPLETE
+V9_CELL 5/10 START
+tabpfn_raw_compact / 42 / fold 1: tabpfn fit complete: 2794 rows, 33 features, plain
+tabpfn_raw_compact / 42 / fold 2: tabpfn fit complete: 2794 rows, 33 features, plain
+tabpfn_raw_compact / 42 / fold 3: tabpfn fit complete: 2794 rows, 33 features, plain
+tabpfn_raw_compact / 42 / fold 4: tabpfn fit complete: 2795 rows, 33 features, plain
+tabpfn_raw_compact / 42 / fold 5: tabpfn fit complete: 2795 rows, 33 features, plain
+{"component": "tabpfn_raw_compact", "mode": "plain", "scheme": "42", "rmse": 19777774.53498116}
+tabpfn_raw_compact / 71 / fold 1: tabpfn fit complete: 2794 rows, 33 features, plain
+tabpfn_raw_compact / 71 / fold 2: tabpfn fit complete: 2794 rows, 33 features, plain
+tabpfn_raw_compact / 71 / fold 3: tabpfn fit complete: 2794 rows, 33 features, plain
+tabpfn_raw_compact / 71 / fold 4: tabpfn fit complete: 2795 rows, 33 features, plain
+tabpfn_raw_compact / 71 / fold 5: tabpfn fit complete: 2795 rows, 33 features, plain
+{"component": "tabpfn_raw_compact", "mode": "plain", "scheme": "71", "rmse": 19814070.474110283}
+{"screen_complete": "tabpfn_raw_compact", "settings_finished": 1, "of": 8}
+tabpfn_raw_v7 / 42 / fold 1: tabpfn fit complete: 2794 rows, 40 features, plain
+tabpfn_raw_v7 / 42 / fold 2: tabpfn fit complete: 2794 rows, 40 features, plain
+tabpfn_raw_v7 / 42 / fold 3: tabpfn fit complete: 2794 rows, 40 features, plain
+tabpfn_raw_v7 / 42 / fold 4: tabpfn fit complete: 2795 rows, 40 features, plain
+tabpfn_raw_v7 / 42 / fold 5: tabpfn fit complete: 2795 rows, 40 features, plain
+{"component": "tabpfn_raw_v7", "mode": "plain", "scheme": "42", "rmse": 19751126.34673949}
+tabpfn_raw_v7 / 71 / fold 1: tabpfn fit complete: 2794 rows, 40 features, plain
+tabpfn_raw_v7 / 71 / fold 2: tabpfn fit complete: 2794 rows, 40 features, plain
+tabpfn_raw_v7 / 71 / fold 3: tabpfn fit complete: 2794 rows, 40 features, plain
+tabpfn_raw_v7 / 71 / fold 4: tabpfn fit complete: 2795 rows, 40 features, plain
+tabpfn_raw_v7 / 71 / fold 5: tabpfn fit complete: 2795 rows, 40 features, plain
+{"component": "tabpfn_raw_v7", "mode": "plain", "scheme": "71", "rmse": 19784518.531629473}
+{"screen_complete": "tabpfn_raw_v7", "settings_finished": 2, "of": 8}
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_raw_i0 / 42 / fold 1: ebm fit complete: 2794 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_raw_i0 / 42 / fold 2: ebm fit complete: 2794 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_raw_i0 / 42 / fold 3: ebm fit complete: 2794 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_raw_i0 / 42 / fold 4: ebm fit complete: 2795 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_raw_i0 / 42 / fold 5: ebm fit complete: 2795 rows, 40 features, plain
+{"component": "ebm_raw_i0", "mode": "plain", "scheme": "42", "rmse": 20128293.32324513}
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_raw_i0 / 71 / fold 1: ebm fit complete: 2794 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_raw_i0 / 71 / fold 2: ebm fit complete: 2794 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_raw_i0 / 71 / fold 3: ebm fit complete: 2794 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_raw_i0 / 71 / fold 4: ebm fit complete: 2795 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_raw_i0 / 71 / fold 5: ebm fit complete: 2795 rows, 40 features, plain
+{"component": "ebm_raw_i0", "mode": "plain", "scheme": "71", "rmse": 20177102.827106833}
+{"screen_complete": "ebm_raw_i0", "settings_finished": 3, "of": 8}
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_raw_i10 / 42 / fold 1: ebm fit complete: 2794 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_raw_i10 / 42 / fold 2: ebm fit complete: 2794 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_raw_i10 / 42 / fold 3: ebm fit complete: 2794 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_raw_i10 / 42 / fold 4: ebm fit complete: 2795 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_raw_i10 / 42 / fold 5: ebm fit complete: 2795 rows, 40 features, plain
+{"component": "ebm_raw_i10", "mode": "plain", "scheme": "42", "rmse": 20191113.693993993}
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_raw_i10 / 71 / fold 1: ebm fit complete: 2794 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_raw_i10 / 71 / fold 2: ebm fit complete: 2794 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_raw_i10 / 71 / fold 3: ebm fit complete: 2794 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_raw_i10 / 71 / fold 4: ebm fit complete: 2795 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_raw_i10 / 71 / fold 5: ebm fit complete: 2795 rows, 40 features, plain
+{"component": "ebm_raw_i10", "mode": "plain", "scheme": "71", "rmse": 20168616.57512906}
+{"screen_complete": "ebm_raw_i10", "settings_finished": 4, "of": 8}
+tabpfn_sqrt_compact / 42 / fold 1: tabpfn fit complete: 2794 rows, 33 features, plain
+tabpfn_sqrt_compact / 42 / fold 2: tabpfn fit complete: 2794 rows, 33 features, plain
+tabpfn_sqrt_compact / 42 / fold 3: tabpfn fit complete: 2794 rows, 33 features, plain
+tabpfn_sqrt_compact / 42 / fold 4: tabpfn fit complete: 2795 rows, 33 features, plain
+tabpfn_sqrt_compact / 42 / fold 5: tabpfn fit complete: 2795 rows, 33 features, plain
+{"component": "tabpfn_sqrt_compact", "mode": "plain", "scheme": "42", "rmse": 19889613.973498106}
+tabpfn_sqrt_compact / 71 / fold 1: tabpfn fit complete: 2794 rows, 33 features, plain
+tabpfn_sqrt_compact / 71 / fold 2: tabpfn fit complete: 2794 rows, 33 features, plain
+tabpfn_sqrt_compact / 71 / fold 3: tabpfn fit complete: 2794 rows, 33 features, plain
+tabpfn_sqrt_compact / 71 / fold 4: tabpfn fit complete: 2795 rows, 33 features, plain
+tabpfn_sqrt_compact / 71 / fold 5: tabpfn fit complete: 2795 rows, 33 features, plain
+{"component": "tabpfn_sqrt_compact", "mode": "plain", "scheme": "71", "rmse": 19917299.449919045}
+{"screen_complete": "tabpfn_sqrt_compact", "settings_finished": 5, "of": 8}
+tabpfn_sqrt_v7 / 42 / fold 1: tabpfn fit complete: 2794 rows, 40 features, plain
+tabpfn_sqrt_v7 / 42 / fold 2: tabpfn fit complete: 2794 rows, 40 features, plain
+tabpfn_sqrt_v7 / 42 / fold 3: tabpfn fit complete: 2794 rows, 40 features, plain
+tabpfn_sqrt_v7 / 42 / fold 4: tabpfn fit complete: 2795 rows, 40 features, plain
+tabpfn_sqrt_v7 / 42 / fold 5: tabpfn fit complete: 2795 rows, 40 features, plain
+{"component": "tabpfn_sqrt_v7", "mode": "plain", "scheme": "42", "rmse": 19861485.439088225}
+tabpfn_sqrt_v7 / 71 / fold 1: tabpfn fit complete: 2794 rows, 40 features, plain
+tabpfn_sqrt_v7 / 71 / fold 2: tabpfn fit complete: 2794 rows, 40 features, plain
+tabpfn_sqrt_v7 / 71 / fold 3: tabpfn fit complete: 2794 rows, 40 features, plain
+tabpfn_sqrt_v7 / 71 / fold 4: tabpfn fit complete: 2795 rows, 40 features, plain
+tabpfn_sqrt_v7 / 71 / fold 5: tabpfn fit complete: 2795 rows, 40 features, plain
+{"component": "tabpfn_sqrt_v7", "mode": "plain", "scheme": "71", "rmse": 19896984.55076583}
+{"screen_complete": "tabpfn_sqrt_v7", "settings_finished": 6, "of": 8}
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_sqrt_i0 / 42 / fold 1: ebm fit complete: 2794 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_sqrt_i0 / 42 / fold 2: ebm fit complete: 2794 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_sqrt_i0 / 42 / fold 3: ebm fit complete: 2794 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_sqrt_i0 / 42 / fold 4: ebm fit complete: 2795 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_sqrt_i0 / 42 / fold 5: ebm fit complete: 2795 rows, 40 features, plain
+{"component": "ebm_sqrt_i0", "mode": "plain", "scheme": "42", "rmse": 20067572.342569746}
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_sqrt_i0 / 71 / fold 1: ebm fit complete: 2794 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_sqrt_i0 / 71 / fold 2: ebm fit complete: 2794 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_sqrt_i0 / 71 / fold 3: ebm fit complete: 2794 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_sqrt_i0 / 71 / fold 4: ebm fit complete: 2795 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_sqrt_i0 / 71 / fold 5: ebm fit complete: 2795 rows, 40 features, plain
+{"component": "ebm_sqrt_i0", "mode": "plain", "scheme": "71", "rmse": 20100445.007803846}
+{"screen_complete": "ebm_sqrt_i0", "settings_finished": 7, "of": 8}
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_sqrt_i10 / 42 / fold 1: ebm fit complete: 2794 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_sqrt_i10 / 42 / fold 2: ebm fit complete: 2794 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_sqrt_i10 / 42 / fold 3: ebm fit complete: 2794 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_sqrt_i10 / 42 / fold 4: ebm fit complete: 2795 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_sqrt_i10 / 42 / fold 5: ebm fit complete: 2795 rows, 40 features, plain
+{"component": "ebm_sqrt_i10", "mode": "plain", "scheme": "42", "rmse": 20057418.46644677}
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_sqrt_i10 / 71 / fold 1: ebm fit complete: 2794 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_sqrt_i10 / 71 / fold 2: ebm fit complete: 2794 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_sqrt_i10 / 71 / fold 3: ebm fit complete: 2794 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_sqrt_i10 / 71 / fold 4: ebm fit complete: 2795 rows, 40 features, plain
+/usr/local/lib/python3.13/dist-packages/interpret/glassbox/_ebm/_ebm.py:871: UserWarning: Missing values detected. Our visualizations do not currently display missing values. To retain the glassbox nature of the model you need to either set the missing values to an extreme value like -1000 that will be visible on the graphs, or manually examine the missing value score in ebm.term_scores_[term_index][0]
+  warn(
+ebm_sqrt_i10 / 71 / fold 5: ebm fit complete: 2795 rows, 40 features, plain
+{"component": "ebm_sqrt_i10", "mode": "plain", "scheme": "71", "rmse": 20066077.522612907}
+{"screen_complete": "ebm_sqrt_i10", "settings_finished": 8, "of": 8}
+{"screening_shortlist": [{"name": "tabpfn_raw_v7", "mode": "plain", "group": "tabpfn", "family": "tabpfn", "weight": 0.5, "rmse_42": 19732325.188578352, "gain_42": 83488.58908773586, "rmse_71": 19736168.268456027, "gain_71": 54611.07109704614, "mean_rmse": 19734246.72851719}]}
+V9_CELL 5/10 COMPLETE
+V9_CELL 6/10 START
+tabpfn_raw_v7 / 42 / fold 1: tabpfn fit complete: 2794 rows, 40 features, ensemble16
+tabpfn_raw_v7 / 42 / fold 2: tabpfn fit complete: 2794 rows, 40 features, ensemble16
+tabpfn_raw_v7 / 42 / fold 3: tabpfn fit complete: 2794 rows, 40 features, ensemble16
+tabpfn_raw_v7 / 42 / fold 4: tabpfn fit complete: 2795 rows, 40 features, ensemble16
+tabpfn_raw_v7 / 42 / fold 5: tabpfn fit complete: 2795 rows, 40 features, ensemble16
+{"component": "tabpfn_raw_v7", "mode": "ensemble16", "scheme": "42", "rmse": 19747476.077209033}
+tabpfn_raw_v7 / 71 / fold 1: tabpfn fit complete: 2794 rows, 40 features, ensemble16
+tabpfn_raw_v7 / 71 / fold 2: tabpfn fit complete: 2794 rows, 40 features, ensemble16
+tabpfn_raw_v7 / 71 / fold 3: tabpfn fit complete: 2794 rows, 40 features, ensemble16
+tabpfn_raw_v7 / 71 / fold 4: tabpfn fit complete: 2795 rows, 40 features, ensemble16
+tabpfn_raw_v7 / 71 / fold 5: tabpfn fit complete: 2795 rows, 40 features, ensemble16
+{"component": "tabpfn_raw_v7", "mode": "ensemble16", "scheme": "71", "rmse": 19778730.534706403}
+{"FROZEN": [{"name": "tabpfn_raw_v7", "mode": "ensemble16", "group": "tabpfn", "family": "tabpfn", "weight": 0.5, "rmse_42": 19731241.65831727, "gain_42": 84572.11934881657, "rmse_71": 19733020.017403986, "gain_71": 57759.32214908674, "mean_rmse": 19732130.83786063}], "lock_sha256": "0be8a79c77c85b6b5c29a3efcb238e2d8d9d147e1ae2025e8e218a5246ad9ba5", "development_configurations": 36}
+V9_CELL 6/10 COMPLETE
+V9_CELL 7/10 START
+V7 / 48211 / fold 1: v5 outer fit complete; generating nested residual inputs
+V7 / 48211 / fold 1: inner fold 1/3 complete
+V7 / 48211 / fold 1: inner fold 2/3 complete
+V7 / 48211 / fold 1: inner fold 3/3 complete
+V7 / 48211: fold 1/5 complete
+V7 / 48211 / fold 2: v5 outer fit complete; generating nested residual inputs
+V7 / 48211 / fold 2: inner fold 1/3 complete
+V7 / 48211 / fold 2: inner fold 2/3 complete
+V7 / 48211 / fold 2: inner fold 3/3 complete
+V7 / 48211: fold 2/5 complete
+V7 / 48211 / fold 3: v5 outer fit complete; generating nested residual inputs
+V7 / 48211 / fold 3: inner fold 1/3 complete
+V7 / 48211 / fold 3: inner fold 2/3 complete
+V7 / 48211 / fold 3: inner fold 3/3 complete
+V7 / 48211: fold 3/5 complete
+V7 / 48211 / fold 4: v5 outer fit complete; generating nested residual inputs
+V7 / 48211 / fold 4: inner fold 1/3 complete
+V7 / 48211 / fold 4: inner fold 2/3 complete
+V7 / 48211 / fold 4: inner fold 3/3 complete
+V7 / 48211: fold 4/5 complete
+V7 / 48211 / fold 5: v5 outer fit complete; generating nested residual inputs
+V7 / 48211 / fold 5: inner fold 1/3 complete
+V7 / 48211 / fold 5: inner fold 2/3 complete
+V7 / 48211 / fold 5: inner fold 3/3 complete
+V7 / 48211: fold 5/5 complete
+tabpfn_raw_v7 / 48211 / fold 1: tabpfn fit complete: 2794 rows, 40 features, ensemble16
+tabpfn_raw_v7 / 48211 / fold 2: tabpfn fit complete: 2794 rows, 40 features, ensemble16
+tabpfn_raw_v7 / 48211 / fold 3: tabpfn fit complete: 2794 rows, 40 features, ensemble16
+tabpfn_raw_v7 / 48211 / fold 4: tabpfn fit complete: 2795 rows, 40 features, ensemble16
+tabpfn_raw_v7 / 48211 / fold 5: tabpfn fit complete: 2795 rows, 40 features, ensemble16
+{"component": "tabpfn_raw_v7", "mode": "ensemble16", "scheme": "48211", "rmse": 19750152.69454091}
+{"confirmation": "tabpfn_raw_v7", "scheme": "48211", "v7_rmse": 19832118.86153426, "candidate_rmse": 19742162.506125737, "gain": 89956.35540852323, "relative_change": -0.004535892308663025}
+V7 / 48212 / fold 1: v5 outer fit complete; generating nested residual inputs
+V7 / 48212 / fold 1: inner fold 1/3 complete
+V7 / 48212 / fold 1: inner fold 2/3 complete
+V7 / 48212 / fold 1: inner fold 3/3 complete
+V7 / 48212: fold 1/5 complete
+V7 / 48212 / fold 2: v5 outer fit complete; generating nested residual inputs
+V7 / 48212 / fold 2: inner fold 1/3 complete
+V7 / 48212 / fold 2: inner fold 2/3 complete
+V7 / 48212 / fold 2: inner fold 3/3 complete
+V7 / 48212: fold 2/5 complete
+V7 / 48212 / fold 3: v5 outer fit complete; generating nested residual inputs
+V7 / 48212 / fold 3: inner fold 1/3 complete
+V7 / 48212 / fold 3: inner fold 2/3 complete
+V7 / 48212 / fold 3: inner fold 3/3 complete
+V7 / 48212: fold 3/5 complete
+V7 / 48212 / fold 4: v5 outer fit complete; generating nested residual inputs
+V7 / 48212 / fold 4: inner fold 1/3 complete
+V7 / 48212 / fold 4: inner fold 2/3 complete
+V7 / 48212 / fold 4: inner fold 3/3 complete
+V7 / 48212: fold 4/5 complete
+V7 / 48212 / fold 5: v5 outer fit complete; generating nested residual inputs
+V7 / 48212 / fold 5: inner fold 1/3 complete
+V7 / 48212 / fold 5: inner fold 2/3 complete
+V7 / 48212 / fold 5: inner fold 3/3 complete
+V7 / 48212: fold 5/5 complete
+tabpfn_raw_v7 / 48212 / fold 1: tabpfn fit complete: 2794 rows, 40 features, ensemble16
+tabpfn_raw_v7 / 48212 / fold 2: tabpfn fit complete: 2794 rows, 40 features, ensemble16
+tabpfn_raw_v7 / 48212 / fold 3: tabpfn fit complete: 2794 rows, 40 features, ensemble16
+tabpfn_raw_v7 / 48212 / fold 4: tabpfn fit complete: 2795 rows, 40 features, ensemble16
+tabpfn_raw_v7 / 48212 / fold 5: tabpfn fit complete: 2795 rows, 40 features, ensemble16
+{"component": "tabpfn_raw_v7", "mode": "ensemble16", "scheme": "48212", "rmse": 19808021.725004002}
+{"confirmation": "tabpfn_raw_v7", "scheme": "48212", "v7_rmse": 19937865.88776822, "candidate_rmse": 19820588.38344254, "gain": 117277.50432568043, "relative_change": -0.005882149322592678}
+V7 / 48213 / fold 1: v5 outer fit complete; generating nested residual inputs
+V7 / 48213 / fold 1: inner fold 1/3 complete
+V7 / 48213 / fold 1: inner fold 2/3 complete
+V7 / 48213 / fold 1: inner fold 3/3 complete
+V7 / 48213: fold 1/5 complete
+V7 / 48213 / fold 2: v5 outer fit complete; generating nested residual inputs
+V7 / 48213 / fold 2: inner fold 1/3 complete
+V7 / 48213 / fold 2: inner fold 2/3 complete
+V7 / 48213 / fold 2: inner fold 3/3 complete
+V7 / 48213: fold 2/5 complete
+V7 / 48213 / fold 3: v5 outer fit complete; generating nested residual inputs
+V7 / 48213 / fold 3: inner fold 1/3 complete
+V7 / 48213 / fold 3: inner fold 2/3 complete
+V7 / 48213 / fold 3: inner fold 3/3 complete
+V7 / 48213: fold 3/5 complete
+V7 / 48213 / fold 4: v5 outer fit complete; generating nested residual inputs
+V7 / 48213 / fold 4: inner fold 1/3 complete
+V7 / 48213 / fold 4: inner fold 2/3 complete
+V7 / 48213 / fold 4: inner fold 3/3 complete
+V7 / 48213: fold 4/5 complete
+V7 / 48213 / fold 5: v5 outer fit complete; generating nested residual inputs
+V7 / 48213 / fold 5: inner fold 1/3 complete
+V7 / 48213 / fold 5: inner fold 2/3 complete
+V7 / 48213 / fold 5: inner fold 3/3 complete
+V7 / 48213: fold 5/5 complete
+tabpfn_raw_v7 / 48213 / fold 1: tabpfn fit complete: 2794 rows, 40 features, ensemble16
+tabpfn_raw_v7 / 48213 / fold 2: tabpfn fit complete: 2794 rows, 40 features, ensemble16
+tabpfn_raw_v7 / 48213 / fold 3: tabpfn fit complete: 2794 rows, 40 features, ensemble16
+tabpfn_raw_v7 / 48213 / fold 4: tabpfn fit complete: 2795 rows, 40 features, ensemble16
+tabpfn_raw_v7 / 48213 / fold 5: tabpfn fit complete: 2795 rows, 40 features, ensemble16
+{"component": "tabpfn_raw_v7", "mode": "ensemble16", "scheme": "48213", "rmse": 19748489.348577086}
+{"confirmation": "tabpfn_raw_v7", "scheme": "48213", "v7_rmse": 19786031.139179584, "candidate_rmse": 19710816.909957707, "gain": 75214.22922187671, "relative_change": -0.003801380311837299}
+tabpfn_raw_v7 / strat:27421 / fold 1: tabpfn fit complete: 2794 rows, 40 features, ensemble16
+tabpfn_raw_v7 / strat:27421 / fold 2: tabpfn fit complete: 2794 rows, 40 features, ensemble16
+tabpfn_raw_v7 / strat:27421 / fold 3: tabpfn fit complete: 2794 rows, 40 features, ensemble16
+tabpfn_raw_v7 / strat:27421 / fold 4: tabpfn fit complete: 2795 rows, 40 features, ensemble16
+tabpfn_raw_v7 / strat:27421 / fold 5: tabpfn fit complete: 2795 rows, 40 features, ensemble16
+{"component": "tabpfn_raw_v7", "mode": "ensemble16", "scheme": "strat:27421", "rmse": 19763377.51018449}
+{"confirmation": "tabpfn_raw_v7", "scheme": "strat:27421", "v7_rmse": 19788419.321618978, "candidate_rmse": 19726481.414450042, "gain": 61937.907168935984, "relative_change": -0.0031300078173130963}
+tabpfn_raw_v7 / city / fold 1: tabpfn fit complete: 2794 rows, 40 features, ensemble16
+tabpfn_raw_v7 / city / fold 2: tabpfn fit complete: 2794 rows, 40 features, ensemble16
+tabpfn_raw_v7 / city / fold 3: tabpfn fit complete: 2794 rows, 40 features, ensemble16
+tabpfn_raw_v7 / city / fold 4: tabpfn fit complete: 2795 rows, 40 features, ensemble16
+tabpfn_raw_v7 / city / fold 5: tabpfn fit complete: 2795 rows, 40 features, ensemble16
+{"component": "tabpfn_raw_v7", "mode": "ensemble16", "scheme": "city", "rmse": 19962596.045335148}
+{"confirmation": "tabpfn_raw_v7", "scheme": "city", "v7_rmse": 20113476.98948276, "candidate_rmse": 19964901.24527707, "gain": 148575.74420569092, "relative_change": -0.0073868751923588105}
+{"DECISION": "qualified portal trials", "qualified": 1}
+V9_CELL 7/10 COMPLETE
+V9_CELL 8/10 START
+Fresh scored-V7 full reproduction begins.
+inner fold 1/3 complete
+inner fold 2/3 complete
+inner fold 3/3 complete
+AssertionError: 
+V9_CLI_ERROR: RuntimeError: AssertionError: 
+Traceback (most recent call last):
+  File "./improvement_v9/colab_run_v9.py", line 117, in <module>
+    cell.outputs = normalize(execute(cell.source))
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "./improvement_v9/colab_run_v9.py", line 51, in execute
+    raise RuntimeError(errors[0].get('ename', 'Error') + ': ' + errors[0].get('evalue', ''))
+RuntimeError: AssertionError: 

@@ -1,0 +1,205 @@
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+import pytest
+import torch
+
+from synthefy_nori import NoriRegressor, config_path
+from synthefy_nori import api
+from synthefy_nori.inference import preprocess as inference_preprocess
+from synthefy_nori.inference.predictor import NoriPredictor
+
+
+def _set_accelerators(monkeypatch, *, cuda=False, mps=False):
+    monkeypatch.setattr(torch.cuda, "is_available", lambda: cuda)
+    monkeypatch.setattr(torch.backends.mps, "is_available", lambda: mps)
+
+
+@pytest.mark.parametrize(
+    ("cuda", "mps", "expected"),
+    [
+        (True, True, torch.device("cuda:0")),
+        (False, True, torch.device("mps")),
+        (False, False, torch.device("cpu")),
+    ],
+)
+def test_default_device_priority(monkeypatch, cuda, mps, expected):
+    _set_accelerators(monkeypatch, cuda=cuda, mps=mps)
+    assert api._default_device() == expected
+
+
+def test_explicit_mps_fails_early_when_pytorch_lacks_support(monkeypatch):
+    _set_accelerators(monkeypatch)
+    monkeypatch.setattr(torch.backends.mps, "is_built", lambda: False)
+
+    with pytest.raises(RuntimeError, match="PyTorch build does not include MPS"):
+        api._as_device("mps")
+
+
+def test_explicit_cuda_fails_early_when_cuda_is_unavailable(monkeypatch):
+    _set_accelerators(monkeypatch)
+
+    with pytest.raises(RuntimeError, match="CUDA is not available to PyTorch"):
+        api._as_device("cuda")
+
+
+def test_explicit_cuda_rejects_an_out_of_range_device_index(monkeypatch):
+    _set_accelerators(monkeypatch, cuda=True)
+    monkeypatch.setattr(torch.cuda, "device_count", lambda: 1)
+
+    with pytest.raises(RuntimeError, match=r"device='cuda:1'.*only 1 CUDA device"):
+        api._as_device("cuda:1")
+
+
+def test_explicit_cuda_accepts_a_visible_device_index(monkeypatch):
+    _set_accelerators(monkeypatch, cuda=True)
+    monkeypatch.setattr(torch.cuda, "device_count", lambda: 2)
+
+    assert api._as_device("cuda:1") == torch.device("cuda:1")
+
+
+def test_fit_resolves_and_reuses_device_for_named_text_encoder(monkeypatch):
+    captured = {}
+
+    class FakePreprocessor:
+        def __init__(self, **kwargs):
+            if "text_device" in kwargs:
+                captured.update(kwargs)
+
+        def _validate_parameters(self):
+            pass
+
+        def fit_transform(self, frame):
+            return pd.DataFrame(np.zeros((len(frame), 2), dtype=np.float32), index=frame.index)
+
+    monkeypatch.setattr(api, "_as_device", lambda device: torch.device("mps"))
+    monkeypatch.setattr(api, "DataFramePreprocessor", FakePreprocessor)
+
+    model = NoriRegressor(model_path="local.pt", text_columns=["review"])
+    model.fit(pd.DataFrame({"review": ["good", "bad"]}), [1.0, 0.0])
+
+    assert model.device_ == torch.device("mps")
+    assert captured["text_device"] == torch.device("mps")
+
+
+def test_mps_inference_disables_mixed_precision(monkeypatch):
+    monkeypatch.setattr(NoriPredictor, "build_preprocess_pipeline", lambda self: None)
+    monkeypatch.setattr(inference_preprocess, "_GPU_SVD_DEVICE", None)
+
+    predictor = NoriPredictor(
+        device=torch.device("mps"),
+        inference_config=[{"retrieval_config": {"use_retrieval": False}}],
+        model=torch.nn.Identity(),
+    )
+
+    assert predictor.mix_precision is False
+
+
+def test_config_path_points_to_bundled_file():
+    path = Path(config_path("default_inference.json"))
+    assert path.name == "default_inference.json"
+    assert path.exists()
+
+
+def test_regressor_stores_no_config_until_its_predictor_is_built():
+    # None is stored verbatim (sklearn convention) and resolved from `model` when the
+    # predictor is built.
+    model = NoriRegressor(model_path="local.pt")
+    assert model.model_path == "local.pt"
+    assert model.inference_config is None
+
+
+def test_regressor_stores_model_variant_verbatim():
+    # stored as-is so sklearn clone/get_params round-trips (BaseEstimator contract)
+    model = NoriRegressor(model="nori-30m")
+    assert model.model == "nori-30m"
+    assert model.get_params()["model"] == "nori-30m"
+    # Stored verbatim (sklearn contract; no __init__ validation). There is no default:
+    # fitting/predicting without a model= (or model_path) raises at checkpoint load.
+    assert NoriRegressor().model is None
+
+
+def test_predict_without_model_or_path_raises_require_model():
+    # Neither model= nor model_path -> the require-model guard raises at checkpoint load,
+    # before any network call. Covers the public NoriRegressor.fit/predict entry point.
+    with pytest.raises(ValueError, match=r"requires model="):
+        NoriRegressor().fit([[0.0, 1.0], [1.0, 0.0]], [0.0, 1.0]).predict([[0.5, 0.5]])
+
+
+def test_resolve_model_path_threads_variant_to_download(monkeypatch):
+    from synthefy_nori import api
+
+    seen = {}
+
+    def fake_download(*, model=None, token=None):
+        seen["model"] = model
+        return "/tmp/resolved.pt"
+
+    monkeypatch.setattr("synthefy_nori.hf.download_checkpoint", fake_download)
+    # variant flows through to the download
+    assert api._resolve_model_path(None, None, "nori-30m") == "/tmp/resolved.pt"
+    assert seen["model"] == "nori-30m"
+    # an explicit local checkpoint still wins over the variant
+    assert api._resolve_model_path("/my/ckpt.pt", None, "nori-30m") == "/my/ckpt.pt"
+
+
+def test_predict_rejects_unsupported_output_types():
+    # output_type is validated before the checkpoint is loaded, so these paths
+    # exercise the guardrails without any model weights.
+    model = NoriRegressor(model_path="local.pt")
+
+    # "main" is a recognized output_type name that Nori does not implement.
+    with pytest.raises(NotImplementedError):
+        model.predict([[0.0, 1.0]], output_type="main")
+
+    with pytest.raises(ValueError):
+        model.predict([[0.0, 1.0]], output_type="bogus")
+
+    with pytest.raises(ValueError):
+        model.predict([[0.0, 1.0]], output_type="mean", quantiles=[0.5])
+
+
+def test_single_query_point_prediction_returns_one_value_per_row(monkeypatch):
+    class PredictorStub:
+        quantile_collapse = "mean"
+        bar_point_estimator = "mean"
+
+        def predict(self, X_train, y_train, X_test):
+            assert len(X_test) == 1
+            return np.array([0.25])
+
+    model = NoriRegressor(model_path="local.pt")
+    model.X_train_ = np.array([[0.0], [1.0]], dtype=np.float32)
+    model.y_train_ = np.array([1.0, 3.0], dtype=np.float64)
+    model.y_mean_ = 2.0
+    model.y_std_ = 2.0
+    model.large_context_policy = None
+    model.large_context_threshold = 50_000
+    monkeypatch.setattr(model, "_get_predictor", lambda: PredictorStub())
+    monkeypatch.setattr(model, "_prepare_query_features", lambda X: np.asarray(X, dtype=np.float32))
+
+    out = model.predict([[0.5]])
+
+    assert isinstance(out, np.ndarray)
+    assert out.shape == (1,)
+    np.testing.assert_allclose(out, [2.5])
+
+
+def test_distribution_outputs_require_fit_and_valid_levels():
+    # 'quantiles'/'full' are supported but need fit() first; the fit guard and
+    # the quantile-level validation both fire before any weights are loaded.
+    model = NoriRegressor(model_path="local.pt")
+
+    for output_type in ("quantiles", "full"):
+        with pytest.raises(ValueError):
+            model.predict([[0.0, 1.0]], output_type=output_type, quantiles=[0.5])
+
+    # Once "fit", an empty/out-of-range quantiles list is rejected.
+    model.X_train_ = [[0.0, 1.0]]
+    model.y_train_ = [0.0]
+    model.y_mean_, model.y_std_ = 0.0, 1.0
+    with pytest.raises(ValueError):
+        model.predict([[0.0, 1.0]], output_type="quantiles", quantiles=[])
+    with pytest.raises(ValueError):
+        model.predict([[0.0, 1.0]], output_type="quantiles", quantiles=[1.5])

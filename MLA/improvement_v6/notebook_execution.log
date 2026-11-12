@@ -1,0 +1,71 @@
+~/.matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /tmp/matplotlib-_wrq3ros because there was an issue with the default path (~/.matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	~/.cache/fontconfig
+	~/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	~/.cache/fontconfig
+	~/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	~/.cache/fontconfig
+	~/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	~/.cache/fontconfig
+	~/.fontconfig
+Matplotlib is building the font cache; this may take a moment.
+Executing notebook cell 2 (1)
+Completed 1; elapsed 0.3s
+Executing notebook cell 3 (2)
+Completed 2; elapsed 0.3s
+Executing notebook cell 5 (3)
+Completed 3; elapsed 1.4s
+Executing notebook cell 6 (4)
+Completed 4; elapsed 1.4s
+Executing notebook cell 7 (5)
+Completed 5; elapsed 1.5s
+Executing notebook cell 9 (6)
+Completed 6; elapsed 1.9s
+Executing notebook cell 11 (7)
+Completed 7; elapsed 117.8s
+Executing notebook cell 13 (8)
+Completed 8; elapsed 117.8s
+Executing notebook cell 14 (9)
+Completed 9; elapsed 146.5s
+Executing notebook cell 16 (10)
+Completed 10; elapsed 146.5s
+{
+  "code_cells": 10,
+  "figures": [
+    "notebook_figure_1.png"
+  ],
+  "elapsed_seconds": 146.45522704200084,
+  "fresh_process": true,
+  "validation_cache_used": false,
+  "fresh_five_fold_assignment": 18421,
+  "maximum_full_fit_difference": 0.0,
+  "maximum_oof_difference": 0.0,
+  "full_fit_reproduced": true,
+  "checks": {
+    "row_order": true,
+    "unique_ids": true,
+    "finite_nonnegative": true,
+    "missing_unseen_values": true,
+    "target_and_id_invariance": true,
+    "permutation_invariance": true,
+    "malformed_cases_rejected": 12,
+    "rows": 500,
+    "columns": [
+      "Registration Number",
+      "Annual Turnover"
+    ]
+  },
+  "export_path": "./improvement_v6/results/notebook_run/submission.csv"
+}

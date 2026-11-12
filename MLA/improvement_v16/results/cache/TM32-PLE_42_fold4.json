@@ -1,0 +1,340 @@
+{
+  "context": {
+    "name": "TM32-PLE",
+    "spec": {
+      "family": "TabM",
+      "members": 32,
+      "blocks": 3,
+      "width": 256,
+      "dropout": 0.1,
+      "bins": 32,
+      "embedding_dimension": 16,
+      "learning_rate": 0.002,
+      "weight_decay": 0.0003,
+      "batch_size": 256,
+      "maximum_epochs": 256,
+      "patience": 20,
+      "inner_fraction": 0.15,
+      "inner_seed": 9091,
+      "seed": 10242,
+      "target": "raw INR millions"
+    },
+    "scheme": "42",
+    "fold": 4,
+    "inputs": {
+      "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+      "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+      "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+      "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+    },
+    "sources": {
+      "core.py": "21b3d4084b09d46618c84b09d5464635ea821a68a932e8f4db1cee2cc76a5bc3",
+      "features.py": "2a14b0be1cf13e25f3d07e3b6ffee324d719a096aeaab3a2a60982b1cc822d78",
+      "modeling.py": "f4ac06b064424e6059f09fcac6687e7850cb25945a6c3890b5b9157863f615b4",
+      "workflow.py": "1bd9749a0fa7fd8ed13b88b372981ab20b66219b67b049ab1a34569ad39990e4",
+      "verify.py": "14ebc89118bee90d66e81bf080da1b8bc0a26af641f7a82e246f78afcd2249af",
+      "delivery.py": "4d2b8ffe5cad5a7ad7c2fe6229bb26b592048e85bcb797687b2c4577e58d9a92",
+      "fresh_worker.py": "32ba32d75bfa8614a7bd88e89723b86f3fd06b926bb82b6451a564790e8c6aa6",
+      "baseline.py": "0513655049b5d7c0e4e57b3339596e718779cd7bcbcc49bafd76e14e5bd9dad1",
+      "legacy_models.py": "031c25ba5a60cf3e6e4c8247553ee951ff71742c846eb103246140929f6cdfba",
+      "legacy_reference.py": "1a24f9f116170ea54bd3242264d5cd2a150c3429e039a50cb11c3112e52247c1",
+      "frozen_v9_modeling.py": "c4d948bcf9e1aab5e667283eb82889af44bc57147a0c2a234af6322044b55487",
+      "v5_contract.json": "3446412f01d536a31123142b984392216efd29094965500251386eac1814ab69",
+      "city_map.json": "539387a0a9f5e143228714dde7679c2848a019a1cbbaa87129b0d4e4c092f7f9",
+      "reference_manifest.json": "82417467e331d6e470fd1058c4ea4edb5a47f98021efc822176bd9a04b99bbd5",
+      "baseline_registry.json": "53e7ddb7fbfbe08162aa97fac8d5ad9dea4981aab3aa942b3e98ebdb2a3060b7",
+      "frozen_pfn.py": "ff4d383d269ffdc1b0021f7d0cac4e19240be130f2544bcc80dc41916a5262b5",
+      "tabm_model.py": "9f616de239f0204424b68d35e76a85ea6eed4743ca8355a40ff3babd7259ebdf",
+      "mitra_pilot.py": "b6bce4be92d909e103f6779dc8acd8e8873d8887511fe5708ba8e12789559967"
+    },
+    "runtime_contract": {
+      "runtime": {
+        "dependencies": {
+          "numpy": "2.5.4",
+          "pandas": "3.0.6",
+          "scikit-learn": "1.9.1",
+          "scipy": "1.18.1",
+          "catboost": "1.2.10",
+          "interpret-core": "0.7.8",
+          "tabpfn": "9.2.0",
+          "tabicl": "2.2.0",
+          "torch": "2.11.0+cu130"
+        },
+        "gpu": "Tesla T4",
+        "cuda": "13.0",
+        "precision": "float32",
+        "prediction_chunk": 500,
+        "seed": 10242,
+        "datetime_dependencies": {
+          "skrub": "0.10.1",
+          "pyarrow": "23.0.1"
+        }
+      },
+      "new_runtime": {
+        "tabm": "0.0.3",
+        "rtdl_num_embeddings": "0.0.12"
+      },
+      "new_module_sha256": {
+        "tabm": "fc654af6a16bac53d893a8265c79d7af4ebddcb95ad0d600cc6b6bc6b7317ade",
+        "rtdl_num_embeddings": "48dfc019d447e0cd225deb8b8145b3efa8b42cde9aa314772d6e234753e1cee1"
+      },
+      "models": {
+        "BASE": {
+          "checkpoint": {
+            "repo_id": "Prior-Labs/TabPFN-v2-reg",
+            "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+            "filename": "tabpfn-v2-regressor.ckpt",
+            "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736",
+            "version": "2"
+          }
+        },
+        "P35_8": {
+          "checkpoint": {
+            "repo_id": "Prior-Labs/tabpfn_3_5",
+            "revision": "06bf2ba35c80a92a3b9abb436b99cf49e7a0365e",
+            "filename": "tabpfn-v3.5-20260909.safetensors",
+            "sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+            "bytes": 876027932,
+            "version": "3.5",
+            "download_path": "/root/.cache/huggingface/hub/models--Prior-Labs--tabpfn_3_5/snapshots/06bf2ba35c80a92a3b9abb436b99cf49e7a0365e/tabpfn-v3.5-20260909.safetensors",
+            "local_loader_path": "/content/mla_v14/model_weights/tabpfn-v3.5-20260909.safetensors",
+            "local_suffix": ".safetensors",
+            "format_check": {
+              "format": "safetensors",
+              "header_bytes": 77296,
+              "tensor_entries": 595,
+              "metadata_keys": [
+                "architecture_name",
+                "config",
+                "inference_config"
+              ]
+            },
+            "installed_loader_path": "/usr/local/lib/python3.13/dist-packages/tabpfn/checkpoint.py",
+            "installed_loader_sha256": "f7c86363ccc96af4ffe10ec23221ed90dfea304f04b6c4e48330ba25bbf807de"
+          },
+          "parameters": {
+            "auto_scale_n_estimators": true,
+            "average_before_softmax": false,
+            "device": "cuda",
+            "differentiable_input": false,
+            "enable_torch_compile": false,
+            "eval_metric": null,
+            "fit_mode": "low_memory",
+            "ignore_pretraining_limits": false,
+            "inference_config": null,
+            "inference_precision": "torch.float32",
+            "keep_cache_on_device": true,
+            "kv_cache_precision": null,
+            "memory_saving_mode": true,
+            "model_path": "checkpoint_sha256:ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+            "n_estimators": 8,
+            "n_jobs": null,
+            "n_preprocessing_jobs": 1,
+            "random_state": 10242,
+            "show_progress_bar": false,
+            "softmax_temperature": "auto",
+            "tuning_config": null
+          }
+        },
+        "TM32-PLE": {
+          "parameters": {
+            "family": "TabM",
+            "members": 32,
+            "blocks": 3,
+            "width": 256,
+            "dropout": 0.1,
+            "bins": 32,
+            "embedding_dimension": 16,
+            "learning_rate": 0.002,
+            "weight_decay": 0.0003,
+            "batch_size": 256,
+            "maximum_epochs": 256,
+            "patience": 20,
+            "inner_fraction": 0.15,
+            "inner_seed": 9091,
+            "seed": 10242,
+            "target": "raw INR millions"
+          }
+        }
+      },
+      "engineering_failures": {},
+      "settings": {
+        "TM32-PLE": {
+          "family": "TabM",
+          "members": 32,
+          "blocks": 3,
+          "width": 256,
+          "dropout": 0.1,
+          "bins": 32,
+          "embedding_dimension": 16,
+          "learning_rate": 0.002,
+          "weight_decay": 0.0003,
+          "batch_size": 256,
+          "maximum_epochs": 256,
+          "patience": 20,
+          "inner_fraction": 0.15,
+          "inner_seed": 9091,
+          "seed": 10242,
+          "target": "raw INR millions"
+        },
+        "MITRA2-FT": {
+          "family": "Mitra-v2",
+          "steps": 50,
+          "bag_children": 8,
+          "seed": 10242,
+          "target": "raw INR millions"
+        }
+      },
+      "adapter": "Fixed 500-row blocks; BASE first training row; new model maximum-observed training row; discard padding.",
+      "output_floor": 0.0,
+      "new_inference_layout": {
+        "TM32-PLE": "500 query rows, padded with first encoded training row"
+      },
+      "selection_uses_validation_rmse": false
+    },
+    "train_indices": "d11da5e8c4d14dbcd69f13b6f0a839222cc502dd136159e5207dea3c01e44d95",
+    "valid_indices": "b8641b3bbbebd1c51221db1137830ca0e29d9fd6a0455f7cfbbd6b7e7f306970",
+    "training_targets": "ee2f3ef90fc26e6fce3918b88a5a27e90ca8f6b6b11e81425e2a24e0be52d203",
+    "row_ids": "e4b76a486c26f38c4361e5a737753bf7c920a8a6e0fbc9be3fc2ed4a6903d375",
+    "target_units": "raw INR millions"
+  },
+  "sha256": "aec99b53ea4408a092d1adf9ddb771e317b1e95bbbed7f408d940aee74567fd5",
+  "fit_metadata": {
+    "name": "TM32-PLE",
+    "training_rows": 2795,
+    "units": "raw INR millions",
+    "all_original_training_targets_retained": true,
+    "members": 32,
+    "inner_training_rows": 2375,
+    "inner_validation_rows": 420,
+    "inner_seed": 9095,
+    "inner_policy": "random-15-percent",
+    "inner_training_indices_sha256": "7f87918b93bbb2df28a7ad9c5d276080239d303ce50476f399828b36c8ecc87e",
+    "inner_validation_indices_sha256": "26093f13f8d1e95646f426d46174ec3eaea70f0de6acd630a645b0bc88f87fa9",
+    "selected_epochs": 8,
+    "inner_epochs_run": 28,
+    "inner_history": [
+      {
+        "epoch": 1,
+        "inner_rmse_INR": 27880107.510397796
+      },
+      {
+        "epoch": 2,
+        "inner_rmse_INR": 27169359.657179553
+      },
+      {
+        "epoch": 3,
+        "inner_rmse_INR": 27112416.522923447
+      },
+      {
+        "epoch": 4,
+        "inner_rmse_INR": 26988141.605291724
+      },
+      {
+        "epoch": 5,
+        "inner_rmse_INR": 27054468.133235414
+      },
+      {
+        "epoch": 6,
+        "inner_rmse_INR": 26978096.72704323
+      },
+      {
+        "epoch": 7,
+        "inner_rmse_INR": 26715946.35344153
+      },
+      {
+        "epoch": 8,
+        "inner_rmse_INR": 26418711.025437307
+      },
+      {
+        "epoch": 9,
+        "inner_rmse_INR": 26867487.44138239
+      },
+      {
+        "epoch": 10,
+        "inner_rmse_INR": 26801764.3676226
+      },
+      {
+        "epoch": 11,
+        "inner_rmse_INR": 26784966.100827813
+      },
+      {
+        "epoch": 12,
+        "inner_rmse_INR": 26903961.30715088
+      },
+      {
+        "epoch": 13,
+        "inner_rmse_INR": 26802332.407980505
+      },
+      {
+        "epoch": 14,
+        "inner_rmse_INR": 26554586.561170775
+      },
+      {
+        "epoch": 15,
+        "inner_rmse_INR": 27056084.22531281
+      },
+      {
+        "epoch": 16,
+        "inner_rmse_INR": 26863734.116849456
+      },
+      {
+        "epoch": 17,
+        "inner_rmse_INR": 26800437.329001985
+      },
+      {
+        "epoch": 18,
+        "inner_rmse_INR": 26718438.466305688
+      },
+      {
+        "epoch": 19,
+        "inner_rmse_INR": 26437200.84208817
+      },
+      {
+        "epoch": 20,
+        "inner_rmse_INR": 26589083.14806329
+      },
+      {
+        "epoch": 21,
+        "inner_rmse_INR": 26470648.0190403
+      },
+      {
+        "epoch": 22,
+        "inner_rmse_INR": 26707702.093124695
+      },
+      {
+        "epoch": 23,
+        "inner_rmse_INR": 26571012.007940948
+      },
+      {
+        "epoch": 24,
+        "inner_rmse_INR": 26569685.995299783
+      },
+      {
+        "epoch": 25,
+        "inner_rmse_INR": 26635192.253574878
+      },
+      {
+        "epoch": 26,
+        "inner_rmse_INR": 26476695.55060901
+      },
+      {
+        "epoch": 27,
+        "inner_rmse_INR": 26619639.615157995
+      },
+      {
+        "epoch": 28,
+        "inner_rmse_INR": 26444036.89784901
+      }
+    ],
+    "outer_validation_used_for_epoch_selection": false,
+    "full_subset_refitted": true,
+    "numeric_input_dimension": 41,
+    "constant_numeric_inputs_dropped": 23,
+    "target_mean_millions": 30.82304114490161,
+    "target_scale_millions": 21.09948779062965,
+    "fit_seconds": 4.256571427999916,
+    "prediction_chunk": 500,
+    "seed": 10242
+  }
+}

@@ -1,0 +1,326 @@
+# SPDX-FileCopyrightText: Copyright (c) 2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-License-Identifier: Apache-2.0
+
+import pytest
+import torch
+
+from sdm import Recipe
+from sdm.models import TabICLv2
+from sdm.models.tabiclv2.model import _TabICLv2
+from sdm.models.tabiclv2.row_embedding import RowEmbedding
+from sdm.nn import Attention
+from sdm.testing import onlyCUDA, onlyFullTest, withCUDA
+
+
+@withCUDA
+@pytest.mark.parametrize("dtype", [torch.int64, torch.float32])
+@pytest.mark.parametrize("shape", [(), (2,)])
+def test_forward(
+    device: torch.device,
+    dtype: torch.dtype,
+    shape: tuple[int, ...],
+) -> None:
+    model = TabICLv2(pretrained=False, device=device)
+    if device.type == "cpu":
+        assert repr(model) == "TabICLv2()"
+    else:
+        assert repr(model) == "TabICLv2(device=cuda:0)"
+
+    R_context, R_query, C = 5, 3, 6
+
+    x_context = torch.randn(*shape, R_context, C, device=device)
+    x_query = torch.randn(*shape, R_query, C, device=device)
+    if dtype.is_floating_point:
+        y_context = torch.randn((*shape, R_context, 1), device=device)
+        torch.manual_seed(1)
+        out = model(x_context, y_context, x_query)
+        assert out.size() == (R_query, 999)
+        assert (out.numerical.diff(dim=-1) >= 0).all()
+    else:
+        y_context = torch.randint(
+            low=0,
+            high=10,
+            size=(R_context, 1),
+            device=device,
+        ).expand(*shape, -1, -1)
+        num_classes = len(y_context.unique())
+        torch.manual_seed(1)
+        out = model(x_context, y_context, x_query)
+        assert out.size() == (R_query, num_classes)
+
+    assert out.dtype == x_query.dtype
+    assert out.device == x_query.device
+    assert torch.is_inference(out)
+
+    torch.manual_seed(1)
+    model.fit(x_context, y_context)
+    assert model._cache is not None
+    assert model._cache.size() > 0
+    assert model.predict(x_query).allclose(out)
+    model.clear()
+
+
+@withCUDA
+@pytest.mark.parametrize("cached", [False, True])
+def test_autocast_output_is_float32(
+    device: torch.device,
+    cached: bool,
+) -> None:
+    model = TabICLv2(pretrained=False, device=device)
+    x_context = torch.randn(5, 6, device=device)
+    y_context = torch.randn(5, 1, device=device)
+    x_query = torch.randn(3, 6, device=device)
+    dtype = torch.float16 if device.type == "cuda" else torch.bfloat16
+
+    with torch.autocast(device_type=device.type, dtype=dtype):
+        if cached:
+            model.fit(x_context, y_context, recipe=Recipe())
+            out = model.predict(x_query)
+        else:
+            out = model(x_context, y_context, x_query, recipe=Recipe())
+
+    assert out.numerical.dtype == torch.float32
+
+
+@withCUDA
+@pytest.mark.parametrize(
+    "y_context",
+    [
+        torch.arange(2)[:, None],  # classification
+        torch.tensor([[0.0], [1.0]]),  # regression
+    ],
+)
+def test_autocast_preserves_gradients_in_forward(
+    device: torch.device,
+    y_context: torch.Tensor,
+) -> None:
+    model = TabICLv2(pretrained=False, device=device)
+    model.train()
+    x_context = torch.eye(2, device=device)
+    y_context = y_context.to(device)
+    x_query = torch.ones(1, 2, device=device)
+    dtype = torch.float16 if device.type == "cuda" else torch.bfloat16
+
+    with torch.autocast(device_type=device.type, dtype=dtype):
+        out = model(x_context, y_context, x_query)
+
+    assert not torch.is_inference(out.numerical)
+    out.numerical.sum().backward()
+    assert any(p.grad is not None for p in model.parameters())
+
+
+@pytest.mark.parametrize("estimator_batch_size", [1, 2, None])
+def test_train_mode_preserves_gradients_with_ensembling(
+    estimator_batch_size: int | None,
+) -> None:
+    model = TabICLv2(pretrained=False)
+    model.train()
+    x_context = torch.eye(2)
+    y_context = torch.tensor([[0.0], [1.0]])
+    x_query = torch.ones(1, 2)
+
+    out = model(
+        x_context=x_context,
+        y_context=y_context,
+        x_query=x_query,
+        num_estimators=3,
+        estimator_batch_size=estimator_batch_size,
+    )
+
+    assert not torch.is_inference(out.numerical)
+    out.numerical.sum().backward()
+    assert any(p.grad is not None for p in model.parameters())
+
+
+@pytest.mark.parametrize("batch_shape", [(), (2,)])
+@pytest.mark.parametrize("estimator_batch_size", [1, 2, None])
+def test_num_estimators(
+    batch_shape: tuple[int, ...], estimator_batch_size: int | None
+) -> None:
+    model = TabICLv2(pretrained=False)
+
+    R_context, R_query, C = 5, 3, 6
+
+    x_context = torch.randn(*batch_shape, R_context, C)
+    x_query = torch.randn(*batch_shape, R_query, C)
+    y_context = torch.randn(*batch_shape, R_context, 1)
+
+    out = model(
+        x_context=x_context,
+        y_context=y_context,
+        x_query=x_query,
+        num_estimators=3,
+        estimator_batch_size=estimator_batch_size,
+    )
+    assert out.size() == (*batch_shape, R_query, 999)
+
+    model.fit(x_context, y_context, num_estimators=3)
+    assert model._cache is not None
+    assert 0 in model._cache
+    assert 1 in model._cache
+    assert model._cache.size() > 0
+    assert model._cache.is_cpu
+
+    out = model.predict(x_query)
+    assert out.size() == (*batch_shape, R_query, 999)
+    model.clear()
+
+
+@withCUDA
+def test_row_embedding_mixed_radix_digit(device: torch.device) -> None:
+    row_embedding = RowEmbedding(
+        num_classes=10,
+        channels=8,
+        num_layers=2,
+        num_heads=2,
+        group_size=3,
+        num_inducing_points=4,
+        num_readout_tokens=2,
+        norm_bias=True,
+        device=device,
+    )
+    for module in row_embedding.modules():
+        # Randomly initialize to return non-zero output
+        if isinstance(module, Attention):
+            torch.nn.init.normal_(module.out_lin.weight, std=0.02)
+
+    x = torch.randn(8, 6, device=device)
+
+    # The labels 5 * a + b and 5 * b + a decompose into the digits (a, b) and
+    # (b, a) under bases [5, 5], so averaging over digits must be invariant
+    # to swapping them:
+    a = torch.tensor([4, 0, 1, 2, 3], device=device)
+    b = torch.tensor([4, 1, 2, 3, 0], device=device)
+    y = 5 * a + b
+    y_swapped = 5 * b + a
+    out = row_embedding(x, y, num_classes=25)
+    torch.testing.assert_close(
+        out,
+        row_embedding(x, y_swapped, num_classes=25),
+    )
+
+
+def test_tabiclv2_hierarchical_log_probs(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    class IdentityRowEmbedding(torch.nn.Module):
+        def forward(
+            self,
+            x: torch.Tensor,
+            y: torch.Tensor,
+            *,
+            num_classes: int | None = None,
+            cache: object | None = None,
+        ) -> torch.Tensor:
+            return x
+
+    class StubICLBlock(torch.nn.Module):
+        temperature = 0.9
+
+        def forward(
+            self,
+            x: torch.Tensor,
+            y: torch.Tensor,
+            *,
+            num_classes: int | None = None,
+            cache: object | None = None,
+        ) -> torch.Tensor:
+            assert num_classes == 3
+            test_size = x.size(-2) - y.size(-1)
+            log_probs = x.new_tensor([0.15, 0.45, 0.4]).log()
+            return log_probs.expand(test_size, -1).mul(self.temperature)
+
+    model = _TabICLv2(
+        num_classes=2,
+        num_quantiles=0,
+        channels=8,
+        num_embedding_layers=1,
+        num_embedding_heads=2,
+        num_inducing_points=4,
+        group_size=3,
+        num_readout_tokens=2,
+        num_icl_layers=1,
+        num_icl_heads=2,
+        norm_bias=True,
+    )
+    monkeypatch.setattr(model, "row_embedding", IdentityRowEmbedding())
+    monkeypatch.setattr(model, "icl_block", StubICLBlock())
+
+    y = torch.tensor([0, 1, 2])
+    out = model(torch.randn(5, 4), y, num_classes=3)
+
+    probabilities = torch.tensor([0.15, 0.45, 0.4]).expand(2, -1)
+    expected = probabilities.log().mul(0.9)
+    torch.testing.assert_close(out, expected)
+
+
+@withCUDA
+@pytest.mark.parametrize("estimator_batch_size", [1, 2, None])
+def test_tabiclv2_many_classes_forward_and_cache(
+    device: torch.device,
+    estimator_batch_size: int | None,
+) -> None:
+    torch.manual_seed(1)
+    model = TabICLv2(pretrained=False, device=device)
+    num_classes, test_size = 11, 2
+    x_context = torch.randn(num_classes, 6, device=device)
+    x_query = torch.randn(test_size, 6, device=device)
+    y_context = torch.arange(
+        num_classes,
+        dtype=torch.int32,
+        device=device,
+    ).unsqueeze(-1)
+
+    torch.manual_seed(1)
+    out = model(x_context, y_context, x_query, num_estimators=3)
+
+    assert out.size() == (test_size, num_classes)
+    probabilities = out.numerical
+    torch.testing.assert_close(
+        probabilities.sum(dim=-1),
+        torch.ones(test_size, device=device),
+    )
+
+    torch.manual_seed(1)
+    model.fit(
+        x=x_context,
+        y=y_context,
+        num_estimators=3,
+        estimator_batch_size=estimator_batch_size,
+    )
+    assert model.predict(x_query).allclose(out)
+
+
+@onlyCUDA
+@onlyFullTest
+@pytest.mark.usefixtures("compilation")
+@pytest.mark.parametrize("dtype", [torch.int64, torch.float32])
+def test_compile(dtype: torch.dtype) -> None:
+    model = TabICLv2(pretrained=False, device="cuda")
+
+    R_context, R_query, C = 5, 3, 6
+    x_context = torch.randn(R_context, C, device="cuda")
+    x_query = torch.randn(R_query, C, device="cuda")
+
+    if dtype.is_floating_point:
+        y_context = torch.randn(R_context, 1, device="cuda")
+    else:
+        y_context = torch.randint(0, 10, size=(R_context, 1), device="cuda")
+
+    torch.manual_seed(1)
+    expected = model(x_context, y_context, x_query)
+    submodel = model.models[
+        "regression" if dtype.is_floating_point else "classification"
+    ]
+    submodel.compile(fullgraph=True)
+
+    torch.manual_seed(1)
+    predicted = model(x_context, y_context, x_query)
+    assert predicted.allclose(expected, atol=5e-4, rtol=5e-3)
+    assert torch.is_inference(predicted)
+
+    torch.manual_seed(1)
+    model.fit(x_context, y_context)
+    predicted = model.predict(x_query)
+    assert predicted.allclose(expected, atol=5e-4, rtol=5e-3)
+    assert torch.is_inference(predicted)

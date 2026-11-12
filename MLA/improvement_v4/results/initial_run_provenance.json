@@ -1,0 +1,8 @@
+{
+  "note": "First confirm run launched with empty comparison cache; original contract and implementation below recorded while that process was active. Subsequent cache guard patch adds verification, not model changes.",
+  "hashes": {
+    "improvement_v4/results/candidate_lock.json": "cc8aece13965c211a0b23789c1c51299d0617946cb93bb5ece49e122c5112f61",
+    "improvement_v4/pipeline.py": "36ccb30d9a31b2af5114dc09221ceb06aab5ff1dba97254a2fbe148599eb32ab",
+    "improvement_v4/confirm_candidate.py": "6289eb372d1f85ed91a380c48d2b1ae5faf13fa773c1a9347446293270c9d7cd"
+  }
+}

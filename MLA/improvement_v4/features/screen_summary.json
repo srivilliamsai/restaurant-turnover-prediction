@@ -1,0 +1,17 @@
+{
+  "baseline_rmse": 19839027.540841296,
+  "best_variant": "categorical_ratings",
+  "best_blend_weight": 0.5,
+  "best_blend_rmse": 19829850.767892215,
+  "development_gain": 9176.772949080914,
+  "recommendation": "Confirm categorical_ratings on unchanged train-target metrics before incorporating. No independent confirmation done here.",
+  "checked": [
+    "base exact frame equality to old base",
+    "all ten train/test feature schemas equal",
+    "target and restaurant ID excluded"
+  ],
+  "not_used_seeds": [
+    1701,
+    1711
+  ]
+}

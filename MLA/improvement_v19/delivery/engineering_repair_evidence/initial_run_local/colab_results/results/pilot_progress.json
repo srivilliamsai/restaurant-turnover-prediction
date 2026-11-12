@@ -1,0 +1,156 @@
+{
+  "C8": {
+    "status": "engineering_excluded",
+    "error_type": "AssertionError",
+    "reason": "batch_difference_INR: INR 373.18046268075705",
+    "traceback": "Traceback (most recent call last):\n  File \"/content/mla_v19/pilot_worker.py\", line 31, in main\n    checks=verify.inference_checks(lambda raw:modeling.predict(fitted,raw),e.train.iloc[b],e.y[b])\n  File \"/content/mla_v19/verify.py\", line 140, in inference_checks\n    assert np.allclose(other, expected, atol=10., rtol=1e-6), f'{name}: INR {checks[name]}'\n           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: batch_difference_INR: INR 373.18046268075705\n",
+    "engineering_seconds": 39.79612047400019,
+    "accuracy_tested": false
+  },
+  "KS8": {
+    "status": "engineering_excluded",
+    "error_type": "RuntimeError",
+    "reason": "ImportError: Numba needs NumPy 2.2 or less. Got NumPy 2.5.",
+    "traceback": "Traceback (most recent call last):\n  File \"/content/mla_v19/pilot_worker.py\", line 27, in main\n    fitted=modeling.fit(e.train.iloc[a],e.y[a],name,fold=0,scheme=42)\n  File \"/content/mla_v19/modeling.py\", line 42, in fit\n    fitted = new_models.fit(raw, target, name, fold=fold, scheme=scheme)\n  File \"/content/mla_v19/new_models.py\", line 119, in fit\n    metadata = remote.request('fit', {'raw': raw, 'target': np.asarray(target, float), 'name': name})\n  File \"/content/mla_v19/new_models.py\", line 85, in request\n    raise RuntimeError(status['error_type'] + ': ' + status['reason'])\nRuntimeError: ImportError: Numba needs NumPy 2.2 or less. Got NumPy 2.5.\n",
+    "engineering_seconds": 16.277223881000054,
+    "accuracy_tested": false
+  },
+  "D8": {
+    "status": "PASS",
+    "fold_seconds": 20.240404506000004,
+    "full_fit_predict_seconds": 14.888096068000095,
+    "behavior": {
+      "permutation_difference_INR": 7.62939453125,
+      "label_id_difference_INR": 0.0,
+      "batch_difference_INR": 7.62939453125,
+      "individual_difference_INR": 15.2587890625,
+      "rmse_difference_INR": {
+        "permutation": 0.01396353542804718,
+        "batch": 0.20910362154245377,
+        "individual": 2.8792647439986467
+      },
+      "other_query_rows_changed_difference_INR": 0.0,
+      "rows_checked": 699,
+      "individual_probes": 12,
+      "missing_unseen_inputs": true,
+      "behavior_tolerance_INR": 10.0,
+      "prediction_rtol": 1e-06,
+      "rmse_tolerance_INR": 10.0
+    },
+    "fresh_repeat_difference_INR": 0.0,
+    "save_reload_difference_INR": 0.0,
+    "target_metadata": {
+      "name": "D8",
+      "training_rows": 2794,
+      "units": "raw INR millions",
+      "model_class": "tabdpt.regressor.TabDPTRegressor",
+      "checkpoint_sha256": "97dc3b60bfad6b42ec1a07b7e121d86b0fc7c9fd67c8d2eaac3d815da197eacb",
+      "checkpoint_revision": "a5ca6e01c0fa09ec68c73e958e5199d1932abb3a",
+      "actual_source_hashes": {
+        "tabdpt.regressor": "03f420c110e19039dbbd912d80ecb36c407292cc96ce41de91d75d43992e9c2e",
+        "tabdpt.estimator": "81a345826a5534d9e4a5916ab4dd11f815a17787703eb54a42b7c968a2992678",
+        "tabdpt.model": "f7059d9040d46d883bc9f4df1456c77c369f9b3d9d59c3bf31c7e077af0fb381",
+        "tabdpt.utils": "5b6eb9ad2f49f18e99d1a850209263924ff8a2941a0b976a57511408803237c7"
+      },
+      "runtime": {
+        "dependencies": {
+          "torch": "2.13.0",
+          "numpy": "2.5.4",
+          "pandas": "3.0.6",
+          "scikit-learn": "1.9.1",
+          "scipy": "1.18.1",
+          "causilo": "1.0.3",
+          "tabdpt": "1.3.1",
+          "structured-data-models": "0.1.0.dev0",
+          "huggingface-hub": "1.33.0",
+          "safetensors": "0.8.0",
+          "pyarrow": "23.0.1"
+        },
+        "gpu": "Tesla T4",
+        "cuda": "13.0",
+        "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+        "total_gpu_bytes": 15637086208
+      },
+      "input_features": 40,
+      "categorical_columns": [
+        "Cuisine",
+        "City",
+        "Restaurant Location",
+        "Endoresed By",
+        "Restaurant Type",
+        "Restaurant Theme",
+        "Cuisine 1",
+        "Cuisine 2"
+      ],
+      "all_outer_training_rows": true,
+      "seed": 10242,
+      "peak_gpu_allocated_bytes": 509666304,
+      "peak_gpu_reserved_bytes": 564133888,
+      "host_rss_bytes": 1665228800
+    },
+    "full_target_metadata": {
+      "name": "D8",
+      "training_rows": 3493,
+      "units": "raw INR millions",
+      "model_class": "tabdpt.regressor.TabDPTRegressor",
+      "checkpoint_sha256": "97dc3b60bfad6b42ec1a07b7e121d86b0fc7c9fd67c8d2eaac3d815da197eacb",
+      "checkpoint_revision": "a5ca6e01c0fa09ec68c73e958e5199d1932abb3a",
+      "actual_source_hashes": {
+        "tabdpt.regressor": "03f420c110e19039dbbd912d80ecb36c407292cc96ce41de91d75d43992e9c2e",
+        "tabdpt.estimator": "81a345826a5534d9e4a5916ab4dd11f815a17787703eb54a42b7c968a2992678",
+        "tabdpt.model": "f7059d9040d46d883bc9f4df1456c77c369f9b3d9d59c3bf31c7e077af0fb381",
+        "tabdpt.utils": "5b6eb9ad2f49f18e99d1a850209263924ff8a2941a0b976a57511408803237c7"
+      },
+      "runtime": {
+        "dependencies": {
+          "torch": "2.13.0",
+          "numpy": "2.5.4",
+          "pandas": "3.0.6",
+          "scikit-learn": "1.9.1",
+          "scipy": "1.18.1",
+          "causilo": "1.0.3",
+          "tabdpt": "1.3.1",
+          "structured-data-models": "0.1.0.dev0",
+          "huggingface-hub": "1.33.0",
+          "safetensors": "0.8.0",
+          "pyarrow": "23.0.1"
+        },
+        "gpu": "Tesla T4",
+        "cuda": "13.0",
+        "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+        "total_gpu_bytes": 15637086208
+      },
+      "input_features": 40,
+      "categorical_columns": [
+        "Cuisine",
+        "City",
+        "Restaurant Location",
+        "Endoresed By",
+        "Restaurant Type",
+        "Restaurant Theme",
+        "Cuisine 1",
+        "Cuisine 2"
+      ],
+      "all_outer_training_rows": true,
+      "seed": 10242,
+      "peak_gpu_allocated_bytes": 509666304,
+      "peak_gpu_reserved_bytes": 580911104,
+      "host_rss_bytes": 1620885504
+    },
+    "peak_gpu_allocated_bytes": 509666304,
+    "peak_gpu_reserved_bytes": 564133888,
+    "training_rows": 2794,
+    "validation_rows": 699,
+    "full_training_rows": 3493,
+    "selection_uses_validation_rmse": false,
+    "engineering_seconds": 168.11217296300015
+  },
+  "KM8": {
+    "status": "engineering_excluded",
+    "error_type": "RuntimeError",
+    "reason": "ImportError: Numba needs NumPy 2.2 or less. Got NumPy 2.5.",
+    "traceback": "Traceback (most recent call last):\n  File \"/content/mla_v19/pilot_worker.py\", line 27, in main\n    fitted=modeling.fit(e.train.iloc[a],e.y[a],name,fold=0,scheme=42)\n  File \"/content/mla_v19/modeling.py\", line 42, in fit\n    fitted = new_models.fit(raw, target, name, fold=fold, scheme=scheme)\n  File \"/content/mla_v19/new_models.py\", line 119, in fit\n    metadata = remote.request('fit', {'raw': raw, 'target': np.asarray(target, float), 'name': name})\n  File \"/content/mla_v19/new_models.py\", line 85, in request\n    raise RuntimeError(status['error_type'] + ': ' + status['reason'])\nRuntimeError: ImportError: Numba needs NumPy 2.2 or less. Got NumPy 2.5.\n",
+    "engineering_seconds": 16.250342359000115,
+    "accuracy_tested": false
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "sha": "93670551adba28b186354fab9a1584c56c34aa76",
+  "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/trees/93670551adba28b186354fab9a1584c56c34aa76",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72f10b9bc80d7911ce1ac6dedcf64cbe375df801",
+      "size": 65,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/72f10b9bc80d7911ce1ac6dedcf64cbe375df801"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "size": 11358,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/d645695673349e3947e8e5ae42332d0ac3164cd7"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3942f54cb17e912fde935d2c9de69f86e0d75318",
+      "size": 12534,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/3942f54cb17e912fde935d2c9de69f86e0d75318"
+    },
+    {
+      "path": "examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b2880f22eb190beea799644c4deb8864b5501508",
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/trees/b2880f22eb190beea799644c4deb8864b5501508"
+    },
+    {
+      "path": "examples/cls_example.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b274f85b332cbbb8371af3517b87d1e9dab3eed",
+      "size": 536,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/1b274f85b332cbbb8371af3517b87d1e9dab3eed"
+    },
+    {
+      "path": "examples/reg_example.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b67ac81b8b814ac9ad009abf19528607c54b2466",
+      "size": 489,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/b67ac81b8b814ac9ad009abf19528607c54b2466"
+    },
+    {
+      "path": "examples/reg_probabilistic_example.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e23536c6533df2c55cbfdc694a6c15675a67308",
+      "size": 2270,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/4e23536c6533df2c55cbfdc694a6c15675a67308"
+    },
+    {
+      "path": "figures",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e3a183094fb9c069cf458637b9698e038f381882",
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/trees/e3a183094fb9c069cf458637b9698e038f381882"
+    },
+    {
+      "path": "figures/performance-comparison.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fef98d5f740857753239bd4e16a1c320ae476de2",
+      "size": 296603,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/fef98d5f740857753239bd4e16a1c320ae476de2"
+    },
+    {
+      "path": "figures/scaling.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e1a622770a6a352e83ec3b4f25814759c11f582",
+      "size": 183205,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/2e1a622770a6a352e83ec3b4f25814759c11f582"
+    },
+    {
+      "path": "notebooks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d18fd5f88b0739f0b959c8971d094a479b9097b1",
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/trees/d18fd5f88b0739f0b959c8971d094a479b9097b1"
+    },
+    {
+      "path": "notebooks/analysis.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42e1e7aa17a3f57cf2383dfb19c0ce7134048adc",
+      "size": 5511,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/42e1e7aa17a3f57cf2383dfb19c0ce7134048adc"
+    },
+    {
+      "path": "paper_evaluation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd027921e14ba8795c816072dfe6ac3cd7f0f651",
+      "size": 9624,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/cd027921e14ba8795c816072dfe6ac3cd7f0f651"
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0323f556c6dcbe13d9b27b42c646a20323bf8581",
+      "size": 1480,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/0323f556c6dcbe13d9b27b42c646a20323bf8581"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "12285281de66f62cf3e0f8c7819043f68170bbc3",
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/trees/12285281de66f62cf3e0f8c7819043f68170bbc3"
+    },
+    {
+      "path": "src/tabdpt",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c72e9d901d956ab5d7336b65891953a691f07452",
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/trees/c72e9d901d956ab5d7336b65891953a691f07452"
+    },
+    {
+      "path": "src/tabdpt/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da71ed2676b59ed8949d4e0cc7116e4e47e48a82",
+      "size": 506,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/da71ed2676b59ed8949d4e0cc7116e4e47e48a82"
+    },
+    {
+      "path": "src/tabdpt/bar_distribution.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19b8d5a17aabf830d3429da5823cca3969ed3efd",
+      "size": 5199,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/19b8d5a17aabf830d3429da5823cca3969ed3efd"
+    },
+    {
+      "path": "src/tabdpt/classifier.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b60fe000a389bd9ec17e4a0ae0eb5663fd5511cf",
+      "size": 12986,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/b60fe000a389bd9ec17e4a0ae0eb5663fd5511cf"
+    },
+    {
+      "path": "src/tabdpt/estimator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69e944ce125508a41c1e8d0d2a5de9f5c286b912",
+      "size": 15390,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/69e944ce125508a41c1e8d0d2a5de9f5c286b912"
+    },
+    {
+      "path": "src/tabdpt/model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73d89ee96ebf2ffdff83c76bc0747848f0622472",
+      "size": 12423,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/73d89ee96ebf2ffdff83c76bc0747848f0622472"
+    },
+    {
+      "path": "src/tabdpt/regressor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f556a92e4ce6715467eab887eff59205793028b3",
+      "size": 10257,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/f556a92e4ce6715467eab887eff59205793028b3"
+    },
+    {
+      "path": "src/tabdpt/utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3e061190c374b72d81250cf029bd98f540e555e",
+      "size": 3630,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/a3e061190c374b72d81250cf029bd98f540e555e"
+    },
+    {
+      "path": "tabdpt_datasets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c9ba5a53d6e26692fb1e0b4db0baa4badc579566",
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/trees/c9ba5a53d6e26692fb1e0b4db0baa4badc579566"
+    },
+    {
+      "path": "tabdpt_datasets/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "tabdpt_datasets/data_splits",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "91bc78a186a831263746493608cd3bfce056c51b",
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/trees/91bc78a186a831263746493608cd3bfce056c51b"
+    },
+    {
+      "path": "tabdpt_datasets/data_splits/cls_datasets.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a87702a889fbc0f732fc94f5c59fed36bbd9fcef",
+      "size": 29290,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/a87702a889fbc0f732fc94f5c59fed36bbd9fcef"
+    },
+    {
+      "path": "tabdpt_datasets/data_splits/reg_datasets.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0075b6d809a166b2cff3f44151a4ee2886b52d87",
+      "size": 4974,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/0075b6d809a166b2cff3f44151a4ee2886b52d87"
+    },
+    {
+      "path": "tabdpt_datasets/dataset.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12f3b65bf7f5bd115530f7cbe084403897dfb7f4",
+      "size": 4181,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/12f3b65bf7f5bd115530f7cbe084403897dfb7f4"
+    },
+    {
+      "path": "tabdpt_datasets/openml.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "067a01269f4c8e8365b2a61a58be5637f2756a62",
+      "size": 15674,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/067a01269f4c8e8365b2a61a58be5637f2756a62"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cc497b829077f61af85c7365744b36732f5a1240",
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/trees/cc497b829077f61af85c7365744b36732f5a1240"
+    },
+    {
+      "path": "tests/device_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1efaa8ed57bd1225cd4725b624ce6e952a97ce4e",
+      "size": 938,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/1efaa8ed57bd1225cd4725b624ce6e952a97ce4e"
+    },
+    {
+      "path": "tests/test_cls.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b837afe951a3c6b1a630d80b6ead51f77227c49",
+      "size": 1786,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/8b837afe951a3c6b1a630d80b6ead51f77227c49"
+    },
+    {
+      "path": "tests/test_estimator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5ca920b59474861aba8a74edf309fc5bce80744",
+      "size": 3474,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/a5ca920b59474861aba8a74edf309fc5bce80744"
+    },
+    {
+      "path": "tests/test_inference.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "372b12e04a0fa73d1f972813e5837c362eb5633a",
+      "size": 6397,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/372b12e04a0fa73d1f972813e5837c362eb5633a"
+    },
+    {
+      "path": "tests/test_reg.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55c9189fadf36a202d608dc0ecb48de3c564e9a1",
+      "size": 1898,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/55c9189fadf36a202d608dc0ecb48de3c564e9a1"
+    },
+    {
+      "path": "tests/test_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fb0f956cdf621f0b7b9a0c2c4dc07ee36562318",
+      "size": 4908,
+      "url": "https://api.github.com/repos/layer6ai-labs/TabDPT-inference/git/blobs/2fb0f956cdf621f0b7b9a0c2c4dc07ee36562318"
+    }
+  ],
+  "truncated": false
+}

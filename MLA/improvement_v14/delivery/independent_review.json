@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "independently_recomputed_blends": 16,
+  "complete_fold_outputs_verified": 45,
+  "maximum_metric_difference_INR": 3.725290298461914e-09,
+  "source_and_data_identity_unchanged": true,
+  "all_original_validation_targets": 3493,
+  "both_routes_independently_recomputed": true,
+  "selection_recomputed": true,
+  "qualified": true,
+  "confirmation_performed": true,
+  "v9_scored_files_preserved": true,
+  "portal_uploads": 0
+}

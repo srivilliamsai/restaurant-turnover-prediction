@@ -1,0 +1,14 @@
+[
+  {
+    "scheme": 42,
+    "full_rmse_gain": 84572.11934881657,
+    "top10_fraction_of_sse_reduction": 0.48936410773464056,
+    "greater80M_fraction_of_sse_reduction": -0.3806287271238522
+  },
+  {
+    "scheme": 71,
+    "full_rmse_gain": 57759.32214908674,
+    "top10_fraction_of_sse_reduction": 0.6180590279294862,
+    "greater80M_fraction_of_sse_reduction": -0.7184476235407804
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "complete_FT512_folds_reconstructed": 10,
+  "fixed_blends_reconstructed": 5,
+  "provisional_only": true,
+  "FT1024_pending": true,
+  "finalist_selected": false,
+  "rows": [
+    {
+      "route": "FT512",
+      "weight": 0.1,
+      "gain_42_INR": -2669.5678928121924,
+      "gain_71_INR": 8645.713943291456,
+      "mean_relative_gain": 0.00015206250243851403
+    },
+    {
+      "route": "FT512",
+      "weight": 0.25,
+      "gain_42_INR": -7879.500247985125,
+      "gain_71_INR": 20159.805229365826,
+      "mean_relative_gain": 0.0003124685604244112
+    },
+    {
+      "route": "FT512",
+      "weight": 0.5,
+      "gain_42_INR": -19774.56660523638,
+      "gain_71_INR": 35464.04321606457,
+      "mean_relative_gain": 0.00039920291674239963
+    },
+    {
+      "route": "FT512",
+      "weight": 0.75,
+      "gain_42_INR": -35677.919501021504,
+      "gain_71_INR": 45901.342184539884,
+      "mean_relative_gain": 0.00026009894932313904
+    },
+    {
+      "route": "FT512",
+      "weight": 1.0,
+      "gain_42_INR": -55579.85382035747,
+      "gain_71_INR": 51463.92635717988,
+      "mean_relative_gain": -0.00010479423808509901
+    }
+  ],
+  "best_FT512": {
+    "route": "FT512",
+    "weight": 0.5,
+    "gain_42_INR": -19774.56660523638,
+    "gain_71_INR": 35464.04321606457,
+    "mean_relative_gain": 0.00039920291674239963
+  }
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "setting": "N8",
+    "scheme": 42,
+    "component_rmse": 19765824.855919696,
+    "v9_rmse": 19731241.728233285,
+    "error_correlation": 0.9958581137532301
+  },
+  {
+    "setting": "N8",
+    "scheme": 71,
+    "component_rmse": 19785989.801889423,
+    "v9_rmse": 19733020.080547012,
+    "error_correlation": 0.9956769756736188
+  },
+  {
+    "setting": "N16",
+    "scheme": 42,
+    "component_rmse": 19754734.189916052,
+    "v9_rmse": 19731241.728233285,
+    "error_correlation": 0.9958154641189609
+  },
+  {
+    "setting": "N16",
+    "scheme": 71,
+    "component_rmse": 19783578.172397584,
+    "v9_rmse": 19733020.080547012,
+    "error_correlation": 0.9956686274057439
+  }
+]

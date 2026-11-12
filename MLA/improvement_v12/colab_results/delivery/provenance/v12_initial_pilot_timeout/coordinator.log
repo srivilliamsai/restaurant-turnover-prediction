@@ -1,0 +1,28 @@
+{"phase": "requesting_free_t4", "pid": 38170, "elapsed_seconds": 6.70000008540228e-05, "maximum_hours": 12, "paid_resources": false}
+Current balance: 0.00 compute units
+Usage rate: 0.00/hr
+Active assignments: 0
+{"phase": "allocation_retry", "pid": 38170, "elapsed_seconds": 80.26097966599627, "maximum_hours": 12, "paid_resources": false, "attempt": 1, "service_unavailable": true}
+{"phase": "allocation_retry", "pid": 38170, "elapsed_seconds": 218.68559887499578, "maximum_hours": 12, "paid_resources": false, "attempt": 2, "service_unavailable": true}
+{"phase": "allocation_retry", "pid": 38170, "elapsed_seconds": 415.98910379099834, "maximum_hours": 12, "paid_resources": false, "attempt": 3, "service_unavailable": true}
+{"phase": "stopped_with_preserved_v9", "pid": 38170, "elapsed_seconds": 415.9907937079988, "maximum_hours": 12, "paid_resources": false, "error_type": "RuntimeError", "message": "Free T4 unavailable; no paid fallback", "qualified_submission_recommended": false}
+{"phase": "requesting_free_t4", "pid": 42939, "elapsed_seconds": 0.00036862499837297946, "maximum_hours": 12, "paid_resources": false}
+Current balance: 0.00 compute units
+Usage rate: 0.00/hr
+Active assignments: 0
+{"phase": "installing_pinned_dependencies", "pid": 42939, "elapsed_seconds": 5.458987666999747, "maximum_hours": 12, "paid_resources": false}
+V12 pinned dependency installation started.
+V12 pinned installation complete; clean kernel restart follows.
+{"phase": "preparing_verified_experiment_bundle", "pid": 42939, "elapsed_seconds": 49.375588041999436, "maximum_hours": 12, "paid_resources": false}
+V12 official inputs, frozen sources and verified baseline registry restored.
+{"phase": "auditing", "pid": 42939, "elapsed_seconds": 61.15412408400152, "maximum_hours": 12, "paid_resources": false}
+V12 supervised foreground stage: audit PID 2351
+{"phase": "piloting_new_backbones", "pid": 42939, "elapsed_seconds": 69.50936024999828, "maximum_hours": 12, "paid_resources": false}
+V12 supervised foreground stage: pilot PID 2391
+AssertionError: V12 supervised stage failed; inspect saved logs.
+V12 transport failure: RuntimeError inspect the saved stage log; authenticated transport details are suppressed
+{"phase": "stopped_with_preserved_v9", "pid": 42939, "elapsed_seconds": 3198.706025416999, "maximum_hours": 12, "paid_resources": false, "error_type": "RuntimeError", "message": "V12 stage failed; inspect preserved logs", "qualified_submission_recommended": false}
+V12 result archive prepared.
+Saved completed V12 artifacts locally.
+[colab] Stopping session 'v12-free-t4'...
+[colab] Session terminated.

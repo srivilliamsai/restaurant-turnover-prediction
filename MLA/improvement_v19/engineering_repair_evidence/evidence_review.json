@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "recovered_unique_initial_fold_outputs": 5,
+  "initial_total_generated_fold_outputs": 10,
+  "full_original_archive_recovered": false,
+  "all_available_hashes_and_source_contexts_verified": true,
+  "first_source_missing_files": [],
+  "first_source_changed_files": [],
+  "accuracy_metrics_used_for_engineering_repairs": false
+}

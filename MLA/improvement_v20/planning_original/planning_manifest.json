@@ -1,0 +1,22 @@
+{
+  "status": "PLANNING_COMPLETE_NOT_EXECUTED",
+  "date_IST": "2026-10-29",
+  "training_started": false,
+  "runtime_allocated": false,
+  "candidate_accuracy_tested": false,
+  "proposed_elapsed_hours": 6,
+  "files": {
+    "evidence_audit.py": "e2816044ee0cc0a66f3b8d4bc0a7990ec1b4d53529419bba08ee3dee1a37b6c6",
+    "RESEARCH_SOURCES.md": "03fa026592f48736fa61c555d24ec6ace4173401980189bb21845f38ad8071b3",
+    "PLAN.md": "1b91aaa350da9c773914a603e710c33f07a2da06d68cbcd0203a758f9f013ac6",
+    "evidence_audit.json": "f5c2762e1976c3d8223c5fe1b1a1e7f5d4bfbba588cf904bb3cb0e9fbc2bf61c"
+  },
+  "local_source_evidence": {
+    "improvement_v11/results/pilot.json": "5c9a6bc3f123584a01346f3e578ad3ca4e7c4ec659e2143db1227485fb410912",
+    "improvement_v11/modeling.py": "0531e9bc43f6b7b2b1eaa4db6058dcd0e8ac95b3e7de6a62cd3268ee332cfed4",
+    "improvement_v19/results/pilot_KS8.log": "852bdca186b1a145a5bad94d562be105607087c5f07f244cdd2fbbeff96146ab",
+    "improvement_v19/checkpoint_registry.json": "d4989d804e9295c9a8f6087205b3de52e737a8aa3f16c06d87c59b3a63daeb3b",
+    "improvement_v19/engineering_sources/structured-data-models-2b1696f4fdc22004cc757c44703a69cf326c0a11/sdm/tensor/string.py": "9983767101ff7c92f168fe24276a5d335f18fbd1dffb771ae9b627566c26bb42",
+    "improvement_v19/engineering_sources/structured-data-models-2b1696f4fdc22004cc757c44703a69cf326c0a11/sdm/tensor/table.py": "280ded67d2a636d1c74c24da61a2a5f208e55628a69c6f9cc0fe5b052ed18c85"
+  }
+}

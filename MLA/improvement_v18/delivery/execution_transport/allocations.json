@@ -1,0 +1,14 @@
+[
+  {
+    "requested_epoch": 1793257195.772,
+    "allocation_number": 1,
+    "same_user_selected_account": true,
+    "owned_runtime_released": true,
+    "reason_closed": "Pre-score checkpoint disk-I/O correction"
+  },
+  {
+    "requested_epoch": 1793257907.5928352,
+    "allocation_number": 2,
+    "same_user_selected_account": true
+  }
+]

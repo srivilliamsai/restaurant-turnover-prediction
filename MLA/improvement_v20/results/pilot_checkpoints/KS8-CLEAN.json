@@ -1,0 +1,145 @@
+{
+  "result": {
+    "status": "PASS",
+    "fold_seconds": 19.919383167999968,
+    "full_fit_predict_seconds": 11.172121404000109,
+    "behavior": {
+      "permutation_difference_INR": 0.0,
+      "label_id_difference_INR": 0.0,
+      "batch_difference_INR": 11.757448747754097,
+      "individual_difference_INR": 13.317551098763943,
+      "rmse_difference_INR": {
+        "permutation": 0.0,
+        "batch": 0.24964402616024017,
+        "individual": 0.7099003307521343
+      },
+      "other_query_rows_changed_difference_INR": 0.0,
+      "rows_checked": 699,
+      "individual_probes": 12,
+      "missing_unseen_inputs": true,
+      "behavior_tolerance_INR": 10.0,
+      "prediction_rtol": 1e-06,
+      "rmse_tolerance_INR": 10.0
+    },
+    "fresh_repeat_difference_INR": 0.0,
+    "save_reload_difference_INR": 0.0,
+    "target_metadata": {
+      "name": "KS8-CLEAN",
+      "training_rows": 2794,
+      "units": "raw INR millions",
+      "model_class": "sdm.models.kumo.tabular.model.KumoTabular",
+      "checkpoint_sha256": "fc672f536501d64356036050ac2acea7e46927f7b9ad38366abe048f88e7d423",
+      "checkpoint_revision": "3c3e10bbdb590ace29e7026847f92db3c603096d",
+      "actual_source_hashes": {
+        "sdm.models.kumo.tabular.model": "fcd1ace9e011dadcf152abae2608196ca3d1ca5dab470a1384931f794a97d882",
+        "sdm.models.kumo.tabular.recipe": "a5af156ffcb82cadb8e67070bbf1230c29b3fe245bb8ed89cebcbeaf738f77a0",
+        "sdm.models.kumo.tabular.icl": "8004617d373d8f350300d1f85c3883936a5c8da0871781e29707754370231c7d",
+        "sdm.models.kumo.tabular.batching": "4b9eded8f1b3fbc175a2d1e3ccf964c2a368378b15abd3e17ca48b51a19c31af",
+        "sdm.models.base.icl": "7a88f8c260061284424982c4484889e03dd84e2e0efaf7f90596aea8f405ef64"
+      },
+      "runtime": {
+        "dependencies": {
+          "torch": "2.11.0",
+          "numpy": "2.5.4",
+          "pandas": "3.0.6",
+          "scikit-learn": "1.9.1",
+          "scipy": "1.18.1",
+          "catboost": "1.2.10",
+          "tabicl": null,
+          "structured-data-models": "0.1.0.dev0",
+          "numba": null,
+          "cudf-cu13": null,
+          "huggingface-hub": "1.33.0",
+          "safetensors": "0.8.0",
+          "pyarrow": "23.0.1",
+          "joblib": "1.6.0"
+        },
+        "gpu": "Tesla T4",
+        "cuda": "13.0",
+        "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+        "total_gpu_bytes": 15637086208,
+        "cudf_discoverable": false,
+        "numba_discoverable": false
+      },
+      "input_features": 40,
+      "categorical_columns": [
+        "Cuisine",
+        "City",
+        "Restaurant Location",
+        "Endoresed By",
+        "Restaurant Type",
+        "Restaurant Theme",
+        "Cuisine 1",
+        "Cuisine 2"
+      ],
+      "all_outer_training_rows": true,
+      "seed": 10242,
+      "peak_gpu_allocated_bytes": 950044672,
+      "peak_gpu_reserved_bytes": 2178940928,
+      "host_rss_bytes": 3642195968
+    },
+    "full_target_metadata": {
+      "name": "KS8-CLEAN",
+      "training_rows": 3493,
+      "units": "raw INR millions",
+      "model_class": "sdm.models.kumo.tabular.model.KumoTabular",
+      "checkpoint_sha256": "fc672f536501d64356036050ac2acea7e46927f7b9ad38366abe048f88e7d423",
+      "checkpoint_revision": "3c3e10bbdb590ace29e7026847f92db3c603096d",
+      "actual_source_hashes": {
+        "sdm.models.kumo.tabular.model": "fcd1ace9e011dadcf152abae2608196ca3d1ca5dab470a1384931f794a97d882",
+        "sdm.models.kumo.tabular.recipe": "a5af156ffcb82cadb8e67070bbf1230c29b3fe245bb8ed89cebcbeaf738f77a0",
+        "sdm.models.kumo.tabular.icl": "8004617d373d8f350300d1f85c3883936a5c8da0871781e29707754370231c7d",
+        "sdm.models.kumo.tabular.batching": "4b9eded8f1b3fbc175a2d1e3ccf964c2a368378b15abd3e17ca48b51a19c31af",
+        "sdm.models.base.icl": "7a88f8c260061284424982c4484889e03dd84e2e0efaf7f90596aea8f405ef64"
+      },
+      "runtime": {
+        "dependencies": {
+          "torch": "2.11.0",
+          "numpy": "2.5.4",
+          "pandas": "3.0.6",
+          "scikit-learn": "1.9.1",
+          "scipy": "1.18.1",
+          "catboost": "1.2.10",
+          "tabicl": null,
+          "structured-data-models": "0.1.0.dev0",
+          "numba": null,
+          "cudf-cu13": null,
+          "huggingface-hub": "1.33.0",
+          "safetensors": "0.8.0",
+          "pyarrow": "23.0.1",
+          "joblib": "1.6.0"
+        },
+        "gpu": "Tesla T4",
+        "cuda": "13.0",
+        "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+        "total_gpu_bytes": 15637086208,
+        "cudf_discoverable": false,
+        "numba_discoverable": false
+      },
+      "input_features": 40,
+      "categorical_columns": [
+        "Cuisine",
+        "City",
+        "Restaurant Location",
+        "Endoresed By",
+        "Restaurant Type",
+        "Restaurant Theme",
+        "Cuisine 1",
+        "Cuisine 2"
+      ],
+      "all_outer_training_rows": true,
+      "seed": 10242,
+      "peak_gpu_allocated_bytes": 1145169920,
+      "peak_gpu_reserved_bytes": 2818572288,
+      "host_rss_bytes": 3554852864
+    },
+    "peak_gpu_allocated_bytes": 950044672,
+    "peak_gpu_reserved_bytes": 2178940928,
+    "training_rows": 2794,
+    "validation_rows": 699,
+    "full_training_rows": 3493,
+    "selection_uses_validation_rmse": false,
+    "engineering_seconds": 85.09807243
+  },
+  "result_sha256": "56f6d27abaa2a562934e7a01ed7ab62167d01972a2fe4c728748b8fc015f9902"
+}

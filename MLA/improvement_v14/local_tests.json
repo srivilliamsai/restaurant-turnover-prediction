@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Both routes preserve the declared original component weights.",
+    "Minimum gain, both-split improvement and effective-share ranking enforced.",
+    "Frozen confirmation requires a positive interval and stress limits.",
+    "All 35 baseline fold witnesses, training-only features and invalid-cache rejections passed.",
+    "Full-batch behavior probes accept invariant outputs and reject substantive row-order dependence."
+  ],
+  "new_models_fitted": 0,
+  "standalone_notebook_structure": {
+    "status": "PASS",
+    "code_cells_compiled": 29,
+    "scope": "Temporary structural notebook construction only; no execution or candidate CSV claim."
+  }
+}

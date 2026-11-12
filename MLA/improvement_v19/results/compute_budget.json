@@ -1,0 +1,20 @@
+{
+  "by_stage": {
+    "audit": 2.4531846046447754,
+    "pilot": 918.9991223812103,
+    "screen": 2273.9844880104065,
+    "confirm": 0.0006916522979736328,
+    "export": 2.3392722606658936
+  },
+  "seconds": 5011.30574297905,
+  "maximum_hours": 8,
+  "measurement": "Conservative elapsed task wall time, including setup and interruptions.",
+  "interruptions": [
+    {
+      "name": "screen",
+      "started_epoch": 1793267799.2080657
+    }
+  ],
+  "local_verification_completed_epoch": 1793270873.4325519,
+  "post_runtime_verification_seconds": 51.23107290267944
+}

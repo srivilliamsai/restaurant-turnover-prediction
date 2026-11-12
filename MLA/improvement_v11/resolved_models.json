@@ -1,0 +1,99 @@
+{
+  "runtime": {
+    "dependencies": {
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1",
+      "catboost": "1.2.10",
+      "interpret-core": "0.7.8",
+      "tabpfn": "9.2.0",
+      "torch": "2.11.0+cu130",
+      "tabicl": "2.2.0"
+    },
+    "gpu": "Tesla T4",
+    "cuda": "13.0",
+    "precision": "float32",
+    "seed": 10242,
+    "target": "raw INR millions",
+    "prediction_chunk": 500
+  },
+  "models": {
+    "BASE": {
+      "checkpoint": {
+        "repo_id": "Prior-Labs/TabPFN-v2-reg",
+        "revision": "4972a65a1b30806315c6f92499959ffbfc69a673",
+        "filename": "tabpfn-v2-regressor.ckpt",
+        "sha256": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736",
+        "version": "2"
+      }
+    },
+    "N": {
+      "checkpoint": {
+        "repo_id": "Prior-Labs/tabpfn_2_5",
+        "filename": "tabpfn-v2.5-regressor-v2.5_default.ckpt",
+        "revision": "6c45f3a6d0d07c6c5f62572e04a0c2929de91b8b",
+        "sha256": "6e0308b7e5f3a8325b798b96d986b2b282c3608b1cda6e2991425a2a261d40b8",
+        "version": "2.5"
+      },
+      "fallback_reason": {
+        "error_type": "UnpicklingError",
+        "message": "Weights only load failed. In PyTorch 2.6, we changed the default value of the `weights_only` argument in `torch.load` from `False` to `True`. Re-running `torch.load` with `weights_only` set to `False` will likely succeed, but it can result in arbitrary code execution. Do it only if you got the file from a trusted source.\nPlease file an issue with the following so that we can make `weights_only=True` compatible with your use case: WeightsUnpickler error: \n\nUnsupported operand 240\n\nCheck the docum"
+      },
+      "params_8": {
+        "auto_scale_n_estimators": true,
+        "average_before_softmax": false,
+        "device": "cuda",
+        "differentiable_input": false,
+        "enable_torch_compile": false,
+        "eval_metric": null,
+        "fit_mode": "low_memory",
+        "ignore_pretraining_limits": false,
+        "inference_config": null,
+        "inference_precision": "torch.float32",
+        "keep_cache_on_device": true,
+        "kv_cache_precision": null,
+        "memory_saving_mode": true,
+        "model_path": "checkpoint_sha256:6e0308b7e5f3a8325b798b96d986b2b282c3608b1cda6e2991425a2a261d40b8",
+        "n_estimators": 8,
+        "n_jobs": null,
+        "n_preprocessing_jobs": 1,
+        "random_state": 10242,
+        "show_progress_bar": false,
+        "softmax_temperature": "auto",
+        "tuning_config": null
+      },
+      "params_16": {
+        "auto_scale_n_estimators": true,
+        "average_before_softmax": false,
+        "device": "cuda",
+        "differentiable_input": false,
+        "enable_torch_compile": false,
+        "eval_metric": null,
+        "fit_mode": "low_memory",
+        "ignore_pretraining_limits": false,
+        "inference_config": null,
+        "inference_precision": "torch.float32",
+        "keep_cache_on_device": true,
+        "kv_cache_precision": null,
+        "memory_saving_mode": true,
+        "model_path": "checkpoint_sha256:6e0308b7e5f3a8325b798b96d986b2b282c3608b1cda6e2991425a2a261d40b8",
+        "n_estimators": 16,
+        "n_jobs": null,
+        "n_preprocessing_jobs": 1,
+        "random_state": 10242,
+        "show_progress_bar": false,
+        "softmax_temperature": "auto",
+        "tuning_config": null
+      }
+    }
+  },
+  "engineering_failures": {
+    "N_pilot": {
+      "error_type": "UnpicklingError",
+      "message": "Weights only load failed. In PyTorch 2.6, we changed the default value of the `weights_only` argument in `torch.load` from `False` to `True`. Re-running `torch.load` with `weights_only` set to `False` will likely succeed, but it can result in arbitrary code execution. Do it only if you got the file from a trusted source.\nPlease file an issue with the following so that we can make `weights_only=True` compatible with your use case: WeightsUnpickler error: \n\nUnsupported operand 240\n\nCheck the docum"
+    }
+  },
+  "selection_uses_validation_rmse": false,
+  "adapter": "Fixed 500 rows; BASE pads its first training row; new models pad a maximum-observed training row; discard padding predictions."
+}

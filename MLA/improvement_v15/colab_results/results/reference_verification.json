@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "assignments": [
+    {
+      "scheme": "42",
+      "v14_rmse": 19649033.55616177,
+      "fold_sha256": "f8c856fc074d5653672bbf04d4b38cf3b0c3f2e8dc87ce77daf7bcd0ebe501a4",
+      "baseline_sha256": "78d87ced373af298d30a1e41a6ce71074e346829f8058e35bde79c397f206ffa",
+      "inference": "Original-Mac V7 plus matching fixed-500-row TabPFN v2 controls; full 500-row scored CSV reproduction remains required."
+    },
+    {
+      "scheme": "71",
+      "v14_rmse": 19649905.454410896,
+      "fold_sha256": "369051948161e2c7ce035455beac8aa9b2a832e49fe341aa6bcd3407d9adc9f4",
+      "baseline_sha256": "1f1b5dbfdb9196366ceaf38f97d5c1e29e4da95c7786368d108e8cf87a2bd2e5",
+      "inference": "Original-Mac V7 plus matching fixed-500-row TabPFN v2 controls; full 500-row scored CSV reproduction remains required."
+    },
+    {
+      "scheme": "48211",
+      "v14_rmse": 19661515.847807977,
+      "fold_sha256": "b7423787aace2bca5e6fbe8a07de473e29926f4bb098555c8eddf852a4197fb6",
+      "baseline_sha256": "3199ff0f9d33360c65fc34b47aecfbf3100e5564b0823785883d64f756e25990",
+      "inference": "Original-Mac V7 plus matching fixed-500-row TabPFN v2 controls; full 500-row scored CSV reproduction remains required."
+    },
+    {
+      "scheme": "48212",
+      "v14_rmse": 19672213.5596034,
+      "fold_sha256": "958dfd8adb0e86a4b69d21158c9ea6bb44eef774b0111138772a235d5088ec0f",
+      "baseline_sha256": "abf1079b5df47e11e714a9133f25621e138b280ad0319e1764e7ed341b047d6e",
+      "inference": "Original-Mac V7 plus matching fixed-500-row TabPFN v2 controls; full 500-row scored CSV reproduction remains required."
+    },
+    {
+      "scheme": "48213",
+      "v14_rmse": 19619589.028592434,
+      "fold_sha256": "db60a21b06b7353c69098db932b19737fe6b10b8bcdf544e2641c8e92c5c2f03",
+      "baseline_sha256": "63020b9560db7c52c13a4d54b0de635d35dbce4c449e79949a216f68007a394c",
+      "inference": "Original-Mac V7 plus matching fixed-500-row TabPFN v2 controls; full 500-row scored CSV reproduction remains required."
+    },
+    {
+      "scheme": "strat:27421",
+      "v14_rmse": 19663361.754943263,
+      "fold_sha256": "67db8264d9d9d73fbc8379c98a739dda7d2b85904a111154feb79e4793cc344a",
+      "baseline_sha256": "12e60bb90ae889d470adee233a2bb24a9c9801956ec0ce3bba5c20be738b6848",
+      "inference": "Original-Mac V7 plus matching fixed-500-row TabPFN v2 controls; full 500-row scored CSV reproduction remains required."
+    },
+    {
+      "scheme": "city",
+      "v14_rmse": 19924168.53482659,
+      "fold_sha256": "0f837d3af050769bd40fe8852bc42adb22878b1e111d7758ff73662a8e2fe912",
+      "baseline_sha256": "f3f0ea4ed3d2513cb3ec36e1397d62927add7a2b6e1ccdbcf966750dfbe46792",
+      "inference": "Original-Mac V7 plus matching fixed-500-row TabPFN v2 controls; full 500-row scored CSV reproduction remains required."
+    }
+  ],
+  "validated_tabpfn_fold_witnesses": 35,
+  "validated_v14_component_fold_witnesses": 35
+}

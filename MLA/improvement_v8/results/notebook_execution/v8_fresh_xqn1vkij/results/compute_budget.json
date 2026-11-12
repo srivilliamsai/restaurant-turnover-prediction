@@ -1,0 +1,9 @@
+{
+  "seconds": 160.3867534630008,
+  "by_stage": {
+    "screen": 59.323521213002095,
+    "export": 101.06323224999869
+  },
+  "maximum_hours": 18,
+  "measurement": "Aggregate checkpoint-computation and fresh-export elapsed seconds; isolated notebook execution recorded separately."
+}

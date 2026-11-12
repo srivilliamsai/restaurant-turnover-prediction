@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "checked_epoch": 1793277350.1302762,
+  "archive_sha256": "e26333e3d1782025a49598babfd37db946f3802f47e15c66db7394e70b1d1aa9",
+  "archive_bytes": 18536768,
+  "archive_entries": 352,
+  "manifest_files_verified": 80,
+  "duplicate_entries": false,
+  "crc_verified": true,
+  "frozen_sources_unchanged": true,
+  "fallback_hashes": {
+    ".csv": "39d49f79beb8549d04ffc78d134aad2407dc5e73914dc3c30e8bb162a3c0ba05",
+    ".ipynb": "86fae4ea97d6fd35c2ed485c60f26f02c98fccb3cbeda9a10228cc48e788318e"
+  },
+  "portal_uploads": 0
+}

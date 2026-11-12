@@ -1,0 +1,92 @@
+{
+  "specs": {
+    "bands_d3_cal0": {
+      "family": "bands",
+      "depth": 3,
+      "calibrate": false
+    },
+    "bands_d3_cal1": {
+      "family": "bands",
+      "depth": 3,
+      "calibrate": true
+    },
+    "bands_d5_cal0": {
+      "family": "bands",
+      "depth": 5,
+      "calibrate": false
+    },
+    "bands_d5_cal1": {
+      "family": "bands",
+      "depth": 5,
+      "calibrate": true
+    },
+    "tiers_d4_shrink100": {
+      "family": "tiers",
+      "depth": 4,
+      "shrink": 100
+    },
+    "tiers_d4_shrink300": {
+      "family": "tiers",
+      "depth": 4,
+      "shrink": 300
+    },
+    "tiers_d6_shrink100": {
+      "family": "tiers",
+      "depth": 6,
+      "shrink": 100
+    },
+    "tiers_d6_shrink300": {
+      "family": "tiers",
+      "depth": 6,
+      "shrink": 300
+    },
+    "residual_ridge100": {
+      "family": "residual",
+      "kind": "ridge",
+      "alpha": 100
+    },
+    "residual_ridge1000": {
+      "family": "residual",
+      "kind": "ridge",
+      "alpha": 1000
+    },
+    "residual_tree_l2": {
+      "family": "residual",
+      "kind": "cat",
+      "loss": "RMSE"
+    },
+    "residual_tree_h20": {
+      "family": "residual",
+      "kind": "cat",
+      "loss": "Huber:delta=20"
+    }
+  },
+  "seeds": [
+    10242,
+    20242
+  ],
+  "development": [
+    42,
+    71
+  ],
+  "weights": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "shortlist": "best eligible configuration from each family, development mean <=1% worse, each assignment <=2% worse",
+  "confirmation": [
+    18421,
+    18422,
+    "strat:27421",
+    "city"
+  ],
+  "nested_residual_training": "three-fold v5 OOF within each outer training fold; checkpoints shared only for identical rows/configurations",
+  "local_champion": "positive gain on both random confirmation assignments; city relative increase <=1%",
+  "experimental_trial": "random confirmation mean <=1% worse; city <=3% worse; stratified <=2% worse",
+  "export_limit": 2,
+  "export_order": "local champions first, then mean random confirmation RMSE; distinct families",
+  "scope": "original supplied data and original code; no leaderboard-fitted row adjustments",
+  "longer_time": "per user authorization; bounded settings, no search expansion after confirmation"
+}

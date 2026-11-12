@@ -1,0 +1,33 @@
+{
+  "repository": "https://github.com/RoloMagnus/restaurant-turnover",
+  "reviewed_revision": "2ce8c0657b788198a2d8b06066b351320881ac0d",
+  "reviewed_date": "2026-10-26",
+  "mode": "Static source, configuration and saved-result inspection; no external code execution",
+  "files_reviewed": [
+    "src/pipeline.py",
+    "src/validation.py",
+    "src/winner_replication_study.py",
+    "src/wr01_v2_study.py",
+    "src/features.py",
+    "experiments/frozen_v1_manifest.json",
+    "experiments/champion_v2_manifest.json",
+    "experiments/wr01_v2_decision.json",
+    "artifacts/winner_replication/e03a_wr01_ensemble_decision.json",
+    "artifacts/winner_replication/wr01_confirmation_decision.json",
+    "artifacts/winner_replication/s08_public_lb_champion_manifest.json",
+    "artifacts/tail_probe/tail_probe_leaderboard_results.csv",
+    "experiments/e07_s05_substitution_decision.json"
+  ],
+  "verified_method": "Ridge fits square-root turnover; transformed predictions are squared for original-scale evaluation. V8 uses its own implementation and truncates negative transformed predictions before squaring.",
+  "saved_s05_reported_portal_rmse": 12114937.2184766,
+  "saved_s08_reported_portal_rmse": 12088422.0735226,
+  "score_provenance": "Author's saved manifests; not independently reproduced on a portal",
+  "s08_method": "A leaderboard-derived adjustment to ten selected test predictions; excluded from V8",
+  "article_later_reported_score": 2893000,
+  "article_later_score_approximate": true,
+  "article_later_score_method_reproduced": false,
+  "decision": "Continue approved bounded V8 experiments; do not copy model weights, external prediction files, target filters or leaderboard-derived row adjustments.",
+  "author_model_executed": false,
+  "external_code_used_in_v8_predictor": false,
+  "external_predictions_used_in_v8_predictor": false
+}

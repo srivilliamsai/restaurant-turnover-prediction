@@ -1,0 +1,11 @@
+{
+  "split_seed": 1701,
+  "folds": 5,
+  "cache_reused": false,
+  "maximum_prediction_difference_INR": {
+    "previous": 0.0,
+    "candidate": 0.0
+  },
+  "elapsed_seconds": 169.33853483200073,
+  "passed": true
+}

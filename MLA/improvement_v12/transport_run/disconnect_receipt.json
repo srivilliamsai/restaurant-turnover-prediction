@@ -1,0 +1,9 @@
+{
+  "detected_UTC": "2026-10-28T10:22:38.050323+00:00",
+  "server_active_assignments": 0,
+  "last_saved_heartbeat_UTC": "2026-10-28T09:23:35.338266+00:00",
+  "conservative_unobserved_seconds_charged": 5355.480660693847,
+  "three_pilot_passes_retained": true,
+  "validation_scores_generated": false,
+  "message": "Colab ended the runtime; stale foreground transport stopped. Cause not exposed by server."
+}

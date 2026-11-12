@@ -1,0 +1,11 @@
+{
+  "free_gpu_connected": true,
+  "gpu": "Tesla T4",
+  "notebook_url": "redacted-url",
+  "setup_completed": true,
+  "data_transfer_completed": false,
+  "error": "Colab files.upload raised MessageError: Cannot read properties of undefined (reading next)",
+  "gpu_fits_run": 0,
+  "user_requested_manual_upload": true,
+  "status": "manual Colab execution pending"
+}

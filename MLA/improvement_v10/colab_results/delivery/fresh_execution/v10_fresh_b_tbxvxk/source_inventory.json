@@ -1,0 +1,501 @@
+{
+  "scope": "Gemini source inventory; scripts not executed.",
+  "count": 55,
+  "files": [
+    {
+      "path": "~/Downloads/gemini-code-1793038917092.py",
+      "sha256": "f3d04731e65228da919e24bd14f4f5cfc6e607717e2bda7e6f1eb07c87d9e12a",
+      "lines": 18,
+      "downloaded_local": "2026-10-26T23:51:57.713635+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793038921109.py",
+      "sha256": "782211822b3f8015054701c87a7bfc83e1c253acd536c2ed2dcb48dff1d05dd5",
+      "lines": 14,
+      "downloaded_local": "2026-10-26T23:52:01.314950+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793038925753.py",
+      "sha256": "7243ac878b9af8d45d7215ec7ffd4677f9ca7f44a60130b671a2acb87ba79208",
+      "lines": 17,
+      "downloaded_local": "2026-10-26T23:52:05.935395+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793038928480.py",
+      "sha256": "5e580e9bc4f57adf3cfd83ea7e221c4b13a94ed8f9f7499dbf2f7aa6b2eb65f5",
+      "lines": 30,
+      "downloaded_local": "2026-10-26T23:52:08.682368+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793038947785.py",
+      "sha256": "ceb456365ba4fd010a3875735e260e06ee04b0e33db4b4409856b3363c841d0f",
+      "lines": 14,
+      "downloaded_local": "2026-10-26T23:52:28.084750+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793038991194.py",
+      "sha256": "f7687a1ee014cae70a5f2ec41f81ccb4bdb5278a25f3e9fe89e7f7c0c3c8f82f",
+      "lines": 4,
+      "downloaded_local": "2026-10-26T23:53:11.575013+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793038993172.py",
+      "sha256": "5ce3c4e72c3a336a3c435a8f2b147d809b40f3fd8c205493dd3780d3899bb016",
+      "lines": 1,
+      "downloaded_local": "2026-10-26T23:53:13.391517+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793039009620.py",
+      "sha256": "df0e4f9e1a30031704814832f68cf4639b7fc25c5302d503cb2e2a3d5ba22699",
+      "lines": 105,
+      "downloaded_local": "2026-10-26T23:53:29.837671+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793039118315.py",
+      "sha256": "7e48ae3b841cbd088b3da08cbea419ed61b29cf829af42a7f2bbaa27bc8b1fd9",
+      "lines": 61,
+      "downloaded_local": "2026-10-26T23:55:18.736002+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793039347510.py",
+      "sha256": "94bf8672861811092c837d6ee449f350c3782c686fe354c344e11c665c6a99e7",
+      "lines": 53,
+      "downloaded_local": "2026-10-26T23:59:07.920253+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793039828263.py",
+      "sha256": "4adcd934b3ac3badfb62315939d787acc0afe2a782a420b27a9a86f435b308a7",
+      "lines": 36,
+      "downloaded_local": "2026-10-27T00:07:08.707460+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793039887567.py",
+      "sha256": "ae8fca3d46b76ea422c29f20c2b3ba147cdfcbabec6a97cc8523b292d1bec411",
+      "lines": 28,
+      "downloaded_local": "2026-10-27T00:08:07.925224+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793039897406.py",
+      "sha256": "ae8fca3d46b76ea422c29f20c2b3ba147cdfcbabec6a97cc8523b292d1bec411",
+      "lines": 28,
+      "downloaded_local": "2026-10-27T00:08:17.591078+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793039902514.py",
+      "sha256": "a13855ab8932b3e18115281c5c79f8a5204b242a23bd8b98235341a1c0288f6e",
+      "lines": 83,
+      "downloaded_local": "2026-10-27T00:08:22.729282+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793040357375.py",
+      "sha256": "f1f4a1085ce17af4062a070d120aafaeca1496631412781b494cd95149efcd72",
+      "lines": 12,
+      "downloaded_local": "2026-10-27T00:15:57.691652+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793040358474.py",
+      "sha256": "53d6f94a30b3e2085adf167549c311e4eb8cdc23e18ff06cf0b6b888ea00259c",
+      "lines": 27,
+      "downloaded_local": "2026-10-27T00:15:58.653308+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793040361521.py",
+      "sha256": "8f350792b0f639774370097430fa70629a00341a4f5bc1f561edcedf5c21b05a",
+      "lines": 8,
+      "downloaded_local": "2026-10-27T00:16:01.681581+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793040449983.py",
+      "sha256": "05efca154d1317de71f0bb596d98b1e611ad4556369c38c4146c30781ed831ed",
+      "lines": 9,
+      "downloaded_local": "2026-10-27T00:17:30.282302+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793040501263.py",
+      "sha256": "f02a0de814c2f0ff77e4cc79c51f135b3e37b054e9876cf7a69cd35db62ed2f9",
+      "lines": 12,
+      "downloaded_local": "2026-10-27T00:18:21.538153+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793040507412.py",
+      "sha256": "ee7d22c9e2c20d30e1d2f3ef282a9428729ea5d0dcb22c7d5c09b568ad3980e1",
+      "lines": 3,
+      "downloaded_local": "2026-10-27T00:18:27.592658+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793040523135.py",
+      "sha256": "ee7d22c9e2c20d30e1d2f3ef282a9428729ea5d0dcb22c7d5c09b568ad3980e1",
+      "lines": 3,
+      "downloaded_local": "2026-10-27T00:18:43.308719+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793040565406.py",
+      "sha256": "52ffffa6ba8e9485ad464248c676fd4dbe16ecceb50f2e42c33402c613aba3c1",
+      "lines": 127,
+      "downloaded_local": "2026-10-27T00:19:25.700590+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793040782819.py",
+      "sha256": "684d851961f7f5fceaac0676aa00f42da4849caa414ce6b0bea9235ef142c206",
+      "lines": 56,
+      "downloaded_local": "2026-10-27T00:23:03.087521+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793040786727.py",
+      "sha256": "09d52ed9a7041cad45632b5918726ffb56a80726462639e573e3b115e2afd70a",
+      "lines": 7,
+      "downloaded_local": "2026-10-27T00:23:07.054626+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041010817.py",
+      "sha256": "3ee46b95f4cb3e63b4713f3d2d59aaa14ce99872a1e5eda8191ad4dc06cfaa7a",
+      "lines": 15,
+      "downloaded_local": "2026-10-27T00:26:51.329357+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041013037.py",
+      "sha256": "7f55914f513501325593738d8f4383f9b15e76e2143766ecbb4ccc38832b4967",
+      "lines": 28,
+      "downloaded_local": "2026-10-27T00:26:53.166960+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041016975.py",
+      "sha256": "db3c40725def1d67a608d7811c0e9761cfa4058142d568b1a79d14f9b1c39028",
+      "lines": 41,
+      "downloaded_local": "2026-10-27T00:26:57.146255+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041021982.py",
+      "sha256": "cfc9401b970f683850f38df4d21e6f0b08fdda77510de6f0c168586cb798c868",
+      "lines": 5,
+      "downloaded_local": "2026-10-27T00:27:02.127387+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041023703.py",
+      "sha256": "377287cd9fc5fca89d41794e0adac69cd46d3afac84f4677b6da2dd95ceffeee",
+      "lines": 12,
+      "downloaded_local": "2026-10-27T00:27:03.834192+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041310452.py",
+      "sha256": "1c8c451a5c8798c2c8972daba48c59efb6b2b80abcf9e7882b2a30b1ae78a597",
+      "lines": 159,
+      "downloaded_local": "2026-10-27T00:31:50.759647+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041360723.py",
+      "sha256": "fd1dc6ad7e4a78cf3763372953e76af9709ce6ba37182d53ad8c9391319a0947",
+      "lines": 10,
+      "downloaded_local": "2026-10-27T00:32:40.991629+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041390251.py",
+      "sha256": "9371a1b8783522419ba77164ed715c45d7348541a53a4ef09fa1936351ea4324",
+      "lines": 65,
+      "downloaded_local": "2026-10-27T00:33:10.511901+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041570974.py",
+      "sha256": "8341a280e72b4053c01bebf684e06fd830638098841663c6e5adcc3ee1bac39f",
+      "lines": 17,
+      "downloaded_local": "2026-10-27T00:36:11.210569+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041572786.py",
+      "sha256": "0411e41b58f4c79cda27a3fe08d60374e0a5d4b8f1fbce9fc43b6ee100f6be67",
+      "lines": 19,
+      "downloaded_local": "2026-10-27T00:36:12.915964+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041579671.py",
+      "sha256": "0031f8766a4bd688f711d92b95471122d83c037d03b9aefa26770f7c8d6719d2",
+      "lines": 30,
+      "downloaded_local": "2026-10-27T00:36:19.799942+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041582258.py",
+      "sha256": "0fde7bc15a219fcab8ec540d7bcf919fbdd41fa2cb3d5003ceb9278ba739b39e",
+      "lines": 13,
+      "downloaded_local": "2026-10-27T00:36:22.419178+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041584057.py",
+      "sha256": "7bf65754821f6616b49f8fbd42879884716bad5c442c10ed7f69a2eacbb310ef",
+      "lines": 47,
+      "downloaded_local": "2026-10-27T00:36:24.199227+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041586353.py",
+      "sha256": "0a29e732ccec93f60dc65d221f3ac8e228726154d5e7f5512aac6f4479ee0c27",
+      "lines": 3,
+      "downloaded_local": "2026-10-27T00:36:26.480092+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041739721.py",
+      "sha256": "b64de8bef90962d267f717c7c6b52e205b7e0316c5c07a0eaff8bf67ed81c72a",
+      "lines": 152,
+      "downloaded_local": "2026-10-27T00:39:00.109895+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041823716.py",
+      "sha256": "6bf65409f8c7bd26abd0934264245306895170c78ea37750069b8b62f1c44e49",
+      "lines": 14,
+      "downloaded_local": "2026-10-27T00:40:24.029618+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041876952.py",
+      "sha256": "87368cba7c869177d69c01025a2e05945200595e2fd5bba219d21533c6a32a82",
+      "lines": 4,
+      "downloaded_local": "2026-10-27T00:41:17.313700+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041899257.py",
+      "sha256": "def20facb12f97e12ad4c322d0dab154163b2ac18f3a3a8941179885c56bd69d",
+      "lines": 7,
+      "downloaded_local": "2026-10-27T00:41:39.525069+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041911708.py",
+      "sha256": "e924802a99c0dc1c3d8187dec5e15c1ecab64018619eaed620ca8e0d415ced20",
+      "lines": 20,
+      "downloaded_local": "2026-10-27T00:41:52.333798+05:30",
+      "colab_setup_command": false,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041930513.py",
+      "sha256": "3b101cc87649f179f68fa068fc6dd239c1772379f1fb41ba73ee90ba55d952db",
+      "lines": 46,
+      "downloaded_local": "2026-10-27T00:42:11.516843+05:30",
+      "colab_setup_command": true,
+      "syntax": "unterminated string literal (detected at line 46); line 46",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041939135.py",
+      "sha256": "32a5b7d730279b7c975381e96d899510fbdf2019f64f99468fc53deed81280b6",
+      "lines": 109,
+      "downloaded_local": "2026-10-27T00:42:19.294928+05:30",
+      "colab_setup_command": true,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041942280.py",
+      "sha256": "907f996d68787bc996b569ae8cef4f478fa542efca5517a0b9fbf820f1242ee1",
+      "lines": 134,
+      "downloaded_local": "2026-10-27T00:42:22.427636+05:30",
+      "colab_setup_command": true,
+      "syntax": "unterminated string literal (detected at line 134); line 134",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041945293.py",
+      "sha256": "21b82cb618047264425b5b04a03cca226a2e3ef0503518c39b4c03be98c4c7a1",
+      "lines": 159,
+      "downloaded_local": "2026-10-27T00:42:25.869353+05:30",
+      "colab_setup_command": true,
+      "syntax": "unterminated string literal (detected at line 159); line 159",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041948800.py",
+      "sha256": "091599e4038228fdcf56585ca18c625158fb38ac7c53a29f8d4e4c0ee88faf68",
+      "lines": 178,
+      "downloaded_local": "2026-10-27T00:42:28.928509+05:30",
+      "colab_setup_command": true,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041951850.py",
+      "sha256": "cdf16bd13099279606f13db3712ebfa7f011de796de650f25b9fcb66299b32eb",
+      "lines": 201,
+      "downloaded_local": "2026-10-27T00:42:32.034097+05:30",
+      "colab_setup_command": true,
+      "syntax": "expected an indented block after 'for' statement on line 201; line 201",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041954722.py",
+      "sha256": "7a14936f37321d841036f925321f0f65b4637abd2c560f448d2594fb65d46fd9",
+      "lines": 228,
+      "downloaded_local": "2026-10-27T00:42:34.878122+05:30",
+      "colab_setup_command": true,
+      "syntax": "'(' was never closed; line 228",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041958120.py",
+      "sha256": "c1cb578dc5e51a3f8797419e70251d3a813d391df69d2a5880f22accf214f122",
+      "lines": 260,
+      "downloaded_local": "2026-10-27T00:42:38.308883+05:30",
+      "colab_setup_command": true,
+      "syntax": "'(' was never closed; line 250",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041963265.py",
+      "sha256": "004700c4dcdc06d0a9c6fd75044a9908f197b53abc501af5c800d76b8226f241",
+      "lines": 311,
+      "downloaded_local": "2026-10-27T00:42:43.412627+05:30",
+      "colab_setup_command": true,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041966985.py",
+      "sha256": "597df8f47fe41b62b2c2e2b813878d5530a14d5ba47b008ada94c08fa968238d",
+      "lines": 339,
+      "downloaded_local": "2026-10-27T00:42:47.128162+05:30",
+      "colab_setup_command": true,
+      "syntax": "unterminated f-string literal (detected at line 339); line 339",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041971518.py",
+      "sha256": "c29273fa61bd77ddee434cf8f5b7a93e086071dc0afdeb375285d1b4e95e3082",
+      "lines": 376,
+      "downloaded_local": "2026-10-27T00:42:51.700197+05:30",
+      "colab_setup_command": true,
+      "syntax": "unterminated string literal (detected at line 376); line 376",
+      "executed": false
+    },
+    {
+      "path": "~/Downloads/gemini-code-1793041983097.py",
+      "sha256": "92739a6d5b4c3bb1ee4483e6f026bd4dc9e85fddccd5e13d620ce34723e4ab35",
+      "lines": 380,
+      "downloaded_local": "2026-10-27T00:43:03.395357+05:30",
+      "colab_setup_command": true,
+      "syntax": "parseable after notebook setup handling",
+      "executed": false
+    }
+  ]
+}

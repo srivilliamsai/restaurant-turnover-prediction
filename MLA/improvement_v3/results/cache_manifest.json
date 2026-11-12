@@ -1,0 +1,16 @@
+{
+  "input_hashes": {
+    "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+    "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+    "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+    "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+  },
+  "configuration_sha256": "be16d798cd90372b6ad42612f31e624afde7305feac5c5ba6334670e12392075",
+  "files": {
+    "comparison_71.npz": "c141d9effcd120aed6de11446143ec6bd439c3aa5deb8f8f682a56ca893acca9",
+    "comparison_2026.npz": "e8d7d9782210ba3a1d61413971957ee3ef12b26fbe56aa1fc9588b7c32390e0d",
+    "comparison_303.npz": "93117e9be65912d48c2c6eb6f902f8c181bfd50ff438543c5718e5bf73a7d0c9",
+    "comparison_909.npz": "bc5f6bb4b7b41624ed3552b0082ff13a16e18bd11cf2fae76a1bd1ae063a0473",
+    "comparison_city.npz": "9729efb703dd1e12d60fbcfdc7a447a89cc487a112842c97fe910b706af2ea17"
+  }
+}

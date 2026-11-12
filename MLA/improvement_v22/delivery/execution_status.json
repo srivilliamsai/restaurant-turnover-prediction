@@ -1,0 +1,24 @@
+{
+  "experiment_complete": true,
+  "qualified": false,
+  "best_development": {
+    "name": "P35-SC38",
+    "route": "P35-replacement",
+    "weight": 1.0,
+    "effective_new_share": 0.75,
+    "rmse_42": 19624632.361212797,
+    "gain_42": 24401.19494897127,
+    "relative_gain_42": 0.0012418521694324,
+    "rmse_71": 19625943.626955345,
+    "gain_71": 23961.827455550432,
+    "relative_gain_71": 0.0012194372899728,
+    "mean_relative_gain": 0.0012306447297026
+  },
+  "verified_candidate_fold_outputs": 10,
+  "verified_blend_comparisons": 3,
+  "portal_uploads": 0,
+  "best_observed_portal_version": "V14",
+  "best_observed_portal_rmse_INR": 11736110.7877709,
+  "owned_runtime_released": true,
+  "decision": "Retain V14: no development candidate qualified."
+}

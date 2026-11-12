@@ -1,0 +1,31 @@
+{
+  "status": "COMPLETE",
+  "qualified": false,
+  "development_comparisons": 20,
+  "development_fold_fits": 50,
+  "engineering_pilots_passed": 5,
+  "best_experiment": {
+    "setting": "N32-T100",
+    "replacement_weight": 0.5,
+    "mean_development_rmse": 19644981.911940813,
+    "rmse_42": 19645329.984029375,
+    "rmse_71": 19644633.839852255,
+    "mean_relative_gain": 0.0002283815322334
+  },
+  "v14_mean_development_rmse": 19649469.505286332,
+  "mean_absolute_rmse_gain_INR": 4487.593345519155,
+  "minimum_mean_relative_gain": 0.002,
+  "v14_actual_portal_rmse": 11736110.7877709,
+  "v15_actual_portal_rmse": null,
+  "new_v15_csv_exported": false,
+  "confirmation_performed": false,
+  "portal_uploads": 0,
+  "owned_runtime_released": true,
+  "post_release_active_assignments": 0,
+  "diagnostic_rows": {
+    "development_segments.csv": 160,
+    "development_folds.csv": 200,
+    "component_diagnostics.csv": 10
+  },
+  "v14_csv_sha256": "39d49f79beb8549d04ffc78d134aad2407dc5e73914dc3c30e8bb162a3c0ba05"
+}

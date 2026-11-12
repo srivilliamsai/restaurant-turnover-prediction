@@ -1,0 +1,12 @@
+{
+  "stale_checkpoint_rejected": true,
+  "corrupt_checkpoint_rejected": true,
+  "incomplete_checkpoint_recomputed": true,
+  "valid_checkpoint_reused": true,
+  "own_label_excluded_from_target_encoding": true,
+  "unseen_target_encoding_uses_training_mean": true,
+  "native_cardinality_bounded_and_unseen_missing": true,
+  "all_model_families_missing_unseen_permutation_target_id_invariance": true,
+  "frequency_maps_training_only_unseen_zero": true,
+  "status": "PASS"
+}

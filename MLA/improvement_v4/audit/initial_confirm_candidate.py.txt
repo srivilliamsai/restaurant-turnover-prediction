@@ -1,0 +1,15 @@
+from pipeline import *
+import time
+contract=load_contract();train,test=load_data();y=train['Annual Turnover'].to_numpy(float)
+rows=[]
+for scheme in [1701,1711,71,2026,303,909,'city']:
+    start=time.time();file=OUT/f'comparison_{scheme}.npz'
+    if file.exists():p=dict(np.load(file))
+    else:
+        p=compute_validation(train,y,scheme,contract,use_prior_cache=True)
+        np.savez_compressed(file,**p)
+    row={'validation':str(scheme),'v3_rmse':rmse(y,p['previous']),'v4_rmse':rmse(y,p['candidate'])}
+    row['gain_vs_v3']=row['v3_rmse']-row['v4_rmse'];row['seconds']=time.time()-start
+    rows.append(row);print(json.dumps(row),flush=True)
+    pd.DataFrame(rows).to_csv(OUT/'confirmation.csv',index=False)
+print('COMPLETE',flush=True)

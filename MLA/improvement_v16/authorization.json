@@ -1,0 +1,22 @@
+{
+  "version": "V16",
+  "maximum_hours": 6,
+  "paid_resources": false,
+  "started_epoch": 1793250108,
+  "hard_stop_epoch": 1793287800,
+  "training_stop_epoch": 1793277000,
+  "settings": [
+    "TM32-PLE",
+    "MITRA2-FT"
+  ],
+  "weights": [
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "user_authorization": "User replied continue to the concrete V16 plan: implement and execute the bounded experiment using free T4 only, six elapsed hours including setup and interruptions, two-hour delivery reserve. No portal upload authorization.",
+  "attempt": "initial",
+  "previous_attempt": "none; earlier versions and ledgers unchanged"
+}

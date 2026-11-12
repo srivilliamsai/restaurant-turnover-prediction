@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "owned_session_stop_reported_success": true,
+  "authoritative_sessions_query": "No active sessions found on server.",
+  "server_active_sessions": 0,
+  "usage_counter_observation": {
+    "active_assignments": 1,
+    "note": "Usage counter still reported one immediately after release; session-list endpoint confirmed none. No additional stop or allocation was performed."
+  },
+  "paid_purchase_or_paid_fallback": false
+}

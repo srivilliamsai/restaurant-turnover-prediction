@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "cache_only_no_new_fits": true,
+  "maximum_metric_difference_INR": 3.725290298461914e-09,
+  "results": [
+    {
+      "weight": 0.25,
+      "gain_42_INR": 1124.418202187866,
+      "gain_71_INR": 329.4041671529412,
+      "mean_gain_INR": 726.9111846704036,
+      "mean_relative_gain": 3.683986804407864e-05,
+      "passes_development_gate": false
+    },
+    {
+      "weight": 0.5,
+      "gain_42_INR": 2148.3270692788064,
+      "gain_71_INR": 565.2892402522266,
+      "mean_gain_INR": 1356.8081547655165,
+      "mean_relative_gain": 6.876316763740554e-05,
+      "passes_development_gate": false
+    },
+    {
+      "weight": 0.75,
+      "gain_42_INR": 3071.710951708257,
+      "gain_71_INR": 707.6518654562533,
+      "mean_gain_INR": 1889.6814085822552,
+      "mean_relative_gain": 9.57694172313742e-05,
+      "passes_development_gate": false
+    },
+    {
+      "weight": 1.0,
+      "gain_42_INR": 3894.555733565241,
+      "gain_71_INR": 756.4900185503066,
+      "mean_gain_INR": 2325.522876057774,
+      "mean_relative_gain": 0.00011785820783136863,
+      "passes_development_gate": false
+    }
+  ]
+}

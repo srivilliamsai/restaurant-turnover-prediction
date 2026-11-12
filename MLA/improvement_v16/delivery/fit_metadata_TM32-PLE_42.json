@@ -1,0 +1,712 @@
+[
+  {
+    "name": "TM32-PLE",
+    "training_rows": 2794,
+    "units": "raw INR millions",
+    "all_original_training_targets_retained": true,
+    "members": 32,
+    "inner_training_rows": 2374,
+    "inner_validation_rows": 420,
+    "inner_seed": 9091,
+    "inner_policy": "random-15-percent",
+    "inner_training_indices_sha256": "f4307178e65de4b077607b67933be8ddfc50c9cad5b124752311dad690bb8c98",
+    "inner_validation_indices_sha256": "199ff1cb161f5dc00504df4b848fd36bf75f2945ec4c565d4c822184642cb809",
+    "selected_epochs": 13,
+    "inner_epochs_run": 33,
+    "inner_history": [
+      {
+        "epoch": 1,
+        "inner_rmse_INR": 17733180.950101532
+      },
+      {
+        "epoch": 2,
+        "inner_rmse_INR": 17202817.43176275
+      },
+      {
+        "epoch": 3,
+        "inner_rmse_INR": 17023737.538159665
+      },
+      {
+        "epoch": 4,
+        "inner_rmse_INR": 16735004.362212138
+      },
+      {
+        "epoch": 5,
+        "inner_rmse_INR": 16802864.038271267
+      },
+      {
+        "epoch": 6,
+        "inner_rmse_INR": 16645190.001604043
+      },
+      {
+        "epoch": 7,
+        "inner_rmse_INR": 16678180.907976637
+      },
+      {
+        "epoch": 8,
+        "inner_rmse_INR": 16392740.966800416
+      },
+      {
+        "epoch": 9,
+        "inner_rmse_INR": 16299408.60090266
+      },
+      {
+        "epoch": 10,
+        "inner_rmse_INR": 16299298.871090414
+      },
+      {
+        "epoch": 11,
+        "inner_rmse_INR": 16373243.190499995
+      },
+      {
+        "epoch": 12,
+        "inner_rmse_INR": 16302041.852919048
+      },
+      {
+        "epoch": 13,
+        "inner_rmse_INR": 16257626.601942973
+      },
+      {
+        "epoch": 14,
+        "inner_rmse_INR": 16306307.935638146
+      },
+      {
+        "epoch": 15,
+        "inner_rmse_INR": 16652098.690357588
+      },
+      {
+        "epoch": 16,
+        "inner_rmse_INR": 16948447.745920356
+      },
+      {
+        "epoch": 17,
+        "inner_rmse_INR": 16602848.894175982
+      },
+      {
+        "epoch": 18,
+        "inner_rmse_INR": 16498034.764773155
+      },
+      {
+        "epoch": 19,
+        "inner_rmse_INR": 16517836.714316547
+      },
+      {
+        "epoch": 20,
+        "inner_rmse_INR": 16556968.408765066
+      },
+      {
+        "epoch": 21,
+        "inner_rmse_INR": 16431361.913963713
+      },
+      {
+        "epoch": 22,
+        "inner_rmse_INR": 16447602.780103995
+      },
+      {
+        "epoch": 23,
+        "inner_rmse_INR": 16434646.715534702
+      },
+      {
+        "epoch": 24,
+        "inner_rmse_INR": 16608170.003986184
+      },
+      {
+        "epoch": 25,
+        "inner_rmse_INR": 16427632.340499569
+      },
+      {
+        "epoch": 26,
+        "inner_rmse_INR": 16471997.755121052
+      },
+      {
+        "epoch": 27,
+        "inner_rmse_INR": 16418979.47633712
+      },
+      {
+        "epoch": 28,
+        "inner_rmse_INR": 16423594.867881611
+      },
+      {
+        "epoch": 29,
+        "inner_rmse_INR": 16424290.109128144
+      },
+      {
+        "epoch": 30,
+        "inner_rmse_INR": 16455739.629159963
+      },
+      {
+        "epoch": 31,
+        "inner_rmse_INR": 16393891.538352171
+      },
+      {
+        "epoch": 32,
+        "inner_rmse_INR": 16523766.59437185
+      },
+      {
+        "epoch": 33,
+        "inner_rmse_INR": 16530526.959404781
+      }
+    ],
+    "outer_validation_used_for_epoch_selection": false,
+    "full_subset_refitted": true,
+    "numeric_input_dimension": 41,
+    "constant_numeric_inputs_dropped": 23,
+    "target_mean_millions": 30.716535433070867,
+    "target_scale_millions": 21.728727871451504,
+    "fit_seconds": 9.646556787999998,
+    "prediction_chunk": 500,
+    "seed": 10242
+  },
+  {
+    "name": "TM32-PLE",
+    "training_rows": 2794,
+    "units": "raw INR millions",
+    "all_original_training_targets_retained": true,
+    "members": 32,
+    "inner_training_rows": 2374,
+    "inner_validation_rows": 420,
+    "inner_seed": 9092,
+    "inner_policy": "random-15-percent",
+    "inner_training_indices_sha256": "f7634ba2c42f80b7db5f9ce4e3be2941189f3913ebece13f0e64cfdd3cf2b190",
+    "inner_validation_indices_sha256": "9c2e08fe6fc72f2b4ea8a37a448ba8c2488b36d2d8c2bb18a73fa7caacf92743",
+    "selected_epochs": 6,
+    "inner_epochs_run": 26,
+    "inner_history": [
+      {
+        "epoch": 1,
+        "inner_rmse_INR": 13397290.090699876
+      },
+      {
+        "epoch": 2,
+        "inner_rmse_INR": 12760273.751394046
+      },
+      {
+        "epoch": 3,
+        "inner_rmse_INR": 12498705.928926393
+      },
+      {
+        "epoch": 4,
+        "inner_rmse_INR": 12422174.821418574
+      },
+      {
+        "epoch": 5,
+        "inner_rmse_INR": 12308419.94578327
+      },
+      {
+        "epoch": 6,
+        "inner_rmse_INR": 12186276.766489144
+      },
+      {
+        "epoch": 7,
+        "inner_rmse_INR": 12258728.496159183
+      },
+      {
+        "epoch": 8,
+        "inner_rmse_INR": 12190620.318260236
+      },
+      {
+        "epoch": 9,
+        "inner_rmse_INR": 12595322.474177364
+      },
+      {
+        "epoch": 10,
+        "inner_rmse_INR": 12376654.818959245
+      },
+      {
+        "epoch": 11,
+        "inner_rmse_INR": 12256236.405342722
+      },
+      {
+        "epoch": 12,
+        "inner_rmse_INR": 12657244.296743385
+      },
+      {
+        "epoch": 13,
+        "inner_rmse_INR": 13088386.33829561
+      },
+      {
+        "epoch": 14,
+        "inner_rmse_INR": 12541256.80589938
+      },
+      {
+        "epoch": 15,
+        "inner_rmse_INR": 12606562.334310545
+      },
+      {
+        "epoch": 16,
+        "inner_rmse_INR": 12362988.732879335
+      },
+      {
+        "epoch": 17,
+        "inner_rmse_INR": 12503144.960427823
+      },
+      {
+        "epoch": 18,
+        "inner_rmse_INR": 13171945.78957398
+      },
+      {
+        "epoch": 19,
+        "inner_rmse_INR": 12697519.766774265
+      },
+      {
+        "epoch": 20,
+        "inner_rmse_INR": 13642169.828790076
+      },
+      {
+        "epoch": 21,
+        "inner_rmse_INR": 12633992.191102874
+      },
+      {
+        "epoch": 22,
+        "inner_rmse_INR": 12607201.10261316
+      },
+      {
+        "epoch": 23,
+        "inner_rmse_INR": 12548189.720679268
+      },
+      {
+        "epoch": 24,
+        "inner_rmse_INR": 12530527.983257411
+      },
+      {
+        "epoch": 25,
+        "inner_rmse_INR": 12636907.375416538
+      },
+      {
+        "epoch": 26,
+        "inner_rmse_INR": 12502562.55762807
+      }
+    ],
+    "outer_validation_used_for_epoch_selection": false,
+    "full_subset_refitted": true,
+    "numeric_input_dimension": 41,
+    "constant_numeric_inputs_dropped": 23,
+    "target_mean_millions": 30.509627773801,
+    "target_scale_millions": 21.20296344656958,
+    "fit_seconds": 3.9015334570000277,
+    "prediction_chunk": 500,
+    "seed": 10242
+  },
+  {
+    "name": "TM32-PLE",
+    "training_rows": 2794,
+    "units": "raw INR millions",
+    "all_original_training_targets_retained": true,
+    "members": 32,
+    "inner_training_rows": 2374,
+    "inner_validation_rows": 420,
+    "inner_seed": 9093,
+    "inner_policy": "random-15-percent",
+    "inner_training_indices_sha256": "631511539b2768cc5e21c1ab21404edaa3dbe05baec2b558515d803fd1470a4f",
+    "inner_validation_indices_sha256": "17bf566c33e1d5d81a20ab250736620f3e0c01679bb06e09031027a4669cf125",
+    "selected_epochs": 8,
+    "inner_epochs_run": 28,
+    "inner_history": [
+      {
+        "epoch": 1,
+        "inner_rmse_INR": 13752770.823213384
+      },
+      {
+        "epoch": 2,
+        "inner_rmse_INR": 14184686.934524963
+      },
+      {
+        "epoch": 3,
+        "inner_rmse_INR": 13051486.579186173
+      },
+      {
+        "epoch": 4,
+        "inner_rmse_INR": 13023727.069160728
+      },
+      {
+        "epoch": 5,
+        "inner_rmse_INR": 12995731.944895022
+      },
+      {
+        "epoch": 6,
+        "inner_rmse_INR": 13323351.855906487
+      },
+      {
+        "epoch": 7,
+        "inner_rmse_INR": 13034290.07102331
+      },
+      {
+        "epoch": 8,
+        "inner_rmse_INR": 12931744.705758072
+      },
+      {
+        "epoch": 9,
+        "inner_rmse_INR": 13032680.040069161
+      },
+      {
+        "epoch": 10,
+        "inner_rmse_INR": 13189986.328753287
+      },
+      {
+        "epoch": 11,
+        "inner_rmse_INR": 12967551.139271755
+      },
+      {
+        "epoch": 12,
+        "inner_rmse_INR": 13486352.023966292
+      },
+      {
+        "epoch": 13,
+        "inner_rmse_INR": 13130212.582511295
+      },
+      {
+        "epoch": 14,
+        "inner_rmse_INR": 14354675.776685074
+      },
+      {
+        "epoch": 15,
+        "inner_rmse_INR": 13475537.800252125
+      },
+      {
+        "epoch": 16,
+        "inner_rmse_INR": 13259971.197401267
+      },
+      {
+        "epoch": 17,
+        "inner_rmse_INR": 13375872.712519279
+      },
+      {
+        "epoch": 18,
+        "inner_rmse_INR": 13350245.328511799
+      },
+      {
+        "epoch": 19,
+        "inner_rmse_INR": 13635623.359616013
+      },
+      {
+        "epoch": 20,
+        "inner_rmse_INR": 13440437.139514448
+      },
+      {
+        "epoch": 21,
+        "inner_rmse_INR": 13306962.105029358
+      },
+      {
+        "epoch": 22,
+        "inner_rmse_INR": 13331614.220507056
+      },
+      {
+        "epoch": 23,
+        "inner_rmse_INR": 13476240.557886565
+      },
+      {
+        "epoch": 24,
+        "inner_rmse_INR": 13312215.771574758
+      },
+      {
+        "epoch": 25,
+        "inner_rmse_INR": 13211327.370453604
+      },
+      {
+        "epoch": 26,
+        "inner_rmse_INR": 13406232.566640664
+      },
+      {
+        "epoch": 27,
+        "inner_rmse_INR": 13481530.133158175
+      },
+      {
+        "epoch": 28,
+        "inner_rmse_INR": 13245532.968350973
+      }
+    ],
+    "outer_validation_used_for_epoch_selection": false,
+    "full_subset_refitted": true,
+    "numeric_input_dimension": 41,
+    "constant_numeric_inputs_dropped": 23,
+    "target_mean_millions": 30.571188260558337,
+    "target_scale_millions": 21.471040164182,
+    "fit_seconds": 4.265331008999965,
+    "prediction_chunk": 500,
+    "seed": 10242
+  },
+  {
+    "name": "TM32-PLE",
+    "training_rows": 2795,
+    "units": "raw INR millions",
+    "all_original_training_targets_retained": true,
+    "members": 32,
+    "inner_training_rows": 2375,
+    "inner_validation_rows": 420,
+    "inner_seed": 9094,
+    "inner_policy": "random-15-percent",
+    "inner_training_indices_sha256": "34bdd368892a309d93055a443a227eb9f065dbb17a316006e3e792ba10a68c1c",
+    "inner_validation_indices_sha256": "68fe8b8f7c149e54d0544a9d81966478e0d25855fc8eb124009da987e6e70715",
+    "selected_epochs": 10,
+    "inner_epochs_run": 30,
+    "inner_history": [
+      {
+        "epoch": 1,
+        "inner_rmse_INR": 26015121.694816403
+      },
+      {
+        "epoch": 2,
+        "inner_rmse_INR": 25672884.483687893
+      },
+      {
+        "epoch": 3,
+        "inner_rmse_INR": 25431690.378008258
+      },
+      {
+        "epoch": 4,
+        "inner_rmse_INR": 25370629.036342602
+      },
+      {
+        "epoch": 5,
+        "inner_rmse_INR": 25306341.213611055
+      },
+      {
+        "epoch": 6,
+        "inner_rmse_INR": 25250743.436868917
+      },
+      {
+        "epoch": 7,
+        "inner_rmse_INR": 25609440.234960124
+      },
+      {
+        "epoch": 8,
+        "inner_rmse_INR": 25233419.37322328
+      },
+      {
+        "epoch": 9,
+        "inner_rmse_INR": 25192775.24192317
+      },
+      {
+        "epoch": 10,
+        "inner_rmse_INR": 25144115.61613482
+      },
+      {
+        "epoch": 11,
+        "inner_rmse_INR": 25507767.55805642
+      },
+      {
+        "epoch": 12,
+        "inner_rmse_INR": 25202071.04134486
+      },
+      {
+        "epoch": 13,
+        "inner_rmse_INR": 25522274.08131405
+      },
+      {
+        "epoch": 14,
+        "inner_rmse_INR": 25268552.37782321
+      },
+      {
+        "epoch": 15,
+        "inner_rmse_INR": 25263738.865716524
+      },
+      {
+        "epoch": 16,
+        "inner_rmse_INR": 25503942.659967255
+      },
+      {
+        "epoch": 17,
+        "inner_rmse_INR": 26092738.016619217
+      },
+      {
+        "epoch": 18,
+        "inner_rmse_INR": 25970909.65674096
+      },
+      {
+        "epoch": 19,
+        "inner_rmse_INR": 25936295.244449634
+      },
+      {
+        "epoch": 20,
+        "inner_rmse_INR": 25609418.687055893
+      },
+      {
+        "epoch": 21,
+        "inner_rmse_INR": 25773230.34517576
+      },
+      {
+        "epoch": 22,
+        "inner_rmse_INR": 25637438.32876272
+      },
+      {
+        "epoch": 23,
+        "inner_rmse_INR": 25727941.05124133
+      },
+      {
+        "epoch": 24,
+        "inner_rmse_INR": 25729581.102820724
+      },
+      {
+        "epoch": 25,
+        "inner_rmse_INR": 25589456.790279172
+      },
+      {
+        "epoch": 26,
+        "inner_rmse_INR": 25593142.694571186
+      },
+      {
+        "epoch": 27,
+        "inner_rmse_INR": 25607029.505721904
+      },
+      {
+        "epoch": 28,
+        "inner_rmse_INR": 25737988.291305088
+      },
+      {
+        "epoch": 29,
+        "inner_rmse_INR": 25959287.973615743
+      },
+      {
+        "epoch": 30,
+        "inner_rmse_INR": 25687095.11101194
+      }
+    ],
+    "outer_validation_used_for_epoch_selection": false,
+    "full_subset_refitted": true,
+    "numeric_input_dimension": 41,
+    "constant_numeric_inputs_dropped": 23,
+    "target_mean_millions": 31.008014311270124,
+    "target_scale_millions": 22.696830419331107,
+    "fit_seconds": 4.685176186000035,
+    "prediction_chunk": 500,
+    "seed": 10242
+  },
+  {
+    "name": "TM32-PLE",
+    "training_rows": 2795,
+    "units": "raw INR millions",
+    "all_original_training_targets_retained": true,
+    "members": 32,
+    "inner_training_rows": 2375,
+    "inner_validation_rows": 420,
+    "inner_seed": 9095,
+    "inner_policy": "random-15-percent",
+    "inner_training_indices_sha256": "7f87918b93bbb2df28a7ad9c5d276080239d303ce50476f399828b36c8ecc87e",
+    "inner_validation_indices_sha256": "26093f13f8d1e95646f426d46174ec3eaea70f0de6acd630a645b0bc88f87fa9",
+    "selected_epochs": 8,
+    "inner_epochs_run": 28,
+    "inner_history": [
+      {
+        "epoch": 1,
+        "inner_rmse_INR": 27880107.510397796
+      },
+      {
+        "epoch": 2,
+        "inner_rmse_INR": 27169359.657179553
+      },
+      {
+        "epoch": 3,
+        "inner_rmse_INR": 27112416.522923447
+      },
+      {
+        "epoch": 4,
+        "inner_rmse_INR": 26988141.605291724
+      },
+      {
+        "epoch": 5,
+        "inner_rmse_INR": 27054468.133235414
+      },
+      {
+        "epoch": 6,
+        "inner_rmse_INR": 26978096.72704323
+      },
+      {
+        "epoch": 7,
+        "inner_rmse_INR": 26715946.35344153
+      },
+      {
+        "epoch": 8,
+        "inner_rmse_INR": 26418711.025437307
+      },
+      {
+        "epoch": 9,
+        "inner_rmse_INR": 26867487.44138239
+      },
+      {
+        "epoch": 10,
+        "inner_rmse_INR": 26801764.3676226
+      },
+      {
+        "epoch": 11,
+        "inner_rmse_INR": 26784966.100827813
+      },
+      {
+        "epoch": 12,
+        "inner_rmse_INR": 26903961.30715088
+      },
+      {
+        "epoch": 13,
+        "inner_rmse_INR": 26802332.407980505
+      },
+      {
+        "epoch": 14,
+        "inner_rmse_INR": 26554586.561170775
+      },
+      {
+        "epoch": 15,
+        "inner_rmse_INR": 27056084.22531281
+      },
+      {
+        "epoch": 16,
+        "inner_rmse_INR": 26863734.116849456
+      },
+      {
+        "epoch": 17,
+        "inner_rmse_INR": 26800437.329001985
+      },
+      {
+        "epoch": 18,
+        "inner_rmse_INR": 26718438.466305688
+      },
+      {
+        "epoch": 19,
+        "inner_rmse_INR": 26437200.84208817
+      },
+      {
+        "epoch": 20,
+        "inner_rmse_INR": 26589083.14806329
+      },
+      {
+        "epoch": 21,
+        "inner_rmse_INR": 26470648.0190403
+      },
+      {
+        "epoch": 22,
+        "inner_rmse_INR": 26707702.093124695
+      },
+      {
+        "epoch": 23,
+        "inner_rmse_INR": 26571012.007940948
+      },
+      {
+        "epoch": 24,
+        "inner_rmse_INR": 26569685.995299783
+      },
+      {
+        "epoch": 25,
+        "inner_rmse_INR": 26635192.253574878
+      },
+      {
+        "epoch": 26,
+        "inner_rmse_INR": 26476695.55060901
+      },
+      {
+        "epoch": 27,
+        "inner_rmse_INR": 26619639.615157995
+      },
+      {
+        "epoch": 28,
+        "inner_rmse_INR": 26444036.89784901
+      }
+    ],
+    "outer_validation_used_for_epoch_selection": false,
+    "full_subset_refitted": true,
+    "numeric_input_dimension": 41,
+    "constant_numeric_inputs_dropped": 23,
+    "target_mean_millions": 30.82304114490161,
+    "target_scale_millions": 21.09948779062965,
+    "fit_seconds": 4.256571427999916,
+    "prediction_chunk": 500,
+    "seed": 10242
+  }
+]

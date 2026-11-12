@@ -1,0 +1,21 @@
+{
+  "files_sha256": {
+    "experiment.py": "3b5102e46ff1301dfe1e744631c1a55ef818f4eba5c7f6157433948e2926db56",
+    "adapter.py": "c4c3577d2411daa7a6be395712e7f0ac22f74f5aee8d5cd6fae016c81aec9472",
+    "protocol.json": "8da73f2982ffd1fc9599d56779afb52cc433e8a887cd22a342e083a73b86ee15",
+    "authorization.json": "045aec23b5fb1b5a28f661aacbcd0266e3176202e9968338704da5a05b528d7b",
+    "controls.npz": "383bbae2d1bdef07b7fb413245cad1532f6f84f114a330079f1fd8bb1b838a23",
+    "partitions.json": "266da3c0123422da7f29363e493fbdf8c2c2c06809d1a318f5b13ead1c1371be",
+    "feature_train.csv": "76a3a098ef88df8b40e97489cf24456386f9dc6a9da2b94849867fb3f0ed29c0",
+    "feature_test.csv": "e441fb547fc858291ef180f9baa3aaefdc713c897d755efe37fe3036b52c2bdf",
+    "history_audit.json": "2da7793c85ef9742c7f685bd1583dfe0e294ceda1a835f0e41b1bafc231cbb11",
+    "PLAN.md": "6ea7c492dd7e9ca3c6a6fffd9b9838bb355a971e6788eeaf4aec5f8338a310cb",
+    "RESEARCH_SOURCES.md": "0f11c4a0ea8af31216847cf986546c93390b3e0841a7a5834b312ce9277ab58b",
+    "research_sources/source_manifest.json": "c9cbaaa384d314da84d100a122cb8bc29786e5d0226d25635751b1f257992d72",
+    "research_sources/checkpoint_manifest.json": "293f8d3860655517bb243595453c530b1c154779abfa4beb25d8fb08c666a9f7",
+    "research_sources/mlx_manifest.json": "ffac55277a420cfb56d94007c6207eaacaf168a85edd880348f84eccbe53ecd9"
+  },
+  "frozen_epoch": 1793295051.406677,
+  "accuracy_results_opened": false,
+  "reason": "Singleton scalar-to-vector engineering repair and explicit interpretation of the user one-hour timing message"
+}

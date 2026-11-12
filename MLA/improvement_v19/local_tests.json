@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "tests_run": 9,
+  "tests_passed": 9,
+  "source_parse": "PASS",
+  "data_reference_checks": "PASS",
+  "original_mac_reproduction": {
+    "status": "PASS",
+    "seconds": 81.04217245800828,
+    "maximum_difference_INR": 1.4901161193847656e-08
+  },
+  "selection_scores_inspected": false,
+  "initial_accuracy_outputs_generated": true,
+  "clock_reset": false,
+  "epoch": 1793269725.92612
+}

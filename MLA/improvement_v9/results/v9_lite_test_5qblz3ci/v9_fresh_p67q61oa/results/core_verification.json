@@ -1,0 +1,10 @@
+{
+  "valid_stale_corrupt_interrupted_checkpoints": true,
+  "fold_local_vocabularies_and_unseen_missing": true,
+  "feature_schemas_and_target_id_exclusion": true,
+  "ebm_all_settings_behavior": true,
+  "outer_validation_labels_excluded_from_model_fit": true,
+  "all_original_fit_targets_retained": true,
+  "status": "PASS",
+  "gpu_model_fit_tested": false
+}

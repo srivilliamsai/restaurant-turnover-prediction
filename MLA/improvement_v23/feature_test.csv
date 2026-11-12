@@ -1,0 +1,501 @@
+Cuisine,City,Restaurant Location,Facebook Popularity Quotient,Endoresed By,Instagram Popularity Quotient,Fire Audit,Liquor License Obtained,Situated in a Multi Complex,Dedicated Parking,Open Sitting Available,Resturant Tier,Restaurant Type,Restaurant Theme,Restaurant Zomato Rating,Restaurant City Tier,Order Wait Time,Staff Responsivness,Value for Money,Hygiene Rating,Food Rating,Overall Restaurant Rating,Live Music Rating,Comedy Gigs Rating,Value Deals Rating,Live Sports Rating,Ambience,Lively,Service,Comfortablility,Privacy,Opening Year,Opening Month,Offers Live Music,Offers Comedy Gigs,Offers Value Deals,Offers Live Sports,Cuisine 1,Cuisine 2,City Is Unknown
+"tibetan,italian",bangalore,near business hub,78.0,tier a celebrity,69.0,1,1,1,1,0,2,bar,greek,3,0,10,5,3,5,8,6.0,,2.0,,,5,2,2,6,0,2010.0,7.0,0,1,0,0,tibetan,italian,0
+"tibetan,italian",hyderabad,near party hub,89.17,not specific,96.0,1,1,1,1,1,2,bar,nature,4,0,10,4,5,6,8,9.0,3.0,,,6.0,7,8,5,1,8,2011.0,9.0,1,0,0,1,tibetan,italian,0
+"algerian,belgian",hyderabad,near party hub,84.0,not specific,86.0,1,1,1,0,1,2,bar,greek,2,0,6,5,5,6,9,6.0,3.0,,,,9,7,5,1,5,2011.0,4.0,1,0,0,0,algerian,belgian,0
+"tibetan,greek",-1,near party hub,79.38,not specific,74.4,0,1,1,1,1,2,gastro bar,90's,3,0,10,5,5,5,9,9.0,6.0,,,,6,7,6,4,7,2005.0,1.0,1,0,0,0,tibetan,greek,1
+"cuban,british",pune,near party hub,84.67,not specific,86.46,1,1,1,0,0,1,bar,mise en,4,1,7,5,5,7,8,,,,,,4,4,7,7,3,2008.0,11.0,0,0,0,0,cuban,british,0
+"japanese,thai",-1,near party hub,66.85,not specific,59.11,1,1,0,1,0,2,bar,90's,4,1,1,5,6,6,8,10.0,4.0,,,,7,6,3,4,5,2009.0,5.0,1,0,0,0,japanese,thai,1
+"welsh,thai",hyderabad,near business hub,77.2,tier a celebrity,53.4,1,1,1,0,0,2,bar,arabian,3,0,5,5,6,6,10,10.0,4.0,,,,8,7,5,5,9,2008.0,6.0,1,0,0,0,welsh,thai,0
+"british,japanese",-1,near party hub,62.0,not specific,64.0,1,1,1,1,1,2,caffee,arabian,3,1,2,4,4,4,9,10.0,4.0,,,,10,8,7,4,5,2003.0,6.0,1,0,0,0,british,japanese,1
+"tibetan,greek",new delhi,near party hub,82.6,tier a celebrity,76.0,1,1,1,1,1,2,bar,greek,3,1,6,5,5,4,8,9.0,3.0,,,,4,5,6,8,4,2011.0,3.0,1,0,0,0,tibetan,greek,0
+"british,japanese",bangalore,near party hub,58.17,not specific,64.31,1,1,1,1,1,2,bar,arabian,2,1,7,4,3,5,9,6.0,4.0,,2.0,,7,7,5,5,5,2011.0,4.0,1,0,1,0,british,japanese,0
+"irish,belgian",meerut,near party hub,84.16,tier a celebrity,73.4,1,1,1,1,0,2,bar,nature,3,0,10,5,4,5,7,9.0,,,,5.0,6,5,6,8,6,2010.0,10.0,0,0,0,1,irish,belgian,0
+"tibetan,greek",chennai,near party hub,92.3,not specific,83.6,1,1,1,0,1,2,bar,greek,4,0,3,6,5,6,9,8.0,3.0,,,,7,7,5,1,7,2011.0,9.0,1,0,0,0,tibetan,greek,0
+"peruvian,cuban",hyderabad,near business hub,88.0,not specific,88.0,0,1,1,1,0,2,bar,greek,3,0,9,3,4,6,5,9.0,2.0,4.0,,,8,7,6,2,8,2008.0,8.0,1,1,0,0,peruvian,cuban,0
+"algerian,korean",-1,near party hub,80.64,not specific,75.5,0,1,1,0,1,2,bar,molino,2,1,7,6,5,4,10,7.0,,,,,4,6,4,4,5,2010.0,8.0,0,0,0,0,algerian,korean,1
+"welsh,thai",lucknow,near party hub,85.83,not specific,69.33,1,1,0,1,1,2,bar,greek,2,0,6,3,4,5,9,7.0,,2.0,,,7,7,7,4,7,2013.0,9.0,0,1,0,0,welsh,thai,0
+"indian,irish",bangalore,near party hub,88.64,not specific,65.16,1,1,1,1,1,2,bar,arabian,3,1,3,4,4,4,5,9.0,5.0,,,,9,6,5,4,3,2007.0,8.0,1,0,0,0,indian,irish,0
+"tibetan,greek",gurgaon,near business hub,89.8,tier a celebrity,83.8,1,1,0,1,1,2,bar,arabian,3,0,3,5,4,5,7,9.0,5.0,,,,6,7,6,4,10,2009.0,1.0,1,0,0,0,tibetan,greek,0
+"welsh,thai",new delhi,near party hub,68.0,not specific,65.6,1,1,1,1,1,2,bar,arabian,2,0,5,4,5,3,8,10.0,4.0,,4.0,,6,5,3,1,4,2012.0,1.0,1,0,1,0,welsh,thai,0
+"peruvian,cuban",-1,near party hub,83.0,tier a celebrity,85.0,0,1,1,1,1,2,bar,arabian,2,0,10,6,5,5,10,9.0,5.0,,,,6,5,4,3,2,2009.0,8.0,1,0,0,0,peruvian,cuban,1
+"indian,irish",navi mumbai,near party hub,63.4,not specific,66.6,1,1,1,1,1,2,bar,arabian,2,0,6,5,5,5,8,10.0,4.0,,,,4,7,6,6,7,2010.0,8.0,1,0,0,0,indian,irish,0
+"british,japanese",guragaon,near party hub,78.0,tier a celebrity,68.0,0,1,1,1,1,2,bar,greek,2,0,7,5,4,2,6,,2.0,,,,10,8,3,4,9,2011.0,9.0,1,0,0,0,british,japanese,0
+"tibetan,italian",ahmedabad,near party hub,91.0,not specific,83.0,1,1,0,1,1,2,bar,arabian,3,0,2,4,4,5,9,9.0,5.0,,,,9,8,5,3,6,2010.0,12.0,1,0,0,0,tibetan,italian,0
+"welsh,thai",-1,near party hub,63.0,not specific,66.0,1,1,0,1,1,2,bar,arabian,2,0,4,4,5,5,9,7.0,3.0,,,,7,7,5,5,6,2008.0,8.0,1,0,0,0,welsh,thai,1
+"algerian,korean",-1,near party hub,70.0,tier a celebrity,66.0,0,1,1,1,1,2,bar,greek,2,0,9,5,5,5,5,7.0,4.0,2.0,,,9,10,7,0,7,2011.0,11.0,1,1,0,0,algerian,korean,1
+"indian,irish",bangalore,near party hub,84.0,not specific,78.13,1,1,1,0,1,2,bar,arabian,2,0,5,5,4,5,9,10.0,4.0,,,,8,8,5,5,6,2009.0,1.0,1,0,0,0,indian,irish,0
+"algerian,belgian",nagpur,near party hub,63.6,not specific,60.8,1,1,1,1,1,2,bar,arabian,2,0,7,4,4,4,9,8.0,3.0,,3.0,,9,9,8,4,9,2009.0,8.0,1,0,1,0,algerian,belgian,0
+"indian,irish",mumbai,near party hub,89.5,not specific,91.8,1,1,1,1,1,2,bar,nature,3,0,5,6,6,5,5,8.0,4.0,,,4.0,8,6,6,6,6,2010.0,9.0,1,0,0,1,indian,irish,0
+"tibetan,italian",hyderabad,near business hub,76.0,not specific,88.0,1,1,1,1,1,2,bar,arabian,2,1,8,5,6,6,10,9.0,5.0,,,,6,7,6,3,7,2010.0,7.0,1,0,0,0,tibetan,italian,0
+"chinese,salvadorian",-1,near party hub,84.8,tier a celebrity,81.4,1,1,0,1,0,2,bar,greek,4,0,8,4,5,6,6,7.0,,3.0,,,7,7,5,2,8,2010.0,1.0,0,1,0,0,chinese,salvadorian,1
+"peruvian,cuban",coimbatore,near business hub,91.0,not specific,90.0,1,1,1,1,1,2,bar,90's,3,0,10,3,4,4,5,10.0,3.0,,4.0,,5,6,6,4,7,2011.0,8.0,1,0,1,0,peruvian,cuban,0
+"chinese,salvadorian",patna,near party hub,71.0,tier a celebrity,63.3,1,1,1,0,1,2,bar,greek,3,0,8,6,6,6,8,9.0,6.0,5.0,,,8,7,4,3,6,2007.0,7.0,1,1,0,0,chinese,salvadorian,0
+"cuban,british",-1,near party hub,78.0,tier a celebrity,76.0,1,1,1,1,1,2,bar,arabian,2,0,9,6,5,8,8,9.0,6.0,,,,6,5,1,4,4,2009.0,12.0,1,0,0,0,cuban,british,1
+"algerian,korean",hyderabad,near party hub,88.1,not specific,91.1,1,1,1,1,1,2,bar,greek,2,1,5,5,4,5,6,7.0,3.0,2.0,,,6,8,6,5,8,2010.0,6.0,1,1,0,0,algerian,korean,0
+"tibetan,greek",hyderabad,near party hub,75.83,not specific,92.3,1,1,1,0,1,2,bar,90's,2,0,3,3,3,5,6,8.0,4.0,,,,6,8,7,3,5,2008.0,5.0,1,0,0,0,tibetan,greek,0
+"turkish,sapnish",noida,near business hub,81.0,tier a celebrity,76.0,1,1,0,1,1,2,bar,90's,3,0,6,4,5,4,7,7.0,,,,,6,6,6,5,7,2010.0,12.0,0,0,0,0,turkish,sapnish,0
+"tibetan,greek",bangalore,near party hub,65.0,not specific,50.0,0,1,1,1,1,2,caffee,arabian,3,1,10,6,4,4,9,10.0,4.0,,,,5,5,5,6,6,2008.0,11.0,1,0,0,0,tibetan,greek,0
+"tibetan,greek",gurgaon,near party hub,76.66,not specific,80.0,1,1,1,1,1,2,bar,arabian,3,0,8,5,5,7,5,9.0,5.0,,,,5,6,3,3,4,2009.0,5.0,1,0,0,0,tibetan,greek,0
+"indian,irish",-1,near party hub,71.85,tier a celebrity,70.6,1,1,1,1,1,2,bar,90's,3,0,7,6,5,6,8,9.0,5.0,,,,7,6,6,4,7,2010.0,3.0,1,0,0,0,indian,irish,1
+"welsh,thai",kolkata,near party hub,76.2,tier a celebrity,68.3,1,1,0,0,0,2,bar,greek,2,0,10,5,4,3,7,8.0,,3.0,,,1,3,3,5,2,2010.0,1.0,0,1,0,0,welsh,thai,0
+"tibetan,greek",bangalore,near party hub,57.7,not specific,54.8,1,1,1,1,0,2,bar,arabian,3,0,4,3,4,3,6,8.0,4.0,,,,2,2,6,5,5,2008.0,9.0,1,0,0,0,tibetan,greek,0
+"japanese,thai",-1,near business hub,88.4,not specific,92.9,0,1,1,1,0,2,bar,greek,2,1,4,4,4,5,5,10.0,3.0,3.0,,,8,8,7,4,7,2011.0,11.0,1,1,0,0,japanese,thai,1
+"british,japanese",pune,near business hub,66.2,tier a celebrity,65.4,1,1,1,1,1,2,bar,90's,3,0,10,5,5,5,8,8.0,4.0,,,,8,6,7,7,8,2010.0,12.0,1,0,0,0,british,japanese,0
+"indian,irish",-1,near business hub,69.33,not specific,70.08,1,1,1,1,1,2,bar,greek,3,0,1,5,5,5,5,9.0,,4.0,,,4,8,5,4,6,2010.0,9.0,0,1,0,0,indian,irish,1
+"chinese,salvadorian",-1,near party hub,62.67,not specific,65.4,1,1,1,1,1,2,bar,arabian,2,0,2,3,4,5,7,8.0,3.0,,,,8,6,5,7,8,2007.0,11.0,1,0,0,0,chinese,salvadorian,1
+"tibetan,greek",chennai,near party hub,87.0,not specific,90.6,1,1,1,1,1,2,bar,90's,2,0,3,3,5,5,7,8.0,4.0,,,,8,7,6,5,7,2008.0,1.0,1,0,0,0,tibetan,greek,0
+"indian,irish",-1,near party hub,65.0,not specific,77.0,0,0,1,1,1,2,caffee,arabian,3,0,5,3,4,3,8,10.0,4.0,,4.0,,4,5,5,3,6,2010.0,6.0,1,0,1,0,indian,irish,1
+"tibetan,italian",-1,near party hub,56.0,not specific,65.0,1,1,1,1,1,2,bar,greek,2,0,6,4,4,5,7,9.0,,4.0,,,8,6,4,5,5,2009.0,7.0,0,1,0,0,tibetan,italian,1
+"tibetan,greek",mumbai,near party hub,77.92,not specific,83.6,1,1,1,1,0,2,bar,greek,5,0,5,4,4,5,9,9.0,4.0,5.0,,,6,10,7,2,8,2009.0,11.0,1,1,0,0,tibetan,greek,0
+"indian,irish",hubli,near party hub,75.0,not specific,70.0,1,1,1,0,1,2,bar,parsi,2,0,4,5,4,5,7,,,,,,8,7,6,1,5,2009.0,7.0,0,0,0,0,indian,irish,0
+"tibetan,greek",noida,near party hub,67.0,tier a celebrity,68.2,0,1,1,1,1,2,caffee,arabian,2,0,4,4,4,5,10,9.0,5.0,,,,4,7,6,3,8,2009.0,7.0,1,0,0,0,tibetan,greek,0
+"algerian,belgian",pune,near party hub,88.0,tier a celebrity,78.0,1,1,1,1,1,2,bar,greek,4,0,6,5,6,5,9,9.0,5.0,4.0,,,0,2,3,5,3,2010.0,3.0,1,1,0,0,algerian,belgian,0
+"tibetan,greek",mumbai,near party hub,77.6,not specific,82.6,1,1,1,1,0,2,bar,nature,3,0,8,5,5,6,6,10.0,,,,4.0,8,7,5,4,6,2008.0,11.0,0,0,0,1,tibetan,greek,0
+"turkish,sapnish",mumbai,near party hub,55.33,not specific,62.4,1,1,1,1,1,2,bar,greek,2,0,6,4,4,4,6,7.0,2.0,2.0,,,6,7,7,6,6,2008.0,2.0,1,1,0,0,turkish,sapnish,0
+"cuban,british",-1,near business hub,81.6,tier a celebrity,79.8,1,1,1,1,1,2,bar,greek,3,0,9,5,5,6,5,7.0,3.0,2.0,,,7,9,7,7,9,2012.0,2.0,1,1,0,0,cuban,british,1
+"tibetan,greek",bangalore,near party hub,92.3,tier a celebrity,87.4,1,1,1,1,1,2,bar,90's,4,0,6,3,4,4,5,10.0,4.0,,,,7,8,3,6,7,2009.0,10.0,1,0,0,0,tibetan,greek,0
+"tibetan,greek",noida,near party hub,74.0,not specific,72.0,1,1,1,1,1,2,gastro bar,90's,3,0,10,4,4,5,8,8.0,4.0,,,,6,8,8,4,6,2008.0,2.0,1,0,0,0,tibetan,greek,0
+"algerian,algerian",lucknow,near party hub,70.8,not specific,68.4,1,1,1,0,1,2,bar,greek,3,0,10,4,6,5,8,10.0,4.0,,,,9,5,3,5,6,2011.0,10.0,1,0,0,0,algerian,algerian,0
+"tibetan,greek",mumbai,near party hub,78.33,tier a celebrity,61.6,1,1,1,1,1,1,bar,90's,3,0,2,5,4,4,8,10.0,4.0,,4.0,,4,4,6,4,4,2011.0,9.0,1,0,1,0,tibetan,greek,0
+"hawaiian,latvian",-1,near party hub,81.5,not specific,77.2,0,1,1,0,1,2,bar,greek,3,1,2,4,6,6,5,9.0,,4.0,,,6,5,2,5,6,2009.0,7.0,0,1,0,0,hawaiian,latvian,1
+"japanese,thai",hyderabad,near business hub,86.5,not specific,93.5,1,1,1,0,1,2,bar,greek,3,0,9,5,4,4,7,10.0,,,2.0,,10,8,6,2,7,2010.0,1.0,0,0,1,0,japanese,thai,0
+"algerian,korean",guwahati,near party hub,70.5,not specific,54.5,1,1,1,1,1,2,bar,arabian,1,0,3,3,3,3,5,6.0,3.0,,,,7,6,7,8,6,2005.0,1.0,1,0,0,0,algerian,korean,0
+"tibetan,greek",navi mumbai,near party hub,81.38,not specific,71.33,1,1,1,1,1,2,bar,90's,2,0,6,5,6,5,6,10.0,4.0,,,,9,8,6,3,9,2010.0,11.0,1,0,0,0,tibetan,greek,0
+"polish,jewish",chennai,near party hub,84.0,not specific,88.75,1,1,0,1,1,2,bar,90's,3,1,5,6,5,5,9,9.0,5.0,,5.0,,4,7,3,4,7,2011.0,9.0,1,0,1,0,polish,jewish,0
+"peruvian,cuban",mysore,near party hub,91.4,not specific,93.0,1,1,1,1,1,2,bar,arabian,3,0,1,7,5,6,10,9.0,5.0,,,,6,6,6,7,6,2008.0,3.0,1,0,0,0,peruvian,cuban,0
+"tibetan,greek",new delhi,near party hub,73.1,not specific,68.3,1,1,1,1,0,2,bar,90's,2,0,9,5,5,6,8,10.0,4.0,,,,7,7,7,4,8,2009.0,7.0,1,0,0,0,tibetan,greek,0
+"tibetan,greek",hyderabad,near business hub,87.0,not specific,96.0,1,1,1,0,1,2,bar,greek,4,0,10,5,5,6,6,9.0,4.0,4.0,,,8,8,7,3,9,2012.0,8.0,1,1,0,0,tibetan,greek,0
+"peruvian,cuban",chennai,near party hub,75.8,tier a celebrity,77.6,1,1,1,1,1,2,bar,90's,2,1,1,5,5,3,8,10.0,3.0,,4.0,,9,6,4,3,7,2010.0,2.0,1,0,1,0,peruvian,cuban,0
+"algerian,korean",jaipur,near party hub,64.0,not specific,61.0,1,1,0,0,1,2,bar,greek,2,0,5,3,4,4,9,8.0,3.0,3.0,3.0,,7,7,7,1,9,2010.0,2.0,1,1,1,0,algerian,korean,0
+"polish,jewish",-1,near party hub,70.8,tier a celebrity,65.2,0,1,0,1,1,2,bar,greek,3,0,10,4,5,5,9,7.0,3.0,3.0,,,6,4,7,4,4,2010.0,6.0,1,1,0,0,polish,jewish,1
+"japanese,thai",jaipur,near party hub,83.46,not specific,74.0,1,1,1,1,1,2,gastro bar,arabian,4,0,2,5,5,5,6,9.0,6.0,,,,1,9,8,1,5,2007.0,10.0,1,0,0,0,japanese,thai,0
+"chinese,salvadorian",new delhi,near party hub,83.6,tier a celebrity,73.4,1,1,0,1,1,2,bar,arabian,2,0,10,5,4,5,10,9.0,4.0,,5.0,,9,10,9,0,4,2011.0,9.0,1,0,1,0,chinese,salvadorian,0
+"indian,irish",noida,near party hub,62.0,local celebrity,59.4,0,1,1,0,1,2,bar,90's,2,0,3,3,3,3,5,6.0,3.0,,,,5,3,5,7,4,2004.0,7.0,1,0,0,0,indian,irish,0
+"welsh,thai",bangalore,near party hub,68.6,not specific,69.4,1,1,0,1,1,2,bar,greek,3,0,1,4,4,5,8,6.0,4.0,2.0,,,4,5,1,4,8,2011.0,9.0,1,1,0,0,welsh,thai,0
+"tibetan,greek",mohali,near party hub,79.8,tier a celebrity,66.8,0,1,1,1,1,2,bar,arabian,3,0,4,5,5,3,9,9.0,3.0,,5.0,,5,7,8,5,6,2010.0,8.0,1,0,1,0,tibetan,greek,0
+"turkish,nigerian",bangalore,near party hub,89.2,tier a celebrity,69.0,0,1,1,1,1,2,bar,arabian,2,0,3,5,5,3,9,6.0,2.0,,2.0,,4,4,6,8,6,2011.0,3.0,1,0,1,0,turkish,nigerian,0
+"tibetan,greek",-1,near business hub,82.0,not specific,86.0,1,1,0,1,0,2,bar,arabian,4,0,3,5,5,3,10,9.0,5.0,,,,7,8,7,4,9,2012.0,10.0,1,0,0,0,tibetan,greek,1
+"welsh,thai",gurgaon,near party hub,85.76,not specific,90.83,1,1,0,1,1,2,bar,carbone,4,1,5,6,5,6,7,,4.0,,,,10,7,5,2,7,2011.0,4.0,1,0,0,0,welsh,thai,0
+"tibetan,italian",hyderabad,near party hub,74.5,not specific,79.7,1,1,1,1,1,2,bar,greek,3,1,7,4,4,5,8,8.0,4.0,3.0,,,5,6,5,7,6,2008.0,12.0,1,1,0,0,tibetan,italian,0
+"indian,irish",pune,near business hub,84.0,not specific,71.83,1,1,1,1,1,2,bar,greek,2,0,4,4,5,4,5,6.0,,2.0,,,5,8,7,3,8,2008.0,11.0,0,1,0,0,indian,irish,0
+"indian,irish",bangalore,near party hub,66.0,not specific,62.0,1,1,1,1,0,2,caffee,arabian,3,0,8,3,3,2,5,8.0,4.0,,,,9,9,6,5,7,2008.0,1.0,1,0,0,0,indian,irish,0
+"algerian,korean",hyderabad,near party hub,89.5,not specific,94.9,1,1,1,0,1,2,bar,greek,3,1,10,6,5,6,6,9.0,4.0,4.0,,,9,9,6,3,7,2010.0,11.0,1,1,0,0,algerian,korean,0
+"japanese,thai",meerut,near party hub,71.0,tier a celebrity,74.2,1,1,1,1,1,2,bar,90's,2,0,2,5,4,4,7,6.0,3.0,,,,2,3,3,3,1,2008.0,8.0,1,0,0,0,japanese,thai,0
+"british,japanese",bangalore,near party hub,79.6,not specific,93.9,1,1,1,1,0,2,bar,arabian,3,0,10,3,5,7,5,7.0,5.0,,3.0,,4,5,2,8,6,2012.0,4.0,1,0,1,0,british,japanese,0
+"welsh,thai",noida,near party hub,91.6,tier a celebrity,85.8,1,1,1,1,0,2,bar,greek,3,0,9,5,5,6,8,7.0,,3.0,,,5,10,7,4,7,2009.0,8.0,0,1,0,0,welsh,thai,0
+"tibetan,greek",ahmedabad,near party hub,85.6,tier a celebrity,82.0,1,1,0,1,1,2,bar,90's,2,0,10,6,6,5,9,10.0,4.0,,4.0,,6,7,2,4,7,2010.0,12.0,1,0,1,0,tibetan,greek,0
+"peruvian,cuban",pune,near business hub,81.0,tier a celebrity,77.0,1,1,1,1,1,2,bar,greek,3,0,9,5,4,5,5,6.0,3.0,2.0,,,6,6,4,6,9,2008.0,12.0,1,1,0,0,peruvian,cuban,0
+"tibetan,greek",-1,near business hub,65.0,tier a celebrity,58.0,1,1,1,1,0,2,bar,90's,3,0,6,4,4,4,6,10.0,4.0,,,,6,8,5,6,6,2010.0,7.0,1,0,0,0,tibetan,greek,1
+"turkish,sapnish",pune,near party hub,87.3,not specific,82.0,1,1,1,1,1,2,bar,arabian,3,0,2,4,5,5,6,10.0,4.0,,,,6,2,6,4,4,2009.0,9.0,1,0,0,0,turkish,sapnish,0
+"tibetan,greek",noida,near party hub,77.4,not specific,73.4,1,1,1,1,0,1,bar,arabian,3,1,4,4,4,4,7,10.0,4.0,,,,6,5,2,2,8,2006.0,8.0,1,0,0,0,tibetan,greek,0
+"tibetan,italian",bangalore,near party hub,82.4,tier a celebrity,71.4,1,1,0,1,1,2,bar,90's,3,0,4,4,4,5,9,10.0,4.0,,4.0,,7,5,6,6,5,2011.0,8.0,1,0,1,0,tibetan,italian,0
+"turkish,sapnish",noida,near party hub,83.6,tier a celebrity,81.0,1,1,1,1,1,1,bar,arabian,3,1,7,6,4,4,10,7.0,3.0,,3.0,,9,9,8,2,7,2010.0,11.0,1,0,1,0,turkish,sapnish,0
+"chinese,salvadorian",noida,near party hub,64.0,tier a celebrity,62.0,0,1,1,1,1,2,bar,arabian,3,0,3,3,4,3,6,7.0,4.0,,3.0,,6,6,1,7,6,2010.0,12.0,1,0,1,0,chinese,salvadorian,0
+"tibetan,greek",noida,near party hub,72.2,not specific,71.8,1,1,0,1,1,2,bar,arabian,3,0,6,3,4,3,5,10.0,5.0,,4.0,,3,4,3,5,2,2010.0,5.0,1,0,1,0,tibetan,greek,0
+"hawaiian,latvian",bangalore,near business hub,62.6,not specific,74.6,1,1,1,1,1,2,bar,arabian,2,0,6,3,4,3,6,10.0,,,4.0,,8,6,6,5,5,2011.0,1.0,0,0,1,0,hawaiian,latvian,0
+"tibetan,greek",-1,near party hub,89.23,not specific,88.0,0,1,1,1,1,2,bar,parsi,3,1,4,6,6,7,7,9.0,,4.0,,,5,4,7,4,5,2010.0,11.0,0,1,0,0,tibetan,greek,1
+"welsh,thai",navi mumbai,near business hub,81.2,not specific,76.3,0,1,0,1,1,2,caffee,arabian,5,1,1,4,3,4,10,10.0,4.0,,,,6,8,5,7,5,2007.0,9.0,1,0,0,0,welsh,thai,0
+"swedish,greek",-1,near business hub,79.0,tier a celebrity,91.2,1,1,0,1,1,2,bar,greek,3,1,1,6,6,5,5,8.0,3.0,3.0,,,6,7,2,6,5,2012.0,7.0,1,1,0,0,swedish,greek,1
+"swedish,greek",hyderabad,near business hub,88.0,not specific,96.0,1,1,1,1,1,2,bar,greek,2,1,4,4,3,4,5,,2.0,,,,6,8,6,4,8,2009.0,7.0,1,0,0,0,swedish,greek,0
+"welsh,thai",pune,near party hub,85.33,not specific,54.83,1,1,1,1,1,2,caffee,arabian,4,0,6,4,6,5,7,9.0,5.0,,,,5,8,6,3,9,2009.0,6.0,1,0,0,0,welsh,thai,0
+"tibetan,greek",new dehli,near party hub,76.0,not specific,73.0,0,1,1,0,1,2,bar,greek,2,0,2,4,4,5,9,7.0,4.0,2.0,,,6,8,4,4,5,2010.0,1.0,1,1,0,0,tibetan,greek,0
+"tibetan,greek",chennai,near party hub,89.0,not specific,95.7,1,1,0,0,1,2,bar,arabian,3,0,10,5,5,4,6,10.0,4.0,,4.0,,6,8,6,5,5,2012.0,9.0,1,0,1,0,tibetan,greek,0
+"chinese,salvadorian",bangalore,near party hub,69.4,tier a celebrity,65.12,0,1,1,1,1,2,bar,arabian,2,1,7,5,6,4,6,10.0,4.0,,,,5,8,4,4,5,2008.0,11.0,1,0,0,0,chinese,salvadorian,0
+"tibetan,greek",kolkata,near party hub,83.25,not specific,79.8,1,1,1,1,1,2,bar,chinese,3,1,10,3,6,6,9,9.0,,4.0,,,4,4,5,4,2,2009.0,10.0,0,1,0,0,tibetan,greek,0
+"hawaiian,latvian",sambalpur,near business hub,70.3,not specific,63.2,0,1,1,0,1,2,bar,nature,2,0,10,3,4,4,10,9.0,,,,4.0,6,8,8,7,7,2009.0,6.0,0,0,0,1,hawaiian,latvian,0
+"tibetan,greek",hyderabad,near party hub,81.5,tier a celebrity,83.16,1,1,0,1,1,1,bar,chinese,3,0,1,6,5,5,5,10.0,,,,,3,6,5,3,5,2010.0,10.0,0,0,0,0,tibetan,greek,0
+"algerian,korean",-1,near business hub,88.8,tier a celebrity,76.8,1,1,1,1,1,1,bar,greek,3,1,1,6,6,7,8,9.0,,4.0,,,5,8,4,5,7,2010.0,1.0,0,1,0,0,algerian,korean,1
+"indian,irish",kolkata,near party hub,79.06,not specific,76.0,1,1,0,0,1,2,bar,arabian,3,0,7,6,5,5,9,,,,,,6,7,4,5,6,2009.0,11.0,0,0,0,0,indian,irish,0
+"welsh,thai",noida,near party hub,82.0,tier a celebrity,76.6,1,1,1,0,1,2,bar,arabian,3,0,3,4,5,6,9,9.0,5.0,,,,7,8,3,3,3,2011.0,7.0,1,0,0,0,welsh,thai,0
+"cuban,british",chennai,near party hub,93.8,not specific,84.0,0,1,1,0,0,2,bar,greek,3,1,2,5,5,6,8,9.0,4.0,4.0,,,9,8,6,1,5,2011.0,10.0,1,1,0,0,cuban,british,0
+"turkish,nigerian",-1,near business hub,89.2,tier a celebrity,68.8,1,1,1,0,1,2,bar,arabian,2,0,8,3,3,3,10,6.0,3.0,,2.0,,4,8,5,6,7,2009.0,11.0,1,0,1,0,turkish,nigerian,1
+"swedish,greek",chandigarh,near business hub,82.66,tier a celebrity,69.4,1,1,1,1,1,2,bar,90's,3,0,5,7,6,5,6,7.0,4.0,,3.0,,10,10,10,0,8,2011.0,12.0,1,0,1,0,swedish,greek,0
+"indian,irish",pune,near party hub,73.2,tier a celebrity,76.8,1,1,1,1,1,2,bar,arabian,3,0,9,5,6,7,9,9.0,5.0,,,,7,7,5,2,1,2011.0,1.0,1,0,0,0,indian,irish,0
+"irish,belgian",chennai,near party hub,89.9,not specific,84.5,0,1,1,1,1,2,bar,greek,2,0,1,6,4,4,7,,4.0,,,,9,8,6,3,7,2010.0,7.0,1,0,0,0,irish,belgian,0
+"tibetan,greek",gurgaon,near party hub,89.6,tier a celebrity,86.2,1,1,1,1,1,2,bar,arabian,4,0,5,6,6,5,5,9.0,5.0,,4.0,,6,8,7,3,7,2010.0,9.0,1,0,1,0,tibetan,greek,0
+"welsh,thai",hyderabad,near business hub,87.0,not specific,91.5,1,1,1,1,1,2,bar,arabian,3,1,5,6,5,5,8,9.0,6.0,,,,7,8,7,3,6,2010.0,5.0,1,0,0,0,welsh,thai,0
+"tibetan,italian",jaipur,near party hub,86.0,tier a celebrity,87.4,1,1,1,1,0,2,bar,parsi,5,0,2,6,5,6,6,9.0,5.0,5.0,,,4,6,2,7,4,2008.0,10.0,1,1,0,0,tibetan,italian,0
+"algerian,korean",chennai,near business hub,61.2,not specific,68.3,1,1,1,1,0,2,bar,90's,3,1,9,4,3,1,8,7.0,3.0,,,,8,6,4,7,6,2008.0,7.0,1,0,0,0,algerian,korean,0
+"tibetan,greek",noida,near business hub,81.2,tier a celebrity,82.8,0,1,1,1,1,2,bar,arabian,3,0,10,5,6,5,7,10.0,4.0,,,,8,9,7,3,8,2008.0,8.0,1,0,0,0,tibetan,greek,0
+"algerian,belgian",indore,near party hub,68.65,tier a celebrity,60.4,1,1,1,1,1,2,bar,90's,2,0,9,5,4,3,5,6.0,3.0,,,,4,7,4,3,3,2008.0,8.0,1,0,0,0,algerian,belgian,0
+"turkish,nigerian",bangalore,near party hub,73.0,tier a celebrity,61.5,1,1,1,1,1,2,bar,arabian,3,1,5,4,5,6,10,9.0,5.0,,,,4,8,6,5,8,2005.0,3.0,1,0,0,0,turkish,nigerian,0
+"irish,belgian",ahmedabad,near business hub,86.92,not specific,73.8,1,1,1,1,1,2,bar,90's,3,0,8,3,4,2,10,10.0,4.0,,,,8,7,6,1,6,2010.0,12.0,1,0,0,0,irish,belgian,0
+"tibetan,greek",hyderabad,near party hub,72.3,not specific,82.6,1,1,0,1,0,2,bar,90's,2,0,4,4,4,5,5,7.0,3.0,,,,7,6,6,4,7,2009.0,12.0,1,0,0,0,tibetan,greek,0
+"japanese,thai",bhubaneswar,near business hub,84.4,tier a celebrity,79.4,1,1,1,1,1,2,bar,parsi,4,0,6,5,5,5,10,7.0,,3.0,,,9,7,8,3,8,2010.0,5.0,0,1,0,0,japanese,thai,0
+"welsh,thai",new delhi,near party hub,80.0,tier a celebrity,55.0,1,1,1,0,1,2,bar,arabian,2,0,2,6,4,3,7,10.0,4.0,,4.0,,4,8,8,1,9,2010.0,8.0,1,0,1,0,welsh,thai,0
+"tibetan,greek",gurgaon,near party hub,88.6,tier a celebrity,86.8,1,1,1,1,1,1,bar,arabian,3,0,2,7,5,6,5,9.0,6.0,,,,8,7,4,3,7,2009.0,4.0,1,0,0,0,tibetan,greek,0
+"welsh,thai",ambala city,near party hub,64.4,tier a celebrity,79.2,1,1,0,1,1,2,bar,arabian,3,0,5,5,5,5,7,9.0,5.0,,,,6,7,6,4,7,2011.0,12.0,1,0,0,0,welsh,thai,0
+"welsh,thai",noida,near party hub,74.28,tier a celebrity,78.16,1,1,1,1,1,2,bar,arabian,2,0,7,7,5,5,9,8.0,4.0,,3.0,,8,7,7,4,7,2011.0,2.0,1,0,1,0,welsh,thai,0
+"nigerian,cajun",lucknow,near party hub,72.0,not specific,63.0,1,1,1,1,1,2,bar,greek,2,0,8,3,4,4,7,7.0,,2.0,,,0,0,0,3,0,2011.0,9.0,0,1,0,0,nigerian,cajun,0
+"british,japanese",bangalore,near business hub,89.8,tier a celebrity,87.2,1,1,1,1,1,2,bar,arabian,3,0,1,4,6,4,9,10.0,5.0,,4.0,,6,5,3,3,4,2011.0,3.0,1,0,1,0,british,japanese,0
+"indian,irish",mumbai,near party hub,84.0,not specific,82.53,1,1,1,1,1,2,bar,90's,2,0,3,5,4,5,9,9.0,5.0,,,,9,8,5,4,8,2009.0,10.0,1,0,0,0,indian,irish,0
+"peruvian,cuban",noida,near party hub,74.0,tier a celebrity,66.0,1,1,0,0,1,2,bar,greek,2,0,8,7,4,4,7,10.0,,,,,7,8,4,2,5,2010.0,1.0,0,0,0,0,peruvian,cuban,0
+"british,belgian",mumbai,near party hub,63.0,not specific,66.0,1,1,1,1,1,2,bar,moonrise,2,0,4,4,4,4,7,,,5.0,,,9,9,6,4,8,2010.0,6.0,0,1,0,0,british,belgian,0
+"tibetan,italian",chennai,near business hub,78.0,tier a celebrity,80.0,1,1,0,1,1,2,bar,belise,3,1,8,6,5,3,7,,4.0,,3.0,,7,9,7,1,6,2012.0,4.0,1,0,1,0,tibetan,italian,0
+"nigerian,cajun",noida,near party hub,86.0,tier a celebrity,76.0,1,1,1,1,1,2,bar,arabian,2,0,7,7,4,5,7,9.0,6.0,,,,8,8,6,5,7,2010.0,5.0,1,0,0,0,nigerian,cajun,0
+"welsh,thai",gurgaon,near party hub,73.4,tier a celebrity,79.4,1,1,0,1,1,2,bar,arabian,3,0,2,5,5,6,7,8.0,4.0,,,,8,10,7,4,7,2009.0,1.0,1,0,0,0,welsh,thai,0
+"tibetan,greek",new delhi,near party hub,52.09,tier a celebrity,55.5,1,1,1,0,1,2,bar,90's,2,0,7,3,3,4,5,7.0,3.0,,,,6,7,6,6,5,2006.0,4.0,1,0,0,0,tibetan,greek,0
+"british,japanese",noida,near party hub,83.4,tier a celebrity,78.0,1,1,1,1,1,2,bar,90's,3,0,7,4,4,4,5,10.0,4.0,,,,5,7,5,4,4,2008.0,1.0,1,0,0,0,british,japanese,0
+"turkish,nigerian",bangalore,near business hub,93.6,not specific,69.8,1,1,1,1,1,2,bar,arabian,2,0,8,6,4,6,6,9.0,3.0,,5.0,,8,9,6,7,8,2011.0,1.0,1,0,1,0,turkish,nigerian,0
+"swedish,greek",pune,near party hub,85.0,not specific,85.88,1,1,1,0,1,2,bar,parsi,2,0,5,5,4,5,6,10.0,3.0,3.0,,,4,10,4,4,6,2009.0,3.0,1,1,0,0,swedish,greek,0
+"tibetan,greek",hyderabad,near party hub,79.9,not specific,89.4,1,1,1,1,1,2,bar,greek,3,1,3,3,5,5,8,,3.0,,4.0,,6,8,6,4,8,2011.0,9.0,1,0,1,0,tibetan,greek,0
+"tibetan,greek",noida,near business hub,87.0,tier a celebrity,86.0,1,1,0,0,1,2,bar,arabian,3,0,3,6,5,5,7,9.0,5.0,,,,7,6,6,4,3,2010.0,9.0,1,0,0,0,tibetan,greek,0
+"polish,jewish",bangalore,near party hub,80.0,not specific,70.0,1,1,1,1,1,2,bar,parsi,2,0,10,5,4,3,9,9.0,4.0,4.0,,,4,8,2,4,7,2009.0,5.0,1,1,0,0,polish,jewish,0
+"welsh,thai",hyderabad,near party hub,74.0,tier a celebrity,88.0,1,1,1,1,0,2,bar,arabian,3,1,7,5,5,5,6,9.0,5.0,,,,8,10,7,3,7,2010.0,7.0,1,0,0,0,welsh,thai,0
+"polish,jewish",gurgaon,near party hub,54.0,local celebrity,63.0,1,1,1,1,1,2,bar,90's,2,0,10,3,3,1,8,6.0,2.0,,,,5,6,7,7,7,2009.0,12.0,1,0,0,0,polish,jewish,0
+"japanese,thai",trivandrum,near party hub,67.25,not specific,71.8,1,1,1,1,1,2,bar,arabian,4,0,9,4,5,4,10,10.0,4.0,,4.0,,9,6,3,4,7,2011.0,7.0,1,0,1,0,japanese,thai,0
+"hawaiian,latvian",-1,near business hub,81.2,tier a celebrity,72.6,0,1,1,1,1,2,bar,greek,4,0,3,5,5,7,7,7.0,4.0,2.0,,,8,6,6,4,7,2010.0,11.0,1,1,0,0,hawaiian,latvian,1
+"tibetan,greek",noida,near party hub,82.6,tier a celebrity,79.8,1,1,0,1,1,1,bar,90's,4,1,9,6,6,5,5,9.0,5.0,,,,6,6,5,4,2,2010.0,5.0,1,0,0,0,tibetan,greek,0
+"tibetan,greek",chennai,near party hub,86.16,not specific,89.0,1,1,1,1,1,2,bar,arabian,3,0,1,6,4,3,8,10.0,4.0,,,,9,7,5,2,9,2011.0,7.0,1,0,0,0,tibetan,greek,0
+"algerian,korean",chandigarh,near party hub,88.0,tier a celebrity,83.0,1,1,0,1,0,2,bar,petit,3,0,3,4,4,5,5,8.0,3.0,,,3.0,6,1,4,8,2,2011.0,10.0,1,0,0,1,algerian,korean,0
+"chinese,salvadorian",bangalore,near party hub,90.56,not specific,87.83,1,1,1,1,0,2,bar,greek,2,1,7,4,4,4,8,9.0,,,2.0,,6,7,5,3,7,2011.0,7.0,0,0,1,0,chinese,salvadorian,0
+"peruvian,cuban",bangalore,near business hub,91.0,not specific,88.0,1,1,1,1,1,2,bar,greek,4,0,1,5,4,5,7,7.0,,2.0,,,8,8,6,2,5,2009.0,3.0,0,1,0,0,peruvian,cuban,0
+"british,belgian",new delhi,near party hub,66.7,not specific,54.2,1,1,0,1,1,2,bar,picante,2,0,1,4,4,5,10,7.0,,2.0,,,7,7,6,4,7,2011.0,5.0,0,1,0,0,british,belgian,0
+"peruvian,cuban",new delhi,near party hub,76.0,tier a celebrity,66.66,0,1,0,1,1,2,bar,nature,2,0,5,5,4,4,8,6.0,3.0,,,2.0,2,5,6,5,2,2012.0,3.0,1,0,0,1,peruvian,cuban,0
+"tibetan,italian",hyderabad,near business hub,90.0,not specific,93.0,1,1,1,1,1,2,bar,greek,3,1,9,4,4,5,8,9.0,3.0,4.0,,,6,8,7,6,6,2011.0,8.0,1,1,0,0,tibetan,italian,0
+"indian,irish",kolkata,near party hub,91.0,tier a celebrity,91.2,1,1,1,1,1,2,bar,greek,4,0,10,6,6,5,8,10.0,4.0,3.0,,,8,8,5,3,4,2011.0,8.0,1,1,0,0,indian,irish,0
+"algerian,algerian",ongole,near party hub,64.0,not specific,73.2,1,1,1,1,1,2,bar,arabian,3,1,8,5,4,4,6,8.0,3.0,,,,9,9,5,2,9,2011.0,3.0,1,0,0,0,algerian,algerian,0
+"tibetan,greek",mangalore,near party hub,92.6,tier a celebrity,79.6,1,1,1,1,0,2,bar,greek,3,0,2,5,5,5,5,6.0,,2.0,,,9,10,7,4,6,2010.0,7.0,0,1,0,0,tibetan,greek,0
+"indian,irish",mohali,near party hub,89.4,tier a celebrity,82.4,1,1,1,1,0,2,bar,arabian,3,0,7,6,6,6,9,9.0,5.0,,,,6,7,3,3,8,2010.0,4.0,1,0,0,0,indian,irish,0
+"turkish,nigerian",kolkata,near party hub,71.37,not specific,60.8,1,1,0,1,1,2,gastro bar,moonrise,4,1,2,6,6,5,9,,5.0,,5.0,,7,5,5,4,6,2008.0,10.0,1,0,1,0,turkish,nigerian,0
+"welsh,thai",pune,near party hub,83.0,not specific,85.0,1,1,1,1,1,2,bar,arabian,2,1,7,4,4,4,5,10.0,4.0,,,,7,5,5,6,5,2008.0,11.0,1,0,0,0,welsh,thai,0
+"tibetan,italian",hyderabad,near business hub,86.0,not specific,96.0,1,1,1,1,1,2,bar,greek,3,1,3,5,6,7,7,6.0,4.0,2.0,2.0,,7,5,3,6,4,2011.0,5.0,1,1,1,0,tibetan,italian,0
+"tibetan,italian",chennai,near party hub,80.4,tier a celebrity,80.6,1,1,0,1,1,2,bar,greek,2,1,1,5,4,5,10,,2.0,,3.0,,6,7,1,3,5,2011.0,8.0,1,0,1,0,tibetan,italian,0
+"tibetan,greek",bangalore,near business hub,89.89,not specific,75.0,0,1,0,1,1,2,bar,greek,3,1,7,3,3,4,8,6.0,3.0,1.0,,,4,7,5,7,5,2007.0,5.0,1,1,0,0,tibetan,greek,0
+"turkish,nigerian",bangalore,near party hub,83.8,tier a celebrity,63.4,0,1,1,1,1,2,bar,90's,2,1,2,6,6,5,5,9.0,5.0,,,,5,8,4,2,5,2008.0,9.0,1,0,0,0,turkish,nigerian,0
+"indian,irish",pune,near party hub,78.25,not specific,74.25,0,1,0,1,1,2,bar,parsi,3,1,5,5,6,5,9,10.0,4.0,,,,7,6,6,1,6,2011.0,1.0,1,0,0,0,indian,irish,0
+"welsh,thai",-1,near party hub,77.2,tier a celebrity,72.2,1,1,1,1,1,2,bar,parsi,2,1,9,4,2,5,8,10.0,4.0,3.0,,3.0,1,6,6,3,5,2006.0,5.0,1,1,0,1,welsh,thai,1
+"british,japanese",bangalore,near party hub,67.0,not specific,60.44,1,1,0,1,1,2,bar,arabian,3,0,3,4,4,3,7,7.0,4.0,,3.0,,10,10,7,5,8,2011.0,1.0,1,0,1,0,british,japanese,0
+"welsh,thai",dehradun,near party hub,67.0,not specific,78.0,0,1,1,1,1,2,bar,arabian,4,0,5,4,5,5,8,9.0,5.0,,6.0,,3,2,1,4,1,2010.0,4.0,1,0,1,0,welsh,thai,0
+"indian,irish",navi mumbai,near party hub,83.33,not specific,85.6,1,1,1,0,1,2,bar,parsi,3,0,4,6,6,5,6,9.0,4.0,4.0,,,4,6,5,6,6,2009.0,11.0,1,1,0,0,indian,irish,0
+"welsh,thai",bangalore,near party hub,78.3,not specific,70.67,1,1,1,1,1,2,bar,arabian,2,0,1,6,4,4,10,9.0,5.0,,4.0,,7,8,9,3,9,2010.0,11.0,1,0,1,0,welsh,thai,0
+"tibetan,greek",bangalore,near party hub,91.68,not specific,84.0,1,1,1,1,0,2,bar,arabian,3,1,4,5,5,5,6,10.0,7.0,,4.0,,8,8,9,0,9,2011.0,8.0,1,0,1,0,tibetan,greek,0
+"turkish,nigerian",-1,near party hub,49.9,not specific,56.1,0,1,0,1,0,2,bar,arabian,2,0,2,4,4,5,6,10.0,4.0,,,,8,9,7,5,9,2004.0,5.0,1,0,0,0,turkish,nigerian,1
+"welsh,thai",thane,near party hub,67.76,not specific,69.67,0,1,1,0,1,2,bar,parsi,2,0,6,3,5,5,8,9.0,,,3.0,,5,7,7,5,6,2008.0,11.0,0,0,1,0,welsh,thai,0
+"tibetan,greek",pune,near party hub,71.2,tier a celebrity,63.4,0,1,1,1,1,1,bar,90's,3,1,9,5,4,4,8,8.0,4.0,,,,5,7,7,8,6,2008.0,12.0,1,0,0,0,tibetan,greek,0
+"nigerian,cajun",chennai,near party hub,78.0,not specific,85.0,1,1,1,1,0,2,bar,greek,3,0,10,4,3,3,7,,3.0,,,,7,8,6,6,7,2007.0,9.0,1,0,0,0,nigerian,cajun,0
+"tibetan,greek",chennai,near business hub,96.8,tier a celebrity,92.3,1,1,1,1,1,2,bar,parsi,4,0,4,6,5,6,8,9.0,4.0,4.0,,,7,8,6,3,9,2012.0,4.0,1,1,0,0,tibetan,greek,0
+"tibetan,greek",gurgaon,near business hub,75.6,not specific,69.5,1,1,1,0,0,2,bar,greek,3,0,10,3,5,4,10,7.0,4.0,3.0,,,8,6,2,5,6,2007.0,12.0,1,1,0,0,tibetan,greek,0
+"tibetan,italian",jaipur,near business hub,74.9,tier a celebrity,62.9,1,1,1,0,1,2,bar,90's,3,1,5,5,5,4,10,9.0,5.0,,,,7,4,6,7,4,2010.0,3.0,1,0,0,0,tibetan,italian,0
+"cuban,british",bangalore,near business hub,74.4,not specific,53.33,1,1,0,0,1,2,bar,delicio,2,1,8,4,5,4,8,10.0,4.0,,,,5,6,5,7,8,2010.0,5.0,1,0,0,0,cuban,british,0
+"tibetan,greek",hyderabad,near business hub,89.7,tier a celebrity,86.7,0,1,1,1,1,2,bar,90's,4,1,6,7,6,5,7,,,,,,7,9,6,4,8,2010.0,4.0,0,0,0,0,tibetan,greek,0
+"chinese,salvadorian",chandigarh,near party hub,88.2,tier a celebrity,77.8,1,1,1,1,1,1,bar,mise en,2,0,3,5,6,5,6,,,,,,4,8,4,4,7,2008.0,11.0,0,0,0,0,chinese,salvadorian,0
+"tibetan,greek",new delhi,near business hub,86.0,tier a celebrity,78.0,0,1,1,0,0,1,bar,greek,3,1,1,4,4,5,9,7.0,,2.0,,,7,9,6,4,6,2009.0,8.0,0,1,0,0,tibetan,greek,0
+"chinese,salvadorian",-1,near party hub,91.2,not specific,89.0,1,1,1,1,1,2,bar,nature,3,0,9,5,5,3,6,7.0,,,,3.0,6,8,2,5,4,2012.0,2.0,0,0,0,1,chinese,salvadorian,1
+"tibetan,greek",navi mumbai,near business hub,72.0,tier a celebrity,73.0,1,1,1,0,1,2,bar,arabian,3,0,4,4,4,4,8,10.0,4.0,,,,5,6,5,8,5,2009.0,9.0,1,0,0,0,tibetan,greek,0
+"tibetan,greek",mumbai,near party hub,62.0,not specific,61.0,1,1,1,0,1,2,bar,90's,2,1,10,5,3,3,9,7.0,3.0,,,,3,6,5,6,6,2009.0,2.0,1,0,0,0,tibetan,greek,0
+"algerian,korean",chennai,near business hub,93.0,not specific,91.0,1,1,1,1,1,2,bar,90's,3,0,2,5,4,3,9,9.0,4.0,,4.0,,6,6,4,5,8,2013.0,4.0,1,0,1,0,algerian,korean,0
+"turkish,nigerian",new delhi,near party hub,71.0,tier a celebrity,70.0,1,1,1,1,0,2,bar,arabian,2,0,8,4,5,3,10,6.0,3.0,,2.0,,8,9,6,2,5,2010.0,3.0,1,0,1,0,turkish,nigerian,0
+"cuban,british",pondicherry,near party hub,84.2,not specific,81.25,0,1,1,0,1,2,bar,arabian,3,0,8,2,4,4,8,8.0,4.0,,,,7,5,5,7,5,2010.0,8.0,1,0,0,0,cuban,british,0
+"cuban,british",coimbatore,near party hub,77.8,not specific,85.4,1,1,0,1,1,1,bar,arabian,2,0,9,7,5,5,5,10.0,4.0,,4.0,,7,7,6,7,2,2011.0,12.0,1,0,1,0,cuban,british,0
+"british,japanese",pune,near party hub,89.56,not specific,85.0,1,1,0,1,1,2,bar,greek,2,1,4,4,3,5,6,10.0,3.0,3.0,,,0,4,4,6,7,2007.0,11.0,1,1,0,0,british,japanese,0
+"algerian,korean",jaipur,near business hub,83.0,not specific,73.0,0,1,1,1,1,2,bar,arabian,3,1,1,3,4,4,5,8.0,4.0,,,,8,5,8,7,1,2010.0,6.0,1,0,0,0,algerian,korean,0
+"british,japanese",bangalore,near party hub,61.86,not specific,77.56,1,1,1,1,1,2,bar,parsi,3,0,9,3,4,3,7,7.0,3.0,3.0,,,7,6,7,6,4,2007.0,6.0,1,1,0,0,british,japanese,0
+"tibetan,italian",rae bareli,near party hub,83.0,tier a celebrity,83.0,1,1,1,1,1,2,bar,arabian,2,0,7,6,5,6,10,8.0,4.0,,3.0,,8,8,8,3,7,2011.0,8.0,1,0,1,0,tibetan,italian,0
+"japanese,thai",bangalore,near business hub,78.08,not specific,62.5,1,0,1,1,1,2,caffee,arabian,4,0,8,4,5,3,7,10.0,4.0,,,,8,8,4,2,7,2007.0,12.0,1,0,0,0,japanese,thai,0
+"polish,jewish",bangalore,near business hub,72.3,not specific,79.8,1,1,1,0,1,2,bar,greek,4,0,9,4,4,4,8,7.0,,3.0,,,6,4,1,2,6,2011.0,1.0,0,1,0,0,polish,jewish,0
+"algerian,belgian",faridabad,near party hub,69.0,tier a celebrity,52.0,1,1,1,1,1,2,bar,chinese,2,0,9,4,4,4,8,9.0,,4.0,,,4,9,7,1,8,2005.0,7.0,0,1,0,0,algerian,belgian,0
+"chinese,salvadorian",noida,near party hub,63.2,tier a celebrity,63.2,1,1,1,1,1,1,bar,90's,2,0,8,4,3,5,9,7.0,4.0,,3.0,,5,3,3,5,4,2007.0,11.0,1,0,1,0,chinese,salvadorian,0
+"welsh,thai",gurgaon,near party hub,80.0,tier a celebrity,60.0,1,1,1,1,1,2,bar,greek,3,0,6,6,5,3,7,10.0,,3.0,,,6,9,8,7,7,2011.0,5.0,0,1,0,0,welsh,thai,0
+"japanese,thai",pune,near business hub,72.16,not specific,57.8,1,1,1,1,1,2,bar,arabian,2,0,8,4,5,4,5,8.0,4.0,,,,7,7,5,3,7,2006.0,12.0,1,0,0,0,japanese,thai,0
+"polish,jewish",new delhi,near party hub,70.0,tier a celebrity,83.3,1,1,1,1,0,2,caffee,arabian,2,0,5,3,5,6,6,9.0,5.0,,,,7,8,6,3,5,2004.0,2.0,1,0,0,0,polish,jewish,0
+"peruvian,cuban",chennai,near business hub,84.0,not specific,94.0,1,1,1,1,0,2,bar,arabian,4,1,9,5,5,5,6,9.0,5.0,,,,6,8,2,5,5,2010.0,4.0,1,0,0,0,peruvian,cuban,0
+"turkish,nigerian",bangalore,near party hub,93.6,not specific,83.0,1,1,1,1,1,2,bar,greek,2,1,7,6,5,5,5,,5.0,,4.0,,8,7,7,1,5,2010.0,7.0,1,0,1,0,turkish,nigerian,0
+"polish,jewish",bangalore,near business hub,63.0,not specific,61.0,1,1,1,1,1,2,bar,greek,3,1,8,3,3,3,6,9.0,,4.0,,,8,7,7,6,6,2009.0,8.0,0,1,0,0,polish,jewish,0
+"peruvian,cuban",bangalore,near party hub,65.0,not specific,66.0,0,1,1,1,1,2,bar,90's,2,1,1,5,4,4,5,8.0,4.0,,,,5,6,9,7,7,2008.0,2.0,1,0,0,0,peruvian,cuban,0
+"british,japanese",-1,near business hub,84.0,not specific,72.0,1,1,1,1,1,2,bar,arabian,3,1,4,5,4,2,10,8.0,3.0,,3.0,,8,9,6,7,9,2010.0,11.0,1,0,1,0,british,japanese,1
+"swedish,greek",-1,near party hub,93.2,tier a celebrity,91.4,1,1,1,1,1,1,bar,nature,4,0,4,5,5,8,7,10.0,,,,4.0,8,8,7,4,6,2011.0,7.0,0,0,0,1,swedish,greek,1
+"tibetan,greek",kolkata,near business hub,67.4,tier a celebrity,65.6,0,1,1,1,1,2,bar,chinese,3,0,1,7,5,5,6,,3.0,,,,7,9,6,2,7,2008.0,7.0,1,0,0,0,tibetan,greek,0
+"british,japanese",hyderabad,near party hub,74.8,tier a celebrity,80.1,1,1,1,1,0,2,bar,arabian,3,0,4,6,4,5,8,10.0,4.0,,,,5,7,6,5,7,2011.0,5.0,1,0,0,0,british,japanese,0
+"tibetan,greek",mumbai,near business hub,73.8,tier a celebrity,66.6,1,1,1,1,0,2,bar,arabian,3,0,10,5,6,5,6,9.0,4.0,,5.0,,7,8,6,4,6,2010.0,9.0,1,0,1,0,tibetan,greek,0
+"algerian,korean",-1,near business hub,83.66,not specific,89.4,1,1,0,0,1,2,bar,greek,3,0,6,5,5,4,5,8.0,3.0,3.0,,,8,9,6,5,9,2012.0,11.0,1,1,0,0,algerian,korean,1
+"british,japanese",-1,near party hub,65.0,tier a celebrity,65.0,1,1,0,1,1,2,bar,arabian,3,0,6,4,5,4,5,7.0,3.0,,,,9,8,7,8,8,2010.0,12.0,1,0,0,0,british,japanese,1
+"japanese,thai",gurgaon,near party hub,81.0,tier a celebrity,80.2,1,1,0,0,0,2,bar,arabian,3,0,1,3,5,6,9,9.0,5.0,,5.0,,4,7,8,10,7,2013.0,6.0,1,0,1,0,japanese,thai,0
+"tibetan,greek",chennai,near party hub,88.33,not specific,94.5,1,1,1,1,1,2,bar,greek,2,1,1,4,4,5,7,8.0,4.0,3.0,,,5,4,5,7,6,2008.0,7.0,1,1,0,0,tibetan,greek,0
+"british,japanese",gurgaon,near business hub,76.0,tier a celebrity,58.0,0,1,1,1,0,2,caffee,arabian,3,0,6,4,5,3,5,7.0,4.0,,3.0,,8,8,6,2,7,2008.0,7.0,1,0,1,0,british,japanese,0
+"welsh,thai",new delhi,near party hub,60.0,tier a celebrity,70.0,1,1,1,1,1,2,bar,arabian,1,0,3,4,3,4,7,6.0,2.0,3.0,,,3,5,5,7,7,2007.0,5.0,1,1,0,0,welsh,thai,0
+"welsh,thai",bhubaneswar,near party hub,56.0,not specific,62.0,0,1,1,1,1,2,bar,arabian,2,0,8,3,3,3,7,7.0,3.0,3.0,,,7,5,5,5,5,2008.0,1.0,1,1,0,0,welsh,thai,0
+"welsh,thai",pune,near party hub,87.88,not specific,89.0,1,1,1,1,1,2,bar,arabian,3,1,8,5,4,6,10,9.0,5.0,,,,9,9,6,1,4,2011.0,7.0,1,0,0,0,welsh,thai,0
+"british,japanese",pune,near party hub,81.0,tier a celebrity,79.0,1,1,1,1,1,2,bar,greek,4,0,6,3,6,7,10,10.0,,3.0,,,6,7,7,3,7,2008.0,4.0,0,1,0,0,british,japanese,0
+"tibetan,greek",gurgaon,near business hub,90.4,tier a celebrity,87.0,1,1,1,1,1,2,bar,arabian,3,0,3,5,5,6,9,9.0,5.0,,,,7,7,6,2,5,2009.0,5.0,1,0,0,0,tibetan,greek,0
+"irish,belgian",chandigarh,near party hub,84.0,tier a celebrity,74.8,1,1,1,1,1,1,bar,arabian,2,0,10,6,5,6,7,9.0,6.0,,5.0,,3,7,2,3,5,2011.0,6.0,1,0,1,0,irish,belgian,0
+"tibetan,greek",new delhi,near party hub,62.0,not specific,71.0,0,1,0,0,1,2,bar,arabian,2,0,2,4,3,4,8,9.0,5.0,,,,10,10,7,4,8,2010.0,2.0,1,0,0,0,tibetan,greek,0
+"welsh,thai",phagwara,near business hub,73.0,not specific,64.0,0,1,1,1,1,2,buffet/family restaurant,arabian,3,0,9,4,3,3,5,9.0,4.0,,4.0,,6,8,7,5,7,2008.0,12.0,1,0,1,0,welsh,thai,0
+"turkish,nigerian",latur (maharashtra ),near party hub,54.4,tier a celebrity,59.0,1,1,1,0,0,2,bar,greek,1,1,7,4,3,4,6,8.0,,3.0,,,7,8,6,4,8,2007.0,5.0,0,1,0,0,turkish,nigerian,0
+"indian,irish",sampla,near party hub,68.4,tier a celebrity,74.6,0,1,1,1,0,2,bar,greek,3,0,2,5,5,5,7,7.0,,2.0,,,7,9,6,4,9,2011.0,7.0,0,1,0,0,indian,irish,0
+"cuban,british",bangalore,near party hub,62.0,not specific,62.0,1,0,1,1,0,2,caffee,arabian,3,0,9,5,4,5,5,9.0,5.0,,,,7,7,2,3,4,2003.0,11.0,1,0,0,0,cuban,british,0
+"indian,irish",secunderabad,near party hub,83.0,not specific,66.0,0,0,1,1,1,2,caffee,arabian,4,0,6,5,5,5,7,9.0,5.0,,,,6,8,7,2,9,2008.0,6.0,1,0,0,0,indian,irish,0
+"tibetan,italian",bangalore,near party hub,77.0,not specific,74.0,1,1,1,1,1,2,bar,arabian,4,0,10,5,4,5,10,10.0,4.0,,4.0,,7,6,3,3,6,2008.0,5.0,1,0,1,0,tibetan,italian,0
+"algerian,belgian",-1,near business hub,69.0,not specific,69.12,0,1,1,1,1,1,bar,english,2,0,8,4,5,6,5,,3.0,,3.0,,6,5,4,3,7,2011.0,6.0,1,0,1,0,algerian,belgian,1
+"tibetan,greek",bangalore,near party hub,74.88,not specific,82.55,1,1,1,1,0,2,bar,arabian,4,0,7,5,4,5,9,7.0,4.0,,3.0,,7,7,8,7,8,2010.0,11.0,1,0,1,0,tibetan,greek,0
+"tibetan,greek",pune,near party hub,82.25,not specific,76.83,1,1,1,1,1,2,bar,greek,4,0,6,5,4,5,5,6.0,,2.0,,,8,7,6,5,6,2012.0,1.0,0,1,0,0,tibetan,greek,0
+"welsh,thai",bangalore,near party hub,93.44,not specific,60.33,1,1,1,0,1,2,bar,delicio,1,0,6,6,4,4,9,6.0,5.0,,2.0,,6,3,7,3,6,2011.0,9.0,1,0,1,0,welsh,thai,0
+"british,japanese",indore,near party hub,86.2,not specific,75.11,0,1,1,1,1,2,bar,arabian,3,0,1,4,5,5,10,9.0,5.0,,,,6,6,2,2,6,2008.0,8.0,1,0,0,0,british,japanese,0
+"tibetan,italian",bangalore,near party hub,92.2,tier a celebrity,88.6,1,1,1,1,1,2,bar,greek,3,0,10,5,6,7,7,8.0,4.0,,,,8,7,6,3,6,2011.0,11.0,1,0,0,0,tibetan,italian,0
+"algerian,belgian",jaipur,near party hub,87.4,tier a celebrity,85.6,1,1,0,1,1,2,bar,molino,4,0,3,6,6,7,9,10.0,,,,,8,5,6,2,1,2010.0,9.0,0,0,0,0,algerian,belgian,0
+"tibetan,greek",bangalore,near business hub,85.0,tier a celebrity,69.0,1,1,1,1,0,2,bar,90's,3,0,10,6,4,4,5,7.0,3.0,,,,8,6,5,5,6,2011.0,2.0,1,0,0,0,tibetan,greek,0
+"welsh,thai",pune,near party hub,76.0,not specific,89.8,1,1,1,1,0,2,bar,arabian,2,0,4,5,5,6,7,,,,,,8,8,6,4,8,2012.0,1.0,0,0,0,0,welsh,thai,0
+"japanese,thai",bangalore,near party hub,67.0,tier a celebrity,81.0,1,1,1,1,1,2,bar,greek,2,1,4,5,4,5,8,7.0,4.0,2.0,,,5,5,5,5,4,2008.0,7.0,1,1,0,0,japanese,thai,0
+"indian,irish",bangalore,near party hub,70.08,not specific,61.5,1,1,1,1,1,2,bar,delicio,2,1,2,4,5,4,10,8.0,4.0,,,,0,4,5,7,4,2011.0,1.0,1,0,0,0,indian,irish,0
+"algerian,korean",new delhi,near party hub,71.8,tier a celebrity,57.8,1,1,1,1,1,1,bar,greek,3,0,5,5,4,3,6,8.0,4.0,3.0,,,5,5,7,8,5,2011.0,3.0,1,1,0,0,algerian,korean,0
+"british,japanese",pune,near party hub,77.0,not specific,82.2,1,1,1,1,1,2,bar,arabian,3,0,9,5,4,6,8,9.0,5.0,,,,2,7,3,3,7,2008.0,11.0,1,0,0,0,british,japanese,0
+"irish,belgian",mysore,near party hub,52.0,not specific,67.0,1,0,0,1,0,2,caffee,arabian,4,1,8,4,4,4,9,9.0,5.0,,,,2,1,0,7,1,2009.0,2.0,1,0,0,0,irish,belgian,0
+"cuban,british",hyderabad,near party hub,83.33,not specific,92.2,1,1,1,1,0,2,bar,greek,3,1,5,5,5,5,9,6.0,4.0,2.0,,,9,9,7,0,9,2010.0,8.0,1,1,0,0,cuban,british,0
+"british,japanese",bangalore,near business hub,94.24,not specific,89.67,1,1,1,0,1,2,bar,arabian,3,1,6,5,4,4,6,9.0,5.0,,,,6,8,7,7,7,2008.0,6.0,1,0,0,0,british,japanese,0
+"tibetan,italian",new delhi,near party hub,60.0,not specific,63.0,1,1,0,1,1,2,bar,greek,1,0,6,4,2,3,6,6.0,,1.0,,,5,4,6,7,4,2010.0,6.0,0,1,0,0,tibetan,italian,0
+"british,japanese",noida,near party hub,72.15,not specific,67.1,1,1,1,1,0,2,bar,greek,3,0,10,5,4,6,6,10.0,4.0,3.0,,,3,4,5,4,6,2009.0,1.0,1,1,0,0,british,japanese,0
+"cuban,british",-1,near party hub,64.0,not specific,64.0,1,1,1,0,1,2,bar,90's,3,0,5,3,5,3,10,9.0,6.0,,4.0,,4,5,4,4,3,2009.0,11.0,1,0,1,0,cuban,british,1
+"welsh,thai",bangalore,near party hub,75.0,not specific,81.1,1,1,1,1,1,2,bar,90's,3,0,8,3,3,2,5,7.0,2.0,,3.0,,4,4,4,5,4,2010.0,3.0,1,0,1,0,welsh,thai,0
+"tibetan,greek",gurgaon,near party hub,73.0,tier a celebrity,64.0,1,1,1,1,0,2,bar,90's,2,0,2,5,4,5,6,8.0,4.0,,,,5,4,8,7,6,2008.0,7.0,1,0,0,0,tibetan,greek,0
+"british,japanese",hyderabad,near party hub,69.0,not specific,83.6,1,1,1,0,1,2,bar,arabian,2,1,5,4,4,5,10,6.0,4.0,,2.0,,9,7,4,5,6,2012.0,5.0,1,0,1,0,british,japanese,0
+"algerian,belgian",haldia,near party hub,92.83,tier a celebrity,88.0,1,1,1,0,0,2,bar,chinese,3,0,9,6,6,6,9,9.0,,,,,7,7,5,4,7,2010.0,10.0,0,0,0,0,algerian,belgian,0
+"swedish,greek",gurgaon,near party hub,87.4,tier a celebrity,85.2,1,1,1,1,1,1,bar,greek,3,1,2,6,6,6,5,8.0,4.0,3.0,,,4,4,6,6,2,2011.0,4.0,1,1,0,0,swedish,greek,0
+"japanese,thai",hyderabad,near party hub,64.8,tier a celebrity,62.4,1,1,1,1,1,1,bar,arabian,3,1,3,4,4,5,8,9.0,5.0,,,,6,7,6,5,8,2005.0,8.0,1,0,0,0,japanese,thai,0
+"welsh,thai",noida,near party hub,59.7,not specific,54.0,1,1,1,1,1,2,caffee,arabian,4,1,9,4,4,5,7,9.0,5.0,,,,4,5,5,7,4,2007.0,8.0,1,0,0,0,welsh,thai,0
+"cuban,british",gurgaon,near business hub,92.0,tier a celebrity,85.6,1,1,1,1,1,2,bar,arabian,5,0,6,5,4,6,5,,,,,,4,8,4,4,8,2012.0,8.0,0,0,0,0,cuban,british,0
+"british,japanese",-1,near party hub,63.0,tier a celebrity,74.0,0,1,0,1,1,2,bar,delicio,1,1,9,5,5,4,6,10.0,4.0,,,,4,2,4,6,3,2009.0,12.0,1,0,0,0,british,japanese,1
+"british,japanese",pune,near party hub,82.0,not specific,62.0,1,1,1,1,0,2,bar,arabian,2,0,10,6,5,5,10,9.0,4.0,,5.0,,9,8,9,3,7,2011.0,1.0,1,0,1,0,british,japanese,0
+"algerian,belgian",mainpuri,near party hub,71.5,not specific,60.0,1,1,0,1,1,2,bar,arabian,2,0,10,4,3,4,6,7.0,3.0,,,,8,9,4,4,5,2010.0,5.0,1,0,0,0,algerian,belgian,0
+"tibetan,greek",bangalore,near party hub,83.6,not specific,89.91,0,1,1,1,1,2,bar,90's,4,0,3,5,6,7,9,10.0,4.0,,4.0,,10,8,9,0,6,2012.0,5.0,1,0,1,0,tibetan,greek,0
+"tibetan,italian",hyderabad,near party hub,88.0,not specific,93.5,0,1,1,1,1,2,bar,arabian,3,1,8,4,5,6,8,9.0,5.0,,,,3,8,5,3,6,2008.0,10.0,1,0,0,0,tibetan,italian,0
+"welsh,thai",new delhi,near party hub,65.0,not specific,68.0,1,1,1,1,1,2,bar,parsi,2,0,4,4,5,7,7,8.0,4.0,3.0,,,6,7,4,1,6,2010.0,6.0,1,1,0,0,welsh,thai,0
+"tibetan,greek",bangalore,near party hub,80.4,not specific,70.2,1,1,0,1,0,2,bar,arabian,3,0,4,4,4,6,5,9.0,5.0,,5.0,,6,7,6,2,6,2011.0,1.0,1,0,1,0,tibetan,greek,0
+"welsh,thai",noida,near party hub,55.33,not specific,60.6,0,1,1,1,1,2,caffee,arabian,3,0,1,6,5,3,5,10.0,4.0,,4.0,,8,9,2,1,7,2011.0,10.0,1,0,1,0,welsh,thai,0
+"indian,irish",bangalore,near party hub,77.8,tier a celebrity,60.6,0,1,0,1,1,2,bar,arabian,2,0,7,6,6,5,8,9.0,5.0,,,,8,9,6,2,6,2008.0,12.0,1,0,0,0,indian,irish,0
+"algerian,belgian",gorakhpur,near party hub,56.0,not specific,75.0,1,1,0,0,1,2,gastro bar,arabian,3,0,4,4,3,3,10,7.0,3.0,,,,5,10,6,6,8,2009.0,11.0,1,0,0,0,algerian,belgian,0
+"tibetan,italian",chennai,near party hub,86.0,not specific,77.0,1,1,0,1,1,2,bar,greek,4,0,7,3,4,3,8,8.0,3.0,,,,8,7,5,5,9,2010.0,3.0,1,0,0,0,tibetan,italian,0
+"tibetan,greek",chennai,near business hub,81.0,not specific,87.9,0,1,1,1,0,2,bar,90's,3,1,8,4,4,3,10,7.0,4.0,,3.0,,9,7,5,5,8,2012.0,7.0,1,0,1,0,tibetan,greek,0
+"indian,irish",chennai,near party hub,82.0,not specific,72.0,1,1,1,0,1,2,bar,greek,2,1,2,4,4,4,7,10.0,1.0,3.0,,4.0,4,9,8,10,7,2009.0,10.0,1,1,0,1,indian,irish,0
+"tibetan,greek",kanpur,near business hub,85.0,not specific,70.0,1,1,0,0,0,2,bar,arabian,3,0,9,4,4,4,9,9.0,5.0,,,,9,9,8,6,7,2010.0,12.0,1,0,0,0,tibetan,greek,0
+"tibetan,greek",-1,near business hub,69.0,tier a celebrity,62.33,1,1,1,1,1,1,bar,arabian,3,1,10,6,5,5,10,9.0,4.0,,5.0,,5,8,7,4,8,2010.0,2.0,1,0,1,0,tibetan,greek,1
+"peruvian,cuban",noida,near party hub,82.14,tier a celebrity,81.26,1,1,1,1,1,2,bar,arabian,2,0,1,6,6,5,8,9.0,5.0,,,,4,6,3,5,7,2012.0,10.0,1,0,0,0,peruvian,cuban,0
+"tibetan,greek",new delhi,near party hub,83.0,tier a celebrity,77.2,0,1,1,1,1,1,bar,arabian,3,1,8,6,4,5,10,9.0,5.0,,,,5,9,1,7,8,2008.0,3.0,1,0,0,0,tibetan,greek,0
+"british,japanese",chennai,near party hub,80.5,not specific,93.9,0,1,1,1,1,2,bar,greek,3,1,7,5,4,6,10,8.0,3.0,3.0,,,3,4,5,6,4,2010.0,12.0,1,1,0,0,british,japanese,0
+"cuban,british",-1,near business hub,80.16,not specific,91.4,1,1,1,1,1,2,bar,arabian,3,1,1,5,4,5,7,8.0,4.0,,3.0,,8,8,4,5,7,2011.0,3.0,1,0,1,0,cuban,british,1
+"chinese,salvadorian",bhopal,near business hub,65.0,tier a celebrity,54.0,1,1,1,1,1,1,bar,ambiance,2,0,6,4,4,4,7,,,,,,8,6,3,3,8,2006.0,10.0,0,0,0,0,chinese,salvadorian,0
+"japanese,thai",mysore,near party hub,86.6,tier a celebrity,89.0,0,1,1,0,1,2,bar,nature,3,0,1,5,4,5,9,10.0,,,,4.0,5,8,8,6,9,2011.0,3.0,0,0,0,1,japanese,thai,0
+"tibetan,greek",pune,near party hub,83.75,not specific,74.8,1,1,1,1,1,2,bar,greek,3,1,6,6,6,6,6,10.0,,,,,5,6,1,5,5,2010.0,1.0,0,0,0,0,tibetan,greek,0
+"chinese,salvadorian",-1,near party hub,78.0,not specific,69.0,1,1,1,1,1,2,bar,greek,3,1,2,3,4,4,9,6.0,3.0,2.0,,,6,5,5,7,6,2009.0,4.0,1,1,0,0,chinese,salvadorian,1
+"tibetan,italian",kolkata,near party hub,78.0,not specific,62.0,1,1,1,1,1,2,caffee,arabian,4,0,7,3,5,6,9,9.0,5.0,,,,8,4,9,8,8,2006.0,5.0,1,0,0,0,tibetan,italian,0
+"hawaiian,latvian",bangalore,near party hub,78.4,not specific,74.2,1,1,1,1,0,2,bar,90's,2,0,2,3,5,3,6,9.0,5.0,,,,6,8,2,6,6,2009.0,2.0,1,0,0,0,hawaiian,latvian,0
+"british,japanese",mumbai,near party hub,85.0,not specific,73.8,0,1,1,1,1,2,bar,greek,3,0,6,5,4,6,9,9.0,4.0,4.0,,,5,4,5,7,9,2008.0,9.0,1,1,0,0,british,japanese,0
+"tibetan,italian",coimbatore,near business hub,74.0,not specific,75.0,0,1,1,1,1,2,bar,90's,3,0,5,3,4,2,5,8.0,5.0,,3.0,,9,6,6,3,9,2009.0,12.0,1,0,1,0,tibetan,italian,0
+"indian,irish",pune,near business hub,79.0,not specific,75.69,1,1,1,1,0,1,bar,90's,2,0,9,5,5,5,7,8.0,5.0,,3.0,,7,9,6,5,10,2010.0,6.0,1,0,1,0,indian,irish,0
+"welsh,thai",bangalore,near business hub,73.0,tier a celebrity,74.6,1,1,1,0,1,2,bar,arabian,3,0,6,4,4,4,5,7.0,3.0,,3.0,,0,0,1,2,0,2010.0,6.0,1,0,1,0,welsh,thai,0
+"turkish,sapnish",mumbai,near business hub,80.8,not specific,60.5,1,1,1,1,1,2,bar,arabian,2,1,6,5,5,5,10,9.0,5.0,,4.0,,9,10,8,0,6,2010.0,2.0,1,0,1,0,turkish,sapnish,0
+"indian,irish",indore,near party hub,53.0,not specific,49.0,1,1,1,1,1,2,caffee,arabian,3,0,2,3,4,3,8,7.0,3.0,,3.0,,8,7,7,5,8,2007.0,9.0,1,0,1,0,indian,irish,0
+"british,japanese",gurgaon,near party hub,78.2,tier a celebrity,81.8,1,1,0,1,0,2,bar,arabian,3,0,7,4,5,5,5,10.0,4.0,,,,9,6,6,2,8,2009.0,1.0,1,0,0,0,british,japanese,0
+"tibetan,italian",jaipur,near party hub,79.0,not specific,75.69,1,1,0,1,1,2,bar,arabian,2,1,8,4,4,4,9,8.0,3.0,,3.0,,7,8,7,4,9,2010.0,11.0,1,0,1,0,tibetan,italian,0
+"indian,irish",ranchi,near party hub,82.87,not specific,60.42,1,1,1,0,1,2,bar,molino,2,0,3,4,4,5,9,7.0,,,,,6,4,4,7,2,2011.0,10.0,0,0,0,0,indian,irish,0
+"turkish,sapnish",greater noida,near party hub,75.1,not specific,63.9,1,1,1,1,1,2,bar,arabian,2,0,10,4,4,5,9,7.0,3.0,,,,6,7,2,5,8,2004.0,4.0,1,0,0,0,turkish,sapnish,0
+"hawaiian,latvian",mumbai,near business hub,62.26,not specific,78.88,0,1,1,1,1,2,bar,parsi,2,1,2,5,3,4,10,9.0,,5.0,,,9,5,4,5,5,2006.0,11.0,0,1,0,0,hawaiian,latvian,0
+"tibetan,greek",mumbai,near business hub,78.8,not specific,82.2,1,1,1,1,1,2,bar,arabian,2,0,3,5,5,5,7,10.0,4.0,,,,6,8,5,3,8,2008.0,3.0,1,0,0,0,tibetan,greek,0
+"welsh,thai",hyderabad,near party hub,64.2,tier a celebrity,90.7,1,1,0,1,1,2,bar,greek,4,1,4,5,6,7,6,9.0,5.0,4.0,,,8,5,5,5,7,2010.0,12.0,1,1,0,0,welsh,thai,0
+"indian,irish",mysore,near party hub,80.64,not specific,76.5,1,1,1,1,1,2,bar,nature,2,0,2,5,6,4,5,9.0,,,,4.0,6,6,6,4,7,2011.0,9.0,0,0,0,1,indian,irish,0
+"indian,irish",-1,near party hub,84.8,tier a celebrity,83.0,0,1,1,1,1,2,bar,greek,2,0,6,6,6,6,5,10.0,4.0,3.0,,,8,9,8,2,8,2010.0,1.0,1,1,0,0,indian,irish,1
+"british,japanese",gurgaon,near business hub,89.0,tier a celebrity,80.0,1,1,1,1,1,2,bar,parsi,3,0,9,6,5,6,7,9.0,,4.0,,,9,8,5,5,10,2012.0,9.0,0,1,0,0,british,japanese,0
+"chinese,salvadorian",noida,near business hub,80.2,tier a celebrity,74.8,1,1,1,1,1,2,bar,90's,3,0,1,5,5,4,9,10.0,4.0,,,,7,8,3,3,9,2011.0,7.0,1,0,0,0,chinese,salvadorian,0
+"algerian,korean",noida,near business hub,62.0,tier a celebrity,53.2,1,1,1,1,1,2,bar,greek,2,0,8,4,4,2,8,6.0,,1.0,,,5,3,2,4,1,2012.0,8.0,0,1,0,0,algerian,korean,0
+"welsh,thai",greater noida,near party hub,78.6,tier a celebrity,68.4,1,1,1,0,1,2,bar,90's,3,0,8,6,4,6,9,10.0,4.0,,,,6,7,8,6,7,2010.0,6.0,1,0,0,0,welsh,thai,0
+"british,japanese",bangalore,near business hub,85.0,not specific,93.4,1,1,0,1,0,2,bar,arabian,3,1,2,5,6,5,8,10.0,4.0,,,,6,9,5,4,7,2010.0,1.0,1,0,0,0,british,japanese,0
+"turkish,sapnish",pune,near party hub,78.6,tier a celebrity,74.8,1,1,1,0,1,2,bar,arabian,3,0,3,5,5,4,10,9.0,5.0,,4.0,,6,8,7,5,9,2011.0,2.0,1,0,1,0,turkish,sapnish,0
+"algerian,algerian",noida,near party hub,64.0,not specific,60.01,0,1,1,1,1,2,bar,greek,2,0,10,5,4,2,10,6.0,,1.0,,,10,8,9,4,9,2009.0,6.0,0,1,0,0,algerian,algerian,0
+"tibetan,greek",bangalore,near business hub,90.33,not specific,88.6,0,1,1,1,1,2,bar,arabian,2,0,9,7,5,4,9,10.0,4.0,,,,8,9,5,2,8,2010.0,5.0,1,0,0,0,tibetan,greek,0
+"turkish,sapnish",navi mumbai,near business hub,64.2,tier a celebrity,64.1,1,1,1,1,1,2,bar,90's,3,0,7,5,5,5,5,9.0,4.0,,5.0,,7,7,6,5,7,2011.0,9.0,1,0,1,0,turkish,sapnish,0
+"turkish,sapnish",kolkata,near party hub,77.0,not specific,69.0,1,1,1,1,1,2,bar,greek,4,0,7,4,5,6,8,,3.0,,,,8,8,6,1,8,2011.0,7.0,1,0,0,0,turkish,sapnish,0
+"tibetan,greek",noida,near party hub,70.8,tier a celebrity,64.0,1,1,1,1,1,1,bar,arabian,2,1,6,4,5,5,8,10.0,4.0,,4.0,,6,6,8,5,5,2009.0,11.0,1,0,1,0,tibetan,greek,0
+"algerian,korean",rajkot,near party hub,73.0,not specific,54.0,1,1,1,1,1,2,bar,molino,3,0,6,4,3,5,10,9.0,,,,,7,5,7,6,6,2009.0,6.0,0,0,0,0,algerian,korean,0
+"tibetan,greek",pune,near party hub,86.14,not specific,76.0,1,1,1,1,1,2,bar,parsi,2,0,6,7,6,6,6,10.0,,3.0,,,3,7,4,8,7,2012.0,2.0,0,1,0,0,tibetan,greek,0
+"welsh,thai",pune,near party hub,58.6,tier a celebrity,72.0,1,1,1,1,1,2,bar,arabian,1,0,8,6,4,3,8,8.0,4.0,,3.0,,2,8,6,5,7,2012.0,11.0,1,0,1,0,welsh,thai,0
+"welsh,thai",lucknow,near party hub,77.0,tier a celebrity,82.0,1,1,1,1,1,2,caffee,arabian,4,0,8,4,4,5,9,,,,,,3,6,2,2,3,2009.0,4.0,0,0,0,0,welsh,thai,0
+"turkish,nigerian",karnal,near business hub,89.6,tier a celebrity,69.6,1,1,0,1,1,2,bar,arabian,2,0,2,4,5,4,5,8.0,4.0,,3.0,,4,5,5,6,4,2010.0,3.0,1,0,1,0,turkish,nigerian,0
+"chinese,salvadorian",new delhi,near party hub,71.0,tier a celebrity,60.0,1,1,1,1,1,2,bar,arabian,4,0,5,3,5,5,8,10.0,5.0,,4.0,,4,5,4,4,5,2011.0,5.0,1,0,1,0,chinese,salvadorian,0
+"tibetan,greek",noida,near party hub,84.4,tier a celebrity,82.2,1,1,1,0,1,2,bar,greek,3,0,6,5,6,5,9,8.0,,3.0,,,5,8,7,4,7,2009.0,6.0,0,1,0,0,tibetan,greek,0
+"algerian,belgian",bangalore,near business hub,78.53,not specific,74.14,1,1,1,1,0,2,bar,arabian,2,0,6,6,6,4,10,10.0,4.0,,,,5,9,7,5,9,2007.0,9.0,1,0,0,0,algerian,belgian,0
+"welsh,thai",hyderabad,near party hub,68.5,not specific,68.4,1,1,1,1,0,2,bar,arabian,3,1,9,5,4,2,5,9.0,5.0,,,,6,6,5,2,7,2010.0,6.0,1,0,0,0,welsh,thai,0
+"indian,irish",nagpur,near party hub,79.0,tier a celebrity,71.0,1,1,0,0,1,2,bar,greek,2,0,1,4,4,5,9,,4.0,,,,5,8,8,1,9,2011.0,2.0,1,0,0,0,indian,irish,0
+"british,belgian",faridabad,near party hub,63.0,not specific,55.0,1,1,0,1,0,2,caffee,arabian,2,0,1,3,2,4,5,,,,,,6,6,4,6,4,2006.0,12.0,0,0,0,0,british,belgian,0
+"indian,irish",bhubaneshwar,near party hub,71.76,not specific,61.5,1,1,1,1,1,2,bar,marco,3,0,8,4,3,3,5,8.0,,,,3.0,6,8,7,7,9,2010.0,3.0,0,0,0,1,indian,irish,0
+"turkish,sapnish",bangalore,near party hub,64.5,not specific,85.5,1,1,0,1,1,2,bar,greek,2,0,5,2,3,5,6,6.0,3.0,2.0,,,4,5,6,4,6,2010.0,3.0,1,1,0,0,turkish,sapnish,0
+"tibetan,greek",mumbai,near party hub,67.6,tier a celebrity,62.0,1,1,1,1,1,2,bar,parsi,2,0,3,5,5,3,7,,,,,,9,9,6,4,8,2011.0,2.0,0,0,0,0,tibetan,greek,0
+"indian,irish",new delhi,near business hub,80.0,tier a celebrity,66.0,1,1,1,1,1,2,bar,greek,2,0,10,2,4,4,10,7.0,,2.0,,,8,5,6,4,8,2011.0,7.0,0,1,0,0,indian,irish,0
+"tibetan,greek",bangalore,near business hub,81.0,tier a celebrity,75.6,0,1,0,1,1,2,bar,arabian,3,0,6,4,3,5,7,10.0,4.0,,,,7,7,5,6,7,2009.0,9.0,1,0,0,0,tibetan,greek,0
+"polish,jewish",bangalore,near business hub,88.7,tier a celebrity,63.5,0,1,1,0,1,2,bar,arabian,3,1,7,6,5,5,9,10.0,4.0,,,,6,7,7,4,4,2010.0,1.0,1,0,0,0,polish,jewish,0
+"tibetan,greek",hyderabad,near party hub,81.5,not specific,89.0,1,1,1,1,1,2,bar,greek,2,1,1,3,5,5,10,9.0,3.0,4.0,,,9,7,7,7,7,2010.0,4.0,1,1,0,0,tibetan,greek,0
+"japanese,thai",gurgaon,near party hub,74.0,tier a celebrity,74.0,1,1,1,1,1,1,bar,90's,2,0,1,6,4,6,8,8.0,3.0,,,,7,8,6,6,7,2008.0,7.0,1,0,0,0,japanese,thai,0
+"indian,irish",karad,near party hub,93.07,not specific,90.0,1,1,1,1,1,2,bar,nature,2,0,1,4,4,4,10,8.0,,,,4.0,6,4,5,7,4,2011.0,8.0,0,0,0,1,indian,irish,0
+"swedish,greek",bangalore,near party hub,86.0,tier a celebrity,87.0,0,1,1,1,1,2,bar,greek,2,0,9,4,6,6,6,9.0,4.0,,,,10,9,9,3,8,2009.0,6.0,1,0,0,0,swedish,greek,0
+"tibetan,greek",kochi/cochin,near business hub,93.0,not specific,80.0,0,1,1,1,1,2,bar,arabian,3,0,10,3,5,3,6,10.0,4.0,,,,6,8,4,1,7,2010.0,12.0,1,0,0,0,tibetan,greek,0
+"algerian,belgian",kolkata,near party hub,76.0,not specific,61.6,1,1,1,1,1,2,bar,greek,2,1,10,4,4,5,9,7.0,3.0,,,,8,7,5,6,9,2011.0,12.0,1,0,0,0,algerian,belgian,0
+"british,japanese",noida,near party hub,57.14,tier a celebrity,48.0,1,1,0,1,1,2,caffee,arabian,2,1,1,4,5,3,7,10.0,4.0,,,,8,6,3,0,8,2009.0,12.0,1,0,0,0,british,japanese,0
+"tibetan,greek",-1,near party hub,72.67,not specific,68.2,1,1,1,1,1,2,bar,arabian,3,0,2,5,4,6,6,10.0,4.0,,,,8,8,6,2,8,2010.0,5.0,1,0,0,0,tibetan,greek,1
+"british,japanese",chennai,near party hub,79.2,not specific,86.91,1,1,0,0,0,2,bar,90's,3,0,3,3,2,3,7,7.0,3.0,,,,4,2,3,5,3,2009.0,1.0,1,0,0,0,british,japanese,0
+"tibetan,greek",navi mumbai,near party hub,87.2,not specific,87.14,0,1,1,0,0,2,bar,arabian,3,1,5,6,5,5,8,7.0,4.0,,3.0,,6,6,0,6,7,2009.0,11.0,1,0,1,0,tibetan,greek,0
+"peruvian,cuban",hyderabad,near business hub,87.2,tier a celebrity,75.0,1,1,1,1,0,2,bar,arabian,3,0,5,6,6,5,7,9.0,5.0,,,,1,6,3,7,8,2008.0,4.0,1,0,0,0,peruvian,cuban,0
+"tibetan,greek",chennai,near business hub,93.2,not specific,85.66,1,1,0,0,1,2,bar,arabian,4,1,7,5,5,6,10,9.0,6.0,2.0,,4.0,8,6,7,1,5,2008.0,5.0,1,1,0,1,tibetan,greek,0
+"turkish,nigerian",nagpur,near business hub,90.8,tier a celebrity,82.6,0,1,0,0,1,2,bar,arabian,2,0,5,4,5,5,9,9.0,5.0,,5.0,,8,9,8,0,10,2010.0,10.0,1,0,1,0,turkish,nigerian,0
+"tibetan,greek",lucknow,near business hub,72.6,not specific,77.16,1,1,1,1,0,1,bar,arabian,3,0,7,4,5,5,8,8.0,4.0,,,,6,8,5,7,7,2010.0,12.0,1,0,0,0,tibetan,greek,0
+"japanese,thai",hyderabad,near business hub,85.0,not specific,89.0,0,1,0,1,1,2,bar,arabian,3,1,10,5,4,4,8,10.0,4.0,,,,9,8,5,4,8,2009.0,9.0,1,0,0,0,japanese,thai,0
+"welsh,thai",jaipur,near party hub,79.67,not specific,72.67,1,1,0,1,1,2,bar,arabian,2,1,6,5,4,5,6,10.0,5.0,,4.0,,6,5,6,7,7,2010.0,7.0,1,0,1,0,welsh,thai,0
+"tibetan,greek",noida,near party hub,85.4,tier a celebrity,81.6,1,1,1,1,1,1,bar,90's,4,0,4,5,6,6,10,9.0,6.0,,,,8,9,9,8,9,2009.0,11.0,1,0,0,0,tibetan,greek,0
+"tibetan,italian",pune,near party hub,71.0,tier a celebrity,58.0,1,1,1,1,1,2,bar,greek,3,0,1,5,4,6,5,8.0,3.0,3.0,,,3,8,6,6,7,2008.0,2.0,1,1,0,0,tibetan,italian,0
+"british,japanese",bangalore,near business hub,94.4,not specific,87.0,1,1,1,0,1,2,bar,parsi,4,1,1,6,5,4,8,10.0,,,,,6,8,5,4,6,2009.0,2.0,0,0,0,0,british,japanese,0
+"chinese,salvadorian",-1,near party hub,65.0,tier a celebrity,62.0,1,1,1,1,1,2,bar,greek,2,0,8,4,3,3,5,8.0,,3.0,,,4,7,4,5,7,2009.0,2.0,0,1,0,0,chinese,salvadorian,1
+"tibetan,italian",hyderabad,near party hub,91.0,local celebrity,94.4,1,1,1,0,1,2,bar,greek,4,1,1,6,4,5,9,9.0,,5.0,,,4,8,4,9,3,2010.0,12.0,0,1,0,0,tibetan,italian,0
+"welsh,thai",bangalore,near party hub,58.0,not specific,47.0,1,1,1,1,0,2,bar,arabian,1,0,10,3,4,3,7,10.0,4.0,,,,7,8,5,2,8,2005.0,10.0,1,0,0,0,welsh,thai,0
+"cuban,british",-1,near party hub,60.2,tier a celebrity,60.8,1,1,0,1,1,2,bar,arabian,2,0,1,4,4,3,5,6.0,4.0,,2.0,,9,8,7,5,7,2011.0,8.0,1,0,1,0,cuban,british,1
+"tibetan,greek",bangalore,near party hub,76.2,not specific,72.8,1,1,1,1,0,2,bar,arabian,3,1,1,4,4,5,5,10.0,4.0,,,,6,6,3,6,5,2007.0,12.0,1,0,0,0,tibetan,greek,0
+"turkish,nigerian",-1,near party hub,71.8,tier a celebrity,81.8,1,1,1,1,1,2,bar,greek,3,0,6,6,5,6,8,9.0,,5.0,,,8,8,5,5,7,2008.0,11.0,0,1,0,0,turkish,nigerian,1
+"welsh,thai",bangalore,near party hub,85.0,tier a celebrity,77.06,1,1,1,0,1,2,bar,arabian,4,0,8,5,4,5,9,10.0,6.0,,4.0,,9,8,5,5,10,2010.0,7.0,1,0,1,0,welsh,thai,0
+"irish,belgian",haryana,near party hub,84.0,tier a celebrity,67.0,1,1,1,1,1,2,bar,nature,2,0,5,5,5,5,6,9.0,,,,4.0,4,8,4,3,5,2005.0,7.0,0,0,0,1,irish,belgian,0
+"chinese,salvadorian",noida,near party hub,78.0,tier a celebrity,68.5,1,1,1,1,1,2,bar,greek,2,0,5,6,5,5,5,10.0,3.0,3.0,,,5,4,6,1,1,2011.0,3.0,1,1,0,0,chinese,salvadorian,0
+"hawaiian,latvian",hyderabad,near party hub,78.83,not specific,90.2,0,1,1,1,1,2,bar,greek,3,1,7,4,3,6,5,7.0,,3.0,,,7,8,5,3,6,2010.0,2.0,0,1,0,0,hawaiian,latvian,0
+"peruvian,cuban",raipur,near party hub,65.0,not specific,77.2,1,1,1,1,1,2,bar,greek,3,0,2,5,4,7,7,10.0,,4.0,,,10,9,6,4,8,2014.0,7.0,0,1,0,0,peruvian,cuban,0
+"tibetan,greek",gurgaon,near party hub,89.6,tier a celebrity,84.4,1,1,1,1,1,2,bar,arabian,3,0,8,5,6,5,9,6.0,5.0,,2.0,,5,8,6,4,7,2011.0,5.0,1,0,1,0,tibetan,greek,0
+"tibetan,greek",bangalore,near party hub,73.0,not specific,57.8,1,1,0,0,1,2,bar,arabian,1,1,8,3,4,4,6,7.0,3.0,,,,6,7,5,5,4,2010.0,1.0,1,0,0,0,tibetan,greek,0
+"tibetan,italian",noida,near business hub,68.0,not specific,83.0,0,1,0,1,1,2,bar,greek,2,0,2,4,3,3,9,6.0,,2.0,,,5,3,6,5,5,2010.0,1.0,0,1,0,0,tibetan,italian,0
+"turkish,sapnish",-1,near party hub,84.0,tier a celebrity,77.0,1,1,1,1,1,2,bar,arabian,3,0,4,6,4,3,6,8.0,3.0,,,,4,4,5,6,3,2011.0,7.0,1,0,0,0,turkish,sapnish,1
+"british,japanese",bangalore,near party hub,87.52,not specific,86.5,1,1,1,0,1,2,bar,arabian,3,0,10,6,5,5,10,9.0,5.0,,,,0,4,5,4,5,2009.0,8.0,1,0,0,0,british,japanese,0
+"turkish,nigerian",navi mumbai,near business hub,90.26,not specific,82.7,1,1,1,1,0,2,bar,greek,4,0,2,4,6,6,9,9.0,4.0,4.0,,,8,6,5,4,9,2009.0,7.0,1,1,0,0,turkish,nigerian,0
+"japanese,thai",bangalore,near business hub,93.43,not specific,55.66,1,1,0,1,1,2,bar,greek,2,1,1,7,5,3,6,6.0,3.0,2.0,,,8,7,6,3,6,2008.0,7.0,1,1,0,0,japanese,thai,0
+"algerian,algerian",bangalore,near party hub,74.0,not specific,64.0,1,1,1,1,1,2,bar,greek,1,1,9,4,4,4,7,8.0,3.0,3.0,,3.0,9,6,6,5,8,2006.0,7.0,1,1,0,1,algerian,algerian,0
+"algerian,belgian",vellore,near business hub,93.2,not specific,79.75,0,1,1,1,0,2,bar,greek,3,0,9,3,4,5,5,,2.0,,,,3,0,5,6,3,2008.0,6.0,1,0,0,0,algerian,belgian,0
+"tibetan,italian",mumbai,near party hub,66.67,not specific,64.08,1,1,0,1,1,2,bar,moonrise,1,0,9,4,3,4,7,,,3.0,,,7,6,5,3,7,2007.0,8.0,0,1,0,0,tibetan,italian,0
+"tibetan,greek",-1,near party hub,82.5,not specific,86.3,1,1,1,1,0,2,bar,arabian,3,1,10,4,5,4,7,6.0,3.0,,2.0,,10,10,9,1,9,2011.0,8.0,1,0,1,0,tibetan,greek,1
+"turkish,nigerian",-1,near party hub,88.83,not specific,97.2,1,1,0,0,1,2,bar,greek,3,1,6,4,5,6,5,9.0,4.0,4.0,,,5,8,6,5,6,2010.0,2.0,1,1,0,0,turkish,nigerian,1
+"tibetan,italian",nagpur,near party hub,60.46,not specific,55.5,1,1,1,1,1,2,bar,arabian,1,0,8,5,5,3,6,6.0,3.0,,2.0,,5,3,6,5,5,2010.0,11.0,1,0,1,0,tibetan,italian,0
+"swedish,greek",noida,near party hub,68.2,tier a celebrity,76.4,1,1,0,1,1,1,bar,greek,2,1,2,6,4,4,9,10.0,4.0,3.0,4.0,,4,7,5,5,4,2011.0,11.0,1,1,1,0,swedish,greek,0
+"british,japanese",-1,near party hub,62.15,not specific,63.0,0,1,1,1,0,2,bar,90's,2,0,7,4,4,5,9,8.0,4.0,,,,9,7,6,4,7,2011.0,4.0,1,0,0,0,british,japanese,1
+"british,japanese",kolkata,near party hub,73.5,not specific,67.0,0,1,1,1,1,2,bar,greek,3,0,4,5,5,5,7,7.0,4.0,2.0,,,7,8,5,4,7,2009.0,9.0,1,1,0,0,british,japanese,0
+"hawaiian,latvian",-1,near party hub,85.5,not specific,92.5,1,1,0,1,0,2,bar,90's,2,1,9,6,6,6,5,9.0,6.0,,,,8,8,4,3,5,2010.0,3.0,1,0,0,0,hawaiian,latvian,1
+"indian,irish",bangalore,near party hub,88.0,not specific,92.3,1,1,1,1,1,2,bar,carbone,5,1,2,4,4,5,7,8.0,4.0,3.0,,,8,6,5,1,6,2011.0,8.0,1,1,0,0,indian,irish,0
+"tibetan,greek",bangalore,near party hub,87.6,tier a celebrity,77.8,1,1,0,1,1,1,bar,arabian,3,1,9,6,5,7,10,9.0,6.0,,,,7,7,9,3,9,2010.0,12.0,1,0,0,0,tibetan,greek,0
+"welsh,thai",noida,near party hub,81.0,tier a celebrity,81.0,1,1,1,1,1,2,bar,arabian,2,0,9,7,6,5,9,9.0,5.0,,,,5,7,5,5,6,2008.0,3.0,1,0,0,0,welsh,thai,0
+"welsh,thai",noida,near business hub,82.8,tier a celebrity,68.8,0,1,1,1,1,2,bar,90's,3,0,7,4,4,6,9,7.0,3.0,,,,5,4,5,5,6,2008.0,1.0,1,0,0,0,welsh,thai,0
+"algerian,belgian",mumbai,near party hub,68.0,not specific,65.0,1,1,1,1,1,2,bar,greek,2,0,6,2,3,3,6,6.0,,2.0,,,6,7,3,7,6,2009.0,1.0,0,1,0,0,algerian,belgian,0
+"tibetan,greek",mumbai,near business hub,68.4,not specific,68.0,1,1,1,1,1,2,bar,90's,1,0,7,4,5,4,7,8.0,3.0,,,,6,7,5,3,6,2008.0,7.0,1,0,0,0,tibetan,greek,0
+"welsh,thai",patiala,near party hub,69.0,tier a celebrity,69.0,1,1,0,1,1,2,bar,arabian,2,0,5,3,3,4,7,9.0,5.0,,,,7,7,6,3,8,2011.0,8.0,1,0,0,0,welsh,thai,0
+"welsh,thai",gurgaon,near party hub,67.5,local celebrity,63.6,1,1,1,0,1,2,bar,arabian,2,0,7,5,4,6,8,8.0,3.0,,,,5,6,5,4,7,2008.0,9.0,1,0,0,0,welsh,thai,0
+"tibetan,italian",bangalore,near party hub,86.12,not specific,77.0,1,1,1,1,1,2,bar,90's,3,1,1,4,4,4,5,9.0,5.0,,,,4,6,2,7,6,2009.0,6.0,1,0,0,0,tibetan,italian,0
+"tibetan,greek",hyderabad,near party hub,84.0,tier a celebrity,81.0,1,1,0,1,1,2,bar,nature,2,1,4,6,3,3,9,7.0,4.0,,,3.0,7,9,7,7,6,2010.0,10.0,1,0,0,1,tibetan,greek,0
+"turkish,nigerian",coimbatore,near party hub,70.27,not specific,85.67,1,1,1,1,0,2,bar,benedicta,3,0,5,3,3,4,7,8.0,3.0,2.0,,3.0,6,8,3,6,6,2009.0,8.0,1,1,0,1,turkish,nigerian,0
+"polish,jewish",bangalore,near party hub,70.5,not specific,82.8,1,1,1,0,1,2,bar,arabian,2,0,5,5,6,6,10,9.0,6.0,,,,6,6,5,5,6,2009.0,8.0,1,0,0,0,polish,jewish,0
+"algerian,belgian",kanpur,near party hub,69.6,tier a celebrity,76.8,1,1,1,1,1,2,bar,greek,2,0,4,4,5,6,7,6.0,,2.0,,,8,7,2,3,5,2010.0,2.0,0,1,0,0,algerian,belgian,0
+"hawaiian,latvian",pune,near party hub,84.4,not specific,88.0,1,1,1,1,1,2,gastro bar,greek,4,0,1,4,5,5,7,9.0,3.0,4.0,,,6,7,4,2,8,2010.0,11.0,1,1,0,0,hawaiian,latvian,0
+"british,japanese",chandigarh,near party hub,80.58,not specific,80.22,1,1,0,1,1,1,bar,nature,4,0,2,4,3,5,6,9.0,,,,5.0,6,7,8,0,9,2008.0,5.0,0,0,0,1,british,japanese,0
+"peruvian,cuban",new delhi,near party hub,72.0,tier a celebrity,67.0,1,1,0,1,1,2,bar,greek,2,0,8,3,3,5,5,9.0,2.0,4.0,,,5,8,5,7,9,2010.0,4.0,1,1,0,0,peruvian,cuban,0
+"tibetan,greek",-1,near business hub,71.0,not specific,68.0,0,1,1,1,1,2,bar,arabian,4,1,2,3,5,2,7,9.0,5.0,,,,7,7,7,2,5,2010.0,9.0,1,0,0,0,tibetan,greek,1
+"chinese,salvadorian",hissar,near party hub,79.8,tier a celebrity,78.2,1,1,1,1,1,2,bar,nature,2,0,1,3,5,4,9,8.0,,,,3.0,7,7,4,5,4,2010.0,7.0,0,0,0,1,chinese,salvadorian,0
+"welsh,thai",-1,near party hub,71.6,tier a celebrity,72.8,1,1,0,1,1,2,bar,arabian,2,0,4,5,4,2,9,10.0,3.0,,4.0,,9,9,8,5,7,2010.0,12.0,1,0,1,0,welsh,thai,1
+"indian,irish",hyderabad,near party hub,92.3,not specific,89.7,0,1,1,1,1,2,bar,greek,2,1,7,3,5,6,8,6.0,3.0,2.0,,,8,7,7,6,5,2010.0,8.0,1,1,0,0,indian,irish,0
+"tibetan,greek",hyderabad,near party hub,86.5,not specific,91.0,1,1,0,1,0,2,bar,arabian,3,1,5,5,6,5,7,9.0,7.0,,,,0,6,2,5,4,2008.0,6.0,1,0,0,0,tibetan,greek,0
+"british,japanese",hyderabad,near party hub,79.5,not specific,77.1,1,1,1,1,1,2,bar,arabian,3,1,5,3,4,4,9,6.0,,,2.0,,9,6,4,4,8,2011.0,8.0,0,0,1,0,british,japanese,0
+"tibetan,italian",hyderabad,near party hub,88.0,not specific,97.2,1,1,1,0,0,2,bar,arabian,3,1,2,4,4,5,5,9.0,6.0,,,,5,9,6,2,8,2009.0,3.0,1,0,0,0,tibetan,italian,0
+"indian,irish",noida,near party hub,65.5,not specific,60.8,1,1,1,1,1,2,bar,90's,2,0,1,3,5,4,10,6.0,2.0,,,,7,8,6,5,6,2009.0,3.0,1,0,0,0,indian,irish,0
+"welsh,thai",lucknow,near party hub,71.0,not specific,66.0,1,1,1,0,0,2,bar,arabian,3,0,2,3,3,3,10,7.0,3.0,,,,7,9,5,3,8,2011.0,6.0,1,0,0,0,welsh,thai,0
+"tibetan,greek",bangalore,near party hub,68.2,tier a celebrity,55.0,1,1,0,1,1,2,bar,arabian,2,0,1,5,4,4,6,7.0,5.0,,3.0,,9,8,10,5,7,2012.0,3.0,1,0,1,0,tibetan,greek,0
+"tibetan,greek",gurgaon,near party hub,83.8,tier a celebrity,80.25,1,1,1,1,0,2,bar,arabian,2,0,5,6,5,4,10,10.0,4.0,,4.0,,6,7,6,5,3,2010.0,1.0,1,0,1,0,tibetan,greek,0
+"japanese,thai",yamuna nagar,near party hub,60.0,local celebrity,64.0,1,1,1,1,0,2,bar,arabian,3,0,4,5,4,4,10,8.0,4.0,,,,6,8,5,5,7,2008.0,7.0,1,0,0,0,japanese,thai,0
+"welsh,thai",hyderabad,near business hub,65.67,not specific,72.2,1,1,1,1,1,2,gastro bar,arabian,4,0,3,4,4,5,6,9.0,5.0,,,,8,7,4,6,6,2004.0,5.0,1,0,0,0,welsh,thai,0
+"chinese,salvadorian",bangalore,near party hub,81.86,not specific,65.5,0,1,1,1,1,2,bar,arabian,3,0,8,4,4,4,10,8.0,4.0,,,,3,3,2,2,5,2010.0,6.0,1,0,0,0,chinese,salvadorian,0
+"indian,irish",chennai,near party hub,77.0,not specific,91.0,1,1,1,0,1,2,bar,greek,3,1,8,4,3,3,5,10.0,2.0,3.0,2.0,,8,6,7,3,7,2012.0,3.0,1,1,1,0,indian,irish,0
+"british,japanese",pune,near party hub,67.0,tier a celebrity,76.0,0,1,1,0,1,2,bar,nature,3,0,3,5,4,4,7,9.0,3.0,,,4.0,2,7,6,5,7,2012.0,3.0,1,0,0,1,british,japanese,0
+"indian,irish",-1,near party hub,51.83,not specific,58.0,1,1,0,1,1,2,caffee,arabian,2,0,6,3,4,6,6,9.0,5.0,,,,6,6,4,5,7,2008.0,2.0,1,0,0,0,indian,irish,1
+"tibetan,greek",bangalore,near party hub,81.0,not specific,88.7,1,1,0,1,1,2,bar,arabian,2,1,8,4,4,5,5,8.0,3.0,,,,7,7,5,4,6,2010.0,2.0,1,0,0,0,tibetan,greek,0
+"peruvian,cuban",chennai,near business hub,70.6,tier a celebrity,68.0,1,1,1,1,1,2,bar,90's,2,1,3,5,5,4,5,10.0,4.0,,,,4,6,4,7,5,2010.0,2.0,1,0,0,0,peruvian,cuban,0
+"tibetan,greek",mumbai,near party hub,89.6,not specific,67.0,1,1,1,1,0,2,bar,greek,3,0,10,6,5,5,5,9.0,,5.0,,,3,7,3,5,6,2009.0,3.0,0,1,0,0,tibetan,greek,0
+"tibetan,greek",bangalore,near party hub,69.16,not specific,65.66,1,1,1,1,1,1,gastro bar,arabian,3,0,7,3,4,6,8,9.0,6.0,,,,5,8,5,5,4,2008.0,7.0,1,0,0,0,tibetan,greek,0
+"turkish,sapnish",rourkela,near business hub,78.0,not specific,51.3,1,1,1,1,0,2,bar,arabian,3,0,8,4,5,4,5,8.0,3.0,,,,8,6,5,5,6,2009.0,8.0,1,0,0,0,turkish,sapnish,0
+"algerian,korean",bangalore,near party hub,80.0,not specific,72.1,1,1,1,1,0,2,bar,90's,2,0,7,4,5,3,5,6.0,3.0,,2.0,,9,8,7,2,7,2011.0,5.0,1,0,1,0,algerian,korean,0
+"indian,irish",banaglore,near party hub,85.0,not specific,67.0,1,1,1,1,1,2,bar,greek,2,1,4,3,4,4,6,7.0,5.0,2.0,,,10,7,10,0,9,2009.0,10.0,1,1,0,0,indian,irish,0
+"irish,belgian",-1,near party hub,80.4,tier a celebrity,66.0,1,1,1,1,1,2,bar,arabian,3,0,7,4,4,4,8,8.0,4.0,,,,5,6,7,8,8,2009.0,7.0,1,0,0,0,irish,belgian,1
+"algerian,belgian",jodhpur,near party hub,69.0,tier a celebrity,74.0,1,1,1,1,0,2,bar,greek,3,1,5,5,5,5,6,9.0,,5.0,,,10,7,3,1,6,2010.0,10.0,0,1,0,0,algerian,belgian,0
+"tibetan,greek",noida,near party hub,75.4,tier a celebrity,76.6,1,1,1,1,1,2,bar,arabian,2,0,3,4,5,6,8,10.0,4.0,,,,9,5,3,2,6,2010.0,1.0,1,0,0,0,tibetan,greek,0
+"welsh,thai",-1,near party hub,90.81,not specific,94.91,1,1,1,1,1,2,bar,greek,4,0,6,5,5,3,7,7.0,4.0,2.0,,,7,5,5,4,3,2011.0,2.0,1,1,0,0,welsh,thai,1
+"algerian,belgian",pune,near party hub,67.2,not specific,58.0,1,1,0,1,1,2,bar,arabian,1,1,5,4,5,1,5,10.0,4.0,,,,5,1,6,4,7,2005.0,11.0,1,0,0,0,algerian,belgian,0
+"nigerian,cajun",hyderabad,near party hub,88.5,not specific,94.1,1,1,1,1,1,2,bar,greek,3,1,3,5,4,4,10,7.0,,2.0,2.0,,9,6,6,0,6,2011.0,10.0,0,1,1,0,nigerian,cajun,0
+"japanese,thai",-1,near party hub,85.38,not specific,83.34,1,1,1,0,1,2,bar,arabian,1,1,7,6,5,6,7,9.0,4.0,,5.0,,7,9,8,1,7,2011.0,3.0,1,0,1,0,japanese,thai,1
+"indian,irish",baripada,near party hub,82.0,not specific,62.3,1,1,1,1,1,2,bar,nature,2,0,3,5,4,4,5,6.0,,,,2.0,4,4,4,3,3,2009.0,4.0,0,0,0,1,indian,irish,0
+"tibetan,greek",chennai,near party hub,71.2,tier a celebrity,85.5,1,1,1,0,1,2,bar,greek,3,1,9,6,5,3,8,6.0,3.0,2.0,,,6,8,6,7,8,2011.0,8.0,1,1,0,0,tibetan,greek,0
+"chinese,salvadorian",pune,near business hub,70.0,not specific,62.0,1,1,1,1,1,2,bar,arabian,2,1,10,3,4,2,10,7.0,3.0,,3.0,,6,5,5,3,6,2011.0,5.0,1,0,1,0,chinese,salvadorian,0
+"tibetan,italian",gurgaon,near party hub,76.4,not specific,78.2,1,1,1,1,0,2,bar,greek,1,1,4,5,5,5,9,7.0,3.0,3.0,,,5,9,6,6,6,2007.0,2.0,1,1,0,0,tibetan,italian,0
+"tibetan,greek",bhubaneswar,near business hub,90.8,not specific,88.0,1,1,1,1,1,2,bar,chinese,4,0,8,3,5,6,7,9.0,,,,,10,8,5,2,9,2011.0,3.0,0,0,0,0,tibetan,greek,0
+"turkish,nigerian",bangalore,near business hub,81.86,tier a celebrity,81.66,1,1,1,1,1,2,bar,greek,4,1,9,6,5,7,10,10.0,4.0,3.0,,,6,7,2,6,6,2010.0,3.0,1,1,0,0,turkish,nigerian,0
+"welsh,thai",noida,near party hub,65.4,tier a celebrity,60.4,1,1,1,1,1,2,caffee,arabian,3,0,6,6,5,7,10,9.0,5.0,,,,7,7,7,3,3,2008.0,3.0,1,0,0,0,welsh,thai,0
+"tibetan,greek",bhubaneshwar,near business hub,79.33,not specific,50.0,1,0,1,0,1,2,caffee,arabian,4,0,3,4,5,2,10,9.0,5.0,,,,8,10,6,3,8,2007.0,4.0,1,0,0,0,tibetan,greek,0
+"chinese,salvadorian",kolkata,near party hub,71.73,not specific,68.17,1,1,1,1,1,2,bar,chinese,2,0,9,3,3,4,10,7.0,,3.0,,,8,9,7,6,7,2008.0,8.0,0,1,0,0,chinese,salvadorian,0
+"welsh,thai",mumbai,near party hub,77.2,tier a celebrity,80.0,0,1,1,1,1,2,bar,molino,3,0,10,5,5,5,6,7.0,,,,,7,6,6,1,7,2011.0,3.0,0,0,0,0,welsh,thai,0
+"tibetan,greek",hyderabad,near party hub,65.0,not specific,87.9,1,1,0,1,1,2,bar,arabian,2,0,1,4,4,4,10,7.0,3.0,,,,6,3,4,7,3,2011.0,7.0,1,0,0,0,tibetan,greek,0
+"indian,irish",noida,near business hub,81.0,tier a celebrity,84.0,0,1,1,0,1,2,caffee,arabian,3,0,8,5,5,5,6,10.0,4.0,,,,6,5,4,4,6,2007.0,5.0,1,0,0,0,indian,irish,0
+"tibetan,greek",gurgaon,near party hub,65.17,not specific,66.2,1,1,1,1,1,2,bar,90's,3,0,2,5,5,6,6,9.0,5.0,,5.0,,6,6,6,1,7,2009.0,6.0,1,0,1,0,tibetan,greek,0
+"irish,belgian",lucknow,near party hub,73.0,tier a celebrity,70.0,1,1,1,1,1,2,bar,arabian,2,0,1,5,5,3,10,6.0,3.0,,,,7,9,9,4,6,2009.0,9.0,1,0,0,0,irish,belgian,0
+"chinese,salvadorian",-1,near party hub,69.0,not specific,81.4,1,1,1,1,0,2,bar,arabian,2,0,1,4,5,5,9,10.0,5.0,,4.0,,4,7,6,6,5,2009.0,11.0,1,0,1,0,chinese,salvadorian,1
+"chinese,salvadorian",mumbai,near party hub,71.07,not specific,51.23,1,1,0,1,1,2,bar,greek,2,0,1,4,4,3,10,,,,,,8,9,6,3,6,2010.0,3.0,0,0,0,0,chinese,salvadorian,0
+"indian,irish",bangalore,near party hub,77.0,tier a celebrity,63.0,1,1,1,1,1,2,bar,arabian,2,0,1,5,4,4,6,10.0,4.0,,,,3,7,4,8,9,2007.0,7.0,1,0,0,0,indian,irish,0
+"cuban,british",new delhi,near party hub,85.2,tier a celebrity,64.0,1,1,0,1,1,2,bar,arabian,2,0,5,4,4,4,7,6.0,4.0,,2.0,,8,9,7,4,8,2011.0,10.0,1,0,1,0,cuban,british,0
+"polish,jewish",rudrapur,near party hub,79.6,not specific,68.4,1,1,0,0,1,2,bar,nature,3,0,1,4,5,5,7,10.0,,,,4.0,6,9,5,5,6,2008.0,3.0,0,0,0,1,polish,jewish,0
+"british,japanese",bangalore,near business hub,93.0,not specific,85.0,1,1,1,1,1,2,bar,arabian,3,0,9,6,6,6,7,9.0,5.0,,,,6,8,7,5,6,2010.0,7.0,1,0,0,0,british,japanese,0
+"tibetan,italian",-1,near business hub,78.0,not specific,81.0,1,1,1,1,0,2,bar,90's,4,0,8,4,5,5,7,10.0,4.0,,,,7,7,7,2,8,2008.0,7.0,1,0,0,0,tibetan,italian,1
+"tibetan,greek",navi mumbai,near party hub,82.8,not specific,89.2,1,1,1,1,1,2,bar,greek,3,0,5,4,3,5,8,9.0,7.0,4.0,,,6,6,6,4,6,2011.0,6.0,1,1,0,0,tibetan,greek,0
+"turkish,sapnish",chennai,near party hub,90.3,not specific,96.25,0,1,1,1,1,2,bar,greek,4,0,1,5,5,5,9,6.0,5.0,2.0,,,8,8,5,2,7,2009.0,9.0,1,1,0,0,turkish,sapnish,0
+"algerian,belgian",-1,near business hub,82.0,tier a celebrity,64.0,1,1,1,0,1,2,bar,arabian,3,0,6,5,5,4,6,6.0,3.0,,2.0,,3,9,4,9,7,2011.0,4.0,1,0,1,0,algerian,belgian,1
+"chinese,salvadorian",navi mumbai,near party hub,67.0,not specific,72.0,1,1,1,0,1,2,bar,nature,3,0,7,6,5,4,8,10.0,,,,4.0,8,6,5,6,7,2011.0,10.0,0,0,0,1,chinese,salvadorian,0
+"tibetan,greek",noida,near party hub,60.0,tier a celebrity,64.0,1,1,1,1,1,2,caffee,arabian,3,1,6,3,5,4,8,7.0,3.0,,,,5,6,4,3,5,2007.0,10.0,1,0,0,0,tibetan,greek,0
+"british,japanese",dehradun,near party hub,72.2,not specific,76.8,1,1,1,1,1,2,bar,90's,3,0,7,4,4,5,6,7.0,4.0,,3.0,,8,9,6,4,8,2010.0,8.0,1,0,1,0,british,japanese,0
+"japanese,thai",kolkata,near business hub,84.4,tier a celebrity,79.6,1,1,0,0,1,2,bar,arabian,3,1,10,3,5,4,8,10.0,4.0,,,,7,4,5,4,5,2010.0,4.0,1,0,0,0,japanese,thai,0
+"british,japanese",madurai,near business hub,73.2,tier a celebrity,86.5,1,1,1,1,1,2,bar,greek,4,0,4,4,5,5,10,8.0,,1.0,,,5,6,2,2,5,2012.0,1.0,0,1,0,0,british,japanese,0
+"welsh,thai",bangalore,near party hub,87.68,not specific,75.0,1,1,0,1,0,2,bar,chinese,2,1,3,4,4,2,5,,4.0,,3.0,,7,6,7,0,6,2011.0,5.0,1,0,1,0,welsh,thai,0
+"chinese,salvadorian",new delhi,near business hub,57.0,not specific,73.0,1,1,1,1,1,2,bar,arabian,3,0,7,5,4,5,7,10.0,3.0,,4.0,,5,6,5,7,8,2012.0,3.0,1,0,1,0,chinese,salvadorian,0
+"tibetan,greek",lucknow,near party hub,67.0,not specific,58.0,0,1,1,1,0,2,bar,90's,2,0,4,3,3,5,10,7.0,3.0,,,,4,0,0,5,3,2010.0,9.0,1,0,0,0,tibetan,greek,0
+"tibetan,greek",pune,near party hub,88.0,tier a celebrity,76.0,0,1,1,0,0,2,bar,arabian,3,0,1,5,5,6,10,9.0,6.0,,,,7,8,5,4,5,2009.0,9.0,1,0,0,0,tibetan,greek,0
+"british,japanese",raipur,near party hub,74.0,not specific,81.0,0,1,1,1,1,2,bar,arabian,3,0,5,3,4,2,9,9.0,4.0,,5.0,,9,8,10,2,6,2009.0,8.0,1,0,1,0,british,japanese,0
+"tibetan,greek",pune,near party hub,76.16,not specific,66.5,1,1,1,1,1,2,bar,arabian,2,0,2,4,7,4,10,10.0,4.0,,,,7,7,5,4,5,2008.0,3.0,1,0,0,0,tibetan,greek,0
+"chinese,salvadorian",bilaspur,near party hub,82.62,not specific,61.0,1,1,1,1,1,2,bar,arabian,2,0,1,4,3,4,10,6.0,2.0,,,,7,8,9,3,6,2011.0,6.0,1,0,0,0,chinese,salvadorian,0
+"algerian,algerian",chennai,near business hub,93.0,not specific,89.0,1,1,1,0,1,2,bar,90's,4,0,7,3,4,3,5,10.0,4.0,,4.0,,5,7,5,7,5,2012.0,10.0,1,0,1,0,algerian,algerian,0
+"algerian,belgian",dausa,near party hub,83.0,not specific,70.0,1,1,0,1,1,2,bar,arabian,3,1,3,3,5,4,8,10.0,4.0,,,,6,7,7,4,8,2008.0,10.0,1,0,0,0,algerian,belgian,0
+"tibetan,italian",gurgaon,near business hub,88.75,tier a celebrity,88.75,1,1,1,0,1,2,bar,arabian,4,0,5,5,4,5,8,9.0,5.0,,,,4,7,5,5,8,2007.0,11.0,1,0,0,0,tibetan,italian,0
+"welsh,thai",asifabadbanglore,near business hub,78.72,not specific,69.88,0,1,1,1,1,2,bar,arabian,3,1,5,4,4,3,8,10.0,4.0,,4.0,,6,7,5,4,6,2011.0,3.0,1,0,1,0,welsh,thai,0
+"turkish,nigerian",mumbai,near party hub,84.0,not specific,85.3,1,1,0,0,1,2,bar,arabian,2,0,6,5,5,5,7,10.0,4.0,,,,5,6,6,4,7,2008.0,3.0,1,0,0,0,turkish,nigerian,0
+"chinese,salvadorian",chennai,near party hub,81.4,not specific,72.0,1,1,1,1,1,2,bar,nature,3,1,4,4,3,3,6,8.0,3.0,,,3.0,4,7,4,3,4,2008.0,7.0,1,0,0,1,chinese,salvadorian,0
+"tibetan,greek",jaipur,near party hub,74.0,tier a celebrity,75.0,1,1,0,1,1,2,bar,greek,2,1,1,4,5,6,10,9.0,5.0,4.0,,,6,7,8,3,4,2011.0,3.0,1,1,0,0,tibetan,greek,0
+"swedish,greek",bangalore,near business hub,89.44,not specific,75.33,1,1,0,0,1,2,bar,arabian,2,0,4,5,4,3,6,10.0,4.0,,,,8,7,9,4,7,2010.0,6.0,1,0,0,0,swedish,greek,0
+"indian,irish",hyderabad,near party hub,91.0,not specific,96.7,1,1,1,1,1,2,bar,greek,4,0,4,6,5,6,9,9.0,,4.0,,,5,8,5,4,7,2010.0,7.0,0,1,0,0,indian,irish,0
+"peruvian,cuban",kolkata,near business hub,72.5,not specific,67.0,0,1,0,0,1,2,bar,greek,3,1,8,5,4,4,8,,,,,,9,10,7,2,8,2010.0,11.0,0,0,0,0,peruvian,cuban,0
+"tibetan,greek",noida,near party hub,85.0,tier a celebrity,84.0,1,1,1,1,0,2,bar,90's,2,0,2,5,4,5,7,10.0,4.0,,,,9,8,6,6,8,2008.0,12.0,1,0,0,0,tibetan,greek,0
+"british,japanese",mohali,near party hub,72.0,tier a celebrity,75.6,1,1,1,1,1,2,bar,arabian,3,0,5,5,3,4,5,9.0,4.0,,5.0,,8,9,8,6,10,2011.0,8.0,1,0,1,0,british,japanese,0
+"algerian,korean",rajpura,near party hub,84.2,not specific,69.2,0,1,1,1,1,2,bar,molino,2,0,8,4,6,5,6,9.0,,,,,4,7,1,3,7,2006.0,12.0,0,0,0,0,algerian,korean,0
+"indian,irish",bangalore,near party hub,46.0,not specific,56.0,1,1,1,1,0,2,caffee,arabian,3,1,8,5,4,6,7,10.0,4.0,,,,7,6,4,3,6,2004.0,1.0,1,0,0,0,indian,irish,0
+"peruvian,cuban",new delhi,near party hub,72.0,tier a celebrity,62.0,1,1,1,1,1,2,bar,arabian,2,0,6,3,3,4,8,6.0,2.0,,,,8,7,7,8,7,2010.0,11.0,1,0,0,0,peruvian,cuban,0
+"swedish,greek",jaipur,near party hub,67.17,not specific,61.23,1,1,1,1,1,2,bar,arabian,2,1,10,4,4,6,6,7.0,3.0,,,,7,2,2,4,2,2011.0,6.0,1,0,0,0,swedish,greek,0
+"turkish,nigerian",-1,near party hub,84.2,tier a celebrity,91.2,1,1,0,1,1,1,bar,greek,3,1,1,5,5,7,9,10.0,3.0,3.0,,,7,6,4,4,3,2012.0,1.0,1,1,0,0,turkish,nigerian,1
+"tibetan,greek",bangalore,near party hub,63.0,tier a celebrity,74.83,0,1,1,1,1,2,bar,greek,2,1,5,4,5,4,5,7.0,4.0,2.0,3.0,,6,4,6,2,4,2011.0,1.0,1,1,1,0,tibetan,greek,0
+"tibetan,greek",-1,near party hub,79.0,tier a celebrity,56.0,0,1,0,1,0,2,bar,greek,2,0,8,4,5,4,6,6.0,,2.0,,,7,5,5,6,8,2008.0,9.0,0,1,0,0,tibetan,greek,1
+"tibetan,greek",noida,near party hub,85.0,tier a celebrity,82.0,1,1,1,1,1,2,bar,greek,3,0,6,5,6,6,9,,5.0,,3.0,,8,8,7,2,6,2011.0,9.0,1,0,1,0,tibetan,greek,0
+"tibetan,greek",noida,near party hub,91.3,tier a celebrity,81.0,0,1,1,1,1,2,bar,arabian,4,0,4,5,4,5,5,9.0,5.0,,,,9,10,5,5,7,2008.0,7.0,1,0,0,0,tibetan,greek,0
+"chinese,salvadorian",-1,near party hub,84.0,not specific,84.0,1,1,1,1,1,2,bar,90's,2,0,8,4,3,3,5,8.0,3.0,,3.0,,9,10,9,0,7,2011.0,7.0,1,0,1,0,chinese,salvadorian,1
+"british,japanese",-1,near party hub,91.6,not specific,86.6,1,1,1,1,1,2,bar,arabian,4,0,7,5,5,5,6,9.0,5.0,,,,9,7,0,3,7,2011.0,1.0,1,0,0,0,british,japanese,1
+"algerian,korean",new delhi,near party hub,51.42,not specific,55.44,1,1,1,1,0,2,caffee,arabian,2,0,3,3,4,4,10,8.0,4.0,,3.0,,10,8,2,3,6,2009.0,12.0,1,0,1,0,algerian,korean,0
+"algerian,belgian",hyderabad,near party hub,75.83,not specific,78.6,1,1,1,1,1,2,bar,arabian,2,0,8,3,4,5,10,8.0,4.0,,,,8,8,5,5,5,2009.0,9.0,1,0,0,0,algerian,belgian,0
+"turkish,nigerian",-1,near party hub,67.33,not specific,64.0,1,1,1,1,0,1,caffee,arabian,4,0,2,4,4,4,6,9.0,6.0,,,,7,5,7,6,4,2008.0,10.0,1,0,0,0,turkish,nigerian,1
+"irish,belgian",bangalore,near party hub,86.5,not specific,90.6,1,0,1,0,1,2,caffee,arabian,3,0,8,5,6,6,9,9.0,5.0,,,,9,8,4,2,6,2008.0,5.0,1,0,0,0,irish,belgian,0
+"cuban,british",-1,near business hub,88.3,not specific,83.5,1,1,1,1,1,2,bar,arabian,2,0,9,5,5,5,7,9.0,6.0,,,,6,7,5,4,7,2011.0,10.0,1,0,0,0,cuban,british,1
+"turkish,nigerian",-1,near party hub,90.8,not specific,86.6,0,1,1,1,1,2,bar,greek,3,0,6,4,5,4,9,,3.0,,,,8,10,9,5,8,2007.0,6.0,1,0,0,0,turkish,nigerian,1
+"tibetan,greek",chennai,near party hub,91.17,not specific,87.2,1,1,1,1,1,2,bar,90's,2,1,8,5,6,7,8,10.0,4.0,,,,9,8,6,2,6,2011.0,7.0,1,0,0,0,tibetan,greek,0
+"welsh,thai",hyderabad,near party hub,82.6,tier a celebrity,81.8,1,1,1,1,1,2,bar,90's,2,0,9,7,4,6,8,9.0,5.0,,,,5,8,5,4,8,2010.0,2.0,1,0,0,0,welsh,thai,0
+"british,japanese",bangalore,near business hub,84.93,not specific,81.67,1,1,1,1,1,2,caffee,arabian,3,0,10,5,5,5,10,9.0,5.0,,,,6,9,9,1,4,2005.0,2.0,1,0,0,0,british,japanese,0
+"peruvian,cuban",dammam,near party hub,87.4,tier a celebrity,63.0,1,1,1,0,1,1,bar,nature,1,1,10,5,5,4,6,9.0,,,,4.0,5,6,5,4,6,2010.0,1.0,0,0,0,1,peruvian,cuban,0
+"welsh,thai",jaipur,near party hub,54.5,not specific,72.4,1,1,1,1,1,2,bar,arabian,2,0,7,3,2,2,10,6.0,1.0,,,,6,1,2,4,2,2009.0,1.0,1,0,0,0,welsh,thai,0
+"irish,belgian",noida,near party hub,71.33,not specific,54.8,1,1,1,1,1,2,bar,90's,2,0,1,5,4,5,5,8.0,4.0,,,,7,6,6,7,5,2011.0,11.0,1,0,0,0,irish,belgian,0
+"tibetan,italian",new delhi,near business hub,86.7,tier a celebrity,80.6,1,1,1,0,1,2,bar,greek,3,0,7,4,5,4,8,7.0,,3.0,,,4,3,4,7,2,2009.0,1.0,0,1,0,0,tibetan,italian,0
+"british,japanese",pilani,near party hub,74.33,not specific,82.2,1,1,1,1,1,2,bar,greek,3,1,2,3,5,5,5,9.0,,4.0,,,8,8,5,5,5,2009.0,9.0,0,1,0,0,british,japanese,0
+"welsh,thai",shahibabad,near party hub,68.83,not specific,69.6,1,1,1,1,1,2,bar,nature,3,0,7,3,4,7,10,10.0,,,,4.0,7,9,6,6,8,2012.0,6.0,0,0,0,1,welsh,thai,0
+"tibetan,greek",gurgaon,near party hub,53.4,tier a celebrity,65.4,1,1,1,1,1,2,bar,arabian,3,0,10,5,4,6,5,9.0,5.0,,5.0,,7,6,5,2,9,2010.0,12.0,1,0,1,0,tibetan,greek,0
+"algerian,belgian",gurgaon,near party hub,86.4,tier a celebrity,79.8,1,1,1,0,0,2,bar,molino,3,0,3,6,4,4,9,10.0,,,,,4,4,5,6,1,2010.0,12.0,0,0,0,0,algerian,belgian,0
+"tibetan,greek",-1,near party hub,78.0,not specific,91.0,1,1,1,1,0,2,bar,greek,2,1,7,4,4,3,7,,4.0,,3.0,,10,5,6,1,5,2009.0,3.0,1,0,1,0,tibetan,greek,1
+"algerian,korean",bangalore,near party hub,82.4,not specific,66.2,1,1,1,0,1,2,bar,arabian,2,1,9,4,4,5,9,10.0,4.0,,4.0,,6,6,6,5,5,2009.0,6.0,1,0,1,0,algerian,korean,0
+"welsh,thai",new delhi,near party hub,83.0,tier a celebrity,70.0,1,1,1,0,1,2,bar,90's,2,0,2,7,6,7,10,10.0,4.0,,,,6,7,4,6,7,2009.0,4.0,1,0,0,0,welsh,thai,0
+"indian,irish",noida,near party hub,72.0,not specific,72.0,1,1,1,1,1,2,bar,90's,3,0,4,4,5,5,9,9.0,5.0,,,,7,8,5,2,7,2009.0,9.0,1,0,0,0,indian,irish,0
+"tibetan,greek",bangalore,near party hub,78.28,not specific,53.55,1,1,1,1,0,2,bar,90's,1,0,7,5,4,4,9,8.0,3.0,,,,9,8,8,4,8,2007.0,6.0,1,0,0,0,tibetan,greek,0
+"indian,irish",bangalore,near party hub,72.6,tier a celebrity,71.4,0,1,0,0,1,2,bar,90's,2,1,3,6,5,6,8,9.0,5.0,,4.0,,1,6,5,7,2,2010.0,6.0,1,0,1,0,indian,irish,0
+"tibetan,greek",chennai,near party hub,93.4,not specific,95.9,1,1,0,1,0,2,bar,greek,3,0,7,6,6,6,6,9.0,6.0,6.0,,,7,7,2,3,5,2012.0,8.0,1,1,0,0,tibetan,greek,0
+"tibetan,greek",bhopal,near party hub,65.5,not specific,68.2,1,1,0,1,1,2,caffee,arabian,4,0,5,4,5,6,7,9.0,5.0,,,,7,6,6,7,7,2010.0,3.0,1,0,0,0,tibetan,greek,0

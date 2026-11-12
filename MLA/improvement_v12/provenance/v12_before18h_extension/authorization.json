@@ -1,0 +1,13 @@
+{
+  "authorized_by": "User: PLEASE IMPLEMENT THIS PLAN: V12",
+  "maximum_hours": 12,
+  "free_compute_only": true,
+  "cli_only": true,
+  "max_settings": 4,
+  "max_portal_trials": 2,
+  "automatic_portal_upload": false,
+  "working_deadline_IST": "2026-10-29T23:59:00+05:30",
+  "training_stop_IST": "2026-10-29T18:00:00+05:30",
+  "artifact_stop_IST": "2026-10-29T21:00:00+05:30",
+  "created_at_UTC": "2026-10-28T03:58:18.006318+00:00"
+}

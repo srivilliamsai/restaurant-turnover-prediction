@@ -1,0 +1,15 @@
+{
+  "seconds": 7258.695822252192,
+  "by_stage": {
+    "setup": 1125.902727427194,
+    "audit": 10.001569710000524,
+    "pilot": 6107.536858076
+  },
+  "maximum_hours": 12,
+  "measurement": "Accumulated stage wall time plus conservatively charged unobserved interruption interval.",
+  "resume_repair_receipt": {
+    "seconds": 602.3473789691925,
+    "started_UTC": "2026-10-28T07:41:57.728137+00:00",
+    "reason": "Repair completed-pilot reuse and bounded isolated pilot workers; preserve first run charge."
+  }
+}

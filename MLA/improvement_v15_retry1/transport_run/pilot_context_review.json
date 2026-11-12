@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "completed_pilot_contexts_independently_checked": [
+    {
+      "name": "F40-T080",
+      "result_sha256": "9ccc68342b287e118a285f7dd58abcebe24e2bc8bfdb7f0f09583db53ef942c6",
+      "status": "PASS",
+      "exact_checkpoint_architecture": true,
+      "fold_and_target_identity_verified": true,
+      "input_features": 40,
+      "fold_seconds": 28.245101604999945,
+      "engineering_seconds": 253.907839459,
+      "peak_gpu_GiB": 6.558513641357422,
+      "maximum_repeat_difference_INR": 0.0,
+      "numerical_behavior_passed": true
+    },
+    {
+      "name": "F40-T120",
+      "result_sha256": "f73b38d6defad47902fec1f7756cf10c6f944ff4708fd79091c1bc5c61fb874b",
+      "status": "PASS",
+      "exact_checkpoint_architecture": true,
+      "fold_and_target_identity_verified": true,
+      "input_features": 40,
+      "fold_seconds": 23.725044841,
+      "engineering_seconds": 253.937747499,
+      "peak_gpu_GiB": 6.558513641357422,
+      "maximum_repeat_difference_INR": 0.0,
+      "numerical_behavior_passed": true
+    },
+    {
+      "name": "N32-T080",
+      "result_sha256": "5abdaf30f7d0e9b3c0fa7903ba359125076d8aaf6c9c010ad82502a5dec876ca",
+      "status": "PASS",
+      "exact_checkpoint_architecture": true,
+      "fold_and_target_identity_verified": true,
+      "input_features": 32,
+      "fold_seconds": 23.680411176999996,
+      "engineering_seconds": 253.423631354,
+      "peak_gpu_GiB": 6.558513641357422,
+      "maximum_repeat_difference_INR": 0.0,
+      "numerical_behavior_passed": true
+    },
+    {
+      "name": "N32-T100",
+      "result_sha256": "b21748fce778c151d3617b84b932f4f022a2581d7a2648425f58bbe938a32674",
+      "status": "PASS",
+      "exact_checkpoint_architecture": true,
+      "fold_and_target_identity_verified": true,
+      "input_features": 32,
+      "fold_seconds": 23.534438343000147,
+      "engineering_seconds": 253.41487606500004,
+      "peak_gpu_GiB": 6.558513641357422,
+      "maximum_repeat_difference_INR": 0.0,
+      "numerical_behavior_passed": true
+    },
+    {
+      "name": "N32-T120",
+      "result_sha256": "5d2f716289a649d77fc88b913318c9280479d97a9ffb70977d061fb23e3cbb5c",
+      "status": "PASS",
+      "exact_checkpoint_architecture": true,
+      "fold_and_target_identity_verified": true,
+      "input_features": 32,
+      "fold_seconds": 23.62170980399992,
+      "engineering_seconds": 253.32484929199995,
+      "peak_gpu_GiB": 6.558513641357422,
+      "maximum_repeat_difference_INR": 0.0,
+      "numerical_behavior_passed": true
+    }
+  ],
+  "all_five_original_settings_passed": true,
+  "accuracy_scores_used_for_engineering_selection": false,
+  "epoch": 1793245515.943827
+}

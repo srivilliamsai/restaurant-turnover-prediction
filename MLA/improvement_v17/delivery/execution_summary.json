@@ -1,0 +1,25 @@
+{
+  "complete": true,
+  "qualified": false,
+  "outer_fold_outputs": 10,
+  "blend_comparisons": 5,
+  "best": {
+    "name": "NOR15",
+    "route": "V14-blend",
+    "weight": "0.5",
+    "effective_new_share": "0.5",
+    "rmse_42": "19626495.839896",
+    "gain_42": "22537.716265767813",
+    "relative_gain_42": "0.0011470139842425064",
+    "rmse_71": "19634585.922984365",
+    "gain_71": "15319.531426530331",
+    "relative_gain_71": "0.0007796236710691905",
+    "mean_relative_gain": "0.0009633188276558485"
+  },
+  "all_original_labels": 3493,
+  "owned_runtime_released": true,
+  "portal_uploads": 0,
+  "elapsed_seconds_including_setup_and_local_verification": 3318.718649148941,
+  "maximum_hours": 6,
+  "paid_resources": false
+}

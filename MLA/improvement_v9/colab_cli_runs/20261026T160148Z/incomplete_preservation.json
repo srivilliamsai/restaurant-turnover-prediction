@@ -1,0 +1,17 @@
+{
+  "status": "preserved_incomplete",
+  "release_ready": false,
+  "failed_gate": "scored V7 reproduction within INR 0.01",
+  "files": {
+    "failure.json": {
+      "sha256": "a19154d689ba12bfcecfe48c970f435894050187be7616c3f29fe82e4f48407f",
+      "bytes": 464
+    },
+    "failed_v7_reproduction.npz": {
+      "sha256": "0a14e4b4c23dcc70f7f4dc8dfd50d96716c670786e0d2d69ba7c88ebb316addf",
+      "bytes": 7986
+    }
+  },
+  "new_model_fits": 0,
+  "portal_uploads": 0
+}

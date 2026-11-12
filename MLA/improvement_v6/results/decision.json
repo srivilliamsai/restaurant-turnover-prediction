@@ -1,0 +1,12 @@
+{
+  "decision": "retain portal-scored v5",
+  "choice": {
+    "name": "v5",
+    "family": "v5",
+    "weight": 0.0
+  },
+  "candidates": [],
+  "qualified": [],
+  "lock_sha256": "e3dd56f7f67a2c48353b33a3d774ae500fbdfa94f543f1f98dc23450d6e1ae1a",
+  "limitation": "All splits reuse previously examined labels; portal accuracy remains unmeasured."
+}

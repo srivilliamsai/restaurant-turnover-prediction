@@ -1,0 +1,12 @@
+{
+  "basis": "First completed new-account engineering pilot; conservative first-fold fit timing applied to all remaining folds.",
+  "elapsed_seconds": 2324.1033129692078,
+  "engineering_pilots_completed": 1,
+  "remaining_pilots_estimate_seconds": 1015.631357836,
+  "development_and_confirmation_maximum_new_fits": 75,
+  "remaining_compute_forecast_with_30_percent_contingency_seconds": 4074.218171674295,
+  "compute_allowance_before_delivery_reserve_seconds": 4875.896687030792,
+  "delivery_reserve_seconds": 7200,
+  "forecast_fits_overall_budget": true,
+  "epoch": 1793244525.103563
+}

@@ -1,0 +1,70 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/layer6ai-labs/TabDPT-inference/93670551adba28b186354fab9a1584c56c34aa76/src/tabdpt/estimator.py",
+    "path": "improvement_v19/research_sources/TabDPT-inference/src/tabdpt/estimator.py",
+    "sha256": "81a345826a5534d9e4a5916ab4dd11f815a17787703eb54a42b7c968a2992678",
+    "bytes": 15390,
+    "status": "read"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/layer6ai-labs/TabDPT-inference/93670551adba28b186354fab9a1584c56c34aa76/src/tabdpt/utils.py",
+    "path": "improvement_v19/research_sources/TabDPT-inference/src/tabdpt/utils.py",
+    "sha256": "5b6eb9ad2f49f18e99d1a850209263924ff8a2941a0b976a57511408803237c7",
+    "bytes": 3630,
+    "status": "read"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/NVIDIA/structured-data-models/2b1696f4fdc22004cc757c44703a69cf326c0a11/sdm/models/icl.py",
+    "status": "failed",
+    "error_type": "HTTPError"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/NVIDIA/structured-data-models/2b1696f4fdc22004cc757c44703a69cf326c0a11/sdm/models/kumo/tabular/batching.py",
+    "path": "improvement_v19/research_sources/structured-data-models/sdm/models/kumo/tabular/batching.py",
+    "sha256": "4b9eded8f1b3fbc175a2d1e3ccf964c2a368378b15abd3e17ca48b51a19c31af",
+    "bytes": 4968,
+    "status": "read"
+  },
+  {
+    "url": "https://huggingface.co/api/models/nums-ai/causilo/revision/94f2bd91db0737d4da59f347910662905ecb5a09?blobs=true",
+    "path": "improvement_v19/research_sources/nums-ai_causilo_hub_metadata.json",
+    "sha256": "ce5d3f7f70d6fc4b40bf7a01ab7cb429bd71514d15da2c624f3ba1d9f803f22f",
+    "bytes": 1932,
+    "status": "read"
+  },
+  {
+    "url": "https://huggingface.co/api/models/nvidia/Kumo-Tabular/revision/v1.0.1?blobs=true",
+    "path": "improvement_v19/research_sources/nvidia_Kumo-Tabular_hub_metadata.json",
+    "sha256": "afc2d2dd390365c4c36266a164277d9b4f976865e18d13d894d4a72b3c7b43b7",
+    "bytes": 2497,
+    "status": "read"
+  },
+  {
+    "url": "https://huggingface.co/api/models/Layer6/TabDPT?blobs=true",
+    "path": "improvement_v19/research_sources/Layer6_TabDPT_hub_metadata.json",
+    "sha256": "474d01f0aa513d9fba61fa3098910204c211195f46a555eb087da063cad4b8f9",
+    "bytes": 1696,
+    "status": "read"
+  },
+  {
+    "url": "https://pypi.org/pypi/causilo/json",
+    "path": "improvement_v19/research_sources/causilo_pypi_metadata.json",
+    "sha256": "d77317fcb6bcbaa87a76032e72270ba1cf81ed79c830c749f13cfac7d8ca7445",
+    "bytes": 16258,
+    "status": "read"
+  },
+  {
+    "url": "https://pypi.org/pypi/tabdpt/json",
+    "path": "improvement_v19/research_sources/tabdpt_pypi_metadata.json",
+    "sha256": "40d1162cb6bfe9cad60f239c75aa364e5b1e73130dad885e53cd613f2914cd17",
+    "bytes": 42838,
+    "status": "read"
+  },
+  {
+    "url": "https://pypi.org/pypi/structured-data-models/json",
+    "path": "improvement_v19/research_sources/structured-data-models_pypi_metadata.json",
+    "sha256": "3223172b8bae959eb51d50673e2c22b3fbfd5b5eae453ecd58d6f514682ad6f6",
+    "bytes": 13834,
+    "status": "read"
+  }
+]

@@ -1,0 +1,42 @@
+{"phase": "checking_user_selected_account", "pid": 28783, "task_elapsed_seconds": 261.58562684059143, "maximum_hours": 4}
+{"user_selected_account_verified": true, "active_assignments": 0, "epoch": 1793281400.150027, "account_identity_sha256": "REDACTED"}
+{"phase": "allocating_owned_free_t4", "pid": 28783, "task_elapsed_seconds": 264.27407479286194, "maximum_hours": 4, "allocation_number": 1}
+{"allocated": true, "owned_session": "v22-free-t4", "accelerator": "T4", "high_memory_requested": false}
+{"phase": "installing_dependencies", "pid": 28783, "task_elapsed_seconds": 269.24239110946655, "maximum_hours": 4}
+{"existing_kernel_selected": true}
+V22 pinned dependencies installed; restart kernel before training.
+{"server_completion_verified": true}
+{"phase": "restarting_clean_kernel", "pid": 28783, "task_elapsed_seconds": 303.6637408733368, "maximum_hours": 4}
+{"phase": "uploading_frozen_workflow", "pid": 28783, "task_elapsed_seconds": 306.1860649585724, "maximum_hours": 4}
+V22 sources, official inputs and verified controls uploaded.
+{"server_completion_verified": true}
+{"phase": "running_audit", "pid": 28783, "task_elapsed_seconds": 318.6346879005432, "maximum_hours": 4}
+V22 foreground stage: audit timeout seconds 2378
+V22 stage complete: audit
+{"server_completion_verified": true}
+{"phase": "running_pilot", "pid": 28783, "task_elapsed_seconds": 326.77777791023254, "maximum_hours": 4}
+V22 foreground stage: pilot timeout seconds 2372
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+{"snapshot": "saved", "new_complete_folds": 0, "stage_status": {"stage": "audit", "status": "complete"}}
+Owned V22 free T4 released.
+{"phase": "stopped", "pid": 28783, "task_elapsed_seconds": 632.9520671367645, "maximum_hours": 4, "artifacts_collected": false, "owned_runtime_released": true}
+Traceback (most recent call last):
+  File "./improvement_v22/run_colab.py", line 153, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "./improvement_v22/run_colab.py", line 119, in main
+    control('stage',stage,timeout=remaining(),backup=True)
+  File "./improvement_v22/run_colab.py", line 61, in control
+    return command([sys.executable,CONTROL,action,*([value] if value else [])],timeout,backup=backup)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "./improvement_v22/run_colab.py", line 53, in command
+    try:process.wait(timeout=5)
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 1264, in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 2047, in _wait
+    time.sleep(delay)
+KeyboardInterrupt

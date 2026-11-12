@@ -1,0 +1,19 @@
+{
+  "version": "v7_trial_1",
+  "portal_rmse": 12024316.5355221,
+  "rank_in_screenshot": 24,
+  "previous_best_portal_rmse": 12046722.3691139,
+  "rmse_reduction": 22405.8335918,
+  "relative_reduction_percent": 0.18599111779354527,
+  "csv": "candidates/trial_1/submission.csv",
+  "csv_sha256": "5f20ea8d610e325c0eae4727b7ed8c737ce2d881239792c9a6af5ce4e3dec1ba",
+  "source": "User-provided portal screenshot in this conversation",
+  "screenshot": "/tmp/TemporaryItems/NSIRD_screencaptureui_3Q4hNQ/Screenshot 2026-10-26 at 7.00.26\u202fPM.png",
+  "screenshot_date": "2026-10-26",
+  "submission_time": null,
+  "attribution": "Associated with Trial 1 from the preceding upload recommendation and user response. The screenshot does not independently display the filename or hash.",
+  "agent_performed_upload": false,
+  "recommended_current_submission": "v7_trial_1",
+  "trial_2_portal_score": null,
+  "screenshot_sha256": "14376a688da8a7de2c2644d17e8a54623f3934727f5dfd1a1fb0a6d7e8ef63a8"
+}

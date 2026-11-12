@@ -1,0 +1,13 @@
+{
+  "version": "V15",
+  "status": "NOT_RUN: interrupted during fifth engineering pilot; original wall-clock budget expired",
+  "portal_uploads": 0,
+  "actual_portal_rmse_INR": null,
+  "new_csv_exported": false,
+  "recommended_version": "V14",
+  "best_observed_submission": {
+    "version": "V14",
+    "rmse_INR": 11736110.7877709
+  },
+  "accuracy_evaluated": false
+}

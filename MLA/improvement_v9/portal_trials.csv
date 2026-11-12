@@ -1,0 +1,3 @@
+version,csv_sha256,portal_rmse,rank,status
+v7_trial_1,5f20ea8d610e325c0eae4727b7ed8c737ce2d881239792c9a6af5ce4e3dec1ba,12024316.5355221,24,previous best; rank 24 in original October 26 screenshot
+v9_trial_1,5a384dc3d8bf58c4e29f0d6cac646aa33afe22bdcdd186cccd9758342769bbd4,11904515.9864996,9,user-uploaded; screenshot-confirmed score; current best

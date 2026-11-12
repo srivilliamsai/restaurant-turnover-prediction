@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "meaning": "Artifact identities and any complete development scores independently reconstructed; not an accuracy qualification",
+  "original_P35_control_contexts": 35,
+  "complete_new_folds": 0,
+  "screening_comparisons_verified": 0,
+  "all_3493_labels_retained": true,
+  "fallback_byte_identical": true,
+  "portal_uploads": 0,
+  "new_portal_score_known": false,
+  "source_revisions_locked": true,
+  "selected_backend": "local_mlx"
+}

@@ -1,0 +1,10 @@
+{
+  "scope": "Original proposal snapshot preserved under planning_original; current execution state is separate.",
+  "approved_plan_sha256": "1b91aaa350da9c773914a603e710c33f07a2da06d68cbcd0203a758f9f013ac6",
+  "files": {
+    "planning_original/evidence_audit.py": "e2816044ee0cc0a66f3b8d4bc0a7990ec1b4d53529419bba08ee3dee1a37b6c6",
+    "planning_original/RESEARCH_SOURCES.md": "03fa026592f48736fa61c555d24ec6ace4173401980189bb21845f38ad8071b3",
+    "planning_original/PLAN.md": "1b91aaa350da9c773914a603e710c33f07a2da06d68cbcd0203a758f9f013ac6",
+    "planning_original/evidence_audit.json": "f5c2762e1976c3d8223c5fe1b1a1e7f5d4bfbba588cf904bb3cb0e9fbc2bf61c"
+  }
+}

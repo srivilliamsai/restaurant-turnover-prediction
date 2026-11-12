@@ -1,0 +1,39 @@
+Traceback (most recent call last):
+  File "/content/mla_v23/experiment.py", line 184, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/content/mla_v23/experiment.py", line 175, in main
+    if args.stage=='resolve':resolve()
+                             ~~~~~~~^^
+  File "/content/mla_v23/experiment.py", line 56, in resolve
+    require(engineering=True);identities()
+                              ~~~~~~~~~~^^
+  File "/content/mla_v23/experiment.py", line 30, in identities
+    for n,h in manifest['files_sha256'].items():assert sha(ROOT/'research_sources/LimiX'/n)==h,'Changed author source: '+n
+                                                       ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/mla_v23/experiment.py", line 11, in sha
+    with Path(path).open('rb') as stream:
+         ~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/content/mla_v23/research_sources/LimiX/environment.yml'
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+{"resolve": "PASS", "checkpoint_sha256": "ed01f7a0a18d25451bc9d1058b479ba6b68048aa1ebde06156c8fcfaf8b8fe81"}
+/usr/local/lib/python3.13/dist-packages/sklearn/preprocessing/_encoders.py:262: UserWarning: Found unknown categories in columns [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13] during transform. These unknown categories will be encoded as all zeros
+  warnings.warn(msg, UserWarning)
+use limix v2.0
+Traceback (most recent call last):
+  File "/content/mla_v23/experiment.py", line 184, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/content/mla_v23/experiment.py", line 176, in main
+    elif args.stage=='pilot':pilot()
+                             ~~~~~^^
+  File "/content/mla_v23/experiment.py", line 96, in pilot
+    single=np.array([adapter.infer(model,state,query.iloc[[i]])[0] for i in range(12)])
+                     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/mla_v23/adapter.py", line 110, in infer
+    assert p.shape==(len(query),) and np.isfinite(p).all()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

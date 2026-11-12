@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "original_feature_count": 40,
+  "target_id_isolation": true,
+  "unknown_categories": true,
+  "missing_unseen_representation": "NaN with train-only vocabularies",
+  "all_training_rows_retained": true,
+  "invalid_checkpoints_rejected": true
+}

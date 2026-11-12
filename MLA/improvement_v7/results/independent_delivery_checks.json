@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "independent_development_scores_recomputed": 96,
+  "independent_confirmation_scores_recomputed": 12,
+  "candidate_notebooks_and_csvs": [
+    {
+      "trial": "trial_1",
+      "code_cells": 10,
+      "csv_rows": 500,
+      "csv_differs_from_v5": true
+    },
+    {
+      "trial": "trial_2",
+      "code_cells": 10,
+      "csv_rows": 500,
+      "csv_differs_from_v5": true
+    }
+  ],
+  "v5_preserved": true,
+  "output_and_implementation_hashes_verified": true,
+  "research_notebook_syntax_and_format_valid": true,
+  "portal_uploads": 0
+}

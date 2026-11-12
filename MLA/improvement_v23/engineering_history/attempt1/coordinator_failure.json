@@ -1,0 +1,6 @@
+{
+  "stage": "coordinator",
+  "type": "AssertionError",
+  "message": "V23 pilot failed; inspect measured evidence",
+  "epoch": 1793294242.806402
+}

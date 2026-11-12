@@ -1,0 +1,112 @@
+[
+  {
+    "name": "P35-SC38",
+    "training_rows": 2794,
+    "units": "raw INR millions",
+    "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+    "model_class": "tabpfn.regressor.TabPFNRegressor",
+    "view": "SC38",
+    "input_features": 38,
+    "temperature": "checkpoint default",
+    "feature_state_sha256": "c4290f5e843eaf83d34f68b332db7f3f309848e17b5c0684c7f25d520a5300c6",
+    "date_expansion": true,
+    "datetime_dependencies": {
+      "skrub": "0.10.1",
+      "pyarrow": "23.0.1"
+    },
+    "architecture_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+    ],
+    "configuration_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"
+    ]
+  },
+  {
+    "name": "P35-SC38",
+    "training_rows": 2794,
+    "units": "raw INR millions",
+    "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+    "model_class": "tabpfn.regressor.TabPFNRegressor",
+    "view": "SC38",
+    "input_features": 38,
+    "temperature": "checkpoint default",
+    "feature_state_sha256": "c4290f5e843eaf83d34f68b332db7f3f309848e17b5c0684c7f25d520a5300c6",
+    "date_expansion": true,
+    "datetime_dependencies": {
+      "skrub": "0.10.1",
+      "pyarrow": "23.0.1"
+    },
+    "architecture_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+    ],
+    "configuration_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"
+    ]
+  },
+  {
+    "name": "P35-SC38",
+    "training_rows": 2794,
+    "units": "raw INR millions",
+    "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+    "model_class": "tabpfn.regressor.TabPFNRegressor",
+    "view": "SC38",
+    "input_features": 38,
+    "temperature": "checkpoint default",
+    "feature_state_sha256": "c4290f5e843eaf83d34f68b332db7f3f309848e17b5c0684c7f25d520a5300c6",
+    "date_expansion": true,
+    "datetime_dependencies": {
+      "skrub": "0.10.1",
+      "pyarrow": "23.0.1"
+    },
+    "architecture_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+    ],
+    "configuration_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"
+    ]
+  },
+  {
+    "name": "P35-SC38",
+    "training_rows": 2795,
+    "units": "raw INR millions",
+    "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+    "model_class": "tabpfn.regressor.TabPFNRegressor",
+    "view": "SC38",
+    "input_features": 38,
+    "temperature": "checkpoint default",
+    "feature_state_sha256": "c4290f5e843eaf83d34f68b332db7f3f309848e17b5c0684c7f25d520a5300c6",
+    "date_expansion": true,
+    "datetime_dependencies": {
+      "skrub": "0.10.1",
+      "pyarrow": "23.0.1"
+    },
+    "architecture_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+    ],
+    "configuration_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"
+    ]
+  },
+  {
+    "name": "P35-SC38",
+    "training_rows": 2795,
+    "units": "raw INR millions",
+    "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+    "model_class": "tabpfn.regressor.TabPFNRegressor",
+    "view": "SC38",
+    "input_features": 38,
+    "temperature": "checkpoint default",
+    "feature_state_sha256": "c4290f5e843eaf83d34f68b332db7f3f309848e17b5c0684c7f25d520a5300c6",
+    "date_expansion": true,
+    "datetime_dependencies": {
+      "skrub": "0.10.1",
+      "pyarrow": "23.0.1"
+    },
+    "architecture_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+    ],
+    "configuration_classes": [
+      "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5Config"
+    ]
+  }
+]

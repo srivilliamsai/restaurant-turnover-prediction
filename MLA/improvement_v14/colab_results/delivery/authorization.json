@@ -1,0 +1,22 @@
+{
+  "version": "V14",
+  "maximum_hours": 8,
+  "paid_resources": false,
+  "started_epoch": 1793205502.2242408,
+  "settings": [
+    "I8",
+    "P35_8"
+  ],
+  "weights": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "routes": [
+    "A",
+    "B"
+  ],
+  "portal_uploads": 0,
+  "user_authorization": "User replied start to the proposed complete V14 plan, including the eight-hour free-compute cap."
+}

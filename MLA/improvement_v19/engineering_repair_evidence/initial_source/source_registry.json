@@ -1,0 +1,145 @@
+{
+  "repositories": [
+    {
+      "repo": "nums-ai/causilo",
+      "branch": "main",
+      "commit": "4d26d497de28734db52c6bfc2ea949c12cc17308",
+      "status": "read",
+      "files": {
+        "README.md": {
+          "sha256": "613d60a3acd7310ab5bf5a0f366c3c5629b8ebcbb1c014a16fae84aeaf01b5d5",
+          "bytes": 6332,
+          "url": "https://github.com/nums-ai/causilo/blob/4d26d497de28734db52c6bfc2ea949c12cc17308/README.md"
+        },
+        "pyproject.toml": {
+          "sha256": "ec0e313da256eebf0f25cf04c9dcd04be32249e00b9d24ac317d89d3077c3bcb",
+          "bytes": 1511,
+          "url": "https://github.com/nums-ai/causilo/blob/4d26d497de28734db52c6bfc2ea949c12cc17308/pyproject.toml"
+        }
+      }
+    },
+    {
+      "repo": "NVIDIA/structured-data-models",
+      "branch": "main",
+      "commit": "2b1696f4fdc22004cc757c44703a69cf326c0a11",
+      "status": "read",
+      "files": {
+        "README.md": {
+          "sha256": "a99caa2cb5854c9399b02a53661587bfb41f83f9fb02a32b941050bf8db921a9",
+          "bytes": 9061,
+          "url": "https://github.com/NVIDIA/structured-data-models/blob/2b1696f4fdc22004cc757c44703a69cf326c0a11/README.md"
+        },
+        "pyproject.toml": {
+          "sha256": "1626f4b0873e95e4cd6f7d7f9fd28fd98d2cffd9b0316f07c0d091f1a12fccd4",
+          "bytes": 6803,
+          "url": "https://github.com/NVIDIA/structured-data-models/blob/2b1696f4fdc22004cc757c44703a69cf326c0a11/pyproject.toml"
+        }
+      }
+    },
+    {
+      "repo": "layer6ai-labs/TabDPT-inference",
+      "branch": "main",
+      "commit": "93670551adba28b186354fab9a1584c56c34aa76",
+      "status": "read",
+      "files": {
+        "README.md": {
+          "sha256": "a0134e1ecab7050b94ad85bf5648bf90fc13e82c3ee21401baf5369260903177",
+          "bytes": 12534,
+          "url": "https://github.com/layer6ai-labs/TabDPT-inference/blob/93670551adba28b186354fab9a1584c56c34aa76/README.md"
+        },
+        "pyproject.toml": {
+          "sha256": "a5efc58ff0144c2508cb265ad37ee87d896beb09ec26fcf084f44048181cc20a",
+          "bytes": 1480,
+          "url": "https://github.com/layer6ai-labs/TabDPT-inference/blob/93670551adba28b186354fab9a1584c56c34aa76/pyproject.toml"
+        }
+      }
+    },
+    {
+      "repo": "google-research/tabfm",
+      "branch": "main",
+      "commit": "fbb665569425fd2f490c6576b3af967876fe11ff",
+      "status": "read",
+      "files": {
+        "README.md": {
+          "sha256": "e6a0e0e36ccd18174f5aaa97dd98a4661e25fc3014f4bdb9ffd3d2a4790fe146",
+          "bytes": 6506,
+          "url": "https://github.com/google-research/tabfm/blob/fbb665569425fd2f490c6576b3af967876fe11ff/README.md"
+        },
+        "pyproject.toml": {
+          "sha256": "308455f8b6a90472af5b34eff4e236483dad4c866f06591f746adc1b42496231",
+          "bytes": 3071,
+          "url": "https://github.com/google-research/tabfm/blob/fbb665569425fd2f490c6576b3af967876fe11ff/pyproject.toml"
+        }
+      }
+    },
+    {
+      "repo": "limix-ldm-ai/LimiX",
+      "branch": "main",
+      "commit": "c76fa21bbb25fddca649e75a52dc9b1df66a659c",
+      "status": "read",
+      "files": {
+        "README.md": {
+          "sha256": "3ee743ad9d7d3f5a7533da81f13f7beb0a5604e900be49b42125e249735ecb41",
+          "bytes": 26975,
+          "url": "https://github.com/limix-ldm-ai/LimiX/blob/c76fa21bbb25fddca649e75a52dc9b1df66a659c/README.md"
+        },
+        "pyproject.toml": {
+          "sha256": "9fd3096beccfd04b88abe6db295f00fb507e88a30ff9034eeea0fd6af6e96ccf",
+          "bytes": 937,
+          "url": "https://github.com/limix-ldm-ai/LimiX/blob/c76fa21bbb25fddca649e75a52dc9b1df66a659c/pyproject.toml"
+        }
+      }
+    },
+    {
+      "repo": "alanarazi7/TabSTAR",
+      "branch": "master",
+      "commit": "4d14a660ae32b978b9bcde8c9f39e119513cf030",
+      "status": "read",
+      "files": {
+        "README.md": {
+          "sha256": "3ec5fe31e104bd1be02f6e5cdb7b203ad83e7a625c48f1d5c48f705e9156b701",
+          "bytes": 7389,
+          "url": "https://github.com/alanarazi7/TabSTAR/blob/4d14a660ae32b978b9bcde8c9f39e119513cf030/README.md"
+        },
+        "pyproject.toml": {
+          "sha256": "cb945f536593634ee2f97c88e47e7ee9c243af8a923fd6e49c31b07ad589e8a5",
+          "bytes": 756,
+          "url": "https://github.com/alanarazi7/TabSTAR/blob/4d14a660ae32b978b9bcde8c9f39e119513cf030/pyproject.toml"
+        }
+      }
+    },
+    {
+      "repo": "LAMDA-Tabular/TabSwift",
+      "branch": "main",
+      "commit": "8edf8f0b4225bc03e1f5db011912619cd92b798d",
+      "status": "read",
+      "files": {
+        "README.md": {
+          "sha256": "2db70a55ef0846c85314af75844cf76ab64d1dcab5a27f34d1336e574f590ea2",
+          "bytes": 6764,
+          "url": "https://github.com/LAMDA-Tabular/TabSwift/blob/8edf8f0b4225bc03e1f5db011912619cd92b798d/README.md"
+        }
+      }
+    }
+  ],
+  "model_modules": {
+    "C8": {
+      "causilo.estimators": "74d35df8d35f681c3c458522a15d2bcd10e1f4aa35a53ae240d16d9686b3bbbf",
+      "causilo.checkpoints": "1c2f1577e61ea6fdcd8f0593610862be4d539a99fa8a62812c8f4a253aaf36d4",
+      "causilo.nn.layers.attention": "3aa33b9ea4f6d5caa2fb9e38233ed67d3d6fefdd7a44857c50d9017b91c853ea"
+    },
+    "KS8": {
+      "sdm.models.kumo.tabular.model": "fcd1ace9e011dadcf152abae2608196ca3d1ca5dab470a1384931f794a97d882",
+      "sdm.models.kumo.tabular.recipe": "a5af156ffcb82cadb8e67070bbf1230c29b3fe245bb8ed89cebcbeaf738f77a0",
+      "sdm.models.kumo.tabular.icl": "8004617d373d8f350300d1f85c3883936a5c8da0871781e29707754370231c7d",
+      "sdm.models.kumo.tabular.batching": "4b9eded8f1b3fbc175a2d1e3ccf964c2a368378b15abd3e17ca48b51a19c31af",
+      "sdm.models.base.icl": "7a88f8c260061284424982c4484889e03dd84e2e0efaf7f90596aea8f405ef64"
+    },
+    "D8": {
+      "tabdpt.regressor": "03f420c110e19039dbbd912d80ecb36c407292cc96ce41de91d75d43992e9c2e",
+      "tabdpt.estimator": "81a345826a5534d9e4a5916ab4dd11f815a17787703eb54a42b7c968a2992678",
+      "tabdpt.model": "f7059d9040d46d883bc9f4df1456c77c369f9b3d9d59c3bf31c7e077af0fb381",
+      "tabdpt.utils": "5b6eb9ad2f49f18e99d1a850209263924ff8a2941a0b976a57511408803237c7"
+    }
+  }
+}

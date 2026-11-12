@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "code_cells": 10,
+  "figures": [
+    "research_figure_1.png"
+  ],
+  "fresh_process": true,
+  "fresh_directory": "./improvement_v9/results/notebook_execution/v9_fresh_o94z_hi3",
+  "earlier_project_directories_required": false,
+  "prediction_checkpoint_reads": 0,
+  "v9_component_checkpoint_reads": 0,
+  "v7_oof_snapshots_reused_explicitly": true,
+  "v9_outer_fold_fits": 40,
+  "gpu_branch_executed": false,
+  "development_scores_recomputed": 32,
+  "maximum_score_difference": 0.0,
+  "v7_reproduction": {
+    "maximum_difference_INR": 7.450580596923828e-09,
+    "fresh_full_fit": true,
+    "seconds": 114.49028741700022,
+    "checks": {
+      "rows": 500,
+      "columns": [
+        "Registration Number",
+        "Annual Turnover"
+      ],
+      "original_row_order": true,
+      "unique_ids": true,
+      "finite_nonnegative": true,
+      "permutation_invariance": true,
+      "target_id_invariance": true,
+      "missing_and_unseen_values": true,
+      "malformed_cases_rejected": 12
+    }
+  },
+  "qualified_candidates": 0,
+  "elapsed_seconds": 229.39850808399933,
+  "portal_uploads_by_agent": 0
+}

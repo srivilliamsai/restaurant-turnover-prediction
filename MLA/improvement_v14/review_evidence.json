@@ -1,0 +1,225 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-10-28T16:30:01.742721+00:00",
+  "scope": "Saved-data review only; no V14 model fitted, GPU allocated or portal submission performed.",
+  "inputs": {
+    "Train_dataset.csv": "ec40ebda74ba0bfbfe1af4417a4266a70eadf6e595500e99e5435e7bdc7ee51f",
+    "Test_dataset.csv": "ee4137566adb1c0ce356a8c370e7b8a22f681bde492068efe11346d8d44b4f4d",
+    "Data_Dictionary.csv": "2d86c00e27448593564a161197b6639ee1eb90c01fa523b67e7a09d2ef405c5e",
+    "Sample_Solution.csv": "9519ba4d51eb2d59b8a71b054a62e1f4d48b72cf92930c31f5e5393a2cd135fb"
+  },
+  "review_script_sha256": "23bee8eddc238a9e6c2829e826d0c0a9a47eb3e714fa974e7bd88d829810f440",
+  "scored_v9_csv_sha256": "5a384dc3d8bf58c4e29f0d6cac646aa33afe22bdcdd186cccd9758342769bbd4",
+  "scored_v9_portal_rmse_INR": 11904515.9864996,
+  "v13_complete_candidate_folds_recomputed": 30,
+  "v13_blends_recomputed": 12,
+  "maximum_metric_difference_INR": 3.725290298461914e-09,
+  "v13_qualified_candidates": 0,
+  "v13_screening": [
+    {
+      "name": "Q99",
+      "weight": 0.25,
+      "gain_42_INR": 1354.8579678088427,
+      "gain_71_INR": -7161.173104122281,
+      "mean_relative_gain": -0.00014711871271978096,
+      "qualified": false
+    },
+    {
+      "name": "Q99",
+      "weight": 0.5,
+      "gain_42_INR": -4047.6208234876394,
+      "gain_71_INR": -21247.412418905646,
+      "mean_relative_gain": -0.0006409408683055058,
+      "qualified": false
+    },
+    {
+      "name": "Q99",
+      "weight": 0.75,
+      "gain_42_INR": -16201.890385650098,
+      "gain_71_INR": -42243.9194410108,
+      "mean_relative_gain": -0.0014809509604801672,
+      "qualified": false
+    },
+    {
+      "name": "Q99",
+      "weight": 1.0,
+      "gain_42_INR": -35095.49574662745,
+      "gain_71_INR": -70128.71411987767,
+      "mean_relative_gain": -0.002666276437930743,
+      "qualified": false
+    },
+    {
+      "name": "Q995",
+      "weight": 0.25,
+      "gain_42_INR": 1219.3936471194029,
+      "gain_71_INR": -5585.23284221068,
+      "mean_relative_gain": -0.00011061989687427372,
+      "qualified": false
+    },
+    {
+      "name": "Q995",
+      "weight": 0.5,
+      "gain_42_INR": -3873.432068463415,
+      "gain_71_INR": -17547.256793733686,
+      "mean_relative_gain": -0.0005427714025116779,
+      "qualified": false
+    },
+    {
+      "name": "Q995",
+      "weight": 0.75,
+      "gain_42_INR": -15273.593191981316,
+      "gain_71_INR": -35874.49619887769,
+      "mean_relative_gain": -0.001296037448197539,
+      "qualified": false
+    },
+    {
+      "name": "Q995",
+      "weight": 1.0,
+      "gain_42_INR": -32970.175356552005,
+      "gain_71_INR": -60549.27004620433,
+      "mean_relative_gain": -0.0023696934524460463,
+      "qualified": false
+    },
+    {
+      "name": "SQ2",
+      "weight": 0.25,
+      "gain_42_INR": 5193.636278506368,
+      "gain_71_INR": -3464.4333062805235,
+      "mean_relative_gain": 4.3826820759155745e-05,
+      "qualified": false
+    },
+    {
+      "name": "SQ2",
+      "weight": 0.5,
+      "gain_42_INR": 3590.057530928403,
+      "gain_71_INR": -14037.570472039282,
+      "mean_relative_gain": -0.00026471339235049126,
+      "qualified": false
+    },
+    {
+      "name": "SQ2",
+      "weight": 0.75,
+      "gain_42_INR": -4809.07939620316,
+      "gain_71_INR": -31708.003101617098,
+      "mean_relative_gain": -0.000925289585302084,
+      "qualified": false
+    },
+    {
+      "name": "SQ2",
+      "weight": 1.0,
+      "gain_42_INR": -19995.10515045002,
+      "gain_71_INR": -56456.71923897043,
+      "mean_relative_gain": -0.0019372003426577722,
+      "qualified": false
+    }
+  ],
+  "baseline_concentration": [
+    {
+      "scheme": "42",
+      "rmse_INR": 19731241.728233285,
+      "gt80M_count": 48,
+      "gt80M_squared_error_share": 0.6817626250139329,
+      "top_five_squared_error_share": 0.3463862667906652
+    },
+    {
+      "scheme": "71",
+      "rmse_INR": 19733020.080547012,
+      "gt80M_count": 48,
+      "gt80M_squared_error_share": 0.6810263541801023,
+      "top_five_squared_error_share": 0.3457594678904764
+    },
+    {
+      "scheme": "strat:27421",
+      "rmse_INR": 19726481.457054287,
+      "gt80M_count": 48,
+      "gt80M_squared_error_share": 0.6844422664894576,
+      "top_five_squared_error_share": 0.3488698577171744
+    },
+    {
+      "scheme": "city",
+      "rmse_INR": 20061150.77388296,
+      "gt80M_count": 48,
+      "gt80M_squared_error_share": 0.6700652290692873,
+      "top_five_squared_error_share": 0.3355702638112022
+    },
+    {
+      "scheme": "48211",
+      "rmse_INR": 19743626.58666369,
+      "gt80M_count": 48,
+      "gt80M_squared_error_share": 0.6834526813232972,
+      "top_five_squared_error_share": 0.3470800573147994
+    },
+    {
+      "scheme": "48212",
+      "rmse_INR": 19816597.33709491,
+      "gt80M_count": 48,
+      "gt80M_squared_error_share": 0.6804644200957766,
+      "top_five_squared_error_share": 0.3466760041928569
+    },
+    {
+      "scheme": "48213",
+      "rmse_INR": 19711188.541631036,
+      "gt80M_count": 48,
+      "gt80M_squared_error_share": 0.6827082283554131,
+      "top_five_squared_error_share": 0.3481746685014598
+    }
+  ],
+  "v11_actually_evaluated_new_tabpfn_version": "2.5",
+  "v11_tabpfn_3_5_engineering_failure": {
+    "error_type": "UnpicklingError",
+    "message": "Weights only load failed. In PyTorch 2.6, we changed the default value of the `weights_only` argument in `torch.load` from `False` to `True`. Re-running `torch.load` with `weights_only` set to `False` will likely succeed, but it can result in arbitrary code execution. Do it only if you got the file from a trusted source.\nPlease file an issue with the following so that we can make `weights_only=True` compatible with your use case: WeightsUnpickler error: \n\nUnsupported operand 240\n\nCheck the docum"
+  },
+  "v11_tabicl_engineering_result": {
+    "status": "unavailable",
+    "reason": {
+      "error_type": "AssertionError",
+      "message": "permutation dependence INR 3.814697265625"
+    }
+  },
+  "baseline_files": {
+    "reference/v9_42.npz": "78d87ced373af298d30a1e41a6ce71074e346829f8058e35bde79c397f206ffa",
+    "reference/v9_71.npz": "1f1b5dbfdb9196366ceaf38f97d5c1e29e4da95c7786368d108e8cf87a2bd2e5",
+    "reference/v9_strat_27421.npz": "12e60bb90ae889d470adee233a2bb24a9c9801956ec0ce3bba5c20be738b6848",
+    "reference/v9_city.npz": "f3f0ea4ed3d2513cb3ec36e1397d62927add7a2b6e1ccdbcf966750dfbe46792",
+    "reference/v13_control_48211.npz": "3199ff0f9d33360c65fc34b47aecfbf3100e5564b0823785883d64f756e25990",
+    "reference/v13_control_48212.npz": "abf1079b5df47e11e714a9133f25621e138b280ad0319e1764e7ed341b047d6e",
+    "reference/v13_control_48213.npz": "63020b9560db7c52c13a4d54b0de635d35dbce4c449e79949a216f68007a394c"
+  },
+  "candidate_fold_files": {
+    "improvement_v13/results/cache/Q99_42_fold0.npz": "118b5c34025f7a13e0cb969c70ccfcda6700528913552592878cc6f09c3f6cc0",
+    "improvement_v13/results/cache/Q99_42_fold1.npz": "b4d0bbe06fb4efbb81c5da9a655ae518f7973902951cd8c9480bb66673d14b5e",
+    "improvement_v13/results/cache/Q99_42_fold2.npz": "92604f93d732a3abd2eed0cf1b7096eaf53841f18ae70896b62dbc4d3d95fb31",
+    "improvement_v13/results/cache/Q99_42_fold3.npz": "4a5f878643fa3861977c76a3b26e80308f035e27970ed87a5316541140acffc8",
+    "improvement_v13/results/cache/Q99_42_fold4.npz": "1f7c5ce38c8640a0b97299e5db91c306e6ddde653298bb6ec62f7a7cfd240659",
+    "improvement_v13/results/cache/Q99_71_fold0.npz": "bbafb27bb6e6b571efb5002b52ad1ded5eca72c51d35652c1e303632c6417090",
+    "improvement_v13/results/cache/Q99_71_fold1.npz": "357e1487011ff5494f958620737d850c7dfefe7fc089fa0a483c3420dcc5f564",
+    "improvement_v13/results/cache/Q99_71_fold2.npz": "915b082d9f0bddde2b13ef2ccf425b2fc51817a2945f71cef4e1d87a0d06355d",
+    "improvement_v13/results/cache/Q99_71_fold3.npz": "0d4462c6c2c85c758b9a40beba37d1e095638725e07c104fef4fdcc400860421",
+    "improvement_v13/results/cache/Q99_71_fold4.npz": "d83cff9f78a976eee81bb5651a639f7eeb09bc47376d78647e0aef0b407b4211",
+    "improvement_v13/results/cache/Q995_42_fold0.npz": "5a3cfb6675c51e63653cbf3719aa6dc98bbfcbbcfc28905ed517d72bbb0dc40e",
+    "improvement_v13/results/cache/Q995_42_fold1.npz": "d24c3f9bbdd825fb7ab4e54bc1ca656178663bacee1545454ba0d0e6bf5998e6",
+    "improvement_v13/results/cache/Q995_42_fold2.npz": "96e19098d391800f07082c2be149b5e77320da92d19d4f68751b70a2278aa648",
+    "improvement_v13/results/cache/Q995_42_fold3.npz": "03176ac3b5b050e851ad68255e57341cdebcb2d191ee16d932b9b3b96aec0554",
+    "improvement_v13/results/cache/Q995_42_fold4.npz": "d651d14a09cbb14b8fbb5ea9ee82c9c47757939f67526327f3d2c846b0196143",
+    "improvement_v13/results/cache/Q995_71_fold0.npz": "dd67e48a158306d1bc642376eb7aa3f097df558768d5839bd6e31a1076e8a873",
+    "improvement_v13/results/cache/Q995_71_fold1.npz": "9874d579712550fbb7a6ff39965137079385e167a0f65e558b30abfe81a7b85a",
+    "improvement_v13/results/cache/Q995_71_fold2.npz": "3d4c28f46325f3df4be3e99826ec9150957b4a4e2e986ef77f201121ed3c9856",
+    "improvement_v13/results/cache/Q995_71_fold3.npz": "66fc2d81f86aa6c32d3a72bde26b3f1e915a4c12837b34fa86a9e95602b72727",
+    "improvement_v13/results/cache/Q995_71_fold4.npz": "a55e8294aa1c06b1206dc7cd2db64a62a7588d9456e4249d171d08c62f62bc78",
+    "improvement_v13/results/cache/SQ2_42_fold0.npz": "64455d8f3a0c74e2dd1bff9820f1abe15b4bc3c378f7a5734699bf98d24d327c",
+    "improvement_v13/results/cache/SQ2_42_fold1.npz": "9b182dd7c28f548ed171d22f7627efe851b790d1032ec76b557888a7335399d6",
+    "improvement_v13/results/cache/SQ2_42_fold2.npz": "25dbd1a23b6107c4db0afb0d5bd8641350d2a62646390d9cf780535b9019a373",
+    "improvement_v13/results/cache/SQ2_42_fold3.npz": "c92bd0649053191bd5e9343d0b254f530924351535505ab823c4dd541281a61c",
+    "improvement_v13/results/cache/SQ2_42_fold4.npz": "39369ce34982c50676131901267ef59d80785a3a386b2d4e6716f3d77a0b1fb5",
+    "improvement_v13/results/cache/SQ2_71_fold0.npz": "5fddcb80267c43ae4b8d4aa4a0ae3b505460c65229b32a8737b63c22758d8585",
+    "improvement_v13/results/cache/SQ2_71_fold1.npz": "1b9d7f07afb213d2c2cc76352da95bcc58cd0675ac9d57b813e33a18fd6d060e",
+    "improvement_v13/results/cache/SQ2_71_fold2.npz": "c4844c8f3f77c51b61fb2113181f0d9c5388c6ea939e6445b9bd1f68ae57e6f1",
+    "improvement_v13/results/cache/SQ2_71_fold3.npz": "c67cf102e802e677a02a41483cc07949622e1414ee98e4ac469c6a06dd10ca76",
+    "improvement_v13/results/cache/SQ2_71_fold4.npz": "df7d2e015c1a01e467565aeff75240e2bd5cdc77933500fd6e6fbeda8b9e58b1"
+  },
+  "limits": [
+    "Conditional on historical saved fitted predictions; not a new accuracy experiment.",
+    "All labels have been examined historically; concentration does not identify erroneous labels.",
+    "Exact cause of the TabPFN 3.5 loading failure remains unconfirmed."
+  ]
+}

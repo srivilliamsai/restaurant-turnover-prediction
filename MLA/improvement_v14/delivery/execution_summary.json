@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "experiment_complete": true,
+  "qualified": true,
+  "source_identity_unchanged": true,
+  "owned_runtime_released": true,
+  "scored_v9_csv_sha256": "5a384dc3d8bf58c4e29f0d6cac646aa33afe22bdcdd186cccd9758342769bbd4",
+  "portal_uploads": 0,
+  "independent_review_passed": true,
+  "complete_component_folds_verified": 45,
+  "comparisons_verified": 16,
+  "executed_notebook_code_cells": 29,
+  "csv_sha256": "39d49f79beb8549d04ffc78d134aad2407dc5e73914dc3c30e8bb162a3c0ba05",
+  "same_hash_as_initial_export": true,
+  "maximum_fresh_difference_INR": 7.450580596923828e-09,
+  "owned_assignment_absence_verified": true
+}

@@ -1,0 +1,8 @@
+{
+  "owned_session": "v13-free-t4",
+  "release_command_succeeded": true,
+  "epoch": 1793204159.531224,
+  "server_assignments_after_release": 0,
+  "server_verification": "colab --auth oauth2 sessions returned: No active sessions found on server.",
+  "verification_epoch": 1793204219.219845
+}

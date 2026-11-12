@@ -1,0 +1,36 @@
+{
+  "version": "V14",
+  "status": "submitted_better_than_v9; user screenshot confirms new least RMSE",
+  "csv_sha256": "39d49f79beb8549d04ffc78d134aad2407dc5e73914dc3c30e8bb162a3c0ba05",
+  "candidate_formula": "0.25*V9+0.75*TabPFN-3.5 Base (8 estimators)",
+  "maximum_manual_trials": 1,
+  "portal_uploads": 1,
+  "actual_portal_rmse_INR": 11736110.7877709,
+  "portal_rank": 9,
+  "validation_qualified": true,
+  "fresh_reproduction_verified": true,
+  "best_observed_submission": {
+    "version": "V14",
+    "rmse_INR": 11736110.7877709,
+    "rmse_exact": "11736110.7877709"
+  },
+  "one_time_coding_upload_pending_final_choice": true,
+  "score_attribution": "The human user identifies this as the V14 trial. Screenshot confirms actual RMSE, previous best and displayed rank. CSV hash identifies the verified local candidate and is not shown by the portal screenshot.",
+  "maximum_fresh_difference_INR": 7.450580596923828e-09,
+  "notebook_sha256": "86fae4ea97d6fd35c2ed485c60f26f02c98fccb3cbeda9a10228cc48e788318e",
+  "portal_upload_actor": "user",
+  "assistant_portal_uploads": 0,
+  "actual_portal_rmse_exact": "11736110.7877709",
+  "portal_rank_context": "Rank displayed in the user-supplied October 28, 2026 screenshot; not a live leaderboard query.",
+  "previous_observed_best": {
+    "version": "V9",
+    "rmse_INR": 11904515.9864996,
+    "rmse_exact": "11904515.9864996"
+  },
+  "improvement_INR_exact": "168405.1987287",
+  "improvement_percent": 1.4146328915823299,
+  "recommended_version": "V14",
+  "evidence_file": "portal_result.png",
+  "evidence_sha256": "bc68bc2127abaf8c0fb766130ad505183504592546933ee81616d7185e4c1f48",
+  "one_time_coding_upload_status": "Unconfirmed; no coding-upload evidence provided."
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "unittest_cases": 5,
+  "reference_assignments_verified": 7,
+  "v14_fold_witnesses_verified": 35,
+  "target_id_isolation": true,
+  "unknown_inputs": true,
+  "invalid_cache_rejection": true,
+  "all_python_sources_compile": true
+}

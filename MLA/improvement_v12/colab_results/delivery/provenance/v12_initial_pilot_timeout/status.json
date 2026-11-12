@@ -1,0 +1,10 @@
+{
+  "phase": "stopped_with_preserved_v9",
+  "pid": 42939,
+  "elapsed_seconds": 3198.706025416999,
+  "maximum_hours": 12,
+  "paid_resources": false,
+  "error_type": "RuntimeError",
+  "message": "V12 stage failed; inspect preserved logs",
+  "qualified_submission_recommended": false
+}

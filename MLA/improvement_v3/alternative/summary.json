@@ -1,0 +1,14 @@
+{
+  "best": {
+    "name": "spline_full_a30_h40",
+    "alternative_weight": 0.25,
+    "rmse": 19968064.44979987,
+    "v2_fixed_rmse": 19849487.911774013,
+    "blend_rmse": 19846403.336905364,
+    "delta": 3084.5748686492443,
+    "residual_correlation": 0.9913178407117704
+  },
+  "selection_seed": 42,
+  "models_tested": 20,
+  "note": "Improvement below20000 threshold; no further confirmation recommended. Three top candidates had seed71 results before threshold guidance arrived. Seed909 never accessed."
+}

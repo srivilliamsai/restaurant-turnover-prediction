@@ -1,0 +1,8 @@
+{
+  "attempts": 2,
+  "first_failure": "Isolated venv could not bootstrap ensurepip; no model fit had started.",
+  "repair": "venv --without-pip; base pip --python targets each isolated interpreter; no system site packages.",
+  "successful_setup_seconds": 288.3315062522888,
+  "clock_reset": false,
+  "ledger_started_epoch": 1793271502.0
+}

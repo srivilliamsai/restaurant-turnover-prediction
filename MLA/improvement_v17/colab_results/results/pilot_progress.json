@@ -1,0 +1,185 @@
+{
+  "XIA32": {
+    "status": "engineering_excluded",
+    "error_type": "AssertionError",
+    "reason": "permutation_difference_INR: INR 2290.7257080078125",
+    "traceback": "Traceback (most recent call last):\n  File \"/content/mla_v17/pilot_worker.py\", line 31, in main\n    checks=verify.inference_checks(lambda raw:modeling.predict(fitted,raw),e.train.iloc[b],e.y[b])\n  File \"/content/mla_v17/verify.py\", line 137, in inference_checks\n    assert checks[name] <= 10., f'{name}: INR {checks[name]}'\n           ^^^^^^^^^^^^^^^^^^^\nAssertionError: permutation_difference_INR: INR 2290.7257080078125\n",
+    "engineering_seconds": 489.56850253700003,
+    "accuracy_tested": false
+  },
+  "NOR15": {
+    "status": "PASS",
+    "fold_seconds": 41.20470889699993,
+    "full_fit_predict_seconds": 20.641729450000184,
+    "behavior": {
+      "permutation_difference_INR": 2.5902662128210068,
+      "label_id_difference_INR": 0.0,
+      "batch_difference_INR": 2.5902662128210068,
+      "individual_difference_INR": 0.3237832747399807,
+      "rmse_difference_INR": {
+        "permutation": 0.0018624961376190186,
+        "batch": 0.0003614462912082672,
+        "individual": 0.04142097756266594
+      },
+      "other_query_rows_changed_difference_INR": 0.0,
+      "rows_checked": 699,
+      "individual_probes": 12,
+      "missing_unseen_inputs": true,
+      "behavior_tolerance_INR": 10.0,
+      "rmse_tolerance_INR": 1.0
+    },
+    "fresh_repeat_difference_INR": 0.0,
+    "save_reload_difference_INR": 0.0,
+    "target_metadata": {
+      "name": "NOR15",
+      "training_rows": 2794,
+      "units": "raw INR millions",
+      "all_original_training_targets_retained": true,
+      "seed": 10242,
+      "training_target_sha256": "63998c05f2bd6fe27bf536d3f74ed91f5542c3bcef6e4bbc3ed28bc9492ffa38",
+      "categorical_columns": [
+        "Cuisine",
+        "City",
+        "Restaurant Location",
+        "Endoresed By",
+        "Restaurant Type",
+        "Restaurant Theme",
+        "Cuisine 1",
+        "Cuisine 2"
+      ],
+      "features": 40,
+      "actual_estimators": 4,
+      "precision": "float32",
+      "internal_selection": false,
+      "public_interface": "NoriPredictor",
+      "train_only_config_sha256": "64ad0d97763387b1373f98dbfb00225bd7aa1312b57291a871eb607f056832ec",
+      "checkpoint_sha256": "b1313b45225066f74a78e99d5cd56dbd0015bdbeadf948252cf82d2a962766a2",
+      "fit_seconds": 6.125843712999995
+    },
+    "peak_gpu_allocated_bytes": 3821158400,
+    "training_rows": 2794,
+    "validation_rows": 699,
+    "full_training_rows": 3493,
+    "selection_uses_validation_rmse": false,
+    "engineering_seconds": 446.63141678399995
+  },
+  "P35FT512": {
+    "status": "PASS",
+    "fold_seconds": 510.89555311714224,
+    "full_fit_predict_seconds": 605.4332475900001,
+    "behavior": {
+      "permutation_difference_INR": 0.0,
+      "label_id_difference_INR": 0.0,
+      "batch_difference_INR": 0.0,
+      "individual_difference_INR": 0.0,
+      "rmse_difference_INR": {
+        "permutation": 0.0,
+        "batch": 0.0,
+        "individual": 0.0
+      },
+      "other_query_rows_changed_difference_INR": 0.0,
+      "rows_checked": 699,
+      "individual_probes": 12,
+      "missing_unseen_inputs": true,
+      "behavior_tolerance_INR": 10.0,
+      "rmse_tolerance_INR": 1.0
+    },
+    "fresh_repeat_difference_INR": 0.0,
+    "save_reload_difference_INR": 0.0,
+    "target_metadata": {
+      "name": "P35FT512",
+      "training_rows": 2794,
+      "units": "raw INR millions",
+      "all_original_training_targets_retained": true,
+      "seed": 10242,
+      "training_target_sha256": "63998c05f2bd6fe27bf536d3f74ed91f5542c3bcef6e4bbc3ed28bc9492ffa38",
+      "categorical_columns": [
+        "Cuisine",
+        "City",
+        "Restaurant Location",
+        "Endoresed By",
+        "Restaurant Type",
+        "Restaurant Theme",
+        "Cuisine 1",
+        "Cuisine 2"
+      ],
+      "features": 40,
+      "matched_original_architectures": [
+        "tabpfn.architectures.tabpfn_v3_5.TabPFNV3p5"
+      ],
+      "installed_finetune_source_sha256": "315413cd044720d1edc9962d6697ed55cea90f3e7181d1a2a1c41ac8ccde18fa",
+      "inner_training_rows": 2374,
+      "inner_validation_rows": 420,
+      "inner_seed": 9091,
+      "inner_train_sha256": "7f75c6d798f5f3e1aec1348dcd7f28ed151479de37588d9ef49616d76d44b982",
+      "inner_validation_sha256": "78b66a263f116bce32eb4da28de7e21795134e6708d165edc8847f8b66befade",
+      "inner_policy": "random-15-percent",
+      "selected_epochs": 3,
+      "inner_epochs_run": 11,
+      "inner_history": [
+        {
+          "epoch": 0,
+          "mse_millions_squared": 257.5474534175994
+        },
+        {
+          "epoch": 1,
+          "mse_millions_squared": 257.6810607380362
+        },
+        {
+          "epoch": 2,
+          "mse_millions_squared": 257.70148929933873
+        },
+        {
+          "epoch": 3,
+          "mse_millions_squared": 257.27076274186203
+        },
+        {
+          "epoch": 4,
+          "mse_millions_squared": 262.266338559799
+        },
+        {
+          "epoch": 5,
+          "mse_millions_squared": 294.52943309133315
+        },
+        {
+          "epoch": 6,
+          "mse_millions_squared": 305.45153409750327
+        },
+        {
+          "epoch": 7,
+          "mse_millions_squared": 310.19992460412044
+        },
+        {
+          "epoch": 8,
+          "mse_millions_squared": 281.1857909998409
+        },
+        {
+          "epoch": 9,
+          "mse_millions_squared": 284.5577516516772
+        },
+        {
+          "epoch": 10,
+          "mse_millions_squared": 281.46657196588126
+        },
+        {
+          "epoch": 11,
+          "mse_millions_squared": 281.69464363592556
+        }
+      ],
+      "outer_validation_used_for_epoch_selection": false,
+      "precision": "CUDA-AMP-training/float32-inference",
+      "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+      "matched_unadapted_inner_mse_millions_squared": 257.5474534175994,
+      "full_subset_refitted": true,
+      "actual_estimators": 1,
+      "fit_seconds": 111.03168062600002
+    },
+    "peak_gpu_allocated_bytes": 5208716288,
+    "training_rows": 2794,
+    "validation_rows": 699,
+    "full_training_rows": 3493,
+    "selection_uses_validation_rmse": false,
+    "engineering_seconds": 369.654790136,
+    "forecast_basis": "Conservative maximum 30 selection plus 30 refit epochs, scaled from complete observed pilot."
+  }
+}

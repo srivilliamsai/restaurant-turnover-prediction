@@ -1,0 +1,21 @@
+AUDIT PASS: three fixed hypotheses, at most fifteen comparisons, seven verified baseline assignments.
+Traceback (most recent call last):
+  File "/content/mla_v17/workflow.py", line 343, in <module>
+    main()
+    ~~~~^^
+  File "/content/mla_v17/workflow.py", line 330, in main
+    globals()[args.stage](e)
+    ~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/content/mla_v17/workflow.py", line 53, in pilot
+    config = json.loads(config_path.read_text()) if config_path.exists() else modeling.resolve()
+                                                                              ~~~~~~~~~~~~~~~~^^
+  File "/content/mla_v17/modeling.py", line 29, in resolve
+    config = {'runtime':runtime(),'new_runtime':new_runtime(),'new_module_sha256':module_hashes(),
+                        ~~~~~~~^^
+  File "/content/mla_v17/modeling.py", line 11, in runtime
+    return frozen_pfn.runtime()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "/content/mla_v17/frozen_pfn.py", line 22, in runtime
+    assert actual == PINNED, actual
+           ^^^^^^^^^^^^^^^^
+AssertionError: {'numpy': '2.2.6', 'pandas': '3.0.6', 'scikit-learn': '1.9.1', 'scipy': '1.18.1', 'catboost': '1.2.10', 'interpret-core': '0.7.8', 'tabpfn': '9.2.0', 'tabicl': '2.2.0', 'torch': '2.11.0+cu130'}
